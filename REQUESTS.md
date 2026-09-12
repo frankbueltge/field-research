@@ -3106,3 +3106,61 @@ forward one day later.
 `presentations/cycle-003/`, unless the siblings' work makes one more measurement the better close.
 
 **Status:** report · no answer required before the next session
+
+---
+
+## Correction — 2026-09-12 (session 158, same day) — an adversary broke the checker twice, and one prediction was decided before a label was read
+
+**Filed the same night, after the entry above and after the branch had already landed.** An adversary
+was convened against the finished artifact. It broke `check.py` twice. Both breaks were reproduced
+here before anything was changed; both are closed; nothing is withdrawn.
+
+**1. The screen verdicts had no anchor at all.** `check.py` claimed it could not be fooled by a lie
+written into `results.json`, because it recomputed from `data/task-rows.json`. But the *screen* fields
+in that file — which value the screen flagged — were never recomputed from anything. Flip one
+`hollow_broad`, recompute the figures that follow, rebuild: the page reported **26 of 28** instead of
+27 of 29 and precision 0.0714 instead of 0.0690, with **1,434 of 1,434 checks green**. **Closed:** the
+frozen rules R1, R2, R3 and R5 are now re-run from a raw value anchored in `data/screen-anchor.json`,
+`task-rows.json` must agree with them field by field, and every anchored raw value must mask down
+byte-for-byte to the value in the sheet that was committed *before any label existed*.
+
+**2. The predictions block was a second copy of numbers held elsewhere.** We re-derived every
+prediction's *verdict* from its falsifier and never checked its *values*. Setting
+`predictions.P3.precision` to 0.9999 and touching nothing else rendered "precision 0.9999" in the
+predictions table while the same page showed 0.0690 two sections above — all green. **Closed:** every
+numeric field of every prediction must now equal its source.
+
+**What the checker still cannot verify, and now says so.** R4 is a relation between a value and the
+whole catalogue, and no catalogue is committed here (protocol §7). It is checkable only by re-fetching
+the feed at the recorded digest. The old docstring implied it verified everything; it did not.
+
+**3. One claim we asserted by analogy, now measured — and the stronger for it.** The page said the
+screen's duplicate rule must be size-dependent too, having measured only the narrowing instrument.
+That was rhetoric. Measured on the same ladder, rules untouched: **R4 fires on 4.84 % of data.gov.uk
+at 521 records and 30.92 % at 67,205 — a factor of 6.39, larger than the narrowing instrument's
+3.77.** The whole screen moves 48.21 % → 62.03 % with it, and since R1, R2 and R3 cannot move at all,
+every point of that rise is R4's.
+
+**4. P4 was decided by the census before a single label was read.** It scores the agreement between
+the model-free instrument and the reader — but **0 of 60** home items were ones the instrument called
+non-unique, because only 5 of 521 atlas values are. With one binary rater at zero variance, κ is
+exactly **0** whatever the other does. P4's "refuted" carries no information at all. P5 got a
+minimum-count clause written in advance; **P4 has the same structure — a rare-event indicator — and
+did not.** We audited P6 for precisely this vacuity in the same document and missed P4. Filed as A9.
+
+**5. And one of ours, found while closing theirs.** The sheet generator applies Unicode NFKC and the
+frozen screen does not, so the text the reader saw was not byte-identical to the text the screen
+judged, for **6 of 180** sampled items — in every case an ellipsis expanded to three dots. Checked
+rather than assumed: **0 of 180** rule verdicts move under NFKC, and the checker now enforces it.
+
+**Eleven defects now stand against this artifact, three of them the adversary's.** The checker runs
+**4,344** checks and its two prose records must state that number or it fails. `VERIFICATION.md` §5
+also records the fronts the adversary attacked and could not break, because a failed attack is
+evidence too — including the reproduction of 2026-09-08's figures and the house rule on naming tools.
+
+**One thing it observed that is ours to fix, not its.** It was reviewing a moving target: this session
+kept committing to the same branch while it worked, and it had to re-run every demonstration against
+the final commit. It handled that correctly and said which commit each result belonged to. The pacing
+was our fault.
+
+**Status:** correction filed · nothing withdrawn · no answer required
