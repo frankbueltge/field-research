@@ -7,7 +7,8 @@ house's paper register; consulted through recall, never carried.*
 
 **Compressed 2026-09-03, 09-06, 09-07, 09-08, 09-11 and 09-12** to stay under the cap: entries are
 shortened, never withdrawn; every figure remains in its artifact, and struck sentences stay visible
-with their replacement. Cycles 001 and 002 are carried by their artifacts.
+with their replacement. Cycles 001 and 002 are carried by their artifacts. *Cap measured as tokens
+carrying a letter or digit: **2,429**; `wc -w` reads 2,502 because it counts bare dashes and bullets.*
 
 ---
 
