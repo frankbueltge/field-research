@@ -21,7 +21,7 @@ first field, scores no prediction, and the checker enforces both.
 
 ```
 python3 artifacts/cycle-003/2026-09-12-what-a-description-is-for/build.py --check   # byte-identical
-python3 artifacts/cycle-003/2026-09-12-what-a-description-is-for/check.py           # 1,434 checks
+python3 artifacts/cycle-003/2026-09-12-what-a-description-is-for/check.py           # 4,344 checks
 ```
 
 `check.py` does not compare the page to `results.json`. That is the attack that beat our checker on
@@ -31,6 +31,19 @@ checked against that recomputation, and the page against both. It also re-derive
 verdict from its own falsifier, re-fires every kill condition, verifies that no sheet leaked a screen
 field name to its reader, verifies that every answer key points at a candidate that exists, and
 verifies that the quotations on the page are the quotations in `sources.json`.
+
+**That was not enough. An adversary broke it twice tonight and both breaks are now closed (A10).**
+The checker additionally re-runs the frozen rules R1, R2, R3 and R5 from the raw value anchored in
+`data/screen-anchor.json`, requires `data/task-rows.json` to agree with them field by field, requires
+each anchored raw value to mask down byte-for-byte to the value in the sheet that was committed
+before any label existed, and requires every numeric field of every prediction to equal its source
+rather than being a second copy of it.
+
+**What it still cannot verify, stated rather than implied: R4.** The duplicate rule is a relation
+between a value and the whole catalogue, and no catalogue is committed here (protocol §7). R4 is
+checkable only by re-fetching the feed at the digest in `results.json.manifest` and re-running
+`tools/identify/identify.py`. The checker tests that R4 is used consistently. It does not test that
+it is true, and the file says so in its own docstring.
 
 **Reproduction of prior work.** The home arm reproduces 2026-09-08 to the digit: 521 works, broad
 flag rate **40.5 %**, R4 on **4** of 521 (0.77 %), at atlas feed digest `a033aef5…` — the same digest
@@ -107,6 +120,34 @@ here and not in that file. Verify with
 Nothing measured in this session depends on either count: the rules are imported and executed, never
 retyped.
 
+**A9 — P4 was decided before a label was read, and an adversary had to tell us.** P4 scores the
+agreement between the model-free instrument and the reader. **0 of the 60 home items** are ones the
+instrument called non-unique — because only 5 of 521 atlas values are. When one of two binary raters
+has zero variance, the κ formula used throughout this practice reduces to exactly **0** for every
+possible pattern of the other. P4's `refuted` was therefore fixed by the census, before any reader
+saw anything, and carries no information whatever about the relationship it claims to test. It has
+**the same structure as P5** — a rare-event indicator — and P5 got a minimum-count clause written in
+advance while P4 did not. §4's own audit caught the analogous vacuity in P6 and missed this one.
+The verdict stands as written; it is worth nothing, and the page now says so.
+
+**A10 — the checker was broken twice, by an adversary, after this artifact was finished.** Both are
+demonstrated, both are closed, and both are recorded rather than quietly patched. (1) *The screen
+verdicts had no anchor.* Flipping one `hollow_broad` in `data/task-rows.json` and recomputing the
+figures that follow produced a page reporting **26 of 28** instead of 27 of 29, precision 0.0714
+instead of 0.0690 — with **1,434 of 1,434 checks green**. The checker had only ever tested those
+fields for consistency with themselves. (2) *The predictions block was a second copy.* Setting
+`predictions.P3.precision` to 0.9999 with nothing else touched rendered "precision 0.9999" in the
+predictions table while the same page showed 0.0690 two sections above — again all green, because
+only the *verdicts* were re-derived, never the values. Both attacks were reproduced here before
+being fixed, and both now fail.
+
+**A11 — the reader's text and the screen's text were not byte-identical.** The sheet generator
+applies Unicode NFKC and the frozen screen does not, so for **6 of 180** sampled items the value the
+reader saw differed from the value the screen judged — in every case an ellipsis `…` expanded to
+three dots. Checked rather than assumed: **0 of 180** items have any rule verdict that moves under
+NFKC, and `check.py` now enforces that on every run. The inconsistency is real and is recorded; its
+effect on this session's numbers is nil.
+
 **A7 — two of the checker's own checks were wrong, and convicted the data.** On first run the leak
 check forbade the loose word *screen* anywhere in a sheet and fired on a catalogue value that
 legitimately contains it — a checker convicting the corpus. And two accuracy checks compared an
@@ -119,9 +160,47 @@ defect as a missed one.
 *Convened against the finished artifact, after the page was built and `check.py` passed. Findings
 are recorded below with what was done about each.*
 
-**Status at the time this file was first committed: convened and still running.** If this section is
-still reading this sentence in the landed record, the adversary did not report before the session
-closed, and nothing should be inferred from its silence — it is not a clean bill.
+**Reported after the artifact was finished and after the first push had already landed.** Everything
+below was reproduced here before being acted on; nothing is taken on the adversary's word.
+
+**Two breaks, both demonstrated, both closed** — filed above as **A10**, with the fixes described in
+§2. The adversary's own demonstrations were re-run against this repository and reproduced exactly.
+
+**Three defects, all upheld:**
+
+1. **P4 is degenerate** — filed as **A9**, and it is the sharpest thing the adversary found. It also
+   proposed the right structural fix: P4 needed the minimum-count clause P5 got.
+2. **The sub-group Wilson intervals were never checked.** True: only the overall interval was
+   recomputed. The flagged and unflagged intervals are now recomputed in the same loop.
+3. **"So is duplication" was asserted by analogy.** True, and the unhedged sentence sat next to a
+   properly hedged one about hollowness. **Measured instead of hedged:** on the same ladder, with the
+   rules untouched, R4 fires on **4.84 %** of data.gov.uk at 521 records and **30.92 %** at 67,205 —
+   a factor of **6.39**, larger than the narrowing instrument's 3.77. `hollow_broad` moves 48.21 % →
+   62.03 % with it, and since R1, R2 and R3 are properties of a single value and cannot move at all,
+   every point of that rise is R4's. The claim is now the stronger one, and it is evidence.
+
+**One defect it reported as already fixed**, correctly: a hand-typed ratio in the page prose, which
+this practice found and computed from the data mid-session. The general lesson it drew — that
+`check.py` should verify ratios in prose, not only whitelisted figures — is taken: the new
+`r4_ratio_full_over_521` and the size-curve ratios are recomputed from their own endpoints.
+
+**One latent risk it could not demonstrate, now closed anyway:** `mask()` silently returns the value
+unchanged when a title contributes no maskable token, with no flag. It fired on **0 of 180** sampled
+items; the anchor now records `title_has_no_maskable_token` per item and `check.py` fails if any is
+true.
+
+**Fronts it attacked and could not break**, reported because a failed attack is evidence: all seven
+prediction verdicts against their own falsifiers; the narrowing instrument line-by-line against
+`PREREGISTRATION.md` §2.2 (df cutoff, tie-breaking, and the *identifies-nothing* branch); the
+held-out split and the identity of the two home arms' items, candidates and shuffle; the distractor
+construction; the reproduction of 2026-09-08's 40.5 %, R4 4/521 and the feed digest; and the house
+rule against naming tool vendors in this practice's own voice — zero matches across the page and the
+summary, against a search list wider than the checker's own.
+
+**One thing it observed that is worth keeping:** it was reviewing a moving target, because this
+session kept committing to the same branch while it worked. It re-ran every demonstration against the
+final commit and said which commit each result belonged to. That is the right handling, and the
+pacing is ours to fix, not its.
 
 ## 6. Standing limits
 

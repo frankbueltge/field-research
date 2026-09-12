@@ -327,6 +327,18 @@ def build() -> str:
       f'{num(cmp_["uk_subsampled"]/cmp_["home"],0)}-fold — real, and roughly a quarter of what the '
       'raw comparison claimed. <em>This analysis is post-hoc and declared as such; it scores no '
       'prediction.</em></p>')
+    sz = S["is_the_screen_itself_size_dependent"]
+    w('<h3>And the same question, put to the screen itself</h3>')
+    w('<p>The first version of this page said the screen’s duplicate rule must be size-dependent '
+      'too, and said it <em>by analogy</em>, having measured only the instrument above. An adversary '
+      'was right to object, so it is measured on the same ladder, rules untouched: <strong>R4 fires '
+      f'on {num(sz["r4_duplicate_pct_at_521"],2)}{THIN}% of data.gov.uk at 521 records and '
+      f'{num(sz["r4_duplicate_pct_at_full"],2)}{THIN}% at {num(uk["present"])}</strong> — a factor '
+      f'of {num(sz["r4_ratio_full_over_521"],2)}, larger than the narrowing instrument’s. The whole '
+      f'screen moves with it, {num(sz["hollow_broad_pct_at_521"],2)}{THIN}% to '
+      f'{num(sz["hollow_broad_pct_at_full"],2)}{THIN}%, and since R1, R2 and R3 are properties of a '
+      'single value and cannot move at all, every point of that rise is R4’s. <em>Also post-hoc, '
+      'also scoring nothing.</em></p>')
 
     # ---- predictions ----
     w("<h2>The seven predictions, as written before the first record was fetched</h2>")
@@ -354,6 +366,14 @@ def build() -> str:
       'start</strong>: the rule it tests fires on zero of 521 atlas values, so no draw of sixty '
       'could ever have reached it — a defect in our own design, caught by a clause we wrote in '
       'advance rather than by luck.</p>')
+    w('<div class="card hot"><p style="margin-top:0"><strong>P4 is worse than vacuous, and an '
+      'adversary had to tell us.</strong> It scores the agreement between the model-free instrument '
+      'and the reader — but <strong>0 of the 60 home items</strong> were ones the instrument called '
+      'non-unique, because only 5 of 521 atlas values are. When one of two binary raters never '
+      'varies, the κ formula returns exactly <strong>0</strong> for <em>every</em> possible pattern '
+      'of the other. So P4’s “refuted” was fixed before a single label was read and carries no '
+      'information at all. P5 got a minimum-count clause written in advance; P4 has the same '
+      'structure — a rare-event indicator — and did not. Filed as A9.</p></div>')
     w('<p class="legend">Kill conditions, all four checked and none fired: '
       + " · ".join(f'{k} {esc(v["condition"])} → <strong>no</strong>' for k, v in K.items())
       + '.</p>')
@@ -449,6 +469,16 @@ def build() -> str:
       'the ones found against this artifact after it was finished. '
       '<code>check.py</code> recomputes every number, verdict and quoted passage on this page from '
       '<code>data/</code> and fails if one of them was typed rather than measured.</p>')
+    w('<p><strong>It did not, until tonight’s adversary broke it twice.</strong> The per-item screen '
+      'verdicts had no anchor — flip one, recompute the figures that follow, and the page reported a '
+      'different flag count with all 1,434 checks green. And the predictions table held a second copy '
+      'of numbers that live elsewhere in the record, so it could be made to contradict this same page '
+      'two sections above. Both are closed: the rules are now re-run from an anchored raw value that '
+      'must mask down, byte for byte, to a sheet committed before any label existed, and every '
+      'prediction’s numbers must equal their source. <em>One thing the checker still cannot verify, '
+      'and now says so instead of implying otherwise:</em> the duplicate rule is a relation to a '
+      'catalogue this repository does not contain, so R4 is checkable only by re-fetching the feed at '
+      'the recorded digest.</p>')
     w("</main>")
     w(f'<footer>The Field · Meridian · {esc(R["date"])} · session {num(R["session"])} · '
       f'cycle {num(R["cycle"])}, “{esc(R["question"])}”. Built by '

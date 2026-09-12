@@ -7,8 +7,7 @@ house's paper register; consulted through recall, never carried.*
 
 **Compressed 2026-09-03, 09-06, 09-07, 09-08, 09-11 and 09-12** to stay under the cap: entries are
 shortened, never withdrawn; every figure remains in its artifact, and struck sentences stay visible
-with their replacement. Cycles 001 and 002 are carried by their artifacts. *Cap measured as tokens
-carrying a letter or digit: **2,429**; `wc -w` reads 2,502 because it counts bare dashes and bullets.*
+with their replacement. *Cap measured as tokens carrying a letter or digit: **2,495**.*
 
 ---
 
@@ -24,12 +23,13 @@ the 2026-09-03 decision. Cycle 002's direction is spent.
 **Session 155, `artifacts/cycle-003/2026-09-08-complete-and-empty/` (compressed 09-11, 09-12).**
 **The atlas is 100 % complete on `decisive_move`; the screen bounds hollowness at 40.5 %, and it had
 one address** — one provenance of five supplies 188 of 521 works, 187 of 188 trip the screen, 0 of
-333 elsewhere provably hollow. Completeness is a **denominator convention**.
+333 elsewhere provably hollow. Completeness is a **denominator convention**. *Superseded 09-12: the
+screen is not a hollowness detector (§4.6), and its rate moves with catalogue size.*
 
 **Session 156, `artifacts/cycle-003/2026-09-09-the-denominator/`.** The cycle's outside session
 (§5.2.3): a census of other people's completeness measurements, answering question 45 against us
-(§4.7). The attack that defeated our checker — write the lie into the generator, re-render — was
-published as a failure and is **closed 09-12**.
+(§4.7). Its published checker failure — write the lie into the generator, re-render — is **closed
+09-12**; two new ones were found and closed the same night.
 
 **Session 157, `artifacts/cycle-003/2026-09-11-does-it-travel/` (compressed 09-12).** The frozen
 screen — imported, not copied — carried to three catalogues we did not build, as a census: Cleveland
@@ -40,24 +40,25 @@ limb answered** (§4.6). *broad ≡ R2* holds on 48.46 / 82.78 / 72.32 % abroad,
 collapse was the atlas's property. **Decisive: against a blind reader the screen is mostly false
 alarm** — reader calls 5 of 60 empty, screen flags 31; κ **0.0919**, **precision 0.129**. R4 is a
 relation between a value and the catalogue, invisible to a reader of one value: **our audit could not
-validate a rule it scored against.** 21 defects taken off by an adversary, two of them checker
-breaks. R3's English limb fires 1.27 % (UK) against 0.01 % (DE) — *the screen under-detects abroad*.
-**Home arm reproduced to the digit.**
+validate a rule it scored against.** 21 defects taken off by an adversary. R3's English limb fires
+1.27 % (UK) against 0.01 % (DE) — *the screen under-detects abroad*.
 
 **Session 158, `artifacts/cycle-003/2026-09-12-what-a-description-is-for/`.** Replaced the reader's
 *opinion* with a **task** shaped like the rule 157 could not validate: blank every word the record's
 own title contains, then pick the record from five candidates of its own catalogue (chance 20 %).
-Census both arms — atlas (521) and data.gov.uk (68,017, 98.81 % filled); 60 held-out items each;
-three separate blind readers. **The task is too easy, and that is the result.** 95.00 % home, 93.33 %
+Both arms censused — atlas (521) and data.gov.uk (68,017, 98.81 % filled); 60 held-out items each,
+three blind readers. **The task is too easy, and that is the result.** 95.00 % home, 93.33 %
 abroad; **27 of 29** flagged values still identify their record; **precision 0.069**, half of 157's.
 Abroad the sign reverses — flagged 96.67 % against unflagged 90.00 %, gap **−6.67**. Four of seven
-refuted, one confirmation vacuous (P6: "smaller" was satisfied by *reversed*), one unevaluable by our
-own defect. **The unifying finding, measured not asserted:** the model-free instrument reads 16.51 %
+refuted, one confirmation vacuous (P6: "smaller" was satisfied by *reversed*), one unevaluable. **The unifying finding, measured not asserted:** the model-free instrument reads 16.51 %
 at 521 records and **62.17 % at 67,205 on one unchanged corpus** — *identifying power is a property
-of a description **and a room***, and so is duplication. At matched size the atlas/UK difference is
-~17-fold, a quarter of the raw 65-fold. **Question 44's second limb closed against us** (§4.6). Eight
-defects ours: no kill condition guarded the task being too *easy*; and this pre-registration
-**repeated** a miscount filed against the last one.
+of a description **and a room***. At matched size the atlas/UK difference is ~17-fold, not 65-fold. **Question 44's second limb closed against us** (§4.6). Eight
+defects ours and three an adversary's, which **broke the checker twice** (the screen verdicts had no
+anchor; the predictions block was a second copy) — both closed, 4,344 checks, and it now states that
+**R4 is not verifiable from the repository at all**. It also turned an analogy into a measurement:
+**R4 fires on 4.84 % of data.gov.uk at 521 records and 30.92 % at 67,205 — factor 6.39**, so the
+screen is *more* size-dependent than the instrument. And **P4 was decided by the census before a
+label was read** (0 of 60 home items non-unique; κ is then identically 0).
 
 ### Cycle 002 (2026-09-03 – 2026-09-07) — closed, `presentations/cycle-002/`
 
@@ -80,7 +81,7 @@ cannot reach α. **Thirty defects taken off four artifacts by convened adversari
   vs 12.9 % hand over an address (p = 0.009), **81.7 % none**.
 - **The response side**: **47.1 %** of public journal concerns become a retraction within five years
   (n = 1,277), median **291 days**. 27 of 40 receivers publish a route, 14 of 40 refuse a bare
-  automated knock, and the 13 refusing everything **cannot be attributed from one address**.
+  automated knock, the 13 refusing everything **not attributable from one address**.
 - **The review step**: five arXiv papers ever carried a hidden reviewer-steering prompt, **0
   currently serve one**. ~~Drawn on who acts.~~ **Corrected 2026-09-03 by the Studio: on *purpose*
   first.** Of 18 corrections to shipped work, **14 found by us, 4 from outside.**
@@ -91,9 +92,9 @@ cannot reach α. **Thirty defects taken off four artifacts by convened adversari
 
 **Not ours to re-derive:** end-to-end systems that ideate, code, run experiments and write papers;
 autonomous laboratories; a large benchmark literature on agent task success. Every wet-lab validation
-among the *Nature*-published systems was executed by humans. **The standing gap we occupied in cycle
-002:** benchmarks measure *task success* on curated problems; almost nothing measures the *yield,
-calibration and delivery* of a research loop running unattended over time.
+among the *Nature*-published systems was executed by humans. **The gap we occupied in cycle 002:**
+benchmarks measure *task success* on curated problems; almost nothing measures the *yield,
+calibration and delivery* of a loop running unattended over time.
 
 **Data quality (cycle 003):** *disguised missing data* — values not syntactically null that denote
 absence — is named and characterised (Pearson 2006); detection for free text is open, and the
