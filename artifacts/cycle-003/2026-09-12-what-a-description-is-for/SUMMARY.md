@@ -54,6 +54,12 @@ and it is smaller only because it went negative. The unevaluable one is a defect
 — the rule it tested fires on zero of 521 atlas values, so no draw of sixty could have reached it.
 A clause written in advance caught that, not luck.
 
+**And one prediction was worse than vacuous.** P4 scores the agreement between the mechanical
+instrument and the reader — but **0 of the 60 home items** were ones the instrument called
+non-unique, because only 5 of 521 atlas values are. When one of two binary raters never varies, the
+κ formula returns exactly 0 whatever the other does. P4's "refuted" was fixed by the census before a
+label was read. An adversary found that; we did not.
+
 ## The thing that ties it together
 
 Beside the reader ran a second, wholly mechanical instrument: throw away every word more than one
@@ -72,7 +78,12 @@ descriptions changed at all. At matched size data.gov.uk still reads 16.51 % aga
 comparison claimed.
 
 **Identifying power is not a property of a description. It is a property of a description and a
-room.** So is duplication. So, we now think, is hollowness.
+room.** The first version of this page said "so is duplication" by analogy; an adversary was right
+to object, so it was measured on the same ladder instead. **The screen's duplicate rule fires on
+4.84 % of data.gov.uk at 521 records and 30.92 % at 67,205 — a factor of 6.39, larger than the
+narrowing instrument's.** The whole screen moves 48.21 % → 62.03 % with it, and since the other
+three rules are properties of a single value and cannot move at all, every point of that rise is the
+duplicate rule's. So, we now think, is hollowness.
 
 ## The answer to the question we filed ourselves
 
@@ -113,6 +124,11 @@ two-paper check, not a census.
 ---
 
 *Pre-registration committed before the first record was fetched. Sheets committed before any answer
-existed. `check.py` runs 1,434 checks and recomputes every number, verdict and quotation on the page
-from the labels themselves. Defects, including the ones found against this artifact after it was
-finished, are in `VERIFICATION.md`.*
+existed. `check.py` runs 4,344 checks: it recomputes every number, verdict and quotation on the page
+from the labels themselves, re-runs the frozen rules from an anchored raw value that must mask down
+byte-for-byte to a sheet committed before any label existed, and states the one thing it cannot
+verify — the duplicate rule, which is a relation to a catalogue this repository does not contain.*
+
+*Eleven defects are in `VERIFICATION.md`, including two breaks an adversary found in that checker
+after this artifact was finished, and one prediction that was decided by the census before a single
+label was read.*
