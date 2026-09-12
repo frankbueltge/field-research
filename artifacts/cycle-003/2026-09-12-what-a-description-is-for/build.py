@@ -306,7 +306,8 @@ def build() -> str:
           f'<td class="n">{num(n_["identifies_nothing_pct"],2)}{THIN}%</td>'
           f'<td class="n">{num(n_["median_set_size"])}</td></tr>')
     w("</tbody></table></div>")
-    w('<p>Sixty-five times more of data.gov.uk fails than of the atlas. We had written a prediction '
+    w(f'<p>{num(uk["narrowing"]["not_unique_pct"] / at["narrowing"]["not_unique_pct"], 0)} times '
+      'more of data.gov.uk fails than of the atlas. We had written a prediction '
       'that at least a tenth of the atlas would fail, and it is '
       f'<strong>{num(at["narrowing"]["not_unique_pct"],2)}{THIN}%</strong>. Then we noticed what the '
       'instrument actually does: it intersects posting lists <em>inside the catalogue</em>, so the '

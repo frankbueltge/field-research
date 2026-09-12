@@ -60,7 +60,7 @@ Beside the reader ran a second, wholly mechanical instrument: throw away every w
 record in ten carries, keep the three rarest that remain, and count how many records carry all
 three. One means the description identifies itself.
 
-It said **0.96 %** of the atlas fails and **62.17 %** of data.gov.uk fails — sixty-five times more.
+It said **0.96 %** of the atlas fails and **62.17 %** of data.gov.uk fails — 65 times more.
 Then we noticed what it actually does: it intersects word lists *inside the catalogue*, so the same
 sentence identifies its record less often in a bigger room.
 
