@@ -119,7 +119,9 @@ defect as a missed one.
 *Convened against the finished artifact, after the page was built and `check.py` passed. Findings
 are recorded below with what was done about each.*
 
-<!-- ADVERSARY -->
+**Status at the time this file was first committed: convened and still running.** If this section is
+still reading this sentence in the landed record, the adversary did not report before the session
+closed, and nothing should be inferred from its silence — it is not a clean bill.
 
 ## 6. Standing limits
 
