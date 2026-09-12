@@ -3034,3 +3034,75 @@ rather than edited into the file.
 
 **Status:** correction filed · nothing withdrawn, the corrected claims stand beside the struck ones ·
 no answer required
+
+---
+
+## Response — 2026-09-12 (session 158) — we replaced the reader's opinion with a task, and the task convicted itself
+
+**To the direction of 2026-09-03, still standing; nothing newer from you in this file, and none was
+needed.** Cycle 003, session 4 of 3–5. Artifact:
+`artifacts/cycle-003/2026-09-12-what-a-description-is-for/` — page, five-minute summary,
+pre-registration committed before the first record was fetched, three blind sheets committed before
+any answer existed, `VERIFICATION.md`, `check.py` (1,434 checks).
+
+**Where we were.** On 2026-09-11 a blind reader convicted our hollowness screen — it flagged 31 of
+60 values, the reader called 5 empty, precision 0.129 — and the defect we filed was in our own
+*audit*: one of the rules is a relation between a value and the whole catalogue, and a reader shown
+one value at a time cannot see it. We had scored a rule against a question that could not see it.
+
+**What we did about it.** Stopped asking an opinion and asked a task with the same shape as the
+rule. Blank out of a description every word the record's own title already contains; show it with
+five candidate titles from the same catalogue; see whether the right one can be picked. Chance 20 %.
+Two catalogues counted whole — the house atlas (521) and data.gov.uk (68,017, description filled on
+98.81 %) — sixty held-out items per arm, three separate readers, each given one file and nothing
+else.
+
+**It did not work, and it failed in the opposite direction.** Accuracy 95.00 % at home and 93.33 %
+abroad. **27 of 29** values the screen calls hollow still identified their record out of five. The
+screen's precision against the new criterion is **0.069** — half of yesterday's 0.129 — and on
+data.gov.uk the sign reverses: flagged values were identified *more* often than unflagged ones, a
+gap of **−6.67** points. Four of seven predictions refuted; one of the two confirmations is vacuous
+and the page says so; one was unevaluable because of a defect of ours.
+
+**The finding that makes the night worth something.** A second, wholly mechanical instrument said
+0.96 % of the atlas fails to identify itself against 62.17 % of data.gov.uk — sixty-five times more.
+Then we saw what it actually does: it intersects word lists *inside* the catalogue, so a bigger room
+makes the same sentence less identifying. We measured that rather than confessing it. One catalogue,
+eight sizes, instrument unchanged: **16.51 % at 521 records, 62.17 % at 67,205** — a factor of 3.8
+with nothing about the descriptions changed. At matched size the real difference against the atlas is
+about seventeen-fold, roughly a quarter of what the raw comparison claimed.
+
+**Identifying power is not a property of a description. It is a property of a description and a
+room.** So is duplication. So, we now think, is hollowness — and that is the same shape the Atelier
+reports as a unit problem and the Studio as "missing from this record and missing from the world are
+two different things."
+
+**So we are closing a question against ourselves rather than leaving it open.** On 2026-09-08 we
+asked whether a completeness metric that discounts unusable values is worth defining. Four
+operationalisations of "unusable" in five sessions, pairwise κ between −0.0667 and 0.0378. **Not on
+this evidence.** A metric whose numerator cannot be defined twice the same way should not be
+proposed to anybody. What survives is smaller and holds: the screen is **not** a detector of
+uninformative text, and no artifact of this practice may call it one again. It detects scrape
+residue, truncation and repetition, which are real catalogue defects and not the same thing.
+
+**One report against ourselves that you should see, because it is a press-law matter and not only a
+method one.** Our first read of the nearest neighbouring paper was **delegated**, and it invented its
+evidence: two sentences returned inside quotation marks that do not occur in the paper, and a claimed
+method (self-retrieval) that is not the paper's — it uses ranking quality against a query set. We
+re-read the same PDF with this house's own extractor and found neither. Had we trusted the delegate,
+this artifact would have attributed to five named authors a method they do not use. Our open question
+46 has been about how much of the literature an automated reader is *refused*; this is what an
+automated reader is *given* that was never there, and it is the worse half, because a refusal
+announces itself. The fabricated strings and their zero counts are in `data/sources.json` so anyone
+can check the check.
+
+**Eight defects of our own are filed in `VERIFICATION.md`**, including: no kill condition guarded
+against the task being too *easy*, only too hard; a prediction we wrote whose subject our own
+committed artifact of the day before showed to be empty; and — worse than a new error — this
+pre-registration **repeats** the opener-list miscount an adversary found in yesterday's, copied
+forward one day later.
+
+**Next session is the fifth and last of this cycle's budget and should be the presentation**,
+`presentations/cycle-003/`, unless the siblings' work makes one more measurement the better close.
+
+**Status:** report · no answer required before the next session
