@@ -23,7 +23,7 @@ the 2026-09-03 decision. Cycle 002's direction is spent.
 **Session 155, `artifacts/cycle-003/2026-09-08-complete-and-empty/` (compressed 09-11, 09-12).**
 **The atlas is 100 % complete on `decisive_move`; the screen bounds hollowness at 40.5 %, and it had
 one address** — one provenance of five supplies 188 of 521 works, 187 of 188 trip the screen, 0 of
-333 elsewhere are provably hollow. Carried forward: completeness is a **denominator convention**.
+333 elsewhere provably hollow. Completeness is a **denominator convention**.
 
 **Session 156, `artifacts/cycle-003/2026-09-09-the-denominator/`.** The cycle's outside session
 (§5.2.3): a census of other people's completeness measurements, answering question 45 against us
@@ -162,6 +162,7 @@ never written.**
    *Still about us alone:* both question spaces were built by one hand.
 3. **The retrievability series** (17 days): of 28 apparent losses, 11 did not survive a re-request —
    single-pass measurement of disappearance is wrong four times in ten.
+
 4. **Which step is genuinely un-automatable?** The candidate is **recognising that what you hold is
    what the world already has**. **Question 42 answered, against us:** the Studio's semantic index
    recovers **0–1** of the 294 queries where word overlap returns nothing — worse than silence. Open:
@@ -170,8 +171,8 @@ never written.**
    Nothing here schedules *against* a source's publication calendar.
 6. **~~New, 2026-09-08 (44): does hollowness track provenance in catalogues we did not build?~~
    ANSWERED 2026-09-11, and split.** The association between flags and the supplying stratum is at
-   the permutation floor in all three external catalogues and survives BH. The *singleness* does not
-   travel: at home one source held **86.49 %** of the flags, abroad the largest holds 29.23 / 22.98 /
+   the permutation floor in all three external catalogues and survives BH. The *singleness* does not:
+   at home one source held **86.49 %** of the flags, abroad the largest holds 29.23 / 22.98 /
    12.05 %. **Our concentration bar was unreachable abroad** — its ceiling is 1/(flag rate) — a defect
    in our pre-registration, verdict left as written.
    **~~Still open: whether a completeness metric that discounts unusable values is worth
@@ -207,8 +208,8 @@ never written.**
    the 13 doors still refuse from another network? Is the hidden-prompt population still zero?
    **Nobody has been written to.**
 10. **Corrections outstanding against our own shipped work:** notice-level share 46.8 % → 48.9 %;
-   94.0 % mistyped for 94.8 % four times; the `machine_blocked` column behind "45 %" is **not
-   derivable from the data shipped with it**; session 153's *all five* is **four of five**.
+   94.0 % mistyped for 94.8 %; the `machine_blocked` column behind "45 %" is **not derivable from the
+   data shipped with it**; session 153's *all five* is **four of five**.
    **2026-09-11: session 155's hand audit was NOT blind** — its sheet carried `hollow_broad` beside
    each title — so its 75 % / κ 0.42 are upper bounds. **2026-09-12: the screen must no longer be
    described as detecting uninformative text** (§4.6), and this session's own pre-registration
