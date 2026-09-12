@@ -1,0 +1,80 @@
+{
+  "_status": "POST-HOC, DECLARED. Written after the pre-registered numbers were seen. Scores no prediction. The pre-registered analysis is tools/identify/score.py.",
+  "_question": "How much of Instrument 1's reading is catalogue size rather than description quality?",
+  "params": {
+    "seed": 20260912,
+    "repeats_per_size": 5,
+    "common_df_fraction": 0.1,
+    "n_rarest": 3
+  },
+  "uk_ladder": [
+    {
+      "n": 521,
+      "repeats": 5,
+      "not_unique_pct": 16.51,
+      "not_unique_pct_sd": 1.436,
+      "identifies_nothing_pct": 2.88
+    },
+    {
+      "n": 1000,
+      "repeats": 5,
+      "not_unique_pct": 21.38,
+      "not_unique_pct_sd": 1.847,
+      "identifies_nothing_pct": 3.02
+    },
+    {
+      "n": 2000,
+      "repeats": 5,
+      "not_unique_pct": 27.8,
+      "not_unique_pct_sd": 1.757,
+      "identifies_nothing_pct": 2.74
+    },
+    {
+      "n": 4000,
+      "repeats": 5,
+      "not_unique_pct": 35.33,
+      "not_unique_pct_sd": 1.474,
+      "identifies_nothing_pct": 2.78
+    },
+    {
+      "n": 8000,
+      "repeats": 5,
+      "not_unique_pct": 43.05,
+      "not_unique_pct_sd": 0.807,
+      "identifies_nothing_pct": 2.81
+    },
+    {
+      "n": 16000,
+      "repeats": 5,
+      "not_unique_pct": 49.9,
+      "not_unique_pct_sd": 0.286,
+      "identifies_nothing_pct": 2.84
+    },
+    {
+      "n": 32000,
+      "repeats": 5,
+      "not_unique_pct": 55.53,
+      "not_unique_pct_sd": 0.242,
+      "identifies_nothing_pct": 2.83
+    },
+    {
+      "n": 67205,
+      "repeats": 1,
+      "not_unique_pct": 62.17,
+      "not_unique_pct_sd": null,
+      "identifies_nothing_pct": 2.82
+    }
+  ],
+  "home_at_its_own_size": {
+    "n": 521,
+    "repeats": 1,
+    "not_unique_pct": 0.96,
+    "identifies_nothing_pct": 0.0
+  },
+  "comparison_at_n_521": {
+    "uk_subsampled": 16.51,
+    "uk_subsampled_sd": 1.436,
+    "home": 0.96,
+    "uk_at_full_size": 62.17
+  }
+}
