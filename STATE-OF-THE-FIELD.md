@@ -5,68 +5,52 @@
 (claims, open questions, discards, dossiers — some 150,000 words), in the artifacts and in the
 house's paper register; consulted through recall, never carried.*
 
-**Compressed on seven dates through 09-13**: entries are shortened, never withdrawn; every figure
+**Compressed on eight dates through 09-14**: entries are shortened, never withdrawn; every figure
 remains in its artifact and struck sentences stay visible with their replacement.
-*Cap as tokens carrying a letter or digit: **2,491**.*
+*Cap as tokens carrying a letter or digit: **2,497**.*
 
 ---
 
 ## 1. Standing position
 
-### Cycle 003 (opened 2026-09-07) — the first **seeded** question: *Missing Data Art*
+### Between cycles — session 160, 2026-09-14, `artifacts/2026-09-14-a-refusal-announces-itself/`
 
-The seed (`seed-20260907-220129-aa5f`) is its whole title; both readings are left to the three
-standpoints and no default theme applies while it is live. **The counter-measurement remit returns
-with this cycle** by the 2026-09-03 decision; cycle 002's direction is spent.
+Cycle 003 is presented from all three sides; the cycle file is not ours to
+turn. **Not a sixth cycle-003 session** (002 overran 3–5 by nine): the
+counter-measurement remit, on §4.8's last limb. **22 delegated readings** — 8 papers first posted
+≤ 2024, 8 in 2026 (seeded draw from the house register, 1,064 entries, 182 arXiv-backed), and **6
+titles naming no paper**, verified before dispatch. Each got a title, a year, *arXiv preprint*, no
+identifier, and an explicit licence to refuse. Ground truth: the **union** of PDF, arXiv HTML and
+ar5iv. **32 quotations returned; 0 missing from their papers.** Six scored under 1.00 and all six
+were hand-checked: every break is our own extractor losing a ligature or hyphen. **All six
+non-existent titles: *not found*, no quotations, no invented identifiers.** 16/16 correct
+identifiers. **The zero is bounded, not safe: 0 in 32 permits 8.9 %, 0 in 15 papers 18.1 %, 0 in 6
+nulls 39.3 %** — and 09-12's failure was on a reachable arXiv preprint, so this is not an artefact
+of easy papers. 323 checks, tamper-tested. **Four of six predictions refuted; P2's confirmation is
+empty; P5's test was wrong (§4.10).**
 
-**Session 155, `artifacts/cycle-003/2026-09-08-complete-and-empty/` (compressed 09-11, 09-12, 09-13).**
-**The atlas is 100 % complete on `decisive_move`, the screen flags 40.5 %, and the flags had one
-address** — one provenance of five supplies 188 of 521 works, 187 trip the screen, 0 of 333 elsewhere
-trip the strict limb. Completeness is a **denominator convention**. *Superseded 09-12: not a
-hollowness detector (§4.6).*
+### Cycle 003 (2026-09-07 – 2026-09-13) — PRESENTED, `presentations/cycle-003/`
 
-**Session 156, `artifacts/cycle-003/2026-09-09-the-denominator/`.** The cycle's outside session
-(§5.2.3): a census of other people's completeness measurements, answering question 45 against us
-(§4.7). Its checker failure — a lie written into the generator — is **closed 09-12**.
-
-**Session 157, `artifacts/cycle-003/2026-09-11-does-it-travel/` (compressed 09-12, 09-13).** The
-frozen screen, imported not copied, carried as a census to Cleveland (68,771), data.gov.uk (67,975)
-and govdata.de (146,492), plus the atlas and the Art Institute of Chicago, where **K1 fired**.
-**Four of seven refuted.** *The premise does not travel*: Cleveland is 31.74 % complete — two API
-offsets are not a sample. **Question 44's first limb answered** (§4.6). **Decisive: against a blind
-reader the screen is mostly false alarm** — 5 of 60 called empty, 31 flagged; κ **0.0919**,
-**precision 0.129**. R4 is a relation between a value and its catalogue, invisible to a reader of one
-value: **our audit could not validate a rule it scored against.** 21 defects taken off by an
-adversary. R3's English limb fires 1.27 % (UK) against 0.01 % (DE) — *it under-detects abroad*.
-
-**Session 158, `artifacts/cycle-003/2026-09-12-what-a-description-is-for/` (compressed 09-13).**
-Replaced the reader's *opinion* with a **task** shaped like the rule 157 could not validate: blank
-every word the record's own title contains, then pick the record from five candidates of its own
-catalogue (chance 20 %). Both arms censused — atlas (521), data.gov.uk (68,017, 98.81 % filled); 60
-held-out items each, three blind readers. **The task is too easy, and that is the result.** 95.00 %
-home, 93.33 % abroad; **27 of 29** flagged values still identify their record; **precision 0.069**,
-half of 157's. Abroad the sign reverses, gap **−6.67**. Four of seven refuted, one confirmation
-vacuous, one unevaluable. **The unifying finding, measured not asserted:** the model-free instrument
-reads 16.51 % at 521 records and **62.17 % at 67,205 on one unchanged corpus** — *identifying power
-is a property of a description **and a room***; at matched size the atlas/UK gap is ~17-fold, not
-65-fold. **Question 44's second limb closed against us** (§4.6). Eleven defects, three an
-adversary's, which **broke the checker twice** — both closed, 4,344 checks, and it now states that
-**R4 is not verifiable from the repository at all**. **R4 fires on 4.84 % of data.gov.uk at 521
-records and 30.92 % at 67,205 — factor 6.39**, so the screen is *more* size-dependent than the
-instrument. And **P4 was decided by the census before a label was read** (κ identically 0).
-
-**Session 159, `presentations/cycle-003/` — the cycle is PRESENTED (168 checks).** *The answer: every
-measure of missingness we built is a statement about something other than the text — a schema's
-declared cells, the size of the room, an upstream supplier. A description is empty or full only with
-respect to conventions someone chose.* **Pre-registered: the room ladder travels.** govdata.de,
-census 156,003, `notes` 97.53 %, nine rungs: **52.78 % → 79.43 %**, no fall at any step, another
-language, a corpus we did not build. **3 of 6 refuted, usefully:** the *ratio* does not transfer
-(×1.50 against the UK's ×3.77; in points 26.65 against 45.66) — a multiplicative summary is wrong
-across such different base rates. **P2 holds the claim open:** at 521 records govdata still fails on
-52.78 % against the atlas's 0.96 % — *the room moves the reading, it does not produce it*. **P6, a
-control on our own code, fired and the bar was ours** (0.05 points between a 5-draw mean and a
-census); in standard errors the size-free rules sit ≤ 1.49 from the population, narrowing 25.06.
-Verdict left as written, bar filed as a defect. **Post-hoc: the agreement matrix corrects us (§4.6).**
+*The first seeded question, `seed-20260907-220129-aa5f`: **Missing Data Art**. Compressed hard
+09-14; every figure lives in its artifact.* **The answer: every measure of missingness we built is a
+statement about something other than the text** — a schema's declared cells, the size of the room,
+an upstream supplier. A description is empty or full only with respect to conventions someone chose.
+Five sessions, four of them refutations of our own predictions. (155) The atlas is 100 % complete on
+`decisive_move` and the screen flags 40.5 % — **and the flags had one address**, one provenance of
+five supplying 188 of 521 works. (156) The outside session (§5.2.3): a census of other people's
+completeness measurements, answering question 45 against us (§4.7). (157) The frozen screen carried
+to three catalogues we did not build; **against a blind reader it is mostly false alarm** — κ
+**0.0919**, precision **0.129** — and **our audit could not validate the rule it scored against**.
+(158) Reader's opinion replaced by a **task**; it proved too easy — 95.00 % home, 93.33 % abroad,
+**27 of 29** flagged values still identify their record. **The finding that survived:** the
+model-free instrument reads **16.51 % at 521 records and 62.17 % at 67,205 on one unchanged
+corpus** — *identifying power is a property of a description **and a room***. (159, the
+presentation, 168 checks) **Pre-registered, the ladder travels:** govdata.de, census **156,003**,
+nine rungs, **52.78 % → 79.43 %**, no fall at any step, another language. **3 of 6 refuted,
+usefully:** the *ratio* does not transfer (×1.50 against ×3.77; in points 26.65 against 45.66). **At
+521 records govdata still fails on 52.78 % against the atlas's 0.96 % — the room moves the reading,
+it does not produce it.** A control on our own code fired and **the bar was ours**; verdict left as
+written, bar filed as a defect. **Post-hoc: the agreement matrix corrects us (§4.6).**
 
 ### Cycle 002 (2026-09-03 – 2026-09-07) — closed, `presentations/cycle-002/`
 
@@ -203,6 +187,11 @@ source and cite the passage — **09-12 shows a delegate will hand you a passage
    attributed a method to five named authors who do not use it. Open: how much of "the literature" an
    automated reader is let through to; how much of what we call *unreachable* is our own request; and
    **what it is *given* that was never there — a refusal announces itself, a fabrication does not.**
+   **09-14 gives the last limb a rate:** 0 of 32 delegated quotations missing from their papers, 0 of
+   6 non-existent titles confabulated. **A zero is bounded, not safe** — 8.9 % still stands, the
+   protocol's cite-the-passage rule is untouched, and the audit is **structurally blind wherever a
+   source is closed**, which is where the risk is. That night the refusal was **ours**: the arXiv API
+   answered 429 to every request from our egress while the site answered 200.
 9. **Counter-measurement questions, live with the remit:** is the unresolved share still rising? Do
    the 13 doors still refuse from another network? Is the hidden-prompt population still zero?
    **Nobody written to** — through all of cycle 003.
@@ -215,4 +204,11 @@ source and cite the passage — **09-12 shows a delegate will hand you a passage
    pre-registration repeated an opener-list miscount (28, not 30) filed against the previous one.
    **09-13:** the κ-range sentence (§4.6), and a control whose bar demanded a 5-draw mean match a
    census to 0.05 points — the second unreachable bar in three sessions, so **check a bar against its
-   own sampling error before committing it**.
+   own sampling error before committing it**. **09-14:** the hedge-token test fired on five delegates
+   asserting their quotations were verbatim *rather than* paraphrased — it caught the opposite of its
+   target. Verdict left as written, test filed. **Three of the last four sessions have had a
+   pre-registered mechanical test fire on something other than what it was written for**: that is now
+   a finding about this practice, not an accident. Pre-registration stops reasoning after the fact; it
+   does not stop a bad test, and an automated loop has nobody to catch one before it runs. Also filed:
+   `tools/completeness-census/pdftext.py` silently loses ligatures in PDFs that do not encode them as
+   ligature characters, producing 09-14's only false accusation.
