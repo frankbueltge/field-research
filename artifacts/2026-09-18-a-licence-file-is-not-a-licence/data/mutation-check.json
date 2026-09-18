@@ -1,7 +1,7 @@
 {
  "note": "Each rule broken on purpose; a mutation no hand-made case notices is a hole in the case list. Run before any repository blob was read.",
  "baseline_failures": [],
- "n_mutants": 25,
+ "n_mutants": 27,
  "n_survived": 1,
  "expected_survivors": [
   "norm/no-quote-fold"
@@ -161,15 +161,39 @@
    "expected_to_survive": false
   },
   {
+   "mutant": "notice/any-mention-counts",
+   "n_caught": 2,
+   "caught_by": [
+    "L2/mit-boilerplate-is-not-a-notice",
+    "L2/mit-boilerplate-template-is-placeholder"
+   ],
+   "survived": false,
+   "expected_to_survive": false
+  },
+  {
+   "mutant": "notice/never-a-notice",
+   "n_caught": 14,
+   "caught_by": [
+    "L2/mit-named",
+    "L2/mit-placeholder-angle",
+    "L2/mit-placeholder-square",
+    "L2/mit-placeholder-brace",
+    "L2/mit-yyyy-word",
+    "L2/year-only-no-holder"
+   ],
+   "survived": false,
+   "expected_to_survive": false
+  },
+  {
    "mutant": "placeholder/never-fires",
-   "n_caught": 6,
+   "n_caught": 8,
    "caught_by": [
     "L2/mit-placeholder-angle",
     "L2/mit-placeholder-square",
     "L2/mit-placeholder-brace",
     "L2/mit-yyyy-word",
-    "HEAD/mit-template-does-not",
-    "APX/unfilled"
+    "L2/mit-boilerplate-is-not-a-notice",
+    "L2/mit-boilerplate-template-is-placeholder"
    ],
    "survived": false,
    "expected_to_survive": false
@@ -185,7 +209,7 @@
   },
   {
    "mutant": "placeholder/always-fires",
-   "n_caught": 9,
+   "n_caught": 10,
    "caught_by": [
     "L2/mit-named",
     "L2/holder-containing-yyyy-is-not-placeholder",
@@ -217,14 +241,14 @@
   },
   {
    "mutant": "L2/named-if-any-copyright-line",
-   "n_caught": 6,
+   "n_caught": 8,
    "caught_by": [
     "L2/mit-placeholder-angle",
     "L2/mit-placeholder-square",
     "L2/mit-placeholder-brace",
     "L2/mit-yyyy-word",
     "L2/year-only-no-holder",
-    "HEAD/mit-template-does-not"
+    "L2/mit-boilerplate-is-not-a-notice"
    ],
    "survived": false,
    "expected_to_survive": false

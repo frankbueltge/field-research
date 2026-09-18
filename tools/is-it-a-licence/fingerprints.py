@@ -227,6 +227,22 @@ PLACEHOLDER_WORDS = ["yyyy", "xxxx", "yyy", "nnnn"]
 _WORD_RE = re.compile(r"(?i)(?<![a-z0-9])(" + "|".join(PLACEHOLDER_WORDS) + r")(?![a-z0-9])")
 
 _COPYRIGHT_LINE = re.compile(r"(?i)\bcopyright\b")
+# A NOTICE, not a sentence that happens to contain the word. Added 2026-09-18 after the
+# first build run: MIT's own boilerplate — "The above copyright notice and this permission
+# notice shall be included in all copies" — was being read as a copyright line with a
+# holder, so every MIT file scored 'named' whether or not its real notice was filled in.
+# 78 fixtures and 25 mutants passed over that defect; what caught it was disbelieving a
+# result of 67 out of 67. A notice's word must begin the line, after comment marks.
+_NOTICE_START = re.compile(
+    r"(?i)^[\s#*/;%!<>\-=_|\.'\"\[]*(copyright\b|copr\.|\(c\)|\u00a9|&copy;)"
+)
+# Second defect in the same rule, found the same night by hand-reading the output:
+# the Apache-2.0 text wraps a sentence so that a line BEGINS "copyright notice that
+# is included in or attached to the work", which the rule above read as a notice
+# whose holder is "notice that is included in or attached to the work". After the
+# keyword a real notice continues with (c), the symbol, a year, a bracket, or a
+# capital; prose continues with a lowercase word.
+_NOTICE_TAIL = re.compile(r"^[\s,\.:\-]*(\(c\)|\u00a9|&copy;|(19|20)\d{2}|[\[<{]|[A-Z0-9])")
 # Leading matter stripped from a copyright line before asking whether a holder is left.
 _STRIP = re.compile(
     r"(?i)^[\s#*/;%!<>\-=_|\.]*"          # comment and rule characters
@@ -237,9 +253,22 @@ _YEARS = re.compile(r"(?i)\b(19|20)\d{2}\b(\s*[-–,]\s*((19|20)\d{2}|present|no
 _TAIL = re.compile(r"(?i)\ball rights reserved\b\.?")
 
 
+def is_copyright_notice(line: str) -> bool:
+    """True for a copyright NOTICE, false for prose that mentions copyright."""
+    m = _NOTICE_START.match(line.strip())
+    if not m:
+        return False
+    return bool(_NOTICE_TAIL.match(line.strip()[m.end():]))
+
+
+def mentions_copyright(line: str) -> bool:
+    """True for any line carrying the word. Kept for the record; not used by L2."""
+    return bool(_COPYRIGHT_LINE.search(line))
+
+
 def copyright_lines(raw_text: str):
-    """Every line of the file that carries the word 'copyright', in file order."""
-    return [ln.strip() for ln in raw_text.splitlines() if _COPYRIGHT_LINE.search(ln)]
+    """Every copyright NOTICE in the file, in file order."""
+    return [ln.strip() for ln in raw_text.splitlines() if is_copyright_notice(ln)]
 
 
 def holder_of(line: str) -> str:

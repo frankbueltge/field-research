@@ -24,6 +24,12 @@ BSD_COMMON = ('Redistribution and use in source and binary forms, with or withou
 BSD3_CLAUSE = ('3. Neither the name of the copyright holder nor the names of its contributors\n'
                '   may be used to endorse or promote products derived from this software\n'
                '   without specific prior written permission.\n')
+MIT_FULL_TEMPLATE = ('MIT License\n\nCopyright (c) [year] [fullname]\n\n'
+                     'Permission is hereby granted, free of charge, to any person obtaining a copy\n'
+                     'of this software and associated documentation files (the "Software"), to deal\n'
+                     'in the Software without restriction.\n\n'
+                     'The above copyright notice and this permission notice shall be included in all\n'
+                     'copies or substantial portions of the Software.\n')
 BSD4_CLAUSE = ('3. All advertising materials mentioning features or use of this software\n'
                '   must display the following acknowledgement: This product includes software.\n')
 
@@ -168,6 +174,37 @@ CASES = [
         "# Copyright 2020 Acme Inc.\n" + MIT_HEAD.replace("Copyright (c) 2023 Jane Doe\n", ""), ["MIT"]), "named"),
     ("L2/range-of-years", "must", lambda: rules.l2_attribution(
         MIT_HEAD.replace("2023 Jane Doe", "2019-2024 Acme Inc."), ["MIT"]), "named"),
+    # Added 2026-09-18 AFTER the first build run, which these cases would have caught and
+    # did not exist to catch: a sentence that mentions copyright is not a copyright notice.
+    ("L2/mit-boilerplate-is-not-a-notice", "must-not", lambda: rules.l2_attribution(
+        MIT_FULL_TEMPLATE, ["MIT"]), "named"),
+    ("L2/mit-boilerplate-template-is-placeholder", "must", lambda: rules.l2_attribution(
+        MIT_FULL_TEMPLATE, ["MIT"]), "placeholder"),
+    ("L2/mit-boilerplate-filled-is-named", "must", lambda: rules.l2_attribution(
+        MIT_FULL_TEMPLATE.replace("[year] [fullname]", "2024 Acme Inc."), ["MIT"]), "named"),
+    ("NOTICE/prose-line", "must-not", lambda: fp.is_copyright_notice(
+        "The above copyright notice and this permission notice shall be included"), True),
+    ("NOTICE/definition-line", "must-not", lambda: fp.is_copyright_notice(
+        '"Licensor" shall mean the copyright owner or entity authorized by the owner'), True),
+    ("NOTICE/jurisdiction-line", "must-not", lambda: fp.is_copyright_notice(
+        "In jurisdictions that recognize copyright laws, the author dedicates"), True),
+    ("NOTICE/plain", "must", lambda: fp.is_copyright_notice("Copyright 2024 Acme"), True),
+    ("NOTICE/comment-prefixed", "must", lambda: fp.is_copyright_notice("# Copyright 2024 Acme"), True),
+    ("NOTICE/c-comment-prefixed", "must", lambda: fp.is_copyright_notice(" * Copyright (c) 2024 Acme"), True),
+    ("NOTICE/symbol-only", "must", lambda: fp.is_copyright_notice("(c) 2024 Acme Inc."), True),
+    ("NOTICE/copr", "must", lambda: fp.is_copyright_notice("Copr. 2024 Acme"), True),
+    ("NOTICE/no-copyright-word", "must-not", lambda: fp.is_copyright_notice("2024 Acme Inc."), True),
+    # Added after the second defect in the same rule, found by hand-reading the output.
+    ("NOTICE/apache-wrapped-prose", "must-not", lambda: fp.is_copyright_notice(
+        "copyright notice that is included in or attached to the work"), True),
+    ("NOTICE/no-year-but-capital", "must", lambda: fp.is_copyright_notice(
+        "Copyright Contributors to the OpenVDB Project"), True),
+    ("NOTICE/bracketed-template", "must", lambda: fp.is_copyright_notice(
+        "Copyright [yyyy] [name of copyright owner]"), True),
+    ("NOTICE/angle-template", "must", lambda: fp.is_copyright_notice(
+        "Copyright (c) <year> <copyright holders>"), True),
+    ("NOTICE/lowercase-prose-after-symbol", "must-not", lambda: fp.is_copyright_notice(
+        "copyright and related rights in the work are dedicated to the public domain"), True),
     ("L2/not-applicable-gpl", "must", lambda: rules.l2_attribution("x", ["GPL-3.0"]), None),
     ("L2/not-applicable-apache", "must", lambda: rules.l2_attribution("x", ["Apache-2.0"]), None),
     ("L2/not-applicable-unidentified", "must", lambda: rules.l2_attribution("x", []), None),

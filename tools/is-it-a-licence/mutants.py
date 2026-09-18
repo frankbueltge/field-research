@@ -135,6 +135,16 @@ def _mut_l1_skips_empty_check():
     rules.l1_families = f
 
 
+def _mut_notice_is_any_mention():
+    """The defect that survived 78 fixtures and 25 mutants on the first run."""
+    rules.copyright_lines = lambda raw: [
+        l.strip() for l in (raw or "").splitlines() if fp.mentions_copyright(l)]
+
+
+def _mut_notice_never():
+    rules.copyright_lines = lambda raw: []
+
+
 def _mut_placeholder_never():
     rules.has_placeholder = lambda line: False
 
@@ -240,6 +250,8 @@ MUTANTS = [
     ("L1/ignore-requires-all", _mut_l1_ignore_requires_all),
     ("L1/prefix-match-only", _mut_l1_prefix_match),
     ("L1/no-empty-check", _mut_l1_skips_empty_check),
+    ("notice/any-mention-counts", _mut_notice_is_any_mention),
+    ("notice/never-a-notice", _mut_notice_never),
     ("placeholder/never-fires", _mut_placeholder_never),
     ("placeholder/bare-word-substring", _mut_placeholder_bare_substring),
     ("placeholder/always-fires", _mut_placeholder_always),

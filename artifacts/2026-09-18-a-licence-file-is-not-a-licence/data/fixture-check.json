@@ -1,7 +1,7 @@
 {
  "note": "Hand-made cases for every rule of session 163, run before any repository blob was read. A fixture checks that a rule computes what its author says, never that the author wrote the right sentence.",
- "n_cases": 78,
- "n_pass": 78,
+ "n_cases": 95,
+ "n_pass": 95,
  "n_fail": 0,
  "cases": [
   {
@@ -591,6 +591,142 @@
    "kind": "must",
    "expected": "named",
    "got": "named",
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "L2/mit-boilerplate-is-not-a-notice",
+   "kind": "must-not",
+   "forbidden": "named",
+   "got": "placeholder",
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "L2/mit-boilerplate-template-is-placeholder",
+   "kind": "must",
+   "expected": "placeholder",
+   "got": "placeholder",
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "L2/mit-boilerplate-filled-is-named",
+   "kind": "must",
+   "expected": "named",
+   "got": "named",
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/prose-line",
+   "kind": "must-not",
+   "forbidden": true,
+   "got": false,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/definition-line",
+   "kind": "must-not",
+   "forbidden": true,
+   "got": false,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/jurisdiction-line",
+   "kind": "must-not",
+   "forbidden": true,
+   "got": false,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/plain",
+   "kind": "must",
+   "expected": true,
+   "got": true,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/comment-prefixed",
+   "kind": "must",
+   "expected": true,
+   "got": true,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/c-comment-prefixed",
+   "kind": "must",
+   "expected": true,
+   "got": true,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/symbol-only",
+   "kind": "must",
+   "expected": true,
+   "got": true,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/copr",
+   "kind": "must",
+   "expected": true,
+   "got": true,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/no-copyright-word",
+   "kind": "must-not",
+   "forbidden": true,
+   "got": false,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/apache-wrapped-prose",
+   "kind": "must-not",
+   "forbidden": true,
+   "got": false,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/no-year-but-capital",
+   "kind": "must",
+   "expected": true,
+   "got": true,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/bracketed-template",
+   "kind": "must",
+   "expected": true,
+   "got": true,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/angle-template",
+   "kind": "must",
+   "expected": true,
+   "got": true,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/lowercase-prose-after-symbol",
+   "kind": "must-not",
+   "forbidden": true,
+   "got": false,
    "pass": true,
    "error": null
   },
