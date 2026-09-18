@@ -45,7 +45,8 @@ whether its real notice was filled in or not.
 
 **100 hand-made test cases and 27 deliberate mutations of the rules all passed over it.** What
 caught it was disbelieving a result of 67 out of 67. Two more defects in the same rule followed,
-both found the same way — by reading an output that looked wrong:
+both found the same way — by reading an output that looked wrong (the run between the second and
+third repairs is kept at `data/data-run2-before-third-repair.json`):
 
 - Apache-2.0 wraps a sentence so a line *begins* "copyright notice that is included in or
   attached to the work", read as a notice held by *"notice that is included in or attached to the

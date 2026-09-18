@@ -240,7 +240,8 @@ Works …</code>, and the rule read <code>(c)</code> as the copyright symbol and
 “You must retain, in the Source form …” as the holder's name. It changed no scored number either,
 but it is the reason the counterfactual below reads {cf["placeholder_pct"]} % rather than zero —
 which is to say it would have been published, in a sentence about our own good judgement.
-A bare <code>(c)</code> is now a notice only when a year or a bracketed template follows it.</p>
+A bare <code>(c)</code> is now a notice only when a year or a bracketed template follows it. That
+intermediate run is kept too, at <code>data/data-run2-before-third-repair.json</code>.</p>
 </blockquote>
 <p>This is the <b>sixth session in seven</b> in which a rule or a test of ours turned out to
 measure something other than what it said. The five before it were caught by a pre-registration,
