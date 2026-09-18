@@ -413,12 +413,11 @@
    "note": "What the L2 numbers would have read had amendment 1 NOT struck the Apache-2.0 appendix from the scored set. Computed after the fact, to show what the amendment bought. Shipping the appendix unedited is the normal way to apply Apache-2.0, so this counterfactual would have measured a convention and published it as an absence.",
    "n": 102,
    "counts": {
-    "placeholder": 22,
+    "named": 95,
     "no_holder": 3,
-    "named": 73,
     "no_copyright_line": 4
    },
-   "placeholder_pct": 21.6,
+   "placeholder_pct": 0.0,
    "actual_placeholder_pct": 0.0,
    "apache_files_with_an_unfilled_appendix": 31
   },
@@ -480,8 +479,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -608,8 +607,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -654,8 +653,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "d1bd22fb753ba289b4b7d9429e84819114e0567c193c93fa869f724a22ff143a",
@@ -698,8 +697,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -812,8 +811,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -861,8 +860,8 @@
      ],
      "delivers": true,
      "reason": "identified_and_attributed",
-     "n_copyright_lines": 5,
-     "n_named_copyright_lines": 5,
+     "n_copyright_lines": 7,
+     "n_named_copyright_lines": 7,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "9db277e34fc113e8b7b19cf66d1e077332d10e695e37644ffa14a0d66bac7ea7",
@@ -928,8 +927,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "8ca2ba5b632e621921f8bd91ac07df7135a2a4c0c4b1247d8cd721c72e1fb951",
@@ -1207,8 +1206,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -1339,8 +1338,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -1429,8 +1428,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -1450,8 +1449,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -1588,8 +1587,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -1726,8 +1725,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright {yyyy} {name of copyright owner}"
      ],
@@ -1793,8 +1792,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -1886,8 +1885,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "5d918028533f6fc0c9d5efab85bf6bd2e6d2dfea0be98d95be109722018cf193",
@@ -1926,8 +1925,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 0,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 1,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "69849221bfb90053de2134ef5e6d540287b4b98062326492f1f96f5da685524b",
@@ -2017,8 +2016,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -2223,8 +2222,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "15282035e6a837425814340eb43d8a1771f3a1791f714ba8aacfefd886a3e7d5",
@@ -2405,8 +2404,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "bb98ec0b4b511f823df895f820b8328465887f11accbdb30f49222e2134182ea",
@@ -2424,8 +2423,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -2576,8 +2575,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "db6bed86e819d40cae566915a0d9c1840b490f33868499d711e2d31f0b84dfe9",
@@ -2806,8 +2805,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "7da7c1fd9f2c66c4ee6f5cb72abf36b8520964ed364dc516655051c87ce316c5",
@@ -2938,8 +2937,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 2,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 3,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [
       "Copyright {yyyy} {name of copyright owner}"
      ],
@@ -3205,8 +3204,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -3341,8 +3340,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -3459,8 +3458,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -3480,8 +3479,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "b208c52b00a2df2c8f4c3298c34407bf2bfe409968213372251c91fcc737a1a5",
@@ -3499,8 +3498,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -3846,8 +3845,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -3892,8 +3891,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "f6d017c0c6fa3d1bf006d8480d83474094f5430e7577b4f48d504772475469df",
@@ -3936,8 +3935,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "05f6c56262449e8d3fbefbc4fe957450348ce0be043b46c608f8aa36b85bf0f0",
@@ -3980,8 +3979,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -4273,8 +4272,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "7bf87833b51f124a3658820bb315bf0ef3bb0b7f9afc218781d408e3aa5ba863",
@@ -4789,8 +4788,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -4879,8 +4878,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -5129,8 +5128,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -5333,8 +5332,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -5379,8 +5378,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -5446,8 +5445,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -5624,8 +5623,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -5670,8 +5669,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -5691,8 +5690,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -5737,8 +5736,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "d87e304f234d6c913277e3d99e27faa45ede3cafa105e55a79dee86730018c13",
@@ -5873,8 +5872,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "6ad6353ec71a92944b5e97adc783c01564044eee65e628a04efc8505db9506f8",
@@ -5917,8 +5916,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "b32e673f0c7d29a4aaddbe007e444e2e30b7b291007fc6bd30afa04ef1cdf6b9",
@@ -6029,8 +6028,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -6075,8 +6074,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 0,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 1,
      "placeholder_lines": [
       "Copyright [yyyy] [name of copyright owner]"
      ],
@@ -6139,8 +6138,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "0dc1811264bb76e119d3f58a8e775d79abeb1708c9486d3861354c1688062350",
@@ -6368,8 +6367,8 @@
      ],
      "delivers": true,
      "reason": "identified_and_attributed",
-     "n_copyright_lines": 11,
-     "n_named_copyright_lines": 11,
+     "n_copyright_lines": 12,
+     "n_named_copyright_lines": 12,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "4186bcadf358c60080060309769db6b2a352720d7353d827bb574c600fee9913",
@@ -6959,8 +6958,8 @@
      "scored_family": [],
      "delivers": true,
      "reason": "identified_attribution_not_applicable",
-     "n_copyright_lines": 1,
-     "n_named_copyright_lines": 1,
+     "n_copyright_lines": 2,
+     "n_named_copyright_lines": 2,
      "placeholder_lines": [],
      "apache_appendix_unfilled": false,
      "sha256_on_0916": "976b9dfcde26ce910e6af40a1a7cb9dffe94caf3b40f6c6970dd4ec86991ae46",

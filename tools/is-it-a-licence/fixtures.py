@@ -205,6 +205,18 @@ CASES = [
         "Copyright (c) <year> <copyright holders>"), True),
     ("NOTICE/lowercase-prose-after-symbol", "must-not", lambda: fp.is_copyright_notice(
         "copyright and related rights in the work are dedicated to the public domain"), True),
+    # Added after the THIRD defect in the same rule, found the same way as the other two.
+    ("NOTICE/apache-list-marker", "must-not", lambda: fp.is_copyright_notice(
+        "(c) You must retain, in the Source form of any Derivative Works that You "
+        "distribute, all copyright, patent, trademark, and attribution notices"), True),
+    ("NOTICE/paren-c-with-year", "must", lambda: fp.is_copyright_notice("(c) 2024 Acme Inc."), True),
+    ("NOTICE/paren-c-with-template", "must", lambda: fp.is_copyright_notice("(c) [year] [fullname]"), True),
+    ("NOTICE/symbol-with-name", "must", lambda: fp.is_copyright_notice("\u00a9 Acme Ltd"), True),
+    ("APACHE/canon-has-exactly-one-notice", "must", lambda: len(rules.copyright_lines(
+        "TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n"
+        "(c) You must retain, in the Source form of any Derivative Works that You distribute,\n"
+        "APPENDIX: How to apply the Apache License to your work.\n"
+        "Copyright [yyyy] [name of copyright owner]\n")), 1),
     ("L2/not-applicable-gpl", "must", lambda: rules.l2_attribution("x", ["GPL-3.0"]), None),
     ("L2/not-applicable-apache", "must", lambda: rules.l2_attribution("x", ["Apache-2.0"]), None),
     ("L2/not-applicable-unidentified", "must", lambda: rules.l2_attribution("x", []), None),

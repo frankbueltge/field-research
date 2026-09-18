@@ -172,7 +172,7 @@
   },
   {
    "mutant": "notice/never-a-notice",
-   "n_caught": 14,
+   "n_caught": 15,
    "caught_by": [
     "L2/mit-named",
     "L2/mit-placeholder-angle",

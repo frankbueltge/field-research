@@ -239,6 +239,13 @@ def main(harvest_path, prior_path, out_path):
                      "holds — the file-level shadow of what Wolter et al. measure with a scanner",
             "examples": [],
         },
+        "amendment_1_counterfactual": {
+            "note": "What the L2 numbers would have read had amendment 1 NOT struck the "
+                    "Apache-2.0 appendix from the scored set. Computed after the fact, to show "
+                    "what the amendment bought. Shipping the appendix unedited is the normal "
+                    "way to apply Apache-2.0, so this counterfactual would have measured a "
+                    "convention and published it as an absence.",
+        },
         "run1_defective_L2": {
             "note": "The first build of this session scored L2 with a rule that counted MIT's "
                     "own boilerplate sentence as a copyright notice. It is kept at "
@@ -258,6 +265,34 @@ def main(harvest_path, prior_path, out_path):
     blk["n"] = len(mv)
     blk["examples"] = [{"repo": r["repo"], "root": root_families(r), "tree": r["voices"]}
                        for r in short_root]
+    ALL_SCORED = SCORED_FAMILIES | {"Apache-2.0"}
+
+    def att_if_apache_scored(r):
+        vs = []
+        for f in r["files"]:
+            if not (set(f["families"]) & ALL_SCORED):
+                continue
+            if f["n_named_copyright_lines"]:
+                vs.append("named")
+            elif f["placeholder_lines"]:
+                vs.append("placeholder")
+            elif f["n_copyright_lines"]:
+                vs.append("no_holder")
+            else:
+                vs.append("no_copyright_line")
+        for v in ("named", "placeholder", "no_holder", "no_copyright_line"):
+            if v in vs:
+                return v
+        return None
+    cf_repos = [r for r in D1 if att_if_apache_scored(r) is not None]
+    cf = Counter(att_if_apache_scored(r) for r in cf_repos)
+    post_hoc["amendment_1_counterfactual"].update({
+        "n": len(cf_repos), "counts": dict(cf),
+        "placeholder_pct": pct(cf.get("placeholder", 0), len(cf_repos)),
+        "actual_placeholder_pct": pct(n_placeholder, n_scored),
+        "apache_files_with_an_unfilled_appendix":
+            sum(1 for r in repos for f in r["files"] if f["apache_appendix_unfilled"]),
+    })
     blk["permissive_root_over_reciprocal_below"] = {
         "k": len(perm_over_rec), "n_D1": n1,
         "repos": [{"repo": r["repo"], "root": root_families(r),
@@ -365,6 +400,8 @@ def main(harvest_path, prior_path, out_path):
           "multi-family repositories")
     print("post hoc: permissive root over a reciprocal family below:",
           blk["permissive_root_over_reciprocal_below"]["k"], "of", n1)
+    print("post hoc: amendment-1 counterfactual:", ph["amendment_1_counterfactual"]["counts"],
+          "->", ph["amendment_1_counterfactual"]["placeholder_pct"], "% placeholder")
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 {
  "note": "Hand-made cases for every rule of session 163, run before any repository blob was read. A fixture checks that a rule computes what its author says, never that the author wrote the right sentence.",
- "n_cases": 95,
- "n_pass": 95,
+ "n_cases": 100,
+ "n_pass": 100,
  "n_fail": 0,
  "cases": [
   {
@@ -727,6 +727,46 @@
    "kind": "must-not",
    "forbidden": true,
    "got": false,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/apache-list-marker",
+   "kind": "must-not",
+   "forbidden": true,
+   "got": false,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/paren-c-with-year",
+   "kind": "must",
+   "expected": true,
+   "got": true,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/paren-c-with-template",
+   "kind": "must",
+   "expected": true,
+   "got": true,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "NOTICE/symbol-with-name",
+   "kind": "must",
+   "expected": true,
+   "got": true,
+   "pass": true,
+   "error": null
+  },
+  {
+   "id": "APACHE/canon-has-exactly-one-notice",
+   "kind": "must",
+   "expected": 1,
+   "got": 1,
    "pass": true,
    "error": null
   },

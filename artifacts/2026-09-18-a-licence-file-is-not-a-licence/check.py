@@ -306,6 +306,54 @@ def main():
         "the preserved first run really reads 67 of 67 named")
     chk(r1["headline"]["n"] == H["n"], "both runs share a denominator")
 
+    cf = ph["amendment_1_counterfactual"]
+    ALL_SCORED = SCORED | {"Apache-2.0"}
+
+    def att_cf(r):
+        vs = []
+        for f in r["files"]:
+            if not (set(f["families"]) & ALL_SCORED):
+                continue
+            vs.append("named" if f["n_named_copyright_lines"] else
+                      "placeholder" if f["placeholder_lines"] else
+                      "no_holder" if f["n_copyright_lines"] else "no_copyright_line")
+        for v in order:
+            if v in vs:
+                return v
+        return None
+    cf_repos = [r for r in D1 if att_cf(r) is not None]
+    cfc = {}
+    for r in cf_repos:
+        cfc[att_cf(r)] = cfc.get(att_cf(r), 0) + 1
+    chk(cf["n"] == len(cf_repos), "counterfactual denominator")
+    chk(cf["counts"] == cfc, "counterfactual verdict counts")
+    chk(close(cf["placeholder_pct"], pct(cfc.get("placeholder", 0), len(cf_repos))),
+        "counterfactual placeholder share")
+    chk(close(cf["actual_placeholder_pct"], L2["placeholder_pct"]),
+        "counterfactual records the actual share beside it")
+    chk(cf["placeholder_pct"] > L2["placeholder_pct"],
+        "the amendment can only have lowered the placeholder share")
+    ap = d["apache_appendix_unfilled_not_scored"]
+    chk(ap["k"] == sum(1 for r in D1 if r["apache_appendix_unfilled"]), "Apache appendix count")
+    chk(ap["n"] == sum(1 for r in D1 if "Apache-2.0" in r["voices"]), "Apache denominator")
+    chk(ap["k"] <= ap["n"], "Apache appendix count within its denominator")
+    chk(cf["apache_files_with_an_unfilled_appendix"] ==
+        sum(1 for r in R for f in r["files"] if f["apache_appendix_unfilled"]),
+        "Apache appendix file count")
+
+    # ---- the page says what the data says --------------------------------
+    page = open(os.path.join(HERE, "index.html")).read()
+    chk("<script" not in page, "the page carries no script")
+    chk("http://" not in page and 'href="http' not in page and "src=" not in page,
+        "the page fetches nothing")
+    for s_ in (f'{H["pct"]} %', f'{rt["pct"]} %', f'{L2["placeholder_pct"]} %',
+               str(L2["counts"].get("named", 0)), str(c["n_licence_shaped_files_all"]),
+               str(cf["placeholder_pct"])):
+        chk(s_ in page, f"the page states {s_!r}")
+    for pid in ("P1", "P2", "P3", "P4", "P5", "P6"):
+        chk(pid in page, f"the page lists {pid}")
+    chk(str(ap["k"]) in page and str(ap["n"]) in page, "the page states the Apache figures")
+
     # ---- 11 retrievability ------------------------------------------------
     rr = d["retrievability"]
     chk(rr["doors_0918"] == sum(1 for r in R if r["door_ok"]), "doors answering tonight")

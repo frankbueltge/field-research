@@ -233,16 +233,22 @@ _COPYRIGHT_LINE = re.compile(r"(?i)\bcopyright\b")
 # holder, so every MIT file scored 'named' whether or not its real notice was filled in.
 # 78 fixtures and 25 mutants passed over that defect; what caught it was disbelieving a
 # result of 67 out of 67. A notice's word must begin the line, after comment marks.
-_NOTICE_START = re.compile(
-    r"(?i)^[\s#*/;%!<>\-=_|\.'\"\[]*(copyright\b|copr\.|\(c\)|\u00a9|&copy;)"
-)
-# Second defect in the same rule, found the same night by hand-reading the output:
-# the Apache-2.0 text wraps a sentence so that a line BEGINS "copyright notice that
-# is included in or attached to the work", which the rule above read as a notice
-# whose holder is "notice that is included in or attached to the work". After the
-# keyword a real notice continues with (c), the symbol, a year, a bracket, or a
-# capital; prose continues with a lowercase word.
-_NOTICE_TAIL = re.compile(r"^[\s,\.:\-]*(\(c\)|\u00a9|&copy;|(19|20)\d{2}|[\[<{]|[A-Z0-9])")
+_PREFIX = r"[\s#*/;%!<>\-=_|\.'\"\[]*"
+# The word form: Copyright / Copr. — a notice continues with (c), the symbol, a year,
+# a bracket or a capital; prose continues with a lowercase word. (Second defect, found
+# by hand-reading: Apache-2.0 wraps a sentence so a line BEGINS "copyright notice that
+# is included in or attached to the work".)
+_NOTICE_WORD = re.compile(_PREFIX + r"(copyright\b|copr\.)", re.I)
+_TAIL_WORD = re.compile(r"^[\s,\.:\-]*(\(c\)|\u00a9|&copy;|(19|20)\d{2}|[\[<{]|[A-Z0-9])")
+# The symbol form. "\u00a9" and "&copy;" take the same tail. The ASCII "(c)" does NOT:
+# it is also an enumerated list marker, and Apache-2.0 section 4(c) begins
+# "(c) You must retain, in the Source form of any Derivative Works ...", which the rule
+# above read as a notice held by "You must retain, in the Source form ...". Third defect
+# in this one rule, found the same way as the other two: by disbelieving an output.
+# So a bare "(c)" is a notice only when a year or a bracketed template follows it.
+_NOTICE_SYM = re.compile(_PREFIX + r"(\u00a9|&copy;)")
+_NOTICE_PAREN = re.compile(_PREFIX + r"\(c\)", re.I)
+_TAIL_PAREN = re.compile(r"^[\s,\.:\-]*((19|20)\d{2}|[\[<{])")
 # Leading matter stripped from a copyright line before asking whether a holder is left.
 _STRIP = re.compile(
     r"(?i)^[\s#*/;%!<>\-=_|\.]*"          # comment and rule characters
@@ -254,11 +260,14 @@ _TAIL = re.compile(r"(?i)\ball rights reserved\b\.?")
 
 
 def is_copyright_notice(line: str) -> bool:
-    """True for a copyright NOTICE, false for prose that mentions copyright."""
-    m = _NOTICE_START.match(line.strip())
-    if not m:
-        return False
-    return bool(_NOTICE_TAIL.match(line.strip()[m.end():]))
+    """True for a copyright NOTICE, false for prose or a list item."""
+    t = line.strip()
+    for head, tail in ((_NOTICE_WORD, _TAIL_WORD), (_NOTICE_SYM, _TAIL_WORD),
+                       (_NOTICE_PAREN, _TAIL_PAREN)):
+        m = head.match(t)
+        if m and tail.match(t[m.end():]):
+            return True
+    return False
 
 
 def mentions_copyright(line: str) -> bool:
