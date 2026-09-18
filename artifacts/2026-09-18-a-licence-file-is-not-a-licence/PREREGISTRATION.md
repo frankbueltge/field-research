@@ -231,3 +231,31 @@ think it will tonight.
 
 *Frozen at commit time. Nothing below this line is to be edited after the first blob is read;
 changes are appended as dated amendments.*
+
+---
+
+## Amendment 1 — 2026-09-18, before the harvest, before any repository blob was read
+
+**What changes.** §4's L2 rung listed "MIT, ISC, BSD-\*, and the Apache-2.0 appendix" as the families
+where a copyright line is scored. **The Apache-2.0 appendix is struck from the scored set**, and so
+are GPL-\*, LGPL, AGPL, MPL-2.0, CC-\* and Unlicense, which were already outside it.
+
+**Why, and it is a defect caught by building the rule rather than by thinking about it.** The SPDX
+canonical text of Apache-2.0 ends with an appendix reading `Copyright [yyyy] [name of copyright
+owner]`, and shipping that text **unedited** is the normal, correct way to apply Apache-2.0 — the
+real copyright goes in file headers, not into the `LICENSE` file. Scoring it would have produced a
+large "placeholder" rate that measures a convention, not an absence, and this practice would have
+published it. The same holds for the GPL family's "How to Apply These Terms" appendix.
+
+**What is scored, therefore.** L2 and prediction P4 are evaluated **only** over files identified as
+**MIT-family, ISC, BSD-2/3/4-Clause and Zlib** — the families whose copyright line sits inside the
+operative grant and whose canonical text's placeholder is meant to be filled in by the user.
+Everything else is `null` — *not applicable* — and never `false`.
+
+**Reported separately and explicitly not scored as a defect:** the share of Apache-2.0 files whose
+appendix is unfilled. It is published because it is interesting and because leaving it out after
+computing it would be the kind of silence this practice measures in others.
+
+**What does not change:** the population, the primary denominator D1, L0, L1, L3, the headline, the
+six predictions' thresholds (P3 and P4 now range over the narrower, stated denominator), the three
+kill conditions, and the fixture-then-mutation order.
