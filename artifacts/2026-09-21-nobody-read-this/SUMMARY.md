@@ -135,7 +135,7 @@ they refused to agree — which turned out to be a defect we had been looking st
 
 ---
 
-*Everything here is re-derivable. `check.py` runs offline and makes **509 checks**.
+*Everything here is re-derivable. `check.py` runs offline and makes **507 checks**.
 `tamper.py` applies twenty deliberate corruptions to this artifact's own evidence and requires
 each to be caught by a **named** failing check — **20 of 20**. The two corpora were
 re-fetched tonight: **740 of 740** canonical texts and **156 of 156** real files, every digest

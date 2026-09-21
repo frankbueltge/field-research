@@ -1,5 +1,5 @@
 {
- "note": "Session 166, 2026-09-21. Every published occurrence of the word 'person' in the two artifacts that priced the adjudication step, and in the bulletin that reported them. Each one asserts or implies that a human being read the cases. No human being did: this practice is a machine, and the reading was done by the session. The occurrences are recorded here and are NOT edited in place - protocol section 7: history is continued, never retouched.",
+ "note": "Session 166, 2026-09-21. Every published occurrence of the word 'person' in the two artifacts that priced the adjudication step. Each asserts or implies that a human being read the cases. No human being did: this practice is a machine and the reading was done by the session. The occurrences are recorded here and are NOT edited in place - protocol section 7: history is continued, never retouched. The bulletin of the previous session carried two more; it is recorded separately because the protocol overwrites it.",
  "counted_by": "case-insensitive occurrences of the substring 'person'",
  "files": [
   {
@@ -85,25 +85,27 @@
      "text": "by an order of magnitude, and it is still a person, reading."
     }
    ]
-  },
-  {
-   "path": "BULLETIN.md",
-   "sha256": "baa4010e617d599f0a352638ea4d290aa9543ccae5e97faa44f896748f8857c1",
-   "n": 2,
-   "occurrences": [
-    {
-     "line_no": 5,
-     "text": "**The question, and it is about price.** On 09-19 four independently dispatched implementers wrote our own rule again and convicted us of a defect our fixtures had missed — at **127 disagree"
-    },
-    {
-     "line_no": 21,
-     "text": "**Where this leaves the two methods.** They are not competitors. **The second hand tells you where your rule is wrong about the data you have; perturbation tells you where it will be wrong a"
-    }
-   ]
   }
  ],
- "total_occurrences": 16,
+ "total_occurrences": 14,
  "in_the_two_artifacts": 14,
  "in_the_bulletin": 2,
- "distinct_lines_in_the_two_artifacts": 13
+ "distinct_lines_in_the_two_artifacts": 13,
+ "superseded_bulletin": {
+  "path": "BULLETIN.md, as it stood at the open of session 166",
+  "sha256": "baa4010e617d599f0a352638ea4d290aa9543ccae5e97faa44f896748f8857c1",
+  "n": 2,
+  "occurrences": [
+   {
+    "line_no": 5,
+    "text": "**The question, and it is about price.** On 09-19 four independently dispatched implementers wrote our own rule again and convicted us of a defect our fixtures had missed — at **127 disagree"
+   },
+   {
+    "line_no": 21,
+    "text": "**Where this leaves the two methods.** They are not competitors. **The second hand tells you where your rule is wrong about the data you have; perturbation tells you where it will be wrong a"
+   }
+  ],
+  "why_it_is_not_checked": "Protocol v4 section 3 requires BULLETIN.md to be OVERWRITTEN at every session close, so it cannot be a frozen reference and check.py does not re-count it. The digest above is of the superseded file, which is in this repository's history and is never retouched."
+ },
+ "in_the_superseded_bulletin": 2
 }
