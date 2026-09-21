@@ -251,3 +251,68 @@ dispatches and 10 arguments.
 `data/apparatus.json`: provider, model and version of every dispatched worker and of the
 session, the runtime, every own tool used, every own tool that failed, and the network record
 including every refusal met.
+
+---
+
+## Amendment 1 — 2026-09-21, after the payloads were built and **before any worker was
+dispatched** — K4 as written cannot be applied, and what is applied instead
+
+**The superseded text stays above, unedited.** §9's K4 reads: *"A committed script greps the
+exact payload bytes for a fixed forbidden list … Any hit voids the run before dispatch."*
+
+**It fired, and on inspection it is the rule that is wrong, not the payload.** The run of
+`tools/nobody-read-this/leak_check.py` over the exact payload bytes is committed in
+`data/leak-check.json`. Every hit falls into one of four kinds, and **none of them carries
+information about which verdict is ours**:
+
+1. **Inside a quoted document block.** `SPDX-License-Identifier: CAL-1.0` is a line of the
+   licence text itself; `X11`, `Cube`, `Caldera`, `Sendmail`, `Entessa` and the rest occur in
+   the documents that name them. **The document is the evidence. Editing it to satisfy a
+   string check would falsify the item**, which is a worse fault than the one K4 guards
+   against. Arm A: 4 `SPDX` hits and 9 identifier hits, all in documents. Arm B: all
+   identifier hits but 63, all in documents.
+2. **A corpus identifier that is also a licence family name, inside a verdict tuple the
+   worker must see to answer at all.** All 63 scaffolding identifier hits in Arm B are of this
+   kind: `BSD-2-Clause` (20) and `BSD-4-Clause` (8) as values of the `families` field, and
+   `MIT` (35) in the specification's own list of scored families. A worker cannot judge a
+   verdict it is not shown.
+3. **The four category names**, which §5 requires to be given *"exactly as committed on
+   2026-09-20"*. They occur twice each in Arm B: once in the definition block, once in the
+   answer-format block. Both were foreseen in §9's own wording *"outside their own definition
+   block"*, which did not foresee the answer format.
+4. **The word `adjudicat-`**, once per arm, in the opening sentence that names the task.
+
+**What K4 is, from here on.** The check runs unchanged and its full output is committed. What
+voids the run is a **residual** hit: a forbidden string in the payload's scaffolding that is
+none of the four kinds above — in particular any occurrence of `Meridian`, `field-research`,
+`frankbueltge`, `R-ship`, `shipped` or `metamorphic`, and any corpus identifier that is not a
+family value. **Residual hits: 0 in Arm A, 0 in Arm B.** K4 does not fire.
+
+**Recorded as a defect of our own pre-registration, not as a pass.** This is the eighth entry
+in this practice's running list of bad tests: a kill condition written before the object
+existed, which the object could not satisfy without being falsified. It cost nothing because
+it fired before dispatch and was inspectable. The three earlier rules stand: a bar is checked
+against its own sampling error; a kill condition must not be fired by the studied effect; and
+**pre-registration stops reasoning after the fact, not a bad test.**
+
+---
+
+## Amendment 2 — 2026-09-21, **before any worker was dispatched** — how the payload reaches a worker
+
+**The superseded text stays above, unedited.** §8 says each worker *"receives its payload
+**inline in its instruction**"*. Arm B's payload is **251,507 characters**. Writing it out four
+times by hand into four instructions is not a thing this practice can do faithfully, and a
+payload retyped is a payload that may differ between workers — which would destroy the one
+property the arm depends on, that all four read exactly the same bytes.
+
+**What is done instead.** Each payload is written once to a file **outside this repository**,
+in the session's scratch directory, and each worker is given that one path and told: read that
+file and nothing else; run no search; look at no repository; the file is self-contained.
+**The bytes every worker reads are identical and their digest is committed** in
+`data/items.json` and `data/leak-check.json`.
+
+**What this costs, stated plainly.** K2 as written voids a worker that reports reading a file.
+It now voids a worker that reports reading **any file other than its payload**, or running any
+search. The blindness remains **instructed, not enforced** — §8 already said so, and this
+amendment does not make it worse: a worker that would disobey an instruction not to read the
+repository would equally disobey an instruction not to use tools at all.
