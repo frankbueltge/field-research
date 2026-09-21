@@ -40,8 +40,8 @@ def edit_text(path, old, new):
     return apply
 
 
-def first_case(d, arm="A"):
-    return d["arms"][arm]["per_item"][0]
+def first_case(d, arm="A", tag="ALL"):
+    return d["arms"][arm][tag]["per_item"][0]
 
 
 CORRUPTIONS = []
@@ -53,17 +53,17 @@ def add(name, fn):
 
 # 1-4: the scored numbers no longer follow from the votes
 add("arm A: majority-matches count inflated by one",
-    edit_json("data/data.json", lambda d: d["arms"]["A"].__setitem__(
-        "majority_matches_reference", d["arms"]["A"]["majority_matches_reference"] + 1)))
+    edit_json("data/data.json", lambda d: d["arms"]["A"]["ALL"].__setitem__(
+        "majority_matches_reference", d["arms"]["A"]["ALL"]["majority_matches_reference"] + 1)))
 add("arm B: majority-matches count inflated by one",
-    edit_json("data/data.json", lambda d: d["arms"]["B"].__setitem__(
-        "majority_matches_reference", d["arms"]["B"]["majority_matches_reference"] + 1)))
+    edit_json("data/data.json", lambda d: d["arms"]["B"]["ALL"].__setitem__(
+        "majority_matches_reference", d["arms"]["B"]["ALL"]["majority_matches_reference"] + 1)))
 add("arm A: Fleiss' kappa nudged upward",
-    edit_json("data/data.json", lambda d: d["arms"]["A"].__setitem__(
-        "fleiss_kappa_items", (d["arms"]["A"]["fleiss_kappa_items"] or 0) + 0.2)))
+    edit_json("data/data.json", lambda d: d["arms"]["A"]["ALL"].__setitem__(
+        "fleiss_kappa_items", (d["arms"]["A"]["ALL"]["fleiss_kappa_items"] or 0) + 0.2)))
 add("arm B: Fleiss' kappa nudged upward",
-    edit_json("data/data.json", lambda d: d["arms"]["B"].__setitem__(
-        "fleiss_kappa_items", (d["arms"]["B"]["fleiss_kappa_items"] or 0) + 0.2)))
+    edit_json("data/data.json", lambda d: d["arms"]["B"]["ALL"].__setitem__(
+        "fleiss_kappa_items", (d["arms"]["B"]["ALL"]["fleiss_kappa_items"] or 0) + 0.2)))
 
 # 5-7: a vote is rewritten under a recorded majority
 add("arm A: one worker's vote flipped, tally left as it was",
@@ -78,10 +78,10 @@ add("arm A: a recorded majority replaced by the other answer",
 
 # 8-9: the unanimous-against-us list is edited
 add("a case is added to the unanimous-against-us list",
-    edit_json("data/data.json", lambda d: d["arms"]["A"]["unanimous_against_reference"].append(
-        d["arms"]["A"]["per_item"][0]["item"])))
+    edit_json("data/data.json", lambda d: d["arms"]["A"]["ALL"]["unanimous_against_reference"].append(
+        d["arms"]["A"]["ALL"]["per_item"][0]["item"])))
 add("a case is removed from the unanimous-against-us list",
-    edit_json("data/data.json", lambda d: d["arms"]["B"].__setitem__(
+    edit_json("data/data.json", lambda d: d["arms"]["B"]["ALL"].__setitem__(
         "unanimous_against_reference", [])))
 
 # 10-12: the references are not the committed ones any more
@@ -129,11 +129,11 @@ def page_figure_corruption(root):
     p = os.path.join(root, "artifacts", os.path.basename(HERE), "index.html")
     d = json.load(open(os.path.join(root, "artifacts", os.path.basename(HERE),
                                     "data", "data.json"), encoding="utf-8"))
-    label, value = sorted(d["headline"].items())[0]
+    claim = d["page_claims"][3]
     s = open(p, encoding="utf-8").read()
-    if str(value) not in s:
-        raise AssertionError(f"headline {label}={value} is not on the page")
-    open(p, "w", encoding="utf-8").write(s.replace(str(value), str(value) + "9", 1))
+    if claim not in s:
+        raise AssertionError("the page claim to corrupt is not on the page")
+    open(p, "w", encoding="utf-8").write(s.replace(claim, claim.replace("<b>10</b>", "<b>11</b>"), 1))
 
 
 CORRUPTIONS[17] = (CORRUPTIONS[17][0], page_figure_corruption)

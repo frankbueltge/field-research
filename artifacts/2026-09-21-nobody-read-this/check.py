@@ -164,8 +164,8 @@ def main():
                 check(f"arm B/{tag}: class-level match count is right",
                       nc == r["classes_majority_matches_reference"],
                       f"{nc} vs {r['classes_majority_matches_reference']}")
-                check("arm B: all ten classes are scored", r["n_classes"] == 10,
-                      r["n_classes"])
+                check("arm B: eleven class entries covering the ten classes are scored",
+                      r["n_classes"] == 11, r["n_classes"])
 
     # ---- the predictions are decided by the data, not asserted
     for p in data["predictions"]:
@@ -205,8 +205,20 @@ def main():
                                 r"documentation files", blob))
 
     # ---- the apparatus register discloses the workers
-    check("apparatus: eight dispatched workers are recorded",
-          app["dispatched_workers"]["n"] == 8)
+    check("apparatus: ten dispatched workers are recorded",
+          app["dispatched_workers"]["n"] == 10)
+    check("apparatus: the arm counts add up to the workers dispatched",
+          sum(app["dispatched_workers"]["arms"].values())
+          == app["dispatched_workers"]["n"])
+    disc = load("data/worker-disclosures.json")
+    check("every dispatched worker has a tool disclosure on the record",
+          len(disc["arm_A"]) + len(disc["arm_B"]) == app["dispatched_workers"]["n"])
+    check("the K3 selection effect is stated, not just the kappa it produces",
+          "manufactured by the kill condition" in json.dumps(data["the_K3_selection_effect"]))
+    check("the three bad tests set tonight are on the record",
+          len(data["findings"]["bad_tests_set_tonight"]) == 3)
+    check("defect 6 records whether it moves a published number",
+          "No" in data["findings"]["defect_6"]["does_it_move_a_published_number"])
     check("apparatus: the provider and the requested tier are named",
           bool(app["dispatched_workers"]["provider"])
           and bool(app["dispatched_workers"]["model_requested"]))
@@ -221,12 +233,27 @@ def main():
     for label, value in data["headline"].items():
         check(f"page states {label} = {value}", str(value) in page, value)
         check(f"summary states {label} = {value}", str(value) in summ, value)
+    for claim in data["page_claims"]:
+        check(f"page carries the claim: {claim[:70]}", claim in page)
+    for claim in data["summary_claims"]:
+        check(f"summary carries the claim: {claim[:70]}", claim in summ)
+    check("the page and the summary agree on the arm A figure",
+          ("<b>10</b> of 11" in page) and ("**10 of 11**" in summ))
     check("page names no product, company or tool vendor",
           not re.search(r"anthropic|openai|gpt|gemini|llama|sonnet|opus|claude", page, re.I))
     check("summary names no product, company or tool vendor",
           not re.search(r"anthropic|openai|gpt|gemini|llama|sonnet|opus|claude", summ, re.I))
     check("page attaches no verbal band to kappa",
           not re.search(r"(substantial|moderate|almost perfect|fair) agreement", page, re.I))
+
+    tam = load("data/tamper-check.json")
+    check("the tamper harness caught every corruption it applied",
+          tam["caught"] == tam["corruptions"] == 20, tam)
+    check("page states the tamper result",
+          f"{tam['caught']} of {tam['corruptions']}" in page)
+    total = len(OK) + len(FAIL) + 1
+    check(f"page states this script's own assertion count ({total})",
+          f"{total} checks" in page, total)
 
     print(f"{len(OK)} checks passed, {len(FAIL)} failed")
     for f in FAIL:

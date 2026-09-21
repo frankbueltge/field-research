@@ -77,10 +77,14 @@ def main():
     P(4, "Arm B: all four workers label class 10 - the 967 violations that were this "
          "practice's own bad test - as MR-FALSE.",
       "CONFIRMED" if all_mrfalse else "REFUTED",
-      f"per-worker majorities on class 10: {c10.get('per_worker')}")
+      f"per-worker majorities on class 10: {c10.get('per_worker')}. Read on the workers "
+      f"that delivered. The payload showed decision fields only, and class 10's decision "
+      f"fields are identical before and after, so these items reached a worker as 'nothing "
+      f"changed' - the same thing the arm's own sentinels showed. See the artifact.")
 
     convictions = aall["unanimous_against_reference"] + ball["unanimous_against_reference"]
-    P(5, "At least one committed verdict or class label is contradicted by all four workers.",
+    P(5, "At least one committed verdict or class label is contradicted by all four workers "
+         "(read on the workers that delivered).",
       "CONFIRMED" if convictions else "REFUTED",
       f"unanimous-against-us items: {convictions or 'none'}")
 
@@ -102,7 +106,10 @@ def main():
             "judgements_collected": sum(len(v) for v in
                                         [A["coverage"], B["coverage"]] for v in v.values())
             if False else (sum(A["coverage"].values()) + sum(B["coverage"].values())),
-            "arguments_this_practice_read_itself": None,
+            "arguments_this_practice_read_itself": 2,
+            "what_this_practice_read_itself": "The one case the blind readers convicted us on, "
+                                              "and the licence text behind it. Everything else "
+                                              "was read by a dispatched worker.",
         },
         "2026-09-19": {"workers_dispatched": 4, "internal_disagreements": 127,
                        "unanimous_convictions": 11,
@@ -111,13 +118,92 @@ def main():
                        "classes": 10, "arguments_this_practice_read_itself": 10},
     }
 
+    out["workers"] = {
+        "dispatched": 10,
+        "delivered": len(A["workers_dispatched"]) + len(B["workers_dispatched"]),
+        "arm_A": {"dispatched": 6, "delivered": len(A["workers_dispatched"]),
+                  "note": "Four, then two replacements after K3 voided two of the first four."},
+        "arm_B": {"dispatched": 4, "delivered": len(B["workers_dispatched"]),
+                  "note": "One of the four returned no answer file within the session. "
+                          "It is counted as dispatched and not delivered, and every arm-B "
+                          "number below is over the three that delivered."},
+    }
     out["headline"] = {
         "arm_A_majority_matches_of_11": aall["majority_matches_reference"],
-        "arm_B_classes_matched_of_10": ball["classes_majority_matches_reference"],
+        "arm_B_class_entries_matched_of_11": ball["classes_majority_matches_reference"],
+        "arm_B_items_matched_of_45": aall and ball["majority_matches_reference"],
         "convictions_of_our_reading": len(convictions),
-        "workers_dispatched": len(A["workers_dispatched"]) + len(B["workers_dispatched"]),
+        "workers_delivered": len(A["workers_dispatched"]) + len(B["workers_dispatched"]),
         "judgements_collected": sum(A["coverage"].values()) + sum(B["coverage"].values()),
         "person_occurrences_in_the_two_artifacts": 14,
+        "bad_tests_set_tonight": 3,
+    }
+    out["the_K3_selection_effect"] = {
+        "what": "Arm B's K3 reading keeps only the two workers that passed the sentinels. "
+                "Those are exactly the two that voted with this practice on the one class "
+                "where the four split. So the K3 reading returns 44 of 45 items, 11 of 11 "
+                "classes and Fleiss' kappa = 1.0.",
+        "reading": "That kappa is manufactured by the kill condition, not found by the "
+                   "experiment. A perfect agreement produced by discarding the workers who "
+                   "disagreed is not evidence of anything, and it is reported here only so "
+                   "that nobody can quote it without this sentence.",
+        "which_number_this_artifact_stands_behind": "The all-workers reading: 38 of 45 items, "
+                                                    "10 of 11 class entries, kappa 0.85.",
+    }
+    out["findings"] = {
+        "defect_6": {
+            "what": "A copyright notice whose holder sits on a later physical line than the "
+                    "word `copyright` is read as `no_holder`. SPDX BSD-Inferno-Nettverk "
+                    "carries its years over four lines and the holder on the fourth.",
+            "quoted_line": "Inferno Nettverk A/S, Norway.  All rights reserved.",
+            "how_it_was_found": "Item B49. All three arm-B workers that delivered called it "
+                                "DEFECT against this practice's committed LATENT. The reading "
+                                "was then checked first-hand against the licence text.",
+            "what_it_convicts": "Not the rule alone - the 2026-09-20 adjudication. The "
+                                "evidence was already in that session's data and this "
+                                "practice read it as a latent risk rather than a present "
+                                "error.",
+            "does_it_move_a_published_number": "No, and this was checked rather than assumed. "
+                                               "All five real licence files scored `no_holder` "
+                                               "carry a bare year and no holder at all "
+                                               "(`Copyright (c) 2025` and the like), so "
+                                               "`no_holder` is right for every one of them. "
+                                               "The defect is demonstrated on the canonical "
+                                               "corpus only.",
+            "not_found_by": ["100 fixtures", "27 mutations",
+                             "four independent reimplementations (2026-09-19)",
+                             "eight metamorphic relations (2026-09-20) - which DID reach the "
+                             "input, and whose finding this practice then mislabelled"],
+        },
+        "bad_tests_set_tonight": [
+            {"n": 8, "what": "K4, the leakage check: forbidden strings that the evidence "
+                             "itself must contain. Caught before dispatch; Amendment 1."},
+            {"n": 9, "what": "The arm-A sentinel: both candidate verdicts asserted the same "
+                             "licence family and differed only on the holder question, so a "
+                             "worker disputing the shared half could answer `neither` - which "
+                             "the instructions expressly allowed. Three of six workers did, "
+                             "and K3 voided all three."},
+            {"n": 10, "what": "The arm-B payload and its sentinel: the payload showed decision "
+                              "fields only, and both the sentinels and class 10 have "
+                              "identical decision fields before and after. The control and "
+                              "the live item reached every worker as the same item - "
+                              "'nothing changed'. The consequence is exact and mechanical: "
+                              "the two workers that passed all four sentinels are the two "
+                              "that called class 10 MR-FALSE, and the two that missed all "
+                              "four are the two that called class 10 UNDECIDED. Sentinel "
+                              "performance predicts the class-10 vote perfectly, because "
+                              "they are the same judgement. The sentinel had no "
+                              "discriminating power at all, and K3 therefore selects the "
+                              "workers who already agree with this practice."},
+        ],
+        "the_undecidable_case": {
+            "item": "A10", "true_id": "InnoSetup",
+            "our_label": "specification does not decide",
+            "votes": "three workers for one verdict, three for the other, none for `neither`",
+            "reading": "No worker reached this practice's answer, and the six split exactly "
+                       "down the middle on it. A dead heat is not agreement with `undecided`, "
+                       "and it is not disagreement either.",
+        },
     }
     json.dump(out, open(sys.argv[3], "w"), indent=1, ensure_ascii=False)
     print(json.dumps({"headline": out["headline"],
