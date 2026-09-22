@@ -202,3 +202,40 @@ Scripts in `tools/a-repair-is-a-new-rule/`. Provider, model and version of the a
 wrote and ran them are recorded in `data/apparatus.json`, as the register requires. Every rule,
 relation, patch, count and category in the measurement path is deterministic string processing;
 no rule calls a model.
+
+---
+
+## 11. Amendment 1 — 2026-09-22, AFTER the result, and this is what it changes
+
+**Declared post-hoc, with the reason, because §8 as written can no longer be obeyed honestly.**
+
+§8 said the full repair would be landed as `tools/is-it-a-licence-v2/`. The measurement
+disqualifies it. Under R7 the instrument's false copyright notices rise from **15 to 312**
+over **260** inputs and, for the first time, **18** decisions rest on a false notice alone;
+three of the four repositories R7 adds to the published headline are added on a holder
+extracted from a liability disclaimer; and two real notices — `Copyright (c) Microsoft
+Corporation.` and `Copyright (c) GitHub, Inc.` — are destroyed. Landing that would be
+publishing an instrument this session has already measured as worse than the one it replaces.
+
+**What is landed instead:** `tools/is-it-a-licence-v2/` carrying **R4 + R5 + R6** only —
+variant `01110`, the one subset in the lattice that closes the three defects found by other
+hands (defect 4 by four reimplementations, defect 5 by a metamorphic relation, defect 6 by
+ten blind workers) at **zero cost on every regime**: 100 fixtures pass, no mutant survives
+unexpectedly, the violation count falls from 167 to **4**, the published headline and its
+membership are **unchanged**, the four repositories scored `no_holder` stay `no_holder`, and
+the false-notice count stays at 15 with 0 decisions at risk.
+
+**R1 and R7 are not landed, and the reasons are different.**
+
+- **R7** is measured as harmful, above. It is kept in the record as a variant with its numbers,
+  not as a rule.
+- **R1** is *not* measured as harmful — it cuts false notices from 15 to 4 and changes no
+  decision on the real corpus. It is not landed because it **contradicts the specification**:
+  fixture `NOTICE/no-year-but-capital` says `Copyright Contributors to the OpenVDB Project` is
+  a copyright notice, and R1 says it is not. Whether a yearless, markerless notice counts is a
+  question for the specification, and changing a specification is a separate act from repairing
+  a rule. This session does not settle it quietly by shipping a patch that decides it.
+
+**What is NOT amended.** No prediction, no threshold, no kill condition, no scored tuple and no
+corpus. The measurement stands exactly as registered; §8 was a decision about what to do with
+the result, and the result changed it. The original text of §8 is left above, unedited.
