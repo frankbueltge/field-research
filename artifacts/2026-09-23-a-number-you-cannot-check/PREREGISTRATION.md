@@ -200,3 +200,33 @@ it.
 convict the very percentage that produced it. **R-3 gains one clause:** an integer that is itself
 the number of a percentage token may not serve as `k` or as `n` in a linked pair. Mechanical, no
 meaning read.
+
+### A-3 — 2026-09-23, before any corpus was fetched: a Markdown table row is one sentence
+
+**Reason.** R-1 said *one sentence per cell*, and the fixture `| 16 of 40 | 40 % |` says a reader
+reads a table row across its cells. The fixture is right about the object and R-1 was wrong: a
+per-cell split makes the rule structurally blind to every claim this practice publishes in a
+table, and corpus F is full of them. **R-1 is replaced on this point:** a Markdown table row is
+**one sentence**; the cell separators are read as whitespace. The one-to-one 40-character
+constraint of A-1 already limits what can be paired across a row.
+
+### A-4 — 2026-09-23, before any corpus was fetched: fixture F38 is corrected to the registered rule, and the limitation is named
+
+**Reason.** F38 was written as *what a reader would answer* for a `respectively` construction —
+*"Rates of 62 % and 80 % came from 31 of 50 and 40 of 50."* Derived by hand from A-1, the
+registered rule answers otherwise: the nearest match is `80 %` to `(31, 50)` at a gap of 11
+characters, which leaves `62 %` to `(40, 50)`, and **both come out inconsistent**. The fixture
+contradicted the specification, not the code — no code had been run. **The fixture is corrected
+to the registered behaviour and marked as a known limitation**: a crossing construction produces
+two false convictions. How often it occurs is measured, not assumed, by the hand-read
+adjudication of §6.
+
+### A-5 — 2026-09-23, before any corpus was fetched: what happens to the headline if P6 is refuted
+
+**Reason.** R-3 does not read *"Of 740 canonical texts, 612 matched, which is 82.70 %"* — there is
+no integer before the *of* — although a reader plainly can. Fixture F26 registers that miss as
+the rule's behaviour. If such misses are common, the rule's hand-over rate is biased **downward**
+and the headline would be an artifact of the instrument. **Registered response:** if P6 is refuted
+(rule misses at or above 15 % of the non-recomputable sample), the hand-over rate does not ship as
+a point value. It ships as an interval — the rule's rate at the low end, and the rate corrected by
+the hand-read miss share at the high end — and every statement in the artifact uses the interval.

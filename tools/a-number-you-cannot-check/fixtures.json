@@ -1,47 +1,583 @@
 {
   "_note": "Hand-written before the rule's code, session 168, 2026-09-23. Each case states the text and the tokens the rule must report, in order of appearance. verdict is one of: not_recomputable, consistent, complement, inconsistent.",
   "cases": [
-    {"id": "F01", "text": "The method succeeded in 31 of 50 cases (62 %).", "tokens": [{"value": 62.0, "verdict": "consistent", "pair": [31, 50]}]},
-    {"id": "F02", "text": "The method succeeded in 31 of 50 cases (62.0 %).", "tokens": [{"value": 62.0, "verdict": "consistent", "pair": [31, 50]}]},
-    {"id": "F03", "text": "The method succeeded in 31 of 50 cases (61 %).", "tokens": [{"value": 61.0, "verdict": "inconsistent", "pair": [31, 50]}]},
-    {"id": "F04", "text": "It failed in 19 of 50 cases (62 %).", "tokens": [{"value": 62.0, "verdict": "complement", "pair": [19, 50]}]},
-    {"id": "F05", "text": "The method succeeded in 62 % of cases.", "tokens": [{"value": 62.0, "verdict": "not_recomputable", "pair": null}]},
-    {"id": "F06", "text": "We report 50 of 31 items and a rate of 62 %.", "tokens": [{"value": 62.0, "verdict": "not_recomputable", "pair": null}]},
-    {"id": "F07", "text": "Exactly 1 of 1 passed, a rate of 100 %.", "tokens": [{"value": 100.0, "verdict": "not_recomputable", "pair": null}]},
-    {"id": "F08", "text": "It held for 2 of 3 runs (66.6 %).", "tokens": [{"value": 66.6, "verdict": "consistent", "pair": [2, 3]}]},
-    {"id": "F09", "text": "It held for 2 of 3 runs (66.7 %).", "tokens": [{"value": 66.7, "verdict": "consistent", "pair": [2, 3]}]},
-    {"id": "F10", "text": "It held for 2 of 3 runs (66.8 %).", "tokens": [{"value": 66.8, "verdict": "inconsistent", "pair": [2, 3]}]},
-    {"id": "F11", "text": "The method succeeded in 31 of 50 cases (62 percent).", "tokens": [{"value": 62.0, "verdict": "consistent", "pair": [31, 50]}]},
-    {"id": "F12", "text": "Concerns became retractions in 1,277 of 2,000 records (63.85 %).", "tokens": [{"value": 63.85, "verdict": "consistent", "pair": [1277, 2000]}]},
-    {"id": "F13", "text": "The rule delivers on 100/105 repositories (95.2 %).", "tokens": [{"value": 95.2, "verdict": "consistent", "pair": [100, 105]}]},
-    {"id": "F14", "text": "We had 31 of 50 successes. The rate was 90 %.", "tokens": [{"value": 90.0, "verdict": "not_recomputable", "pair": null}]},
-    {"id": "F15", "text": "Of the sample, 12 among 40 (30 %) agreed.", "tokens": [{"value": 30.0, "verdict": "consistent", "pair": [12, 40]}]},
-    {"id": "F16", "text": "About 3 in 10 respondents (30 %) declined.", "tokens": [{"value": 30.0, "verdict": "consistent", "pair": [3, 10]}]},
-    {"id": "F17", "text": "It passed **31 of 50** cases (62 %).", "tokens": [{"value": 62.0, "verdict": "consistent", "pair": [31, 50]}]},
-    {"id": "F18", "text": "None of the checks fired: 0 of 8 (0 %).", "tokens": [{"value": 0.0, "verdict": "consistent", "pair": [0, 8]}]},
-    {"id": "F19", "text": "One quarter, 1 of 4 (25 %), remained.", "tokens": [{"value": 25.0, "verdict": "consistent", "pair": [1, 4]}]},
-    {"id": "F20", "text": "The effect was 2 % ± 1 % in the sample.", "tokens": [{"value": 2.0, "verdict": "not_recomputable", "pair": null}, {"value": 1.0, "verdict": "not_recomputable", "pair": null}]},
-    {"id": "F21", "text": "Response occurred in 31 of 50 patients (62 %, 95 % CI 48-75).", "tokens": [{"value": 62.0, "verdict": "consistent", "pair": [31, 50]}, {"value": 95.0, "verdict": "not_recomputable", "pair": null}]},
-    {"id": "F22", "text": "In 30 % of 50 patients the marker was present.", "tokens": [{"value": 30.0, "verdict": "not_recomputable", "pair": null}]},
-    {"id": "F23", "text": "Accuracy rose from 50 % of 100 items to a higher level.", "tokens": [{"value": 50.0, "verdict": "not_recomputable", "pair": null}]},
-    {"id": "F24", "text": "Both arms agreed: 31 of 50 (62 %) and 40 of 50 (80 %).", "tokens": [{"value": 62.0, "verdict": "consistent", "pair": [31, 50]}, {"value": 80.0, "verdict": "consistent", "pair": [40, 50]}]},
-    {"id": "F25", "text": "A rate of 62 % was reached in 31 of 50 cases.", "tokens": [{"value": 62.0, "verdict": "consistent", "pair": [31, 50]}]},
-    {"id": "F26", "text": "Of 740 canonical texts, 612 matched, which is 82.70 %.", "tokens": [{"value": 82.7, "verdict": "not_recomputable", "pair": null}]},
-    {"id": "F27", "text": "We measured 612 of 740 (82.70 %) agreement.", "tokens": [{"value": 82.7, "verdict": "consistent", "pair": [612, 740]}]},
-    {"id": "F28", "text": "We measured 612 of 740 (82.7 %) agreement.", "tokens": [{"value": 82.7, "verdict": "consistent", "pair": [612, 740]}]},
-    {"id": "F29", "text": "Improvement of 3.2 % over the baseline on 8 of 10 tasks.", "tokens": [{"value": 3.2, "verdict": "not_recomputable", "pair": null}]},
-    {"id": "F30", "text": "| 16 of 40 | 40 % |", "tokens": [{"value": 40.0, "verdict": "consistent", "pair": [16, 40]}]},
-    {"id": "F31", "text": "The threshold was set to 5 % throughout.", "tokens": [{"value": 5.0, "verdict": "not_recomputable", "pair": null}]},
-    {"id": "F32", "text": "It reproduced in 47 out of 60 trials (78.3 %).", "tokens": [{"value": 78.3, "verdict": "consistent", "pair": [47, 60]}]},
-    {"id": "F33", "text": "It reproduced in 47 out of 60 trials (78.4 %).", "tokens": [{"value": 78.4, "verdict": "inconsistent", "pair": [47, 60]}]},
-    {"id": "F34", "text": "Reported for 13 of the 40 receivers (32.5 %).", "tokens": [{"value": 32.5, "verdict": "consistent", "pair": [13, 40]}]},
-    {"id": "F35", "text": "No numbers here at all.", "tokens": []},
-    {"id": "F36", "text": "A 100 % pass on 8 of 8 mutants.", "tokens": [{"value": 100.0, "verdict": "consistent", "pair": [8, 8]}]},
-    {"id": "F37", "text": "See [the note](http://example.org/a) for 3 of 4 (75 %).", "tokens": [{"value": 75.0, "verdict": "consistent", "pair": [3, 4]}]},
-    {"id": "F38", "text": "Rates of 62 % and 80 % were seen in 31 of 50 and 40 of 50 cases respectively.", "tokens": [{"value": 62.0, "verdict": "consistent", "pair": [31, 50]}, {"value": 80.0, "verdict": "not_recomputable", "pair": null}]},
-    {"id": "F39", "text": "The share was 16.51 % at 521 records.", "tokens": [{"value": 16.51, "verdict": "not_recomputable", "pair": null}]},
-    {"id": "F40", "text": "Only 1 of 3 (33.3 %) and 1 of 3 (33.4 %) were claimed.", "tokens": [{"value": 33.3, "verdict": "consistent", "pair": [1, 3]}, {"value": 33.4, "verdict": "inconsistent", "pair": [1, 3]}]},
-    {"id": "F41", "text": "## Heading with 9 of 12 (75 %)", "tokens": [{"value": 75.0, "verdict": "consistent", "pair": [9, 12]}]},
-    {"id": "F42", "text": "A long preamble of many words that goes on and on before the count 31 of 50, and then very much later in the same sentence a rate of 62 % appears.", "tokens": [{"value": 62.0, "verdict": "not_recomputable", "pair": null}]}
+    {
+      "id": "F01",
+      "text": "The method succeeded in 31 of 50 cases (62 %).",
+      "tokens": [
+        {
+          "value": 62.0,
+          "verdict": "consistent",
+          "pair": [
+            31,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F02",
+      "text": "The method succeeded in 31 of 50 cases (62.0 %).",
+      "tokens": [
+        {
+          "value": 62.0,
+          "verdict": "consistent",
+          "pair": [
+            31,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F03",
+      "text": "The method succeeded in 31 of 50 cases (61 %).",
+      "tokens": [
+        {
+          "value": 61.0,
+          "verdict": "inconsistent",
+          "pair": [
+            31,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F04",
+      "text": "It failed in 19 of 50 cases (62 %).",
+      "tokens": [
+        {
+          "value": 62.0,
+          "verdict": "complement",
+          "pair": [
+            19,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F05",
+      "text": "The method succeeded in 62 % of cases.",
+      "tokens": [
+        {
+          "value": 62.0,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ]
+    },
+    {
+      "id": "F06",
+      "text": "We report 50 of 31 items and a rate of 62 %.",
+      "tokens": [
+        {
+          "value": 62.0,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ]
+    },
+    {
+      "id": "F07",
+      "text": "Exactly 1 of 1 passed, a rate of 100 %.",
+      "tokens": [
+        {
+          "value": 100.0,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ]
+    },
+    {
+      "id": "F08",
+      "text": "It held for 2 of 3 runs (66.6 %).",
+      "tokens": [
+        {
+          "value": 66.6,
+          "verdict": "consistent",
+          "pair": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F09",
+      "text": "It held for 2 of 3 runs (66.7 %).",
+      "tokens": [
+        {
+          "value": 66.7,
+          "verdict": "consistent",
+          "pair": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F10",
+      "text": "It held for 2 of 3 runs (66.8 %).",
+      "tokens": [
+        {
+          "value": 66.8,
+          "verdict": "inconsistent",
+          "pair": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F11",
+      "text": "The method succeeded in 31 of 50 cases (62 percent).",
+      "tokens": [
+        {
+          "value": 62.0,
+          "verdict": "consistent",
+          "pair": [
+            31,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F12",
+      "text": "Concerns became retractions in 1,277 of 2,000 records (63.85 %).",
+      "tokens": [
+        {
+          "value": 63.85,
+          "verdict": "consistent",
+          "pair": [
+            1277,
+            2000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F13",
+      "text": "The rule delivers on 100/105 repositories (95.2 %).",
+      "tokens": [
+        {
+          "value": 95.2,
+          "verdict": "consistent",
+          "pair": [
+            100,
+            105
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F14",
+      "text": "We had 31 of 50 successes. The rate was 90 %.",
+      "tokens": [
+        {
+          "value": 90.0,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ]
+    },
+    {
+      "id": "F15",
+      "text": "Of the sample, 12 among 40 (30 %) agreed.",
+      "tokens": [
+        {
+          "value": 30.0,
+          "verdict": "consistent",
+          "pair": [
+            12,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F16",
+      "text": "About 3 in 10 respondents (30 %) declined.",
+      "tokens": [
+        {
+          "value": 30.0,
+          "verdict": "consistent",
+          "pair": [
+            3,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F17",
+      "text": "It passed **31 of 50** cases (62 %).",
+      "tokens": [
+        {
+          "value": 62.0,
+          "verdict": "consistent",
+          "pair": [
+            31,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F18",
+      "text": "None of the checks fired: 0 of 8 (0 %).",
+      "tokens": [
+        {
+          "value": 0.0,
+          "verdict": "consistent",
+          "pair": [
+            0,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F19",
+      "text": "One quarter, 1 of 4 (25 %), remained.",
+      "tokens": [
+        {
+          "value": 25.0,
+          "verdict": "consistent",
+          "pair": [
+            1,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F20",
+      "text": "The effect was 2 % ± 1 % in the sample.",
+      "tokens": [
+        {
+          "value": 2.0,
+          "verdict": "not_recomputable",
+          "pair": null
+        },
+        {
+          "value": 1.0,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ]
+    },
+    {
+      "id": "F21",
+      "text": "Response occurred in 31 of 50 patients (62 %, 95 % CI 48-75).",
+      "tokens": [
+        {
+          "value": 62.0,
+          "verdict": "consistent",
+          "pair": [
+            31,
+            50
+          ]
+        },
+        {
+          "value": 95.0,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ]
+    },
+    {
+      "id": "F22",
+      "text": "In 30 % of 50 patients the marker was present.",
+      "tokens": [
+        {
+          "value": 30.0,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ]
+    },
+    {
+      "id": "F23",
+      "text": "Accuracy rose from 50 % of 100 items to a higher level.",
+      "tokens": [
+        {
+          "value": 50.0,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ]
+    },
+    {
+      "id": "F24",
+      "text": "Both arms agreed: 31 of 50 (62 %) and 40 of 50 (80 %).",
+      "tokens": [
+        {
+          "value": 62.0,
+          "verdict": "consistent",
+          "pair": [
+            31,
+            50
+          ]
+        },
+        {
+          "value": 80.0,
+          "verdict": "consistent",
+          "pair": [
+            40,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F25",
+      "text": "A rate of 62 % was reached in 31 of 50 cases.",
+      "tokens": [
+        {
+          "value": 62.0,
+          "verdict": "consistent",
+          "pair": [
+            31,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F26",
+      "text": "Of 740 canonical texts, 612 matched, which is 82.70 %.",
+      "tokens": [
+        {
+          "value": 82.7,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ]
+    },
+    {
+      "id": "F27",
+      "text": "We measured 612 of 740 (82.70 %) agreement.",
+      "tokens": [
+        {
+          "value": 82.7,
+          "verdict": "consistent",
+          "pair": [
+            612,
+            740
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F28",
+      "text": "We measured 612 of 740 (82.7 %) agreement.",
+      "tokens": [
+        {
+          "value": 82.7,
+          "verdict": "consistent",
+          "pair": [
+            612,
+            740
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F29",
+      "text": "Improvement of 3.2 % over the baseline on 8 of 10 tasks.",
+      "tokens": [
+        {
+          "value": 3.2,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ]
+    },
+    {
+      "id": "F30",
+      "text": "| 16 of 40 | 40 % |",
+      "tokens": [
+        {
+          "value": 40.0,
+          "verdict": "consistent",
+          "pair": [
+            16,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F31",
+      "text": "The threshold was set to 5 % throughout.",
+      "tokens": [
+        {
+          "value": 5.0,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ]
+    },
+    {
+      "id": "F32",
+      "text": "It reproduced in 47 out of 60 trials (78.3 %).",
+      "tokens": [
+        {
+          "value": 78.3,
+          "verdict": "consistent",
+          "pair": [
+            47,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F33",
+      "text": "It reproduced in 47 out of 60 trials (78.4 %).",
+      "tokens": [
+        {
+          "value": 78.4,
+          "verdict": "inconsistent",
+          "pair": [
+            47,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F34",
+      "text": "Reported for 13 of the 40 receivers (32.5 %).",
+      "tokens": [
+        {
+          "value": 32.5,
+          "verdict": "consistent",
+          "pair": [
+            13,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F35",
+      "text": "No numbers here at all.",
+      "tokens": []
+    },
+    {
+      "id": "F36",
+      "text": "A 100 % pass on 8 of 8 mutants.",
+      "tokens": [
+        {
+          "value": 100.0,
+          "verdict": "consistent",
+          "pair": [
+            8,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F37",
+      "text": "See [the note](http://example.org/a) for 3 of 4 (75 %).",
+      "tokens": [
+        {
+          "value": 75.0,
+          "verdict": "consistent",
+          "pair": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F38",
+      "text": "Rates of 62 % and 80 % came from 31 of 50 and 40 of 50.",
+      "tokens": [
+        {
+          "value": 62.0,
+          "verdict": "inconsistent",
+          "pair": [
+            40,
+            50
+          ]
+        },
+        {
+          "value": 80.0,
+          "verdict": "inconsistent",
+          "pair": [
+            31,
+            50
+          ]
+        }
+      ],
+      "note": "Known limitation, registered as amendment A-4: a crossing 'respectively' construction produces two false convictions under the one-to-one nearest-match rule."
+    },
+    {
+      "id": "F39",
+      "text": "The share was 16.51 % at 521 records.",
+      "tokens": [
+        {
+          "value": 16.51,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ]
+    },
+    {
+      "id": "F40",
+      "text": "Only 1 of 3 (33.3 %) and 1 of 3 (33.4 %) were claimed.",
+      "tokens": [
+        {
+          "value": 33.3,
+          "verdict": "consistent",
+          "pair": [
+            1,
+            3
+          ]
+        },
+        {
+          "value": 33.4,
+          "verdict": "inconsistent",
+          "pair": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F41",
+      "text": "## Heading with 9 of 12 (75 %)",
+      "tokens": [
+        {
+          "value": 75.0,
+          "verdict": "consistent",
+          "pair": [
+            9,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F42",
+      "text": "A long preamble of many words that goes on and on before the count 31 of 50, and then very much later in the same sentence a rate of 62 % appears.",
+      "tokens": [
+        {
+          "value": 62.0,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ]
+    }
   ]
 }
