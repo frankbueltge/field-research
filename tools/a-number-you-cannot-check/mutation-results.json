@@ -1,0 +1,198 @@
+{
+  "baseline_all_fixtures_pass": true,
+  "mutations": [
+    {
+      "mutation": "M01 window widened to 200",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F42"
+      ]
+    },
+    {
+      "mutation": "M02 window narrowed to 5",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F08",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "F13",
+        "F16",
+        "F17",
+        "F21",
+        "F25",
+        "F29",
+        "F32",
+        "F33",
+        "F34",
+        "F36",
+        "F38",
+        "F44"
+      ]
+    },
+    {
+      "mutation": "M03 k<=n check dropped",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F06"
+      ]
+    },
+    {
+      "mutation": "M04 n>=2 check dropped",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F07"
+      ]
+    },
+    {
+      "mutation": "M05 A-2 exclusion dropped",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F43"
+      ]
+    },
+    {
+      "mutation": "M06 one-to-one dropped",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F21",
+        "F38"
+      ]
+    },
+    {
+      "mutation": "M07 truncation reading dropped",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F08"
+      ]
+    },
+    {
+      "mutation": "M08 rounding reading dropped",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F09"
+      ]
+    },
+    {
+      "mutation": "M09 complement reading dropped",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F04"
+      ]
+    },
+    {
+      "mutation": "M10 thousands separators dropped",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F12"
+      ]
+    },
+    {
+      "mutation": "M11 sentence splitting dropped",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F14"
+      ]
+    },
+    {
+      "mutation": "M12 A-3 reverted, table split",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F30"
+      ]
+    },
+    {
+      "mutation": "M13 markdown emphasis kept",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": []
+    },
+    {
+      "mutation": "M14 among/in links dropped",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F15",
+        "F16"
+      ]
+    },
+    {
+      "mutation": "M15 slash pairs dropped",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F13"
+      ]
+    },
+    {
+      "mutation": "M16 decimals always zero",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F08",
+        "F09",
+        "F12",
+        "F13",
+        "F27",
+        "F28",
+        "F32",
+        "F34",
+        "F40"
+      ]
+    },
+    {
+      "mutation": "M17 the word percent dropped",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F11"
+      ]
+    },
+    {
+      "mutation": "M18 tie-break reversed",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F21",
+        "F24"
+      ]
+    },
+    {
+      "mutation": "M19 of the dropped",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F34"
+      ]
+    },
+    {
+      "mutation": "M20 link syntax not stripped",
+      "applied": true,
+      "anchor_occurrences": 1,
+      "caught_by": [
+        "F45"
+      ]
+    }
+  ],
+  "anchors_not_unique": [],
+  "survived": [
+    "M13 markdown emphasis kept"
+  ]
+}

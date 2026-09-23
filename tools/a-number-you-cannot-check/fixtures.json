@@ -582,6 +582,45 @@
           "pair": null
         }
       ]
+    },
+    {
+      "id": "F43",
+      "text": "The share was 5/10 % overall.",
+      "tokens": [
+        {
+          "value": 10.0,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ],
+      "note": "Exercises amendment A-2: the n of the slash pair is itself the number of the percentage token."
+    },
+    {
+      "id": "F44",
+      "text": "It passed _31 of 50_ cases (62 %).",
+      "tokens": [
+        {
+          "value": 62.0,
+          "verdict": "consistent",
+          "pair": [
+            31,
+            50
+          ]
+        }
+      ],
+      "note": "Underscore emphasis; the word-character lookarounds fail without R-1 normalisation."
+    },
+    {
+      "id": "F45",
+      "text": "See [the note](http://example.org/3/4) and a rate of 75 %.",
+      "tokens": [
+        {
+          "value": 75.0,
+          "verdict": "not_recomputable",
+          "pair": null
+        }
+      ],
+      "note": "Digits inside a URL would otherwise form a slash pair that explains the percentage exactly."
     }
   ]
 }
