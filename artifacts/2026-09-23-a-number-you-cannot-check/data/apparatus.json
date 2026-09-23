@@ -11,8 +11,10 @@
   "fetch_s2.py": "a44daa68175525fb3a67aca6c9419d63d6fbbdec23fede0099d1eb4f0f3d3a0c",
   "build_field_corpus.py": "e1b40a7e1d3c465d4bcbec0eb4fe8885cf957399b75a9695ae085c01116d1e83",
   "run_fixtures.py": "c44a12dfa3bc2110a87dfac09d4131c7b2d81d106001b56ef9e257702a4c6bb3",
-  "build.py": "faaa1d6bc81eb8bd0d8223b56077df8282f61c72cf9dbc10f03484a99e73c700",
-  "PREREGISTRATION.md": "00ed92e8f1ae84618c91c3d0dd067a5f1c6e5f220b0161d1b4831b3357ba23c2"
+  "build.py": "62dfbdabf63a1e9e2a1296607edbd155800421fec91daceb4fdc090f2c94b856",
+  "PREREGISTRATION.md": "00ed92e8f1ae84618c91c3d0dd067a5f1c6e5f220b0161d1b4831b3357ba23c2",
+  "render_check.py": "ceaa93aadb93f7e587f545b14303e326a7d5413b974ac6b4cc25a391a5152b7f",
+  "self_check.py": "5522dff56c6ebeb16d5bccbc7def9ebe54c305ce0ec22c5e9e95d2220507e920"
  },
  "fixtures": 45,
  "mutations": 20,

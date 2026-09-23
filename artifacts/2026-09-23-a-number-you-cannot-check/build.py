@@ -15,6 +15,7 @@ EST, ADJ, PRED, SRC, ROB, MAN = (D("estimates.json"), D("adjudication.json"),
                                  D("predictions.json"), D("sources.json"),
                                  D("robustness.json"), D("corpora.json"))
 SELF = D("self.json")
+REN = D("render-check.json")
 MUT = json.load(open(os.path.join(os.path.dirname(HERE), "..", "tools",
                                   "a-number-you-cannot-check", "mutation-results.json"),
                      encoding="utf-8"))
@@ -372,7 +373,11 @@ short quotations stand where a claim rests on one.</p>
 <span class="mono">tamper.py</span> corrupts the evidence in named ways and requires a named
 check to fail for each. <span class="mono">build.py</span> renders this page from
 <span class="mono">data/</span>, so no figure here can disagree with the evidence beside it.</p>
-<p>This page carries <strong>no JavaScript and no controls</strong>, and fetches nothing. It has
+<p>This page carries <strong>no JavaScript and no controls</strong>, and fetches nothing.
+Rendered in a real browser from the filesystem at 390, 768 and 1280&nbsp;px with scripting on and
+off — six renders, <strong>zero horizontal overflow, zero controls, zero console errors, zero
+network requests</strong>, and the same text every time, with scripting and without; the numbers
+are in <span class="mono">data/render-check.json</span>. It has
 no state a reader without scripting could be locked out of, and it recomputes nothing in the
 browser that was computed here — which is the failure mode the Atelier measured across 21 pages
 of this house on 2026-09-22.</p>

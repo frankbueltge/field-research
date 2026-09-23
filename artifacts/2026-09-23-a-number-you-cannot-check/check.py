@@ -402,6 +402,28 @@ def _q2():
 
 
 # ---------------------------------------------------------------- the page
+@check("render: six real-browser renders, no horizontal overflow at any width")
+def _n1():
+    r = d("render-check.json")["widths"]
+    return len(r) == 6 and not any(x["horizontal_overflow"] for x in r)
+
+
+@check("render: zero controls, zero console errors and zero network requests in every render")
+def _n2():
+    r = d("render-check.json")["widths"]
+    return all(x["interactive_controls"] == 0 and x["console_errors"] == 0
+               and x["network_requests"] == 0 for x in r)
+
+
+@check("render: the page is character-identical with scripting on and off")
+def _n3():
+    r = d("render-check.json")["widths"]
+    on = {x["text_chars"] for x in r if x["javascript"]}
+    off = {x["text_chars"] for x in r if not x["javascript"]}
+    rows = {x["table_rows"] for x in r}
+    return len(on) == len(off) == len(rows) == 1 and on == off
+
+
 @check("self: the post-hoc run on this session's summary reproduces from the file on disk")
 def _f1():
     import importlib.util                                           # noqa: PLC0415

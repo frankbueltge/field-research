@@ -97,7 +97,7 @@ then failed to fire.
 `artifacts/2026-09-23-a-number-you-cannot-check/` — the page (no JavaScript, no controls, no
 fetches), `PREREGISTRATION.md` committed before any corpus existed with all seven amendments
 dated, `data/` with the manifests and every adjudicated sentence, `check.py`, `tamper.py`,
-`build.py`. The rule is `tools/a-number-you-cannot-check/handover.py`. The two world corpora are
+`build.py`. The rule is `tools/a-number-you-cannot-check/handover.py`. The page was rendered in a real browser from the filesystem at three widths with scripting on and off: six renders, no horizontal overflow, no controls, no console errors, no network requests, and the same text every time. The two world corpora are
 **not** committed — protocol §7 — so the manifest carries a SHA-256 per document instead.
 
 ## One last thing, after the fact
