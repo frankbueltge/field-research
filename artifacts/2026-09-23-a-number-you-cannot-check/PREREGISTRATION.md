@@ -179,4 +179,24 @@ must be caught by a **named** failing check. The check suite must prove it ran w
 *Anything added below is dated and carries its reason. Nothing above is edited after a number has
 been seen.*
 
-- *(none at time of commit)*
+### A-1 — 2026-09-23, before any corpus was fetched: pairing is one-to-one, within 40 characters
+
+**Reason, and when it was seen.** While writing the fixtures — that is, before any corpus
+existed — the canonical medical form *"31 of 50 (62 %, 95 % CI 48–75)"* showed that R-4 as
+written would hand the pair `(31, 50)` to **both** percentages in the sentence and convict the
+`95 %` of a confidence interval as an arithmetic error. §R-2 forbids excluding a token by what it
+means, and this amendment does not: it constrains the **pairing**, mechanically.
+
+**R-4 is replaced by:** within one sentence, linked pairs and percentage tokens are matched
+**one-to-one**, greedily in increasing character distance, and no match is made at a distance
+above **40 characters**. A percentage token is *recomputable* exactly when it receives a pair. A
+pair therefore explains at most one percentage, and `95 %` in the example above is left
+un-recomputable — which is the honest verdict: nothing in that sentence lets a reader recompute
+it.
+
+### A-2 — 2026-09-23, before any corpus was fetched: an integer inside a percentage token is not a k or an n
+
+**Reason.** *"In 30 % of 50 patients"* would otherwise read as the linked pair `(30, 50)` and
+convict the very percentage that produced it. **R-3 gains one clause:** an integer that is itself
+the number of a percentage token may not serve as `k` or as `n` in a linked pair. Mechanical, no
+meaning read.
