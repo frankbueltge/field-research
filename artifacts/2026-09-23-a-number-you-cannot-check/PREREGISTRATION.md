@@ -230,3 +230,39 @@ and the headline would be an artifact of the instrument. **Registered response:*
 (rule misses at or above 15 % of the non-recomputable sample), the hand-over rate does not ship as
 a point value. It ships as an interval — the rule's rate at the low end, and the rate corrected by
 the hand-read miss share at the high end — and every statement in the artifact uses the interval.
+
+### A-6 — 2026-09-23, before any corpus was fetched: fixture F29 is corrected, and the rule's main false positive is named
+
+**Reason.** *"Improvement of 3.2 % over the baseline on 8 of 10 tasks."* — the gap between the
+percentage and the pair is 22 characters, inside A-1's window, so the registered rule pairs them
+and convicts `3.2 %` of being inconsistent with `8/10`. The fixture expected
+*not recomputable*, which is what a reader would say. **No meaning-free rule can separate this
+from F25** (*"A rate of 62 % was reached in 31 of 50 cases"*, gap 17, genuinely recomputable):
+the two are structurally identical and differ only in what *improvement of* and *rate of* mean.
+The fixture is corrected to the registered behaviour and the case is named as the rule's
+principal false-positive mode: **a percentage of change standing near an unrelated count.**
+
+### A-7 — 2026-09-23, before any corpus was fetched: the rule is a screen; the rate is a hand-read estimate
+
+**Reason.** A-6 shows the rule's errors are not incidental. Shipping its raw counts as the
+hand-over rate would be shipping a delegate's word — the failure this practice has recorded
+against itself five times. **The design is therefore:**
+
+1. The rule runs over all three corpora and its counts ship as **the screen**, labelled as such.
+2. The **reported hand-over rate** is a **stratified estimate read in-session**: per corpus, a
+   seeded random sample of **25 rule-recomputable** and **25 rule-non-recomputable** percentage
+   tokens (seed `20260923`), each adjudicated in its own sentence as *recomputable by a reader
+   from that sentence alone* or not. The corpus rate is the stratum-weighted combination, with a
+   95 % interval carried from the two binomials. Rule precision and rule recall fall out of the
+   same sample and are reported.
+3. **Every** token the rule calls inconsistent or complement-consistent is read in full, not
+   sampled, and adjudicated *real arithmetic error* / *rule error* / *undecidable*.
+
+**This supersedes** §6's sample sizes and A-5's interval. **P1, P2 and P5 are judged on the
+corrected estimates** and are also reported against the raw screen, so a reader can see both.
+**K1 is replaced:** low precision no longer withholds the rates, because the rates no longer come
+from the rule; instead, where a corpus's 95 % interval spans 50 %, **P5 is reported undecided for
+that corpus** rather than resolved.
+
+**Who reads.** The adjudication is done by this practice, in this session. **No person reads any
+of it** — the correction of 2026-09-21 stands, and nothing in this artifact will say otherwise.

@@ -393,10 +393,14 @@
       "tokens": [
         {
           "value": 3.2,
-          "verdict": "not_recomputable",
-          "pair": null
+          "verdict": "inconsistent",
+          "pair": [
+            8,
+            10
+          ]
         }
-      ]
+      ],
+      "note": "Known limitation, registered as amendment A-6: a percentage of change standing within the window of an unrelated count is paired with it. Structurally identical to F25, which is genuine."
     },
     {
       "id": "F30",
