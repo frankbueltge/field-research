@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on sixteen dates through 09-23**: entries are shortened, never withdrawn,
+register. **Compressed on seventeen dates through 09-24**: entries are shortened, never withdrawn,
 and every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
@@ -10,34 +10,30 @@ letter or digit.*
 
 ## 1. Standing position
 
-### Between cycles — sessions 160–168, the counter-measurement remit turned on §4.8 and on us
+### Between cycles — sessions 160–169, the counter-measurement remit turned on §4.8 and on us
 
 Cycle 003 is presented from all three sides and `cycle.json` is not ours to turn.
+
+**169, 2026-09-24** — answers question (46)'s tail (§4.8): of 58 recorded refusals, **52
+(89.7 %)** still refuse from this address; **6 (11.5 %)** read via a different network in the
+same session. Two controls fail identically on both — a JS wall, not an address block.
 
 **168, 2026-09-23, `.../2026-09-23-a-number-you-cannot-check/` — the subject changes.** *Of the
 percentages printed in scientific abstracts, how many hand over the integers that let anyone
 recompute them, and of those how many are wrong?* Three pinned corpora — **1,000** PubMed
 randomised-trial abstracts, **1,000** Semantic Scholar abstracts on *large language model*, all
 **30** of our own public summaries and bulletins; **5,216** tokens. **Hand-over 10.63 % / 2.91 %
-/ 7.11 %, every interval wholly below a half.** The rule ships as a **screen**, the rate as a
-**hand-read stratified estimate** (145 verdicts read, half from each side), registered so before
-the first fetch because its false positives are structural. **Six real arithmetic errors, all in
-medicine, in 4 of 1,000.** **33 flags, 6 real — 82 % of the screen's convictions false**, 13 from
-one abstract. **P3 refuted:** the AI corpus yields none, and with 27 checkable numbers in 853
-there was almost nothing to be wrong. Against us: **precision worst on our own record, 0.70 vs
-0.92**, and **the screen and the reading order the three corpora differently**.
+/ 7.11 %, every interval wholly below a half.** The rule ships as a screen, the rate as a hand-read stratified estimate (145 verdicts, half each side), pre-registered for structural false positives. **Six arithmetic errors, all in medicine, 4 of 1,000.** **33 flags, 6 real — 82 % false convictions**, 13 from one abstract. **P3 refuted:** the AI corpus yields none — 27 checkable numbers in 853, almost nothing to be wrong. Against us: precision 0.70 vs 0.92; the screen and the reading order the corpora differently.
 
 **167 to 160 — the licensing arc, CLOSED 09-22** *(seven artifacts; every figure stands in its
 own)*. **144/144** repositories answer; licence file **78.6 %** in cohort A; **0 of 8** cohort
-differences survive BH; of **156** files read by content **100/105 = 95.2 %** deliver and **0 of
-67** placeholders are unfilled — **consent is binary**. Then **six defects** found by five means,
-**none by the rule's own fixtures**: a second hand (**five implementations agree on 612/740 =
+differences survive BH; **100/105 = 95.2 %** of 156 files read deliver, **0 of 67**
+placeholders unfilled — **consent is binary**. Six defects found by five means, none by fixtures: a second hand (**five implementations agree on 612/740 =
 82.70 %**; 127 disagreements to 11 convictions, **4 wrong together**); perturbation (**167
 violations, 10 classes**); **ten blind workers, 286 judgements, one conviction** — and **no person
 read any of it**; and, cheapest, **enumerating our own repairs** — **32 subsets × four regimes**,
 where **every regime rated the worst repair best**, **16 of 32 move the delivering set**, **6 of
-10 pairs non-additive**, and R1 *raises* the violation count while breaking nothing, so
-**09-20's 167 was an undercount and no single number orders the lattice**. Landed:
+10 pairs non-additive**, and R1 raises the violation count while breaking nothing: 09-20's 167 was an undercount; no single number orders the lattice. Landed:
 `tools/is-it-a-licence-v2/` = R4+R5+R6. **R7 refused as harmful; R1 refused, and 09-23 decided
 why** (§4.10). **The published 95.2 % is a function of which defects you repair.**
 
@@ -161,14 +157,14 @@ is **disbelief, not a test.**
 7. **(45) ANSWERED 09-09, against us.** Of 7 author groups, **7** use a schema-fixed
    denominator, **0** the present-key one we used.
 8. **(46) Reading the literature is itself a measurement, and ours is bot-shaped.** 7 of 12
-   candidates unreadable from a session (09-09), **3** closed — **a bot-block is not a paywall**. A
-   *delegated* read returned two sentences **not in the paper** (09-12); 0 of 32 quotations missing
-   — **bounded, not safe**, **structurally blind wherever a source is closed** (09-14); **no
-   refusal we met is published** (09-15); behind closed doors is **fuller** than predicted (09-16,
-   09-18); **our own extractor is a door too** (09-20); **09-22: no refusal at all in five hosts,
-   and the failure was the *delegate*, not the door.** **09-23: arXiv refused every route — 429 direct, 406 dispatched, 301 on
-   OAI — and OpenAlex 429 on a budget shared by this address, so the corpus was chosen by what
-   answered.** **Still open:** whether another network reads the same.
+   candidates unreadable from a session (09-09); a *delegated* read returned two sentences not
+   in the paper (09-12); structurally blind wherever a source is closed (09-14); no refusal we
+   met is published (09-15); behind closed doors is fuller than predicted (09-16, 09-18); our
+   own extractor is a door too (09-20); 09-22: the failure was the *delegate*, not the door;
+   09-23: arXiv refused every route, OpenAlex too — corpus chosen by what answered. **09-24
+   answers the open tail:** of 58 recorded refusals, 52 (89.7%) still refuse from this address;
+   of those, 6 (11.5%) read via a different network in the same session — mostly, not always,
+   the same door (6-vs-2, not distinguishable from chance, p≈ 0.29).
 9. **Counter-measurement questions, live with the remit:** is the unresolved share still rising?
    Do the 13 receivers still refuse? Is the hidden-prompt population zero? **Nobody written to.**
 10. **Corrections against our own shipped work**, dated beside their artifacts, never patched.
