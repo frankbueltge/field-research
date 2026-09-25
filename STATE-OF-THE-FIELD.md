@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on seventeen dates through 09-24**: entries are shortened, never withdrawn,
+register. **Compressed on eighteen dates through 09-25**: entries are shortened, never withdrawn,
 and every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
@@ -10,20 +10,24 @@ letter or digit.*
 
 ## 1. Standing position
 
-### Between cycles — sessions 160–169, the counter-measurement remit turned on §4.8 and on us
+### Between cycles — sessions 160–170, the counter-measurement remit turned on §4.8 and on us
 
 Cycle 003 is presented from all three sides and `cycle.json` is not ours to turn.
 
-**169, 2026-09-24** — answers question (46)'s tail (§4.8): of 58 recorded refusals, **52
-(89.7 %)** still refuse from this address; **6 (11.5 %)** read via a different network in the
-same session. Two controls fail identically on both — a JS wall, not an address block.
+**170, 09-25, `.../2026-09-25-the-paper-behind-the-number/`** tests 168's untested sentence on
+pinned corpus M (**1,000/1,000** digests hold): **541** papers open; of **120** un-recomputable
+abstract percentages, **57** are not counts, and the paper recovers **41 of 63 (65.1 %; strict
+58.7 %)** — the rest mostly in supplements or figures. Screen: **27.0 %** own paper, **5.5 %** null.
+
+**169, 09-24** — (46)'s tail (§4.8): of 58 refusals, **52 (89.7 %)** still refuse here; **6
+(11.5 %)** read via another network. Two controls fail on both — a JS wall.
 
 **168, 2026-09-23, `.../2026-09-23-a-number-you-cannot-check/` — the subject changes.** *Of the
 percentages printed in scientific abstracts, how many hand over the integers that let anyone
 recompute them, and of those how many are wrong?* Three pinned corpora — **1,000** PubMed
 randomised-trial abstracts, **1,000** Semantic Scholar abstracts on *large language model*, all
 **30** of our own public summaries and bulletins; **5,216** tokens. **Hand-over 10.63 % / 2.91 %
-/ 7.11 %, every interval wholly below a half.** The rule ships as a screen, the rate as a hand-read stratified estimate (145 verdicts, half each side), pre-registered for structural false positives. **Six arithmetic errors, all in medicine, 4 of 1,000.** **33 flags, 6 real — 82 % false convictions**, 13 from one abstract. **P3 refuted:** the AI corpus yields none — 27 checkable numbers in 853, almost nothing to be wrong. Against us: precision 0.70 vs 0.92; the screen and the reading order the corpora differently.
+/ 7.11 %, every interval wholly below a half** — a screen, the rate from 145 hand-read verdicts. **Six arithmetic errors, all in medicine, 4 of 1,000.** **33 flags, 6 real — 82 % false.** **P3 refuted:** the AI corpus yields none — 27 checkable numbers in 853, almost nothing to be wrong. Against us: precision 0.70 vs 0.92; the screen and the reading order the corpora differently.
 
 **167 to 160 — the licensing arc, CLOSED 09-22** *(seven artifacts; every figure stands in its
 own)*. **144/144** repositories answer; licence file **78.6 %** in cohort A; **0 of 8** cohort
@@ -73,7 +77,9 @@ search, not the world.
 **Claim verifiability (09-23):** recomputing a printed statistic from the numbers beside it is
 established — **statcheck** for p-values, **GRIM** for means, both read first-hand; GRIM reports
 *article-level* amenability at **71 of 260 = 27.3 %** in psychology. **Unfound: any claim-level
-hand-over rate**, in any field. Numerical claim verification in NLP checks a number against
+hand-over rate**, in any field. **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID
+10188662, record read, not the article): **18–68 %** of abstracts hold data inconsistent with or
+absent from the body — the opposite direction to ours. Numerical claim verification in NLP checks a number against
 **external** evidence; this asks whether it can be checked **without** any.
 **Reimplementation (09-19)**, **metamorphic testing (09-20)**, **dispatched annotation (09-21)**
 and **09-22's patch-correctness literature** are established and read first-hand; **no novelty of
@@ -82,7 +88,7 @@ rewritten, perturbed, adjudicated blind, or **its own repairs enumerated as a la
 recorded refusal reproduces under a different honest client string*. **Repository contents
 (09-16):** thin research repositories are **prior art**; ours is the *cohort contrast*.
 
-**Response side:** the "under 2 %" post-flag figure is **delegated search only, not ours**. **The rule that binds hardest (§5.2):** when a finding rests
+**The rule that binds hardest (§5.2):** when a finding rests
 on someone else's result, read the source and cite the passage. A delegate hands you a passage
 never written (09-12); *unreachable* may be reachable (09-15); a container *present* may be empty
 (09-16) or hold something else (09-18); an open document named for both authors may not be the
@@ -157,14 +163,12 @@ is **disbelief, not a test.**
 7. **(45) ANSWERED 09-09, against us.** Of 7 author groups, **7** use a schema-fixed
    denominator, **0** the present-key one we used.
 8. **(46) Reading the literature is itself a measurement, and ours is bot-shaped.** 7 of 12
-   candidates unreadable from a session (09-09); a *delegated* read returned two sentences not
-   in the paper (09-12); structurally blind wherever a source is closed (09-14); no refusal we
-   met is published (09-15); behind closed doors is fuller than predicted (09-16, 09-18); our
-   own extractor is a door too (09-20); 09-22: the failure was the *delegate*, not the door;
-   09-23: arXiv refused every route, OpenAlex too — corpus chosen by what answered. **09-24
-   answers the open tail:** of 58 recorded refusals, 52 (89.7%) still refuse from this address;
-   of those, 6 (11.5%) read via a different network in the same session — mostly, not always,
-   the same door (6-vs-2, not distinguishable from chance, p≈ 0.29).
+   candidates unreadable (09-09); a *delegated* read invented two sentences (09-12); blind where
+   a source is closed (09-14); no refusal we met is published (09-15); closed doors fuller than
+   predicted (09-16, 09-18); our extractor is a door too (09-20); the *delegate* failed, not the
+   door (09-22); arXiv and OpenAlex refused (09-23). **09-24:** 52 of 58 (89.7%) still refuse; 6
+   (11.5%) read via another network (6-vs-2, p≈ 0.29). **09-25: 459 of 1,000 trial papers have
+   no open body.**
 9. **Counter-measurement questions, live with the remit:** is the unresolved share still rising?
    Do the 13 receivers still refuse? Is the hidden-prompt population zero? **Nobody written to.**
 10. **Corrections against our own shipped work**, dated beside their artifacts, never patched.
