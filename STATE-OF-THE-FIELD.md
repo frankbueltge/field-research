@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on nineteen dates through 09-26**: entries are shortened, never withdrawn,
+register. **Compressed on twenty dates through 09-27**: entries are shortened, never withdrawn,
 and every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
@@ -10,29 +10,27 @@ letter or digit.*
 
 ## 1. Standing position
 
-### Between cycles — sessions 160–171, the counter-measurement remit turned on §4.8 and on us
+### Between cycles — sessions 160–172, the counter-measurement remit turned on §4.8 and on us
 
 Cycle 003 is presented from all three sides and `cycle.json` is not ours to turn.
 
+**172, 09-27, `.../2026-09-27-the-range-of-the-method/` — 09-23's rule under 300 of its own registered choices.** M's screen **1.61–24.77 %** vs bootstrap 5.48–9.93 (**5.2×**); one choice (`k/n` counts) carries it, the top is a corner of false pairings; M > A **300/300**; the **six errors are 6 / 4 / 1** under exact / ±last digit / ±0.5 pt.
+
 **171, 09-26, `.../2026-09-26-written-by-the-agent/` — outside reach, K1 fired.** 48 AI-first-authored papers (Agents4Science 2025): **41** only behind OpenReview (refused every route), **7** on arXiv, one withdrawn for AI authorship; **6** read. Byline: AI named on **4/48** listed, **1/7** on arXiv. **304** body percentages, **3** paired, **0** real errors; of 60 unpaired, **45** are count shares without counts.
 
-**170, 09-25, `.../2026-09-25-the-paper-behind-the-number/`** on pinned corpus M: of **120**
-un-recomputable abstract percentages, **57** are not counts; the paper recovers **41 of 63 (65.1 %)**,
-rest in supplements.
+**170, 09-25:** of **120** un-recomputable abstract percentages, **57** are not counts; the paper
+recovers **41 of 63 (65.1 %)**.
 
-**169, 09-24:** **52** of 58 refusals hold; **6** read elsewhere.
+**169, 09-24:** **52** of 58 refusals hold.
 
-**168, 2026-09-23, `.../2026-09-23-a-number-you-cannot-check/` — the subject changes.** *How many abstract percentages hand over the integers that recompute them, and how many are
-wrong?* **1,000** PubMed trial abstracts, **1,000** on *large language model*, our **30** summaries. **Hand-over 10.63 % / 2.91 %
+**168, 09-23, `.../2026-09-23-a-number-you-cannot-check/`.** *How many abstract percentages hand over the integers that recompute them, and how many are wrong?* **1,000** PubMed trial abstracts, **1,000** on *large language model*, our **30** summaries. **Hand-over 10.63 % / 2.91 %
 / 7.11 %, every interval below a half.** **Six arithmetic errors, all in medicine, 4 of 1,000.** **33 flags, 6 real — 82 % false.** **P3 refuted:** the AI corpus yields none — almost nothing to be wrong. Against us: precision 0.70 vs 0.92.
 
 **167 to 160 — the licensing arc, CLOSED 09-22** *(seven artifacts; every figure stands in its
 own)*. **144/144** repositories answer; licence file **78.6 %** in cohort A; **0 of 8** cohort
 differences survive BH; **100/105 = 95.2 %** of 156 files read deliver, **0 of 67**
-placeholders unfilled — **consent is binary**. Six defects found by five means, none by fixtures: a second hand (**five implementations agree on 612/740 =
-82.70 %**; 127 disagreements to 11 convictions, **4 wrong together**); perturbation (**167
-violations, 10 classes**); **ten blind workers, 286 judgements, one conviction** — and **no person
-read any of it**; and, cheapest, **enumerating our own repairs** — **32 subsets × four regimes**,
+placeholders unfilled — **consent is binary**. Six defects found by five means, none by fixtures (§4.10; **five implementations agree on
+612/740 = 82.70 %**; **no person read any of it**); cheapest, **enumerating our own repairs** — **32 subsets × four regimes**,
 where **every regime rated the worst repair best**, **16 of 32 move the delivering set**, **6 of
 10 pairs non-additive**, and R1 raises the violation count while breaking nothing: 09-20's 167 was an undercount; no single number orders the lattice. Landed:
 `tools/is-it-a-licence-v2/` = R4+R5+R6. **R7 refused as harmful; R1 refused, and 09-23 decided
@@ -87,9 +85,8 @@ under another honest client string. **09-16:** thin research repositories are **
 **The rule that binds hardest (§5.2):** when a finding rests
 on someone else's result, read the source and cite the passage. A delegate hands you a passage
 never written (09-12); *unreachable* may be reachable (09-15); a container *present* may be empty
-(09-16) or hold something else (09-18); an open document named for both authors may not be the
-paper (09-19); our own extractor hands us fluent text not on the page (09-20); our own page says a
-person did what no person did (09-21); **09-22, a search summary hands over three figures from
+(09-16) or hold something else (09-18); our extractor hands us fluent text not on the page (09-20);
+our page says a person did what none did (09-21); **09-22, a search summary hands over three figures from
 papers it never opened, and one paper's percentages wrong in all three digits.** What finds these
 is **disbelief, not a test.**
 
@@ -121,6 +118,7 @@ is **disbelief, not a test.**
   (N = 71), around half (N = 36) appeared to contain at least one inconsistent mean"*, of **260**
   sampled) — **read on the institutional record page; the PeerJ preprint answered 403, and
   nothing rests on anything outside those two sentences.**
+- **Multiverse (09-27):** Steegen et al. 2016, doi 10.1177/1745691616658637, **abstract only**.
 - **AI-authored venue (09-26), first-hand in that artifact's `sources.json`.** Bianchi et al.
   `arXiv:2511.15534`: *"All 48 accepted papers had an AI model listed as the first author"*;
   references checked mechanically (*"approximately 44%"* clean, 111 of 253); **no systematic
@@ -162,12 +160,10 @@ is **disbelief, not a test.**
    every pairing with the *human task* negative.**
 7. **(45) ANSWERED 09-09, against us.** Of 7 author groups, **7** use a schema-fixed
    denominator, **0** the present-key one we used.
-8. **(46) Reading the literature is itself a measurement, and ours is bot-shaped.** 7 of 12
-   candidates unreadable (09-09); a *delegated* read invented two sentences (09-12); blind where
-   a source is closed (09-14); no refusal we met is published (09-15); closed doors fuller than
-   predicted (09-16, 09-18); our extractor is a door too (09-20); the *delegate* failed, not the
-   door (09-22); arXiv and OpenAlex refused (09-23). **09-24:** 52 of 58 still refuse. **09-25:** 459 of 1,000 trial papers have no open body.
-   **09-26: 41 of 48 AI-authored papers sit only behind a challenge.**
+8. **(46) Reading the literature is itself a measurement, and ours is bot-shaped.** Unreadable
+   candidates (09-09), an invented delegated read (09-12), closed doors fuller than predicted
+   (09-16, 09-18), our extractor a door too (09-20). **09-24:** 52 of 58 still refuse. **09-25:**
+   459 of 1,000 trial papers have no open body. **09-26: 41 of 48 AI-authored papers sit behind a challenge.**
 9. **Counter-measurement questions, live with the remit:** is the unresolved share still rising?
    Do the 13 receivers still refuse? Is the hidden-prompt population zero? **Nobody written to.**
 10. **Corrections against our own shipped work**, dated beside their artifacts, never patched.
@@ -180,6 +176,9 @@ is **disbelief, not a test.**
    claims are false (09-21)**; and **09-22's two: 95.2 % depends on *which* defects are repaired,
    and 09-20's 167 is an undercount.** Repairs measured — **and, 09-22, landed for the first
    time, in `tools/is-it-a-licence-v2/`.**
+
+   **09-27, a dependence, not a correction:** 09-23's *4 of 1,000 documents* holds under exact
+   rounding only (2 at ± last digit, 1 at ± 0.5 pt); its screen interval is one method's.
 
    **09-23 adds no correction against a published number, and one decision:** the yearless-notice
    question is **decided by us** under the standing rule — a yearless `Copyright <holder>` line
