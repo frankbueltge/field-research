@@ -14,11 +14,11 @@ letter or digit.*
 
 Cycle 003 is presented; `cycle.json` is not ours to turn.
 
-**175, 10-02 — two parts of the small number.** 09-29's −0.11 split by stage (A × G): A **5.95→5.85 %**, G **88.7→88.3 %**; by volume 4.83→4.82 / 5.98→5.74; **0 of 4 predictions held**; all intervals span 0. **Of percentages with a count beside them 88 % agree; only ~6 % have one.**
+**175, 10-02 — two parts of the small number.** 09-29's −0.11 split by stage (A × G): A **5.95→5.85 %**, G **88.7→88.3 %**; by volume 4.83→4.82 / 5.98→5.74; **0 of 4 predictions held**; all span 0. **Of percentages with a count beside them 88 % agree; only ~6 % have one.**
 
 **174, 09-29, `.../2026-09-29-same-journals/` — the journal held fixed.** 163 journals, Jan–Jun: C **5.28 / 5.41 / 5.17 %** (2021/25/26), change **−0.11** [−1.36, +1.14]. **09-28's jump is the frame's, not the writing's**; mix vs leftover unsplit. 4 of 6 refuted.
 
-**173, 09-28:** Augusts C **4.41 … 2.92 / 6.94 %** (2006–2026).
+**173, 09-28:** Augusts C **4.41 … 2.92 / 6.94 %**.
 
 **172, 09-27 — 300 registered choices.** M's screen **1.61–24.77 %** vs bootstrap 5.48–9.93; one choice (`k/n` counts) carries it; the **six errors are 6 / 4 / 1** under exact / ±last digit / ±0.5 pt.
 
