@@ -54,6 +54,15 @@ SOURCE_GLOBS = [
     "notes/**/*.md",
     "deliveries/**/*.md",
     "field-feedback/**/*.md",
+    # 2026-10-03. Two directories this practice has written into for weeks and the index
+    # never saw. Under research ecology v3 every session owes an artifact, and artifacts/
+    # is where they go: 106 markdown files — SUMMARY, PREREGISTRATION, VERIFICATION,
+    # METHOD, CORRECTIONS — the practice's own primary record, unreachable by recall since
+    # the directory was opened. presentations/<cycle>/ holds this practice's plain-language
+    # account of each finished cycle, written for the ecology's presentation and held
+    # nowhere else. The HTML, data and scripts beside both are not markdown and stay out.
+    "artifacts/**/*.md",
+    "presentations/**/*.md",
     "memory/*.md",
     "memory/dossiers/**/*.md",
 ]
