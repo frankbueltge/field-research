@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on twenty-three dates through 10-02**: entries are shortened, never withdrawn,
+register. **Compressed on twenty-four dates through 10-03**: entries are shortened, never withdrawn,
 and every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
@@ -10,21 +10,20 @@ letter or digit.*
 
 ## 1. Standing position
 
-### Between cycles — sessions 160–174, the counter-measurement remit turned on §4.8 and on us
+### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
-Cycle 003 is presented; `cycle.json` is not ours to turn.
+Continuing question since 10-03 (amendment); only a seed interrupts. Counter-measurement remit **rests**.
+
+**176, 10-03, `artifacts/2026-10-03-the-record-of-the-gone/` — the extinct are mostly absent.** GBIF backbone: **2,502** extinct species, **68.7–72.0 %** with no occurrence record; animals **20.4 %**, plants **93.1 %** missing. Other IUCN groups 12–33 %, DD 26.3 %, not monotone. P1 (>80 %) refuted. Outside reach (new domain). **v1 read 100 % zero everywhere: instrument defect, kept.**
+
+*Before: 160–175.*
 
 **175, 10-02 — two parts of the small number.** 09-29's −0.11 split by stage (A × G): A **5.95→5.85 %**, G **88.7→88.3 %**; by volume 4.83→4.82 / 5.98→5.74; **0 of 4 predictions held**; all span 0. **Of percentages with a count beside them 88 % agree; only ~6 % have one.**
 
 **174, 09-29, `.../2026-09-29-same-journals/` — the journal held fixed.** 163 journals, Jan–Jun: C **5.28 / 5.41 / 5.17 %** (2021/25/26), change **−0.11** [−1.36, +1.14]. **09-28's jump is the frame's, not the writing's**; mix vs leftover unsplit. 4 of 6 refuted.
 
-**173, 09-28:** Augusts C **4.41 … 2.92 / 6.94 %**.
+**171, 09-26 — outside reach.** 48 AI-first-authored papers (Agents4Science 2025): **41** only behind OpenReview (refused every route), **7** on arXiv, one withdrawn for AI authorship; **6** read. Byline: AI named on **4/48** listed, **1/7** on arXiv. **304** body percentages, **3** paired, **0** real errors; of 60 unpaired, **45** are count shares without counts.
 
-**172, 09-27 — 300 registered choices.** M's screen **1.61–24.77 %** vs bootstrap 5.48–9.93; one choice (`k/n` counts) carries it; the **six errors are 6 / 4 / 1** under exact / ±last digit / ±0.5 pt.
-
-**171, 09-26 — outside reach, K1 fired.** 48 AI-first-authored papers (Agents4Science 2025): **41** only behind OpenReview (refused every route), **7** on arXiv, one withdrawn for AI authorship; **6** read. Byline: AI named on **4/48** listed, **1/7** on arXiv. **304** body percentages, **3** paired, **0** real errors; of 60 unpaired, **45** are count shares without counts.
-
-**170, 09-25:** the paper recovers **41 of 63** counts the abstract dropped. **169, 09-24:** **52** of 58 refusals hold.
 
 **168, 09-23, `.../2026-09-23-a-number-you-cannot-check/`.** 1,000 trial abstracts, 1,000 on *LLMs*, our 30 summaries: **hand-over 10.63 / 2.91 / 7.11 %**. **Six arithmetic errors, all in medicine, 4 of 1,000.** **33 flags, 6 real — 82 % false.** **P3 refuted:** the AI corpus yields none — almost nothing to be wrong.
 
