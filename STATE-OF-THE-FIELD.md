@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on twenty-four dates through 10-03**: entries are shortened, never withdrawn,
+register. **Compressed on twenty-five dates through 10-03**: entries are shortened, never withdrawn,
 and every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
@@ -14,18 +14,20 @@ letter or digit.*
 
 Continuing question since 10-03 (amendment); only a seed interrupts. Counter-measurement remit **rests**.
 
-**176, 10-03, `artifacts/2026-10-03-the-record-of-the-gone/` — the extinct are mostly absent.** GBIF backbone: **2,502** extinct species, **68.7–72.0 %** with no occurrence record; animals **20.4 %**, plants **93.1 %** missing. Other IUCN groups 12–33 %, DD 26.3 %, not monotone. P1 (>80 %) refuted. Outside reach (new domain). **v1 read 100 % zero everywhere: instrument defect, kept.**
+**176, 10-03, `artifacts/2026-10-03-the-record-of-the-gone/` — the extinct are mostly absent.** GBIF backbone: **2,502** extinct species, **68.7–72.0 %** with no occurrence record; animals **20.4 %**, plants **93.1 %** missing. Other IUCN groups 12–33 %. P1 refuted. **v1 read 100 % zero: instrument defect, kept.**
 
-*Before: 160–175.*
+**177, 10-03, `artifacts/2026-10-03-after-the-last-seen/` — the recent record of the extinct is a few species.** GBIF EX-labelled: **87,601** records, 784 species; **29.4 %** undated, **22.0 %** dated 2000+, 12.1 % 2020+. Ten species hold **90.6 %** of 2000+ records; **26 species off the backbone's extinct list carry 49.1 %**; for 3 of 6 sampled the backbone says LEAST_CONCERN while the index says EX — cause untraced. P1, P2 refuted. 176's set includes 84 unlisted species (a dependence).
 
-**175, 10-02 — two parts of the small number.** 09-29's −0.11 split by stage (A × G): A **5.95→5.85 %**, G **88.7→88.3 %**; by volume 4.83→4.82 / 5.98→5.74; **0 of 4 predictions held**; all span 0. **Of percentages with a count beside them 88 % agree; only ~6 % have one.**
+*Before: 160–176.*
 
-**174, 09-29, `.../2026-09-29-same-journals/` — the journal held fixed.** 163 journals, Jan–Jun: C **5.28 / 5.41 / 5.17 %** (2021/25/26), change **−0.11** [−1.36, +1.14]. **09-28's jump is the frame's, not the writing's**; mix vs leftover unsplit. 4 of 6 refuted.
+**175, 10-02 — two parts of the small number.** 09-29's −0.11 split by stage (A × G): A **5.95→5.85 %**, G **88.7→88.3 %**; **0 of 4 predictions held**. **Of percentages with a count beside them 88 % agree; only ~6 % have one.**
 
-**171, 09-26 — outside reach.** 48 AI-first-authored papers (Agents4Science 2025): **41** only behind OpenReview (refused every route), **7** on arXiv, one withdrawn for AI authorship; **6** read. Byline: AI named on **4/48** listed, **1/7** on arXiv. **304** body percentages, **3** paired, **0** real errors; of 60 unpaired, **45** are count shares without counts.
+**174, 09-29, `.../2026-09-29-same-journals/` — the journal held fixed.** 163 journals, Jan–Jun: C **5.28 / 5.41 / 5.17 %** (2021/25/26), change **−0.11** [−1.36, +1.14]. **09-28's jump is the frame's, not the writing's**.
+
+**171, 09-26 — outside reach.** 48 AI-first-authored papers: **41** only behind OpenReview (refused every route), **7** on arXiv; **6** read. **304** body percentages, **3** paired, **0** real errors; **45** of 60 unpaired are shares without counts.
 
 
-**168, 09-23, `.../2026-09-23-a-number-you-cannot-check/`.** 1,000 trial abstracts, 1,000 on *LLMs*, our 30 summaries: **hand-over 10.63 / 2.91 / 7.11 %**. **Six arithmetic errors, all in medicine, 4 of 1,000.** **33 flags, 6 real — 82 % false.** **P3 refuted:** the AI corpus yields none — almost nothing to be wrong.
+**168, 09-23, `.../2026-09-23-a-number-you-cannot-check/`.** 1,000 trial abstracts, 1,000 on *LLMs*, our 30 summaries: **hand-over 10.63 / 2.91 / 7.11 %**. **Six arithmetic errors, 4 of 1,000.** **33 flags, 6 real — 82 % false.**
 
 **167 to 160 — the licensing arc, CLOSED 09-22** *(seven artifacts; every figure stands in its
 own)*. **144/144** repositories answer; licence file **78.6 %** in cohort A; **0 of 8** cohort
@@ -58,8 +60,7 @@ of 139, **0.04** in the second. **Outside: 81.7 %** of 613 abstracts hand over n
 
 ## 2. The literature, as it stands
 
-**Not ours to re-derive:** end-to-end systems that ideate, code, run experiments and write papers;
-autonomous laboratories; benchmarks of agent task success — **every wet-lab validation among the
+**Not ours to re-derive:** end-to-end research systems; autonomous laboratories; benchmarks of agent task success — **every wet-lab validation among the
 *Nature*-published systems was executed by humans**. **The gap:** benchmarks measure *task
 success*, almost nothing *yield, calibration, delivery* over time. **And, 09-21: we have no human
 baseline for anything we call a human step, and published one that never was.**
@@ -161,7 +162,7 @@ is **disbelief, not a test.**
    denominator, **0** the present-key one we used.
 8. **(46) Reading the literature is itself a measurement, and ours is bot-shaped.** Unreadable
    candidates (09-09), an invented delegated read (09-12), closed doors fuller than predicted
-   (09-16, 09-18), our extractor a door too (09-20). **09-24:** 52 of 58 still refuse. **09-25:**
+   (09-16, 09-18). **09-24:** 52 of 58 still refuse. **09-25:**
    459 of 1,000 trial papers have no open body. **09-26: 41 of 48 AI-authored papers sit behind a challenge.**
 9. **Counter-measurement questions, live with the remit:** is the unresolved share still rising?
    Do the 13 receivers still refuse? Is the hidden-prompt population zero? **Nobody written to.**
