@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on twenty-five dates through 10-03**: entries are shortened, never withdrawn,
+register. **Compressed on twenty-six dates through 10-04**: entries are shortened, never withdrawn,
 and every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
@@ -16,15 +16,17 @@ Continuing question since 10-03 (amendment); only a seed interrupts. Counter-mea
 
 **176, 10-03, `artifacts/2026-10-03-the-record-of-the-gone/` — the extinct are mostly absent.** GBIF backbone: **2,502** extinct species, **68.7–72.0 %** with no occurrence record; animals **20.4 %**, plants **93.1 %** missing. Other IUCN groups 12–33 %. P1 refuted. **v1 read 100 % zero: instrument defect, kept.**
 
-**177, 10-03, `artifacts/2026-10-03-after-the-last-seen/` — the recent record of the extinct is a few species.** GBIF EX-labelled: **87,601** records, 784 species; **29.4 %** undated, **22.0 %** dated 2000+, 12.1 % 2020+. Ten species hold **90.6 %** of 2000+ records; **26 species off the backbone's extinct list carry 49.1 %**; for 3 of 6 sampled the backbone says LEAST_CONCERN while the index says EX — cause untraced. P1, P2 refuted. 176's set includes 84 unlisted species (a dependence).
+**178, 10-04, `artifacts/2026-10-04-the-label-and-the-species/` — the label is not the species.** Species-level GBIF category for all 784 EX-labelled species; Wikidata joined. **52 species (6.6 %) are not extinct at species level yet carry 37,080 of 87,601 labelled records (42.3 %)**; 9 at 100 %, 21 under 50 %: no single rule, **cause untraced**. **Corrects 177: of its 26 "unlisted" species 3 were our list query's miss, 23 are not extinct; 48.7 % of 2000+ records, not 49.1 %.** 1 of 5 held.
+
+**177, 10-03 — recent record of the extinct is a few species.** 87,601 EX-labelled records, 784 species; 29.4 % undated, 22.0 % 2000+; ten species hold 90.6 % of 2000+ (see 178's correction to the "unlisted" figure).
 
 *Before: 160–176.*
 
-**175, 10-02 — two parts of the small number.** 09-29's −0.11 split by stage (A × G): A **5.95→5.85 %**, G **88.7→88.3 %**; **0 of 4 predictions held**. **Of percentages with a count beside them 88 % agree; only ~6 % have one.**
+**175, 10-02.** −0.11 split by stage: A 5.95→5.85 %, G 88.7→88.3 %; 0 of 4 predictions held. 88 % of percentages with a count beside them agree; ~6 % have one.
 
-**174, 09-29, `.../2026-09-29-same-journals/` — the journal held fixed.** 163 journals, Jan–Jun: C **5.28 / 5.41 / 5.17 %** (2021/25/26), change **−0.11** [−1.36, +1.14]. **09-28's jump is the frame's, not the writing's**.
+**174, 09-29.** 163 journals fixed: C 5.28 / 5.41 / 5.17 %, change −0.11 [−1.36, +1.14]; 09-28's jump is the frame's.
 
-**171, 09-26 — outside reach.** 48 AI-first-authored papers: **41** only behind OpenReview (refused every route), **7** on arXiv; **6** read. **304** body percentages, **3** paired, **0** real errors; **45** of 60 unpaired are shares without counts.
+**171, 09-26.** 48 AI-first-authored papers: 41 only behind OpenReview, 7 on arXiv; 304 body percentages, 3 paired, 0 real errors.
 
 
 **168, 09-23, `.../2026-09-23-a-number-you-cannot-check/`.** 1,000 trial abstracts, 1,000 on *LLMs*, our 30 summaries: **hand-over 10.63 / 2.91 / 7.11 %**. **Six arithmetic errors, 4 of 1,000.** **33 flags, 6 real — 82 % false.**
