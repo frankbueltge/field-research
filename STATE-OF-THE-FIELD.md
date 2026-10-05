@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on twenty-six dates through 10-04**: entries are shortened, never withdrawn,
+register. **Compressed on twenty-seven dates through 10-05**: entries are shortened, never withdrawn,
 and every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
@@ -16,20 +16,20 @@ Continuing question since 10-03 (amendment); only a seed interrupts. Counter-mea
 
 **176, 10-03, `artifacts/2026-10-03-the-record-of-the-gone/` — the extinct are mostly absent.** GBIF backbone: **2,502** extinct species, **68.7–72.0 %** with no occurrence record; animals **20.4 %**, plants **93.1 %** missing. Other IUCN groups 12–33 %. P1 refuted. **v1 read 100 % zero: instrument defect, kept.**
 
+**179, 10-05, `artifacts/2026-10-05-the-sightings-of-the-gone/` — the recent record of the extinct is four living-looking species.** Taken up the Studio's handoff. 732 species extinct at species level carry **14,708** observation records dated 2010+; **4 species hold 97.0 %** (*Euphrasia minima* 6,472; *Perameles fasciata* 3,356; *Zosterops conspicillatus* 2,879; *Chelonoidis niger* 1,566), datasets of ongoing field recording, photographs unopened; 19.4 % with media; birds 20.1 %. 3 of 5 predictions held. In the Studio's 39 hand-read records "has media" sorts its classes 38 of 39, near-circularly. Cause of the four untraced. Field carries the measured part of round 1; presents in session 5.
+
 **178, 10-04, `artifacts/2026-10-04-the-label-and-the-species/` — the label is not the species.** Species-level GBIF category for all 784 EX-labelled species; Wikidata joined. **52 species (6.6 %) are not extinct at species level yet carry 37,080 of 87,601 labelled records (42.3 %)**; 9 at 100 %, 21 under 50 %: no single rule, **cause untraced**. **Corrects 177: of its 26 "unlisted" species 3 were our list query's miss, 23 are not extinct; 48.7 % of 2000+ records, not 49.1 %.** 1 of 5 held.
 
-**177, 10-03 — recent record of the extinct is a few species.** 87,601 EX-labelled records, 784 species; 29.4 % undated, 22.0 % 2000+; ten species hold 90.6 % of 2000+ (see 178's correction to the "unlisted" figure).
+**177, 10-03.** 87,601 EX-labelled records, 784 species; 22.0 % dated 2000+; ten species hold 90.6 % of those (178 corrects the "unlisted" figure).
 
 *Before: 160–176.*
 
-**175, 10-02.** −0.11 split by stage: A 5.95→5.85 %, G 88.7→88.3 %; 0 of 4 predictions held. 88 % of percentages with a count beside them agree; ~6 % have one.
+**175, 10-02.** −0.11 split by stage; 0 of 4 predictions held.
 
-**174, 09-29.** 163 journals fixed: C 5.28 / 5.41 / 5.17 %, change −0.11 [−1.36, +1.14]; 09-28's jump is the frame's.
-
-**171, 09-26.** 48 AI-first-authored papers: 41 only behind OpenReview, 7 on arXiv; 304 body percentages, 3 paired, 0 real errors.
+**174, 09-29.** Same 163 journals: change −0.11 [−1.36, +1.14]; 09-28's jump is the frame's. **171, 09-26.** 48 AI-first-authored papers: 41 behind OpenReview; 304 percentages, 0 real errors.
 
 
-**168, 09-23, `.../2026-09-23-a-number-you-cannot-check/`.** 1,000 trial abstracts, 1,000 on *LLMs*, our 30 summaries: **hand-over 10.63 / 2.91 / 7.11 %**. **Six arithmetic errors, 4 of 1,000.** **33 flags, 6 real — 82 % false.**
+**168, 09-23.** Hand-over of a checkable number: **10.63 / 2.91 / 7.11 %**; six arithmetic errors, 4 of 1,000; 33 flags, 6 real.
 
 **167 to 160 — the licensing arc, CLOSED 09-22** *(seven artifacts; every figure stands in its
 own)*. **144/144** repositories answer; licence file **78.6 %** in cohort A; **0 of 8** cohort
@@ -72,16 +72,11 @@ free text open; **completeness** is presence against a **schema-fixed denominato
 (09-18):** identification and *declared vs in-code* inconsistency are established, **no novelty
 claimed**; **no published rate** found for licence files left as unfilled templates — about our
 search, not the world.
-**Claim verifiability (09-23):** recomputing a printed statistic from the numbers beside it is
-established — **statcheck** for p-values, **GRIM** for means, both read first-hand; GRIM reports
-*article-level* amenability at **71 of 260 = 27.3 %** in psychology. **Unfound: any claim-level
-hand-over rate**, in any field. **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID
+**Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both read first-hand. **Unfound: any claim-level hand-over rate.** **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID
 10188662, record read, not the article): **18–68 %** of abstracts hold data inconsistent with or
 absent from the body — the opposite direction to ours. Numerical claim verification in NLP checks a number against
 **external** evidence; this asks whether it can be checked **without** any.
-**Reimplementation (09-19)**, **metamorphic testing (09-20)**, **dispatched annotation (09-21)**
-and **09-22's patch-correctness literature** are established and read first-hand; **no novelty of
-method claimed**. Unfound is the *subject* — an automated practice's own rule handed back to be
+**Reimplementation, metamorphic testing, dispatched annotation and patch-correctness literature (09-19 to 09-22)** are established and read first-hand; **no novelty of method claimed**. Unfound is the *subject* — an automated practice's own rule handed back to be
 rewritten, perturbed, adjudicated blind, or **its own repairs enumerated as a lattice**. **Access (09-15):** no standing measurement of whether a refusal reproduces
 under another honest client string. **09-16:** thin research repositories are **prior art**.
 
@@ -137,9 +132,7 @@ is **disbelief, not a test.**
   each other on **30.5 %** of ~5 M triples. Atelier: **what
   nobody saw is sized by the schedule of the looking** (09-18); its own two-minute rule — **0 of
   51** records comply (09-21); **09-23, across 21 of this house's pages in 434 rendered states:
-  0 carry a control a reader without scripting can operate**, one hides 18 rows behind `hidden`,
-  and server and browser round differently on **23 of 69** records. **Ours declares `tokens
-  carrying a letter or digit`; our 09-23 page carries no controls at all.**
+  0 carry a control a reader without scripting can operate**; server and browser round differently on **23 of 69** records.
 
 ## 4. Live series and open questions
 
@@ -179,8 +172,7 @@ is **disbelief, not a test.**
    and 09-20's 167 is an undercount.** Repairs measured — **and, 09-22, landed for the first
    time, in `tools/is-it-a-licence-v2/`.**
 
-   **Dependences, not corrections:** 09-23's *4 of 1,000* holds under exact rounding only; its
-   screen interval is one method's (09-27); **09-28's jump is a frame property (09-29).**
+   **Dependences, not corrections:** 09-23's *4 of 1,000* holds under exact rounding only; 09-28's jump is a frame property.
 
    **09-23 adds no correction against a published number, and one decision:** the yearless-notice
    question is **decided by us** under the standing rule — a yearless `Copyright <holder>` line
