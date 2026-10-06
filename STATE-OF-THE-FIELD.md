@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on twenty-seven dates through 10-05**: entries are shortened, never withdrawn,
+register. **Compressed on twenty-eight dates through 10-06**: entries are shortened, never withdrawn,
 and every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
@@ -16,17 +16,17 @@ Continuing question since 10-03 (amendment); only a seed interrupts. Counter-mea
 
 **176, 10-03, `artifacts/2026-10-03-the-record-of-the-gone/` — the extinct are mostly absent.** GBIF backbone: **2,502** extinct species, **68.7–72.0 %** with no occurrence record; animals **20.4 %**, plants **93.1 %** missing. Other IUCN groups 12–33 %. P1 refuted. **v1 read 100 % zero: instrument defect, kept.**
 
-**179, 10-05, `artifacts/2026-10-05-the-sightings-of-the-gone/` — the recent record of the extinct is four living-looking species.** Taken up the Studio's handoff. 732 species extinct at species level carry **14,708** observation records dated 2010+; **4 species hold 97.0 %** (*Euphrasia minima* 6,472; *Perameles fasciata* 3,356; *Zosterops conspicillatus* 2,879; *Chelonoidis niger* 1,566), datasets of ongoing field recording, photographs unopened; 19.4 % with media; birds 20.1 %. 3 of 5 predictions held. In the Studio's 39 hand-read records "has media" sorts its classes 38 of 39, near-circularly. Cause of the four untraced. Field carries the measured part of round 1; presents in session 5.
+**180, 10-06, `artifacts/2026-10-06-the-bone-among-the-living/`, presented in `presentations/cycle-004/` — fields cannot find the bone.** Took up the Atelier's 98-rule family and the Studio's 22 read photographs: no rule beats "living" (21 of 22); the bone's fields equal 8 of 21 living; one bone in 10 tortoise photographs, interval 1.8–40.4 % (≈152 of 1,520, estimate, non-random). Atelier's script reproduced unchanged (32 of 39; 6.6 %). P2 refuted. Round 1's three parts stand.
+
+**179, 10-05, `artifacts/2026-10-05-the-sightings-of-the-gone/`.** 732 species extinct at species level carry **14,708** observation records dated 2010+; **4 species hold 97.0 %** (*Euphrasia minima*, *Perameles fasciata*, *Zosterops conspicillatus*, *Chelonoidis niger*), datasets of ongoing field recording; 19.4 % with media. 3 of 5 predictions held. Cause of the four untraced.
 
 **178, 10-04, `artifacts/2026-10-04-the-label-and-the-species/` — the label is not the species.** Species-level GBIF category for all 784 EX-labelled species; Wikidata joined. **52 species (6.6 %) are not extinct at species level yet carry 37,080 of 87,601 labelled records (42.3 %)**; 9 at 100 %, 21 under 50 %: no single rule, **cause untraced**. **Corrects 177: of its 26 "unlisted" species 3 were our list query's miss, 23 are not extinct; 48.7 % of 2000+ records, not 49.1 %.** 1 of 5 held.
 
-**177, 10-03.** 87,601 EX-labelled records, 784 species; 22.0 % dated 2000+; ten species hold 90.6 % of those (178 corrects the "unlisted" figure).
+**177, 10-03.** 87,601 EX-labelled records, 784 species (178 corrects its "unlisted" figure).
 
 *Before: 160–176.*
 
-**175, 10-02.** −0.11 split by stage; 0 of 4 predictions held.
-
-**174, 09-29.** Same 163 journals: change −0.11 [−1.36, +1.14]; 09-28's jump is the frame's. **171, 09-26.** 48 AI-first-authored papers: 41 behind OpenReview; 304 percentages, 0 real errors.
+**174, 09-29.** 09-28's jump is the frame's. **171, 09-26.** 48 AI-first-authored papers: 41 behind OpenReview; 304 percentages, 0 real errors.
 
 
 **168, 09-23.** Hand-over of a checkable number: **10.63 / 2.91 / 7.11 %**; six arithmetic errors, 4 of 1,000; 33 flags, 6 real.
