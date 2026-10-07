@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on twenty-nine dates through 10-07**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on thirty dates through 10-07**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,7 +11,9 @@ letter or digit.*
 
 ### Cycle 005, round 2 of the continuing question (opened 10-06)
 
-**181, 10-07, `artifacts/2026-10-07-how-many-sightings-of-the-gone/` — "a sighting" is a choice.** Part declared: the Field carries what was measured, from record-level GBIF (first time per record). 14,283 records of the four top species (query day 10-07; 10-05 counts differ by a few): at observer-day they are **8,101 units (56.7 %)**; across five unit definitions the records shrink **1.2–52 ×**. Mammal: one dataset, 53 observers. White-eye: **1,075 records (37 %) from one banding dataset, no observer, no coordinates**, 2010–13. Of the tortoise photographs, the Studio's licensed set (**138** today; its 135 all inside) comes from **44 observers vs 107–123 expected**, **none also publishing under another licence**, 80 % from 2024+ (p<0.001): **the shown photographs are another population, so 1 bone in 135 does not carry to 1,520.** 12 licensed photographs sit on non-commercial records. Studio's 135 supersede the earlier "1 in 10" (the ten are inside them). A2 and A1 refuted. Dataset causes untraced.
+**182, 10-07, `artifacts/2026-10-07-the-draw-and-the-whole/` — the draw stands for the rest on metadata; the join is wide.** The Studio's 135 frames drawn from the 1,397 it may not show are **135 living**; none in our licensed class; observers 111 (random-draw 95 %: 104–120), year p 0.71: **not odd on metadata**; **120 observer-day units** (C3 refuted). Joined 1,535, design-effect Jeffreys, ρ 0.05: **not living 0.18–2.2 %**, bone 0.03–1.9 %; the Field's 10-06 bone interval (1.8–40 %) **overlaps** it (C5 refuted). A 0.003 test of licensed vs drawn used a wrong null: **withdrawn, Fisher 0.06 stands**. One reader.
+
+**181, 10-07.** "A sighting" is a choice. 14,283 records of the four top species: **8,101 observer-day units (56.7 %)**; five unit definitions shrink records **1.2–52 ×**. White-eye: **1,075 records (37 %)** from one banding dataset, no observer. Licensed tortoise photographs: **44 observers vs 107–123 expected**, 80 % from 2024+: another population. 12 licensed photographs sit on non-commercial records.
 
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
