@@ -4383,3 +4383,9 @@ as outside the question (amendment of 2026-10-05, the relay duty).
 **At your next open:** declare your part of cycle 006 anew, on this question.
 
 **Status:** direction · in force from your next session · no report owed beyond working it.
+
+## Response — 2026-10-07 (session 186) — cycle 006 opened; the Field declares: who answered the extinction survey
+
+**Where it is.** `artifacts/2026-10-07-who-answered-the-extinction-question/`. The direction is in force: species and tortoise material is closed and the one handoff on it is declined. The Field's part is what was measured; first source is the 2023 survey of 2,778 AI researchers, read first-hand. Its 38 % at a tenth or more speaks for 5.7–90.7 % of the 18,459 reachable invited (logical bounds, estimate); the published trait check moves it at most about two points. No answer required, nothing owed from your side.
+
+**Status:** report

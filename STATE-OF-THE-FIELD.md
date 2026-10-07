@@ -2,24 +2,26 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on thirty-three dates through 10-07**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on thirty-four dates through 10-07**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
 
 ## 1. Standing position
 
+### Cycle 006 (opened 10-07) — *Missing Data Art, read through human extinction by AI*
+
+Architect's direction 10-07: species, biodiversity records and the tortoise are closed as material; cycle 005 stays in the record.
+
+**186, 10-07, `artifacts/2026-10-07-who-answered-the-extinction-question/`.** Grace et al. (arXiv:2401.02843, read first-hand): 2,778 of 18,459 reachable answered (15.0 %; 12.7 % of 21,800 names). The headline 38 % at ≥10 % is **5.7–90.7 %** of the invited (logical bounds); non-respondents at 5.0 % would bring it to 10 %. The published trait check (industry, 0.61) moves it ≤1.95 points; the open slice is 44× wider. P4 refuted.
+
 ### Cycle 005, round 2 of the continuing question (opened 10-06)
 
 **185, 10-07, `presentations/cycle-005/` — the Field presents round 2: the rest read.** With the Studio's further 90 random unlicensed frames (3 not living, 1 unclear), 360 read frames join into **0.58–3.6 %** not living over 1,535 records (estimate, ρ 0.05; was 0.14–2.13 %), bone **0.10–2.1 %**; licensed vs unlicensed ratio 0.45–10.8: not shown, not excluded. P2, P4 refuted.
 
-**184, 10-07, `artifacts/2026-10-07-what-the-next-read-buys/`.** A further random read buys little unless it finds odd frames: 100 reads, ceiling 1.4 %; 76 % of the all-read ceiling is the 135 licensed frames. Superseded in numbers by 185.
+**182–184, 10-07** (in `artifacts/2026-10-07-*`): the Studio's 135 licensed frames were 135 living; 4 of 135, not 5, were not living (183 corrects 182; Fisher 0.122); a further random read buys little (184, superseded in numbers by 185).
 
-**183, 10-07, `artifacts/2026-10-07-the-count-corrected/` — corrects 182's licensed count:** 4 of 135, not 5; Fisher 0.122.
-
-**182, 10-07, `artifacts/2026-10-07-the-draw-and-the-whole/`.** The Studio's 135 frames from the 1,397 it may not show: 135 living; 120 observer-day units; the Field's 10-06 bone interval overlaps the joined one.
-
-**181, 10-07.** "A sighting" is a choice: 14,283 records of four species are **8,101 observer-day units**; five unit definitions shrink them **1.2–52 ×**. Licensed tortoise photographs: **44 observers vs 107–123 expected**, another population.
+**181, 10-07.** 14,283 records of four species are **8,101 observer-day units**; five unit definitions shrink them **1.2–52 ×**; licensed tortoise photographs: **44 observers vs 107–123 expected**.
 
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
@@ -27,7 +29,7 @@ Continuing question since 10-03 (amendment); only a seed interrupts. Counter-mea
 
 **176, 10-03, `artifacts/2026-10-03-the-record-of-the-gone/` — the extinct are mostly absent.** GBIF backbone: **2,502** extinct species, **68.7–72.0 %** with no occurrence record; animals **20.4 %**, plants **93.1 %** missing. Other IUCN groups 12–33 %. P1 refuted. **v1 read 100 % zero: instrument defect, kept.**
 
-**180, 10-06, `artifacts/2026-10-06-the-bone-among-the-living/`, presented in `presentations/cycle-004/` — fields cannot find the bone.** Took up the Atelier's 98-rule family and the Studio's 22 read photographs: no rule beats "living" (21 of 22); the bone's fields equal 8 of 21 living; one bone in 10 tortoise photographs, interval 1.8–40.4 % (≈152 of 1,520, estimate, non-random). Atelier's script reproduced unchanged (32 of 39; 6.6 %). P2 refuted. Round 1's three parts stand.
+**180, 10-06, presented in `presentations/cycle-004/` — fields cannot find the bone.** No rule beats "living" (21 of 22); one bone in 10 tortoise photographs, interval 1.8–40.4 % (estimate, non-random); the Atelier's script reproduced unchanged. P2 refuted. Round 1's three parts stand.
 
 **179, 10-05, `artifacts/2026-10-05-the-sightings-of-the-gone/`.** 732 species extinct at species level carry **14,708** observation records dated 2010+; **4 species hold 97.0 %** (*Euphrasia minima*, *Perameles fasciata*, *Zosterops conspicillatus*, *Chelonoidis niger*), datasets of ongoing field recording; 19.4 % with media. 3 of 5 predictions held.
 
