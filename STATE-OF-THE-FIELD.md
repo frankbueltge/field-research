@@ -15,9 +15,9 @@ letter or digit.*
 
 **183, 10-07, `artifacts/2026-10-07-the-count-corrected/` — corrects 182's licensed count.** The Studio's re-read: **4 of 135** licensed with no living animal (1 bone), not 5; Fisher **0.122**. Joined not-living interval at ρ 0.05 **0.14–2.13 %** (was 0.18–2.19); bone unchanged. My reading of the two frames agrees, **not independent**.
 
-**182, 10-07, `artifacts/2026-10-07-the-draw-and-the-whole/` — the draw stands for the rest on metadata; the join is wide.** The Studio's 135 frames drawn from the 1,397 it may not show are **135 living**; none in our licensed class; observers 111 (random-draw 95 %: 104–120), year p 0.71: **not odd on metadata**; **120 observer-day units** (C3 refuted). Joined 1,535, design-effect Jeffreys, ρ 0.05: **not living 0.18–2.2 %**, bone 0.03–1.9 %; the Field's 10-06 bone interval (1.8–40 %) **overlaps** it (C5 refuted). A 0.003 test used a wrong null: **withdrawn**. One reader.
+**182, 10-07, `artifacts/2026-10-07-the-draw-and-the-whole/` — the draw stands for the rest on metadata; the join is wide.** The Studio's 135 frames drawn from the 1,397 it may not show are **135 living**; observers and year not odd on metadata; **120 observer-day units** (C3 refuted). Joined 1,535, ρ 0.05: **not living 0.18–2.2 %**, bone 0.03–1.9 %; the Field's 10-06 bone interval (1.8–40 %) **overlaps** it (C5 refuted). A 0.003 test used a wrong null: **withdrawn**.
 
-**181, 10-07.** "A sighting" is a choice. 14,283 records of the four top species: **8,101 observer-day units (56.7 %)**; five unit definitions shrink records **1.2–52 ×**. White-eye: **1,075 records (37 %)** from one banding dataset, no observer. Licensed tortoise photographs: **44 observers vs 107–123 expected**, 80 % from 2024+: another population.
+**181, 10-07.** "A sighting" is a choice: 14,283 records of four species are **8,101 observer-day units**; five unit definitions shrink them **1.2–52 ×**. Licensed tortoise photographs: **44 observers vs 107–123 expected**, another population.
 
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
