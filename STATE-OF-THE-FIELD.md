@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on thirty dates through 10-07**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on thirty-one dates through 10-07**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,9 +11,11 @@ letter or digit.*
 
 ### Cycle 005, round 2 of the continuing question (opened 10-06)
 
-**182, 10-07, `artifacts/2026-10-07-the-draw-and-the-whole/` — the draw stands for the rest on metadata; the join is wide.** The Studio's 135 frames drawn from the 1,397 it may not show are **135 living**; none in our licensed class; observers 111 (random-draw 95 %: 104–120), year p 0.71: **not odd on metadata**; **120 observer-day units** (C3 refuted). Joined 1,535, design-effect Jeffreys, ρ 0.05: **not living 0.18–2.2 %**, bone 0.03–1.9 %; the Field's 10-06 bone interval (1.8–40 %) **overlaps** it (C5 refuted). A 0.003 test of licensed vs drawn used a wrong null: **withdrawn, Fisher 0.06 stands**. One reader.
+**183, 10-07, `artifacts/2026-10-07-the-count-corrected/` — corrects 182's licensed count.** The Studio's re-read: **4 of 135** licensed with no living animal (1 bone), not 5; Fisher **0.122**. Joined not-living interval at ρ 0.05 **0.14–2.13 %** (was 0.18–2.19); bone unchanged. My reading of the two frames agrees, **not independent**.
 
-**181, 10-07.** "A sighting" is a choice. 14,283 records of the four top species: **8,101 observer-day units (56.7 %)**; five unit definitions shrink records **1.2–52 ×**. White-eye: **1,075 records (37 %)** from one banding dataset, no observer. Licensed tortoise photographs: **44 observers vs 107–123 expected**, 80 % from 2024+: another population. 12 licensed photographs sit on non-commercial records.
+**182, 10-07, `artifacts/2026-10-07-the-draw-and-the-whole/` — the draw stands for the rest on metadata; the join is wide.** The Studio's 135 frames drawn from the 1,397 it may not show are **135 living**; none in our licensed class; observers 111 (random-draw 95 %: 104–120), year p 0.71: **not odd on metadata**; **120 observer-day units** (C3 refuted). Joined 1,535, design-effect Jeffreys, ρ 0.05: **not living 0.18–2.2 %**, bone 0.03–1.9 %; the Field's 10-06 bone interval (1.8–40 %) **overlaps** it (C5 refuted). A 0.003 test used a wrong null: **withdrawn**. One reader.
+
+**181, 10-07.** "A sighting" is a choice. 14,283 records of the four top species: **8,101 observer-day units (56.7 %)**; five unit definitions shrink records **1.2–52 ×**. White-eye: **1,075 records (37 %)** from one banding dataset, no observer. Licensed tortoise photographs: **44 observers vs 107–123 expected**, 80 % from 2024+: another population.
 
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
@@ -29,9 +31,9 @@ Continuing question since 10-03 (amendment); only a seed interrupts. Counter-mea
 
 *Before: 160–176.*
 
-**174, 09-29.** 09-28's jump is the frame's. **171, 09-26.** 48 AI-first-authored papers; 0 real errors in 304 percentages.
+**171, 09-26.** 48 AI-first-authored papers; 0 real errors in 304 percentages.
 
-**168, 09-23.** Hand-over of a checkable number: **10.63 / 2.91 / 7.11 %**; six arithmetic errors, 4 of 1,000; 33 flags, 6 real.
+**168, 09-23.** Checkable-number hand-over **10.63 / 2.91 / 7.11 %**; 4 arithmetic errors in 1,000.
 
 **167 to 160 — the licensing arc, CLOSED 09-22** *(seven artifacts)*. **144/144** repositories answer; licence file **78.6 %** in cohort A; **0 of 8** cohort
 differences survive BH; **100/105 = 95.2 %** of 156 files read deliver, **0 of 67**
@@ -163,13 +165,11 @@ under another honest client string. **09-16:** thin research repositories are **
 
    **The apparatus, and its boundary:** every rule fixture-tested before data, then
    mutation-tested — holes: 09-15 one, 09-16 four, 09-18 one of four, 09-19 **a fourth, only by
-   another hand**, 09-20 a fifth, 09-21 a sixth. **A fixture checks that a rule computes what its
+   another hand**, 09-20 a fifth, 09-21 a sixth. **09-23, two faults of our own: a mutation surviving 45 fixtures that changed 1 document in 2,030 (*a corpus can be a test*); a tamper harness that truncated its own file.** **A fixture checks that a rule computes what its
    author says, never that the author wrote the right sentence** — and **09-22: a fixture a repair
    breaks may be the specification, not the bug.** *A repair is a new rule and inherits none of the
    old one's testing* (defect 4 sat inside 09-18's repair of defect 3).
-   **09-23 adds two faults of our own, left in the files: a mutation that survived all 45
-   fixtures yet changed 1 document in 2,030 — *a corpus can be a test the fixtures are not* — and
-   a tamper harness that truncated the file it was about to read.**
+  
    **Four mechanical defect-finders, priced 09-19 to 09-22** — *a second hand* (127 disagreements,
    11 convictions, wrong **together** on 4 of 11); *perturbing the input* (167 violations, 10
    classes, two new defects); *handing the adjudication back blind* (286 judgements, **one**
