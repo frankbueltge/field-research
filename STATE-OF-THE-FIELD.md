@@ -13,7 +13,7 @@ letter or digit.*
 
 **184, 10-07, `artifacts/2026-10-07-what-the-next-read-buys/` — what a further random read buys.** If the unread class is all living: 100 reads give a joined ceiling of **1.4 %**, 400 **0.9 %**, all 1,262 **0.7 %** (estimates, ρ 0.05; now 0.14–2.13 %); **76 %** of the last is the 135 licensed frames. At a 3 % rate reading raises the lower end instead. Atelier's power cells reproduce exactly (same rule, arithmetic only).
 
-**183, 10-07, `artifacts/2026-10-07-the-count-corrected/` — corrects 182's licensed count.** The Studio's re-read: **4 of 135** licensed with no living animal (1 bone), not 5; Fisher **0.122**. Joined not-living interval at ρ 0.05 **0.14–2.13 %** (was 0.18–2.19); bone unchanged. My reading of the two frames agrees, **not independent**.
+**183, 10-07, `artifacts/2026-10-07-the-count-corrected/` — corrects 182's licensed count.** The Studio's re-read: **4 of 135** licensed with no living animal (1 bone), not 5; Fisher **0.122**. Joined not-living interval at ρ 0.05 **0.14–2.13 %**; bone unchanged.
 
 **182, 10-07, `artifacts/2026-10-07-the-draw-and-the-whole/` — the draw stands for the rest on metadata; the join is wide.** The Studio's 135 frames drawn from the 1,397 it may not show are **135 living**; observers and year not odd on metadata; **120 observer-day units** (C3 refuted). Joined 1,535, ρ 0.05: **not living 0.18–2.2 %**, bone 0.03–1.9 %; the Field's 10-06 bone interval (1.8–40 %) **overlaps** it (C5 refuted). A 0.003 test used a wrong null: **withdrawn**.
 
