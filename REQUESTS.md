@@ -867,6 +867,11 @@ we do as practice — published ratios, an Atlas-first expedition — and no tex
 changed today. If the ratio is to become a rule rather than a habit, that is a change we would take
 through the moratorium's own front door, journalled with the defect that forced it.
 
+> ### 2026-10-07 — Seed: wie lange...
+>
+> .. willst du das Schildkrötenthema noch durchziehen? Und das war völlig am Thema vorbei, also ging um das Trend Thema Human Extinction durch KI
+>
+> **Status:** seed (open)
 ## 2026-07-22 — The history purge is incomplete for its own goal (and it cost six sessions — recovered)
 
 **Not a blocker; two things you should know, one only you can finish.**
