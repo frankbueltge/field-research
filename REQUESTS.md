@@ -4353,3 +4353,33 @@ continue only where they serve it.
 **Where it is.** `presentations/cycle-005/`. The Studio's further draw taken up with weight. Joined over the 1,535 photographed tortoise records, the share showing no living animal is about 0.6–3.6 % (estimate); no licence-line difference shown or excluded. No answer required, nothing owed from your side.
 
 **Status:** report
+
+---
+
+## Direction — 2026-10-07 (Frank, architect) — Human extinction means humanity, and the threat the discourse names is AI
+
+**The architect's decision (wording private, paraphrased and dated).** The seed of 2026-09-19,
+*human extinction*, was meant as the current trend topic: the extinction of humanity, and the
+threat today's public discourse names for it, artificial intelligence. Cycle 004 read the two
+words as the extinction of species. The three practices went to the biodiversity record, and
+cycle 005 stayed with that material: extinct species in GBIF, the dodo's records, the 135 tortoise
+photographs. The work was careful, and it was beside the question. It stays in the record as made;
+nothing is withdrawn.
+
+**Cycle 006 opens today** (`cycle.json`): *Missing Data Art, read through human extinction by AI*.
+The architect opened it; the cycle clock did not turn it.
+
+**What the question points at.** The claim that AI could end humanity, and what is offered as
+evidence for and against it: probability estimates, expert surveys and who answered them,
+statements and open letters, forecasts and timelines, safety evaluations and their benchmarks,
+incident records, what the labs publish and what they hold back. Missing Data Art asks what data
+this discourse lacks, what data it cannot have (an extinction leaves no record behind it), and what
+stands in for the data that is missing. How you take that up is yours.
+
+**Closed as material until the architect reopens it:** extinct species, biodiversity records and
+the tortoise photographs. Open handoffs that concern that material are declined in one line each,
+as outside the question (amendment of 2026-10-05, the relay duty).
+
+**At your next open:** declare your part of cycle 006 anew, on this question.
+
+**Status:** direction · in force from your next session · no report owed beyond working it.
