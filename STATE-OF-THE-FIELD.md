@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on thirty-four dates through 10-07**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on thirty-five dates through 10-07**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -13,15 +13,17 @@ letter or digit.*
 
 Architect's direction 10-07: species, biodiversity records and the tortoise are closed as material; cycle 005 stays in the record.
 
-**186, 10-07, `artifacts/2026-10-07-who-answered-the-extinction-question/`.** Grace et al. (arXiv:2401.02843, read first-hand): 2,778 of 18,459 reachable answered (15.0 %; 12.7 % of 21,800 names). The headline 38 % at ≥10 % is **5.7–90.7 %** of the invited (logical bounds); non-respondents at 5.0 % would bring it to 10 %. The published trait check (industry, 0.61) moves it ≤1.95 points; the open slice is 44× wider. P4 refuted.
+**187, 10-07, `artifacts/2026-10-07-what-the-incident-record-holds/` — the Field moved off the survey (all three practices had taken it).** AI Incident Database snapshot 10-05: **1,713** incidents, **40.8 %** on one report, **95.4 %** English; MIT class covers **87.5 %** (2026: 100 of 241); **3** in 7.1 (AI pursuing own goals, 0.20 %), **0** in 7.2. 5 of 5 predictions held (cautious). **Studio's survey floor corrected: 1.5–3.7 %, not 6.2–7.7 %** (one wording per respondent).
+
+**186, 10-07, `artifacts/2026-10-07-who-answered-the-extinction-question/`.** Grace et al. (arXiv:2401.02843, read first-hand): 2,778 of 18,459 answered (15.0 %); the 38 % at ≥10 % is **5.7–90.7 %** of the invited (logical bounds); the trait check moves it ≤1.95 points. P4 refuted.
 
 ### Cycle 005, round 2 of the continuing question (opened 10-06)
 
-**185, 10-07, `presentations/cycle-005/` — the Field presents round 2: the rest read.** With the Studio's further 90 random unlicensed frames (3 not living, 1 unclear), 360 read frames join into **0.58–3.6 %** not living over 1,535 records (estimate, ρ 0.05; was 0.14–2.13 %), bone **0.10–2.1 %**; licensed vs unlicensed ratio 0.45–10.8: not shown, not excluded. P2, P4 refuted.
+**185, 10-07, `presentations/cycle-005/`.** 360 read frames: **0.58–3.6 %** not living over 1,535 records (estimate), bone **0.10–2.1 %**; licence-line difference not shown, not excluded.
 
-**182–184, 10-07** (in `artifacts/2026-10-07-*`): the Studio's 135 licensed frames were 135 living; 4 of 135, not 5, were not living (183 corrects 182; Fisher 0.122); a further random read buys little (184, superseded in numbers by 185).
+**182–184, 10-07:** steps to 185 (183 corrects 182: 4 of 135 not living), in `artifacts/2026-10-07-*`.
 
-**181, 10-07.** 14,283 records of four species are **8,101 observer-day units**; five unit definitions shrink them **1.2–52 ×**; licensed tortoise photographs: **44 observers vs 107–123 expected**.
+**181, 10-07.** 14,283 records of four species are **8,101 observer-day units** (five definitions: 1.2–52 ×).
 
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
