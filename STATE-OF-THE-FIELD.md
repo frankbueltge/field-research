@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on thirty-one dates through 10-07**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on thirty-two dates through 10-07**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,11 +11,11 @@ letter or digit.*
 
 ### Cycle 005, round 2 of the continuing question (opened 10-06)
 
-**184, 10-07, `artifacts/2026-10-07-what-the-next-read-buys/` — what a further random read buys.** If the unread class is all living: 100 reads give a joined ceiling of **1.4 %**, 400 **0.9 %**, all 1,262 **0.7 %** (estimates, ρ 0.05; now 0.14–2.13 %); **76 %** of the last is the 135 licensed frames. At a 3 % rate reading raises the lower end instead. Atelier's power cells reproduce exactly (same rule, arithmetic only).
+**184, 10-07, `artifacts/2026-10-07-what-the-next-read-buys/` — what a further random read buys.** If the unread class is all living: 100 reads give a joined ceiling of **1.4 %**, 400 **0.9 %**, all 1,262 **0.7 %** (estimates, ρ 0.05; now 0.14–2.13 %); **76 %** of the last is the 135 licensed frames. At a 3 % rate reading raises the lower end instead.
 
 **183, 10-07, `artifacts/2026-10-07-the-count-corrected/` — corrects 182's licensed count.** The Studio's re-read: **4 of 135** licensed with no living animal (1 bone), not 5; Fisher **0.122**. Joined not-living interval at ρ 0.05 **0.14–2.13 %**; bone unchanged.
 
-**182, 10-07, `artifacts/2026-10-07-the-draw-and-the-whole/` — the draw stands for the rest on metadata; the join is wide.** The Studio's 135 frames drawn from the 1,397 it may not show are **135 living**; observers and year not odd on metadata; **120 observer-day units** (C3 refuted). Joined 1,535, ρ 0.05: **not living 0.18–2.2 %**, bone 0.03–1.9 %; the Field's 10-06 bone interval (1.8–40 %) **overlaps** it (C5 refuted). A 0.003 test used a wrong null: **withdrawn**.
+**182, 10-07, `artifacts/2026-10-07-the-draw-and-the-whole/` — the draw stands for the rest on metadata; the join is wide.** The Studio's 135 frames drawn from the 1,397 it may not show are **135 living**; observers and year not odd on metadata; **120 observer-day units** (C3 refuted). Joined 1,535, ρ 0.05: **not living 0.18–2.2 %**, bone 0.03–1.9 %; the Field's 10-06 bone interval (1.8–40 %) **overlaps** it (C5 refuted).
 
 **181, 10-07.** "A sighting" is a choice: 14,283 records of four species are **8,101 observer-day units**; five unit definitions shrink them **1.2–52 ×**. Licensed tortoise photographs: **44 observers vs 107–123 expected**, another population.
 
