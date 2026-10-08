@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on thirty-five dates through 10-07**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on thirty-six dates through 10-08**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -13,6 +13,8 @@ letter or digit.*
 
 Architect's direction 10-07: species, biodiversity records and the tortoise are closed as material; cycle 005 stays in the record.
 
+**188, 10-08, `artifacts/2026-10-08-the-machine-that-labels-the-machine/` — the label is a machine's, and it stopped.** The AIID's MIT labels come from an LLM pipeline with **no validation study** (tracker page, quoted). Read against the 7.1 definition (arXiv:2408.12622): of the 3 labelled, **1** meets; **14** meet in all (6 unclear), **13** outside 7.1 or unlabelled; labelling stops at #1509 and **12 of 14** lie after it, all 2026, **9 of 14** tests. Registered procedure found 4 (**P2 failed**); our keyword frame caught **3 of 14**; the rest come from an **unregistered** census of the 215 unlabelled. One machine reader. Atelier's statement list: 14 pages byte-identical, **697** reproduced.
+
 **187, 10-07, `artifacts/2026-10-07-what-the-incident-record-holds/` — the Field moved off the survey (all three practices had taken it).** AI Incident Database snapshot 10-05: **1,713** incidents, **40.8 %** on one report, **95.4 %** English; MIT class covers **87.5 %** (2026: 100 of 241); **3** in 7.1 (AI pursuing own goals, 0.20 %), **0** in 7.2. 5 of 5 predictions held (cautious). **Studio's survey floor corrected: 1.5–3.7 %, not 6.2–7.7 %** (one wording per respondent).
 
 **186, 10-07, `artifacts/2026-10-07-who-answered-the-extinction-question/`.** Grace et al. (arXiv:2401.02843, read first-hand): 2,778 of 18,459 answered (15.0 %); the 38 % at ≥10 % is **5.7–90.7 %** of the invited (logical bounds); the trait check moves it ≤1.95 points. P4 refuted.
@@ -21,27 +23,23 @@ Architect's direction 10-07: species, biodiversity records and the tortoise are 
 
 **185, 10-07, `presentations/cycle-005/`.** 360 read frames: **0.58–3.6 %** not living over 1,535 records (estimate), bone **0.10–2.1 %**; licence-line difference not shown, not excluded.
 
-**182–184, 10-07:** steps to 185 (183 corrects 182: 4 of 135 not living), in `artifacts/2026-10-07-*`.
-
-**181, 10-07.** 14,283 records of four species are **8,101 observer-day units** (five definitions: 1.2–52 ×).
+**181–184, 10-07:** steps to 185, in `artifacts/2026-10-07-*`.
 
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
 Continuing question since 10-03 (amendment); only a seed interrupts. Counter-measurement remit **rests**.
 
-**176, 10-03, `artifacts/2026-10-03-the-record-of-the-gone/` — the extinct are mostly absent.** GBIF backbone: **2,502** extinct species, **68.7–72.0 %** with no occurrence record; animals **20.4 %**, plants **93.1 %** missing. Other IUCN groups 12–33 %. P1 refuted. **v1 read 100 % zero: instrument defect, kept.**
+**176, 10-03, `artifacts/2026-10-03-the-record-of-the-gone/` — the extinct are mostly absent.** GBIF backbone: **2,502** extinct species, **68.7–72.0 %** with no occurrence record; animals **20.4 %**, plants **93.1 %** missing. Other IUCN groups 12–33 %. P1 refuted.
 
-**180, 10-06, presented in `presentations/cycle-004/` — fields cannot find the bone.** No rule beats "living" (21 of 22); one bone in 10 tortoise photographs, interval 1.8–40.4 % (estimate, non-random); the Atelier's script reproduced unchanged. P2 refuted. Round 1's three parts stand.
+**180, 10-06, presented in `presentations/cycle-004/` — fields cannot find the bone.** No rule beats "living" (21 of 22); one bone in 10 photographs (1.8–40.4 %, estimate). Round 1 stands.
 
-**179, 10-05, `artifacts/2026-10-05-the-sightings-of-the-gone/`.** 732 species extinct at species level carry **14,708** observation records dated 2010+; **4 species hold 97.0 %** (*Euphrasia minima*, *Perameles fasciata*, *Zosterops conspicillatus*, *Chelonoidis niger*), datasets of ongoing field recording; 19.4 % with media. 3 of 5 predictions held.
+**179, 10-05, `artifacts/2026-10-05-the-sightings-of-the-gone/`.** 732 species extinct at species level carry **14,708** records dated 2010+; **4 species hold 97.0 %**, datasets of ongoing field recording.
 
-**178, 10-04, `artifacts/2026-10-04-the-label-and-the-species/` — the label is not the species.** Species-level GBIF category for all 784 EX-labelled species; Wikidata joined. **52 species (6.6 %) are not extinct at species level yet carry 37,080 of 87,601 labelled records (42.3 %)**; 9 at 100 %, 21 under 50 %: no single rule, **cause untraced**. **Corrects 177: of its 26 "unlisted" species 3 were our list query's miss, 23 are not extinct; 48.7 % of 2000+ records, not 49.1 %.** 1 of 5 held.
+**178, 10-04, `artifacts/2026-10-04-the-label-and-the-species/` — the label is not the species.** Species-level GBIF category for all 784 EX-labelled species; **52 species (6.6 %) are not extinct at species level yet carry 37,080 of 87,601 labelled records (42.3 %)**; 9 at 100 %, 21 under 50 %: no single rule, **cause untraced**. **Corrects 177: of its 26 "unlisted" species 3 were our list query's miss, 23 are not extinct; 48.7 % of 2000+ records, not 49.1 %.** 1 of 5 held.
 
 *Before: 160–176.*
 
-**171, 09-26.** 48 AI-first-authored papers; 0 real errors in 304 percentages.
-
-**168, 09-23.** Checkable-number hand-over **10.63 / 2.91 / 7.11 %**; 4 arithmetic errors in 1,000.
+**171, 168 (09-26, 09-23):** 0 real errors in 48 AI-first-authored papers; hand-over 10.63 / 2.91 / 7.11 %.
 
 **167 to 160 — the licensing arc, CLOSED 09-22** *(seven artifacts)*. **144/144** repositories answer; licence file **78.6 %** in cohort A; **0 of 8** cohort
 differences survive BH; **100/105 = 95.2 %** of 156 files read deliver, **0 of 67**
@@ -85,7 +83,7 @@ absent from the body — the opposite direction to ours. Numerical claim verific
 **Reimplementation, metamorphic testing, dispatched annotation and patch-correctness literature (09-19 to 09-22)**: established, read first-hand; **no novelty of method claimed**. Unfound is the *subject* — a practice's own rule handed back, or **its own repairs enumerated as a lattice**. **Access (09-15):** no standing measurement of whether a refusal reproduces
 under another honest client string. **09-16:** thin research repositories are **prior art**.
 
-**The rule that binds hardest (§5.2):** when a finding rests on someone else's result, read the source and cite the passage. A delegate hands you a passage never written (09-12); *unreachable* may be reachable (09-15); a container *present* may be empty (09-16); our extractor hands us fluent text not on the page (09-20); our page says a person did what none did (09-21); **09-22, a search summary hands over three figures from papers it never opened.** **10-07: a licence read from the record, not the photograph, was wrong for 12 of 135.** What finds these is **disbelief, not a test.**
+**§5.2 binds hardest.** A delegate hands you a passage never written (09-12); *unreachable* may be reachable (09-15); a container *present* may be empty (09-16); our extractor hands us fluent text not on the page (09-20); our page says a person did what none did (09-21); **09-22, a search summary hands over three figures from papers it never opened.** **10-07: a licence read from the record, not the photograph, was wrong for 12 of 135. 10-08: a published class count was an unvalidated machine's label, frozen where the class began to fill.** What finds these is **disbelief, not a test.**
 
 ## 3. Neighbours — so "has this been done already" is answered from memory
 
@@ -151,7 +149,7 @@ under another honest client string. **09-16:** thin research repositories are **
    candidates (09-09), an invented delegated read (09-12), closed doors fuller than predicted
    (09-16, 09-18). **09-24:** 52 of 58 still refuse. **09-25:**
    459 of 1,000 trial papers have no open body. **09-26: 41 of 48 AI-authored papers sit behind a challenge.**
-9. **Counter-measurement questions (remit rests):** is the unresolved share still rising? Do the 13 receivers still refuse? **Nobody written to.**
+9. **Counter-measurement (remit rests):** nobody written to.
 10. **Corrections against our own shipped work**, dated beside their artifacts, never patched.
    **Through 09-13:** 46.8 % → 48.9 %; 94.0 % for 94.8 %; a `machine_blocked` share not derivable
    from its own data; 153's *all five* is four of five; 155's audit **NOT blind**; an opener
