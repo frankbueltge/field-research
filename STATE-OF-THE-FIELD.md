@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on thirty-six dates through 10-08**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on thirty-seven dates through 10-08**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -13,11 +13,13 @@ letter or digit.*
 
 Architect's direction 10-07: species, biodiversity records and the tortoise are closed as material; cycle 005 stays in the record.
 
-**188, 10-08, `artifacts/2026-10-08-the-machine-that-labels-the-machine/` — the label is a machine's, and it stopped.** The AIID's MIT labels come from an LLM pipeline with **no validation study** (tracker page, quoted). Read against the 7.1 definition (arXiv:2408.12622): of the 3 labelled, **1** meets; **14** meet in all (6 unclear), **13** outside 7.1 or unlabelled; labelling stops at #1509 and **12 of 14** lie after it, all 2026, **9 of 14** tests. Registered procedure found 4 (**P2 failed**); our keyword frame caught **3 of 14**; the rest come from an **unregistered** census of the 215 unlabelled. One machine reader. Atelier's statement list: 14 pages byte-identical, **697** reproduced.
+**189, 10-08, `presentations/cycle-006/paper.md` — PRESENTED, the first paper.** Four studies (186–189). New, study 4: by the Atelier's independence criterion, **0 of 14** 7.1 incidents were observed independently. The developer saw **8** first, a user 3, other parties 1 each, and **12** disclosures lie behind them. Q2–Q4 failed. **186's 5.7–90.7 % assumes n = 2,778 for the 38 %, which the paper does not give; the per-wording range is 1.5–98.3 %.** 5 of 19 predictions failed across the cycle.
 
-**187, 10-07, `artifacts/2026-10-07-what-the-incident-record-holds/` — the Field moved off the survey (all three practices had taken it).** AI Incident Database snapshot 10-05: **1,713** incidents, **40.8 %** on one report, **95.4 %** English; MIT class covers **87.5 %** (2026: 100 of 241); **3** in 7.1 (AI pursuing own goals, 0.20 %), **0** in 7.2. 5 of 5 predictions held (cautious). **Studio's survey floor corrected: 1.5–3.7 %, not 6.2–7.7 %** (one wording per respondent).
+**188, 10-08, `artifacts/2026-10-08-the-machine-that-labels-the-machine/`.** The AIID's MIT labels come from an LLM pipeline with **no validation study**. Of the 3 labelled 7.1, **1** meets the definition (arXiv:2408.12622), and **14** meet it in all. Labelling stops at #1509, and **12 of 14** lie after it. **P2 failed**, and the 14 rests on an **unregistered** census. One machine reader.
 
-**186, 10-07, `artifacts/2026-10-07-who-answered-the-extinction-question/`.** Grace et al. (arXiv:2401.02843, read first-hand): 2,778 of 18,459 answered (15.0 %); the 38 % at ≥10 % is **5.7–90.7 %** of the invited (logical bounds); the trait check moves it ≤1.95 points. P4 refuted.
+**187, 10-07, `artifacts/2026-10-07-what-the-incident-record-holds/` — the Field moved off the survey .** AIID snapshot 10-05: **1,713** incidents, **40.8 %** on one report, **95.4 %** English; MIT class covers **87.5 %** (2026: 100 of 241); **3** in 7.1 (AI pursuing own goals, 0.20 %), **0** in 7.2. 5 of 5 held. **Studio's survey floor corrected: 1.5–3.7 %, not 6.2–7.7 %** (one wording per respondent).
+
+**186, 10-07, `artifacts/2026-10-07-who-answered-the-extinction-question/`.** Grace et al. (arXiv:2401.02843, first-hand): 2,778 of 18,459 answered (15.0 %). Trait check ≤1.95 points. P4 refuted.
 
 ### Cycle 005, round 2 of the continuing question (opened 10-06)
 
