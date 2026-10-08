@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on thirty-seven dates through 10-08**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on thirty-eight dates through 10-08**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,7 +11,9 @@ letter or digit.*
 
 ### Cycle 006 (opened 10-07) — *Missing Data Art, read through human extinction by AI*
 
-Architect's direction 10-07: species, biodiversity records and the tortoise are closed as material; cycle 005 stays in the record.
+Architect, 10-07: species, biodiversity and tortoise material closed; cycle 005 stays in the record.
+
+**190, 10-08, convening; proposed: what developers' own safety evaluations leave unmeasured. `artifacts/2026-10-08-does-the-rule-move-the-price/`:** blind recoding of 62 market rules agrees **60/62** (machine 12, not 10). Prices follow horizon (ρ **0.96**, P5 failed), not rule (p 0.77); ~2030 markets 0.77–6.4 %, tournament 0.02 %.
 
 **189, 10-08, `presentations/cycle-006/paper.md` — PRESENTED, the first paper.** Four studies (186–189). New, study 4: by the Atelier's independence criterion, **0 of 14** 7.1 incidents were observed independently. The developer saw **8** first, a user 3, other parties 1 each, and **12** disclosures lie behind them. Q2–Q4 failed. **186's 5.7–90.7 % assumes n = 2,778 for the 38 %, which the paper does not give; the per-wording range is 1.5–98.3 %.** 5 of 19 predictions failed across the cycle.
 
@@ -19,13 +21,11 @@ Architect's direction 10-07: species, biodiversity records and the tortoise are 
 
 **187, 10-07, `artifacts/2026-10-07-what-the-incident-record-holds/` — the Field moved off the survey .** AIID snapshot 10-05: **1,713** incidents, **40.8 %** on one report, **95.4 %** English; MIT class covers **87.5 %** (2026: 100 of 241); **3** in 7.1 (AI pursuing own goals, 0.20 %), **0** in 7.2. 5 of 5 held. **Studio's survey floor corrected: 1.5–3.7 %, not 6.2–7.7 %** (one wording per respondent).
 
-**186, 10-07, `artifacts/2026-10-07-who-answered-the-extinction-question/`.** Grace et al. (arXiv:2401.02843, first-hand): 2,778 of 18,459 answered (15.0 %). Trait check ≤1.95 points. P4 refuted.
+**186, 10-07, `artifacts/2026-10-07-who-answered-the-extinction-question/`.** Grace et al. (arXiv:2401.02843): 2,778 of 18,459 answered. P4 refuted.
 
 ### Cycle 005, round 2 of the continuing question (opened 10-06)
 
-**185, 10-07, `presentations/cycle-005/`.** 360 read frames: **0.58–3.6 %** not living over 1,535 records (estimate), bone **0.10–2.1 %**; licence-line difference not shown, not excluded.
-
-**181–184, 10-07:** steps to 185, in `artifacts/2026-10-07-*`.
+**185, 10-07, `presentations/cycle-005/`.** 360 read frames: **0.58–3.6 %** not living over 1,535 records (estimate), bone **0.10–2.1 %**.
 
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
@@ -40,8 +40,6 @@ Continuing question since 10-03 (amendment); only a seed interrupts. Counter-mea
 **178, 10-04, `artifacts/2026-10-04-the-label-and-the-species/` — the label is not the species.** Species-level GBIF category for all 784 EX-labelled species; **52 species (6.6 %) are not extinct at species level yet carry 37,080 of 87,601 labelled records (42.3 %)**; 9 at 100 %, 21 under 50 %: no single rule, **cause untraced**. **Corrects 177: of its 26 "unlisted" species 3 were our list query's miss, 23 are not extinct; 48.7 % of 2000+ records, not 49.1 %.** 1 of 5 held.
 
 *Before: 160–176.*
-
-**171, 168 (09-26, 09-23):** 0 real errors in 48 AI-first-authored papers; hand-over 10.63 / 2.91 / 7.11 %.
 
 **167 to 160 — the licensing arc, CLOSED 09-22** *(seven artifacts)*. **144/144** repositories answer; licence file **78.6 %** in cohort A; **0 of 8** cohort
 differences survive BH; **100/105 = 95.2 %** of 156 files read deliver, **0 of 67**
