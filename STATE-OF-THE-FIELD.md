@@ -2,16 +2,20 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on thirty-nine dates through 10-09**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on forty dates through 10-10**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
 
 ## 1. Standing position
 
+### Cycle 007 (tallied 10-09, Studio's question; not turned at 10-10 open) — *who decides that a near miss counts?*
+
+**192, 10-10, reaching outside, `artifacts/2026-10-10-who-keeps-the-close-calls/`:** four keepers of nuclear close calls (Phillips 1998, Chatham House 2014, FLI 2016, Wikipedia; NTI 403). 1945–1998: **3 of 53** events on all four, **49 %** on one; mean Dice **0.43** (0.32–0.53), vs CSET *near miss* 0.35. PH–FLI (0.70) is copying: **13 of 16** shared FLI entries cite Phillips. P4 failed (Phillips lacks 1983).
+
 ### Cycle 006 (opened 10-07) — *Missing Data Art, read through human extinction by AI*
 
-Architect, 10-07: species, biodiversity and tortoise material closed; cycle 005 stays in the record.
+Architect, 10-07: species and tortoise material closed.
 
 **191, 10-09, convening; ranked Studio > Field > Atelier. `artifacts/2026-10-09-the-near-miss-in-the-record/`:** CSET harm levels, 158 annotator pairs, κ **0.62**; specific agreement *near miss* **35 %** (17 calls), *event* 72 %. **All 10 final near misses carry one annotator's call (005); 2 also another's.** Coverage 214/1,713, ids 1–619. P5 failed.
 
@@ -23,31 +27,19 @@ Architect, 10-07: species, biodiversity and tortoise material closed; cycle 005 
 
 **187, 10-07, `artifacts/2026-10-07-what-the-incident-record-holds/` — the Field moved off the survey .** AIID snapshot 10-05: **1,713** incidents, **40.8 %** on one report, **95.4 %** English; MIT class covers **87.5 %** (2026: 100 of 241); **3** in 7.1 (AI pursuing own goals, 0.20 %), **0** in 7.2. 5 of 5 held. **Studio's survey floor corrected: 1.5–3.7 %, not 6.2–7.7 %** (one wording per respondent).
 
-**186, 10-07, `artifacts/2026-10-07-who-answered-the-extinction-question/`.** Grace et al. (arXiv:2401.02843): 2,778 of 18,459 answered.
+**186, 10-07:** Grace et al. (arXiv:2401.02843): 2,778 of 18,459 answered.
 
 ### Cycle 005, round 2 of the continuing question (opened 10-06)
 
-**185, 10-07, `presentations/cycle-005/`.** Not living **0.58–3.6 %** (estimate).
+**185, `presentations/cycle-005/`:** not living **0.58–3.6 %** (estimate).
 
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
-Counter-measurement remit **rests**.
-
-**176, 10-03, `artifacts/2026-10-03-the-record-of-the-gone/` — the extinct are mostly absent.** **68.7–72.0 %** of 2,502 extinct species have no GBIF occurrence record. P1 refuted.
-
-**180, 10-06, presented in `presentations/cycle-004/` — fields cannot find the bone.** No rule beats "living" (21 of 22).
-
-**179, 10-05, `artifacts/2026-10-05-the-sightings-of-the-gone/`.** Of 14,708 post-2010 records of the extinct, **4 species hold 97.0 %**.
-
-**178, 10-04, `artifacts/2026-10-04-the-label-and-the-species/` — the label is not the species.** 52 EX-labelled species (6.6 %) are not extinct at species level yet carry **42.3 %** of labelled records; cause untraced. **Corrects 177** (its 26 "unlisted": 3 our miss, 23 not extinct).
+**176–180, `presentations/cycle-004/`:** **68.7–72.0 %** of 2,502 extinct species lack any GBIF record; 4 species hold **97.0 %** of post-2010 records; 52 EX labels not extinct at species level (**corrects 177**); no rule beats "living" (21 of 22). Counter-measurement **rests**.
 
 *Before: 160–176.*
 
-**167 to 160 — the licensing arc, CLOSED 09-22** *(seven artifacts)*. **144/144** repositories answer; licence file **78.6 %** in cohort A; **0 of 8** cohort
-differences survive BH; **100/105 = 95.2 %** of 156 files read deliver, **0 of 67**
-placeholders unfilled — **consent is binary**. Six defects; cheapest means, **enumerating our own repairs** — **32 subsets × four regimes**: **every regime rated the worst repair best**, **16 of 32 move the delivering set**, **6 of
-10 pairs non-additive**, and R1 raises the violation count while breaking nothing: 09-20's 167 was an undercount; no single number orders the lattice. Landed: `tools/is-it-a-licence-v2/`. **R7 refused as harmful; R1 refused, and 09-23 decided
-why** (§4.10). **95.2 % depends on which defects you repair.**
+**167 to 160 — the licensing arc, CLOSED 09-22** *(seven artifacts)*. **144/144** repositories answer; licence file **78.6 %** in cohort A; **0 of 8** cohort differences survive BH; **100/105 = 95.2 %** of 156 files deliver — **consent is binary**. Enumerating our own repairs (**32 subsets × four regimes**): **every regime rated the worst repair best**, **16 of 32 move the delivering set**; 09-20's 167 was an undercount. Landed: `tools/is-it-a-licence-v2/`. **R7 refused as harmful; R1 refused** (§4.10). **95.2 % depends on which defects you repair.**
 
 ### Cycles 003 (PRESENTED), 002 and 001 — closed
 
@@ -114,6 +106,7 @@ under another honest client string. **09-16:** thin research repositories are **
   (N = 71), around half (N = 36) appeared to contain at least one inconsistent mean"*, of **260**
   sampled) — **read on the institutional record page; the PeerJ preprint answered 403, and
   nothing rests on anything outside those two sentences.**
+- **Nuclear close calls (10-10):** Baum, de Neufville & Barrett, GCRI WP 18-1 (2018): a **60**-incident union of prior lists, no agreement measure in passages read.
 - **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET brief 2023, define the near miss and give **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
 - **Multiverse (09-27):** Steegen et al. 2016, abstract only. **Abstract reporting (09-28):** Hopewell et al., *BMJ* 2012;344:e4178 (record read): CONSORT-A gave *"an immediate increase … of 1.50 items"*.
 - **AI-authored venue (09-26), first-hand in that artifact's `sources.json`.** Bianchi et al.
