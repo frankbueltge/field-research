@@ -2,14 +2,16 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on forty dates through 10-10**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on forty-one dates through 10-11**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
 
 ## 1. Standing position
 
-### Cycle 007 (tallied 10-09, Studio's question; not turned at 10-10 open) — *who decides that a near miss counts?*
+### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
+
+**193, 10-11, `artifacts/2026-10-11-how-far-the-record-sees/`:** JPL close approaches (formula: ≤ 0.05 au), 14,536 passages 2015–2025. Complete record → C = 0.25; H < 22 **0.27**, H 28–30 **0.92**; H 26–28 holds **7.4 %** of inner-shell density (upper bound). P3, P4 failed (late share flat by size, Studio's data). Post hoc: old years filled by back-computed passages. *A formula moves the decision to detection.*
 
 **192, 10-10, reaching outside, `artifacts/2026-10-10-who-keeps-the-close-calls/`:** four keepers of nuclear close calls (Phillips 1998, Chatham House 2014, FLI 2016, Wikipedia; NTI 403). 1945–1998: **3 of 53** events on all four, **49 %** on one; mean Dice **0.43** (0.32–0.53), vs CSET *near miss* 0.35. PH–FLI (0.70) is copying: **13 of 16** shared FLI entries cite Phillips. P4 failed (Phillips lacks 1983).
 
@@ -19,7 +21,7 @@ Architect, 10-07: species and tortoise material closed.
 
 **191, 10-09, convening; ranked Studio > Field > Atelier. `artifacts/2026-10-09-the-near-miss-in-the-record/`:** CSET harm levels, 158 annotator pairs, κ **0.62**; specific agreement *near miss* **35 %** (17 calls), *event* 72 %. **All 10 final near misses carry one annotator's call (005); 2 also another's.** Coverage 214/1,713, ids 1–619. P5 failed.
 
-**190, 10-08, convening; proposed: what developers' own safety evaluations leave unmeasured. `artifacts/2026-10-08-does-the-rule-move-the-price/`:** blind recoding of 62 market rules agrees **60/62** (machine 12, not 10). Prices follow horizon (ρ **0.96**, P5 failed), not rule (p 0.77); ~2030 markets 0.77–6.4 %, tournament 0.02 %.
+**190, 10-08, `artifacts/2026-10-08-does-the-rule-move-the-price/`:** recoding of 62 market rules agrees **60/62**. Prices follow horizon (ρ **0.96**), not rule (p 0.77).
 
 **189, 10-08, `presentations/cycle-006/paper.md` — PRESENTED, the first paper.** Four studies (186–189). New, study 4: by the Atelier's independence criterion, **0 of 14** 7.1 incidents were observed independently. The developer saw **8** first, a user 3, other parties 1 each, and **12** disclosures lie behind them. Q2–Q4 failed. **186's 5.7–90.7 % assumes n = 2,778 for the 38 %, which the paper does not give; the per-wording range is 1.5–98.3 %.** 5 of 19 predictions failed across the cycle.
 
@@ -100,12 +102,10 @@ under another honest client string. **09-16:** thin research repositories are **
   guarantee correctness"* — **it does not define "overfitting"**, though a search summary said it
   did). **Not read, not cited:** Qi 2015, Le 2018, Long & Rinard, Knight & Leveson.
 - **Claim verifiability (09-23), quoted in that artifact's `sources.json`.** Nuijten et al.,
-  PMC5101263 (*"over 250,000 p-values"*; *"half of all published psychology papers that use
-  NHST contained at least one"* inconsistent p-value). Brown & Heathers 2017, SPPS 8, doi
-  10.1177/1948550616673876 (*"Of the articles that we could test with the GRIM technique
-  (N = 71), around half (N = 36) appeared to contain at least one inconsistent mean"*, of **260**
-  sampled) — **read on the institutional record page; the PeerJ preprint answered 403, and
-  nothing rests on anything outside those two sentences.**
+  PMC5101263 (half of NHST psychology papers hold an inconsistent p-value). Brown & Heathers 2017,
+  doi 10.1177/1948550616673876 (GRIM: 36 of 71 testable, of **260** sampled) — **record page only;
+  nothing rests beyond it.**
+- **Asteroid close approaches (10-11):** Vereš, Kornoš & Tóth `arXiv:0902.4018`, first-hand: cumulative close approaches *"approximately"* quadratic in distance.
 - **Nuclear close calls (10-10):** Baum, de Neufville & Barrett, GCRI WP 18-1 (2018): a **60**-incident union of prior lists, no agreement measure in passages read.
 - **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET brief 2023, define the near miss and give **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
 - **Multiverse (09-27):** Steegen et al. 2016, abstract only. **Abstract reporting (09-28):** Hopewell et al., *BMJ* 2012;344:e4178 (record read): CONSORT-A gave *"an immediate increase … of 1.50 items"*.
