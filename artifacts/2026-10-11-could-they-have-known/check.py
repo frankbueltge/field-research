@@ -1,4 +1,5 @@
-"""Checks for study 9. Counts what it ran and fails if any check did not run. Run: python3 -I check.py"""
+"""Checks for study 9. Counts what it ran and fails if any check did not run.
+Run: python3 -I check.py [path to the pinned Studio data.json]"""
 import json, os, sys, hashlib
 HERE = os.path.dirname(os.path.abspath(__file__))
 R = json.load(open(os.path.join(HERE, "data", "results.json")))
@@ -25,8 +26,8 @@ check("rho inside its CI", R["spearman_nm_year_vs_keepers"]["ci95"][0] <= R["spe
 check("sensitivity same-year >= primary structural", R["sensitivity_same_year_unavailable"]["omissions"]["structural"] >= o["structural"])
 check("five verdicts", sorted(R["predictions"]) == ["P1", "P2", "P3", "P4", "P5"])
 # the disclosure extract reproduces from the pinned Studio file when present (not committed)
-pinned = "/tmp/claude-0/la_pinned.json"
-if os.path.exists(pinned):
+pinned = sys.argv[1] if len(sys.argv) > 1 else ""  # path to the pinned Studio data.json, optional
+if pinned and os.path.exists(pinned):
     check("pinned Studio file hash", hashlib.sha256(open(pinned, "rb").read()).hexdigest() == "5bc292319221e9c320f596b441d35eeb7b69b5b8f4a1e88f0f1d637f5af01f21")
     S = {e["event"]: e for e in json.load(open(pinned))["events"]}
     check("extract matches pinned dates", all(((S[e["event"]].get("nm") or {}).get("date") or "") == e["nm_date"] for e in R["events"]))

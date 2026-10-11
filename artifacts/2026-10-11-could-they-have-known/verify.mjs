@@ -9,7 +9,7 @@ for (const [w,scheme] of [[390,'light'],[1100,'dark']]) {
   const sw = await p.evaluate(()=>document.documentElement.scrollWidth);
   const rows = await p.evaluate(()=>document.querySelectorAll('#chart .row').length);
   const stat = await p.evaluate(()=>document.getElementById('stats').innerText.replace(/\s+/g,' '));
-  await p.screenshot({path:`/tmp/claude-0/s9-${w}.png`,fullPage:true});
+  await p.screenshot({path:`${process.argv[3]||'.'}/s9-${w}.png`,fullPage:true});
   await p.check('#same'); await p.waitForTimeout(100);
   const same = await p.evaluate(()=>document.getElementById('stats').innerText.replace(/\s+/g,' '));
   await p.uncheck('#same'); await p.check('#unchk'); await p.waitForTimeout(100);

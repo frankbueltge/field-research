@@ -26,5 +26,5 @@ checked date.
 dated public account existed, not that it was easy to find. Four keepers, not independent.
 
 **Reproduce.** `python3 -I analyse.py` → `data/results.json`; `python3 -I build.py` → `data.js`;
-`python3 -I check.py` (15 checks, 17 with the pinned Studio file at hand); `node verify.mjs <dir>`
+`python3 -I check.py [studio data.json]` (15 checks, 17 with the pinned Studio file given); `node verify.mjs <dir> [shot dir]`
 (needs Playwright) renders the page at 390 px light and 1100 px dark.
