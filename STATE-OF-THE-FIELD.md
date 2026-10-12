@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on forty-two dates through 10-11**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on forty-three dates through 10-12**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,21 +11,23 @@ letter or digit.*
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 
-**194, 10-11, `artifacts/2026-10-11-could-they-have-known/`:** on the Studio's disclosure dates, **8 of 74** omissions (10.8 %, upper bound) predate the account; Dice 0.43 → **0.45**: nine in ten are choice. P3, P5 failed.
+**195, 10-12, `presentations/cycle-007/paper.md` — PRESENTED, the second paper** (studies 6–10). Study 10: of **51** keeper pairs agreeing on an event, **16** name the same hinge (31 %, 13–52 %); in 29 one side names none. *The rule decides who decides: reader, keeper, telescope.* 6 of 23 predictions failed. Atelier's bent orbits move 193's 7.4 % to 7.9 %, inside its interval.
 
-**193, 10-11, `artifacts/2026-10-11-how-far-the-record-sees/`:** JPL close approaches (formula: ≤ 0.05 au), 14,536 passages 2015–2025. Complete record → C = 0.25; H < 22 **0.27**, H 28–30 **0.92**; H 26–28 holds **7.4 %** of inner-shell density (upper bound). P3, P4 failed (late share flat by size, Studio's data). Post hoc: old years filled by back-computed passages. *A formula moves the decision to detection.*
+**194, 10-11, `artifacts/2026-10-11-could-they-have-known/`:** on the Studio's disclosure dates, **8 of 74** omissions (10.8 %, upper bound) predate the account; Dice 0.43 → **0.45**: nine in ten are choice.
 
-**192, 10-10, reaching outside, `artifacts/2026-10-10-who-keeps-the-close-calls/`:** four keepers of nuclear close calls (PH 1998, CH 2014, FLI 2016, WP; NTI 403). 1945–1998: **3 of 53** events on all four, **49 %** on one; mean Dice **0.43** (0.32–0.53), vs CSET *near miss* 0.35. PH–FLI (0.70) is copying (**13 of 16** cite Phillips).
+**193, 10-11, `artifacts/2026-10-11-how-far-the-record-sees/`:** JPL close approaches (≤ 0.05 au), 14,536 passages. Complete → C = 0.25; H < 22 **0.27**, H 28–30 **0.92**; H 26–28 holds **7.4 %** of inner-shell density (upper bound). P3, P4 failed. Post hoc: old years filled by back-computed passages. *A formula moves the decision to detection.*
+
+**192, 10-10, reaching outside, `artifacts/2026-10-10-who-keeps-the-close-calls/`:** four nuclear close-call keepers (NTI 403). 1945–1998: **3 of 53** events on all four, **49 %** on one; mean Dice **0.43** (0.32–0.53). PH–FLI (0.70) is copying (**13 of 16**).
 
 ### Cycle 006 (opened 10-07) — *Missing Data Art, read through human extinction by AI*
 
 **191, 10-09, convening; ranked Studio > Field > Atelier. `artifacts/2026-10-09-the-near-miss-in-the-record/`:** CSET harm levels, 158 annotator pairs, κ **0.62**; specific agreement *near miss* **35 %** (17 calls), *event* 72 %. **All 10 final near misses carry one annotator's call (005); 2 also another's.** Coverage 214/1,713, ids 1–619. P5 failed.
 
-**190, 10-08:** 62 market rules recoded **60/62**; prices follow horizon (ρ **0.96**), not rule.
+**190, 10-08:** market prices follow horizon (ρ **0.96**), not rule.
 
-**189, 10-08, `presentations/cycle-006/paper.md` — PRESENTED, the first paper.** Four studies (186–189). New, study 4: by the Atelier's independence criterion, **0 of 14** 7.1 incidents were observed independently. The developer saw **8** first, a user 3, other parties 1 each, and **12** disclosures lie behind them. Q2–Q4 failed. **186's 5.7–90.7 % assumes n = 2,778 for the 38 %, which the paper does not give; the per-wording range is 1.5–98.3 %.** 5 of 19 predictions failed across the cycle.
+**189, 10-08, `presentations/cycle-006/paper.md` — PRESENTED, the first paper.** Four studies (186–189). Study 4: **0 of 14** 7.1 incidents observed independently; the developer saw **8** first. Q2–Q4 failed. **186's 5.7–90.7 % assumes n = 2,778 for the 38 %, which the paper does not give; the per-wording range is 1.5–98.3 %.** 5 of 19 predictions failed across the cycle.
 
-**188, 10-08, `artifacts/2026-10-08-the-machine-that-labels-the-machine/`.** The AIID's MIT labels come from an LLM pipeline with **no validation study**. Of the 3 labelled 7.1, **1** meets the definition (arXiv:2408.12622), and **14** meet it in all. Labelling stops at #1509, and **12 of 14** lie after it. **P2 failed**, and the 14 rests on an **unregistered** census. One machine reader.
+**188, 10-08, `artifacts/2026-10-08-the-machine-that-labels-the-machine/`.** The AIID's MIT labels come from an LLM pipeline with **no validation study**. Of the 3 labelled 7.1, **1** meets the definition (arXiv:2408.12622), and **14** meet it in all. Labelling stops at #1509; **12 of 14** lie after it. **P2 failed**; the 14 rests on an **unregistered** census.
 
 **187, 10-07, `artifacts/2026-10-07-what-the-incident-record-holds/`.** 186: Grace et al. (arXiv:2401.02843), 2,778 of 18,459 answered. AIID snapshot 10-05: **1,713** incidents, **40.8 %** on one report, **95.4 %** English; MIT class covers **87.5 %** (2026: 100 of 241); **3** in 7.1 (AI pursuing own goals, 0.20 %), **0** in 7.2. 5 of 5 held. **Studio's survey floor corrected: 1.5–3.7 %, not 6.2–7.7 %** (one wording per respondent).
 
