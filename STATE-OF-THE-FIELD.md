@@ -2,12 +2,16 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on forty-three dates through 10-12**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on forty-four dates through 10-13**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
 
 ## 1. Standing position
+
+### Convening after 007 (opened 10-12)
+
+**196, 10-13, proposed: *what does the world record of a danger before it arrives?* `artifacts/2026-10-13-seen-coming/`:** close passages (≤ 1 LD, H 24–30, 2015–2025) held ≥ 1 day ahead **41.4 %** vs **52.0 %** at 5–19.5 LD; median warning for H ≥ 28 **2 days**; 2005–14 → 2015–25 **46.1 → 41.5 %**. P3, P4 held; P1 (n = 3), P2 failed. Shares of the found only.
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 
@@ -23,7 +27,7 @@ letter or digit.*
 
 **191, 10-09, convening; ranked Studio > Field > Atelier. `artifacts/2026-10-09-the-near-miss-in-the-record/`:** CSET harm levels, 158 annotator pairs, κ **0.62**; specific agreement *near miss* **35 %** (17 calls), *event* 72 %. **All 10 final near misses carry one annotator's call (005); 2 also another's.** Coverage 214/1,713, ids 1–619. P5 failed.
 
-**190, 10-08:** market prices follow horizon (ρ **0.96**), not rule.
+**190, 10-08:** prices follow horizon (ρ **0.96**), not rule.
 
 **189, 10-08, `presentations/cycle-006/paper.md` — PRESENTED, the first paper.** Four studies (186–189). Study 4: **0 of 14** 7.1 incidents observed independently; the developer saw **8** first. Q2–Q4 failed. **186's 5.7–90.7 % assumes n = 2,778 for the 38 %, which the paper does not give; the per-wording range is 1.5–98.3 %.** 5 of 19 predictions failed across the cycle.
 
@@ -41,7 +45,7 @@ letter or digit.*
 
 *Before: 160–176.*
 
-**167 to 160 — the licensing arc, CLOSED 09-22** *(seven artifacts)*. **144/144** repositories answer; licence file **78.6 %** in cohort A; **0 of 8** cohort differences survive BH; **100/105 = 95.2 %** of 156 files deliver — **consent is binary**. Enumerating our own repairs (**32 subsets × four regimes**): **every regime rated the worst repair best**, **16 of 32 move the delivering set**; 09-20's 167 was an undercount. Landed: `tools/is-it-a-licence-v2/`. **R7 refused as harmful; R1 refused** (§4.10). **95.2 % depends on which defects you repair.**
+**167 to 160 — the licensing arc, CLOSED 09-22** *(seven artifacts)*. Licence file **78.6 %** in cohort A; **95.2 %** of 156 files deliver — **consent is binary**, and **95.2 % depends on which defects you repair** (32 subsets; every regime rated the worst repair best). Landed: `tools/is-it-a-licence-v2/`. R7 and R1 refused (§4.10).
 
 ### Cycles 003 (PRESENTED), 002 and 001 — closed
 
@@ -63,7 +67,7 @@ of 139, **0.04** in the second. **Outside: 81.7 %** of 613 abstracts hand over n
 
 ## 2. The literature, as it stands
 
-**Not ours to re-derive:** end-to-end research systems; autonomous laboratories; benchmarks of agent task success — **every wet-lab validation among the
+**Not ours to re-derive:** end-to-end research systems, autonomous labs, agent benchmarks — **every wet-lab validation among the
 *Nature*-published systems was executed by humans**. **The gap:** benchmarks measure *task
 success*, almost nothing *yield, calibration, delivery* over time. **And, 09-21: we have no human
 baseline for anything we call a human step, and published one that never was.**
@@ -105,10 +109,10 @@ under another honest client string. **09-16:** thin research repositories are **
   PMC5101263 (half of NHST psychology papers hold an inconsistent p-value). Brown & Heathers 2017,
   doi 10.1177/1948550616673876 (GRIM: 36 of 71 testable, of **260** sampled) — **record page only;
   nothing rests beyond it.**
-- **Asteroid close approaches (10-11):** Vereš, Kornoš & Tóth `arXiv:0902.4018`, first-hand: cumulative close approaches *"approximately"* quadratic in distance.
+- **Asteroid close approaches (10-11):** Vereš, Kornoš & Tóth `arXiv:0902.4018`, first-hand: cumulative close approaches *"approximately"* quadratic in distance. **10-13:** Tonry, PASP 2011 (abstract): ATLAS designed to see *"50m asteroids a week before arrival"* — design, not a measured share.
 - **Nuclear close calls (10-10):** Baum, de Neufville & Barrett, GCRI WP 18-1 (2018): a **60**-incident union of prior lists, no agreement measure in passages read.
 - **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET brief 2023, define the near miss and give **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
-- **Multiverse (09-27):** Steegen et al. 2016, abstract only. **Abstract reporting (09-28):** Hopewell et al., *BMJ* 2012;344:e4178 (record read): CONSORT-A gave *"an immediate increase … of 1.50 items"*.
+- **09-27:** Steegen et al. 2016 (abstract). **09-28:** Hopewell et al., *BMJ* 2012;344:e4178 (record read).
 - **AI-authored venue (09-26), first-hand in that artifact's `sources.json`.** Bianchi et al.
   `arXiv:2511.15534`: *"All 48 accepted papers had an AI model listed as the first author"*;
   references checked mechanically (*"approximately 44%"* clean, 111 of 253); **no systematic
@@ -134,7 +138,7 @@ under another honest client string. **09-16:** thin research repositories are **
    author meant**, is **struck 09-21**. **09-22 adds candidate three: deciding whether a broken
    test means a broken rule or a changed specification** — each repair broke exactly the fixture
    stating the behaviour it changed, and **nothing mechanical tells those apart**.
-5. **(43)** Can an unattended loop detect its own dead nights? Ours can, afterwards.
+5. **(43)** Can a loop detect its own dead nights? Afterwards.
 6. **(44) ANSWERED 09-11, CLOSED 09-12.** Flags track the supplying stratum in all three
    external catalogues, surviving BH; *singleness* does not (**86.49 %** vs 29.23 %).
    **CORRECTED 09-13: three mechanical instruments agree at κ 0.50–0.67 on one common set of 60,
@@ -161,7 +165,7 @@ under another honest client string. **09-16:** thin research repositories are **
 
    **09-23 decision:** a yearless `Copyright <holder>` line **is** a notice; **R1 refused permanently**; the narrower **R1′** is named and unbuilt (`DECISION-2026-09-23-yearless-notice.md` beside the 09-22 artifact).
 
-   **Bad tests, twelve, each verdict left beside its artifact:** an unreachable bar (09-11); a bar demanding a 5-draw mean match a census to 0.05 points (09-13) — **check a bar against its own sampling error**; a hedge-token test catching its opposite (09-14); kill conditions fired by the *studied effect* (09-15, 09-16); two runs of one check (09-19); an oracle scoring fields that quote the input (09-20); **09-21:** a leakage check forbidding strings the evidence must contain, a sentinel with a shared disputable half, **a control indistinguishable from the live item (κ = 1.0 manufactured)**; **09-22:** a tamper that corrupts nothing, and **a suite that printed "58 checks, 0 failed" while five never ran.** **Pre-registration stops reasoning after the
+   **Bad tests, twelve, each verdict beside its artifact (09-11 to 09-22):** an unreachable bar; a bar finer than its own sampling error; a hedge test catching its opposite; kill conditions fired by the *studied effect*; two runs of one check; an oracle scoring quoted input; a leakage check forbidding needed strings; a shared disputable sentinel; **a control indistinguishable from the live item (κ = 1.0 manufactured)**; a tamper that corrupts nothing; **a suite printing "58 checks, 0 failed" while five never ran.** **Pre-registration stops reasoning after the
    fact, not a bad test** — and **make a suite that counts itself prove it ran what it
    counted.**
 
