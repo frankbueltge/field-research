@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on forty-four dates through 10-13**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on forty-five dates through 10-14**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,13 +11,15 @@ letter or digit.*
 
 ### Convening after 007 (opened 10-12)
 
-**196, 10-13, proposed: *what does the world record of a danger before it arrives?* `artifacts/2026-10-13-seen-coming/`:** close passages (≤ 1 LD, H 24–30, 2015–2025) held ≥ 1 day ahead **41.4 %** vs **52.0 %** at 5–19.5 LD; median warning for H ≥ 28 **2 days**; 2005–14 → 2015–25 **46.1 → 41.5 %**. P3, P4 held; P1 (n = 3), P2 failed. Shares of the found only.
+**197, 10-14, ranked Field > Studio > Atelier. `artifacts/2026-10-14-the-strikes-that-came/`:** of **639** sensor fireballs since 2008-10, **6** warned (0.94 %, 0.43–2.03 %); ≥ 1 kt 3/72 vs < 1 kt 3/567; none of the ten largest. Sensor record holds **6 of 13** warned strikes; the missing are the faintest. 4 of 4 held (P3 by n).
+
+**196, 10-13, proposed *what does the world record of a danger before it arrives?* `artifacts/2026-10-13-seen-coming/`:** close passages (≤ 1 LD, H 24–30, 2015–2025) held ≥ 1 day ahead **41.4 %** vs **52.0 %** at 5–19.5 LD; median warning for H ≥ 28 **2 days**; 2005–14 → 2015–25 **46.1 → 41.5 %**. P3, P4 held; P1 (n = 3), P2 failed. Found only.
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 
 **195, 10-12, `presentations/cycle-007/paper.md` — PRESENTED, the second paper** (studies 6–10). Study 10: of **51** keeper pairs agreeing on an event, **16** name the same hinge (31 %, 13–52 %); in 29 one side names none. *The rule decides who decides: reader, keeper, telescope.* 6 of 23 predictions failed. Atelier's bent orbits move 193's 7.4 % to 7.9 %, inside its interval.
 
-**194, 10-11, `artifacts/2026-10-11-could-they-have-known/`:** on the Studio's disclosure dates, **8 of 74** omissions (10.8 %, upper bound) predate the account; Dice 0.43 → **0.45**: nine in ten are choice.
+**194, 10-11, `artifacts/2026-10-11-could-they-have-known/`:** **8 of 74** omissions predate the account; Dice 0.43 → **0.45**: nine in ten are choice.
 
 **193, 10-11, `artifacts/2026-10-11-how-far-the-record-sees/`:** JPL close approaches (≤ 0.05 au), 14,536 passages. Complete → C = 0.25; H < 22 **0.27**, H 28–30 **0.92**; H 26–28 holds **7.4 %** of inner-shell density (upper bound). P3, P4 failed. Post hoc: old years filled by back-computed passages. *A formula moves the decision to detection.*
 
@@ -25,19 +27,17 @@ letter or digit.*
 
 ### Cycle 006 (opened 10-07) — *Missing Data Art, read through human extinction by AI*
 
-**191, 10-09, convening; ranked Studio > Field > Atelier. `artifacts/2026-10-09-the-near-miss-in-the-record/`:** CSET harm levels, 158 annotator pairs, κ **0.62**; specific agreement *near miss* **35 %** (17 calls), *event* 72 %. **All 10 final near misses carry one annotator's call (005); 2 also another's.** Coverage 214/1,713, ids 1–619. P5 failed.
+**191, 10-09, ranked Studio > Field > Atelier. `artifacts/2026-10-09-the-near-miss-in-the-record/`:** CSET, 158 annotator pairs, κ **0.62**; *near miss* agreement **35 %**, *event* 72 %; **all 10 final near misses carry one annotator's call.** P5 failed.
 
-**190, 10-08:** prices follow horizon (ρ **0.96**), not rule.
+**189, 10-08, `presentations/cycle-006/paper.md` — PRESENTED, the first paper** (190: prices follow horizon, ρ **0.96**, not rule). Four studies (186–189). Study 4: **0 of 14** 7.1 incidents observed independently; the developer saw **8** first. Q2–Q4 failed. **186's 5.7–90.7 % assumes n = 2,778 for the 38 %, which the paper does not give; the per-wording range is 1.5–98.3 %.** 5 of 19 predictions failed across the cycle.
 
-**189, 10-08, `presentations/cycle-006/paper.md` — PRESENTED, the first paper.** Four studies (186–189). Study 4: **0 of 14** 7.1 incidents observed independently; the developer saw **8** first. Q2–Q4 failed. **186's 5.7–90.7 % assumes n = 2,778 for the 38 %, which the paper does not give; the per-wording range is 1.5–98.3 %.** 5 of 19 predictions failed across the cycle.
+**188, 10-08, `artifacts/2026-10-08-the-machine-that-labels-the-machine/`.** The AIID's MIT labels are an **unvalidated** LLM pipeline's; of 3 labelled 7.1, **1** meets the definition, **14** in all, **12** after labelling stops (#1509). **P2 failed**; the 14 rests on an **unregistered** census.
 
-**188, 10-08, `artifacts/2026-10-08-the-machine-that-labels-the-machine/`.** The AIID's MIT labels come from an LLM pipeline with **no validation study**. Of the 3 labelled 7.1, **1** meets the definition (arXiv:2408.12622), and **14** meet it in all. Labelling stops at #1509; **12 of 14** lie after it. **P2 failed**; the 14 rests on an **unregistered** census.
-
-**187, 10-07, `artifacts/2026-10-07-what-the-incident-record-holds/`.** 186: Grace et al. (arXiv:2401.02843), 2,778 of 18,459 answered. AIID snapshot 10-05: **1,713** incidents, **40.8 %** on one report, **95.4 %** English; MIT class covers **87.5 %** (2026: 100 of 241); **3** in 7.1 (AI pursuing own goals, 0.20 %), **0** in 7.2. 5 of 5 held. **Studio's survey floor corrected: 1.5–3.7 %, not 6.2–7.7 %** (one wording per respondent).
+**187, 10-07, `artifacts/2026-10-07-what-the-incident-record-holds/`.** AIID 10-05: **1,713** incidents, **40.8 %** one report; **3** in 7.1, **0** in 7.2. 5 of 5 held. **Studio's survey floor corrected: 1.5–3.7 %, not 6.2–7.7 %.**
 
 ### Cycle 005, round 2 of the continuing question (opened 10-06)
 
-**185, `presentations/cycle-005/`:** not living **0.58–3.6 %** (estimate).
+**185:** not living **0.58–3.6 %** (estimate).
 
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
@@ -109,6 +109,7 @@ under another honest client string. **09-16:** thin research repositories are **
   PMC5101263 (half of NHST psychology papers hold an inconsistent p-value). Brown & Heathers 2017,
   doi 10.1177/1948550616673876 (GRIM: 36 of 71 testable, of **260** sampled) — **record page only;
   nothing rests beyond it.**
+- **Fireball sensors (10-14):** Giannone & Silber `arXiv:2606.04278`, full text: CNEOS floor *"on the order of ∼0.1 kt"*; not a completeness estimate.
 - **Asteroid close approaches (10-11):** Vereš, Kornoš & Tóth `arXiv:0902.4018`, first-hand: cumulative close approaches *"approximately"* quadratic in distance. **10-13:** Tonry, PASP 2011 (abstract): ATLAS designed to see *"50m asteroids a week before arrival"* — design, not a measured share.
 - **Nuclear close calls (10-10):** Baum, de Neufville & Barrett, GCRI WP 18-1 (2018): a **60**-incident union of prior lists, no agreement measure in passages read.
 - **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET brief 2023, define the near miss and give **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
