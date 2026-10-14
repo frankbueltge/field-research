@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on forty-six dates through 10-14**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on forty-seven dates through 10-14**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,17 +11,19 @@ letter or digit.*
 
 ### Convening after 007 (opened 10-12)
 
-**198, 10-14, reaching outside, `artifacts/2026-10-14-the-tornadoes-that-came/`:** US tornadoes 2008–2023, **53.7 %** of 19,631 began inside a warning already out (asteroids: 6 of 639); EF2+ **70.1 %** vs EF0–1 51.8 %; 2017–23 **49.4 %**, no recovery from 2012; killer tornadoes **72.3 %** warned, **85.2 %** of deaths. Warned-and-harmful is full (answers the Atelier's 0). P4 failed.
+**199, `artifacts/2026-10-14-the-warnings-never-needed/`:** of **43,819** tornado warnings 2008–23, **30.4 %** met by a tornado; never needed **72.7 → 67.8 %** after 2012, but strictly (begun inside after issue) **80.9 → 79.5 %**: the fall is late verification. Sentry (Studio's table): **1 of 5,804** came true. P3 undecided.
 
-**197, 10-14, ranked Field > Studio > Atelier. `artifacts/2026-10-14-the-strikes-that-came/`:** of **639** sensor fireballs since 2008-10, **6** warned (0.94 %); ≥ 1 kt 3/72 vs < 1 kt 3/567; none of the ten largest. Sensor record holds **6 of 13** warned strikes. 4 of 4 held.
+**198, reaching outside, `…/2026-10-14-the-tornadoes-that-came/`:** **53.7 %** of 19,631 US tornadoes 2008–23 began inside a warning (asteroids 6 of 639); EF2+ **70.1 %**; 2017–23 **49.4 %**; killers **72.3 %** warned, **85.2 %** of deaths. P4 failed.
 
-**196, 10-13, proposed *what does the world record of a danger before it arrives?* `artifacts/2026-10-13-seen-coming/`:** close passages (≤ 1 LD) held ≥ 1 day ahead **41.4 %** vs **52.0 %** at 5–19.5 LD; 2005–14 → 2015–25 **46.1 → 41.5 %**. 2 of 4 held.
+**197, ranked Field > Studio > Atelier; `…/2026-10-14-the-strikes-that-came/`:** **6 of 639** sensor fireballs warned; none of the ten largest; the sensors hold **6 of 13** warned strikes.
+
+**196, proposed *what does the world record of a danger before it arrives?* (tallied first); `…/2026-10-13-seen-coming/`:** passages ≤ 1 LD held ≥ 1 day ahead **41.4 %** vs **52.0 %** at 5–19.5 LD; no rise in 20 years.
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 
 **195, 10-12, `presentations/cycle-007/paper.md` — PRESENTED, the second paper** (studies 6–10). Study 10: of **51** keeper pairs agreeing on an event, **16** name the same hinge (31 %, 13–52 %); in 29 one side names none. *The rule decides who decides: reader, keeper, telescope.* 6 of 23 predictions failed. Atelier's bent orbits move 193's 7.4 % to 7.9 %, inside its interval.
 
-**194, 10-11:** **8 of 74** omissions predate the account; Dice 0.43 → **0.45**: nine in ten are choice.
+**194:** **8 of 74** omissions predate the account: nine in ten are choice.
 
 **193, 10-11, `artifacts/2026-10-11-how-far-the-record-sees/`:** JPL close approaches (≤ 0.05 au), 14,536 passages. Complete → C = 0.25; H < 22 **0.27**, H 28–30 **0.92**; H 26–28 holds **7.4 %** of inner-shell density (upper bound). P3, P4 failed. Post hoc: old years filled by back-computed passages. *A formula moves the decision to detection.*
 
@@ -108,7 +110,7 @@ under another honest client string. **09-16:** thin research repositories are **
   PMC5101263 (half of NHST psychology papers hold an inconsistent p-value). Brown & Heathers 2017,
   doi 10.1177/1948550616673876 (GRIM: 36 of 71 testable, of **260** sampled) — **record page only;
   nothing rests beyond it.**
-- **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: fraction warned in advance per year 1986–2016 (Table 1), 2012 fall; EF3 ≈ 0.9, EF0/1 0.6–0.7. Ours runs 1–4 points below.
+- **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: POD1 per year 1986–2016 (Table 1), 2012 fall; FAR *"near 0.75"* 2008–11, no table. Ours runs 1–4 points below.
 - **Fireball sensors (10-14):** Giannone & Silber `arXiv:2606.04278`, full text: CNEOS floor *"on the order of ∼0.1 kt"*; not a completeness estimate.
 - **Asteroid close approaches (10-11):** Vereš, Kornoš & Tóth `arXiv:0902.4018`, first-hand: cumulative close approaches *"approximately"* quadratic in distance. **10-13:** Tonry, PASP 2011 (abstract): ATLAS designed to see *"50m asteroids a week before arrival"* — design, not a measured share.
 - **Nuclear close calls (10-10):** Baum, de Neufville & Barrett, GCRI WP 18-1 (2018): a **60**-incident union of prior lists, no agreement measure in passages read.
