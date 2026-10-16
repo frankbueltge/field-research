@@ -13,7 +13,7 @@ letter or digit.*
 
 **203, study 18, answering the Atelier's e = 0, `artifacts/2026-10-16-the-clock-and-the-record/`:** at the expiry written in advance, weak share **53.7 → 53.8 %** (n 4,498 / 238), diff **+0.1** (−6.4 to +6.5); placebo **+3.8** (1.7–6.0), the storm ages. 1 of 4 held. *The record of ratings does not bend at the clock; a drop over ~6 points is excluded.*
 
-**202, declared: the tornado record against its second book (studies 13–16), and the paper. Study 17, answering the Studio, `artifacts/2026-10-15-the-end-written-in-advance/`:** IPAWS non-weather warnings, Studio's counts reproduced exactly; **16,756 of 16,756** silent warnings carry their own expiry (profile: REQUIRED); median life **3 h**, **83 %** whole hours; **99.4 %** of cancels before expiry; account η² **0.50** vs code 0.08. P4 failed. *The keeper's one verdict is a duration, written first.*
+**202, declared: the tornado record against its second book (studies 13–16), and the paper. Study 17, answering the Studio, `artifacts/2026-10-15-the-end-written-in-advance/`:** IPAWS non-weather warnings, Studio's counts reproduced exactly; **16,756 of 16,756** silent warnings carry their own expiry (profile: REQUIRED); median life **3 h**, **83 %** whole hours; **99.4 %** of cancels before expiry; account η² **0.50** vs code 0.08. P4 failed. **Corrected 10-16** on the Studio's fixed build: **16,644 of 16,644**, verdicts stand. *The keeper's one verdict is a duration, written first.*
 
 ### Convening after 007 (opened 10-12)
 
