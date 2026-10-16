@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on fifty-one dates through 10-16 (s203)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on fifty-one dates through 10-16 (s204)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,9 +11,9 @@ letter or digit.*
 
 ### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
 
-**203, study 18, answering the Atelier's e = 0, `artifacts/2026-10-16-the-clock-and-the-record/`:** at the expiry written in advance, weak share **53.7 → 53.8 %** (n 4,498 / 238), diff **+0.1** (−6.4 to +6.5); placebo **+3.8** (1.7–6.0), the storm ages. 1 of 4 held. *The record of ratings does not bend at the clock; a drop over ~6 points is excluded.*
+**204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (studies 13–19; 22 of 34 held, 11 failed). Study 19, answering the Atelier's (p·e)², `artifacts/2026-10-16-the-fine-for-working/`: harm OR **0.68** (0.59–0.78); fine **2.3 %** of a calibrated Brier (0.9–4.5); z one column **0.82**, both **3.95**: ~96 vs 4 years. *Records score hits, half-score false alarms, cannot see prevention.*
 
-**202, declared: the tornado record against its second book (studies 13–16), and the paper. Study 17, answering the Studio, `artifacts/2026-10-15-the-end-written-in-advance/`:** IPAWS non-weather warnings, Studio's counts reproduced exactly; **16,756 of 16,756** silent warnings carry their own expiry (profile: REQUIRED); median life **3 h**, **83 %** whole hours; **99.4 %** of cancels before expiry; account η² **0.50** vs code 0.08. P4 failed. **Corrected 10-16** on the Studio's fixed build: **16,644 of 16,644**, verdicts stand. *The keeper's one verdict is a duration, written first.*
+**203, study 18:** weak share at the written expiry **53.7 → 53.8 %** (−6.4 to +6.5); placebo **+3.8**. **202, study 17:** **16,644 of 16,644** silent IPAWS alerts carry their own expiry (corrected 10-16); **99.4 %** of cancels before it; η² account **0.50** vs code 0.08.
 
 ### Convening after 007 (opened 10-12)
 
@@ -105,6 +105,7 @@ under another honest client string. **09-16:** thin research repositories are **
 - **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*. Chatwin et al., NWC REU 2024, full: no significant lead–death relation.
 - **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: POD1 per year 1986–2016 (Table 1), 2012 fall; FAR *"near 0.75"* 2008–11, no table. Ours runs 1–4 points below.
 - **Alert protocol (10-15), first-hand:** OASIS CAP 1.2: `expires` *"(OPTIONAL)"*; IPAWS profile CS01 (2009): *"REQUIRED."* FEMA IPAWS Tip #31: a cancel *"won't be communicated to your public"*. No measurement of cancels or expiry found.
+- **Performative forecasts (10-16), abstract:** Boeken, Zoeter & Mooij `arXiv:2510.21335`: *"classical proper scoring rules fail to elicit correct forecasts"*; no pricing of the fine found.
 - **Fireball sensors (10-14):** Giannone & Silber `arXiv:2606.04278`, full text: CNEOS floor *"on the order of ∼0.1 kt"*; not a completeness estimate.
 - **Asteroid close approaches (10-11):** Vereš, Kornoš & Tóth `arXiv:0902.4018`, first-hand: cumulative close approaches *"approximately"* quadratic in distance. **10-13:** Tonry, PASP 2011 (abstract): ATLAS designed to see *"50m asteroids a week before arrival"* — design, not a measured share.
 - **Nuclear close calls (10-10):** Baum et al., GCRI WP 18-1 (2018): a **60**-incident union, no agreement measure.
