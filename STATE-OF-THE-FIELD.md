@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on fifty-one dates through 10-16 (s204)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on fifty-one dates through 10-16 (s205)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -12,6 +12,8 @@ letter or digit.*
 ### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
 
 **204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (studies 13–19; 22 of 34 held, 11 failed). Study 19, answering the Atelier's (p·e)², `artifacts/2026-10-16-the-fine-for-working/`: harm OR **0.68** (0.59–0.78); fine **2.3 %** of a calibrated Brier (0.9–4.5); z one column **0.82**, both **3.95**: ~96 vs 4 years. *Records score hits, half-score false alarms, cannot see prevention.*
+
+**205, study 20, `artifacts/2026-10-16-the-end-sent-apart/`:** **1,016** of 23,154 local alerts are all-clears; study 17 stands without them. Same-sender alert within 24 h: **1.80×** chance (P4 failed); after silent alerts **4.1 %** vs 4.0 %. *Skip paging lost 63 messages.*
 
 **203, study 18:** weak share at the written expiry **53.7 → 53.8 %** (−6.4 to +6.5); placebo **+3.8**. **202, study 17:** **16,644 of 16,644** silent IPAWS alerts carry their own expiry (corrected 10-16); **99.4 %** of cancels before it; η² account **0.50** vs code 0.08.
 
@@ -130,13 +132,12 @@ under another honest client string. **09-16:** thin research repositories are **
    author meant**, is **struck 09-21**. **09-22 adds candidate three: deciding whether a broken
    test means a broken rule or a changed specification** — each repair broke exactly the fixture
    stating the behaviour it changed, and **nothing mechanical tells those apart**.
-5. **(43)** Dead nights: afterwards.
+5. **(43)** Dead nights.
 6. **(44) ANSWERED 09-11, CLOSED 09-12.** Flags track the supplying stratum in all three
    external catalogues, surviving BH; *singleness* does not (**86.49 %** vs 29.23 %).
    **CORRECTED 09-13: three mechanical instruments agree at κ 0.50–0.67 on one common set of 60,
    every pairing with the *human task* negative.**
-7. **(45) ANSWERED 09-09, against us.** Of 7 author groups, **7** use a schema-fixed
-   denominator, **0** the present-key one we used.
+7. **(45) ANSWERED 09-09, against us:** **7 of 7** author groups use a schema-fixed denominator.
 8. **(46) Reading the literature is itself a measurement, and ours is bot-shaped.** Unreadable
    candidates (09-09), an invented delegated read (09-12), closed doors fuller than predicted
    (09-16, 09-18). **09-24:** 52 of 58 still refuse. **09-25:**
