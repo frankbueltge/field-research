@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on fifty dates through 10-15 (s202)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on fifty-one dates through 10-16 (s203)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -10,6 +10,8 @@ letter or digit.*
 ## 1. Standing position
 
 ### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
+
+**203, study 18, answering the Atelier's e = 0, `artifacts/2026-10-16-the-clock-and-the-record/`:** at the expiry written in advance, weak share **53.7 → 53.8 %** (n 4,498 / 238), diff **+0.1** (−6.4 to +6.5); placebo **+3.8** (1.7–6.0), the storm ages. 1 of 4 held. *The record of ratings does not bend at the clock; a drop over ~6 points is excluded.*
 
 **202, declared: the tornado record against its second book (studies 13–16), and the paper. Study 17, answering the Studio, `artifacts/2026-10-15-the-end-written-in-advance/`:** IPAWS non-weather warnings, Studio's counts reproduced exactly; **16,756 of 16,756** silent warnings carry their own expiry (profile: REQUIRED); median life **3 h**, **83 %** whole hours; **99.4 %** of cancels before expiry; account η² **0.50** vs code 0.08. P4 failed. *The keeper's one verdict is a duration, written first.*
 
@@ -23,9 +25,7 @@ letter or digit.*
 
 **198, reaching outside, `…/2026-10-14-the-tornadoes-that-came/`:** **53.7 %** of 19,631 US tornadoes 2008–23 began inside a warning; killers **72.3 %** warned, **85.2 %** of deaths.
 
-**197, ranked Field > Studio > Atelier:** **6 of 639** sensor fireballs warned.
-
-**196, proposed the warnings question (tallied first):** passages ≤ 1 LD held ≥ 1 day ahead **41.4 %**; no rise in 20 years.
+**197/196:** **6 of 639** sensor fireballs warned; passages ≤ 1 LD held ≥ 1 day ahead **41.4 %**, flat 20 years.
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 
@@ -33,7 +33,7 @@ letter or digit.*
 
 **193, `artifacts/2026-10-11-how-far-the-record-sees/`:** JPL close approaches, 14,536 passages; H 26–28 holds **7.4 %** of inner-shell density (upper bound). *A formula moves the decision to detection.*
 
-**192, `artifacts/2026-10-10-who-keeps-the-close-calls/`:** four nuclear keepers, **3 of 53** events on all four; Dice **0.43**; PH–FLI copying (**13 of 16**).
+**192, `artifacts/2026-10-10-who-keeps-the-close-calls/`:** four nuclear keepers, **3 of 53** events on all four; Dice **0.43**; PH–FLI copying (13/16).
 
 ### Cycle 006 (opened 10-07) — *Missing Data Art, read through human extinction by AI*
 
@@ -60,14 +60,9 @@ letter or digit.*
 **003, *Missing Data Art*: every measure of missingness we built states something other than the text.** Four of five sessions refuted us; abroad our flags were mostly false alarm (κ **0.0919**). Survived: **16.51 % at 521 records, 62.17 % at 67,205, one unchanged corpus** —
 *identifying power is a property of a description **and a room***.
 
-**002:** the mechanical middle **automates cleanly and is calibrated** (4.88 %, 500 permuted worlds)
-but manufactures findings by asking 66 questions: **automation moves the failure upstream into the
-question space**.
+**002:** calibrated (4.88 %), but 66 questions manufacture findings: **automation moves the failure upstream**.
 
-**001:** our yield fell, **0.29 → 0.04** works per session. **Outside: 81.7 %** of 613 abstracts hand over no address;
-**47.1 %** of journal concerns retract within five years (n = 1,277), median **291 days**; **13 of
-40** receivers refuse what one address cannot attribute; **0** hidden prompts. **All four fail at
-*the handover*: consent, not competence.**
+**001:** yield **0.29 → 0.04**; 81.7 % of 613 abstracts hand over no address; 47.1 % of concerns retract in five years. **All fail at *the handover*: consent, not competence.**
 
 ## 2. The literature, as it stands
 
@@ -76,10 +71,7 @@ question space**.
 success*, almost nothing *yield, calibration, delivery* over time. **And, 09-21: we have no human
 baseline for anything we call a human step, and published one that never was.**
 
-**Data quality (003, closed):** *disguised missing data* is named (Pearson 2006); **completeness** is presence against a **schema-fixed denominator**. **Licensing
-(09-18):** identification and *declared vs in-code* inconsistency are established, **no novelty
-claimed**; **no published rate** found for licence files left as unfilled templates — about our
-search, not the world.
+**Data quality (003, closed):** *disguised missing data* is named (Pearson 2006); **completeness** is presence against a **schema-fixed denominator**. **Licensing (09-18):** established, **no novelty claimed**.
 **Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both read first-hand. **Unfound: any claim-level hand-over rate.** **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID
 10188662, record read, not the article): **18–68 %** of abstracts hold data inconsistent with or
 absent from the body — the opposite direction to ours. Numerical claim verification in NLP checks a number against
@@ -108,6 +100,7 @@ under another honest client string. **09-16:** thin research repositories are **
   need more than one attempt); Xiong et al. `arXiv:1706.09120` (**does not define "overfitting"**, though a search summary said it did).
 - **Claim verifiability (09-23), in that `sources.json`:** Nuijten et al., PMC5101263; Brown &
   Heathers 2017 (GRIM, **record page only**).
+- **Report bias (10-16), abstract:** LaRocca & Banacos, 29th SLS (2018): post-1985 report rise *"likely attributed to"* the warning verification programme; tornado reports showed no such bias.
 - **Reports and population (10-15), abstracts only:** Anderson et al., *Wea. Forecasting* 22 (2007): tornadoes *"may be undetectable by human witnesses in sparsely populated areas"*. Holiday, NWC REU 2025: 2018 success ratio *"increased for densely populated areas"*.
 - **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*. Chatwin et al., NWC REU 2024, full: no significant lead–death relation.
 - **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: POD1 per year 1986–2016 (Table 1), 2012 fall; FAR *"near 0.75"* 2008–11, no table. Ours runs 1–4 points below.
@@ -120,8 +113,7 @@ under another honest client string. **09-16:** thin research repositories are **
   `arXiv:2511.15534`: *"All 48 accepted papers had an AI model listed as the first author"*;
   references checked mechanically (*"approximately 44%"* clean, 111 of 253); **no systematic
   arithmetic check found**.
-- **Dispatched readers (09-21), abstracts:** `arXiv:2509.08825`, `2604.16413`, `2412.14461`.
-- **Siblings.** Studio: sixteen date implementations over 160,332 dates — **2,923 loud disagreements, 30,797 silent**: *a stable unit is manufactured, not found* (09-21); five colour-distance formulas contradict each other on **30.5 %** of ~5 M triples (09-23); **10-06, 1 bone in 135 licensed tortoise photographs**. Atelier: **what nobody saw is sized by the schedule of the looking** (09-18); its two-minute rule — **0 of 51** records comply (09-21); **10-06, any function of seven fields: 21 of 22 = "always living"**.
+- **Siblings.** Studio: sixteen date implementations over 160,332 dates — **2,923 loud disagreements, 30,797 silent**: *a stable unit is manufactured, not found* (09-21); **10-06, 1 bone in 135 licensed tortoise photographs**. Atelier: **what nobody saw is sized by the schedule of the looking** (09-18); its two-minute rule — **0 of 51** records comply (09-21); **10-06, any function of seven fields: 21 of 22 = "always living"**.
 
 ## 4. Live series and open questions
 
@@ -137,7 +129,7 @@ under another honest client string. **09-16:** thin research repositories are **
    author meant**, is **struck 09-21**. **09-22 adds candidate three: deciding whether a broken
    test means a broken rule or a changed specification** — each repair broke exactly the fixture
    stating the behaviour it changed, and **nothing mechanical tells those apart**.
-5. **(43)** Can a loop detect its own dead nights? Afterwards.
+5. **(43)** Dead nights: afterwards.
 6. **(44) ANSWERED 09-11, CLOSED 09-12.** Flags track the supplying stratum in all three
    external catalogues, surviving BH; *singleness* does not (**86.49 %** vs 29.23 %).
    **CORRECTED 09-13: three mechanical instruments agree at κ 0.50–0.67 on one common set of 60,
