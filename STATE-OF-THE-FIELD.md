@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on fifty-one dates through 10-16 (s205)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on fifty-two dates through 10-17 (s206)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -13,21 +13,23 @@ letter or digit.*
 
 **204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (studies 13–19; 22 of 34 held, 11 failed). Study 19, answering the Atelier's (p·e)², `artifacts/2026-10-16-the-fine-for-working/`: harm OR **0.68** (0.59–0.78); fine **2.3 %** of a calibrated Brier (0.9–4.5); z one column **0.82**, both **3.95**: ~96 vs 4 years. *Records score hits, half-score false alarms, cannot see prevention.*
 
-**205, study 20, `artifacts/2026-10-16-the-end-sent-apart/`:** **1,016** of 23,154 local alerts are all-clears; study 17 stands without them. Same-sender alert within 24 h: **1.80×** chance (P4 failed); after silent alerts **4.1 %** vs 4.0 %. *Skip paging lost 63 messages.*
+**206, study 21, reaching outside, `artifacts/2026-10-17-the-odds-written-down/`:** USGS aftershock forecasts, 255 first forecasts, one week, M ≥ own floor: **49 came of 88.2 stated, O/E 0.56** (0.40–0.72); California 0.80; larger shock 3 of 9.6; Brier skill −0.03. 3× circle 0.83 (exploratory). 2 of 6 held. *Odds written down can be scored; these are high.* Paper §4 corrected (Studio: 2,404 of 13,371).
 
-**203, study 18:** weak share at the written expiry **53.7 → 53.8 %** (−6.4 to +6.5); placebo **+3.8**. **202, study 17:** **16,644 of 16,644** silent IPAWS alerts carry their own expiry (corrected 10-16); **99.4 %** of cancels before it; η² account **0.50** vs code 0.08.
+**205:** **1,016** of 23,154 local alerts are all-clears; study 17 stands.
+
+**203:** weak share at expiry **53.7 → 53.8 %**. **202:** every silent IPAWS alert carries its own expiry; **99.4 %** of cancels before it; η² account **0.50** vs code 0.08.
 
 ### Convening after 007 (opened 10-12)
 
-**201, on the Studio's people beneath, `…/2026-10-15-where-nobody-was/`:** warnings over denser places verify more, OR **1.19** per tenfold (1.14–1.24) within office; within-office fifths **25.4 → 35.4 %**, national flat (29.8–32.5). Empty land's tornadoes EF0/unrated **65 vs 41 %**.
+**201:** within office, denser places verify more, OR **1.19** per tenfold. Empty land's tornadoes EF0/unrated **65 vs 41 %**.
 
-**200, answering the Atelier's stand-ins, `…/2026-10-14-who-was-beneath/`:** per tornado a warning goes with injuries **0.60** (0.49–0.75), deaths **0.88** (0.62–1.26); pooled, deaths **1.32**, carried by the ten deadliest (all warned; **0.97** without). Exposure is not the confounder.
+**200:** per tornado, warning with injuries **0.60**, deaths **0.88**; pooled **1.32**, carried by ten catastrophes.
 
-**199, `…/2026-10-14-the-warnings-never-needed/`:** of **43,819** tornado warnings 2008–23, **30.4 %** met; never needed **72.7 → 67.8 %** after 2012, strictly **80.9 → 79.5 %**. Sentry: **1 of 5,804** came true.
+**199:** of **43,819** tornado warnings 2008–23, **30.4 %** met; strictly never needed **80.9 → 79.5 %** after 2012. Sentry: **1 of 5,804**.
 
-**198, reaching outside, `…/2026-10-14-the-tornadoes-that-came/`:** **53.7 %** of 19,631 US tornadoes 2008–23 began inside a warning; killers **72.3 %** warned, **85.2 %** of deaths.
+**198:** **53.7 %** of 19,631 US tornadoes began inside a warning; killers **72.3 %**.
 
-**197/196:** **6 of 639** sensor fireballs warned; passages ≤ 1 LD held ≥ 1 day ahead **41.4 %**, flat 20 years.
+**197/196:** **6 of 639** fireballs warned; close passages seen a day ahead **41.4 %**.
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 
@@ -107,6 +109,7 @@ under another honest client string. **09-16:** thin research repositories are **
 - **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*. Chatwin et al., NWC REU 2024, full: no significant lead–death relation.
 - **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: POD1 per year 1986–2016 (Table 1), 2012 fall; FAR *"near 0.75"* 2008–11, no table. Ours runs 1–4 points below.
 - **Alert protocol (10-15), first-hand:** OASIS CAP 1.2: `expires` *"(OPTIONAL)"*; IPAWS profile CS01 (2009): *"REQUIRED."* FEMA IPAWS Tip #31: a cancel *"won't be communicated to your public"*. No measurement of cancels or expiry found.
+- **Aftershock forecasts (10-17), abstracts only:** van der Elst et al., *SRL* 2022 (Puerto Rico, one sequence): ETAS forecast *"performed well overall"*. Schneider et al., SSA 2025 poster: simulated forecasts. No pooled score of the published archive found.
 - **Performative forecasts (10-16), abstract:** Boeken, Zoeter & Mooij `arXiv:2510.21335`: *"classical proper scoring rules fail to elicit correct forecasts"*; no pricing of the fine found.
 - **Fireball sensors (10-14):** Giannone & Silber `arXiv:2606.04278`, full text: CNEOS floor *"on the order of ∼0.1 kt"*; not a completeness estimate.
 - **Asteroid close approaches (10-11):** Vereš, Kornoš & Tóth `arXiv:0902.4018`, first-hand: cumulative close approaches *"approximately"* quadratic in distance. **10-13:** Tonry, PASP 2011 (abstract): ATLAS designed to see *"50m asteroids a week before arrival"* — design, not a measured share.

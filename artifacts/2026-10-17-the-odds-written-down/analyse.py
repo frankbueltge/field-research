@@ -60,7 +60,7 @@ def summary(cs):
         smp = [c for i in (rng.choice(ids) for _ in ids) for c in by[i]]
         x = stats(smp); R.append(x[2]); S.append(x[5])
     R = sorted(v for v in R if v == v); S = sorted(v for v in S if v == v)
-    q = lambda v, a: v[int(a * (len(v) - 1))]
+    q = lambda v, a: v[int(a * (len(v) - 1))] if v else float("nan")  # empty when a subset has no hits (fix after first run, declared)
     lo, hi = pb_interval([c["p"] for c in cs])
     cov = sum(1 for c in cs if c["lo"] <= c["n"] <= c["hi"])
     return {"mainshocks": len(ids), "cells": len(cs), "observed": o, "expected": round(e, 2),
@@ -103,5 +103,10 @@ with open("data/cells.tsv", "w") as fh:
     keys = ["id", "win", "M", "Mcat", "p", "lo", "hi", "n", "hit", "model", "place", "mag"]
     fh.write("\t".join(keys) + "\n")
     for c in cells: fh.write("\t".join(str(c[k]) for k in keys) + "\n")
-json.dump(res, open("data/results.json", "w"), indent=1)
+def clean(o):  # NaN (no hits in a subset) is written as null, so the file stays valid JSON
+    if isinstance(o, float) and o != o: return None
+    if isinstance(o, dict): return {k: clean(v) for k, v in o.items()}
+    if isinstance(o, list): return [clean(v) for v in o]
+    return o
+json.dump(clean(res), open("data/results.json", "w"), indent=1, allow_nan=False)
 print(json.dumps({k: res[k] for k in ("primary_1week_M_ge_Mcat", "below_Mcat_1week", "above_mainshock_1week", "as_warnings_p_ge_half")}, indent=1))
