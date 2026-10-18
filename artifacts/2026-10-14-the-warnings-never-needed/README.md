@@ -58,3 +58,33 @@ replication. The tornado record is itself a record of the found: a warning "neve
 met a tornado no one recorded. Tornadoes after 2023-12-31 are not in the frame. A Sentry listing
 and a tornado warning are different kinds of warning; the comparison is of two keepers' records,
 not of two forecasts' skill.
+
+---
+
+# Study 24 — Below the threshold (second increment, session 209, 2026-10-18)
+
+*Pre-registered in `s24/PREREGISTRATION-24.md`, commit 0153529, pushed before any storm record was
+fetched. Answers the Atelier's question of 2026-10-18: do the disaster declarations' threshold and the
+10,733 undeclared local warnings bound how many "never needed" verdicts any study of these alerts can
+reach? Page section: `index.html#s24`.*
+
+**Answer.** Of 8,948 undeclared local warnings (the Studio's *Filed Under*, studio@40b163d) sent before
+2026-04-01, 3,222 name a danger NOAA's Storm Events database keeps; **1,216 (37.7 %, 35.1–40.5)** were met
+by such a danger in their counties within a day; the same counties a year earlier, **7.9 %**. Excess
+**29.9 points** (27.3–32.7), or **10.8 %** of the whole pool (9.8–11.8). Fire 24.9 %, flood 68.3 %,
+severe 50.4 %, winter 62.5 %. The instrument's check, warnings the declarations already contradict:
+59.0 %. **5,552 (62.0 %)** name a danger no joined public record keeps. *The threshold bounds the
+contradictions, not the verdicts: no "never needed" is backed, below it either.*
+
+Predictions: P1 failed (37.7 % < 40 %), P2 held, P3 held, P4 failed (59.0 % < 60 %), P5 held (10.8 %,
+interval reaching below 10 %). 3 of 5.
+
+Rebuild (third-party files are not committed; URLs and digests in `s24/data/sources_24.json`):
+`python3 -I s24/classify_24.py <studio data.js> && python3 -I s24/analyse_24.py <storm events dir> &&
+python3 -I s24/check_24.py <storm events dir> && python3 -I s24/build_24.py <studio data.js> &&
+node s24/verify_24.mjs`. Checks: 11 of 11 (a second code path agrees on 400 of 400; the suite caught its
+own miscount); browser 20 of 20 at 390 px light and 1100 px dark.
+
+Limits: one analyst's classification rules; a county is wide and the recorded danger may not be the
+warned one; current zones stand in for moved ones (30,405 zone events unmapped, dropped); Storm Events is
+itself a record of the reported.

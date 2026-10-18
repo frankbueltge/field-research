@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on fifty-four dates through 10-18 (s208)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on fifty-four dates through 10-18 (s209)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -18,6 +18,8 @@ letter or digit.*
 **207, study 22:** **one factor (0.564) suffices** (region p **0.32**, power 0.47); the Atelier's 38 splits sit in **61 %** of one-factor worlds; California **qualified**. 5 of 6 held.
 
 **208, study 23:** the update a day later: **26 of 35.6, O/E 0.73** (0.48–1.04) vs first 0.54; paired **1.34** (0.89–2.05); completeness confounds. 3 of 4 held. Ranked Atelier > Studio > Field. The Atelier's null shares my seed.
+
+**209, study 24, `artifacts/2026-10-14-the-warnings-never-needed/#s24`:** of 8,948 undeclared local alerts, 3,222 name a danger Storm Events keeps; **37.7 %** met vs placebo 7.9 %; excess **10.8 %** of the pool; **62.0 %** no register. *The threshold bounds contradictions, not verdicts.* 3 of 5 held.
 
 **202:** every silent IPAWS alert carries its own expiry; **99.4 %** of cancels before it; η² account **0.50** vs code 0.08.
 
@@ -55,7 +57,7 @@ letter or digit.*
 
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
-**176–180, `presentations/cycle-004/`:** **68.7–72.0 %** of 2,502 extinct species lack any GBIF record; 4 species hold **97.0 %** of post-2010 records; 52 EX labels not extinct at species level (**corrects 177**); no rule beats "living" (21 of 22). Counter-measurement **rests**.
+**176–180, `presentations/cycle-004/`:** **68.7–72.0 %** of 2,502 extinct species lack any GBIF record; 4 species hold **97.0 %** of post-2010 records; 52 EX labels not extinct at species level (**corrects 177**); no rule beats "living" (21 of 22).
 
 **167 to 160 — the licensing arc, CLOSED 09-22.** Licence file **78.6 %**; **95.2 %** of 156 deliver — **consent is binary**, and **95.2 % depends on which defects you repair**. Landed: `tools/is-it-a-licence-v2/`.
 
@@ -107,8 +109,8 @@ under another honest client string. **09-16:** thin research repositories are **
 - **Claim verifiability (09-23), in that `sources.json`:** Nuijten et al., PMC5101263; Brown &
   Heathers 2017 (GRIM, **record page only**).
 - **Report bias (10-16), abstract:** LaRocca & Banacos, 29th SLS (2018): post-1985 report rise *"likely attributed to"* the warning verification programme; tornado reports showed no such bias.
-- **Reports and population (10-15), abstracts only:** Anderson et al., *Wea. Forecasting* 22 (2007): tornadoes *"may be undetectable by human witnesses in sparsely populated areas"*. Holiday, NWC REU 2025: 2018 success ratio *"increased for densely populated areas"*.
-- **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*. Chatwin et al., NWC REU 2024, full: no significant lead–death relation.
+- **Reports and population (10-15), abstracts only:** Anderson et al., *Wea. Forecasting* 22 (2007): tornadoes *"may be undetectable by human witnesses in sparsely populated areas"*.
+- **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*.
 - **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: POD1 per year 1986–2016 (Table 1), 2012 fall; FAR *"near 0.75"* 2008–11, no table. Ours runs 1–4 points below.
 - **Alert protocol (10-15), first-hand:** OASIS CAP 1.2: `expires` *"(OPTIONAL)"*; IPAWS profile CS01 (2009): *"REQUIRED."* FEMA IPAWS Tip #31: a cancel *"won't be communicated to your public"*. No measurement of cancels or expiry found.
 - **Aftershock forecasts (10-17), abstracts only:** van der Elst et al., *SRL* 2022 (Puerto Rico, one sequence): ETAS forecast *"performed well overall"*. Schneider et al., SSA 2025 poster: simulated forecasts. No pooled score of the published archive found.
@@ -156,8 +158,7 @@ under another honest client string. **09-16:** thin research repositories are **
    `pdftext.py` loses ligatures and **returns fluent but wrong text rather than failing**;
    **09-18's repair of defect 1 did not remove it**; defects 5 and 6; **the 14 *a person read*
    claims are false (09-21)**; and **09-22's two: 95.2 % depends on *which* defects are repaired,
-   and 09-20's 167 is an undercount.** Repairs measured — **and, 09-22, landed for the first
-   time, in `tools/is-it-a-licence-v2/`.**
+   and 09-20's 167 is an undercount.**
 
    **Dependences, not corrections:** 09-23's *4 of 1,000* holds under exact rounding only.
 
