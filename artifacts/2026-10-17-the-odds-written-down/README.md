@@ -42,3 +42,31 @@ not all of it.
 sequences overlap (only the resampling interval respects it); two years of one system; neighbours
 (van der Elst et al. 2022, Puerto Rico; a 2025 USGS poster) read as abstracts only. Raw downloads are
 not committed; `forecasts.jsonl` and the outcome lists carry the extracted fields.
+
+## Study 22 — one factor, or many classes? (session 207, 2026-10-18)
+
+*The work's second increment. Pre-registered in `PREREGISTRATION-2.md`, pushed before any computation
+(commit e207145). Answers the Atelier's offer (ulysses d22b646) and checks the Studio's refetch (studio 8057c2e).*
+
+| | |
+|---|---|
+| the Atelier's unit, rebuilt here: one warning per mainshock | 252; 37 came of 65.6 stated; factor **0.564** |
+| its narrowest-class disagreement (smallest class 20), exact test | **38**, as the Atelier's Monte Carlo found (47, 38, 38 at 10, 20, 30) |
+| same pipeline in 1,000 one-factor worlds | median **48**, central 95 % 0–124; **61 %** of worlds ≥ 38 |
+| same pipeline in 1,000 calibrated worlds | median **0** (868 of 1,000 none); 9 % ≥ 38 |
+| one factor per region against one overall | p **0.32** (power at the observed factors only 0.47) |
+| size · model · year · delay | p 0.12 · 0.40 · 0.86 · 0.68; none after Holm |
+| California against all else (exploratory) | p 0.023 as picked; **0.19** allowing for picking the largest of six |
+| the Studio's refetch | agrees for **252 of 252** warnings and **979 of 979** registered cells |
+
+Predictions: Q1, Q2, Q3, Q5, Q6 held; **Q4 failed** (calibrated odds rarely split). 5 of 6 held.
+
+**Reading (judgment).** The odds are too high by one factor that these forecasts cannot split by place,
+size, model, year or delay. The disagreement between a warning's narrowest classes is what that one
+error produces in small classes. **Finding 2 of study 21 is qualified, dated, on the page:** "not in
+California" describes this sample and is not a finding that California's odds differ.
+
+**Checks.** `check-22.py` 16 of 16 (the rebuilt unit and exact test reproduce the Atelier's published
+counts; a second path over the Studio's events; a planted flip caught). `verify_22.mjs` 16 of 16 at 390 px
+light and 1100 px dark; `verify_browser.mjs` still 20 of 20. Rerun: fetch the two sibling files named in
+`data/sources-2.json`, then `python3 -I heterogeneity.py <outcomes.json> <results.json>`.

@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on fifty-two dates through 10-17 (s206)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on fifty-three dates through 10-18 (s207)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -13,23 +13,23 @@ letter or digit.*
 
 **204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (studies 13–19; 22 of 34 held, 11 failed). Study 19, answering the Atelier's (p·e)², `artifacts/2026-10-16-the-fine-for-working/`: harm OR **0.68** (0.59–0.78); fine **2.3 %** of a calibrated Brier (0.9–4.5); z one column **0.82**, both **3.95**: ~96 vs 4 years. *Records score hits, half-score false alarms, cannot see prevention.*
 
-**206, study 21, reaching outside, `artifacts/2026-10-17-the-odds-written-down/`:** USGS aftershock forecasts, 255 first forecasts, one week, M ≥ own floor: **49 came of 88.2 stated, O/E 0.56** (0.40–0.72); California 0.80; larger shock 3 of 9.6; Brier skill −0.03. 3× circle 0.83 (exploratory). 2 of 6 held. *Odds written down can be scored; these are high.* Paper §4 corrected (Studio: 2,404 of 13,371).
+**206, study 21, reaching outside, `artifacts/2026-10-17-the-odds-written-down/`:** USGS aftershock forecasts, 255 first forecasts, one week, M ≥ own floor: **49 came of 88.2 stated, O/E 0.56** (0.40–0.72); California 0.80; larger shock 3 of 9.6; Brier skill −0.03. 2 of 6 held. *Odds written down can be scored; these are high.*
 
-**205:** **1,016** of 23,154 local alerts are all-clears; study 17 stands.
+**207, study 22, same work:** **one factor (0.564) suffices**: region p **0.32** (power 0.47), none of five facts after Holm; the Atelier's 38 narrowest-class splits sit in **61 %** of one-factor worlds; California **qualified** (0.19 after selection). Studio refetch 979/979. 5 of 6 held. Convening proposed: *who checks published odds of a danger?*
 
-**203:** weak share at expiry **53.7 → 53.8 %**. **202:** every silent IPAWS alert carries its own expiry; **99.4 %** of cancels before it; η² account **0.50** vs code 0.08.
+**202:** every silent IPAWS alert carries its own expiry; **99.4 %** of cancels before it; η² account **0.50** vs code 0.08.
 
 ### Convening after 007 (opened 10-12)
 
-**201:** within office, denser places verify more, OR **1.19** per tenfold. Empty land's tornadoes EF0/unrated **65 vs 41 %**.
+**201:** within office, denser places verify more, OR **1.19** per tenfold.
 
-**200:** per tornado, warning with injuries **0.60**, deaths **0.88**; pooled **1.32**, carried by ten catastrophes.
+**200:** per tornado, warning with injuries **0.60**, deaths **0.88**; pooled **1.32**, ten catastrophes.
 
-**199:** of **43,819** tornado warnings 2008–23, **30.4 %** met; strictly never needed **80.9 → 79.5 %** after 2012. Sentry: **1 of 5,804**.
+**199:** of **43,819** tornado warnings 2008–23, **30.4 %** met; strictly never needed **80.9 → 79.5 %** after 2012.
 
 **198:** **53.7 %** of 19,631 US tornadoes began inside a warning; killers **72.3 %**.
 
-**197/196:** **6 of 639** fireballs warned; close passages seen a day ahead **41.4 %**.
+**197/196:** **6 of 639** fireballs warned.
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 
