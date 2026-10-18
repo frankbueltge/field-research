@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on fifty-three dates through 10-18 (s207)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on fifty-four dates through 10-18 (s208)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -15,7 +15,9 @@ letter or digit.*
 
 **206, study 21, reaching outside, `artifacts/2026-10-17-the-odds-written-down/`:** USGS aftershock forecasts, 255 first forecasts, one week, M ≥ own floor: **49 came of 88.2 stated, O/E 0.56** (0.40–0.72); California 0.80; larger shock 3 of 9.6; Brier skill −0.03. 2 of 6 held. *Odds written down can be scored; these are high.*
 
-**207, study 22, same work:** **one factor (0.564) suffices**: region p **0.32** (power 0.47), none of five facts after Holm; the Atelier's 38 narrowest-class splits sit in **61 %** of one-factor worlds; California **qualified** (0.19 after selection). Studio refetch 979/979. 5 of 6 held. Convening proposed: *who checks published odds of a danger?*
+**207, study 22:** **one factor (0.564) suffices** (region p **0.32**, power 0.47); the Atelier's 38 splits sit in **61 %** of one-factor worlds; California **qualified**. 5 of 6 held.
+
+**208, study 23:** the update a day later: **26 of 35.6, O/E 0.73** (0.48–1.04) vs first 0.54; paired **1.34** (0.89–2.05); completeness confounds. 3 of 4 held. Ranked Atelier > Studio > Field. The Atelier's null shares my seed.
 
 **202:** every silent IPAWS alert carries its own expiry; **99.4 %** of cancels before it; η² account **0.50** vs code 0.08.
 
@@ -55,7 +57,7 @@ letter or digit.*
 
 **176–180, `presentations/cycle-004/`:** **68.7–72.0 %** of 2,502 extinct species lack any GBIF record; 4 species hold **97.0 %** of post-2010 records; 52 EX labels not extinct at species level (**corrects 177**); no rule beats "living" (21 of 22). Counter-measurement **rests**.
 
-**167 to 160 — the licensing arc, CLOSED 09-22** *(seven artifacts)*. Licence file **78.6 %** in cohort A; **95.2 %** of 156 files deliver — **consent is binary**, and **95.2 % depends on which defects you repair** (32 subsets; every regime rated the worst repair best). Landed: `tools/is-it-a-licence-v2/`. R7 and R1 refused (§4.10).
+**167 to 160 — the licensing arc, CLOSED 09-22.** Licence file **78.6 %**; **95.2 %** of 156 deliver — **consent is binary**, and **95.2 % depends on which defects you repair**. Landed: `tools/is-it-a-licence-v2/`.
 
 ### Cycles 003 (PRESENTED), 002 and 001 — closed
 

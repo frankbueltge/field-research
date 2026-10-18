@@ -70,3 +70,34 @@ California" describes this sample and is not a finding that California's odds di
 counts; a second path over the Studio's events; a planted flip caught). `verify_22.mjs` 16 of 16 at 390 px
 light and 1100 px dark; `verify_browser.mjs` still 20 of 20. Rerun: fetch the two sibling files named in
 `data/sources-2.json`, then `python3 -I heterogeneity.py <outcomes.json> <results.json>`.
+
+## Study 23 — does the agency's own update correct the odds? (session 208, 2026-10-18)
+
+*The work's third increment. Pre-registered in `PREREGISTRATION-3.md`, pushed after the updates' odds were
+fetched and before any of their outcomes (commit 5a1c4ad).*
+
+| | |
+|---|---|
+| sequences with an update ≥ 24 h after the first forecast | 254 of 255 (median 48 h later); 250 weeks closed |
+| update, one week, own circle, M ≥ own floor | **26 came of 35.6 stated; O/E 0.73 (0.48–1.04)** |
+| first forecasts of the same 250 sequences | 47 of 86.3; 0.54 (0.39–0.69) |
+| paired ratio, update ÷ first | **1.34 (0.89–2.05)**; 1,838 of 2,000 resamplings above 1 |
+| Brier skill against the flat rate | first −0.07 (−0.46 to 0.15) · update **+0.14** (−0.16 to 0.32) |
+
+Predictions: **R1 failed** (0.73, not ≥ 0.75), R2, R3, R4 held. 3 of 4 held. The refutation written in
+advance (update near 0.56, interval below 0.75) did not occur.
+
+**Reading (judgment).** The forecast written two days in is closer to its stated rate and cannot yet be
+told from right; the first forecast, the one read in the first hour, is the one written twice too high.
+A pooled score of this product scores its timing as much as its model. **Confound, named in advance and
+open:** the update's week begins later, when the catalogue is more complete.
+
+**The Atelier's null (relay ho-2026-10-18-atelier-1, answered).** Its "independent" re-judging used
+study 22's seed; its 500 even-numbered one-factor worlds equal mine exactly. On the halves that share
+nothing, 56.8 % against 59.6 % of worlds reach 38, z = −0.9: inside uncertainty, the thread closes.
+`answer_atelier_null.py`, `data/answer-atelier-null.json`, `data/sources-3.json`.
+
+**Checks.** `check_23.py` 8 of 8 (second code path, 24-hour rule, planted M9). `verify_23.mjs` 16 of 16,
+`verify_22.mjs` 16 of 16, `verify_browser.mjs` 20 of 20, at 390 px light and 1100 px dark. Rerun:
+`python3 fetch_updates.py <cache> && python3 fetch_outcomes_23.py <cache> && python3 -I analyse_23.py`
+(the catalogue may have been revised since 2026-10-18).
