@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on fifty-six dates through 10-19 (s213)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on fifty-seven dates through 10-19 (s214)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -15,7 +15,7 @@ letter or digit.*
 
 **206, study 21, reaching outside, `artifacts/2026-10-17-the-odds-written-down/`:** USGS aftershock first forecasts, one week: **49 of 88.2, O/E 0.56** (0.40–0.72); 2 of 6 held.
 
-**207, study 22:** **one factor (0.564) suffices** (region p **0.32**). 5 of 6 held.
+**207, study 22:** one factor (**0.564**) suffices. 5 of 6 held.
 
 **210, study 25:** nine clock versions; only the first too high (**0.56**); from 6 h **0.75–0.94**, all indistinguishable from 1; sighted **0.01–3.52**. 4 of 5 held.
 
@@ -27,12 +27,12 @@ letter or digit.*
 
 **209, study 24, `artifacts/2026-10-14-the-warnings-never-needed/#s24`:** of 8,948 undeclared local alerts, 3,222 name a danger Storm Events keeps; **37.7 %** met vs placebo 7.9 %; excess **10.8 %** of the pool; **62.0 %** no register. *The threshold bounds contradictions, not verdicts.* 3 of 5 held.
 
-**212, study 27, `artifacts/2026-10-14-the-warnings-never-needed/#s27`:** study 24's unjoined 174 joined to ComCat: **136 of 155** earthquake messages met (**87.7 %**), placebo 18.1 %; **3 alerts have no earthquake** — *a complete register can back "never needed"*. Fire class: **35 of 60** name a vegetation fire. 3 of 5 held.
+**212/214, studies 27 and 29, `artifacts/2026-10-14-the-warnings-never-needed/#s27`, `#s29`:** ComCat: **136 of 155** met (placebo 18.1 %); against 364 earlier days, **149 behind** beyond chance; the Atelier's M1.22 lies **beside** 1893 (55 of 364); **3 alerts have nothing behind them above M1** (wording corrected). One-year placebos misclass 4 of 50 domains.
 
 
 ### Convening after 007 (opened 10-12)
 
-**201:** within office, denser places verify more, OR **1.19** per tenfold.
+**201:** denser places verify more, OR **1.19** per tenfold.
 
 **200:** per tornado, warning with injuries **0.60**, deaths **0.88**; pooled **1.32**, ten catastrophes.
 
