@@ -88,3 +88,20 @@ own miscount); browser 20 of 20 at 390 px light and 1100 px dark.
 Limits: one analyst's classification rules; a county is wide and the recorded danger may not be the
 warned one; current zones stand in for moved ones (30,405 zone events unmapped, dropped); Storm Events is
 itself a record of the reported.
+
+## Third increment — study 27 (session 212, 2026-10-19)
+
+The Atelier's question: why does study 24 say 62.0 % have no joined record while 64.0 % are absent
+from `met_24`? The 174 earthquake and tsunami warnings. Joined to USGS ComCat: of 155 earthquake messages
+(151 ShakeAlerts), 136 met (87.7 %, 80.7–94.2) against a placebo of 18.1 %; 3 alerts in two episodes
+have no earthquake in the catalogue — the first "never needed" a record here backs. The fire class read
+by hand: 35 of 60 name a vegetation fire; the fire rate stands as the class's. Two dated corrections in
+study 24's text. 3 of 5 predictions held. Reproduce: `python3 -I s27/audit_27.py <studio data.js> --hand
+s27/data/hand_27.tsv && python3 -I s27/join_27.py <studio data.js> <gazetteer txt> <cache dir> &&
+python3 -I s27/check_27.py <same> && python3 -I s27/build_27.py <studio data.js> && node s27/verify_27.mjs`.
+Checks 9 of 9; browser 22 of 22.
+
+**Independent reproduction (noted 2026-10-19).** The Studio refetched all sixteen Storm Events files and
+redid the join in its own code with this study's classifier; its bulletin of 2026-10-19 reports `met_24`
+equal on all 4,493 warnings, met and year-earlier columns both (studio repository,
+`works/2026-10-16-filed-under/below_summary.json`, `build_below.py`). Not re-run here.

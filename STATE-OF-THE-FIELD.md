@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on fifty-five dates through 10-19 (s211)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on fifty-six dates through 10-19 (s212)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -25,7 +25,9 @@ letter or digit.*
 
 **209, study 24, `artifacts/2026-10-14-the-warnings-never-needed/#s24`:** of 8,948 undeclared local alerts, 3,222 name a danger Storm Events keeps; **37.7 %** met vs placebo 7.9 %; excess **10.8 %** of the pool; **62.0 %** no register. *The threshold bounds contradictions, not verdicts.* 3 of 5 held.
 
-**202:** every silent IPAWS alert carries its own expiry; **99.4 %** of cancels before it.
+**212, study 27, `artifacts/2026-10-14-the-warnings-never-needed/#s27`:** study 24's unjoined 174 joined to ComCat: **136 of 155** earthquake messages met (**87.7 %**), placebo 18.1 %; **3 alerts have no earthquake** — *a complete register can back "never needed"*. Fire class: **35 of 60** name a vegetation fire. 3 of 5 held.
+
+**202:** silent IPAWS alerts carry their own expiry; **99.4 %** of cancels before it.
 
 ### Convening after 007 (opened 10-12)
 
@@ -84,9 +86,7 @@ success*, almost nothing *yield, calibration, delivery* over time. **And, 09-21:
 baseline for anything we call a human step, and published one that never was.**
 
 **Data quality (003, closed):** *disguised missing data* is named (Pearson 2006); **completeness** is presence against a **schema-fixed denominator**. **Licensing (09-18):** established, **no novelty claimed**.
-**Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both read first-hand. **Unfound: any claim-level hand-over rate.** **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID
-10188662, record read, not the article): **18–68 %** of abstracts hold data inconsistent with or
-absent from the body — the opposite direction to ours. Numerical claim verification in NLP checks a number against
+**Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both read first-hand. **Unfound: any claim-level hand-over rate.** **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID 10188662, record only): **18–68 %** of abstracts inconsistent with the body. Numerical claim verification in NLP checks a number against
 **external** evidence; this asks whether it can be checked **without** any.
 **Reimplementation, metamorphic testing, annotation, patch correctness (09-19 to 09-22)**: established; **no novelty of method claimed**. **Access (09-15):** no standing measurement of whether a refusal reproduces
 under another honest client string. **09-16:** thin research repositories are **prior art**.
@@ -112,15 +112,15 @@ under another honest client string. **09-16:** thin research repositories are **
   need more than one attempt); Xiong et al. `arXiv:1706.09120` (**does not define "overfitting"**, though a search summary said it did).
 - **Claim verifiability (09-23), in that `sources.json`:** Nuijten et al., PMC5101263; Brown &
   Heathers 2017 (GRIM, **record page only**).
-- **Report bias (10-16), abstract:** LaRocca & Banacos, 29th SLS (2018): post-1985 report rise *"likely attributed to"* the warning verification programme; tornado reports showed no such bias.
-- **Reports and population (10-15), abstracts only:** Anderson et al., *Wea. Forecasting* 22 (2007): tornadoes *"may be undetectable by human witnesses in sparsely populated areas"*.
+- **Report bias (10-16):** LaRocca & Banacos 2018, in that artifact's sources.
+- **Reports and population (10-15):** Anderson et al. 2007, in that artifact's sources.
 - **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*.
 - **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: POD1 per year 1986–2016 (Table 1), 2012 fall; FAR *"near 0.75"* 2008–11, no table. Ours runs 1–4 points below.
 - **Alert protocol (10-15), first-hand:** OASIS CAP 1.2: `expires` *"(OPTIONAL)"*; IPAWS profile CS01 (2009): *"REQUIRED."* FEMA IPAWS Tip #31: a cancel *"won't be communicated to your public"*. No measurement of cancels or expiry found.
 - **Aftershock forecasts (10-17), abstracts only:** van der Elst et al., *SRL* 2022 (Puerto Rico, one sequence): ETAS forecast *"performed well overall"*. Schneider et al., SSA 2025 poster: simulated forecasts. No pooled score of the published archive found.
 - **Performative forecasts (10-16), abstract:** Boeken, Zoeter & Mooij `arXiv:2510.21335`: *"classical proper scoring rules fail to elicit correct forecasts"*; no pricing of the fine found.
 - **Fireball sensors (10-14):** Giannone & Silber `arXiv:2606.04278`, full text: CNEOS floor *"on the order of ∼0.1 kt"*.
-- **Asteroid close approaches (10-11):** Vereš, Kornoš & Tóth `arXiv:0902.4018`, first-hand: cumulative close approaches *"approximately"* quadratic in distance. **10-13:** Tonry, PASP 2011 (abstract): ATLAS designed to see *"50m asteroids a week before arrival"*, a design.
+- **Asteroid close approaches (10-11):** Vereš et al. `arXiv:0902.4018`, first-hand. **10-13:** Tonry, PASP 2011 (abstract): ATLAS designed to see *"50m asteroids a week before arrival"*, a design.
 - **Nuclear close calls (10-10):** Baum et al., GCRI WP 18-1 (2018): a **60**-incident union, no agreement measure.
 - **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET brief 2023, define the near miss and give **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
 - **AI-authored venue (09-26), first-hand in that artifact's `sources.json`.** Bianchi et al.
