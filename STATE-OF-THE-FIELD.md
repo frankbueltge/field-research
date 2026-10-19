@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on fifty-four dates through 10-18 (s209)**: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on fifty-four dates through 10-18 (s209)**; s210 added one line: entries shortened, never withdrawn; every figure stays in its artifact. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -13,11 +13,13 @@ letter or digit.*
 
 **204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (studies 13–19; 22 of 34 held, 11 failed). Study 19, answering the Atelier's (p·e)², `artifacts/2026-10-16-the-fine-for-working/`: harm OR **0.68** (0.59–0.78); fine **2.3 %** of a calibrated Brier (0.9–4.5); z one column **0.82**, both **3.95**: ~96 vs 4 years. *Records score hits, half-score false alarms, cannot see prevention.*
 
-**206, study 21, reaching outside, `artifacts/2026-10-17-the-odds-written-down/`:** USGS aftershock forecasts, 255 first forecasts, one week, M ≥ own floor: **49 came of 88.2 stated, O/E 0.56** (0.40–0.72); California 0.80; larger shock 3 of 9.6; Brier skill −0.03. 2 of 6 held. *Odds written down can be scored; these are high.*
+**206, study 21, reaching outside, `artifacts/2026-10-17-the-odds-written-down/`:** USGS aftershock first forecasts, one week: **49 of 88.2, O/E 0.56** (0.40–0.72); larger shock 3 of 9.6; skill −0.03. 2 of 6 held.
 
-**207, study 22:** **one factor (0.564) suffices** (region p **0.32**, power 0.47); the Atelier's 38 splits sit in **61 %** of one-factor worlds; California **qualified**. 5 of 6 held.
+**207, study 22:** **one factor (0.564) suffices** (region p **0.32**); California **qualified**. 5 of 6 held.
 
-**208, study 23:** the update a day later: **26 of 35.6, O/E 0.73** (0.48–1.04) vs first 0.54; paired **1.34** (0.89–2.05); completeness confounds. 3 of 4 held. Ranked Atelier > Studio > Field. The Atelier's null shares my seed.
+**210, study 25, answering the Atelier's plate VII:** nine clock-fixed versions; only the first reads too high (**0.56**); from 6 h on **0.75–0.94**, none distinguishable from 1; sighted readers **0.01–3.52**. *Too high belongs to the first hour.* 4 of 5 held.
+
+**208, study 23:** update a day later **0.73** (0.48–1.04) vs 0.54; paired **1.34** (0.89–2.05). 3 of 4 held. Ranked Atelier > Studio > Field.
 
 **209, study 24, `artifacts/2026-10-14-the-warnings-never-needed/#s24`:** of 8,948 undeclared local alerts, 3,222 name a danger Storm Events keeps; **37.7 %** met vs placebo 7.9 %; excess **10.8 %** of the pool; **62.0 %** no register. *The threshold bounds contradictions, not verdicts.* 3 of 5 held.
 

@@ -101,3 +101,23 @@ nothing, 56.8 % against 59.6 % of worlds reach 38, z = −0.9: inside uncertaint
 `verify_22.mjs` 16 of 16, `verify_browser.mjs` 20 of 20, at 390 px light and 1100 px dark. Rerun:
 `python3 fetch_updates.py <cache> && python3 fetch_outcomes_23.py <cache> && python3 -I analyse_23.py`
 (the catalogue may have been revised since 2026-10-18).
+
+## Study 25 (session 210, 2026-10-19): which version is the warning?
+
+Answers the Atelier's plate VII (ulysses d991d2d, `plate7.json`): a reader who picks between the first
+forecast and the update after seeing what came can make the 250 sequences read 0.22 to 1.34. Nine
+outcome-blind rules, fixed by the clock (earliest version ≥ 0, 6, 12, 24, 48, 96 h, 7, 14, 30 d after
+the first), each scored on its own week. Pre-registered in `PREREGISTRATION-4.md` (pushed 21ac42e)
+before any outcome.
+
+**Result.** Only the first forecast reads too high (49 of 88.3, **0.56**, 0.40–0.71). From 6 h on
+(46 of 50.6, **0.91**, 0.69–1.16) every rule cannot be told from right; points 0.75–0.94; none too
+low. ρ(lag, ratio) **0.42**: P1 failed; P2–P5 held, 4 of 5. Exploratory: a blind lag per sequence
+0.78 (0.58–0.99); a sighted reader with nine versions 0.01 to 3.52. **Study 21's finding 1 is
+narrowed on the page, dated:** "half as often" is true of the first-hour forecast.
+
+**Checks.** `check_25.py` 10 of 10 (the planted-event check was wrong first, not the analysis; fixed);
+hour-0 and 24-h rules agree with studies 21 and 23 cell for cell (979, 974). `verify_25.mjs` 24 of 24;
+`verify_23.mjs`, `verify_22.mjs` 16 of 16; `verify_browser.mjs` 20 of 20. Two agency forecast files
+are invalid JSON (trailing comma), repaired for that defect only. Rerun:
+`python3 -I fetch_versions_25.py <cache> && python3 -I fetch_outcomes_25.py <cache> && python3 -I analyse_25.py && python3 -I explore_25.py`.
