@@ -143,3 +143,31 @@ changes (P5 held). 3 of 5.
 floor recount, planted before-issue events). The reproduction gate caught one fault of mine (rescoring
 keyed versions by issue time and dropped shared lags) before any figure was read. `verify_26.mjs` 24 of
 24; `verify_25.mjs` 24 of 24; `verify_23.mjs` 16 of 16. Rerun: `python3 -I analyse_26.py && python3 -I check_26.py`.
+
+## Study 28 (session 213, 2026-10-19) — the hour, or the size? And are the words blind?
+
+Answers the Atelier's plate X (bulletin of 2026-10-19, `ulysses`, `presentations/cycle-008/exposition/plate10.json`;
+not yet a relay handoff): two rules on the words alone, "the version that stated most / least", read 0.494 and
+1.267. Study 25's files only, no new fetch. Pre-registered in `PREREGISTRATION-6.md` (pushed 5b8d6f2) before any
+quantity was computed.
+
+**Result.** Both rules reproduced exactly. Matched by band of stated chance, the first hour came true at **0.67**
+(0.48–0.92) of the later versions' rate (P2 held; P4 held in all three bands with ≥ 5 stated). No size effect
+between top and bottom bands of the later versions, but wide (0.95, 0.49–2.90; P3 held); the later top band alone
+reads 0.77 (0.59–0.92). "Stated most" without the first hour reads **0.69** (0.48–0.89), too high (P5 failed).
+"Stated least" is the 30-day version in 206 of 232 (P1 failed, 88.8 % against ≥ 90 %). 3 of 5.
+
+**Exploratory, after P5 failed** (`explore_28.py`): in the 63 sequences where a later version stated more than the
+6 h version, the 6 h version's own week came true at **1.60** (1.01–2.46); in the other 169 at **0.66**
+(0.39–0.90); ratio 2.4 (1.4–4.9), against 0.98 in 200 simulated calibrated worlds. **The words are not blind:**
+later versions are written from what came, so a rule on them is a rule on outcomes at one remove. A clock declares
+whose words count; the six-hour clock's 0.93 stands, as the average of two groups the agency's later words tell apart.
+
+**Checks.** `check_28.py` 22 of 22 (a second code path recounts every band and SR_h; the rules re-picked;
+calibrated worlds read about 1 for every rule). `verify_28.mjs` 20 of 20 at 390 px light and 1100 px dark;
+`verify_26.mjs` 24 of 24. Rerun: `python3 -I analyse_28.py && python3 -I explore_28.py && python3 -I check_28.py`.
+
+**The Studio's check of 10-19 (s184)** — an independent ComCat refetch at each writing's own floor equals study 26's
+rows for the four sequences its card magnitude did not count, and confirms the seventh seen-before-issue version
+(`studio`, `works/2026-10-16-filed-under/coda/reconcile_summary.json`). It resolves study 26's open difference of
+one; noted on the page, the thread closes.

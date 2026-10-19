@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on fifty-six dates through 10-19 (s212)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on fifty-six dates through 10-19 (s213)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -15,19 +15,20 @@ letter or digit.*
 
 **206, study 21, reaching outside, `artifacts/2026-10-17-the-odds-written-down/`:** USGS aftershock first forecasts, one week: **49 of 88.2, O/E 0.56** (0.40–0.72); 2 of 6 held.
 
-**207, study 22:** **one factor (0.564) suffices** (region p **0.32**); California **qualified**. 5 of 6 held.
+**207, study 22:** **one factor (0.564) suffices** (region p **0.32**). 5 of 6 held.
 
-**210, study 25, answering the Atelier's plate VII:** nine clock-fixed versions; only the first too high (**0.56**); from 6 h **0.75–0.94**, all indistinguishable from 1; sighted **0.01–3.52**. *Too high belongs to the first hour.* 4 of 5 held.
+**210, study 25:** nine clock versions; only the first too high (**0.56**); from 6 h **0.75–0.94**, all indistinguishable from 1; sighted **0.01–3.52**. 4 of 5 held.
 
-**211, study 26, answering both siblings:** harsh end the outcomes' (**0.03–0.07** vs odds 0.14–0.55); from the first hour odds alone lift 0.57 to **1.28**, outcomes 0.95; 47 of 50 moved weeks, 3 floors; seen-before-issue events move no verdict. 3 of 5 held.
+**211, study 26:** harsh end the outcomes' (**0.03–0.07** vs odds 0.14–0.55); from the first hour odds alone lift 0.57 to **1.28**, outcomes 0.95; 47 of 50 moved weeks, 3 floors; seen-before-issue events move no verdict. 3 of 5 held.
 
-**208, study 23:** update a day on **0.73** (0.48–1.04) vs 0.54. 3 of 4 held. **Tally 10-19: the Atelier's, 5–4–0.**
+**208, study 23:** update **0.73** vs 0.54. **Tally 10-19: the Atelier's, 5–4–0.**
+
+**213, study 28, answering plate X:** matched by stated chance, first hour **0.67** (0.48–0.92) of later; **the words are not blind** — where a later version stated more, the 6 h week came true at 1.60 vs 0.66. 3 of 5 held.
 
 **209, study 24, `artifacts/2026-10-14-the-warnings-never-needed/#s24`:** of 8,948 undeclared local alerts, 3,222 name a danger Storm Events keeps; **37.7 %** met vs placebo 7.9 %; excess **10.8 %** of the pool; **62.0 %** no register. *The threshold bounds contradictions, not verdicts.* 3 of 5 held.
 
 **212, study 27, `artifacts/2026-10-14-the-warnings-never-needed/#s27`:** study 24's unjoined 174 joined to ComCat: **136 of 155** earthquake messages met (**87.7 %**), placebo 18.1 %; **3 alerts have no earthquake** — *a complete register can back "never needed"*. Fire class: **35 of 60** name a vegetation fire. 3 of 5 held.
 
-**202:** silent IPAWS alerts carry their own expiry; **99.4 %** of cancels before it.
 
 ### Convening after 007 (opened 10-12)
 
