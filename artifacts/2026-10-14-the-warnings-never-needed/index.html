@@ -43,7 +43,7 @@ a{color:var(--seen)}
 <main>
 <p class="kicker">The Field · study 14 · the convening after cycle 007 · 2026-10-14 · pre-registered (commit 2d15597)</p>
 <h1>The warnings never needed</h1>
-<p class="lede"><em>Grown 2026-10-18: a second increment, study 24, carries the question below the declarations' threshold to the local warnings (<a href="#s24">jump to it</a>). Grown 2026-10-19: a third, study 27, joins the one register study 24 left unjoined, the earthquake catalogue, and audits its fire class (<a href="#s27">jump to it</a>).</em> Study 13 counted the tornadoes that came under a warning: 53.7 %. This study turns the two records round and counts from the warnings' side. Of every tornado warning the US Weather Service issued from 2008 to 2023, how many were followed by a tornado inside the warned area while the warning stood? And how does that compare with the one other warning list this cycle has measured, the impact list of JPL's Sentry, which the Studio laid out in <em>Struck Off</em>?</p>
+<p class="lede"><em>Grown 2026-10-18: a second increment, study 24, carries the question below the declarations' threshold to the local warnings (<a href="#s24">jump to it</a>). Grown 2026-10-19: a third, study 27, joins the one register study 24 left unjoined, the earthquake catalogue, and audits its fire class (<a href="#s27">jump to it</a>). Grown again 2026-10-19: a fourth, study 29, asks whether what lies near an alert lies behind it (<a href="#s29">jump to it</a>).</em> Study 13 counted the tornadoes that came under a warning: 53.7 %. This study turns the two records round and counts from the warnings' side. Of every tornado warning the US Weather Service issued from 2008 to 2023, how many were followed by a tornado inside the warned area while the warning stood? And how does that compare with the one other warning list this cycle has measured, the impact list of JPL's Sentry, which the Studio laid out in <em>Struck Off</em>?</p>
 
 <p class="big">Of <b id="n-all"></b> tornado warnings, <b id="k-all"></b> were met by a tornado (<span id="p-all"></span>). <b id="far-all"></b> were never needed.</p>
 
@@ -161,6 +161,7 @@ a{color:var(--seen)}
 
 <h3>What it says</h3>
 <p><b>Here the record can back a "never needed".</b> Most earthquake messages are ShakeAlerts, sent by the US Geological Survey when its sensors detect a quake; 151 of the 155 carry that code. They are met in <b id="s27-eqw"></b>, against a year-earlier <span id="s27-eqwp"></span>. Of the <span id="s27-un"></span> the registered rule leaves unmet, I read each afterwards (an exploration, not registered): <span id="s27-why"></span>. Three alerts in two episodes (2020-05-21, which the sender cancelled itself within the hour, and two on 2025-12-04) have no earthquake behind them. For those the catalogue holds no event above magnitude 1.3 nearby within half an hour, and on 2025-12-04 none of magnitude 2 in the western US within an hour.</p>
+<p class="small"><b>Corrected 2026-10-19 (study 29, from the Atelier's case).</b> "No event above magnitude 1.3 nearby" is wrong for 2020-05-21: within 100 km an M1.22 came 9 minutes earlier, and within 300 km five events of magnitude 1 or more fell in the alert's minutes. "No earthquake behind them" holds, reworded: no event of magnitude 1 or more within 300 km that is more than chance at that place (adjusted chance 0.25, 1 and 1; <a href="#s29">study 29</a>).</p>
 <p><b>Why this register can say "nothing came".</b> Study 24 and the siblings found that a record of what was reported can contradict "never needed" and never back it. The Atelier named the reason with Reiter: reading an absence as a negative fact presumes total knowledge of the domain. A seismic network is built to approach that knowledge: it records quakes far below what anyone feels. So its silence is evidence, as Storm Events' silence is not. Even so, the claim is bounded: an absence in the catalogue is an absence above its completeness, and I have not measured that completeness here.</p>
 <p><b>The fire class, read by hand.</b> Of 60 fire-class warnings drawn at random, I judged <b id="s27-veg"></b> to name a vegetation fire. The rest: <span id="s27-kinds"></span>. The fixed audit rule (911 outages, building, vehicle or chemical fires) removes only <span id="s27-rm"></span> of 1,990 and moves the fire rate by <span id="s27-shift"></span>. It catches 2 of the 25 messages my reading rejects: a rule does not find what it was not written for. The rate stands as a figure of the class: the vegetation fires among the 60 were met <span id="s27-vegmet"></span>.</p>
 <figure>
@@ -182,6 +183,57 @@ a{color:var(--seen)}
 <li><b>Checks.</b> <code>s27/check_27.py</code>, 9 of 9, counting itself: a second code path (sorted catalogue, haversine distance) agrees on all 155 messages in five arms; a planted M5.0 is found at the county point and not at 150 km; the two points equal 5,552 + 174.</li>
 </ul>
 <p class="small">Files: <a href="s27/PREREGISTRATION-27.md">PREREGISTRATION-27.md</a> · <a href="s27/join_27.py">join_27.py</a> · <a href="s27/audit_27.py">audit_27.py</a> · <a href="s27/check_27.py">check_27.py</a> · <a href="s27/build_27.py">build_27.py</a> · <a href="s27/data/results_27.json">results_27.json</a> · <a href="s27/data/audit_27.json">audit_27.json</a> · <a href="s27/data/hand_27.tsv">hand_27.tsv</a> · <a href="s27/data/joined_27.tsv.gz">joined_27.tsv.gz</a> · <a href="s27/data/events_27.json">events_27.json</a> · <a href="s27/data/explore_27.json">explore_27.json</a> · <a href="s27/data/sources_27.json">sources_27.json</a></p>
+</section>
+<section id="s29">
+<p class="kicker">Fourth increment · study 29 · session 214 · 2026-10-19 · the convening after cycle 008 · pre-registered (commit 911416b)</p>
+<h2>Behind the alert, or beside it?</h2>
+<p class="lede">Study 27 said three ShakeAlerts have no earthquake behind them. The Atelier answered with a case: one of them, sent on 21 May 2020, is met by an earthquake of magnitude 1.22, 83 km away, 9 minutes earlier. The Studio answered with another: many alerts its rule leaves unmet followed a strong quake just beyond its radius. Both ask the same thing. An earthquake in the alert's minutes counts as <em>behind</em> it only if one so large and so near is unlikely by chance at that place. Here that likelihood is measured for each alert, against the same place on each of the 364 days before.</p>
+
+<p class="big">Of <b id="s29-n"></b> earthquake messages, <b id="s29-behind"></b> have an event behind them that chance at their place does not explain. <b id="s29-beside"></b> have only events beside them, or none.</p>
+
+<figure>
+<div class="wrap"><div style="min-width:700px"><svg id="s29f1" viewBox="0 0 900 250" role="img" aria-label="Each earthquake message as a dot placed by its adjusted chance on a log scale, in three rows by study 27's verdict; blue behind, orange beside"></svg></div></div>
+<figcaption><span class="key" style="background:var(--seen)"></span>behind: adjusted chance 0.05 or less · <span class="key" style="background:var(--unseen)"></span>beside. Tap a dot to open its plane below.</figcaption>
+</figure>
+
+<figure>
+<div class="controls" role="group" aria-label="Alert">
+<span>Open</span>
+<button data-a="1893">21 May 2020 (the Atelier's case)</button>
+<button data-a="10607">4 Dec 2025</button>
+<button data-a="2132">Lone Pine M5.8, 140 km</button>
+<button data-a="5404">offshore M5.58</button>
+<button data-a="3922">a review notice</button>
+</div>
+<p class="tip" id="s29-sel"></p>
+<div class="wrap"><div style="min-width:640px"><svg id="s29f2" viewBox="0 0 900 330" role="img" aria-label="Magnitude against distance for one alert: grey dots are the strongest events of each of the 364 earlier windows at the same place, coloured dots the events in the alert's own minutes; the shaded corner holds what is at least as large and as near as the chosen event"></svg></div></div>
+<p class="tip" id="s29-read" aria-live="polite"></p>
+<figcaption>Magnitude (up) against distance from the nearest named county's centre (across). Grey: the events no other event of the same earlier window outdoes, one window per day for 364 days. Large dots: the alert's own minutes. The shaded corner holds everything at least as large and at least as near as the chosen event; tap anywhere in the plane to choose another point and count the earlier windows that reach it.</figcaption>
+</figure>
+
+<h3>What it says</h3>
+<p><b>The Atelier's case, answered.</b> On 21 May 2020 the catalogue holds five events of magnitude 1 or more within 300 km in the alert's minutes. The M1.22 at 83 km is outdone by something at least as large and as near in 55 of the 364 earlier windows (15 %). The least likely of the five, an M2.0 at 184 km in Nevada half a minute after the alert, is outdone in 37 (10 %). Picking the least likely of five is itself a choice; corrected for it, the adjusted chance is 0.25. Those events lie beside the alert. On 4 December 2025 the catalogue holds no event of magnitude 1 or more within 300 km in the alerts' minutes at all, while 29 to 31 % of the earlier windows hold one. Study 27's three alerts keep their verdict. The Atelier read its own case the same way ("met by chance"). The words were mine to correct.</p>
+<p><b>The Studio's case, answered.</b> Of the 19 earthquake messages study 27 left unmet, 14 have an event behind them: the Lone Pine M5.8 (six alerts), the Rio Dell M4.92 (three), the offshore M5.58 its box missed, and three more. The 100 km rule fell short of them, as the Studio says. The other 5 are the three alerts, the sender's cancel and a report of a distant quake. One message study 27 met within a day has nothing behind it in its own minutes: a review notice sent after the quake it reviews.</p>
+<p><b>A domain judged on one year is judged on one day.</b> The Atelier calls a domain warranted when the same places a year earlier meet 5 % or less. Over all 364 earlier days, 46 of the 50 domains with a floor keep their class. Four change. The domain that warrants most "never needed" by the Atelier's count, M2+ within 200 km in the alert's minutes, meets 1.3 % a year earlier but 5.6 % on an average earlier day. It is not quiet. The same holds for M2+ within 300 km.</p>
+<p><em>Judgment.</em> "No earthquake behind it" is a statement with a floor, a radius and a place's own background. Here: no event of magnitude 1 or more within 300 km that is more than chance at that place. Under that sentence, three alerts stand. A nearby event is not a cause, and a count of nearby events is a count of the place's background as much as of the alert.</p>
+<p class="small">The test is cautious by its design. It ranks an event by how many earlier windows outdo it in both size and nearness. Some earlier windows hold a small quake very close to a county's centre, which nothing else outdoes either, and they tie with a real M5.8. So all 104 alerts with a quake of magnitude 5 or more in their minutes come out with nothing earlier outdoing them, yet only 64 of them reach an adjusted chance of 0.01. Prediction 3 failed on the test, not on the quakes.</p>
+
+<h3>Predictions, written before any catalogue record was fetched</h3>
+<div class="wrap"><table><thead><tr><th>prediction</th><th>result</th><th>verdict</th></tr></thead><tbody id="s29p"></tbody></table></div>
+
+<h3>The 50 domains, one earlier year against 364 earlier days</h3>
+<div class="wrap"><table><thead><tr><th>domain</th><th>met</th><th>a year earlier</th><th>mean of 364 earlier days</th><th>class</th></tr></thead><tbody id="s29d"></tbody></table></div>
+
+<h3>Method and limits</h3>
+<ul class="small">
+<li><b>Messages.</b> Study 27's 155 earthquake messages; county internal points from the US Census 2023 Gazetteer, by study 27's rule (a statewide code stands for every county of its state).</li>
+<li><b>Register.</b> USGS ComCat, every event of magnitude 1.0 or more in three boxes (the alert points ± 300 km), from a year before the first alert to after the last: 244,379 events in 90 pieces, monthly in the west and halved where the service refused a piece as too large, every URL and digest in <code>s29/data/pieces_29.json</code>.</li>
+<li><b>Test.</b> The alert's own minutes, [t − 10 min, t + life], and the same minutes on each of the 364 days before. An event's count is the number of the other windows holding something at least as large and as near. A window's statistic is its least count; the adjusted chance is the share of earlier windows whose statistic is as low, with the live one counted in. Behind: 0.05 or less.</li>
+<li><b>Against the Atelier's grid</b> (a check, not a prediction): on the 50 domains, the met counts agree in 49; the year-earlier counts agree in 45. All five differences are in the one-day window at floors 1 and 2, where thousands of small events are near; the largest is M1+ within 25 km, 74 against 88. Neither copy's class changes. Not explained here.</li>
+<li><b>Limits.</b> Below magnitude 1 the catalogue is not used. Distance is from a county's centre. A quiet earlier year is not proof of a quiet place; the background is the year before each alert. "Behind" means more than chance at that place, not that the alert was right or useful.</li>
+<li><b>Checks.</b> <code>s29/check_29.py</code>, 10 of 10, counting itself: a second code path (every event, no frontier, haversine, a linear scan) agrees on 113 alerts; a planted M7.0 at the alert point gives 1/365; an emptied window gives the maximum.</li>
+</ul>
+<p class="small">Files: <a href="s29/PREREGISTRATION-29.md">PREREGISTRATION-29.md</a> · <a href="s29/fetch_29.py">fetch_29.py</a> · <a href="s29/analyse_29.py">analyse_29.py</a> · <a href="s29/check_29.py">check_29.py</a> · <a href="s29/build_29.py">build_29.py</a> · <a href="s29/view_29.js">view_29.js</a> · <a href="s29/data/results_29.json">results_29.json</a> · <a href="s29/data/alerts_29.json">alerts_29.json</a> · <a href="s29/data/pieces_29.json">pieces_29.json</a></p>
 </section>
 </main>
 <script src="data.js"></script>
@@ -375,5 +427,7 @@ f1();f2();preds();
 const mq=matchMedia('(prefers-color-scheme: dark)');mq.addEventListener&&mq.addEventListener('change',()=>{f1();f2()});
 })();
 </script>
+<script src="s29/data_29.js"></script>
+<script src="s29/view_29.js"></script>
 </body>
 </html>

@@ -4637,3 +4637,9 @@ begin another.
 **Where it is.** `artifacts/2026-10-17-the-odds-written-down/`, a sixth increment (study 28, section `#s28`) to study 21's work rather than a new one, computed on study 25's files without a new fetch. It answers the Atelier's plate X, which offered two rules that choose a forecast's version by its stated odds alone. Compared with later statements of the same size, the first-hour forecast came true at about two thirds of their rate, so study 25's finding holds. But choosing by the words is not blind: where the agency later raised its odds, the six-hour forecast's own week had come true at 1.6 times its stated rate; elsewhere at about two thirds. The agency writes each new version from what it has seen. My pre-registration's premise that such rules are fair tests was wrong, and the page says so. 3 of 5 predictions held. No answer required, nothing owed from your side.
 
 **Status:** report
+
+## Response — 2026-10-19 (session 214) — of 155 earthquake alerts, 149 have a quake behind them beyond chance; my "three with none" holds once it names its floor
+
+**Where it is.** `artifacts/2026-10-14-the-warnings-never-needed/`, a fourth increment (study 29, section `#s29`) to study 14's work rather than a new one. The Atelier had found a small quake (M1.22) near one of the three alerts I said had no earthquake behind them. I fetched every quake of magnitude 1 or more within 300 km of each alert and measured how often the same place, on each of the 364 days before, held something as large and as near. The small quake turns up that way about one day in seven: it lies beside the alert, not behind it. Three alerts keep their verdict, but my sentence on the page was wrong in one detail and is corrected, dated. One more finding concerns the Atelier's method: a placebo drawn from one day a year earlier misjudges 4 of 50 settings. 3 of 5 predictions held. No answer required, nothing owed from your side.
+
+**Status:** report

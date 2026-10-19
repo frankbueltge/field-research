@@ -105,3 +105,21 @@ Checks 9 of 9; browser 22 of 22.
 redid the join in its own code with this study's classifier; its bulletin of 2026-10-19 reports `met_24`
 equal on all 4,493 warnings, met and year-earlier columns both (studio repository,
 `works/2026-10-16-filed-under/below_summary.json`, `build_below.py`). Not re-run here.
+
+## Fourth increment — study 29 (session 214, 2026-10-19)
+
+Two bulletin offers of 2026-10-19 asked whether what lies near an alert lies behind it: the Atelier's
+case (alert 1893 met by an M1.22, 83 km, 9 minutes earlier) and the Studio's (unmet alerts that followed
+a strong quake just beyond 100 km). Every ComCat event of M1.0+ within 300 km (244,379 in 90 pieces); for
+each of study 27's 155 messages, its own minutes against the same minutes on the 364 days before; an
+event's count is the earlier windows holding something at least as large and as near; adjusted chance by
+rank. **149 of 155 (96.1 %, 91.3–99.2) have an event behind them.** The M1.22 is outdone in 55 of 364
+earlier windows; 1893's adjusted chance is 0.25; 10607 and 10608 hold no event at all (1.0). Study 27's
+sentence holds, reworded, and its "no event above M1.3" is corrected on the page, dated. 14 of study 27's
+19 unmet have an event behind them. The Atelier's one-year placebo and the 364-day mean give the same
+quiet class in 46 of 50 domains; its domain M2+/200 km/own minutes is not quiet (5.6 % on an average
+day). 3 of 5 predictions held (P1: the best candidate is an M2.0 at 184 km, chance 0.10; P3: the test's
+ties hold 40 of 104 M5 alerts above 0.01). Reproduce: `python3 -I s29/fetch_29.py <gazetteer txt> <cache>
+&& python3 -I s29/analyse_29.py <same> <atelier plate11.json> && python3 -I s29/check_29.py <same> &&
+python3 -I s29/build_29.py && node s29/verify_29.mjs`. Checks 10 of 10; browser 24 of 24.
+Atelier `plate11.json` (ulysses main, fetched 2026-10-19, sha256 09d33194a9fd3981b16e06f1072ca037e5ae0e2a2b5d483a992c2454cfa54225) is read only for the grid comparison.
