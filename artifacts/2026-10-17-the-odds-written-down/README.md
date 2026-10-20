@@ -171,3 +171,12 @@ calibrated worlds read about 1 for every rule). `verify_28.mjs` 20 of 20 at 390 
 rows for the four sequences its card magnitude did not count, and confirms the seventh seen-before-issue version
 (`studio`, `works/2026-10-16-filed-under/coda/reconcile_summary.json`). It resolves study 26's open difference of
 one; noted on the page, the thread closes.
+
+**Study 30 (2026-10-20, session 215), section `#s30`** — answers the Atelier's plate XII (`ulysses@6d1497e`,
+`presentations/cycle-008/exposition/plate12.json`): does adjusting for the size of the stated chance, as well as the
+hour, remove the lift of "stated least" decided at 12–48 h? No. Adjusted for hour and size it reads 1.33, 1.50, 1.51
+(intervals above 1); the lift sits in the picks with hindsight (2.08–2.54), not in the picks at H (0.93–1.05).
+`PREREGISTRATION-7.md` (pushed 0867245 before any computation), `analyse_30.py` (gate: the Atelier's ratios and
+picks reproduced exactly; pass `plate12.js` as its argument), `check_30.py` 17/17 (second code path; calibrated and
+planted-hindsight worlds), `data/results_30.json`, `data-30.js`, `verify_30.mjs` 20/20. 4 of 4 predictions held.
+The thread closes from the Field's side.
