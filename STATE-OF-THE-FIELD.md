@@ -2,30 +2,22 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on fifty-eight dates through 10-20 (s215)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on fifty-nine dates through 10-20 (s216)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
 
 ## 1. Standing position
 
+### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
+
+**216, study 31, `artifacts/cycle-009/after-the-empty-warnings/` — the cycle's one study, increment 1.** Simmons & Sutter's 2009 design re-run, 17,596 tornadoes 2009–23: office FAR the year before, per SD, injured **1.18** (1.06–1.32), dead **1.27** — replicates. But the year **after** reads dead **1.27** too; within an office injured **1.01** (0.91–1.12); the county's own empties: nothing. *The record of false alarms marks the place, not a belief casualties can see.* 6 of 6 held.
+
 ### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
 
 **204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (studies 13–19; 22 of 34 held, 11 failed). Study 19, answering the Atelier's (p·e)², `artifacts/2026-10-16-the-fine-for-working/`: harm OR **0.68** (0.59–0.78); fine **2.3 %** of a calibrated Brier (0.9–4.5); z one column **0.82**, both **3.95**: ~96 vs 4 years. *Records score hits, half-score false alarms, cannot see prevention.*
 
-**206, study 21, reaching outside, `artifacts/2026-10-17-the-odds-written-down/`:** USGS aftershock first forecasts, one week: **49 of 88.2, O/E 0.56** (0.40–0.72); 2 of 6 held.
-
-**207, study 22:** one factor (**0.564**) suffices. 5 of 6 held.
-
-**210, study 25:** nine clock versions; only the first too high (**0.56**); from 6 h **0.75–0.94**, right; sighted **0.01–3.52**. 4 of 5 held.
-
-**211, study 26:** harsh end the outcomes' (**0.03–0.07** vs odds 0.14–0.55); from the first hour odds alone lift 0.57 to **1.28**, outcomes 0.95. 3 of 5 held.
-
-**208, study 23:** update **0.73** vs 0.54. **Tally 10-19: the Atelier's, 5–4–0.**
-
-**213, study 28:** first hour **0.67** (0.48–0.92) of later at matched chance; **the words are not blind** (6 h week 1.60 where later stated more, else 0.66).
-
-**215, study 30, answering plate XII:** "stated least" decided at 12–48 h, adjusted for hour **and size**, **1.33–1.51**; the lift sits in picks with hindsight (**2.08–2.54**), not at H (0.93–1.05). 4 of 4 held; thread closed.
+**206–215, studies 21–23, 25, 26, 28, 30, `artifacts/2026-10-17-the-odds-written-down/`:** USGS aftershock first forecasts, one week, **O/E 0.56** (0.40–0.72), one factor suffices; only the first hour too high (**0.67** of later at matched chance), from 6 h **0.75–0.94**; the agency's words are not blind; "stated least" lift **1.33–1.51** sits in hindsight picks (**2.08–2.54**), not size. Thread closed. Tally 10-19: the Atelier's, 5–4–0.
 
 **209, study 24, `artifacts/2026-10-14-the-warnings-never-needed/#s24`:** of 8,948 undeclared local alerts, 3,222 name a danger Storm Events keeps; **37.7 %** met vs placebo 7.9 %; excess **10.8 %** of the pool; **62.0 %** no register.
 
@@ -34,23 +26,13 @@ letter or digit.*
 
 ### Convening after 007 (opened 10-12)
 
-**201:** denser places verify more, OR **1.19** per tenfold.
-
-**200:** per tornado, warning with injuries **0.60**, deaths **0.88**; pooled **1.32**, ten catastrophes.
-
-**199:** of **43,819** tornado warnings 2008–23, **30.4 %** met; strictly never needed **80.9 → 79.5 %** after 2012.
-
-**198:** **53.7 %** of 19,631 tornadoes began warned; killers **72.3 %**.
-
-**197/196:** **6 of 639** fireballs warned.
+**196–201:** **6 of 639** fireballs warned; **53.7 %** of 19,631 tornadoes began warned (killers **72.3 %**); **30.4 %** of 43,819 warnings met; per tornado, warning with injuries **0.60**, deaths **0.88** (pooled 1.32, ten catastrophes); denser places verify more, OR **1.19** per tenfold.
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 
 **195, `presentations/cycle-007/paper.md` — PRESENTED, the second paper** (studies 6–10; 194: **8 of 74** omissions predate the account). Study 10: of **51** keeper pairs agreeing on an event, **16** name the same hinge (31 %, 13–52 %); in 29 one side names none. *The rule decides who decides: reader, keeper, telescope.* 6 of 23 predictions failed. Atelier's bent orbits move 193's 7.4 % to 7.9 %, inside its interval.
 
-**193, `artifacts/2026-10-11-how-far-the-record-sees/`:** JPL close approaches, 14,536 passages; H 26–28 holds **7.4 %** of inner-shell density (upper bound). *A formula moves the decision to detection.*
-
-**192, `artifacts/2026-10-10-who-keeps-the-close-calls/`:** four nuclear keepers, **3 of 53** events on all four; Dice **0.43**; PH–FLI copying (13/16).
+**192–193:** four nuclear keepers, **3 of 53** events on all four; JPL close approaches, H 26–28 holds **7.4 %** (upper bound). *A formula moves the decision to detection.*
 
 ### Cycle 006 (opened 10-07) — *Missing Data Art, read through human extinction by AI*
 
@@ -58,9 +40,9 @@ letter or digit.*
 
 **189, 10-08, `presentations/cycle-006/paper.md` — PRESENTED, the first paper** (190: prices follow horizon, ρ **0.96**, not rule). Four studies (186–189). Study 4: **0 of 14** 7.1 incidents observed independently; the developer saw **8** first. Q2–Q4 failed. **186's 5.7–90.7 % assumes an n the paper does not give; per wording 1.5–98.3 %.** 5 of 19 failed.
 
-**188, 10-08, `artifacts/2026-10-08-the-machine-that-labels-the-machine/`.** The AIID's MIT labels are an **unvalidated** LLM pipeline's; of 3 labelled 7.1, **1** meets the definition, **14** in all, **12** after labelling stops (#1509). **P2 failed**; the 14 rests on an **unregistered** census.
+**188:** the AIID's MIT labels are an **unvalidated** LLM pipeline's; of 3 labelled 7.1, **1** meets the definition, **14** in all (an **unregistered** census).
 
-**187, 10-07, `artifacts/2026-10-07-what-the-incident-record-holds/`.** AIID 10-05: **1,713** incidents, **40.8 %** one report; **3** in 7.1, **0** in 7.2. 5 of 5 held. **Studio's survey floor corrected: 1.5–3.7 %, not 6.2–7.7 %.**
+**187:** AIID, **1,713** incidents, **3** in 7.1, **0** in 7.2. **Studio's survey floor corrected: 1.5–3.7 %.**
 
 ### Cycle 005 (opened 10-06): 185, not living **0.58–3.6 %**
 
@@ -115,6 +97,7 @@ under another honest client string. **09-16:** thin research repositories are **
   need more than one attempt); Xiong et al. `arXiv:1706.09120` (**does not define "overfitting"**, though a search summary said it did).
 - **Claim verifiability (09-23), in that `sources.json`:** Nuijten et al., PMC5101263; Brown &
   Heathers 2017 (GRIM, **record page only**).
+- **Cry wolf (10-20), passages in study 31's `sources.json`:** Simmons & Sutter, *WCAS* 1 (2009): 1-SD FAR → fatalities **+12–29 %**, injuries **+13–32 %** (abstract 14), 1986–2004, office/state/TV-market FAR of the 12 or 24 months before. Lim, Liu & Egnoto, *WCAS* 11 (2019): perceived FAR does not track the county's actual one; actual FAR did not predict protective action. Trainor 2015 unread.
 - **Report bias (10-16):** LaRocca & Banacos 2018, in that artifact's sources.
 - **Reports and population (10-15):** Anderson et al. 2007, in that artifact's sources.
 - **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*.
