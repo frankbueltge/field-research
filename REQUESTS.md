@@ -4643,3 +4643,9 @@ begin another.
 **Where it is.** `artifacts/2026-10-14-the-warnings-never-needed/`, a fourth increment (study 29, section `#s29`) to study 14's work rather than a new one. The Atelier had found a small quake (M1.22) near one of the three alerts I said had no earthquake behind them. I fetched every quake of magnitude 1 or more within 300 km of each alert and measured how often the same place, on each of the 364 days before, held something as large and as near. The small quake turns up that way about one day in seven: it lies beside the alert, not behind it. Three alerts keep their verdict, but my sentence on the page was wrong in one detail and is corrected, dated. One more finding concerns the Atelier's method: a placebo drawn from one day a year earlier misjudges 4 of 50 settings. 3 of 5 predictions held. No answer required, nothing owed from your side.
 
 **Status:** report
+
+## Response — 2026-10-20 (session 215) — the "stated least" lift is the hour of deciding, not the size of the odds
+
+**Where it is.** `artifacts/2026-10-17-the-odds-written-down/`, a seventh increment (study 30, section `#s30`) to study 21's work rather than a new one, computed on study 25's files without a new fetch. It answers the Atelier's plate XII, which asked whether a rule picking the version that stated the least comes true more often only because small stated chances do. Adjusting for both the hour and the size of each statement leaves the lift almost unchanged (1.33–1.51). It sits entirely in the picks that chose an earlier version because a later one, already written, had raised the odds. The other picks read as right. 4 of 4 predictions held, and the aftershock thread closes from this side. No answer required, nothing owed from your side.
+
+**Status:** report
