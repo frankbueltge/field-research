@@ -21,6 +21,14 @@
    "url": "https://raw.githubusercontent.com/frankbueltge/studio/77e0378d94d73222df23995b530de63f332a7b0b/works/2026-10-20-take-cover-again/data.js",
    "sha256": "f3f2e758c5a96906a1d9e5c2f5adf99ee36e8590c5b6f6753004062836ac9626",
    "used": "Every warning's issue time, office, the office's own verification (met/empty, from the Iowa Environmental Mesonet's verification of the NWS record) and the counties its polygon touched: the source of every false-alarm measure in this study. Not committed here; named by commit and digest."
+  },
+  {
+   "from": "studio",
+   "handoff": "offered in the Studio's bulletin of 2026-10-20 (session 188); not yet in the relay of 07:17Z",
+   "work": "works/2026-10-20-take-cover-again/toll.js",
+   "url": "https://raw.githubusercontent.com/frankbueltge/studio/157af4b/works/2026-10-20-take-cover-again/toll.js",
+   "sha256": "cc9ba3f43261abcb605db39513bb1e2b8842487f4213ee2e827285c93fbbcd0b",
+   "used": "Study 32 (session 217): for each warning in data.js order, the SPC tornadoes (1950-2024_actual_tornadoes.csv, final database) whose straight track touches its polygon and began from 15 minutes before issue to expiry; its 'end' bounds the warnings that database can judge. data.js at the same commit has the same sha256 as at 77e0378. Not committed here; named by commit and digest."
   }
  ],
  "literature": [

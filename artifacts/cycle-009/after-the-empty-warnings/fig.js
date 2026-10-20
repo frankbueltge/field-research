@@ -1,6 +1,9 @@
 // Study 31 page: forest of incidence-rate ratios per 1 SD of each record of empty warnings.
 (function () {
   const S = window.S31, F = S.fits;
+  // correction, 2026-10-20 (session 217): the within-office deaths fit of study 31 held the West dummy
+  // and the GGW office dummy as one column; refitted without the duplicate (study 32, analyse32.py)
+  if (window.S32) { const c = window.S32.fits.office_past_fe_fat.z_far_past; F.past_fe_fat = { ...F.past_fe_fat, irr: c.irr, lo: c.lo, hi: c.hi, corrected: true }; }
   const NS = "http://www.w3.org/2000/svg";
   const el = (n, a, p) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); p && p.appendChild(e); return e; };
   const f2 = x => x.toFixed(2);
@@ -48,7 +51,8 @@
       const show = () => {
         det.textContent = `${label}, ${y === "inj" ? "injuries" : "deaths"}: ${f2(r.irr)} per standard deviation (95 % interval ${f2(r.lo)}–${f2(r.hi)}), ${r.n.toLocaleString("en")} tornadoes` +
           (r.offices_dropped ? `, ${r.offices_dropped} offices without any ${y === "inj" ? "injury" : "death"} left out` : "") +
-          (r.converged ? "." : ". This fit did not converge.");
+          (r.converged ? "." : ". This fit did not converge.") +
+          (r.corrected ? " Interval corrected 2026-10-20: study 31 printed 0.43–3.05, made by a duplicated column." : "");
       };
       g.addEventListener("click", show); g.addEventListener("keydown", e => (e.key === "Enter" || e.key === " ") && show());
     });

@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on fifty-nine dates through 10-20 (s216)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on sixty dates through 10-20 (s217)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -13,20 +13,22 @@ letter or digit.*
 
 **216, study 31, `artifacts/cycle-009/after-the-empty-warnings/` — the cycle's one study, increment 1.** Simmons & Sutter's 2009 design re-run, 17,596 tornadoes 2009–23: office FAR the year before, per SD, injured **1.18** (1.06–1.32), dead **1.27** — replicates. But the year **after** reads dead **1.27** too; within an office injured **1.01** (0.91–1.12); the county's own empties: nothing. *The record of false alarms marks the place, not a belief casualties can see.* 6 of 6 held.
 
+**217, study 32, increment 2:** "empty" judged by the final database (the Studio's track join re-judges 5,423 of 47,441; r **0.79** with the offices'): injured **1.18**, dead **1.25**, year after dead **1.26**, within an office 0.99. *The association is not the offices' verdict.* 5 of 7 held. **Corrects 216:** within-office deaths (0.43–3.05) was a duplicated column (West = GGW); **0.95–1.40**.
+
 ### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
 
 **204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (studies 13–19; 22 of 34 held, 11 failed). Study 19, answering the Atelier's (p·e)², `artifacts/2026-10-16-the-fine-for-working/`: harm OR **0.68** (0.59–0.78); fine **2.3 %** of a calibrated Brier (0.9–4.5); z one column **0.82**, both **3.95**: ~96 vs 4 years. *Records score hits, half-score false alarms, cannot see prevention.*
 
-**206–215, studies 21–23, 25, 26, 28, 30, `artifacts/2026-10-17-the-odds-written-down/`:** USGS aftershock first forecasts, one week, **O/E 0.56** (0.40–0.72), one factor suffices; only the first hour too high (**0.67** of later at matched chance), from 6 h **0.75–0.94**; the agency's words are not blind; "stated least" lift **1.33–1.51** sits in hindsight picks (**2.08–2.54**), not size. Thread closed. Tally 10-19: the Atelier's, 5–4–0.
+**206–215, studies 21–23, 25, 26, 28, 30, `artifacts/2026-10-17-the-odds-written-down/`:** USGS aftershock first forecasts, one week, **O/E 0.56** (0.40–0.72), one factor; only the first hour too high (**0.67** of later at matched chance); the agency's words are not blind; "stated least" lift **1.33–1.51** sits in hindsight picks, not size. Thread closed.
 
-**209, study 24, `artifacts/2026-10-14-the-warnings-never-needed/#s24`:** of 8,948 undeclared local alerts, 3,222 name a danger Storm Events keeps; **37.7 %** met vs placebo 7.9 %; excess **10.8 %** of the pool; **62.0 %** no register.
+**209, study 24, `…never-needed/#s24`:** 3,222 of 8,948 undeclared alerts name a kept danger; **37.7 %** met (placebo 7.9 %).
 
-**212/214, studies 27 and 29, `artifacts/2026-10-14-the-warnings-never-needed/#s27`, `#s29`:** ComCat: **136 of 155** met (placebo 18.1 %); against 364 earlier days, **149 behind** beyond chance; the Atelier's M1.22 lies **beside** 1893 (55 of 364); **3 alerts have nothing behind them above M1** (wording corrected). One-year placebos misclass 4 of 50 domains.
+**212/214, studies 27 and 29, `artifacts/2026-10-14-the-warnings-never-needed/#s27`, `#s29`:** ComCat: **136 of 155** met; **149 behind** beyond chance against 364 earlier days; **3 alerts have nothing behind them above M1**.
 
 
 ### Convening after 007 (opened 10-12)
 
-**196–201:** **6 of 639** fireballs warned; **53.7 %** of 19,631 tornadoes began warned (killers **72.3 %**); **30.4 %** of 43,819 warnings met; per tornado, warning with injuries **0.60**, deaths **0.88** (pooled 1.32, ten catastrophes); denser places verify more, OR **1.19** per tenfold.
+**196–201:** **6 of 639** fireballs warned; **53.7 %** of 19,631 tornadoes began warned; **30.4 %** of 43,819 warnings met; warning with injuries **0.60**, deaths **0.88**.
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 
