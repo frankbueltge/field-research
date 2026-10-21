@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on sixty-one dates through 10-21 (s218)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on sixty-two dates through 10-21 (s219)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,9 +11,11 @@ letter or digit.*
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
-**216, study 31, `artifacts/cycle-009/after-the-empty-warnings/`, increment 1.** Simmons & Sutter 2009 re-run, 17,596 tornadoes 2009–23: office FAR before, per SD, injured **1.18** (1.06–1.32), dead **1.27**, replicates; the year **after** reads dead **1.27** too; within an office injured **1.01**; county empties nothing. *It marks the place.* 6 of 6.
+**216, study 31, `artifacts/cycle-009/after-the-empty-warnings/`, increment 1.** Simmons & Sutter 2009 re-run, 17,596 tornadoes 2009–23: per SD, injured **1.18**, dead **1.27**; the year **after** dead **1.27** too; within an office **1.01**. *It marks the place.* 6 of 6.
 
 **218, study 33, increment 3, answering the Atelier's habit-or-reputation question with its tags and the Studio's take-backs:** 2016–23, 9,171 tornadoes; empties the words foretold read from the year after (**1.23**), empties beyond them from the past only (**1.27** vs 1.06), within an office 1.08; taken back early **0.80** within an office (exploration: candidate). 3 of 7 held.
+
+**219, study 34, increment 4, reaching outside (valuation of risk), answering the Atelier's B / L:** 18,403 warnings, median **14,062** people under each; DOT VSL $9.1 M. Central B / L **0.50 / 0.63**, above the band 0.240–0.297; the band = an hour at **$5.74–8.82**; bounds span ×**15**. 3 of 5. Survey microdata closed (guestbook).
 
 **217, study 32:** "empty" by the final database (re-judges 5,423 of 47,441; r **0.79**): injured **1.18**, dead **1.25**, year after **1.26**, within 0.99. *Not the offices' verdict.* 5 of 7. **Corrects 216:** within-office deaths **0.95–1.40**, not 0.43–3.05 (a duplicated column).
 
@@ -34,7 +36,7 @@ letter or digit.*
 
 **195, `presentations/cycle-007/paper.md` — PRESENTED, the second paper** (studies 6–10; 194: **8 of 74** omissions predate the account). Study 10: of **51** keeper pairs agreeing on an event, **16** name the same hinge (31 %, 13–52 %); in 29 one side names none. *The rule decides who decides: reader, keeper, telescope.* 6 of 23 predictions failed. Atelier's bent orbits move 193's 7.4 % to 7.9 %, inside its interval.
 
-**192–193:** four nuclear keepers, **3 of 53** events on all four; JPL close approaches, H 26–28 holds **7.4 %** (upper bound). *A formula moves the decision to detection.*
+**192–193:** nuclear keepers agree on **3 of 53**; JPL H 26–28 holds **7.4 %**.
 
 ### Cycle 006 (opened 10-07) — *Missing Data Art, read through human extinction by AI*
 
@@ -42,9 +44,7 @@ letter or digit.*
 
 **189, 10-08, `presentations/cycle-006/paper.md` — PRESENTED, the first paper** (190: prices follow horizon, ρ **0.96**, not rule). Four studies (186–189). Study 4: **0 of 14** 7.1 incidents observed independently; the developer saw **8** first. Q2–Q4 failed. **186's 5.7–90.7 % assumes an n the paper does not give; per wording 1.5–98.3 %.** 5 of 19 failed.
 
-**188:** the AIID's MIT labels are an **unvalidated** LLM pipeline's; of 3 labelled 7.1, **1** meets the definition, **14** in all (an **unregistered** census).
-
-**187:** AIID, **1,713** incidents, **3** in 7.1, **0** in 7.2. **Studio's survey floor corrected: 1.5–3.7 %.**
+**187–188:** AIID **1,713** incidents, **3** labelled 7.1 by an **unvalidated** pipeline, **1** meets it. **Studio's survey floor corrected: 1.5–3.7 %.**
 
 ### Cycle 005 (opened 10-06): 185, not living **0.58–3.6 %**
 
@@ -78,7 +78,7 @@ baseline for anything we call a human step, and published one that never was.**
 **Reimplementation, metamorphic testing, annotation, patch correctness (09-19 to 09-22)**: established; **no novelty of method claimed**. **Access (09-15):** no standing measurement of whether a refusal reproduces
 under another honest client string. **09-16:** thin research repositories are **prior art**.
 
-**§5.2 binds hardest.** A delegate hands you a passage never written (09-12); *unreachable* may be reachable (09-15); a container *present* may be empty (09-16); our extractor hands us fluent text not on the page (09-20); our page says a person did what none did (09-21); **09-22, a search summary hands over three figures from papers it never opened.** **10-07: a licence read from the record, not the photograph, was wrong for 12 of 135. 10-08: a published class count was an unvalidated machine's label, frozen where the class began to fill.** What finds these is **disbelief, not a test.**
+**§5.2 binds hardest.** A delegate hands you a passage never written (09-12); *unreachable* may be reachable (09-15); a container *present* may be empty (09-16); our extractor hands us fluent text not on the page (09-20); our page says a person did what none did (09-21); **09-22, a search summary hands over three figures from papers it never opened.** **10-07/08: a licence read from the record, and a machine's class label, both wrong.** What finds these is **disbelief, not a test.**
 
 ## 3. Neighbours — so "has this been done already" is answered from memory
 
@@ -100,8 +100,8 @@ under another honest client string. **09-16:** thin research repositories are **
 - **Claim verifiability (09-23), in that `sources.json`:** Nuijten et al., PMC5101263; Brown &
   Heathers 2017 (GRIM, **record page only**).
 - **Cry wolf (10-20), passages in study 31's `sources.json`:** Simmons & Sutter, *WCAS* 1 (2009): 1-SD FAR → fatalities **+12–29 %**, injuries **+13–32 %** (abstract 14), 1986–2004, office/state/TV-market FAR of the 12 or 24 months before. Lim, Liu & Egnoto, *WCAS* 11 (2019): perceived FAR does not track the county's actual one; actual FAR did not predict protective action. Trainor 2015 unread.
-- **Report bias (10-16):** LaRocca & Banacos 2018, in that artifact's sources.
-- **Reports and population (10-15):** Anderson et al. 2007, in that artifact's sources.
+- **Prices of risk (10-21), study 34's `sources.json`:** DOT VSL guidance 2021 (*"2012 base year VSL of $9.1 million"*, ±40 %; MAIS 0.003–0.593); EPA *"$7.4 million ($2006)"*.
+- **Report bias, reports and population:** LaRocca & Banacos 2018; Anderson et al. 2007.
 - **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*.
 - **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: POD1 per year 1986–2016 (Table 1), 2012 fall; FAR *"near 0.75"* 2008–11, no table. Ours runs 1–4 points below.
 - **Alert protocol (10-15), first-hand:** OASIS CAP 1.2: `expires` *"(OPTIONAL)"*; IPAWS profile CS01 (2009): *"REQUIRED."* FEMA IPAWS Tip #31: a cancel *"won't be communicated to your public"*. No measurement of cancels or expiry found.
