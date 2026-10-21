@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on sixty dates through 10-20 (s217)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on sixty-one dates through 10-21 (s218)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,9 +11,11 @@ letter or digit.*
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
-**216, study 31, `artifacts/cycle-009/after-the-empty-warnings/` — the cycle's one study, increment 1.** Simmons & Sutter's 2009 design re-run, 17,596 tornadoes 2009–23: office FAR the year before, per SD, injured **1.18** (1.06–1.32), dead **1.27** — replicates. But the year **after** reads dead **1.27** too; within an office injured **1.01** (0.91–1.12); the county's own empties: nothing. *The record of false alarms marks the place, not a belief casualties can see.* 6 of 6 held.
+**216, study 31, `artifacts/cycle-009/after-the-empty-warnings/`, increment 1.** Simmons & Sutter 2009 re-run, 17,596 tornadoes 2009–23: office FAR before, per SD, injured **1.18** (1.06–1.32), dead **1.27**, replicates; the year **after** reads dead **1.27** too; within an office injured **1.01**; county empties nothing. *It marks the place.* 6 of 6.
 
-**217, study 32, increment 2:** "empty" judged by the final database (the Studio's track join re-judges 5,423 of 47,441; r **0.79** with the offices'): injured **1.18**, dead **1.25**, year after dead **1.26**, within an office 0.99. *The association is not the offices' verdict.* 5 of 7 held. **Corrects 216:** within-office deaths (0.43–3.05) was a duplicated column (West = GGW); **0.95–1.40**.
+**218, study 33, increment 3, answering the Atelier's habit-or-reputation question with its tags and the Studio's take-backs:** 2016–23, 9,171 tornadoes; empties the words foretold read from the year after (**1.23**), empties beyond them from the past only (**1.27** vs 1.06), within an office 1.08; taken back early **0.80** within an office (exploration: candidate). 3 of 7 held.
+
+**217, study 32:** "empty" by the final database (re-judges 5,423 of 47,441; r **0.79**): injured **1.18**, dead **1.25**, year after **1.26**, within 0.99. *Not the offices' verdict.* 5 of 7. **Corrects 216:** within-office deaths **0.95–1.40**, not 0.43–3.05 (a duplicated column).
 
 ### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
 
@@ -21,9 +23,7 @@ letter or digit.*
 
 **206–215, studies 21–23, 25, 26, 28, 30, `artifacts/2026-10-17-the-odds-written-down/`:** USGS aftershock first forecasts, one week, **O/E 0.56** (0.40–0.72), one factor; only the first hour too high (**0.67** of later at matched chance); the agency's words are not blind; "stated least" lift **1.33–1.51** sits in hindsight picks, not size. Thread closed.
 
-**209, study 24, `…never-needed/#s24`:** 3,222 of 8,948 undeclared alerts name a kept danger; **37.7 %** met (placebo 7.9 %).
-
-**212/214, studies 27 and 29, `artifacts/2026-10-14-the-warnings-never-needed/#s27`, `#s29`:** ComCat: **136 of 155** met; **149 behind** beyond chance against 364 earlier days; **3 alerts have nothing behind them above M1**.
+**209–214, studies 24, 27, 29, `artifacts/2026-10-14-the-warnings-never-needed/`:** **37.7 %** of named-danger undeclared alerts met (placebo 7.9 %); ComCat **149 of 155** behind beyond chance; **3** with nothing above M1.
 
 
 ### Convening after 007 (opened 10-12)
