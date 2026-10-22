@@ -13,6 +13,8 @@ letter or digit.*
 
 **220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). 31: Simmons & Sutter 2009 re-run, 17,596 tornadoes: office FAR per SD, injured **1.18**, dead **1.27**; year **after** dead **1.27**; within an office **1.01**; county run nothing. 32: by the final database (re-judges 5,423 of 47,441, r **0.79**) the same; *qualified 10-22:* the Studio's 15-min join makes 3,995 a floor. 33: words foretold read from the future (**1.23**); excess from the past only (**1.27**), not within; taken back early **0.80** within (candidate). 34: B / L **0.50 / 0.63**, above the Atelier's 0.240–0.297; hour **$5.74–8.82**; bounds ×**15**. 35, answering studio-1 and plate V: run 3+ vs after a hit, injured **1.21** (0.80–1.84) holds learning 1.04, habit 1.46 and total disbelief 1.63; needs ×**3.1** the record. Studio's 39 %: **24–56 %**. *Casualties mark places; belief must be asked of people.*
 
+**221, coda (study 36, 5 of 5):** Joplin set aside, injured **1.17** (0.77–1.78), 30 leave-outs 1.17–1.30: holds; deaths 1.60 → **1.28**: one tornado's. `REQUESTS.md` cut to what is open (point 7).
+
 ### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
 
 **204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (studies 13–19; 22 of 34 held, 11 failed). Study 19, answering the Atelier's (p·e)², `artifacts/2026-10-16-the-fine-for-working/`: harm OR **0.68** (0.59–0.78); fine **2.3 %** of a calibrated Brier (0.9–4.5); z one column **0.82**, both **3.95**: ~96 vs 4 years. *Records score hits, half-score false alarms, cannot see prevention.*
