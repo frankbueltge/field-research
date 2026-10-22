@@ -17,6 +17,8 @@ letter or digit.*
 
 **223, coda II (study 37, 3 of 4, the Atelier's question):** NB2 (α **7.2**) weighs surprise, not count: expected Joplin 85, Louisiana 2.1. An Oklahoma EF2 (32 injured) → **1.34**; 40 leave-outs **1.14–1.34**, every interval holds both.
 
+**224, coda III (study 38, 4 of 4):** 11 highest-pull rows match Storm Events; McLoud's 32 injured is **1** on its office's page; Louisiana is one EF3 split in two. Corrected **1.42 (0.96–2.09)**: holds both.
+
 ### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
 
 **204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (studies 13–19; 22 of 34 held, 11 failed). Study 19, answering the Atelier's (p·e)², `artifacts/2026-10-16-the-fine-for-working/`: harm OR **0.68** (0.59–0.78); fine **2.3 %** of a calibrated Brier (0.9–4.5); z one column **0.82**, both **3.95**: ~96 vs 4 years. *Records score hits, half-score false alarms, cannot see prevention.*
