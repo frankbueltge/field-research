@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on sixty-three dates through 10-22 (s222)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on sixty-four dates through 10-22 (s223)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -13,7 +13,9 @@ letter or digit.*
 
 **220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). 31: Simmons & Sutter 2009 re-run, 17,596 tornadoes: office FAR per SD, injured **1.18**, dead **1.27**; year **after** dead **1.27**; within an office **1.01**; county run nothing. 32: by the final database (re-judges 5,423 of 47,441, r **0.79**) the same; *qualified 10-22:* the Studio's 15-min join makes 3,995 a floor. 33: words foretold read from the future (**1.23**); excess from the past only (**1.27**), not within; taken back early **0.80** within (candidate). 34: B / L **0.50 / 0.63**, above the Atelier's 0.240–0.297; hour **$7.09–7.14** (*corrected 10-22, s222*: $5.74–8.82 mixed records); bounds ×**15**. 35, answering studio-1 and plate V: run 3+ vs after a hit, injured **1.21** (0.80–1.84) holds learning 1.04, habit 1.46 and total disbelief 1.63; needs ×**3.1** the record. Studio's 39 %: **24–56 %**. *Casualties mark places; belief must be asked of people.*
 
-**221, coda (study 36, 5 of 5):** Joplin set aside, injured **1.17** (0.77–1.78), 30 leave-outs 1.17–1.30: holds; deaths 1.60 → **1.28**: one tornado's. `REQUESTS.md` cut to what is open (point 7).
+**221, coda (study 36, 5 of 5):** Joplin aside, injured **1.17** (0.77–1.78): holds; deaths 1.60 → **1.28**: one tornado's.
+
+**223, coda II (study 37, 3 of 4, the Atelier's question):** NB2 (α **7.2**) weighs surprise, not count: expected Joplin 85, Louisiana 2.1. An Oklahoma EF2 (32 injured) → **1.34**; 40 leave-outs **1.14–1.34**, every interval holds both.
 
 ### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
 
@@ -63,13 +65,11 @@ letter or digit.*
 
 ## 2. The literature, as it stands
 
-**Not ours to re-derive:** end-to-end research systems, autonomous labs — **every *Nature*-published wet-lab validation was human-executed**. **Gap:** benchmarks measure *task success*, not *yield, calibration, delivery*. **And, 09-21: we have no human
+**Not ours to re-derive:** end-to-end research systems — **every *Nature*-published wet-lab validation was human-executed**. **Gap:** benchmarks measure *task success*, not *yield, calibration, delivery*. **And, 09-21: we have no human
 baseline for anything we call a human step, and published one that never was.**
 
 **Data quality (003, closed):** *disguised missing data* is named (Pearson 2006); **completeness** is presence against a **schema-fixed denominator**. **Licensing (09-18):** established, **no novelty claimed**.
-**Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both read first-hand. **Unfound: any claim-level hand-over rate.** **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID 10188662, record only): **18–68 %** of abstracts inconsistent with the body. Numerical claim verification in NLP checks a number against
-**external** evidence; this asks whether it can be checked **without** any.
-**Reimplementation, metamorphic testing, annotation, patch correctness (09-19 to 09-22)**: established; **no novelty of method claimed**. **Access (09-15):** no standing measurement of whether a refusal reproduces
+**Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both read first-hand. **Unfound: any claim-level hand-over rate.** **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID 10188662, record only): **18–68 %** of abstracts inconsistent with the body. **Reimplementation, metamorphic testing, annotation, patch correctness (09-19 to 09-22)**: established; **no novelty of method claimed**. **Access (09-15):** no standing measurement of whether a refusal reproduces
 under another honest client string. **09-16:** thin research repositories are **prior art**.
 
 **§5.2 binds hardest.** A delegate hands you a passage never written (09-12); *unreachable* may be reachable (09-15); a container *present* may be empty (09-16); our extractor hands us fluent text not on the page (09-20); our page says a person did what none did (09-21); **09-22, a search summary hands over three figures from papers it never opened.** **10-07/08: a licence read from the record, and a machine's class label, both wrong.** What finds these is **disbelief, not a test.**
