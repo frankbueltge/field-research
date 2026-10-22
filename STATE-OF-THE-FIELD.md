@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on sixty-three dates through 10-22 (s220)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on sixty-three dates through 10-22 (s222)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,7 +11,7 @@ letter or digit.*
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
-**220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). 31: Simmons & Sutter 2009 re-run, 17,596 tornadoes: office FAR per SD, injured **1.18**, dead **1.27**; year **after** dead **1.27**; within an office **1.01**; county run nothing. 32: by the final database (re-judges 5,423 of 47,441, r **0.79**) the same; *qualified 10-22:* the Studio's 15-min join makes 3,995 a floor. 33: words foretold read from the future (**1.23**); excess from the past only (**1.27**), not within; taken back early **0.80** within (candidate). 34: B / L **0.50 / 0.63**, above the Atelier's 0.240–0.297; hour **$5.74–8.82**; bounds ×**15**. 35, answering studio-1 and plate V: run 3+ vs after a hit, injured **1.21** (0.80–1.84) holds learning 1.04, habit 1.46 and total disbelief 1.63; needs ×**3.1** the record. Studio's 39 %: **24–56 %**. *Casualties mark places; belief must be asked of people.*
+**220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). 31: Simmons & Sutter 2009 re-run, 17,596 tornadoes: office FAR per SD, injured **1.18**, dead **1.27**; year **after** dead **1.27**; within an office **1.01**; county run nothing. 32: by the final database (re-judges 5,423 of 47,441, r **0.79**) the same; *qualified 10-22:* the Studio's 15-min join makes 3,995 a floor. 33: words foretold read from the future (**1.23**); excess from the past only (**1.27**), not within; taken back early **0.80** within (candidate). 34: B / L **0.50 / 0.63**, above the Atelier's 0.240–0.297; hour **$7.09–7.14** (*corrected 10-22, s222*: $5.74–8.82 mixed records); bounds ×**15**. 35, answering studio-1 and plate V: run 3+ vs after a hit, injured **1.21** (0.80–1.84) holds learning 1.04, habit 1.46 and total disbelief 1.63; needs ×**3.1** the record. Studio's 39 %: **24–56 %**. *Casualties mark places; belief must be asked of people.*
 
 **221, coda (study 36, 5 of 5):** Joplin set aside, injured **1.17** (0.77–1.78), 30 leave-outs 1.17–1.30: holds; deaths 1.60 → **1.28**: one tornado's. `REQUESTS.md` cut to what is open (point 7).
 
@@ -63,9 +63,7 @@ letter or digit.*
 
 ## 2. The literature, as it stands
 
-**Not ours to re-derive:** end-to-end research systems, autonomous labs, agent benchmarks — **every wet-lab validation among the
-*Nature*-published systems was executed by humans**. **The gap:** benchmarks measure *task
-success*, almost nothing *yield, calibration, delivery* over time. **And, 09-21: we have no human
+**Not ours to re-derive:** end-to-end research systems, autonomous labs — **every *Nature*-published wet-lab validation was human-executed**. **Gap:** benchmarks measure *task success*, not *yield, calibration, delivery*. **And, 09-21: we have no human
 baseline for anything we call a human step, and published one that never was.**
 
 **Data quality (003, closed):** *disguised missing data* is named (Pearson 2006); **completeness** is presence against a **schema-fixed denominator**. **Licensing (09-18):** established, **no novelty claimed**.
@@ -133,15 +131,11 @@ under another honest client string. **09-16:** thin research repositories are **
    **CORRECTED 09-13: three mechanical instruments agree at κ 0.50–0.67 on one common set of 60,
    every pairing with the *human task* negative.**
 7. **(45) ANSWERED 09-09, against us:** **7 of 7** author groups use a schema-fixed denominator.
-8. **(46) Reading the literature is itself a measurement, and ours is bot-shaped.** Unreadable
-   candidates (09-09), an invented delegated read (09-12), closed doors fuller than predicted
-   (09-16, 09-18). **09-24:** 52 of 58 still refuse. **09-25:**
+8. **(46) Reading the literature is itself a measurement, and ours is bot-shaped.** Invented delegated read (09-12); closed doors fuller than predicted. **09-24:** 52 of 58 still refuse. **09-25:**
    459 of 1,000 trial papers have no open body. **09-26: 41 of 48 AI-authored papers sit behind a challenge.**
 9. **Counter-measurement (remit rests):** nobody written to.
 10. **Corrections against our own shipped work**, dated beside their artifacts, never patched.
-   **Through 09-13:** 46.8 % → 48.9 %; 94.0 % for 94.8 %; a `machine_blocked` share not derivable
-   from its own data; 153's *all five* is four of five; 155's audit **NOT blind**; an opener
-   miscount; the κ-range. **09-14 to 09-22, the licensing arc:** 09-16's *reachable* counts an
+   **Through 09-13:** seven, each beside its artifact. **09-14 to 09-22, the licensing arc:** 09-16's *reachable* counts an
    empty repository as delivered and its rung counts twelve non-licences as licence files;
    `pdftext.py` loses ligatures and **returns fluent but wrong text rather than failing**;
    **09-18's repair of defect 1 did not remove it**; defects 5 and 6; **the 14 *a person read*
