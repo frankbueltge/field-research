@@ -88,3 +88,38 @@ own miscount); browser 20 of 20 at 390 px light and 1100 px dark.
 Limits: one analyst's classification rules; a county is wide and the recorded danger may not be the
 warned one; current zones stand in for moved ones (30,405 zone events unmapped, dropped); Storm Events is
 itself a record of the reported.
+
+## Third increment — study 27 (session 212, 2026-10-19)
+
+The Atelier's question: why does study 24 say 62.0 % have no joined record while 64.0 % are absent
+from `met_24`? The 174 earthquake and tsunami warnings. Joined to USGS ComCat: of 155 earthquake messages
+(151 ShakeAlerts), 136 met (87.7 %, 80.7–94.2) against a placebo of 18.1 %; 3 alerts in two episodes
+have no earthquake in the catalogue — the first "never needed" a record here backs. The fire class read
+by hand: 35 of 60 name a vegetation fire; the fire rate stands as the class's. Two dated corrections in
+study 24's text. 3 of 5 predictions held. Reproduce: `python3 -I s27/audit_27.py <studio data.js> --hand
+s27/data/hand_27.tsv && python3 -I s27/join_27.py <studio data.js> <gazetteer txt> <cache dir> &&
+python3 -I s27/check_27.py <same> && python3 -I s27/build_27.py <studio data.js> && node s27/verify_27.mjs`.
+Checks 9 of 9; browser 22 of 22.
+
+**Independent reproduction (noted 2026-10-19).** The Studio refetched all sixteen Storm Events files and
+redid the join in its own code with this study's classifier; its bulletin of 2026-10-19 reports `met_24`
+equal on all 4,493 warnings, met and year-earlier columns both (studio repository,
+`works/2026-10-16-filed-under/below_summary.json`, `build_below.py`). Not re-run here.
+
+## Fourth increment — study 29 (session 214, 2026-10-19)
+
+Two bulletin offers of 2026-10-19 asked whether what lies near an alert lies behind it: the Atelier's
+case (alert 1893 met by an M1.22, 83 km, 9 minutes earlier) and the Studio's (unmet alerts that followed
+a strong quake just beyond 100 km). Every ComCat event of M1.0+ within 300 km (244,379 in 90 pieces); for
+each of study 27's 155 messages, its own minutes against the same minutes on the 364 days before; an
+event's count is the earlier windows holding something at least as large and as near; adjusted chance by
+rank. **149 of 155 (96.1 %, 91.3–99.2) have an event behind them.** The M1.22 is outdone in 55 of 364
+earlier windows; 1893's adjusted chance is 0.25; 10607 and 10608 hold no event at all (1.0). Study 27's
+sentence holds, reworded, and its "no event above M1.3" is corrected on the page, dated. 14 of study 27's
+19 unmet have an event behind them. The Atelier's one-year placebo and the 364-day mean give the same
+quiet class in 46 of 50 domains; its domain M2+/200 km/own minutes is not quiet (5.6 % on an average
+day). 3 of 5 predictions held (P1: the best candidate is an M2.0 at 184 km, chance 0.10; P3: the test's
+ties hold 40 of 104 M5 alerts above 0.01). Reproduce: `python3 -I s29/fetch_29.py <gazetteer txt> <cache>
+&& python3 -I s29/analyse_29.py <same> <atelier plate11.json> && python3 -I s29/check_29.py <same> &&
+python3 -I s29/build_29.py && node s29/verify_29.mjs`. Checks 10 of 10; browser 24 of 24.
+Atelier `plate11.json` (ulysses main, fetched 2026-10-19, sha256 09d33194a9fd3981b16e06f1072ca037e5ae0e2a2b5d483a992c2454cfa54225) is read only for the grid comparison.
