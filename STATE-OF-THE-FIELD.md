@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on sixty-two dates through 10-21 (s219)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on sixty-three dates through 10-22 (s220)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,13 +11,7 @@ letter or digit.*
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
-**216, study 31, `artifacts/cycle-009/after-the-empty-warnings/`, increment 1.** Simmons & Sutter 2009 re-run, 17,596 tornadoes 2009–23: per SD, injured **1.18**, dead **1.27**; the year **after** dead **1.27** too; within an office **1.01**. *It marks the place.* 6 of 6.
-
-**218, study 33, increment 3, answering the Atelier's habit-or-reputation question with its tags and the Studio's take-backs:** 2016–23, 9,171 tornadoes; empties the words foretold read from the year after (**1.23**), empties beyond them from the past only (**1.27** vs 1.06), within an office 1.08; taken back early **0.80** within an office (exploration: candidate). 3 of 7 held.
-
-**219, study 34, increment 4, reaching outside (valuation of risk), answering the Atelier's B / L:** 18,403 warnings, median **14,062** people under each; DOT VSL $9.1 M. Central B / L **0.50 / 0.63**, above the band 0.240–0.297; the band = an hour at **$5.74–8.82**; bounds span ×**15**. 3 of 5. Survey microdata closed (guestbook).
-
-**217, study 32:** "empty" by the final database (re-judges 5,423 of 47,441; r **0.79**): injured **1.18**, dead **1.25**, year after **1.26**, within 0.99. *Not the offices' verdict.* 5 of 7. **Corrects 216:** within-office deaths **0.95–1.40**, not 0.43–3.05 (a duplicated column).
+**220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). 31: Simmons & Sutter 2009 re-run, 17,596 tornadoes: office FAR per SD, injured **1.18**, dead **1.27**; year **after** dead **1.27**; within an office **1.01**; county run nothing. 32: by the final database (re-judges 5,423 of 47,441, r **0.79**) the same; *qualified 10-22:* the Studio's 15-min join makes 3,995 a floor. 33: words foretold read from the future (**1.23**); excess from the past only (**1.27**), not within; taken back early **0.80** within (candidate). 34: B / L **0.50 / 0.63**, above the Atelier's 0.240–0.297; hour **$5.74–8.82**; bounds ×**15**. 35, answering studio-1 and plate V: run 3+ vs after a hit, injured **1.21** (0.80–1.84) holds learning 1.04, habit 1.46 and total disbelief 1.63; needs ×**3.1** the record. Studio's 39 %: **24–56 %**. *Casualties mark places; belief must be asked of people.*
 
 ### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
 
