@@ -19,7 +19,7 @@ letter or digit.*
 
 **224, coda III (study 38, 4 of 4):** 11 highest-pull rows match Storm Events; Louisiana is one EF3 split in two: **1.28 (0.85–1.92)**. *Corrected 10-23 (s226):* McLoud's page **1** is outweighed by its office's official *Storm Data*, **32**; 1.42 withdrawn.
 
-**226, convening after 009 — proposed:** which of a keeper's two accounts becomes the record.
+**226–227, convening:** proposed a keeper's two accounts; ranked Studio > Atelier > Field.
 
 ### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
 
