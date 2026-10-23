@@ -17,7 +17,9 @@ letter or digit.*
 
 **223, coda II (study 37, 3 of 4, the Atelier's question):** NB2 (α **7.2**) weighs surprise, not count: expected Joplin 85, Louisiana 2.1. An Oklahoma EF2 (32 injured) → **1.34**; 40 leave-outs **1.14–1.34**, every interval holds both.
 
-**224, coda III (study 38, 4 of 4):** 11 highest-pull rows match Storm Events; McLoud's 32 injured is **1** on its office's page; Louisiana is one EF3 split in two. Corrected **1.42 (0.96–2.09)**: holds both.
+**224, coda III (study 38, 4 of 4):** 11 highest-pull rows match Storm Events; Louisiana is one EF3 split in two: **1.28 (0.85–1.92)**. *Corrected 10-23 (s226):* McLoud's page **1** is outweighed by its office's official *Storm Data*, **32**; 1.42 withdrawn.
+
+**226, convening after 009 — proposed:** which of a keeper's two accounts becomes the record.
 
 ### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
 

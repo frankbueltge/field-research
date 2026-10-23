@@ -1,0 +1,47 @@
+{
+ "date": "2026-10-23",
+ "session": 226,
+ "answers": [
+  "ho-2026-10-22-atelier-6",
+  "ho-2026-10-23-atelier-1"
+ ],
+ "source": {
+  "url": "https://www.weather.gov/media/oun/stormdata/oun201105.pdf",
+  "sha256": "bd5ef021a6f68ce079555cf38b79a4defe8faa48876c7d60856cddcb381d225f",
+  "fetched": "2026-10-23",
+  "printed": "10/14/2011",
+  "not_committed": true
+ },
+ "mcloud_315890": {
+  "header": "POTTAWATOMIE COUNTY --- 4.7 WSW DALE [35.37, -97.13], 3.3 W DALE [35.39, -97.11]",
+  "event": "05/24/11 17:36 CST 0 Tornado (EF2, L: 2.00 mi , W: 50 yd)",
+  "line": "05/24/11 17:39 CST 32 0 Source: NWS Storm Survey",
+  "injured": 32
+ },
+ "stillwater_315880": {
+  "header": "PAYNE COUNTY --- 7.5 SSE LAKE CARL BLACKWELL DAM [36.03, -97.16], 2.8 ESE STILLWATER [36.11, -97.01]",
+  "event": "05/24/11 16:50 CST 0 Tornado (EF2, L: 10.40 mi , W: 880 yd)",
+  "line": "05/24/11 17:05 CST 18 0 Source: NWS Storm Survey",
+  "injured": 18
+ },
+ "storm_data_narrative_same_as_storm_events": true,
+ "verdict": "The office's official Storm Data gives McLoud 32 injured, as the database does; its event page's 1 is a second account by the same office. Study 38's class 'contradicted' is corrected to 'two accounts; the official one agrees'. The headline reading moves from both corrections (McLoud at 1, Louisiana as one track) to Louisiana alone.",
+ "headline_before": {
+  "irr": 1.419,
+  "lo": 0.963,
+  "hi": 2.09,
+  "converged": true,
+  "n": 9294,
+  "mu_mcloud": 0.41,
+  "mu_louisiana": 7.1
+ },
+ "headline_after": {
+  "irr": 1.277,
+  "lo": 0.848,
+  "hi": 1.923,
+  "converged": true,
+  "n": 9294,
+  "mu_mcloud": 0.55,
+  "mu_louisiana": 7.82
+ }
+}

@@ -36,7 +36,7 @@ for (const [w, scheme] of [[390, "light"], [1100, "dark"]]) {
   await p.locator("#forest g.row").nth(0).dispatchEvent("click");
   ok(`${w}: within deaths shows the corrected interval and says so`, (await p.textContent("#det")).includes("1.15 per standard deviation (95 % interval 0.95–1.40)") && (await p.textContent("#det")).includes("corrected 2026-10-20"));
   await p.click("#seg-y button[data-v=inj]");
-  ok(`${w}: the old interval is struck, not deleted`, (await p.locator("del").count()) === 2 && (await p.textContent("body")).includes("0.43–3.05"));
+  ok(`${w}: the old interval and the two superseded study-38 sentences are struck, not deleted`, (await p.locator("del").count()) === 4 && (await p.textContent("body")).includes("0.43–3.05") && (await p.textContent("body")).includes("the surveying office's own page does not support"));
   ok(`${w}: scatter: one dot per office-year`, await p.locator("#oy circle.dot").count() === R2.officeyears.length);
   await p.locator("#oy circle.dot").nth(0).dispatchEvent("click");
   const oy0 = R2.officeyears[0];
@@ -161,7 +161,7 @@ for (const [w, scheme] of [[390, "light"], [1100, "dark"]]) {
     await p.click("#seg-x37 button[data-v=inj]");
   }
   // study 38 (third coda)
-  ok(`${w}: third coda: eleven tornadoes, one contradicted`, (await p.locator("#tab38 tbody tr").count()) === 11 && (await p.locator("#tab38 td.failed").count()) === 1 && (await p.textContent("#tab38")).includes("OK, 2011-05-24, EF2"));
+  ok(`${w}: third coda: eleven tornadoes, none contradicted since the correction of 2026-10-23`, (await p.locator("#tab38 tbody tr").count()) === 11 && (await p.locator("#tab38 td.failed").count()) === 0 && (await p.textContent("#tab38")).includes("two accounts; the official one agrees") && (await p.textContent("#tab38")).includes("OK, 2011-05-24, EF2"));
   ok(`${w}: third coda: four predictions, four held`, (await p.locator("#pred38 tbody tr").count()) === 4 && (await p.locator("#pred38 td.held").count()) === 4);
   ok(`${w}: third coda opens on the record as is`, (await p.textContent("#rec38det")).includes(`${R8.fits.full.irr.toFixed(2)} (95 % interval ${R8.fits.full.lo.toFixed(2)}–${R8.fits.full.hi.toFixed(2)})`) && (await p.locator("#rec38 circle.pt.above").count()) === 1);
   for (const [mc, la, k] of [["office", "split", "mcloud_1_injured"], ["office", "one", "both"], ["db", "one", "louisiana_one_track"], ["db", "split", "full"]]) {
