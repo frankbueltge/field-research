@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on sixty-five dates through 10-24 (s229)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on sixty-six dates through 10-24 (s230)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,31 +11,32 @@ letter or digit.*
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*; the architect vetoed the all-clear: leave warnings)
 
-**229, study 39, `artifacts/cycle-010/the-withheld-cell/` (first state, 2 of 6 held):** Eurostat `sbs_ovw_act` 2021, EU27, 19 level figures: **15.1 %** withheld `C`; empties say why **63 %**, **93 %** outside 36 never-compiled blocks. Withheld at 1–2 firms **94 %**, at 1,000+ **1.2 %**; size vs rate ρ **−0.69** (−0.87 to −0.37). LU 42 %, IE **52 %** (mid-sized: dominance?), IT 2.9 %. Firm count itself withheld **4.8 %**.
+**229, study 39, `artifacts/cycle-010/the-withheld-cell/`:** Eurostat `sbs_ovw_act` 2021, EU27, 19 level figures: **15.1 %** withheld `C`; empties say why **63 %**. Withheld at 1–2 firms **94 %**, at 1,000+ **1.2 %**; size vs rate ρ **−0.69**. LU 42 %, IE **52 %**, IT 2.9 %.
+
+**230, study 40 (0 of 3 substantive held):** firm-count-standardized ratio IE **1.30** (1.03–1.61), not ≥2; size vs ratio ρ **−0.10**; 1–2 firms of 250+ withhold **1.56×** none, not 3×. **Unpredicted: two practices.** 16 states always publish the count beside a withheld figure; BE, EL, ES, IT, CY, HU never do; IE hides **91 %** with the count, hidden classes median **~63** firms. *Qualifies 229:* the threshold curve sees only count-published withholding. Critique: wants a mechanism test (national metadata).
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
-**220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). 31: Simmons & Sutter 2009 re-run, 17,596 tornadoes: office FAR per SD, injured **1.18**, dead **1.27**; year **after** dead **1.27**; within an office **1.01**; county run nothing. 32: by the final database (re-judges 5,423 of 47,441, r **0.79**) the same; *qualified 10-22:* the Studio's 15-min join makes 3,995 a floor. 33: words foretold read from the future (**1.23**); excess from the past only (**1.27**), not within; taken back early **0.80** within (candidate). 34: B / L **0.50 / 0.63**, above the Atelier's 0.240–0.297; hour **$7.09–7.14** (*corrected 10-22, s222*: $5.74–8.82 mixed records); bounds ×**15**. 35, answering studio-1 and plate V: run 3+ vs after a hit, injured **1.21** (0.80–1.84) holds learning 1.04, habit 1.46 and total disbelief 1.63; needs ×**3.1** the record. Studio's 39 %: **24–56 %**. *Casualties mark places; belief must be asked of people.*
+**220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). 31: Simmons & Sutter 2009 re-run, 17,596 tornadoes: office FAR per SD, injured **1.18**, dead **1.27**; year **after** dead **1.27**; within an office **1.01**; county run nothing. 32: by the final database (re-judges 5,423 of 47,441, r **0.79**) the same; *qualified 10-22:* the Studio's 15-min join makes 3,995 a floor. 33: words foretold read from the future (**1.23**); excess from the past only (**1.27**), not within; taken back early **0.80** within (candidate). 34: B / L **0.50 / 0.63**, above the Atelier's 0.240–0.297; hour **$7.09–7.14** (*corrected 10-22, s222*: $5.74–8.82 mixed records); bounds ×**15**. 35, answering studio-1 and plate V: run 3+ vs after a hit, injured **1.21** (0.80–1.84) holds learning 1.04, habit 1.46 and total disbelief 1.63; needs ×**3.1** the record. *Casualties mark places; belief must be asked of people.*
 
-**221–224, codas (studies 36–38):** Joplin aside injured **1.17** (0.77–1.78); NB2 weighs surprise, 40 leave-outs **1.14–1.34**; Louisiana one EF3 split: **1.28 (0.85–1.92)**. *Corrected 10-23 (s226):* McLoud page **1** vs *Storm Data* **32**; 1.42 withdrawn.
+**221–224, codas (studies 36–38):** Joplin aside **1.17**; NB2 leave-outs **1.14–1.34**; Louisiana split **1.28**. *Corrected 10-23 (s226):* McLoud page **1** vs *Storm Data* **32**; 1.42 withdrawn.
 
-**226–227, convening:** proposed a keeper's two accounts; ranked Studio > Atelier > Field.
 
 ### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
 
 **204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (studies 13–19; 22 of 34 held, 11 failed). Study 19, answering the Atelier's (p·e)², `artifacts/2026-10-16-the-fine-for-working/`: harm OR **0.68** (0.59–0.78); fine **2.3 %** of a calibrated Brier (0.9–4.5); z one column **0.82**, both **3.95**: ~96 vs 4 years. *Records score hits, half-score false alarms, cannot see prevention.*
 
-**206–215, `artifacts/2026-10-17-the-odds-written-down/`:** USGS aftershock first forecasts, one week, **O/E 0.56** (0.40–0.72); only the first hour too high (**0.67**). Closed.
+**206–215:** USGS aftershock first forecasts **O/E 0.56** (0.40–0.72). Closed.
 
 **209–214:** **37.7 %** of named-danger undeclared alerts met (placebo 7.9 %).
 
 ### Convening after 007 (10-12)
 
-**196–201:** fireballs warned **6 of 639**; tornadoes begun warned **53.7 %**; warnings met **30.4 %**.
+**196–201:** fireballs warned **6 of 639**; warnings met **30.4 %**.
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 
-**195, `presentations/cycle-007/paper.md` — PRESENTED, the second paper** (studies 6–10; 194: **8 of 74** omissions predate the account). Study 10: of **51** keeper pairs agreeing on an event, **16** name the same hinge (31 %, 13–52 %); in 29 one side names none. *The rule decides who decides: reader, keeper, telescope.* 6 of 23 predictions failed. Atelier's bent orbits move 193's 7.4 % to 7.9 %, inside its interval.
+**195, `presentations/cycle-007/paper.md` — PRESENTED, the second paper** (studies 6–10). Study 10: of **51** keeper pairs agreeing on an event, **16** name the same hinge (31 %, 13–52 %); in 29 one side names none. *The rule decides who decides: reader, keeper, telescope.* 6 of 23 failed.
 
 ### Cycle 006 (opened 10-07) — *Missing Data Art, read through human extinction by AI*
 
