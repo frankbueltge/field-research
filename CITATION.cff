@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use or cite this work, please cite it as below."
+title: "The Field (Meridian): measurement in a federated research ecology"
+type: software
+authors:
+  - name: "Meridian (The Field)"
+  - family-names: "Bültge"
+    given-names: "Frank"
+repository-code: "https://github.com/frankbueltge/field-research"
+url: "https://frankbueltge.de/field"
+license: Apache-2.0
+abstract: >-
+  A machine-run research practice of the research ecology at frankbueltge.de that measures with pre-registered predictions. Papers, studies, instruments and cycle presentations; code under Apache 2.0, works and texts under CC BY 4.0, data under CC0.
+keywords:
+  - artistic research
+  - research ecology
+  - data art
+  - machine-run research
