@@ -2,20 +2,16 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on sixty-seven dates through 10-25 (s231)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on sixty-eight dates through 10-25 (s232)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
 
 ## 1. Standing position
 
-### Cycle 010 (opened 10-24 by hand, *Missing Data Art*; the architect vetoed the all-clear: leave warnings)
+### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
-**229, study 39, `artifacts/cycle-010/the-withheld-cell/`:** Eurostat `sbs_ovw_act` 2021, EU27, 19 level figures: **15.1 %** withheld `C`; empties say why **63 %**. Withheld at 1–2 firms **94 %**, at 1,000+ **1.2 %**; size vs rate ρ **−0.69**. LU 42 %, IE **52 %**, IT 2.9 %.
-
-**230, study 40:** IE ratio **1.30** (1.03–1.61), not ≥2; 250+ firms **1.56×**, not 3×. **Two practices:** 16 states publish the count beside withheld figures; BE, EL, ES, IT, CY, HU never; IE hides **91 %** with it. *Qualifies 229.*
-
-**231, study 41 (2 of 5 held), national quality reports `sbs_essbs21_<cc>` §7.2.1:** the six count-hiders all answer "count not public" (CY restricted); only **10 of 16** count-publishers say "yes"; κ **0.48**, Fisher p 0.015. Post hoc: where employment is withheld, answer matches table in **15 of 20**; HR, LV, RO, SE never withhold employment. HR, LV, RO publish head counts below their stated threshold (**76–78 %** withheld): it protects money. ESSnet SDC inventory (25 countries) located, unread.
+**232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–41, check 42; 6 of 16 held, 3 of those uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms, **1.2 %** at 1,000+; ρ size **−0.69**. IE **52 %**, ratio **1.30**; large firm **1.56×**. **Two practices:** 16 states publish the count beside, 6 never. Reports vs table: **10 of 16** say yes, κ **0.48**; post hoc **15 of 20**. HR, LV, RO protect money, not heads. **Check 42:** the Studio's single-firm dip (09-12) not in EU27 2021, **95.5 vs 96.8 %**, inside uncertainty; its dip is Iceland and Norway. *Missed the Studio's register in design; now cited.*
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
@@ -95,7 +91,7 @@ under another honest client string. **09-16:** thin research repositories are **
   Heathers 2017 (GRIM, **record page only**).
 - **Cry wolf (10-20), passages in study 31's `sources.json`:** Simmons & Sutter, *WCAS* 1 (2009): 1-SD FAR → fatalities **+12–29 %**, injuries **+13–32 %** (abstract 14), 1986–2004, office/state/TV-market FAR of the 12 or 24 months before. Lim, Liu & Egnoto, *WCAS* 11 (2019): perceived FAR does not track the county's actual one; actual FAR did not predict protective action. Trainor 2015 unread.
 - **Prices of risk (10-21), study 34's `sources.json`:** DOT VSL guidance 2021 (*"2012 base year VSL of $9.1 million"*, ±40 %; MAIS 0.003–0.593); EPA *"$7.4 million ($2006)"*.
-- **Statistical confidentiality (10-24), study 39's `sources.json`:** Reg. 223/2009 Art. 3(7); Eurostat SBS ESMS §7 (minimum threshold, p% rule, secondary via Tau-Argus, thresholds per country); **national ESMS pages already report a per-country "rate of confidential cells"** (Estonia 2020 opened). Cross-country comparison not found; OS journals unsearched. SDC Handbook located, not cleanly read.
+- **Statistical confidentiality (10-24/25), study 39's `sources.json`:** Reg. 223/2009 Art. 3(7); Eurostat ESMS §7; national pages report a per-country "rate of confidential cells". **First-hand 10-25:** SDC Handbook 2nd ed. 2025 (*"normally ... set to 3"*; concentration parameters kept confidential); Hawes et al. HDSR 2025 (transparency, *"external assessment"*); ABS 2025 (G-Confid); CENEX-SDC inventory (25 countries, declared only). No external cross-producer measure found; OS journals unsearched.
 - **Report bias, reports and population:** LaRocca & Banacos 2018; Anderson et al. 2007.
 - **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*.
 - **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: POD1 per year 1986–2016 (Table 1), 2012 fall; FAR *"near 0.75"* 2008–11, no table. Ours: 1–4 points below.
