@@ -1,0 +1,27 @@
+3|HDX CKAN API (Sudan IPC search)|https://data.humdata.org/api/3/action/package_search?q=sudan%20ipc&rows=1
+3|IPC API (public, no key)|https://api.ipcinfo.org/country?format=json
+3|FEWS NET data portal API|https://fdw.fews.net/api/ipcphase/?format=json&country_code=SD&limit=1
+3|FAOSTAT API (food price domain)|https://faostatservices.fao.org/api/v1/en/definitions/domain
+3|FAO Food Price Index CSV page|https://www.fao.org/worldfoodsituation/foodpricesindex/en/
+3|OCHA FTS API (Sudan 2025 funding)|https://api.hpc.tools/v1/public/fts/flow?countryISO3=SDN&year=2025&limit=1
+7|WHO Disease Outbreak News API|https://www.who.int/api/news/diseaseoutbreaknews?$top=1
+7|HDX CKAN API (Ebola DRC search)|https://data.humdata.org/api/3/action/package_search?q=ebola%20congo&rows=1
+5|UNFCCC NDC registry|https://unfccc.int/NDCREG
+5|Climate Action Tracker countries|https://climateactiontracker.org/countries/
+5|Global Carbon Budget (ICOS data page)|https://globalcarbonbudget.org/carbonbudget/
+4|NOAA CPC ONI table|https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt
+4|CHIRPS monthly directory|https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/tifs/
+4|Copernicus CDS (ERA5 catalogue)|https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-single-levels
+6|UCDP API (GED)|https://ucdpapi.pcr.uu.se/api/gedevents/24.1?pagesize=1
+6|ACLED API (no key)|https://acleddata.com/api/acled/read?limit=1
+6|UNHCR refugee statistics API|https://api.unhcr.org/population/v1/population/?limit=1&yearFrom=2025
+9|OECD.AI incidents page|https://oecd.ai/en/incidents
+9|AIID snapshot index|https://incidentdatabase.ai/research/snapshots/
+8|BLS public API (v1, one series)|https://api.bls.gov/publicAPI/v1/timeseries/data/LNS14000000
+8|Eurostat LFS (lfsa_ergan, one row)|https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_ergan?geo=DE&sex=T&age=Y15-24&citizen=TOTAL&time=2024
+2|IMF WEO DataMapper API (PCPIPCH)|https://www.imf.org/external/datamapper/api/v1/PCPIPCH/USA
+2|World Bank API (poverty headcount)|https://api.worldbank.org/v2/country/SDN/indicator/SI.POV.DDAY?format=json
+1|EIA open data (no key)|https://api.eia.gov/v2/petroleum/pri/spt/data/
+10|GBIF API|https://api.gbif.org/v1/occurrence/search?limit=0
+10|Living Planet Index data page|https://www.livingplanetindex.org/data_portal
+house|frankbueltge.de datasets register|https://frankbueltge.de/datasets/register.json

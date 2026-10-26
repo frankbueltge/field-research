@@ -1,0 +1,385 @@
+{
+ "_note": "Reachability of the open datasets named by the Middle's briefing after cycle 010 (research-ecology, briefings/after-cycle-010.md), probed 2026-10-26 by Meridian. One request per door with a named client string (pass 1), and one re-request of every door that did not answer 200 with curl's default client string (pass 2). A status code is not a reading: body_reading records what the body actually held where it differs from the code. Our requests, not the sources' policies.",
+ "pass1_client": "Meridian-field-research/1.0 (reachability probe)",
+ "pass2_client": "curl default",
+ "pass1": [
+  {
+   "at": "2026-10-26T03:37:54Z",
+   "matter": "3",
+   "name": "HDX CKAN API (Sudan IPC search)",
+   "url": "https://data.humdata.org/api/3/action/package_search?q=sudan%20ipc&rows=1",
+   "status": 200,
+   "content_type": "application/json;charset=utf-8",
+   "bytes": 11489,
+   "sha256_16": "e6ac03a5525ca53e"
+  },
+  {
+   "at": "2026-10-26T03:37:54Z",
+   "matter": "3",
+   "name": "IPC API (public, no key)",
+   "url": "https://api.ipcinfo.org/country?format=json",
+   "status": 401,
+   "content_type": "application/json; charset=utf-8",
+   "bytes": 92,
+   "sha256_16": "a44e2f69b1e55e54"
+  },
+  {
+   "at": "2026-10-26T03:37:58Z",
+   "matter": "3",
+   "name": "FEWS NET data portal API",
+   "url": "https://fdw.fews.net/api/ipcphase/?format=json&country_code=SD&limit=1",
+   "status": 200,
+   "content_type": "application/json",
+   "bytes": 100865808,
+   "sha256_16": "4f805612c1e7fd61"
+  },
+  {
+   "at": "2026-10-26T03:37:58Z",
+   "matter": "3",
+   "name": "FAOSTAT API (food price domain)",
+   "url": "https://faostatservices.fao.org/api/v1/en/definitions/domain",
+   "status": 401,
+   "content_type": "",
+   "bytes": 28,
+   "sha256_16": "d8c6fc18f8627634"
+  },
+  {
+   "at": "2026-10-26T03:37:58Z",
+   "matter": "3",
+   "name": "FAO Food Price Index CSV page",
+   "url": "https://www.fao.org/worldfoodsituation/foodpricesindex/en/",
+   "status": 200,
+   "content_type": "text/html; charset=utf-8",
+   "bytes": 64120,
+   "sha256_16": "0c117670b3ba0502"
+  },
+  {
+   "at": "2026-10-26T03:37:59Z",
+   "matter": "3",
+   "name": "OCHA FTS API (Sudan 2025 funding)",
+   "url": "https://api.hpc.tools/v1/public/fts/flow?countryISO3=SDN&year=2025&limit=1",
+   "status": 200,
+   "content_type": "application/json; charset=utf-8",
+   "bytes": 2274,
+   "sha256_16": "61dcdd4c2a75b229"
+  },
+  {
+   "at": "2026-10-26T03:37:59Z",
+   "matter": "7",
+   "name": "WHO Disease Outbreak News API",
+   "url": "https://www.who.int/api/news/diseaseoutbreaknews?$top=1",
+   "status": 200,
+   "content_type": "application/json; odata.metadata=minimal; odata.streaming=true",
+   "bytes": 1586,
+   "sha256_16": "508740af2da1a290"
+  },
+  {
+   "at": "2026-10-26T03:37:59Z",
+   "matter": "7",
+   "name": "HDX CKAN API (Ebola DRC search)",
+   "url": "https://data.humdata.org/api/3/action/package_search?q=ebola%20congo&rows=1",
+   "status": 200,
+   "content_type": "application/json;charset=utf-8",
+   "bytes": 30874,
+   "sha256_16": "850401f64420bd25"
+  },
+  {
+   "at": "2026-10-26T03:38:00Z",
+   "matter": "5",
+   "name": "UNFCCC NDC registry",
+   "url": "https://unfccc.int/NDCREG",
+   "status": 200,
+   "content_type": "text/html",
+   "bytes": 212,
+   "sha256_16": "d02032286070b4dd"
+  },
+  {
+   "at": "2026-10-26T03:38:01Z",
+   "matter": "5",
+   "name": "Climate Action Tracker countries",
+   "url": "https://climateactiontracker.org/countries/",
+   "status": 200,
+   "content_type": "text/html; charset=utf-8",
+   "bytes": 52116,
+   "sha256_16": "101ee55f4ffa73ef"
+  },
+  {
+   "at": "2026-10-26T03:38:02Z",
+   "matter": "5",
+   "name": "Global Carbon Budget (ICOS data page)",
+   "url": "https://globalcarbonbudget.org/carbonbudget/",
+   "status": 200,
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 51570,
+   "sha256_16": "af53d198fc07ce00"
+  },
+  {
+   "at": "2026-10-26T03:38:03Z",
+   "matter": "4",
+   "name": "NOAA CPC ONI table",
+   "url": "https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt",
+   "status": 200,
+   "content_type": "text/plain; charset=utf-8",
+   "bytes": 23025,
+   "sha256_16": "5d6fa3a2f857d916"
+  },
+  {
+   "at": "2026-10-26T03:38:03Z",
+   "matter": "4",
+   "name": "CHIRPS monthly directory",
+   "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/tifs/",
+   "status": 200,
+   "content_type": "text/html; charset=utf-8",
+   "bytes": 113264,
+   "sha256_16": "3f91ffcdd5576b92"
+  },
+  {
+   "at": "2026-10-26T03:38:05Z",
+   "matter": "4",
+   "name": "Copernicus CDS (ERA5 catalogue)",
+   "url": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-single-levels",
+   "status": 200,
+   "content_type": "application/json",
+   "bytes": 7666,
+   "sha256_16": "b1ab40fdd5945a96"
+  },
+  {
+   "at": "2026-10-26T03:38:06Z",
+   "matter": "6",
+   "name": "UCDP API (GED)",
+   "url": "https://ucdpapi.pcr.uu.se/api/gedevents/24.1?pagesize=1",
+   "status": 401,
+   "content_type": "text/plain; charset=utf-8",
+   "bytes": 65,
+   "sha256_16": "58845c328871c369"
+  },
+  {
+   "at": "2026-10-26T03:38:06Z",
+   "matter": "6",
+   "name": "ACLED API (no key)",
+   "url": "https://acleddata.com/api/acled/read?limit=1",
+   "status": 403,
+   "content_type": "application/json",
+   "bytes": 53,
+   "sha256_16": "39bc6c24e6d1f538"
+  },
+  {
+   "at": "2026-10-26T03:38:07Z",
+   "matter": "6",
+   "name": "UNHCR refugee statistics API",
+   "url": "https://api.unhcr.org/population/v1/population/?limit=1&yearFrom=2025",
+   "status": 200,
+   "content_type": "application/json",
+   "bytes": 325,
+   "sha256_16": "ce975a8a6dfa4d74"
+  },
+  {
+   "at": "2026-10-26T03:38:11Z",
+   "matter": "9",
+   "name": "OECD.AI incidents page",
+   "url": "https://oecd.ai/en/incidents",
+   "status": 200,
+   "content_type": "text/html;charset=UTF-8",
+   "bytes": 970995,
+   "sha256_16": "184119ee0d58b99c"
+  },
+  {
+   "at": "2026-10-26T03:38:11Z",
+   "matter": "9",
+   "name": "AIID snapshot index",
+   "url": "https://incidentdatabase.ai/research/snapshots/",
+   "status": 200,
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 386363,
+   "sha256_16": "25d8627fdadab074"
+  },
+  {
+   "at": "2026-10-26T03:38:12Z",
+   "matter": "8",
+   "name": "BLS public API (v1, one series)",
+   "url": "https://api.bls.gov/publicAPI/v1/timeseries/data/LNS14000000",
+   "status": 200,
+   "content_type": "application/json",
+   "bytes": 224,
+   "sha256_16": "48d4a57eed253437"
+  },
+  {
+   "at": "2026-10-26T03:38:13Z",
+   "matter": "8",
+   "name": "Eurostat LFS (lfsa_ergan, one row)",
+   "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_ergan?geo=DE&sex=T&age=Y15-24&citizen=TOTAL&time=2024",
+   "status": 200,
+   "content_type": "application/json",
+   "bytes": 3316,
+   "sha256_16": "b7efe21987c05a77"
+  },
+  {
+   "at": "2026-10-26T03:38:13Z",
+   "matter": "2",
+   "name": "IMF WEO DataMapper API (PCPIPCH)",
+   "url": "https://www.imf.org/external/datamapper/api/v1/PCPIPCH/USA",
+   "status": 403,
+   "content_type": "text/html",
+   "bytes": 423,
+   "sha256_16": "8909225c38e8796c"
+  },
+  {
+   "at": "2026-10-26T03:38:13Z",
+   "matter": "2",
+   "name": "World Bank API (poverty headcount)",
+   "url": "https://api.worldbank.org/v2/country/SDN/indicator/SI.POV.DDAY?format=json",
+   "status": 200,
+   "content_type": "application/json;charset=utf-8",
+   "bytes": 12091,
+   "sha256_16": "9658dfdb3e005eda"
+  },
+  {
+   "at": "2026-10-26T03:38:14Z",
+   "matter": "1",
+   "name": "EIA open data (no key)",
+   "url": "https://api.eia.gov/v2/petroleum/pri/spt/data/",
+   "status": 403,
+   "content_type": "application/json",
+   "bytes": 163,
+   "sha256_16": "b71fb384d31b5e7c"
+  },
+  {
+   "at": "2026-10-26T03:38:15Z",
+   "matter": "10",
+   "name": "GBIF API",
+   "url": "https://api.gbif.org/v1/occurrence/search?limit=0",
+   "status": 200,
+   "content_type": "application/json",
+   "bytes": 87,
+   "sha256_16": "5206cc6eeb2ee4d8"
+  },
+  {
+   "at": "2026-10-26T03:38:15Z",
+   "matter": "10",
+   "name": "Living Planet Index data page",
+   "url": "https://www.livingplanetindex.org/data_portal",
+   "status": 500,
+   "content_type": "",
+   "bytes": 26,
+   "sha256_16": "12f27762783e4728"
+  },
+  {
+   "at": "2026-10-26T03:38:16Z",
+   "matter": "house",
+   "name": "frankbueltge.de datasets register",
+   "url": "https://frankbueltge.de/datasets/register.json",
+   "status": 200,
+   "content_type": "application/json",
+   "bytes": 79537,
+   "sha256_16": "f8ca008da25b3fed"
+  }
+ ],
+ "pass2": [
+  {
+   "at": "2026-10-26T03:38:35Z",
+   "matter": "5",
+   "name": "UNFCCC NDC registry",
+   "url": "https://unfccc.int/NDCREG",
+   "status": 200,
+   "content_type": "text/html",
+   "bytes": 212,
+   "sha256_16": "d02032286070b4dd"
+  },
+  {
+   "at": "2026-10-26T03:38:35Z",
+   "matter": "8",
+   "name": "BLS public API (v1, one series)",
+   "url": "https://api.bls.gov/publicAPI/v1/timeseries/data/LNS14000000",
+   "status": 200,
+   "content_type": "application/json",
+   "bytes": 224,
+   "sha256_16": "48d4a57eed253437"
+  },
+  {
+   "at": "2026-10-26T03:38:42Z",
+   "matter": "3",
+   "name": "IPC API (public, no key)",
+   "url": "https://api.ipcinfo.org/country?format=json",
+   "status": 401,
+   "content_type": "application/json; charset=utf-8",
+   "bytes": 92,
+   "sha256_16": "ade3aba6035fab4c"
+  },
+  {
+   "at": "2026-10-26T03:38:43Z",
+   "matter": "3",
+   "name": "FAOSTAT API (food price domain)",
+   "url": "https://faostatservices.fao.org/api/v1/en/definitions/domain",
+   "status": 401,
+   "content_type": "",
+   "bytes": 28,
+   "sha256_16": "d8c6fc18f8627634"
+  },
+  {
+   "at": "2026-10-26T03:38:44Z",
+   "matter": "6",
+   "name": "UCDP API (GED)",
+   "url": "https://ucdpapi.pcr.uu.se/api/gedevents/24.1?pagesize=1",
+   "status": 401,
+   "content_type": "text/plain; charset=utf-8",
+   "bytes": 65,
+   "sha256_16": "58845c328871c369"
+  },
+  {
+   "at": "2026-10-26T03:38:44Z",
+   "matter": "6",
+   "name": "ACLED API (no key)",
+   "url": "https://acleddata.com/api/acled/read?limit=1",
+   "status": 403,
+   "content_type": "application/json",
+   "bytes": 53,
+   "sha256_16": "39bc6c24e6d1f538"
+  },
+  {
+   "at": "2026-10-26T03:38:46Z",
+   "matter": "2",
+   "name": "IMF WEO DataMapper API (PCPIPCH)",
+   "url": "https://www.imf.org/external/datamapper/api/v1/PCPIPCH/USA",
+   "status": 200,
+   "content_type": "application/json",
+   "bytes": 121340,
+   "sha256_16": "e36fb78dc58c5b50"
+  },
+  {
+   "at": "2026-10-26T03:38:46Z",
+   "matter": "1",
+   "name": "EIA open data (no key)",
+   "url": "https://api.eia.gov/v2/petroleum/pri/spt/data/",
+   "status": 403,
+   "content_type": "application/json",
+   "bytes": 163,
+   "sha256_16": "b71fb384d31b5e7c"
+  },
+  {
+   "at": "2026-10-26T03:38:47Z",
+   "matter": "10",
+   "name": "Living Planet Index data page",
+   "url": "https://www.livingplanetindex.org/data_portal",
+   "status": 500,
+   "content_type": "",
+   "bytes": 26,
+   "sha256_16": "12f27762783e4728"
+  }
+ ],
+ "body_reading": {
+  "UNFCCC NDC registry": "closed: HTTP 200 but the body is a 212-byte bot challenge (Incapsula script), no registry",
+  "BLS public API (v1, one series)": "refused: HTTP 200 but REQUEST_NOT_PROCESSED, daily threshold reached for the anonymous allocation",
+  "UNHCR refugee statistics API": "open: JSON served; the yearFrom filter as sent was not honoured (first item is 1951)",
+  "IPC API (public, no key)": "closed: API key required",
+  "FAOSTAT API (food price domain)": "closed: authorization header required",
+  "UCDP API (GED)": "closed: access token required",
+  "ACLED API (no key)": "closed: authentication required",
+  "EIA open data (no key)": "closed: api_key required",
+  "IMF WEO DataMapper API (PCPIPCH)": "depends on the client string: 403 to the named probe string, 200 with JSON (52 years of US inflation) to curl's default string, one request each",
+  "Living Planet Index data page": "error: HTTP 500 on both passes",
+  "FEWS NET data portal API": "open: JSON served, but the limit parameter was ignored (about 100 MB returned)",
+  "WHO Disease Outbreak News API": "open: OData JSON served",
+  "OCHA FTS API (Sudan 2025 funding)": "open: JSON served (1,069 incoming flows, USD 1,783,752,884 for Sudan 2025 as of the probe)",
+  "GBIF API": "open: JSON served"
+ }
+}
