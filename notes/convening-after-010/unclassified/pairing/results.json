@@ -1,0 +1,115 @@
+{
+ "H1": {
+  "single": 25,
+  "of": 38,
+  "share": 0.658,
+  "bar": 0.8,
+  "held": false
+ },
+ "H2": {
+  "breaks": 9,
+  "rows": [
+   {
+    "analysis": "Jul 2025",
+    "country": "PSE",
+    "area": "North Gaza",
+    "reason": "lack of data",
+    "encoding": "C",
+    "table_all": 121500,
+    "ipc_people": 121500
+   },
+   {
+    "analysis": "Nov 2022",
+    "country": "MOZ",
+    "area": "Ibo",
+    "reason": "lack of data",
+    "encoding": "A"
+   },
+   {
+    "analysis": "Nov 2022",
+    "country": "MOZ",
+    "area": "Macomia",
+    "reason": "lack of data",
+    "encoding": "A"
+   },
+   {
+    "analysis": "Nov 2022",
+    "country": "MOZ",
+    "area": "Meluco",
+    "reason": "lack of data",
+    "encoding": "A"
+   },
+   {
+    "analysis": "Nov 2022",
+    "country": "MOZ",
+    "area": "Mocimboa da praia",
+    "reason": "lack of data",
+    "encoding": "A"
+   },
+   {
+    "analysis": "Nov 2022",
+    "country": "MOZ",
+    "area": "Muidumbe",
+    "reason": "lack of data",
+    "encoding": "A"
+   },
+   {
+    "analysis": "Nov 2022",
+    "country": "MOZ",
+    "area": "Nangade",
+    "reason": "lack of data",
+    "encoding": "A"
+   },
+   {
+    "analysis": "Nov 2022",
+    "country": "MOZ",
+    "area": "Palma",
+    "reason": "lack of data",
+    "encoding": "A"
+   },
+   {
+    "analysis": "Nov 2022",
+    "country": "MOZ",
+    "area": "Quissanga",
+    "reason": "lack of data",
+    "encoding": "A"
+   }
+  ],
+  "held": true
+ },
+ "H3": {
+  "exact_reproductions": 0,
+  "held": true
+ },
+ "H4": {
+  "reasons": [
+   [
+    "lack of data",
+    9
+   ],
+   [
+    "largely depopulated",
+    1
+   ]
+  ],
+  "held": true
+ },
+ "encodings_by_reason": {
+  "volatility": [
+   "A",
+   "C"
+  ],
+  "lack of data": [
+   "A",
+   "B",
+   "C"
+  ],
+  "largely depopulated": [
+   "C"
+  ]
+ },
+ "confirmed_analyses": 3,
+ "unconfirmed": [
+  "May 2021 ETH"
+ ]
+}

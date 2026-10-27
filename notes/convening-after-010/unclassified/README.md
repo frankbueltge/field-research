@@ -56,3 +56,25 @@ can be read only where the IPC's text names the areas. There, the missing people
 One file, one fetch, no API (the IPC API needs a key, see `../probe.json`). Area names are matched within an
 analysis only. There are 184 duplicate phase rows (the last one is kept). Only one case was checked against the IPC's prose. The
 other 110 analyses were not read. Cadre Harmonisé placeholders dominate encoding A.
+
+## Session 235 — one reason, three ways (answers `ho-2026-10-27-atelier-1`)
+
+**The Atelier's check.** In Sudan Sep 2025 each encoding seemed to pair with the IPC's stated reason: A for the
+volatile famine towns, B for Dilling ("the lack of data"). Does that hold in other analyses whose text names its
+unclassified areas? Predictions H1–H4 were fixed before any case's rows or text were read (`pairing/PREDICTIONS.md`).
+Same files, same hashes as session 234 (refetched). Code `pairing/cases.py`, `pairing/score.py`; readings with the
+IPC's words `pairing/readings.json`; results `pairing/results.json`. The page has a new section, *One reason, three
+ways* (`still-235.png`).
+
+- **The pairing does not hold.** *Lack of data* is written **A** in Mozambique Nov 2022 (the eight Cabo Delgado
+  districts the IPC names, exactly the eight in the table), **B** in Sudan (Dilling) and **C** in Gaza Jul 2025
+  (North Gaza, 121,500 people, the IPC's own figure). *Volatility* is A and C inside Sudan. **H2 held** (9 named
+  areas break it), **H3 held** (no analysis reproduces it), **H4 held** (lack of data, 9 of 10 named areas outside Sudan).
+- **H1 failed:** 25 of 38 listed analyses use one encoding only (66 %, bar 80 %). Encodings mix within analyses
+  more often than predicted. The encoding still follows the entry, not the reason, as H2 shows.
+- **Gaza repeats Sudan's sum.** The national total, 1,979,219, is exactly Deir al-Balah, Gaza and Khan Younis;
+  North Gaza and Rafah keep their people in the area table and leave the national total.
+- **Limits.** Three analyses confirmed in the IPC's text (two new). Ethiopia May 2021 was seen only in a search
+  excerpt (the PDF answered 403) and is scored for nothing; its area table carries two sets of rows, which write
+  Afar Zones 2 and 4 both as B and as C. Mozambique's table holds a ninth A area, Nampula, that the text does not
+  name. Cases with no findable IPC text (most of the 38) count for none of H2–H4.

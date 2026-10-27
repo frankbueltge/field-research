@@ -1,0 +1,8205 @@
+{
+ "cases": 38,
+ "single_encoding": 25,
+ "list": [
+  {
+   "analysis": "Feb 2021",
+   "country": "CAF",
+   "counts": {
+    "A": 1,
+    "C": 4
+   },
+   "mixed": true,
+   "rows": [
+    {
+     "period": "first projection",
+     "level1": "Bangui",
+     "area": "Arrondissement 1",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Haute-Kotto",
+     "area": "Ouadda",
+     "encoding": "C",
+     "all": 13499
+    },
+    {
+     "period": "first projection",
+     "level1": "Haute-Kotto",
+     "area": "Yalinga",
+     "encoding": "C",
+     "all": 6465
+    },
+    {
+     "period": "first projection",
+     "level1": "Haut-Mbomou",
+     "area": "Dj\u00e9ma",
+     "encoding": "C",
+     "all": 11658
+    },
+    {
+     "period": "first projection",
+     "level1": "Haut-Mbomou",
+     "area": "Bambouti",
+     "encoding": "C",
+     "all": 1955
+    }
+   ]
+  },
+  {
+   "analysis": "Sep 2021",
+   "country": "CAF",
+   "counts": {
+    "C": 6
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Haut-Mbomou",
+     "area": "Bambouti",
+     "encoding": "C",
+     "all": 2864
+    },
+    {
+     "period": "current",
+     "level1": "Haut-Mbomou",
+     "area": "Dj\u00e9ma",
+     "encoding": "C",
+     "all": 12785
+    },
+    {
+     "period": "first projection",
+     "level1": "Haut-Mbomou",
+     "area": "Dj\u00e9ma",
+     "encoding": "C",
+     "all": 12785
+    },
+    {
+     "period": "current",
+     "level1": "Haute-Kotto",
+     "area": "Yalinga",
+     "encoding": "C",
+     "all": 6678
+    },
+    {
+     "period": "first projection",
+     "level1": "Haute-Kotto",
+     "area": "Yalinga",
+     "encoding": "C",
+     "all": 6678
+    },
+    {
+     "period": "first projection",
+     "level1": "Haute-Kotto",
+     "area": "Ouadda",
+     "encoding": "C",
+     "all": 15998
+    }
+   ]
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "CAF",
+   "counts": {
+    "C": 3
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "first projection",
+     "level1": "Haut-Mbomou",
+     "area": "Dj\u00e9ma",
+     "encoding": "C",
+     "all": 12785
+    },
+    {
+     "period": "first projection",
+     "level1": "Haute-Kotto",
+     "area": "Yalinga",
+     "encoding": "C",
+     "all": 6678
+    },
+    {
+     "period": "first projection",
+     "level1": "Haute-Kotto",
+     "area": "Ouadda",
+     "encoding": "C",
+     "all": 15998
+    }
+   ]
+  },
+  {
+   "analysis": "Oct 2024",
+   "country": "CAF",
+   "counts": {
+    "A": 1
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "first projection",
+     "level1": "Vakaga",
+     "area": "Amdafoc",
+     "encoding": "A",
+     "all": 0
+    }
+   ]
+  },
+  {
+   "analysis": "Sep 2021",
+   "country": "COD",
+   "counts": {
+    "C": 17,
+    "A": 1
+   },
+   "mixed": true,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Kwilu",
+     "area": "Bagata",
+     "encoding": "C",
+     "all": 523787
+    },
+    {
+     "period": "first projection",
+     "level1": "Kwilu",
+     "area": "Bagata",
+     "encoding": "C",
+     "all": 539501
+    },
+    {
+     "period": "current",
+     "level1": "Kwilu",
+     "area": "Masi-manimba",
+     "encoding": "C",
+     "all": 763725
+    },
+    {
+     "period": "first projection",
+     "level1": "Kwilu",
+     "area": "Masi-manimba",
+     "encoding": "C",
+     "all": 786637
+    },
+    {
+     "period": "current",
+     "level1": "Lualaba",
+     "area": "Kolwezi",
+     "encoding": "C",
+     "all": 344679
+    },
+    {
+     "period": "first projection",
+     "level1": "Lualaba",
+     "area": "Kolwezi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Lualaba",
+     "area": "Likasi",
+     "encoding": "C",
+     "all": 165838
+    },
+    {
+     "period": "first projection",
+     "level1": "Lualaba",
+     "area": "Likasi",
+     "encoding": "C",
+     "all": 172306
+    },
+    {
+     "period": "current",
+     "level1": "Kwango",
+     "area": "Kasongo-lunda",
+     "encoding": "C",
+     "all": 803055
+    },
+    {
+     "period": "first projection",
+     "level1": "Kwango",
+     "area": "Kasongo-lunda",
+     "encoding": "C",
+     "all": 827147
+    },
+    {
+     "period": "current",
+     "level1": "Ma\u00ef-Ndombe",
+     "area": "Bolobo",
+     "encoding": "C",
+     "all": 154312
+    },
+    {
+     "period": "first projection",
+     "level1": "Ma\u00ef-Ndombe",
+     "area": "Bolobo",
+     "encoding": "C",
+     "all": 158941
+    },
+    {
+     "period": "current",
+     "level1": "Ma\u00ef-Ndombe",
+     "area": "Yumbi",
+     "encoding": "C",
+     "all": 133169
+    },
+    {
+     "period": "first projection",
+     "level1": "Ma\u00ef-Ndombe",
+     "area": "Yumbi",
+     "encoding": "C",
+     "all": 137164
+    },
+    {
+     "period": "current",
+     "level1": "Mongala",
+     "area": "Bongandanga",
+     "encoding": "C",
+     "all": 828738
+    },
+    {
+     "period": "first projection",
+     "level1": "Mongala",
+     "area": "Bongandanga",
+     "encoding": "C",
+     "all": 852772
+    },
+    {
+     "period": "current",
+     "level1": "Mongala",
+     "area": "Bumba",
+     "encoding": "C",
+     "all": 1033324
+    },
+    {
+     "period": "first projection",
+     "level1": "Mongala",
+     "area": "Bumba",
+     "encoding": "C",
+     "all": 1063291
+    }
+   ]
+  },
+  {
+   "analysis": "Jul 2022",
+   "country": "COD",
+   "counts": {
+    "C": 6
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Lualaba",
+     "area": "Kolwezi",
+     "encoding": "C",
+     "all": 344679
+    },
+    {
+     "period": "first projection",
+     "level1": "Lualaba",
+     "area": "Kolwezi",
+     "encoding": "C",
+     "all": 344679
+    },
+    {
+     "period": "current",
+     "level1": "Lualaba",
+     "area": "Likasi",
+     "encoding": "C",
+     "all": 165838
+    },
+    {
+     "period": "first projection",
+     "level1": "Lualaba",
+     "area": "Likasi",
+     "encoding": "C",
+     "all": 165838
+    },
+    {
+     "period": "current",
+     "level1": "Haut-Katanga",
+     "area": "Lubumbashi",
+     "encoding": "C",
+     "all": 2778586
+    },
+    {
+     "period": "first projection",
+     "level1": "Haut-Katanga",
+     "area": "Lubumbashi",
+     "encoding": "C",
+     "all": 2778586
+    }
+   ]
+  },
+  {
+   "analysis": "Apr 2023",
+   "country": "COD",
+   "counts": {
+    "C": 3
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "first projection",
+     "level1": "Haut-Katanga",
+     "area": "Lubumbashi",
+     "encoding": "C",
+     "all": 2778586
+    },
+    {
+     "period": "first projection",
+     "level1": "Lualaba",
+     "area": "Kolwezi",
+     "encoding": "C",
+     "all": 344679
+    },
+    {
+     "period": "first projection",
+     "level1": "Lualaba",
+     "area": "Likasi",
+     "encoding": "C",
+     "all": 165838
+    }
+   ]
+  },
+  {
+   "analysis": "Aug 2023",
+   "country": "COD",
+   "counts": {
+    "C": 2
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Lualaba",
+     "area": "Kolwezi",
+     "encoding": "C",
+     "all": 344679
+    },
+    {
+     "period": "first projection",
+     "level1": "Lualaba",
+     "area": "Kolwezi",
+     "encoding": "C",
+     "all": 344679
+    }
+   ]
+  },
+  {
+   "analysis": "Sep 2024",
+   "country": "COD",
+   "counts": {
+    "C": 6
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Kinshasa",
+     "area": "Makala",
+     "encoding": "C",
+     "all": 570852
+    },
+    {
+     "period": "first projection",
+     "level1": "Kinshasa",
+     "area": "Makala",
+     "encoding": "C",
+     "all": 570852
+    },
+    {
+     "period": "current",
+     "level1": "Kinshasa",
+     "area": "Maluku",
+     "encoding": "C",
+     "all": 456088
+    },
+    {
+     "period": "first projection",
+     "level1": "Kinshasa",
+     "area": "Maluku",
+     "encoding": "C",
+     "all": 456088
+    },
+    {
+     "period": "current",
+     "level1": "Kinshasa",
+     "area": "Gombe",
+     "encoding": "C",
+     "all": 165407
+    },
+    {
+     "period": "first projection",
+     "level1": "Kinshasa",
+     "area": "Gombe",
+     "encoding": "C",
+     "all": 165407
+    }
+   ]
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "COD",
+   "counts": {
+    "C": 3
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "first projection",
+     "level1": "Kinshasa",
+     "area": "Gombe",
+     "encoding": "C",
+     "all": 165407
+    },
+    {
+     "period": "first projection",
+     "level1": "Kinshasa",
+     "area": "Makala",
+     "encoding": "C",
+     "all": 570852
+    },
+    {
+     "period": "first projection",
+     "level1": "Kinshasa",
+     "area": "Maluku",
+     "encoding": "C",
+     "all": 456088
+    }
+   ]
+  },
+  {
+   "analysis": "Apr 2026",
+   "country": "COD",
+   "counts": {
+    "C": 1
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "first projection",
+     "level1": "Kongo Central",
+     "area": "Boma",
+     "encoding": "C",
+     "all": 341123
+    }
+   ]
+  },
+  {
+   "analysis": "May 2021",
+   "country": "ETH",
+   "counts": {
+    "C": 34,
+    "B": 2
+   },
+   "mixed": true,
+   "rows": [
+    {
+     "period": "first projection",
+     "level1": "Tigray",
+     "area": "Southern",
+     "encoding": "C",
+     "all": 770447
+    },
+    {
+     "period": "first projection",
+     "level1": "SNNP",
+     "area": "Gofa",
+     "encoding": "C",
+     "all": 550195
+    },
+    {
+     "period": "first projection",
+     "level1": "SNNP",
+     "area": "Gedeo",
+     "encoding": "C",
+     "all": 922118
+    },
+    {
+     "period": "first projection",
+     "level1": "SNNP",
+     "area": "Dawuro",
+     "encoding": "C",
+     "all": 595843
+    },
+    {
+     "period": "first projection",
+     "level1": "SNNP",
+     "area": "South omo",
+     "encoding": "C",
+     "all": 699205
+    },
+    {
+     "period": "first projection",
+     "level1": "SNNP",
+     "area": "Segen",
+     "encoding": "C",
+     "all": 874033
+    },
+    {
+     "period": "first projection",
+     "level1": "SNNP",
+     "area": "Wolayita",
+     "encoding": "C",
+     "all": 1611273
+    },
+    {
+     "period": "first projection",
+     "level1": "SNNP",
+     "area": "Gamo",
+     "encoding": "C",
+     "all": 1331998
+    },
+    {
+     "period": "first projection",
+     "level1": "SNNP",
+     "area": "Kembata Tembaro",
+     "encoding": "C",
+     "all": 717704
+    },
+    {
+     "period": "first projection",
+     "level1": "Oromia",
+     "area": "Bale",
+     "encoding": "C",
+     "all": 1656072
+    },
+    {
+     "period": "first projection",
+     "level1": "Oromia",
+     "area": "Arsi",
+     "encoding": "C",
+     "all": 3227606
+    },
+    {
+     "period": "first projection",
+     "level1": "Oromia",
+     "area": "Guji",
+     "encoding": "C",
+     "all": 1321406
+    },
+    {
+     "period": "first projection",
+     "level1": "Oromia",
+     "area": "West guji",
+     "encoding": "C",
+     "all": 1152361
+    },
+    {
+     "period": "first projection",
+     "level1": "Oromia",
+     "area": "East shewa",
+     "encoding": "C",
+     "all": 1396535
+    },
+    {
+     "period": "first projection",
+     "level1": "Oromia",
+     "area": "Borena",
+     "encoding": "C",
+     "all": 499899
+    },
+    {
+     "period": "first projection",
+     "level1": "Oromia",
+     "area": "West arsi",
+     "encoding": "C",
+     "all": 2406569
+    },
+    {
+     "period": "first projection",
+     "level1": "Somali",
+     "area": "Liban",
+     "encoding": "C",
+     "all": 463221
+    },
+    {
+     "period": "first projection",
+     "level1": "Somali",
+     "area": "Afder",
+     "encoding": "C",
+     "all": 603209
+    },
+    {
+     "period": "first projection",
+     "level1": "Somali",
+     "area": "Erer",
+     "encoding": "C",
+     "all": 247703
+    },
+    {
+     "period": "first projection",
+     "level1": "Somali",
+     "area": "Korahe",
+     "encoding": "C",
+     "all": 438074
+    },
+    {
+     "period": "first projection",
+     "level1": "Somali",
+     "area": "Siti",
+     "encoding": "C",
+     "all": 593431
+    },
+    {
+     "period": "first projection",
+     "level1": "Somali",
+     "area": "Shabelle",
+     "encoding": "C",
+     "all": 541636
+    },
+    {
+     "period": "first projection",
+     "level1": "Somali",
+     "area": "Nogob",
+     "encoding": "C",
+     "all": 200097
+    },
+    {
+     "period": "first projection",
+     "level1": "Somali",
+     "area": "Jarar",
+     "encoding": "C",
+     "all": 558048
+    },
+    {
+     "period": "first projection",
+     "level1": "Somali",
+     "area": "Daawa",
+     "encoding": "C",
+     "all": 421095
+    },
+    {
+     "period": "first projection",
+     "level1": "Somali",
+     "area": "Fafan",
+     "encoding": "C",
+     "all": 989244
+    },
+    {
+     "period": "first projection",
+     "level1": "Somali",
+     "area": "Doolo",
+     "encoding": "C",
+     "all": 392257
+    },
+    {
+     "period": "first projection",
+     "level1": "Amhara",
+     "area": "South wello",
+     "encoding": "C",
+     "all": 2754785
+    },
+    {
+     "period": "first projection",
+     "level1": "Amhara",
+     "area": "North shewa",
+     "encoding": "C",
+     "all": 1934569
+    },
+    {
+     "period": "first projection",
+     "level1": "Amhara",
+     "area": "North wello",
+     "encoding": "C",
+     "all": 1495707
+    },
+    {
+     "period": "first projection",
+     "level1": "Sidama",
+     "area": "Sidama",
+     "encoding": "C",
+     "all": 3607577
+    },
+    {
+     "period": "first projection",
+     "level1": "Afar",
+     "area": "Zone 4 (fantana rasu)",
+     "encoding": "B",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Afar",
+     "area": "Zone 1 (awsi rasu)",
+     "encoding": "C",
+     "all": 490664
+    },
+    {
+     "period": "first projection",
+     "level1": "Afar",
+     "area": "Zone 2 (kilbet rasu)",
+     "encoding": "B",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Afar",
+     "area": "Zone 5 (hari rasu)",
+     "encoding": "C",
+     "all": 190303
+    },
+    {
+     "period": "first projection",
+     "level1": "Afar",
+     "area": "Zone 3 (gabi rasu)",
+     "encoding": "C",
+     "all": 189681
+    }
+   ]
+  },
+  {
+   "analysis": "Jan 2023",
+   "country": "KEN",
+   "counts": {
+    "C": 10
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Non-ASAL (Diaspora)",
+     "area": "Kiambu",
+     "encoding": "C",
+     "all": 141599
+    },
+    {
+     "period": "first projection",
+     "level1": "Non-ASAL (Diaspora)",
+     "area": "Kiambu",
+     "encoding": "C",
+     "all": 141599
+    },
+    {
+     "period": "current",
+     "level1": "Non-ASAL (Diaspora)",
+     "area": "Migori",
+     "encoding": "C",
+     "all": 1234082
+    },
+    {
+     "period": "first projection",
+     "level1": "Non-ASAL (Diaspora)",
+     "area": "Migori",
+     "encoding": "C",
+     "all": 1234082
+    },
+    {
+     "period": "current",
+     "level1": "Non-ASAL (Diaspora)",
+     "area": "Homabay",
+     "encoding": "C",
+     "all": 1231659
+    },
+    {
+     "period": "first projection",
+     "level1": "Non-ASAL (Diaspora)",
+     "area": "Homabay",
+     "encoding": "C",
+     "all": 1231659
+    },
+    {
+     "period": "current",
+     "level1": "Non-ASAL (Diaspora)",
+     "area": "Elgeyo-Marakwet",
+     "encoding": "C",
+     "all": 495239
+    },
+    {
+     "period": "first projection",
+     "level1": "Non-ASAL (Diaspora)",
+     "area": "Elgeyo-Marakwet",
+     "encoding": "C",
+     "all": 495239
+    },
+    {
+     "period": "current",
+     "level1": "Non-ASAL (Diaspora)",
+     "area": "Machakos",
+     "encoding": "C",
+     "all": 550683
+    },
+    {
+     "period": "first projection",
+     "level1": "Non-ASAL (Diaspora)",
+     "area": "Machakos",
+     "encoding": "C",
+     "all": 550683
+    }
+   ]
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "LBN",
+   "counts": {
+    "A": 6
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Marjaayoun",
+     "area": "Marjaayoun Refugees",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Marjaayoun",
+     "area": "Marjaayoun Refugees",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Bent jbell",
+     "area": "Bent jbell Refugees",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Bent jbell",
+     "area": "Bent jbell Refugees",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sour",
+     "area": "Sour Refugees",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sour",
+     "area": "Sour Refugees",
+     "encoding": "A",
+     "all": 0
+    }
+   ]
+  },
+  {
+   "analysis": "Apr 2022",
+   "country": "MDG",
+   "counts": {
+    "C": 6
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Vatovavy Fitovinany",
+     "area": "Ikongo",
+     "encoding": "C",
+     "all": 225021
+    },
+    {
+     "period": "first projection",
+     "level1": "Vatovavy Fitovinany",
+     "area": "Ikongo",
+     "encoding": "C",
+     "all": 225021
+    },
+    {
+     "period": "second projection",
+     "level1": "Vatovavy Fitovinany",
+     "area": "Ikongo",
+     "encoding": "C",
+     "all": 225021
+    },
+    {
+     "period": "current",
+     "level1": "Atsimo Atsinanana",
+     "area": "Midongy-atsimo",
+     "encoding": "C",
+     "all": 54980
+    },
+    {
+     "period": "first projection",
+     "level1": "Atsimo Atsinanana",
+     "area": "Midongy-atsimo",
+     "encoding": "C",
+     "all": 54980
+    },
+    {
+     "period": "second projection",
+     "level1": "Atsimo Atsinanana",
+     "area": "Midongy-atsimo",
+     "encoding": "C",
+     "all": 54980
+    }
+   ]
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "MOZ",
+   "counts": {
+    "A": 9
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Nampula",
+     "area": "Nampula",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Cabo Delgado",
+     "area": "Nangade",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Cabo Delgado",
+     "area": "Ibo",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Cabo Delgado",
+     "area": "Macomia",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Cabo Delgado",
+     "area": "Palma",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Cabo Delgado",
+     "area": "Mocimboa da praia",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Cabo Delgado",
+     "area": "Quissanga",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Cabo Delgado",
+     "area": "Muidumbe",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Cabo Delgado",
+     "area": "Meluco",
+     "encoding": "A",
+     "all": 0
+    }
+   ]
+  },
+  {
+   "analysis": "Apr 2023",
+   "country": "PAK",
+   "counts": {
+    "A": 111,
+    "C": 1
+   },
+   "mixed": true,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Sindh",
+     "area": "Korangi karachi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sindh",
+     "area": "Korangi karachi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sindh",
+     "area": "Central karachi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sindh",
+     "area": "Central karachi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sindh",
+     "area": "East karachi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sindh",
+     "area": "East karachi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sindh",
+     "area": "Ghotki",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sindh",
+     "area": "Ghotki",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sindh",
+     "area": "Hyderabad",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sindh",
+     "area": "Hyderabad",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sindh",
+     "area": "Kashmore",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sindh",
+     "area": "Kashmore",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sindh",
+     "area": "Malir karachi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sindh",
+     "area": "Malir karachi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sindh",
+     "area": "Shikarpur",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sindh",
+     "area": "Shikarpur",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sindh",
+     "area": "South karachi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sindh",
+     "area": "South karachi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sindh",
+     "area": "Sujawal",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sindh",
+     "area": "Sujawal",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sindh",
+     "area": "Tando allahyar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sindh",
+     "area": "Tando allahyar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sindh",
+     "area": "Tando muhammad khan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sindh",
+     "area": "Tando muhammad khan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sindh",
+     "area": "West karachi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sindh",
+     "area": "West karachi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Kurram",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Kurram",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Abbottabad",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Abbottabad",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Bajaur",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Bajaur",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Bannu",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Bannu",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Batagram",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Batagram",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Buner",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Buner",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Chitral lower",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Chitral lower",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Hangu",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Hangu",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Haripur",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Haripur",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Karak",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Karak",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Khyber",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Khyber",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Kohat",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Kohat",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Kohistan upper",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Kohistan upper",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Kolai palas kohistan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Kolai palas kohistan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Lakki marwat",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Lakki marwat",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Lower dir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Lower dir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Mansehra",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Mansehra",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Mardan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Mardan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Mohmand",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Mohmand",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "North waziristan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "North waziristan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Orakzai",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Orakzai",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Peshawar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Peshawar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Shangla",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Shangla",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "South waziristan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "South waziristan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Swabi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Swabi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Tor ghar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Khyber Pakhtunkhwa",
+     "area": "Tor ghar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Awaran",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Awaran",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Barkhan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Barkhan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Chaman",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Chaman",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Dera bugti",
+     "encoding": "C",
+     "all": 1579487
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Dera bugti",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Duki",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Duki",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Gwadar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Gwadar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Harnai",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Harnai",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Kech",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Kech",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Kohlu",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Kohlu",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Lehri",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Lehri",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Musakhel",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Musakhel",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Shaheed sikandarabad",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Shaheed sikandarabad",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Sherani",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Sherani",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Sibi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Sibi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Sohbatpur",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Sohbatpur",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Zhob",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Zhob",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Balochistan",
+     "area": "Ziarat",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Balochistan",
+     "area": "Ziarat",
+     "encoding": "A",
+     "all": 0
+    }
+   ]
+  },
+  {
+   "analysis": "Dec 2023",
+   "country": "PSE",
+   "counts": {
+    "A": 2
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "",
+     "area": "West bank",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "",
+     "area": "West bank",
+     "encoding": "A",
+     "all": 0
+    }
+   ]
+  },
+  {
+   "analysis": "Feb 2024",
+   "country": "PSE",
+   "counts": {
+    "A": 2
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "",
+     "area": "West bank",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "",
+     "area": "West bank",
+     "encoding": "A",
+     "all": 0
+    }
+   ]
+  },
+  {
+   "analysis": "May 2024",
+   "country": "PSE",
+   "counts": {
+    "A": 2
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "",
+     "area": "West bank",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "",
+     "area": "West bank",
+     "encoding": "A",
+     "all": 0
+    }
+   ]
+  },
+  {
+   "analysis": "Jul 2025",
+   "country": "PSE",
+   "counts": {
+    "C": 4
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "",
+     "area": "Rafah",
+     "encoding": "C",
+     "all": 30000
+    },
+    {
+     "period": "first projection",
+     "level1": "",
+     "area": "Rafah",
+     "encoding": "C",
+     "all": 30000
+    },
+    {
+     "period": "current",
+     "level1": "",
+     "area": "North Gaza",
+     "encoding": "C",
+     "all": 121500
+    },
+    {
+     "period": "first projection",
+     "level1": "",
+     "area": "North Gaza",
+     "encoding": "C",
+     "all": 121500
+    }
+   ]
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "SDN",
+   "counts": {
+    "C": 6,
+    "B": 3
+   },
+   "mixed": true,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "North Darfur",
+     "area": "At tina",
+     "encoding": "C",
+     "all": 41920
+    },
+    {
+     "period": "first projection",
+     "level1": "North Darfur",
+     "area": "At tina",
+     "encoding": "C",
+     "all": 193581
+    },
+    {
+     "period": "second projection",
+     "level1": "North Darfur",
+     "area": "At tina",
+     "encoding": "C",
+     "all": 193581
+    },
+    {
+     "period": "current",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "C",
+     "all": 103450
+    },
+    {
+     "period": "first projection",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "C",
+     "all": 103450
+    },
+    {
+     "period": "second projection",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "C",
+     "all": 103450
+    },
+    {
+     "period": "current",
+     "level1": "White Nile",
+     "area": "Kosti",
+     "encoding": "B",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "White Nile",
+     "area": "Kosti",
+     "encoding": "B",
+     "all": 0
+    },
+    {
+     "period": "second projection",
+     "level1": "White Nile",
+     "area": "Kosti",
+     "encoding": "B",
+     "all": 0
+    }
+   ]
+  },
+  {
+   "analysis": "May 2022",
+   "country": "SDN",
+   "counts": {
+    "C": 6,
+    "B": 3
+   },
+   "mixed": true,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "North Darfur",
+     "area": "At tina",
+     "encoding": "C",
+     "all": 41920
+    },
+    {
+     "period": "first projection",
+     "level1": "North Darfur",
+     "area": "At tina",
+     "encoding": "C",
+     "all": 41920
+    },
+    {
+     "period": "second projection",
+     "level1": "North Darfur",
+     "area": "At tina",
+     "encoding": "C",
+     "all": 41920
+    },
+    {
+     "period": "current",
+     "level1": "White Nile",
+     "area": "Kosti",
+     "encoding": "B",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "White Nile",
+     "area": "Kosti",
+     "encoding": "B",
+     "all": 0
+    },
+    {
+     "period": "second projection",
+     "level1": "White Nile",
+     "area": "Kosti",
+     "encoding": "B",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "C",
+     "all": 103450
+    },
+    {
+     "period": "first projection",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "C",
+     "all": 103450
+    },
+    {
+     "period": "second projection",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "C",
+     "all": 103450
+    }
+   ]
+  },
+  {
+   "analysis": "Jun 2023",
+   "country": "SDN",
+   "counts": {
+    "C": 3
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "C",
+     "all": 103450
+    },
+    {
+     "period": "first projection",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "C",
+     "all": 103450
+    },
+    {
+     "period": "second projection",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "C",
+     "all": 103450
+    }
+   ]
+  },
+  {
+   "analysis": "Oct 2023",
+   "country": "SDN",
+   "counts": {
+    "C": 1
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "second projection",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "C",
+     "all": 103450
+    }
+   ]
+  },
+  {
+   "analysis": "Apr 2024",
+   "country": "SDN",
+   "counts": {
+    "C": 3
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "C",
+     "all": 103450
+    },
+    {
+     "period": "first projection",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "C",
+     "all": 103450
+    },
+    {
+     "period": "second projection",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "C",
+     "all": 103450
+    }
+   ]
+  },
+  {
+   "analysis": "Oct 2024",
+   "country": "SDN",
+   "counts": {
+    "A": 1,
+    "C": 1
+   },
+   "mixed": true,
+   "rows": [
+    {
+     "period": "first projection",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "second projection",
+     "level1": "Abyei PCA",
+     "area": "Abyei pca area",
+     "encoding": "C",
+     "all": 103450
+    }
+   ]
+  },
+  {
+   "analysis": "Jan 2026",
+   "country": "SDN",
+   "counts": {
+    "C": 278,
+    "A": 3
+   },
+   "mixed": true,
+   "rows": [
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Al Burgaig",
+     "encoding": "C",
+     "all": 184511
+    },
+    {
+     "period": "second projection",
+     "level1": "Northern",
+     "area": "Al Burgaig",
+     "encoding": "C",
+     "all": 184511
+    },
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Al Golid",
+     "encoding": "C",
+     "all": 178036
+    },
+    {
+     "period": "second projection",
+     "level1": "Northern",
+     "area": "Al Golid",
+     "encoding": "C",
+     "all": 178036
+    },
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Merwoe",
+     "encoding": "C",
+     "all": 332559
+    },
+    {
+     "period": "second projection",
+     "level1": "Northern",
+     "area": "Merwoe",
+     "encoding": "C",
+     "all": 332559
+    },
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Ad Dabbah",
+     "encoding": "C",
+     "all": 333861
+    },
+    {
+     "period": "second projection",
+     "level1": "Northern",
+     "area": "Ad Dabbah",
+     "encoding": "C",
+     "all": 333861
+    },
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Delgo",
+     "encoding": "C",
+     "all": 94047
+    },
+    {
+     "period": "second projection",
+     "level1": "Northern",
+     "area": "Delgo",
+     "encoding": "C",
+     "all": 94047
+    },
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Dongola",
+     "encoding": "C",
+     "all": 310091
+    },
+    {
+     "period": "second projection",
+     "level1": "Northern",
+     "area": "Dongola",
+     "encoding": "C",
+     "all": 310091
+    },
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Halfa",
+     "encoding": "C",
+     "all": 96635
+    },
+    {
+     "period": "second projection",
+     "level1": "Northern",
+     "area": "Halfa",
+     "encoding": "C",
+     "all": 96635
+    },
+    {
+     "period": "first projection",
+     "level1": "Gedaref",
+     "area": "Al Butanah",
+     "encoding": "C",
+     "all": 146364
+    },
+    {
+     "period": "second projection",
+     "level1": "Gedaref",
+     "area": "Al Butanah",
+     "encoding": "C",
+     "all": 146364
+    },
+    {
+     "period": "first projection",
+     "level1": "Gedaref",
+     "area": "Al Fao",
+     "encoding": "C",
+     "all": 378335
+    },
+    {
+     "period": "second projection",
+     "level1": "Gedaref",
+     "area": "Al Fao",
+     "encoding": "C",
+     "all": 378335
+    },
+    {
+     "period": "first projection",
+     "level1": "Gedaref",
+     "area": "Al Fashaga",
+     "encoding": "C",
+     "all": 61588
+    },
+    {
+     "period": "second projection",
+     "level1": "Gedaref",
+     "area": "Al Fashaga",
+     "encoding": "C",
+     "all": 61588
+    },
+    {
+     "period": "first projection",
+     "level1": "Gedaref",
+     "area": "Al Galabat Al Gharbyah - Kassab",
+     "encoding": "C",
+     "all": 221891
+    },
+    {
+     "period": "second projection",
+     "level1": "Gedaref",
+     "area": "Al Galabat Al Gharbyah - Kassab",
+     "encoding": "C",
+     "all": 221891
+    },
+    {
+     "period": "first projection",
+     "level1": "Gedaref",
+     "area": "Al Mafaza",
+     "encoding": "C",
+     "all": 132677
+    },
+    {
+     "period": "second projection",
+     "level1": "Gedaref",
+     "area": "Al Mafaza",
+     "encoding": "C",
+     "all": 132677
+    },
+    {
+     "period": "first projection",
+     "level1": "Gedaref",
+     "area": "Al Qureisha",
+     "encoding": "C",
+     "all": 175991
+    },
+    {
+     "period": "second projection",
+     "level1": "Gedaref",
+     "area": "Al Qureisha",
+     "encoding": "C",
+     "all": 175991
+    },
+    {
+     "period": "first projection",
+     "level1": "Gedaref",
+     "area": "Ar Rahad - GD",
+     "encoding": "C",
+     "all": 305024
+    },
+    {
+     "period": "second projection",
+     "level1": "Gedaref",
+     "area": "Ar Rahad - GD",
+     "encoding": "C",
+     "all": 305024
+    },
+    {
+     "period": "first projection",
+     "level1": "Gedaref",
+     "area": "Basundah",
+     "encoding": "C",
+     "all": 126648
+    },
+    {
+     "period": "second projection",
+     "level1": "Gedaref",
+     "area": "Basundah",
+     "encoding": "C",
+     "all": 126648
+    },
+    {
+     "period": "first projection",
+     "level1": "Gedaref",
+     "area": "Madeinat Al Gedaref",
+     "encoding": "C",
+     "all": 754344
+    },
+    {
+     "period": "second projection",
+     "level1": "Gedaref",
+     "area": "Madeinat Al Gedaref",
+     "encoding": "C",
+     "all": 754344
+    },
+    {
+     "period": "first projection",
+     "level1": "Gedaref",
+     "area": "Gala'a Al Nahal",
+     "encoding": "C",
+     "all": 199916
+    },
+    {
+     "period": "second projection",
+     "level1": "Gedaref",
+     "area": "Gala'a Al Nahal",
+     "encoding": "C",
+     "all": 199916
+    },
+    {
+     "period": "first projection",
+     "level1": "Gedaref",
+     "area": "Galabat Ash-Shargiah",
+     "encoding": "C",
+     "all": 266159
+    },
+    {
+     "period": "second projection",
+     "level1": "Gedaref",
+     "area": "Galabat Ash-Shargiah",
+     "encoding": "C",
+     "all": 266159
+    },
+    {
+     "period": "first projection",
+     "level1": "Gedaref",
+     "area": "Wasat Al Gedaref",
+     "encoding": "C",
+     "all": 232315
+    },
+    {
+     "period": "second projection",
+     "level1": "Gedaref",
+     "area": "Wasat Al Gedaref",
+     "encoding": "C",
+     "all": 232315
+    },
+    {
+     "period": "first projection",
+     "level1": "West Kordofan",
+     "area": "Al Dibab",
+     "encoding": "C",
+     "all": 120326
+    },
+    {
+     "period": "second projection",
+     "level1": "West Kordofan",
+     "area": "Al Dibab",
+     "encoding": "C",
+     "all": 120326
+    },
+    {
+     "period": "first projection",
+     "level1": "West Kordofan",
+     "area": "Al Meiram",
+     "encoding": "C",
+     "all": 81486
+    },
+    {
+     "period": "second projection",
+     "level1": "West Kordofan",
+     "area": "Al Meiram",
+     "encoding": "C",
+     "all": 81486
+    },
+    {
+     "period": "first projection",
+     "level1": "West Kordofan",
+     "area": "An Nuhud",
+     "encoding": "C",
+     "all": 403069
+    },
+    {
+     "period": "second projection",
+     "level1": "West Kordofan",
+     "area": "An Nuhud",
+     "encoding": "C",
+     "all": 403069
+    },
+    {
+     "period": "first projection",
+     "level1": "West Kordofan",
+     "area": "As Salam - WK",
+     "encoding": "C",
+     "all": 229673
+    },
+    {
+     "period": "second projection",
+     "level1": "West Kordofan",
+     "area": "As Salam - WK",
+     "encoding": "C",
+     "all": 229673
+    },
+    {
+     "period": "first projection",
+     "level1": "West Kordofan",
+     "area": "Babanusa",
+     "encoding": "C",
+     "all": 72364
+    },
+    {
+     "period": "second projection",
+     "level1": "West Kordofan",
+     "area": "Babanusa",
+     "encoding": "C",
+     "all": 72364
+    },
+    {
+     "period": "first projection",
+     "level1": "West Kordofan",
+     "area": "Keilak",
+     "encoding": "C",
+     "all": 124783
+    },
+    {
+     "period": "second projection",
+     "level1": "West Kordofan",
+     "area": "Keilak",
+     "encoding": "C",
+     "all": 124783
+    },
+    {
+     "period": "first projection",
+     "level1": "West Kordofan",
+     "area": "Abyei",
+     "encoding": "C",
+     "all": 28103
+    },
+    {
+     "period": "second projection",
+     "level1": "West Kordofan",
+     "area": "Abyei",
+     "encoding": "C",
+     "all": 28103
+    },
+    {
+     "period": "first projection",
+     "level1": "West Kordofan",
+     "area": "Ghubaish",
+     "encoding": "C",
+     "all": 245460
+    },
+    {
+     "period": "second projection",
+     "level1": "West Kordofan",
+     "area": "Ghubaish",
+     "encoding": "C",
+     "all": 245460
+    },
+    {
+     "period": "first projection",
+     "level1": "West Kordofan",
+     "area": "Wad Bandah",
+     "encoding": "C",
+     "all": 235502
+    },
+    {
+     "period": "second projection",
+     "level1": "West Kordofan",
+     "area": "Wad Bandah",
+     "encoding": "C",
+     "all": 235502
+    },
+    {
+     "period": "first projection",
+     "level1": "East Darfur",
+     "area": "Assalaya",
+     "encoding": "C",
+     "all": 269813
+    },
+    {
+     "period": "second projection",
+     "level1": "East Darfur",
+     "area": "Assalaya",
+     "encoding": "C",
+     "all": 269813
+    },
+    {
+     "period": "first projection",
+     "level1": "East Darfur",
+     "area": "Bahr Al Arab",
+     "encoding": "C",
+     "all": 387683
+    },
+    {
+     "period": "second projection",
+     "level1": "East Darfur",
+     "area": "Bahr Al Arab",
+     "encoding": "C",
+     "all": 387683
+    },
+    {
+     "period": "first projection",
+     "level1": "East Darfur",
+     "area": "Shia'ria",
+     "encoding": "C",
+     "all": 340898
+    },
+    {
+     "period": "second projection",
+     "level1": "East Darfur",
+     "area": "Shia'ria",
+     "encoding": "C",
+     "all": 340898
+    },
+    {
+     "period": "first projection",
+     "level1": "East Darfur",
+     "area": "Yassin",
+     "encoding": "C",
+     "all": 188179
+    },
+    {
+     "period": "second projection",
+     "level1": "East Darfur",
+     "area": "Yassin",
+     "encoding": "C",
+     "all": 188179
+    },
+    {
+     "period": "first projection",
+     "level1": "East Darfur",
+     "area": "Abu Jabrah",
+     "encoding": "C",
+     "all": 190533
+    },
+    {
+     "period": "second projection",
+     "level1": "East Darfur",
+     "area": "Abu Jabrah",
+     "encoding": "C",
+     "all": 190533
+    },
+    {
+     "period": "first projection",
+     "level1": "Red Sea",
+     "area": "Al Ganab",
+     "encoding": "C",
+     "all": 152747
+    },
+    {
+     "period": "second projection",
+     "level1": "Red Sea",
+     "area": "Al Ganab",
+     "encoding": "C",
+     "all": 152747
+    },
+    {
+     "period": "first projection",
+     "level1": "Red Sea",
+     "area": "Jubayt Elma'aadin",
+     "encoding": "C",
+     "all": 127517
+    },
+    {
+     "period": "second projection",
+     "level1": "Red Sea",
+     "area": "Jubayt Elma'aadin",
+     "encoding": "C",
+     "all": 127517
+    },
+    {
+     "period": "first projection",
+     "level1": "Red Sea",
+     "area": "Sawakin",
+     "encoding": "C",
+     "all": 110003
+    },
+    {
+     "period": "second projection",
+     "level1": "Red Sea",
+     "area": "Sawakin",
+     "encoding": "C",
+     "all": 110003
+    },
+    {
+     "period": "first projection",
+     "level1": "Red Sea",
+     "area": "Sinkat",
+     "encoding": "C",
+     "all": 238089
+    },
+    {
+     "period": "second projection",
+     "level1": "Red Sea",
+     "area": "Sinkat",
+     "encoding": "C",
+     "all": 238089
+    },
+    {
+     "period": "first projection",
+     "level1": "Red Sea",
+     "area": "Agig",
+     "encoding": "C",
+     "all": 102673
+    },
+    {
+     "period": "second projection",
+     "level1": "Red Sea",
+     "area": "Agig",
+     "encoding": "C",
+     "all": 102673
+    },
+    {
+     "period": "first projection",
+     "level1": "Red Sea",
+     "area": "Dordieb",
+     "encoding": "C",
+     "all": 77706
+    },
+    {
+     "period": "second projection",
+     "level1": "Red Sea",
+     "area": "Dordieb",
+     "encoding": "C",
+     "all": 77706
+    },
+    {
+     "period": "first projection",
+     "level1": "Red Sea",
+     "area": "Hala'ib",
+     "encoding": "C",
+     "all": 33932
+    },
+    {
+     "period": "second projection",
+     "level1": "Red Sea",
+     "area": "Hala'ib",
+     "encoding": "C",
+     "all": 33932
+    },
+    {
+     "period": "first projection",
+     "level1": "Red Sea",
+     "area": "Haya",
+     "encoding": "C",
+     "all": 354374
+    },
+    {
+     "period": "second projection",
+     "level1": "Red Sea",
+     "area": "Haya",
+     "encoding": "C",
+     "all": 354374
+    },
+    {
+     "period": "first projection",
+     "level1": "Red Sea",
+     "area": "Port Sudan",
+     "encoding": "C",
+     "all": 497705
+    },
+    {
+     "period": "second projection",
+     "level1": "Red Sea",
+     "area": "Port Sudan",
+     "encoding": "C",
+     "all": 497705
+    },
+    {
+     "period": "first projection",
+     "level1": "Red Sea",
+     "area": "Tawkar",
+     "encoding": "C",
+     "all": 217748
+    },
+    {
+     "period": "second projection",
+     "level1": "Red Sea",
+     "area": "Tawkar",
+     "encoding": "C",
+     "all": 217748
+    },
+    {
+     "period": "first projection",
+     "level1": "White Nile",
+     "area": "Al Gitaina",
+     "encoding": "C",
+     "all": 331244
+    },
+    {
+     "period": "second projection",
+     "level1": "White Nile",
+     "area": "Al Gitaina",
+     "encoding": "C",
+     "all": 331244
+    },
+    {
+     "period": "first projection",
+     "level1": "White Nile",
+     "area": "As Salam / Ar Rawat",
+     "encoding": "C",
+     "all": 375642
+    },
+    {
+     "period": "second projection",
+     "level1": "White Nile",
+     "area": "As Salam / Ar Rawat",
+     "encoding": "C",
+     "all": 375642
+    },
+    {
+     "period": "first projection",
+     "level1": "White Nile",
+     "area": "Kosti",
+     "encoding": "C",
+     "all": 556964
+    },
+    {
+     "period": "second projection",
+     "level1": "White Nile",
+     "area": "Kosti",
+     "encoding": "C",
+     "all": 556964
+    },
+    {
+     "period": "first projection",
+     "level1": "White Nile",
+     "area": "Ad Diwaim",
+     "encoding": "C",
+     "all": 548021
+    },
+    {
+     "period": "second projection",
+     "level1": "White Nile",
+     "area": "Ad Diwaim",
+     "encoding": "C",
+     "all": 548021
+    },
+    {
+     "period": "first projection",
+     "level1": "White Nile",
+     "area": "Aj Jabalain",
+     "encoding": "C",
+     "all": 490742
+    },
+    {
+     "period": "second projection",
+     "level1": "White Nile",
+     "area": "Aj Jabalain",
+     "encoding": "C",
+     "all": 490742
+    },
+    {
+     "period": "first projection",
+     "level1": "White Nile",
+     "area": "Guli",
+     "encoding": "C",
+     "all": 244115
+    },
+    {
+     "period": "second projection",
+     "level1": "White Nile",
+     "area": "Guli",
+     "encoding": "C",
+     "all": 244115
+    },
+    {
+     "period": "first projection",
+     "level1": "White Nile",
+     "area": "Rabak",
+     "encoding": "C",
+     "all": 506181
+    },
+    {
+     "period": "second projection",
+     "level1": "White Nile",
+     "area": "Rabak",
+     "encoding": "C",
+     "all": 506181
+    },
+    {
+     "period": "first projection",
+     "level1": "White Nile",
+     "area": "Tendalti",
+     "encoding": "C",
+     "all": 235425
+    },
+    {
+     "period": "second projection",
+     "level1": "White Nile",
+     "area": "Tendalti",
+     "encoding": "C",
+     "all": 235425
+    },
+    {
+     "period": "first projection",
+     "level1": "White Nile",
+     "area": "Um Rimta",
+     "encoding": "C",
+     "all": 182042
+    },
+    {
+     "period": "second projection",
+     "level1": "White Nile",
+     "area": "Um Rimta",
+     "encoding": "C",
+     "all": 182042
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jazirah State",
+     "area": "Al Hasahisa",
+     "encoding": "C",
+     "all": 941155
+    },
+    {
+     "period": "second projection",
+     "level1": "Al Jazirah State",
+     "area": "Al Hasahisa",
+     "encoding": "C",
+     "all": 941155
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jazirah State",
+     "area": "Al Kamlin",
+     "encoding": "C",
+     "all": 656239
+    },
+    {
+     "period": "second projection",
+     "level1": "Al Jazirah State",
+     "area": "Al Kamlin",
+     "encoding": "C",
+     "all": 656239
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jazirah State",
+     "area": "Al Manaqil",
+     "encoding": "C",
+     "all": 861601
+    },
+    {
+     "period": "second projection",
+     "level1": "Al Jazirah State",
+     "area": "Al Manaqil",
+     "encoding": "C",
+     "all": 861601
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jazirah State",
+     "area": "Al Qurashi",
+     "encoding": "C",
+     "all": 552503
+    },
+    {
+     "period": "second projection",
+     "level1": "Al Jazirah State",
+     "area": "Al Qurashi",
+     "encoding": "C",
+     "all": 552503
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jazirah State",
+     "area": "Janub Aj Jazirah",
+     "encoding": "C",
+     "all": 838186
+    },
+    {
+     "period": "second projection",
+     "level1": "Al Jazirah State",
+     "area": "Janub Aj Jazirah",
+     "encoding": "C",
+     "all": 838186
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jazirah State",
+     "area": "Medani Al Kubra",
+     "encoding": "C",
+     "all": 502192
+    },
+    {
+     "period": "second projection",
+     "level1": "Al Jazirah State",
+     "area": "Medani Al Kubra",
+     "encoding": "C",
+     "all": 502192
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jazirah State",
+     "area": "Sharg Aj Jazirah",
+     "encoding": "C",
+     "all": 633469
+    },
+    {
+     "period": "second projection",
+     "level1": "Al Jazirah State",
+     "area": "Sharg Aj Jazirah",
+     "encoding": "C",
+     "all": 633469
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jazirah State",
+     "area": "Um Algura",
+     "encoding": "C",
+     "all": 352203
+    },
+    {
+     "period": "second projection",
+     "level1": "Al Jazirah State",
+     "area": "Um Algura",
+     "encoding": "C",
+     "all": 352203
+    },
+    {
+     "period": "first projection",
+     "level1": "Blue Nile State",
+     "area": "Ar Rusayris",
+     "encoding": "C",
+     "all": 160131
+    },
+    {
+     "period": "second projection",
+     "level1": "Blue Nile State",
+     "area": "Ar Rusayris",
+     "encoding": "C",
+     "all": 160131
+    },
+    {
+     "period": "first projection",
+     "level1": "Blue Nile State",
+     "area": "At Tadamon - BN",
+     "encoding": "C",
+     "all": 32299
+    },
+    {
+     "period": "second projection",
+     "level1": "Blue Nile State",
+     "area": "At Tadamon - BN",
+     "encoding": "C",
+     "all": 32299
+    },
+    {
+     "period": "first projection",
+     "level1": "Blue Nile State",
+     "area": "Baw",
+     "encoding": "C",
+     "all": 147154
+    },
+    {
+     "period": "second projection",
+     "level1": "Blue Nile State",
+     "area": "Baw",
+     "encoding": "C",
+     "all": 147154
+    },
+    {
+     "period": "first projection",
+     "level1": "Blue Nile State",
+     "area": "Ed Damazine",
+     "encoding": "C",
+     "all": 316366
+    },
+    {
+     "period": "second projection",
+     "level1": "Blue Nile State",
+     "area": "Ed Damazine",
+     "encoding": "C",
+     "all": 316366
+    },
+    {
+     "period": "first projection",
+     "level1": "Blue Nile State",
+     "area": "Geisan",
+     "encoding": "C",
+     "all": 100836
+    },
+    {
+     "period": "second projection",
+     "level1": "Blue Nile State",
+     "area": "Geisan",
+     "encoding": "C",
+     "all": 100836
+    },
+    {
+     "period": "first projection",
+     "level1": "Blue Nile State",
+     "area": "Wad Al Mahi",
+     "encoding": "C",
+     "all": 67259
+    },
+    {
+     "period": "second projection",
+     "level1": "Blue Nile State",
+     "area": "Wad Al Mahi",
+     "encoding": "C",
+     "all": 67259
+    },
+    {
+     "period": "first projection",
+     "level1": "River Nile",
+     "area": "Al Matama",
+     "encoding": "C",
+     "all": 361827
+    },
+    {
+     "period": "second projection",
+     "level1": "River Nile",
+     "area": "Al Matama",
+     "encoding": "C",
+     "all": 361827
+    },
+    {
+     "period": "first projection",
+     "level1": "River Nile",
+     "area": "Atbara",
+     "encoding": "C",
+     "all": 306598
+    },
+    {
+     "period": "second projection",
+     "level1": "River Nile",
+     "area": "Atbara",
+     "encoding": "C",
+     "all": 306598
+    },
+    {
+     "period": "first projection",
+     "level1": "River Nile",
+     "area": "Barbar",
+     "encoding": "C",
+     "all": 389936
+    },
+    {
+     "period": "second projection",
+     "level1": "River Nile",
+     "area": "Barbar",
+     "encoding": "C",
+     "all": 389936
+    },
+    {
+     "period": "first projection",
+     "level1": "River Nile",
+     "area": "Shendi",
+     "encoding": "C",
+     "all": 595411
+    },
+    {
+     "period": "second projection",
+     "level1": "River Nile",
+     "area": "Shendi",
+     "encoding": "C",
+     "all": 595411
+    },
+    {
+     "period": "first projection",
+     "level1": "River Nile",
+     "area": "Ad Damar",
+     "encoding": "C",
+     "all": 552841
+    },
+    {
+     "period": "second projection",
+     "level1": "River Nile",
+     "area": "Ad Damar",
+     "encoding": "C",
+     "all": 552841
+    },
+    {
+     "period": "first projection",
+     "level1": "River Nile",
+     "area": "Al Buhaira",
+     "encoding": "C",
+     "all": 84049
+    },
+    {
+     "period": "second projection",
+     "level1": "River Nile",
+     "area": "Al Buhaira",
+     "encoding": "C",
+     "all": 84049
+    },
+    {
+     "period": "first projection",
+     "level1": "River Nile",
+     "area": "Abu Hamad",
+     "encoding": "C",
+     "all": 292137
+    },
+    {
+     "period": "second projection",
+     "level1": "River Nile",
+     "area": "Abu Hamad",
+     "encoding": "C",
+     "all": 292137
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "Al Wihda",
+     "encoding": "C",
+     "all": 57729
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "Al Wihda",
+     "encoding": "C",
+     "all": 57729
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "As Salam - SD",
+     "encoding": "C",
+     "all": 64191
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "As Salam - SD",
+     "encoding": "C",
+     "all": 64191
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "As Sunta",
+     "encoding": "C",
+     "all": 112561
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "As Sunta",
+     "encoding": "C",
+     "all": 112561
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "Buram",
+     "encoding": "C",
+     "all": 216830
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "Buram",
+     "encoding": "C",
+     "all": 216830
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "Kateila",
+     "encoding": "C",
+     "all": 148019
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "Kateila",
+     "encoding": "C",
+     "all": 148019
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "Kubum",
+     "encoding": "C",
+     "all": 183266
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "Kubum",
+     "encoding": "C",
+     "all": 183266
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "Mershing",
+     "encoding": "C",
+     "all": 89946
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "Mershing",
+     "encoding": "C",
+     "all": 89946
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "Nitega",
+     "encoding": "C",
+     "all": 137765
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "Nitega",
+     "encoding": "C",
+     "all": 137765
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "Sharg Aj Jabal",
+     "encoding": "C",
+     "all": 212441
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "Sharg Aj Jabal",
+     "encoding": "C",
+     "all": 212441
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "Shattaya",
+     "encoding": "C",
+     "all": 162520
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "Shattaya",
+     "encoding": "C",
+     "all": 162520
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "Damso",
+     "encoding": "C",
+     "all": 149829
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "Damso",
+     "encoding": "C",
+     "all": 149829
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "Ed Al Fursan",
+     "encoding": "C",
+     "all": 91495
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "Ed Al Fursan",
+     "encoding": "C",
+     "all": 91495
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "Gereida",
+     "encoding": "C",
+     "all": 282731
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "Gereida",
+     "encoding": "C",
+     "all": 282731
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "Rehaid Albirdi",
+     "encoding": "C",
+     "all": 188170
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "Rehaid Albirdi",
+     "encoding": "C",
+     "all": 188170
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "Tulus",
+     "encoding": "C",
+     "all": 332374
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "Tulus",
+     "encoding": "C",
+     "all": 332374
+    },
+    {
+     "period": "first projection",
+     "level1": "South Darfur",
+     "area": "Um Dafoug",
+     "encoding": "C",
+     "all": 55228
+    },
+    {
+     "period": "second projection",
+     "level1": "South Darfur",
+     "area": "Um Dafoug",
+     "encoding": "C",
+     "all": 55228
+    },
+    {
+     "period": "first projection",
+     "level1": "North Kordofan",
+     "area": "Ar Rahad - NK",
+     "encoding": "C",
+     "all": 283602
+    },
+    {
+     "period": "second projection",
+     "level1": "North Kordofan",
+     "area": "Ar Rahad - NK",
+     "encoding": "C",
+     "all": 283602
+    },
+    {
+     "period": "first projection",
+     "level1": "North Kordofan",
+     "area": "Bara",
+     "encoding": "C",
+     "all": 346777
+    },
+    {
+     "period": "second projection",
+     "level1": "North Kordofan",
+     "area": "Bara",
+     "encoding": "C",
+     "all": 346777
+    },
+    {
+     "period": "first projection",
+     "level1": "North Kordofan",
+     "area": "Sheikan",
+     "encoding": "C",
+     "all": 923041
+    },
+    {
+     "period": "second projection",
+     "level1": "North Kordofan",
+     "area": "Sheikan",
+     "encoding": "C",
+     "all": 923041
+    },
+    {
+     "period": "first projection",
+     "level1": "North Kordofan",
+     "area": "Soudari",
+     "encoding": "C",
+     "all": 435661
+    },
+    {
+     "period": "second projection",
+     "level1": "North Kordofan",
+     "area": "Soudari",
+     "encoding": "C",
+     "all": 435661
+    },
+    {
+     "period": "first projection",
+     "level1": "North Kordofan",
+     "area": "Gebrat Al Sheikh",
+     "encoding": "C",
+     "all": 365403
+    },
+    {
+     "period": "second projection",
+     "level1": "North Kordofan",
+     "area": "Gebrat Al Sheikh",
+     "encoding": "C",
+     "all": 365403
+    },
+    {
+     "period": "first projection",
+     "level1": "North Kordofan",
+     "area": "Gharb Bara",
+     "encoding": "C",
+     "all": 305978
+    },
+    {
+     "period": "second projection",
+     "level1": "North Kordofan",
+     "area": "Gharb Bara",
+     "encoding": "C",
+     "all": 305978
+    },
+    {
+     "period": "first projection",
+     "level1": "North Kordofan",
+     "area": "Um Dam Haj Ahmed",
+     "encoding": "C",
+     "all": 245139
+    },
+    {
+     "period": "second projection",
+     "level1": "North Kordofan",
+     "area": "Um Dam Haj Ahmed",
+     "encoding": "C",
+     "all": 245139
+    },
+    {
+     "period": "first projection",
+     "level1": "North Kordofan",
+     "area": "Um Rawaba",
+     "encoding": "C",
+     "all": 612899
+    },
+    {
+     "period": "second projection",
+     "level1": "North Kordofan",
+     "area": "Um Rawaba",
+     "encoding": "C",
+     "all": 612899
+    },
+    {
+     "period": "first projection",
+     "level1": "Sennar State",
+     "area": "As Suki",
+     "encoding": "C",
+     "all": 342012
+    },
+    {
+     "period": "second projection",
+     "level1": "Sennar State",
+     "area": "As Suki",
+     "encoding": "C",
+     "all": 342012
+    },
+    {
+     "period": "first projection",
+     "level1": "Sennar State",
+     "area": "Sennar",
+     "encoding": "C",
+     "all": 403679
+    },
+    {
+     "period": "second projection",
+     "level1": "Sennar State",
+     "area": "Sennar",
+     "encoding": "C",
+     "all": 403679
+    },
+    {
+     "period": "first projection",
+     "level1": "Sennar State",
+     "area": "Sharg Sennar",
+     "encoding": "C",
+     "all": 353549
+    },
+    {
+     "period": "second projection",
+     "level1": "Sennar State",
+     "area": "Sharg Sennar",
+     "encoding": "C",
+     "all": 353549
+    },
+    {
+     "period": "first projection",
+     "level1": "Sennar State",
+     "area": "Sinja",
+     "encoding": "C",
+     "all": 233435
+    },
+    {
+     "period": "second projection",
+     "level1": "Sennar State",
+     "area": "Sinja",
+     "encoding": "C",
+     "all": 233435
+    },
+    {
+     "period": "first projection",
+     "level1": "Sennar State",
+     "area": "Ad Dali",
+     "encoding": "C",
+     "all": 103364
+    },
+    {
+     "period": "second projection",
+     "level1": "Sennar State",
+     "area": "Ad Dali",
+     "encoding": "C",
+     "all": 103364
+    },
+    {
+     "period": "first projection",
+     "level1": "Sennar State",
+     "area": "Ad Dinder",
+     "encoding": "C",
+     "all": 319199
+    },
+    {
+     "period": "second projection",
+     "level1": "Sennar State",
+     "area": "Ad Dinder",
+     "encoding": "C",
+     "all": 319199
+    },
+    {
+     "period": "first projection",
+     "level1": "Sennar State",
+     "area": "Abu Hujar",
+     "encoding": "C",
+     "all": 191800
+    },
+    {
+     "period": "second projection",
+     "level1": "Sennar State",
+     "area": "Abu Hujar",
+     "encoding": "C",
+     "all": 191800
+    },
+    {
+     "period": "first projection",
+     "level1": "Central Darfur State",
+     "area": "Azum",
+     "encoding": "C",
+     "all": 82875
+    },
+    {
+     "period": "second projection",
+     "level1": "Central Darfur State",
+     "area": "Azum",
+     "encoding": "C",
+     "all": 82875
+    },
+    {
+     "period": "first projection",
+     "level1": "Central Darfur State",
+     "area": "Bendasi",
+     "encoding": "C",
+     "all": 67080
+    },
+    {
+     "period": "second projection",
+     "level1": "Central Darfur State",
+     "area": "Bendasi",
+     "encoding": "C",
+     "all": 67080
+    },
+    {
+     "period": "first projection",
+     "level1": "Central Darfur State",
+     "area": "Mukjar",
+     "encoding": "C",
+     "all": 45329
+    },
+    {
+     "period": "second projection",
+     "level1": "Central Darfur State",
+     "area": "Mukjar",
+     "encoding": "C",
+     "all": 45329
+    },
+    {
+     "period": "first projection",
+     "level1": "Central Darfur State",
+     "area": "Shamal Jabal Marrah",
+     "encoding": "C",
+     "all": 194886
+    },
+    {
+     "period": "second projection",
+     "level1": "Central Darfur State",
+     "area": "Shamal Jabal Marrah",
+     "encoding": "C",
+     "all": 194886
+    },
+    {
+     "period": "first projection",
+     "level1": "Central Darfur State",
+     "area": "Zalingi",
+     "encoding": "C",
+     "all": 254244
+    },
+    {
+     "period": "second projection",
+     "level1": "Central Darfur State",
+     "area": "Zalingi",
+     "encoding": "C",
+     "all": 254244
+    },
+    {
+     "period": "first projection",
+     "level1": "Central Darfur State",
+     "area": "Gharb Jabal Marrah",
+     "encoding": "C",
+     "all": 123872
+    },
+    {
+     "period": "second projection",
+     "level1": "Central Darfur State",
+     "area": "Gharb Jabal Marrah",
+     "encoding": "C",
+     "all": 123872
+    },
+    {
+     "period": "first projection",
+     "level1": "Central Darfur State",
+     "area": "Um Dukhun",
+     "encoding": "C",
+     "all": 106986
+    },
+    {
+     "period": "second projection",
+     "level1": "Central Darfur State",
+     "area": "Um Dukhun",
+     "encoding": "C",
+     "all": 106986
+    },
+    {
+     "period": "first projection",
+     "level1": "Central Darfur State",
+     "area": "Wadi Salih",
+     "encoding": "C",
+     "all": 100227
+    },
+    {
+     "period": "second projection",
+     "level1": "Central Darfur State",
+     "area": "Wadi Salih",
+     "encoding": "C",
+     "all": 100227
+    },
+    {
+     "period": "first projection",
+     "level1": "Central Darfur State",
+     "area": "Wasat Jabal Marrah",
+     "encoding": "C",
+     "all": 245126
+    },
+    {
+     "period": "second projection",
+     "level1": "Central Darfur State",
+     "area": "Wasat Jabal Marrah",
+     "encoding": "C",
+     "all": 245126
+    },
+    {
+     "period": "first projection",
+     "level1": "Khartoum",
+     "area": "Bahri",
+     "encoding": "C",
+     "all": 494075
+    },
+    {
+     "period": "second projection",
+     "level1": "Khartoum",
+     "area": "Bahri",
+     "encoding": "C",
+     "all": 494075
+    },
+    {
+     "period": "first projection",
+     "level1": "Khartoum",
+     "area": "Jebel Awlia",
+     "encoding": "C",
+     "all": 1163559
+    },
+    {
+     "period": "second projection",
+     "level1": "Khartoum",
+     "area": "Jebel Awlia",
+     "encoding": "C",
+     "all": 1163559
+    },
+    {
+     "period": "first projection",
+     "level1": "Khartoum",
+     "area": "Karrari",
+     "encoding": "C",
+     "all": 1020124
+    },
+    {
+     "period": "second projection",
+     "level1": "Khartoum",
+     "area": "Karrari",
+     "encoding": "C",
+     "all": 1020124
+    },
+    {
+     "period": "first projection",
+     "level1": "Khartoum",
+     "area": "Khartoum",
+     "encoding": "C",
+     "all": 85418
+    },
+    {
+     "period": "second projection",
+     "level1": "Khartoum",
+     "area": "Khartoum",
+     "encoding": "C",
+     "all": 85418
+    },
+    {
+     "period": "first projection",
+     "level1": "Khartoum",
+     "area": "Sharg An Neel",
+     "encoding": "C",
+     "all": 937557
+    },
+    {
+     "period": "second projection",
+     "level1": "Khartoum",
+     "area": "Sharg An Neel",
+     "encoding": "C",
+     "all": 937557
+    },
+    {
+     "period": "first projection",
+     "level1": "Khartoum",
+     "area": "Um Bada",
+     "encoding": "C",
+     "all": 1283223
+    },
+    {
+     "period": "second projection",
+     "level1": "Khartoum",
+     "area": "Um Bada",
+     "encoding": "C",
+     "all": 1283223
+    },
+    {
+     "period": "first projection",
+     "level1": "Khartoum",
+     "area": "Um Durman",
+     "encoding": "C",
+     "all": 426727
+    },
+    {
+     "period": "second projection",
+     "level1": "Khartoum",
+     "area": "Um Durman",
+     "encoding": "C",
+     "all": 426727
+    },
+    {
+     "period": "first projection",
+     "level1": "West Darfur",
+     "area": "Beida",
+     "encoding": "C",
+     "all": 2812
+    },
+    {
+     "period": "second projection",
+     "level1": "West Darfur",
+     "area": "Beida",
+     "encoding": "C",
+     "all": 2812
+    },
+    {
+     "period": "first projection",
+     "level1": "West Darfur",
+     "area": "Jebel Moon",
+     "encoding": "C",
+     "all": 56807
+    },
+    {
+     "period": "second projection",
+     "level1": "West Darfur",
+     "area": "Jebel Moon",
+     "encoding": "C",
+     "all": 56807
+    },
+    {
+     "period": "first projection",
+     "level1": "West Darfur",
+     "area": "Kereneik",
+     "encoding": "C",
+     "all": 69854
+    },
+    {
+     "period": "second projection",
+     "level1": "West Darfur",
+     "area": "Kereneik",
+     "encoding": "C",
+     "all": 69854
+    },
+    {
+     "period": "first projection",
+     "level1": "West Darfur",
+     "area": "Kulbus",
+     "encoding": "C",
+     "all": 34078
+    },
+    {
+     "period": "second projection",
+     "level1": "West Darfur",
+     "area": "Kulbus",
+     "encoding": "C",
+     "all": 34078
+    },
+    {
+     "period": "first projection",
+     "level1": "West Darfur",
+     "area": "Sirba",
+     "encoding": "C",
+     "all": 35071
+    },
+    {
+     "period": "second projection",
+     "level1": "West Darfur",
+     "area": "Sirba",
+     "encoding": "C",
+     "all": 35071
+    },
+    {
+     "period": "first projection",
+     "level1": "West Darfur",
+     "area": "Ag Geneina",
+     "encoding": "C",
+     "all": 120067
+    },
+    {
+     "period": "second projection",
+     "level1": "West Darfur",
+     "area": "Ag Geneina",
+     "encoding": "C",
+     "all": 120067
+    },
+    {
+     "period": "first projection",
+     "level1": "West Darfur",
+     "area": "Foro Baranga",
+     "encoding": "C",
+     "all": 26059
+    },
+    {
+     "period": "second projection",
+     "level1": "West Darfur",
+     "area": "Foro Baranga",
+     "encoding": "C",
+     "all": 26059
+    },
+    {
+     "period": "first projection",
+     "level1": "West Darfur",
+     "area": "Habila - WD",
+     "encoding": "C",
+     "all": 28399
+    },
+    {
+     "period": "second projection",
+     "level1": "West Darfur",
+     "area": "Habila - WD",
+     "encoding": "C",
+     "all": 28399
+    },
+    {
+     "period": "first projection",
+     "level1": "Kassala",
+     "area": "Madeinat Kassala",
+     "encoding": "C",
+     "all": 511878
+    },
+    {
+     "period": "second projection",
+     "level1": "Kassala",
+     "area": "Madeinat Kassala",
+     "encoding": "C",
+     "all": 511878
+    },
+    {
+     "period": "first projection",
+     "level1": "Kassala",
+     "area": "Reifi Nahr Atbara",
+     "encoding": "C",
+     "all": 218686
+    },
+    {
+     "period": "second projection",
+     "level1": "Kassala",
+     "area": "Reifi Nahr Atbara",
+     "encoding": "C",
+     "all": 218686
+    },
+    {
+     "period": "first projection",
+     "level1": "Kassala",
+     "area": "Reifi Shamal Ad Delta",
+     "encoding": "C",
+     "all": 52422
+    },
+    {
+     "period": "second projection",
+     "level1": "Kassala",
+     "area": "Reifi Shamal Ad Delta",
+     "encoding": "C",
+     "all": 52422
+    },
+    {
+     "period": "first projection",
+     "level1": "Kassala",
+     "area": "Reifi Telkok",
+     "encoding": "C",
+     "all": 348172
+    },
+    {
+     "period": "second projection",
+     "level1": "Kassala",
+     "area": "Reifi Telkok",
+     "encoding": "C",
+     "all": 348172
+    },
+    {
+     "period": "first projection",
+     "level1": "Kassala",
+     "area": "Reifi Wad Elhilaiw",
+     "encoding": "C",
+     "all": 242612
+    },
+    {
+     "period": "second projection",
+     "level1": "Kassala",
+     "area": "Reifi Wad Elhilaiw",
+     "encoding": "C",
+     "all": 242612
+    },
+    {
+     "period": "first projection",
+     "level1": "Kassala",
+     "area": "Halfa Aj Jadeedah",
+     "encoding": "C",
+     "all": 349032
+    },
+    {
+     "period": "second projection",
+     "level1": "Kassala",
+     "area": "Halfa Aj Jadeedah",
+     "encoding": "C",
+     "all": 349032
+    },
+    {
+     "period": "first projection",
+     "level1": "Kassala",
+     "area": "Reifi Aroma",
+     "encoding": "C",
+     "all": 153930
+    },
+    {
+     "period": "second projection",
+     "level1": "Kassala",
+     "area": "Reifi Aroma",
+     "encoding": "C",
+     "all": 153930
+    },
+    {
+     "period": "first projection",
+     "level1": "Kassala",
+     "area": "Reifi Gharb Kassala",
+     "encoding": "C",
+     "all": 123693
+    },
+    {
+     "period": "second projection",
+     "level1": "Kassala",
+     "area": "Reifi Gharb Kassala",
+     "encoding": "C",
+     "all": 123693
+    },
+    {
+     "period": "first projection",
+     "level1": "Kassala",
+     "area": "Reifi Hamashkureib",
+     "encoding": "C",
+     "all": 328510
+    },
+    {
+     "period": "second projection",
+     "level1": "Kassala",
+     "area": "Reifi Hamashkureib",
+     "encoding": "C",
+     "all": 328510
+    },
+    {
+     "period": "first projection",
+     "level1": "Kassala",
+     "area": "Reifi Kassala",
+     "encoding": "C",
+     "all": 219646
+    },
+    {
+     "period": "second projection",
+     "level1": "Kassala",
+     "area": "Reifi Kassala",
+     "encoding": "C",
+     "all": 219646
+    },
+    {
+     "period": "first projection",
+     "level1": "Kassala",
+     "area": "Reifi Khashm Elgirba",
+     "encoding": "C",
+     "all": 166396
+    },
+    {
+     "period": "second projection",
+     "level1": "Kassala",
+     "area": "Reifi Khashm Elgirba",
+     "encoding": "C",
+     "all": 166396
+    },
+    {
+     "period": "current",
+     "level1": "West Kordofan",
+     "area": "Abyei PCA",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "West Kordofan",
+     "area": "Abyei PCA",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "second projection",
+     "level1": "West Kordofan",
+     "area": "Abyei PCA",
+     "encoding": "A",
+     "all": 0
+    }
+   ]
+  },
+  {
+   "analysis": "Aug 2022",
+   "country": "SOM",
+   "counts": {
+    "B": 4,
+    "C": 8,
+    "A": 34
+   },
+   "mixed": true,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Lower Juba",
+     "area": "Badhaadhe (3)",
+     "encoding": "B",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Lower Juba",
+     "area": "Badhaadhe (3)",
+     "encoding": "B",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Lower Juba",
+     "area": "Kismaayo (4)",
+     "encoding": "B",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Lower Juba",
+     "area": "Kismaayo (4)",
+     "encoding": "B",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Bari",
+     "area": "Bandarbeyla IDPs",
+     "encoding": "C",
+     "all": 2000
+    },
+    {
+     "period": "first projection",
+     "level1": "Bari",
+     "area": "Bandarbeyla IDPs",
+     "encoding": "C",
+     "all": 2000
+    },
+    {
+     "period": "current",
+     "level1": "Bari",
+     "area": "Qardho",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Bari",
+     "area": "Qardho",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Bari",
+     "area": "Iskushuban IDPs",
+     "encoding": "C",
+     "all": 100
+    },
+    {
+     "period": "first projection",
+     "level1": "Bari",
+     "area": "Iskushuban IDPs",
+     "encoding": "C",
+     "all": 100
+    },
+    {
+     "period": "current",
+     "level1": "Lower Shabelle",
+     "area": "Sablaale (4)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Lower Shabelle",
+     "area": "Sablaale (4)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Lower Shabelle",
+     "area": "Sablaale",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Lower Shabelle",
+     "area": "Sablaale",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Lower Shabelle",
+     "area": "Sablaale (3)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Lower Shabelle",
+     "area": "Sablaale (3)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Lower Shabelle",
+     "area": "Wanla Weyn (2)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Lower Shabelle",
+     "area": "Wanla Weyn (2)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Nugaal",
+     "area": "Eyl IDPs",
+     "encoding": "C",
+     "all": 22000
+    },
+    {
+     "period": "first projection",
+     "level1": "Nugaal",
+     "area": "Eyl IDPs",
+     "encoding": "C",
+     "all": 22000
+    },
+    {
+     "period": "current",
+     "level1": "Bay",
+     "area": "Qansax Dheere (2)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Bay",
+     "area": "Qansax Dheere (2)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Bay",
+     "area": "Baydhaba (2)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Bay",
+     "area": "Baydhaba (2)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Bay",
+     "area": "Diinsoor (2)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Bay",
+     "area": "Diinsoor (2)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Gedo",
+     "area": "Luuq (2)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Gedo",
+     "area": "Luuq (2)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Gedo",
+     "area": "Luuq (3)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Gedo",
+     "area": "Luuq (3)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Middle Shabelle",
+     "area": "Jowhar (3)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Middle Shabelle",
+     "area": "Jowhar (3)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hiraan",
+     "area": "Jalalaqsi (1)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hiraan",
+     "area": "Jalalaqsi (1)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Togdheer",
+     "area": "Burco (1)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Togdheer",
+     "area": "Burco (1)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Togdheer",
+     "area": "Buuhoodle",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Togdheer",
+     "area": "Buuhoodle",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Bakool",
+     "area": "Ceel Barde",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Bakool",
+     "area": "Ceel Barde",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Bakool",
+     "area": "Xudur (2)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Bakool",
+     "area": "Xudur (2)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Awdal",
+     "area": "Zeylac (2)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Awdal",
+     "area": "Zeylac (2)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Middle Juba",
+     "area": "Jilib IDPs",
+     "encoding": "C",
+     "all": 17000
+    },
+    {
+     "period": "first projection",
+     "level1": "Middle Juba",
+     "area": "Jilib IDPs",
+     "encoding": "C",
+     "all": 17000
+    }
+   ]
+  },
+  {
+   "analysis": "Aug 2026",
+   "country": "SOM",
+   "counts": {
+    "A": 2
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "",
+     "area": "Middle Shabelle Rural IDPs (Jowhar)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "",
+     "area": "Middle Shabelle Rural IDPs (Jowhar)",
+     "encoding": "A",
+     "all": 0
+    }
+   ]
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "SSD",
+   "counts": {
+    "A": 1,
+    "C": 1
+   },
+   "mixed": true,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Warrap",
+     "area": "Abyei region",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Warrap",
+     "area": "Abyei region",
+     "encoding": "C",
+     "all": 82749
+    }
+   ]
+  },
+  {
+   "analysis": "Oct 2022",
+   "country": "SSD",
+   "counts": {
+    "C": 5,
+    "A": 1
+   },
+   "mixed": true,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Upper Nile",
+     "area": "Panyikang",
+     "encoding": "C",
+     "all": 67054
+    },
+    {
+     "period": "first projection",
+     "level1": "Upper Nile",
+     "area": "Panyikang",
+     "encoding": "C",
+     "all": 67054
+    },
+    {
+     "period": "second projection",
+     "level1": "Upper Nile",
+     "area": "Panyikang",
+     "encoding": "C",
+     "all": 67054
+    },
+    {
+     "period": "current",
+     "level1": "Warrap",
+     "area": "Abyei region",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Warrap",
+     "area": "Abyei region",
+     "encoding": "C",
+     "all": 82749
+    },
+    {
+     "period": "second projection",
+     "level1": "Warrap",
+     "area": "Abyei region",
+     "encoding": "C",
+     "all": 82749
+    }
+   ]
+  },
+  {
+   "analysis": "Sep 2024",
+   "country": "SSD",
+   "counts": {
+    "A": 3
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Warrap",
+     "area": "Abyei region",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Warrap",
+     "area": "Abyei region",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "second projection",
+     "level1": "Warrap",
+     "area": "Abyei region",
+     "encoding": "A",
+     "all": 0
+    }
+   ]
+  },
+  {
+   "analysis": "Aug 2022",
+   "country": "YEM",
+   "counts": {
+    "C": 4
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "first projection",
+     "level1": "Al Jawf",
+     "area": "Al ghayl",
+     "encoding": "C",
+     "all": 611
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Midi",
+     "encoding": "C",
+     "all": 5478
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Haradh",
+     "encoding": "C",
+     "all": 157958
+    },
+    {
+     "period": "first projection",
+     "level1": "Marib",
+     "area": "Sirwah",
+     "encoding": "C",
+     "all": 111
+    }
+   ]
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "YEM",
+   "counts": {
+    "A": 430,
+    "C": 4
+   },
+   "mixed": true,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Al jarrahi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Al jarrahi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Ad dohi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Ad dohi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Ad durayhimi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Ad durayhimi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Al hali",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Al hali",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Al hawak",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Al hawak",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Al hujjaylah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Al hujjaylah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Alluhayah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Alluhayah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Al mansuriyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Al mansuriyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Al marawi'ah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Al marawi'ah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Al mighlaf",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Al mighlaf",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Al mina",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Al mina",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Al munirah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Al munirah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Al qanawis",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Al qanawis",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "As salif",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "As salif",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "As sukhnah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "As sukhnah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "At tuhayta",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "At tuhayta",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Az zaydiah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Az zaydiah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Az zuhrah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Az zuhrah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Bajil",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Bajil",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Bayt al faqih",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Bayt al faqih",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Bura'",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Bura'",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Jabal ras",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Jabal ras",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Kamaran",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Kamaran",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Hodeidah",
+     "area": "Zabid",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hodeidah",
+     "area": "Zabid",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ma`rib",
+     "area": "Al jubah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ma`rib",
+     "area": "Al jubah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ma`rib",
+     "area": "Al abdiyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ma`rib",
+     "area": "Al abdiyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ma`rib",
+     "area": "Bidbadah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ma`rib",
+     "area": "Bidbadah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ma`rib",
+     "area": "Harib al qaramish",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ma`rib",
+     "area": "Harib al qaramish",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ma`rib",
+     "area": "Jabal murad",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ma`rib",
+     "area": "Jabal murad",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ma`rib",
+     "area": "Madghal al jid'an",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ma`rib",
+     "area": "Madghal al jid'an",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ma`rib",
+     "area": "Mahliyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ma`rib",
+     "area": "Mahliyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ma`rib",
+     "area": "Majzar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ma`rib",
+     "area": "Majzar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ma`rib",
+     "area": "Rahabah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ma`rib",
+     "area": "Rahabah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ma`rib",
+     "area": "Sirwah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ma`rib",
+     "area": "Sirwah",
+     "encoding": "C",
+     "all": 149795
+    },
+    {
+     "period": "current",
+     "level1": "Al Mahwit",
+     "area": "Al khabt",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Mahwit",
+     "area": "Al khabt",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Mahwit",
+     "area": "Al mahwit",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Mahwit",
+     "area": "Al mahwit",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Mahwit",
+     "area": "Al mahwit city",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Mahwit",
+     "area": "Al mahwit city",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Mahwit",
+     "area": "Ar rujum",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Mahwit",
+     "area": "Ar rujum",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Mahwit",
+     "area": "At tawilah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Mahwit",
+     "area": "At tawilah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Mahwit",
+     "area": "Bani sa'd",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Mahwit",
+     "area": "Bani sa'd",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Mahwit",
+     "area": "Hufash",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Mahwit",
+     "area": "Hufash",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Mahwit",
+     "area": "Melhan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Mahwit",
+     "area": "Melhan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Mahwit",
+     "area": "Shibam kawkaban",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Mahwit",
+     "area": "Shibam kawkaban",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Jawf",
+     "area": "Al khalaq",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jawf",
+     "area": "Al khalaq",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Jawf",
+     "area": "Al ghayl",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jawf",
+     "area": "Al ghayl",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Jawf",
+     "area": "Al hazm",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jawf",
+     "area": "Al hazm",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Jawf",
+     "area": "Al humaydat",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jawf",
+     "area": "Al humaydat",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Jawf",
+     "area": "Al maslub",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jawf",
+     "area": "Al maslub",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Jawf",
+     "area": "Al matammah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jawf",
+     "area": "Al matammah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Jawf",
+     "area": "Al mutun",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jawf",
+     "area": "Al mutun",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Jawf",
+     "area": "Az zahir (1)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jawf",
+     "area": "Az zahir (1)",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Jawf",
+     "area": "Barat al anan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jawf",
+     "area": "Barat al anan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Jawf",
+     "area": "Kharab al marashi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jawf",
+     "area": "Kharab al marashi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Jawf",
+     "area": "Rajuzah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Jawf",
+     "area": "Rajuzah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Dhamar",
+     "area": "Ans",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Dhamar",
+     "area": "Ans",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Dhamar",
+     "area": "Al hada",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Dhamar",
+     "area": "Al hada",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Dhamar",
+     "area": "Al manar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Dhamar",
+     "area": "Al manar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Dhamar",
+     "area": "Dawran anis",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Dhamar",
+     "area": "Dawran anis",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Dhamar",
+     "area": "Dhamar city",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Dhamar",
+     "area": "Dhamar city",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Dhamar",
+     "area": "Jabal ash sharq",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Dhamar",
+     "area": "Jabal ash sharq",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Dhamar",
+     "area": "Jahran",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Dhamar",
+     "area": "Jahran",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Dhamar",
+     "area": "Maghrib ans",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Dhamar",
+     "area": "Maghrib ans",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Dhamar",
+     "area": "Mayfa'at ans",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Dhamar",
+     "area": "Mayfa'at ans",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Dhamar",
+     "area": "Otmah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Dhamar",
+     "area": "Otmah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Dhamar",
+     "area": "Wusab al aali",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Dhamar",
+     "area": "Wusab al aali",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Dhamar",
+     "area": "Wusab as safil",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Dhamar",
+     "area": "Wusab as safil",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Abs",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Abs",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Aflah al yaman",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Aflah al yaman",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Aflah ash sham",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Aflah ash sham",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Al jamimah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Al jamimah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Al maghrabah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Al maghrabah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Al mahabishah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Al mahabishah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Al miftah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Al miftah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Ash shaghadirah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Ash shaghadirah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Ash shahil",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Ash shahil",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Aslam",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Aslam",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Bakil al mir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Bakil al mir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Bani al awam",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Bani al awam",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Bani qays",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Bani qays",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Hajjah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Hajjah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Hajjah city",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Hajjah city",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Harad",
+     "encoding": "C",
+     "all": 31526
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Harad",
+     "encoding": "C",
+     "all": 31526
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Hayran",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Hayran",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Khayran al muharraq",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Khayran al muharraq",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Ku'aydinah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Ku'aydinah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Kuhlan afar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Kuhlan afar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Kuhlan ash sharaf",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Kuhlan ash sharaf",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Kushar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Kushar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Mabyan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Mabyan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Midi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Midi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Mustaba",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Mustaba",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Najrah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Najrah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Qafl shammar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Qafl shammar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Qarah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Qarah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Sharas",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Sharas",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Wadrah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Wadrah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Hajjah",
+     "area": "Washhah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Hajjah",
+     "area": "Washhah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ad Dali`",
+     "area": "Al husha",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ad Dali`",
+     "area": "Al husha",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ad Dali`",
+     "area": "Damt",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ad Dali`",
+     "area": "Damt",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ad Dali`",
+     "area": "Juban",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ad Dali`",
+     "area": "Juban",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "Adh dhahir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "Adh dhahir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "Al hashwah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "Al hashwah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "As safra",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "As safra",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "Baqim",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "Baqim",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "Ghamr",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "Ghamr",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "Haydan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "Haydan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "Kitaf wa al boqa'",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "Kitaf wa al boqa'",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "Majz",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "Majz",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "Monabbih",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "Monabbih",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "Qatabir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "Qatabir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "Razih",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "Razih",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "Sa'dah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "Sa'dah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "Sahar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "Sahar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "Saqin",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "Saqin",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sa'dah",
+     "area": "Shada'a",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sa'dah",
+     "area": "Shada'a",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Adh dhihar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Adh dhihar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Al makhadir",
+     "encoding": "C",
+     "all": 95251
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Al makhadir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Al mashannah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Al mashannah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Al odayn",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Al odayn",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Al qafr",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Al qafr",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "An nadirah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "An nadirah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Ar radmah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Ar radmah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Ash sha'ir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Ash sha'ir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "As sabrah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "As sabrah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "As saddah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "As saddah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "As saiyani",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "As saiyani",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Ba'dan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Ba'dan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Dhi as sufal",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Dhi as sufal",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Far' al odayn",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Far' al odayn",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Hazm al odayn",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Hazm al odayn",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Hobeish",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Hobeish",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Ibb",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Ibb",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Jiblah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Jiblah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Mudhaykhirah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Mudhaykhirah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ibb",
+     "area": "Yarim",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ibb",
+     "area": "Yarim",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Al arsh",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Al arsh",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Al bayda",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Al bayda",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Al bayda city",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Al bayda city",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Al malajim",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Al malajim",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Al quraishyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Al quraishyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Ar ryashyyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Ar ryashyyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Ash sharyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Ash sharyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "As sawadiyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "As sawadiyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "As sawma'ah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "As sawma'ah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "At taffah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "At taffah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Az zahir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Az zahir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Dhi na'im",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Dhi na'im",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Maswarah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Maswarah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Mukayras",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Mukayras",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Nati'",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Nati'",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Nu'man",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Nu'man",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Rada'",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Rada'",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Radman",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Radman",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Sabah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Sabah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Al Bayda",
+     "area": "Wald rabi'",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Bayda",
+     "area": "Wald rabi'",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Al ashah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Al ashah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Al madan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Al madan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Amran",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Amran",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "As sawd",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "As sawd",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "As sudah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "As sudah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Bani surim",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Bani surim",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Dhibain",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Dhibain",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Dhulaymat habur",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Dhulaymat habur",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Eyal surayh",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Eyal surayh",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Harf sufyan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Harf sufyan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Huth",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Huth",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Jabal eyal yazid",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Jabal eyal yazid",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Khamir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Khamir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Kharif",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Kharif",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Maswar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Maswar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Qaflat odhar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Qaflat odhar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Raydah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Raydah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Shaharah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Shaharah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Suwayr",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Suwayr",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Amran",
+     "area": "Thula",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Amran",
+     "area": "Thula",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Al haymah ad dakhiliyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Al haymah ad dakhiliyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Al haymah al kharijiyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Al haymah al kharijiyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Al hissn",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Al hissn",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Arhab",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Arhab",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "At tyal",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "At tyal",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Bani dabyan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Bani dabyan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Bani hushaysh",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Bani hushaysh",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Bani matar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Bani matar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Bilad ar rus",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Bilad ar rus",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Hamdan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Hamdan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Jihanah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Jihanah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Khawlan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Khawlan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Manakhah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Manakhah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Nihm",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Nihm",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Sa'fan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Sa'fan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a",
+     "area": "Sanhan wa bani bahlul",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Sanhan wa bani bahlul",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Raymah",
+     "area": "Al jabin",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Raymah",
+     "area": "Al jabin",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Raymah",
+     "area": "Al ja'fariyyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Raymah",
+     "area": "Al ja'fariyyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Raymah",
+     "area": "As salafiyyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Raymah",
+     "area": "As salafiyyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Raymah",
+     "area": "Bilad atta'am",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Raymah",
+     "area": "Bilad atta'am",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Raymah",
+     "area": "Kusmah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Raymah",
+     "area": "Kusmah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Raymah",
+     "area": "Mazhar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Raymah",
+     "area": "Mazhar",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ta`iz",
+     "area": "At ta'iziyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ta`iz",
+     "area": "At ta'iziyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ta`iz",
+     "area": "Dimnat khadir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ta`iz",
+     "area": "Dimnat khadir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ta`iz",
+     "area": "Hayfan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ta`iz",
+     "area": "Hayfan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ta`iz",
+     "area": "Maqbanah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ta`iz",
+     "area": "Maqbanah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ta`iz",
+     "area": "Mawiyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ta`iz",
+     "area": "Mawiyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ta`iz",
+     "area": "Sami'",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ta`iz",
+     "area": "Sami'",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ta`iz",
+     "area": "Shar'ab ar rawnah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ta`iz",
+     "area": "Shar'ab ar rawnah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Ta`iz",
+     "area": "Shar'ab as salam",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Ta`iz",
+     "area": "Shar'ab as salam",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a City",
+     "area": "Al wehdah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a City",
+     "area": "Al wehdah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a City",
+     "area": "As sab'in",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a City",
+     "area": "As sab'in",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a City",
+     "area": "As safiyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a City",
+     "area": "As safiyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a City",
+     "area": "Ath thawrah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a City",
+     "area": "Ath thawrah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a City",
+     "area": "At tahrir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a City",
+     "area": "At tahrir",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a City",
+     "area": "Azaal",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a City",
+     "area": "Azaal",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a City",
+     "area": "Bani al harith",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a City",
+     "area": "Bani al harith",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a City",
+     "area": "Ma'in",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a City",
+     "area": "Ma'in",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a City",
+     "area": "Old city",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a City",
+     "area": "Old city",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a City",
+     "area": "Sana'a city outskirts - hamdan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a City",
+     "area": "Sana'a city outskirts - hamdan",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a City",
+     "area": "Sana'a city outskirts -sanhan wa bani bahlul",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a City",
+     "area": "Sana'a city outskirts -sanhan wa bani bahlul",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Sana'a City",
+     "area": "Shu'ub",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Sana'a City",
+     "area": "Shu'ub",
+     "encoding": "A",
+     "all": 0
+    }
+   ]
+  },
+  {
+   "analysis": "Oct 2023",
+   "country": "YEM",
+   "counts": {
+    "A": 3
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "first projection",
+     "level1": "Sana'a",
+     "area": "Attyal",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hudaydah",
+     "area": "Al mansuriyah",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Al Hudaydah",
+     "area": "Ad dahi",
+     "encoding": "A",
+     "all": 0
+    }
+   ]
+  },
+  {
+   "analysis": "Jun 2021",
+   "country": "ZMB",
+   "counts": {
+    "C": 2
+   },
+   "mixed": false,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Northern",
+     "area": "Lupososhi",
+     "encoding": "C",
+     "all": 98221
+    },
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Lupososhi",
+     "encoding": "C",
+     "all": 102307
+    }
+   ]
+  },
+  {
+   "analysis": "Jun 2022",
+   "country": "ZMB",
+   "counts": {
+    "A": 60,
+    "C": 2
+   },
+   "mixed": true,
+   "rows": [
+    {
+     "period": "current",
+     "level1": "Luapula",
+     "area": "Milengi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Luapula",
+     "area": "Milengi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Luapula",
+     "area": "Chembe",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Luapula",
+     "area": "Chembe",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Luapula",
+     "area": "Chifunabuli",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Luapula",
+     "area": "Chifunabuli",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Luapula",
+     "area": "Chipili",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Luapula",
+     "area": "Chipili",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Luapula",
+     "area": "Mwansabombwe",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Luapula",
+     "area": "Mwansabombwe",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Luapula",
+     "area": "Mwense",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Luapula",
+     "area": "Mwense",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Western",
+     "area": "Limulunga",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Western",
+     "area": "Limulunga",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Western",
+     "area": "Luampa",
+     "encoding": "C",
+     "all": 63366
+    },
+    {
+     "period": "first projection",
+     "level1": "Western",
+     "area": "Luampa",
+     "encoding": "C",
+     "all": 63366
+    },
+    {
+     "period": "current",
+     "level1": "Western",
+     "area": "Nkeyema",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Western",
+     "area": "Nkeyema",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Central",
+     "area": "Mkushi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Central",
+     "area": "Mkushi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Central",
+     "area": "Chisamba",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Central",
+     "area": "Chisamba",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Central",
+     "area": "Shibuyunji",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Central",
+     "area": "Shibuyunji",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "North-Western",
+     "area": "Mushindano",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "North-Western",
+     "area": "Mushindano",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "North-Western",
+     "area": "Mufumbwe",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "North-Western",
+     "area": "Mufumbwe",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "North-Western",
+     "area": "Ikelenge",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "North-Western",
+     "area": "Ikelenge",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "North-Western",
+     "area": "Kalumbila",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "North-Western",
+     "area": "Kalumbila",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "North-Western",
+     "area": "Manyinga",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "North-Western",
+     "area": "Manyinga",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Southern",
+     "area": "Livingstone",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Southern",
+     "area": "Livingstone",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Northern",
+     "area": "Lupososhi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Lupososhi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Northern",
+     "area": "Mbala",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Mbala",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Northern",
+     "area": "Nsama",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Nsama",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Northern",
+     "area": "Kasama",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Kasama",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Northern",
+     "area": "Lunte",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Lunte",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Northern",
+     "area": "Mporokoso",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Mporokoso",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Northern",
+     "area": "Senga hill",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Northern",
+     "area": "Senga hill",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Copperbelt",
+     "area": "Chingola",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Copperbelt",
+     "area": "Chingola",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Copperbelt",
+     "area": "Chililabombwe",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Copperbelt",
+     "area": "Chililabombwe",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Copperbelt",
+     "area": "Kalulushi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Copperbelt",
+     "area": "Kalulushi",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Copperbelt",
+     "area": "Kitwe",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Copperbelt",
+     "area": "Kitwe",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Copperbelt",
+     "area": "Mufulira",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Copperbelt",
+     "area": "Mufulira",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "current",
+     "level1": "Muchiga",
+     "area": "Mpika",
+     "encoding": "A",
+     "all": 0
+    },
+    {
+     "period": "first projection",
+     "level1": "Muchiga",
+     "area": "Mpika",
+     "encoding": "A",
+     "all": 0
+    }
+   ]
+  }
+ ]
+}

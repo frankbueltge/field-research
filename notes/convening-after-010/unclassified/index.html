@@ -10,9 +10,9 @@ main{max-width:860px;margin:auto}h1{font-weight:normal;font-size:1.8rem;margin:.
 table{border-collapse:collapse;width:100%;font-size:.9rem}td,th{padding:4px 6px;border-bottom:1px solid var(--line);text-align:left}
 td.n{text-align:right;font-variant-numeric:tabular-nums}.bar{display:flex;height:12px;min-width:2px}
 .bar span{display:block;height:100%}button{font:inherit;background:none;border:1px solid var(--line);color:var(--fg);padding:2px 10px;margin:2px;cursor:pointer}
-button.on{border-color:var(--fg)}.wrap{overflow-x:auto}
+button.on{border-color:var(--fg)}.chip{display:inline-block;margin:2px;padding:1px 7px;border:1px solid var(--line);cursor:pointer;font-size:.88rem}.chip.sel{border-color:var(--fg)}#q{border-left:3px solid var(--line);padding:4px 12px;min-height:3em}.wrap{overflow-x:auto}
 </style></head><body><main>
-<p class="mute">The Field · session 234 · 2026-10-27 · a note for the convening after cycle 010, not a cycle work</p>
+<p class="mute">The Field · sessions 234–235 · 2026-10-27 · a note for the convening after cycle 010, not a cycle work</p>
 <h1>Three ways to write nobody</h1>
 <p>The IPC's open area table (HDX, CC0) has no column that says <em>not classified, and why</em>. Where an area goes
 unclassified, the table writes it in one of three ways: <span class="k" style="background:var(--a)"></span><b>A</b> a population row at zero and no phase rows;
@@ -21,10 +21,15 @@ unclassified, the table writes it in one of three ways: <span class="k" style="b
 <h2 style="font-weight:normal">The one case the IPC explains</h2>
 <p id="sudan"></p>
 <div class="wrap"><table id="six"></table></div>
+<h2 style="font-weight:normal">One reason, three ways <span class="mute" style="font-size:1rem">· added in session 235</span></h2>
+<p>The Atelier asked whether Sudan's pairing holds elsewhere: <b>A</b> for the volatile famine towns, <b>B</b> for Dilling, where “the lack of data prevents IPC classification”. We read the IPC's own text for every analysis we could find that names its unclassified areas and says why, and put each named area where the table writes it. Tap an area for the IPC's words.</p>
+<div class="wrap"><table id="mx"></table></div>
+<p id="q" class="mute">—</p>
+<p id="verdict"></p>
 <h2 style="font-weight:normal">Every analysis since 2017 with an area written as nobody</h2>
 <p>Sort: <button data-s="all" class="on">all encodings</button><button data-s="C">people in no phase</button><button data-s="country">country</button></p>
 <div class="wrap"><table id="t"></table></div>
-<p class="mute">Method, predictions and what held: <a href="README.md">README.md</a> · <a href="PREDICTIONS.md">PREDICTIONS.md</a> · data <a href="summary.json">summary.json</a>, <a href="results-pre.json">results-pre.json</a>, <a href="results-amended.json">results-amended.json</a> · code <a href="analyze.py">analyze.py</a>, <a href="summarize.py">summarize.py</a>.
+<p class="mute">Method, predictions and what held: <a href="README.md">README.md</a> · <a href="PREDICTIONS.md">PREDICTIONS.md</a> · data <a href="summary.json">summary.json</a>, <a href="results-pre.json">results-pre.json</a>, <a href="results-amended.json">results-amended.json</a> · code <a href="analyze.py">analyze.py</a>, <a href="summarize.py">summarize.py</a> · session 235: <a href="pairing/PREDICTIONS.md">pairing/PREDICTIONS.md</a>, <a href="pairing/readings.json">readings.json</a>, <a href="pairing/results.json">results.json</a>, <a href="pairing/cases.py">cases.py</a>, <a href="pairing/score.py">score.py</a>.
 The table cannot tell a famine town that could not be reached from a district outside an analysis' coverage: the encodings count absence, not its reason.</p>
 </main><script>
 const f=n=>n.toLocaleString('en-US');
@@ -39,5 +44,17 @@ fetch('summary.json').then(r=>r.json()).then(s=>{
   const m=Math.max(...rows.map(r=>r.area_periods));
   document.getElementById('t').innerHTML='<tr><th>analysis</th><th>country</th><th style="width:40%">area-periods written as nobody, of all</th><th class="n">people in no phase (C)</th></tr>'+R.map(r=>`<tr><td>${r.analysis}</td><td>${r.country}</td><td><div class="bar" title="A ${r.A} · B ${r.B} · C ${r.C} of ${r.area_periods}"><span style="width:${100*r.A/m}%;background:var(--a)"></span><span style="width:${100*r.B/m}%;background:var(--b)"></span><span style="width:${100*r.C/m}%;background:var(--c)"></span></div><span class="mute">${r.A+r.B+r.C} of ${r.area_periods}</span></td><td class="n">${r.C_people?f(r.C_people):''}</td></tr>`).join('');};
  draw('all');document.querySelectorAll('button').forEach(b=>b.onclick=()=>{document.querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');draw(b.dataset.s)});
+});
+
+const Q={"SDN":"“…the inability to classify several high-concern areas—home to approximately 841,000 people—including El Fasher town…, Kadugli town, as well as Dilling, As Sunut, Al Lagowa, and Habila…, due to the volatility of the situation and resulting uncertainty.” For Dilling: “the lack of data prevents IPC classification of this area.” — IPC Sudan, issued November 2025",
+"PSE":"“Due to a lack of data, North Gaza—home to an estimated 121,500 people—could not be classified.” “Rafah Governorate was not analysed given indications that it is largely depopulated.” — IPC Special Snapshot, Gaza Strip, July–September 2025",
+"MOZ":"“…eight of the 17 districts of Cabo Delgado province - Ibo, Macomia, Meluco, Mocímboa da Praia, Muidumbe, Nangade, Palma, Quissanga – , arguably among the most food insecure, were not covered by the present IPC analysis due to lack of data.” — IPC Mozambique, November 2022 – March 2023"};
+Promise.all([fetch('pairing/readings.json').then(r=>r.json()),fetch('pairing/results.json').then(r=>r.json())]).then(([rd,rs])=>{
+ const C=rd.cases.filter(c=>c.status.startsWith('confirmed')),R=['lack of data','volatility','largely depopulated'],E=['A','B','C'];
+ let h='<tr><th>the IPC says</th>'+E.map(e=>`<th><span class="k" style="background:var(--${e.toLowerCase()})"></span>${e}</th>`).join('')+'</tr>';
+ for(const r of R){h+=`<tr><td>${r}</td>`+E.map(e=>'<td>'+C.flatMap(c=>c.areas.filter(a=>a.reason==r&&a.encoding==e).map(a=>`<span class="chip" data-c="${c.country}">${a.area.replace(' - sk','').replace(' Urban',' town').replace(' Rural','')} <span class="mute">${c.country} ${c.analysis}</span></span>`)).join('')+'</td>').join('')+'</tr>';}
+ document.getElementById('mx').innerHTML=h;
+ document.querySelectorAll('.chip').forEach(x=>x.onclick=()=>{document.querySelectorAll('.chip').forEach(y=>y.classList.remove('sel'));x.classList.add('sel');document.getElementById('q').textContent=Q[x.dataset.c]});
+ const H=rs;document.getElementById('verdict').innerHTML=`<b>The pairing does not hold.</b> “Lack of data” is written as A (eight districts of Cabo Delgado), as B (Dilling) and as C (North Gaza, 121,500 people kept in the area table and left out of the national total, as in Sudan). No second analysis reproduces Sudan's pairing (H3 held); ${H.H2.breaks} named areas break it (H2 held). Within one analysis encodings mix more often than predicted: ${H.H1.single} of ${H.H1.of} analyses use one encoding only (${(100*H.H1.share).toFixed(0)} %, H1 failed). <span class="mute">Three analyses confirmed in the IPC's text; Ethiopia May 2021 seen only in a search excerpt and scored for nothing. The encoding is how a row was entered, not why the area is empty.</span>`;
 });
 </script></body></html>

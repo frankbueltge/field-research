@@ -1,0 +1,30 @@
+{"_note": "IPC passages read for ho-2026-10-27-atelier-1 (session 235, 2026-10-27). Each case: the areas the passage names, the reason in the IPC's words, and the encoding the open table gives (cases.json). 'confirmed' = passage read on a page of the IPC or a page carrying the IPC's report; 'unconfirmed' = seen only in a search excerpt, scored for nothing.",
+ "cases": [
+  {"analysis": "Sep 2025", "country": "SDN", "status": "confirmed (session 234)", "source": "ipc-sudan-2025",
+   "areas": [
+    {"area": "Al Fasher Urban", "reason": "volatility", "encoding": "A"},
+    {"area": "Kadugli Urban", "reason": "volatility", "encoding": "A"},
+    {"area": "Dilling Rural", "reason": "lack of data", "encoding": "B"},
+    {"area": "As Sunut", "reason": "volatility", "encoding": "C"},
+    {"area": "Al Lagowa", "reason": "volatility", "encoding": "C"},
+    {"area": "Habila - sk", "reason": "volatility", "encoding": "C"}]},
+  {"analysis": "Jul 2025", "country": "PSE", "status": "confirmed", "source": "ipc-gaza-2025",
+   "areas": [
+    {"area": "North Gaza", "reason": "lack of data", "encoding": "C", "table_all": 121500, "ipc_people": 121500},
+    {"area": "Rafah", "reason": "largely depopulated", "encoding": "C", "table_all": 30000}],
+   "national_check": "national 'all' 1,979,219 = Deir al-Balah 482,315 + Gaza 937,604 + Khan Younis 559,300; North Gaza and Rafah left out of the total, kept with their people in the area table"},
+  {"analysis": "Nov 2022", "country": "MOZ", "status": "confirmed", "source": "ipc-mozambique-2022",
+   "areas": [
+    {"area": "Ibo", "reason": "lack of data", "encoding": "A"},
+    {"area": "Macomia", "reason": "lack of data", "encoding": "A"},
+    {"area": "Meluco", "reason": "lack of data", "encoding": "A"},
+    {"area": "Mocimboa da praia", "reason": "lack of data", "encoding": "A"},
+    {"area": "Muidumbe", "reason": "lack of data", "encoding": "A"},
+    {"area": "Nangade", "reason": "lack of data", "encoding": "A"},
+    {"area": "Palma", "reason": "lack of data", "encoding": "A"},
+    {"area": "Quissanga", "reason": "lack of data", "encoding": "A"}],
+   "unexplained": ["Nampula (A): in the table, not named in the passage"]},
+  {"analysis": "May 2021", "country": "ETH", "status": "unconfirmed", "source": "search excerpt of IPC_Ethiopia_Acute_Food_Insecurity_2021MaySept_national.pdf; the PDF answered 403 to a direct fetch and failed in a full-text extraction tool",
+   "excerpt": "The update of the projection period (July to September 2021) excludes Afar, North Wello and Southern Tigray zone due to lack of data.",
+   "table": "the area table carries two sets of rows for this analysis: Afar Zones 2 and 4 appear once as C (people kept) and once as B (all 0); North Wello and Southern Tigray as C; South Wello, which the excerpt does not name, also C"}
+ ]}
