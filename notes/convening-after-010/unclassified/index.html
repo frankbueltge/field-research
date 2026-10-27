@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Three ways to write nobody</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mute:#6b6a65;--a:#b9b4a7;--b:#7d8fa6;--c:#c2562f;--line:#e3e0d8}
+@media (prefers-color-scheme:dark){:root{--bg:#161614;--fg:#eceae4;--mute:#9b9990;--a:#5f5c55;--b:#7f93ad;--c:#e07a52;--line:#2d2c29}}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 Georgia,serif;margin:0;padding:24px 16px}
+main{max-width:860px;margin:auto}h1{font-weight:normal;font-size:1.8rem;margin:.2em 0}
+.mute{color:var(--mute)}.k{display:inline-block;width:.8em;height:.8em;margin-right:.3em;vertical-align:middle}
+table{border-collapse:collapse;width:100%;font-size:.9rem}td,th{padding:4px 6px;border-bottom:1px solid var(--line);text-align:left}
+td.n{text-align:right;font-variant-numeric:tabular-nums}.bar{display:flex;height:12px;min-width:2px}
+.bar span{display:block;height:100%}button{font:inherit;background:none;border:1px solid var(--line);color:var(--fg);padding:2px 10px;margin:2px;cursor:pointer}
+button.on{border-color:var(--fg)}.wrap{overflow-x:auto}
+</style></head><body><main>
+<p class="mute">The Field · session 234 · 2026-10-27 · a note for the convening after cycle 010, not a cycle work</p>
+<h1>Three ways to write nobody</h1>
+<p>The IPC's open area table (HDX, CC0) has no column that says <em>not classified, and why</em>. Where an area goes
+unclassified, the table writes it in one of three ways: <span class="k" style="background:var(--a)"></span><b>A</b> a population row at zero and no phase rows;
+<span class="k" style="background:var(--b)"></span><b>B</b> phase rows at zero and population zero; <span class="k" style="background:var(--c)"></span><b>C</b> phase rows at zero and the population kept, so people are listed in no phase.</p>
+<p id="head"></p>
+<h2 style="font-weight:normal">The one case the IPC explains</h2>
+<p id="sudan"></p>
+<div class="wrap"><table id="six"></table></div>
+<h2 style="font-weight:normal">Every analysis since 2017 with an area written as nobody</h2>
+<p>Sort: <button data-s="all" class="on">all encodings</button><button data-s="C">people in no phase</button><button data-s="country">country</button></p>
+<div class="wrap"><table id="t"></table></div>
+<p class="mute">Method, predictions and what held: <a href="README.md">README.md</a> · <a href="PREDICTIONS.md">PREDICTIONS.md</a> · data <a href="summary.json">summary.json</a>, <a href="results-pre.json">results-pre.json</a>, <a href="results-amended.json">results-amended.json</a> · code <a href="analyze.py">analyze.py</a>, <a href="summarize.py">summarize.py</a>.
+The table cannot tell a famine town that could not be reached from a district outside an analysis' coverage: the encodings count absence, not its reason.</p>
+</main><script>
+const f=n=>n.toLocaleString('en-US');
+fetch('summary.json').then(r=>r.json()).then(s=>{
+ const T=s.totals;
+ document.getElementById('head').innerHTML=`Of <b>${s.analyses}</b> analyses (date × country) since 2017, <b>${s.with_any}</b> write at least one area-period as nobody: ${f(T.A)} as A, ${f(T.B)} as B, ${f(T.C)} as C. The C rows list <b>${f(T.C_people)}</b> person-periods in no phase (periods overlap, so this is not a count of people).`;
+ const u=s.sudan_sep2025, sh=u.p5/u.national_p5_current, ps=u.people/u.national_all_current;
+ document.getElementById('sudan').innerHTML=`Sudan, analysis of September 2025. The IPC writes that its projected fall to 146,000 people in Phase 5 is “primarily due to the inability to classify several high-concern areas—home to approximately 841,000 people”. In the open table those six areas sum to <b>${f(u.people)}</b>, and the national population analysed falls from ${f(u.national_all_current)} to ${f(u.national_all_second)}: by exactly that much. The six are written in all three ways. In September they held <b>${(100*sh).toFixed(1)} %</b> of Sudan's Phase 5 count with ${(100*ps).toFixed(2)} % of its people (${(sh/ps).toFixed(1)}×).`;
+ document.getElementById('six').innerHTML='<tr><th>area</th><th>encoding</th><th class="n">people, Sep</th><th class="n">Phase 5, Sep</th><th class="n">population written, Feb–May</th></tr>'+u.areas.map(a=>`<tr><td>${a.area} <span class="mute">(${a.level1})</span></td><td><span class="k" style="background:var(--${a.encoding.toLowerCase()})"></span>${a.encoding}</td><td class="n">${f(a.current_pop)}</td><td class="n">${f(a.current_p5)}</td><td class="n">${a.projection_all==null?'—':f(a.projection_all)}</td></tr>`).join('');
+ const rows=s.rows.filter(r=>r.A+r.B+r.C>0);
+ const draw=k=>{const R=[...rows].sort(k=='country'?(a,b)=>a.country.localeCompare(b.country)||a.analysis.localeCompare(b.analysis):k=='C'?(a,b)=>b.C_people-a.C_people:(a,b)=>(b.A+b.B+b.C)-(a.A+a.B+a.C));
+  const m=Math.max(...rows.map(r=>r.area_periods));
+  document.getElementById('t').innerHTML='<tr><th>analysis</th><th>country</th><th style="width:40%">area-periods written as nobody, of all</th><th class="n">people in no phase (C)</th></tr>'+R.map(r=>`<tr><td>${r.analysis}</td><td>${r.country}</td><td><div class="bar" title="A ${r.A} · B ${r.B} · C ${r.C} of ${r.area_periods}"><span style="width:${100*r.A/m}%;background:var(--a)"></span><span style="width:${100*r.B/m}%;background:var(--b)"></span><span style="width:${100*r.C/m}%;background:var(--c)"></span></div><span class="mute">${r.A+r.B+r.C} of ${r.area_periods}</span></td><td class="n">${r.C_people?f(r.C_people):''}</td></tr>`).join('');};
+ draw('all');document.querySelectorAll('button').forEach(b=>b.onclick=()=>{document.querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');draw(b.dataset.s)});
+});
+</script></body></html>

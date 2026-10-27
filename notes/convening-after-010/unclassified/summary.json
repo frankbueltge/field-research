@@ -1,0 +1,3695 @@
+{
+ "analyses": 402,
+ "with_any": 111,
+ "totals": {
+  "A": 6352,
+  "B": 16,
+  "C": 1041,
+  "C_people": 236123689,
+  "area_periods": 60652
+ },
+ "sudan_sep2025": {
+  "areas": [
+   {
+    "level1": "South Kordofan",
+    "area": "Dilling Rural",
+    "current_pop": 60642,
+    "current_p5": 6064,
+    "current_p4": 24257,
+    "projection_all": 0,
+    "encoding": "B"
+   },
+   {
+    "level1": "South Kordofan",
+    "area": "Habila - sk",
+    "current_pop": 34498,
+    "current_p5": 3450,
+    "current_p4": 13799,
+    "projection_all": 34474,
+    "encoding": "C"
+   },
+   {
+    "level1": "South Kordofan",
+    "area": "Kadugli Urban",
+    "current_pop": 30000,
+    "current_p5": 6000,
+    "current_p4": 9000,
+    "projection_all": 0,
+    "encoding": "A"
+   },
+   {
+    "level1": "West Kordofan",
+    "area": "As sunut",
+    "current_pop": 264554,
+    "current_p5": 0,
+    "current_p4": 52911,
+    "projection_all": 264234,
+    "encoding": "C"
+   },
+   {
+    "level1": "West Kordofan",
+    "area": "Al lagowa",
+    "current_pop": 151710,
+    "current_p5": 7586,
+    "current_p4": 37928,
+    "projection_all": 151517,
+    "encoding": "C"
+   },
+   {
+    "level1": "North Darfur",
+    "area": "Al Fasher Urban",
+    "current_pop": 300000,
+    "current_p5": 90000,
+    "current_p4": 120000,
+    "projection_all": 0,
+    "encoding": "A"
+   }
+  ],
+  "people": 841404,
+  "p5": 113100,
+  "national_p5_current": 375389,
+  "national_all_current": 47490883,
+  "national_all_second": 46649479,
+  "national_p5_second": 145656
+ },
+ "rows": [
+  {
+   "analysis": "Mar 2021",
+   "country": "NGA",
+   "A": 841,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 1538
+  },
+  {
+   "analysis": "Oct 2021",
+   "country": "NGA",
+   "A": 638,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 1548
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "NGA",
+   "A": 630,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 1554
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "NGA",
+   "A": 444,
+   "B": 0,
+   "C": 46,
+   "C_people": 4675506,
+   "area_periods": 1590
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "NGA",
+   "A": 444,
+   "B": 0,
+   "C": 38,
+   "C_people": 4352794,
+   "area_periods": 1590
+  },
+  {
+   "analysis": "Oct 2022",
+   "country": "NGA",
+   "A": 444,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 1586
+  },
+  {
+   "analysis": "Sep 2025",
+   "country": "NGA",
+   "A": 206,
+   "B": 0,
+   "C": 234,
+   "C_people": 12022336,
+   "area_periods": 1590
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "YEM",
+   "A": 430,
+   "B": 0,
+   "C": 4,
+   "C_people": 308098,
+   "area_periods": 670
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "GHA",
+   "A": 400,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 520
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "GHA",
+   "A": 400,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 520
+  },
+  {
+   "analysis": "Jan 2026",
+   "country": "SDN",
+   "A": 3,
+   "B": 0,
+   "C": 278,
+   "C_people": 78492382,
+   "area_periods": 588
+  },
+  {
+   "analysis": "Oct 2022",
+   "country": "GHA",
+   "A": 280,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 520
+  },
+  {
+   "analysis": "Mar 2026",
+   "country": "NGA",
+   "A": 205,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 736
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "BEN",
+   "A": 124,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 154
+  },
+  {
+   "analysis": "Nov 2025",
+   "country": "BEN",
+   "A": 0,
+   "B": 0,
+   "C": 112,
+   "C_people": 20677296,
+   "area_periods": 154
+  },
+  {
+   "analysis": "Apr 2023",
+   "country": "PAK",
+   "A": 111,
+   "B": 0,
+   "C": 1,
+   "C_people": 1579487,
+   "area_periods": 198
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "NER",
+   "A": 78,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 156
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "SOM",
+   "A": 72,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 1116
+  },
+  {
+   "analysis": "Jun 2022",
+   "country": "ZMB",
+   "A": 60,
+   "B": 0,
+   "C": 2,
+   "C_people": 126732,
+   "area_periods": 230
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "CMR",
+   "A": 58,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 116
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "MLI",
+   "A": 56,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 112
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "BEN",
+   "A": 4,
+   "B": 0,
+   "C": 46,
+   "C_people": 8378809,
+   "area_periods": 154
+  },
+  {
+   "analysis": "Sep 2025",
+   "country": "COD",
+   "A": 0,
+   "B": 0,
+   "C": 49,
+   "C_people": 10852124,
+   "area_periods": 422
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "SEN",
+   "A": 46,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 92
+  },
+  {
+   "analysis": "Aug 2022",
+   "country": "SOM",
+   "A": 34,
+   "B": 4,
+   "C": 8,
+   "C_people": 82200,
+   "area_periods": 724
+  },
+  {
+   "analysis": "Oct 2022",
+   "country": "BEN",
+   "A": 38,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 154
+  },
+  {
+   "analysis": "May 2021",
+   "country": "ETH",
+   "A": 0,
+   "B": 2,
+   "C": 34,
+   "C_people": 35844565,
+   "area_periods": 136
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "CIV",
+   "A": 35,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Feb 2021",
+   "country": "COD",
+   "A": 20,
+   "B": 0,
+   "C": 14,
+   "C_people": 7483420,
+   "area_periods": 374
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "CIV",
+   "A": 28,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "BEN",
+   "A": 6,
+   "B": 0,
+   "C": 20,
+   "C_people": 7365340,
+   "area_periods": 154
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "CPV",
+   "A": 22,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 44
+  },
+  {
+   "analysis": "Oct 2021",
+   "country": "CIV",
+   "A": 20,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Sep 2021",
+   "country": "COD",
+   "A": 1,
+   "B": 0,
+   "C": 17,
+   "C_people": 9288386,
+   "area_periods": 376
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "MRT",
+   "A": 0,
+   "B": 0,
+   "C": 15,
+   "C_people": 1841328,
+   "area_periods": 122
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "BEN",
+   "A": 10,
+   "B": 0,
+   "C": 2,
+   "C_people": 144325,
+   "area_periods": 154
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "GHA",
+   "A": 2,
+   "B": 0,
+   "C": 10,
+   "C_people": 434443,
+   "area_periods": 154
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "MDG",
+   "A": 0,
+   "B": 0,
+   "C": 11,
+   "C_people": 2917947,
+   "area_periods": 63
+  },
+  {
+   "analysis": "Jan 2023",
+   "country": "KEN",
+   "A": 0,
+   "B": 0,
+   "C": 10,
+   "C_people": 7306524,
+   "area_periods": 56
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "MOZ",
+   "A": 9,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 159
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "SDN",
+   "A": 0,
+   "B": 3,
+   "C": 6,
+   "C_people": 739432,
+   "area_periods": 567
+  },
+  {
+   "analysis": "May 2022",
+   "country": "SDN",
+   "A": 0,
+   "B": 3,
+   "C": 6,
+   "C_people": 436110,
+   "area_periods": 567
+  },
+  {
+   "analysis": "Sep 2025",
+   "country": "SDN",
+   "A": 2,
+   "B": 4,
+   "C": 3,
+   "C_people": 450225,
+   "area_periods": 645
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "GMB",
+   "A": 8,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "NGA",
+   "A": 0,
+   "B": 0,
+   "C": 8,
+   "C_people": 590646,
+   "area_periods": 1128
+  },
+  {
+   "analysis": "Sep 2021",
+   "country": "CAF",
+   "A": 0,
+   "B": 0,
+   "C": 6,
+   "C_people": 57788,
+   "area_periods": 144
+  },
+  {
+   "analysis": "Jul 2022",
+   "country": "COD",
+   "A": 0,
+   "B": 0,
+   "C": 6,
+   "C_people": 6578206,
+   "area_periods": 376
+  },
+  {
+   "analysis": "Sep 2024",
+   "country": "COD",
+   "A": 0,
+   "B": 0,
+   "C": 6,
+   "C_people": 2384694,
+   "area_periods": 422
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "LBN",
+   "A": 6,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 100
+  },
+  {
+   "analysis": "Apr 2022",
+   "country": "MDG",
+   "A": 0,
+   "B": 0,
+   "C": 6,
+   "C_people": 840003,
+   "area_periods": 54
+  },
+  {
+   "analysis": "Oct 2022",
+   "country": "SSD",
+   "A": 1,
+   "B": 0,
+   "C": 5,
+   "C_people": 366660,
+   "area_periods": 237
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "TGO",
+   "A": 6,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 80
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "TGO",
+   "A": 6,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 80
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "TGO",
+   "A": 6,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 80
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "TGO",
+   "A": 6,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 80
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "TGO",
+   "A": 6,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 80
+  },
+  {
+   "analysis": "Nov 2025",
+   "country": "TGO",
+   "A": 6,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 80
+  },
+  {
+   "analysis": "Oct 2022",
+   "country": "TGO",
+   "A": 6,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 80
+  },
+  {
+   "analysis": "Feb 2021",
+   "country": "CAF",
+   "A": 1,
+   "B": 0,
+   "C": 4,
+   "C_people": 33577,
+   "area_periods": 79
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "CIV",
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "CIV",
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "CIV",
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "CIV",
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "CIV",
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Nov 2025",
+   "country": "CIV",
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Oct 2022",
+   "country": "CIV",
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "NER",
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 150
+  },
+  {
+   "analysis": "Jul 2025",
+   "country": "PSE",
+   "A": 0,
+   "B": 0,
+   "C": 4,
+   "C_people": 303000,
+   "area_periods": 10
+  },
+  {
+   "analysis": "Aug 2022",
+   "country": "YEM",
+   "A": 0,
+   "B": 0,
+   "C": 4,
+   "C_people": 164158,
+   "area_periods": 333
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "CAF",
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "C_people": 35461,
+   "area_periods": 79
+  },
+  {
+   "analysis": "Apr 2023",
+   "country": "COD",
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "C_people": 3289103,
+   "area_periods": 188
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "COD",
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "C_people": 1192347,
+   "area_periods": 205
+  },
+  {
+   "analysis": "Apr 2024",
+   "country": "SDN",
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "C_people": 310350,
+   "area_periods": 453
+  },
+  {
+   "analysis": "Jun 2023",
+   "country": "SDN",
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "C_people": 310350,
+   "area_periods": 564
+  },
+  {
+   "analysis": "Sep 2024",
+   "country": "SSD",
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 243
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "TGO",
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 40
+  },
+  {
+   "analysis": "Oct 2023",
+   "country": "YEM",
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 121
+  },
+  {
+   "analysis": "Aug 2023",
+   "country": "COD",
+   "A": 0,
+   "B": 0,
+   "C": 2,
+   "C_people": 689358,
+   "area_periods": 374
+  },
+  {
+   "analysis": "Apr 2021",
+   "country": "GIN",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 68
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "GIN",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 68
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "GIN",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 68
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "GIN",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 68
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "GIN",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 68
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "GNB",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "GNB",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "GNB",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "GNB",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "GNB",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "NGA",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 1108
+  },
+  {
+   "analysis": "Dec 2023",
+   "country": "PSE",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 8
+  },
+  {
+   "analysis": "Feb 2024",
+   "country": "PSE",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 8
+  },
+  {
+   "analysis": "May 2024",
+   "country": "PSE",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 8
+  },
+  {
+   "analysis": "Oct 2024",
+   "country": "SDN",
+   "A": 1,
+   "B": 0,
+   "C": 1,
+   "C_people": 103450,
+   "area_periods": 304
+  },
+  {
+   "analysis": "Aug 2026",
+   "country": "SOM",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 216
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "SSD",
+   "A": 1,
+   "B": 0,
+   "C": 1,
+   "C_people": 82749,
+   "area_periods": 158
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "TCD",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 140
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "TCD",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 140
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "TCD",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 140
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "TCD",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 140
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "TCD",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 140
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "TCD",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 140
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "TCD",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 140
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "TCD",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 140
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "TCD",
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 140
+  },
+  {
+   "analysis": "Nov 2025",
+   "country": "TCD",
+   "A": 0,
+   "B": 0,
+   "C": 2,
+   "C_people": 194164,
+   "area_periods": 138
+  },
+  {
+   "analysis": "Jun 2021",
+   "country": "ZMB",
+   "A": 0,
+   "B": 0,
+   "C": 2,
+   "C_people": 200528,
+   "area_periods": 124
+  },
+  {
+   "analysis": "Oct 2024",
+   "country": "CAF",
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 170
+  },
+  {
+   "analysis": "Apr 2026",
+   "country": "COD",
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "C_people": 341123,
+   "area_periods": 188
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "GIN",
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "C_people": 2152715,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Oct 2023",
+   "country": "SDN",
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "C_people": 103450,
+   "area_periods": 188
+  },
+  {
+   "analysis": "Mar 2026",
+   "country": "TCD",
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 80
+  },
+  {
+   "analysis": "Apr 2023",
+   "country": "AFG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "AFG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "AFG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "AFG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "AFG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Oct 2021",
+   "country": "AFG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Oct 2023",
+   "country": "AFG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Oct 2024",
+   "country": "AFG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 68
+  },
+  {
+   "analysis": "Oct 2025",
+   "country": "AFG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 141
+  },
+  {
+   "analysis": "Sep 2022",
+   "country": "AFG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Sep 2026",
+   "country": "AFG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 141
+  },
+  {
+   "analysis": "Jun 2021",
+   "country": "AGO",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 34
+  },
+  {
+   "analysis": "Apr 2021",
+   "country": "BDI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Apr 2022",
+   "country": "BDI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Apr 2023",
+   "country": "BDI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Aug 2022",
+   "country": "BDI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Aug 2025",
+   "country": "BDI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 24
+  },
+  {
+   "analysis": "Jun 2026",
+   "country": "BDI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "May 2024",
+   "country": "BDI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Oct 2024",
+   "country": "BDI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Sep 2021",
+   "country": "BDI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 24
+  },
+  {
+   "analysis": "Sep 2023",
+   "country": "BDI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 24
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "BEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 154
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "BEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 154
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "BEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 154
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "BFA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "BFA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 106
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "BFA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 102
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "BFA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "BFA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "BFA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 102
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "BFA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 92
+  },
+  {
+   "analysis": "Apr 2025",
+   "country": "BGD",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 78
+  },
+  {
+   "analysis": "Feb 2024",
+   "country": "BGD",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "BGD",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 34
+  },
+  {
+   "analysis": "May 2026",
+   "country": "BGD",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 80
+  },
+  {
+   "analysis": "Oct 2024",
+   "country": "BGD",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 40
+  },
+  {
+   "analysis": "Apr 2023",
+   "country": "CAF",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 158
+  },
+  {
+   "analysis": "May 2025",
+   "country": "CAF",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 170
+  },
+  {
+   "analysis": "May 2026",
+   "country": "CAF",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 85
+  },
+  {
+   "analysis": "Sep 2022",
+   "country": "CAF",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 144
+  },
+  {
+   "analysis": "Sep 2023",
+   "country": "CAF",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 144
+  },
+  {
+   "analysis": "Sep 2025",
+   "country": "CAF",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 170
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "CMR",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 116
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "CMR",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 116
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "CMR",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 116
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "CMR",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 116
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "CMR",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 116
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "CMR",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 116
+  },
+  {
+   "analysis": "Oct 2021",
+   "country": "CMR",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 116
+  },
+  {
+   "analysis": "Oct 2022",
+   "country": "CMR",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 116
+  },
+  {
+   "analysis": "Oct 2025",
+   "country": "CMR",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 116
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "CPV",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 44
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "CPV",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 44
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "CPV",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 22
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "CPV",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 44
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "CPV",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 44
+  },
+  {
+   "analysis": "Nov 2025",
+   "country": "CPV",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 44
+  },
+  {
+   "analysis": "Apr 2023",
+   "country": "DJI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 30
+  },
+  {
+   "analysis": "Apr 2024",
+   "country": "DJI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 30
+  },
+  {
+   "analysis": "Jun 2026",
+   "country": "DJI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 30
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "DJI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 30
+  },
+  {
+   "analysis": "May 2025",
+   "country": "DJI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 30
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "DOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 64
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "DOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 84
+  },
+  {
+   "analysis": "Sep 2023",
+   "country": "DOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 96
+  },
+  {
+   "analysis": "Aug 2024",
+   "country": "ECU",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 48
+  },
+  {
+   "analysis": "Feb 2025",
+   "country": "ECU",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 24
+  },
+  {
+   "analysis": "Feb 2026",
+   "country": "ECU",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 93
+  },
+  {
+   "analysis": "Feb 2021",
+   "country": "GHA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 110
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "GHA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 132
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "GHA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 132
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "GHA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 132
+  },
+  {
+   "analysis": "Oct 2025",
+   "country": "GHA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 132
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "GIN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "GIN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "GIN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 68
+  },
+  {
+   "analysis": "Oct 2025",
+   "country": "GIN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 14
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "GMB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "GMB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 8
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "GMB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 8
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "GMB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 8
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "GMB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "GMB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "GMB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "GMB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 16
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "GNB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "GNB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "GNB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "GNB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Apr 2022",
+   "country": "GTM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Jul 2024",
+   "country": "GTM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "May 2021",
+   "country": "GTM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 44
+  },
+  {
+   "analysis": "May 2023",
+   "country": "GTM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "May 2025",
+   "country": "GTM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "May 2026",
+   "country": "GTM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Aug 2026",
+   "country": "HND",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 19
+  },
+  {
+   "analysis": "Feb 2023",
+   "country": "HND",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 60
+  },
+  {
+   "analysis": "Feb 2024",
+   "country": "HND",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 57
+  },
+  {
+   "analysis": "Feb 2025",
+   "country": "HND",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 57
+  },
+  {
+   "analysis": "Jan 2021",
+   "country": "HND",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 54
+  },
+  {
+   "analysis": "Jan 2022",
+   "country": "HND",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 54
+  },
+  {
+   "analysis": "Mar 2026",
+   "country": "HND",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 57
+  },
+  {
+   "analysis": "Aug 2023",
+   "country": "HTI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 64
+  },
+  {
+   "analysis": "Aug 2024",
+   "country": "HTI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 70
+  },
+  {
+   "analysis": "Feb 2022",
+   "country": "HTI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "HTI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "HTI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "HTI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 35
+  },
+  {
+   "analysis": "Mar 2026",
+   "country": "HTI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 30
+  },
+  {
+   "analysis": "Sep 2021",
+   "country": "HTI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 64
+  },
+  {
+   "analysis": "Sep 2022",
+   "country": "HTI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 64
+  },
+  {
+   "analysis": "Sep 2025",
+   "country": "HTI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 60
+  },
+  {
+   "analysis": "Apr 2022",
+   "country": "KEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 23
+  },
+  {
+   "analysis": "Feb 2021",
+   "country": "KEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 46
+  },
+  {
+   "analysis": "Feb 2022",
+   "country": "KEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 46
+  },
+  {
+   "analysis": "Feb 2024",
+   "country": "KEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 46
+  },
+  {
+   "analysis": "Feb 2025",
+   "country": "KEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 46
+  },
+  {
+   "analysis": "Feb 2026",
+   "country": "KEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 52
+  },
+  {
+   "analysis": "Jul 2021",
+   "country": "KEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 46
+  },
+  {
+   "analysis": "Jul 2022",
+   "country": "KEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 46
+  },
+  {
+   "analysis": "Jul 2023",
+   "country": "KEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 46
+  },
+  {
+   "analysis": "Jul 2024",
+   "country": "KEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 60
+  },
+  {
+   "analysis": "Jul 2025",
+   "country": "KEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 46
+  },
+  {
+   "analysis": "Jul 2026",
+   "country": "KEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 52
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "LBN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 59
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "LBN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 88
+  },
+  {
+   "analysis": "Mar 2026",
+   "country": "LBN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 48
+  },
+  {
+   "analysis": "May 2023",
+   "country": "LBN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 54
+  },
+  {
+   "analysis": "Oct 2023",
+   "country": "LBN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 118
+  },
+  {
+   "analysis": "Oct 2025",
+   "country": "LBN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 94
+  },
+  {
+   "analysis": "Sep 2022",
+   "country": "LBN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 104
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "LBR",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "LBR",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 15
+  },
+  {
+   "analysis": "Nov 2025",
+   "country": "LBR",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Oct 2022",
+   "country": "LBR",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 30
+  },
+  {
+   "analysis": "Dec 2024",
+   "country": "LSO",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 10
+  },
+  {
+   "analysis": "Jul 2023",
+   "country": "LSO",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 20
+  },
+  {
+   "analysis": "Jun 2021",
+   "country": "LSO",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 20
+  },
+  {
+   "analysis": "Jun 2022",
+   "country": "LSO",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 20
+  },
+  {
+   "analysis": "Jun 2026",
+   "country": "LSO",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 20
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "LSO",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 20
+  },
+  {
+   "analysis": "May 2024",
+   "country": "LSO",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 20
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "LSO",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 20
+  },
+  {
+   "analysis": "Apr 2021",
+   "country": "MDG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 20
+  },
+  {
+   "analysis": "Dec 2023",
+   "country": "MDG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 75
+  },
+  {
+   "analysis": "Dec 2024",
+   "country": "MDG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 108
+  },
+  {
+   "analysis": "Dec 2025",
+   "country": "MDG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 76
+  },
+  {
+   "analysis": "Jul 2022",
+   "country": "MDG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 15
+  },
+  {
+   "analysis": "Jul 2023",
+   "country": "MDG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Jul 2025",
+   "country": "MDG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 96
+  },
+  {
+   "analysis": "Jun 2024",
+   "country": "MDG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 108
+  },
+  {
+   "analysis": "May 2026",
+   "country": "MDG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 360
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "MDG",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 42
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "MLI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 102
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "MLI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 51
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "MLI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 112
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "MLI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 112
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "MLI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 102
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "MLI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 112
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "MLI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 112
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "MLI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 112
+  },
+  {
+   "analysis": "Nov 2025",
+   "country": "MLI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 112
+  },
+  {
+   "analysis": "Apr 2021",
+   "country": "MOZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 36
+  },
+  {
+   "analysis": "Jul 2023",
+   "country": "MOZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 144
+  },
+  {
+   "analysis": "Jul 2026",
+   "country": "MOZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 92
+  },
+  {
+   "analysis": "Jun 2024",
+   "country": "MOZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 148
+  },
+  {
+   "analysis": "Jun 2025",
+   "country": "MOZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 140
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "MOZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 128
+  },
+  {
+   "analysis": "Nov 2025",
+   "country": "MOZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 94
+  },
+  {
+   "analysis": "Oct 2024",
+   "country": "MOZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 116
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "MRT",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 94
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "MRT",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 94
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "MRT",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 96
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "MRT",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 110
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "MRT",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 94
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "MRT",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 26
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "MRT",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 122
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "MRT",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 30
+  },
+  {
+   "analysis": "Nov 2025",
+   "country": "MRT",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 110
+  },
+  {
+   "analysis": "Aug 2021",
+   "country": "MWI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 64
+  },
+  {
+   "analysis": "Jul 2023",
+   "country": "MWI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 64
+  },
+  {
+   "analysis": "Jun 2022",
+   "country": "MWI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 64
+  },
+  {
+   "analysis": "Jun 2025",
+   "country": "MWI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 64
+  },
+  {
+   "analysis": "Jun 2026",
+   "country": "MWI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 64
+  },
+  {
+   "analysis": "May 2024",
+   "country": "MWI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 64
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "MWI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 64
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "MWI",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Jul 2023",
+   "country": "NAM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 42
+  },
+  {
+   "analysis": "Jul 2024",
+   "country": "NAM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 42
+  },
+  {
+   "analysis": "Jul 2025",
+   "country": "NAM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 42
+  },
+  {
+   "analysis": "May 2024",
+   "country": "NAM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 28
+  },
+  {
+   "analysis": "Oct 2021",
+   "country": "NAM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 28
+  },
+  {
+   "analysis": "Sep 2022",
+   "country": "NAM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 42
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "NER",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 150
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "NER",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 156
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "NER",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 78
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "NER",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 152
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "NER",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 156
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "NER",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 156
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "NER",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 156
+  },
+  {
+   "analysis": "Nov 2025",
+   "country": "NER",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 158
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "NGA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 1128
+  },
+  {
+   "analysis": "Dec 2025",
+   "country": "PAK",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "PAK",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 38
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "PAK",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 94
+  },
+  {
+   "analysis": "Mar 2026",
+   "country": "PAK",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 102
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "PAK",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 136
+  },
+  {
+   "analysis": "Oct 2021",
+   "country": "PAK",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 50
+  },
+  {
+   "analysis": "Sep 2022",
+   "country": "PAK",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 56
+  },
+  {
+   "analysis": "Apr 2025",
+   "country": "PSE",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 10
+  },
+  {
+   "analysis": "May 2026",
+   "country": "PSE",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 10
+  },
+  {
+   "analysis": "Nov 2025",
+   "country": "PSE",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 8
+  },
+  {
+   "analysis": "Sep 2024",
+   "country": "PSE",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 6
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "SEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "SEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "SEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "SEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Mar 2026",
+   "country": "SEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 92
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "SEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "SEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "SEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 90
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "SEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 92
+  },
+  {
+   "analysis": "Nov 2025",
+   "country": "SEN",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 92
+  },
+  {
+   "analysis": "Mar 2021",
+   "country": "SLE",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 28
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "SLE",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Mar 2023",
+   "country": "SLE",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Mar 2024",
+   "country": "SLE",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "SLE",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "SLE",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Nov 2024",
+   "country": "SLE",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Nov 2025",
+   "country": "SLE",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Oct 2021",
+   "country": "SLE",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Oct 2022",
+   "country": "SLE",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Aug 2021",
+   "country": "SLV",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 42
+  },
+  {
+   "analysis": "Apr 2023",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 696
+  },
+  {
+   "analysis": "Apr 2026",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 107
+  },
+  {
+   "analysis": "Aug 2021",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 36
+  },
+  {
+   "analysis": "Aug 2023",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 696
+  },
+  {
+   "analysis": "Aug 2024",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 710
+  },
+  {
+   "analysis": "Feb 2023",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 684
+  },
+  {
+   "analysis": "Jan 2021",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 148
+  },
+  {
+   "analysis": "Jan 2022",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 54
+  },
+  {
+   "analysis": "Jan 2024",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 710
+  },
+  {
+   "analysis": "Jan 2025",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 710
+  },
+  {
+   "analysis": "Jan 2026",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 1305
+  },
+  {
+   "analysis": "Jul 2025",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 710
+  },
+  {
+   "analysis": "Mar 2022",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 36
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 355
+  },
+  {
+   "analysis": "May 2022",
+   "country": "SOM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 36
+  },
+  {
+   "analysis": "Apr 2025",
+   "country": "SSD",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 80
+  },
+  {
+   "analysis": "Mar 2026",
+   "country": "SSD",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 79
+  },
+  {
+   "analysis": "Sep 2023",
+   "country": "SSD",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 243
+  },
+  {
+   "analysis": "Sep 2025",
+   "country": "SSD",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 237
+  },
+  {
+   "analysis": "Aug 2021",
+   "country": "SWZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 22
+  },
+  {
+   "analysis": "Jan 2021",
+   "country": "SWZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 12
+  },
+  {
+   "analysis": "Jun 2022",
+   "country": "SWZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 22
+  },
+  {
+   "analysis": "Jun 2023",
+   "country": "SWZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 22
+  },
+  {
+   "analysis": "Jun 2024",
+   "country": "SWZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 22
+  },
+  {
+   "analysis": "Jun 2025",
+   "country": "SWZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 22
+  },
+  {
+   "analysis": "Jun 2026",
+   "country": "SWZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 22
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "SWZ",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 11
+  },
+  {
+   "analysis": "Feb 2024",
+   "country": "TCD",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 28
+  },
+  {
+   "analysis": "Nov 2021",
+   "country": "TGO",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 10
+  },
+  {
+   "analysis": "Nov 2022",
+   "country": "TLS",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 28
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "TLS",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 28
+  },
+  {
+   "analysis": "Dec 2021",
+   "country": "TZA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 28
+  },
+  {
+   "analysis": "Mar 2025",
+   "country": "TZA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 32
+  },
+  {
+   "analysis": "Mar 2026",
+   "country": "TZA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 60
+  },
+  {
+   "analysis": "Nov 2023",
+   "country": "TZA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 42
+  },
+  {
+   "analysis": "Oct 2022",
+   "country": "TZA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 66
+  },
+  {
+   "analysis": "Apr 2021",
+   "country": "UGA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Apr 2022",
+   "country": "UGA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Apr 2024",
+   "country": "UGA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Apr 2026",
+   "country": "UGA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Aug 2026",
+   "country": "UGA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Jul 2025",
+   "country": "UGA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 28
+  },
+  {
+   "analysis": "Jun 2025",
+   "country": "UGA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 86
+  },
+  {
+   "analysis": "May 2023",
+   "country": "UGA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 18
+  },
+  {
+   "analysis": "Oct 2022",
+   "country": "UGA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 60
+  },
+  {
+   "analysis": "Oct 2024",
+   "country": "UGA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 24
+  },
+  {
+   "analysis": "Sep 2023",
+   "country": "UGA",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 24
+  },
+  {
+   "analysis": "Apr 2026",
+   "country": "YEM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 354
+  },
+  {
+   "analysis": "Aug 2024",
+   "country": "YEM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 236
+  },
+  {
+   "analysis": "Feb 2022",
+   "country": "YEM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 2
+  },
+  {
+   "analysis": "Jun 2025",
+   "country": "YEM",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 662
+  },
+  {
+   "analysis": "Aug 2025",
+   "country": "ZMB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 142
+  },
+  {
+   "analysis": "Feb 2021",
+   "country": "ZMB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 65
+  },
+  {
+   "analysis": "Jul 2024",
+   "country": "ZMB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 188
+  },
+  {
+   "analysis": "Jun 2026",
+   "country": "ZMB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 186
+  },
+  {
+   "analysis": "Sep 2023",
+   "country": "ZMB",
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "C_people": 0,
+   "area_periods": 152
+  }
+ ]
+}
