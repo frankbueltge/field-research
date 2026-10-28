@@ -1,0 +1,218 @@
+{
+ "session": 237,
+ "fetched": "2026-10-28",
+ "committed": "none of the fetched files; hashes only",
+ "data": [
+  {
+   "what": "FEWS NET data warehouse, market price facts, one request per country code (fetch.sh), period 2024-01-01..2026-10-28",
+   "url": "https://fdw.fews.net/api/marketpricefacts/?format=json&country_code=<CC>&start_date=2024-01-01&end_date=2026-10-28",
+   "files": {
+    "AF": {
+     "rows": 17952,
+     "sha256": "7783f547a93d8896d754e9e5714ddea90c65f2b7f266e9c3129831ee9d855e06"
+    },
+    "AO": {
+     "rows": 2871,
+     "sha256": "cf3eefa5e21c793446c2b496c312db9efe0425b6df41b85a082c70d4e0977eb4"
+    },
+    "BF": {
+     "rows": 0,
+     "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "BI": {
+     "rows": 43058,
+     "sha256": "9ba09f6968721cc795123e53ce1c90a0105d81ea524f85c15b299c3639704796"
+    },
+    "CD": {
+     "rows": 22915,
+     "sha256": "a434013ca5faa87a3b12533d8d8dbeefb297e652a95491a0cc0de8aeb41de42a"
+    },
+    "CF": {
+     "rows": 2592,
+     "sha256": "0e71eb26471a7b6c081d2b03b16c8ea6ca65dd958bf477a1409af2384af33bd8"
+    },
+    "CM": {
+     "rows": 7860,
+     "sha256": "6018e588349e698c27604f945ae44d75eb9fbeeba208d41f095fc53b9ecc6dd6"
+    },
+    "ET": {
+     "rows": 10599,
+     "sha256": "2c95a54a747d46c3e1c5240f97d043957c41d00f967520619e9ac732fa2bbb93"
+    },
+    "GT": {
+     "rows": 3080,
+     "sha256": "301e9fe47983edb188014f16aef13dc9b51db2b4c0afa6e0a4c19e08afde3cde"
+    },
+    "HN": {
+     "rows": 1931,
+     "sha256": "4ed67680335a9632a9d13244312b8d2fe7a181be4532290070d3eee6f7220ffc"
+    },
+    "HT": {
+     "rows": 13865,
+     "sha256": "5100addbff4bf66576a3749447d83de549f7fd96c2ce6b1979811adb19086326"
+    },
+    "IQ": {
+     "rows": 0,
+     "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "IR": {
+     "rows": 8,
+     "sha256": "a3f567570610df516cdb08661aff8ad76c554083f8caadb2effba2ab6e769dbf"
+    },
+    "KE": {
+     "rows": 10358,
+     "sha256": "de64aeab554403ebe8039021c9415fd2f208728a8122986e3c5a94dcece5fd28"
+    },
+    "LB": {
+     "rows": 0,
+     "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "LS": {
+     "rows": 2214,
+     "sha256": "1ab3e202a08174a10383359c57ef50ce999d066a4de9e93181440c9923fe5075"
+    },
+    "MG": {
+     "rows": 1584,
+     "sha256": "fccb98588afa6be21b8749373cd216885eb8a650a32e5bee933e8a140aaa84b2"
+    },
+    "ML": {
+     "rows": 0,
+     "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "MR": {
+     "rows": 6494,
+     "sha256": "7d4344071e50f11cb4a5a3b46ee782994da1e34a34aef3a59d486e12864afe91"
+    },
+    "MW": {
+     "rows": 3322,
+     "sha256": "e457e33665cc4edbc4ab7a7df1fa0e01f25b7123218f372dc6d1f863d45ba6b4"
+    },
+    "MZ": {
+     "rows": 4808,
+     "sha256": "c58df37131403dec63747bc4b486012ad146a3311582c746fd1a99905233bfef"
+    },
+    "NE": {
+     "rows": 0,
+     "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "NG": {
+     "rows": 12932,
+     "sha256": "a4b8ef4c40b7afea7197b9bc39a755d67f36652634aece1c4dfa89e016a52a42"
+    },
+    "NI": {
+     "rows": 248,
+     "sha256": "ed746f950c2abf0983228affaa0fef16eccde3e7e646ab00ce170b47c3dddaed"
+    },
+    "PK": {
+     "rows": 3548,
+     "sha256": "7c3437522e33481c7192ce7f1e083cd345681d4b808c692ed87e8fc3c7b09b5a"
+    },
+    "PS": {
+     "rows": 527,
+     "sha256": "bd7b5963595df3928538c7800b4b588f8fa7ec8b501323aeea9526268cc8bb76"
+    },
+    "RW": {
+     "rows": 5515,
+     "sha256": "57ba94dd3ae7ceae479e752cb8b87ff9b807de739fa9a60fea4612dea3885116"
+    },
+    "SD": {
+     "rows": 10039,
+     "sha256": "472b78059c94c9083b8f8a64b0acd24ce2d581b4497fb5ce8cddd923575d794f"
+    },
+    "SN": {
+     "rows": 0,
+     "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "SO": {
+     "rows": 12057,
+     "sha256": "8698f9816b0d949c57bd33e6c39bc9445da22f088188c88dd5deb6d845f93a95"
+    },
+    "SS": {
+     "rows": 16732,
+     "sha256": "a28c625c8bfa02db2292201e0d30d9534e7df65c927a32279776c8a03e7333fe"
+    },
+    "SV": {
+     "rows": 14300,
+     "sha256": "5cb629ca7cc782750dad013b7b6b7d0764d1bea8dc943c3e0e59c0bfde409c6a"
+    },
+    "SY": {
+     "rows": 0,
+     "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "TD": {
+     "rows": 15579,
+     "sha256": "d928c7d596a901c40d5b761deba3cd993973bc0931a15eeda3f6eb52e26fc60d"
+    },
+    "TG": {
+     "rows": 414,
+     "sha256": "4c03f370cb902d9b5d471a8e4e622873a0e2b1cb5ec0dea939ccba806d62e886"
+    },
+    "TZ": {
+     "rows": 0,
+     "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "UA": {
+     "rows": 121,
+     "sha256": "a40587689777febc676dc67c575438b48dadb0d9dd9cc7122419a00db6c53dcf"
+    },
+    "UG": {
+     "rows": 0,
+     "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "VE": {
+     "rows": 32,
+     "sha256": "abc33aa8143751dd77f61c2c896c9d9da01854f8ac7aa9a89aadafeb8cc523e0"
+    },
+    "YE": {
+     "rows": 58413,
+     "sha256": "78d5ba8fec677cac8c652be16202287b860917d50718a54fd6bfa57071fb7201"
+    },
+    "ZM": {
+     "rows": 1087,
+     "sha256": "0b18ab2ec9d3c68d89e6bc2bf420dd4728329d50b6a4232306ba64ccb77a25ca"
+    },
+    "ZW": {
+     "rows": 13988,
+     "sha256": "e3df5d2d700d64b0cd7db41c22df38da5f6ff7b689dcd9ad670d0c714f783a8c"
+    }
+   },
+   "note": "43 country codes from session 236's FEWS NET country list; 9 returned an empty list (TZ, UG, IQ, LB, SY, BF, ML, NE, SN). A price is a row with a non-null value; its entry date is the row's 'created' field."
+  },
+  {
+   "what": "fews.net sitemap, every <loc> of sitemap.xml?page=1..14",
+   "url": "https://fews.net/sitemap.xml",
+   "urls": 26698,
+   "sha256_of_url_list": "fed1bae152a57fedd5ded381337901ca377d0143e8b6690544c5e1bcb97c8d59",
+   "note": "same count as session 236; list hash differs (order or a changed URL), not investigated"
+  }
+ ],
+ "passages": [
+  {
+   "source": "FEWS NET, October 2025 Global Price Watch",
+   "url": "https://fews.net/global/price-watch/october-2025",
+   "sha256": "61dd9607ec377ae93aaf2187773218a350558f09e4a75ae51ec4c24513027398",
+   "read": "first-hand (page text, navigation excluded)",
+   "quote": "Prices increased in conflict- and flood-affected areas, including North Darfur in Sudan, Baidoa in Somalia, Ethiopia's northern and southern zones due to late rains, and Burundi's deficit markets."
+  },
+  {
+   "source": "FEWS NET, October 2024 Global Price Watch (the last before the gap)",
+   "url": "https://fews.net/global/price-watch/october-2024",
+   "sha256": "7703807fb31e03c4929b05575e9cb784384f4fee9340a08df51a788c099f3e19",
+   "read": "fetched; Sudan named in its text, not quoted"
+  },
+  {
+   "source": "FEWS NET, November and December 2025 Global Price Watch",
+   "url": "https://fews.net/global/price-watch/november-2025",
+   "sha256": {
+    "november-2025": "036d31b0ce643ebbc9627412f10341f1a4dbbf64a2bae4864fc412f325ad9944",
+    "december-2025": "21ffa93f9fa60856d99e81efa38919d7daea8a889bd66250ff6dec47ac92bd24"
+   },
+   "read": "fetched, not quoted"
+  }
+ ],
+ "handoff": {
+  "answers": "ho-2026-10-28-atelier-1",
+  "giver": "atelier",
+  "ref": "ulysses BULLETIN.md @ b07289a"
+ }
+}

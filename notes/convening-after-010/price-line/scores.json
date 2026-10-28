@@ -1,0 +1,339 @@
+{
+ "session": 237,
+ "predictions": {
+  "P1": {
+   "held": true,
+   "last_price_bulletin": "2024-10"
+  },
+  "P2": {
+   "held": true,
+   "sudan_prices_by_month": {
+    "2025-01": 164,
+    "2025-02": 170,
+    "2025-03": 162,
+    "2025-04": 160,
+    "2025-05": 154,
+    "2025-06": 154,
+    "2025-07": 120,
+    "2025-08": 164
+   }
+  },
+  "P3": {
+   "held": true,
+   "countries_2024": 33,
+   "with_prices_after_2025_06": 31,
+   "without": [
+    "Iran",
+    "Togo"
+   ]
+  },
+  "P4": {
+   "held": true,
+   "price_watch_after_2024_10": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+   ],
+   "price_watch_gap": [
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09"
+   ]
+  }
+ },
+ "held": 4,
+ "of": 4,
+ "entered_per_month_all_countries": {
+  "2024-01": 2532,
+  "2024-02": 7426,
+  "2024-03": 7318,
+  "2024-04": 7610,
+  "2024-05": 7692,
+  "2024-06": 6978,
+  "2024-07": 7537,
+  "2024-08": 8464,
+  "2024-09": 8037,
+  "2024-10": 3296,
+  "2024-11": 4,
+  "2024-12": 1475,
+  "2025-01": 12073,
+  "2025-02": 0,
+  "2025-03": 0,
+  "2025-04": 0,
+  "2025-05": 0,
+  "2025-06": 25,
+  "2025-07": 3508,
+  "2025-08": 17412,
+  "2025-09": 10265,
+  "2025-10": 17491,
+  "2025-11": 7215,
+  "2025-12": 7549,
+  "2026-01": 8487,
+  "2026-02": 6263,
+  "2026-03": 6915,
+  "2026-04": 5539,
+  "2026-05": 6225,
+  "2026-06": 8852,
+  "2026-07": 5988,
+  "2026-08": 8783,
+  "2026-09": 6064,
+  "2026-10": 4156
+ },
+ "months_with_no_price_entered": [
+  "2025-02",
+  "2025-03",
+  "2025-04",
+  "2025-05"
+ ],
+ "late_share_oct2024_jan2026": {
+  "AF": {
+   "name": "Afghanistan",
+   "prices": 8574,
+   "late": 2142,
+   "share": 0.25
+  },
+  "AO": {
+   "name": "Angola",
+   "prices": 1392,
+   "late": 1044,
+   "share": 0.75
+  },
+  "BI": {
+   "name": "Burundi",
+   "prices": 17388,
+   "late": 8654,
+   "share": 0.498
+  },
+  "CD": {
+   "name": "Democratic Republic of the Congo",
+   "prices": 4719,
+   "late": 1926,
+   "share": 0.408
+  },
+  "CF": {
+   "name": "Central African Republic",
+   "prices": 586,
+   "late": 189,
+   "share": 0.323
+  },
+  "CM": {
+   "name": "Cameroon",
+   "prices": 1611,
+   "late": 364,
+   "share": 0.226
+  },
+  "ET": {
+   "name": "Ethiopia",
+   "prices": 872,
+   "late": 13,
+   "share": 0.015
+  },
+  "GT": {
+   "name": "Guatemala",
+   "prices": 1351,
+   "late": 515,
+   "share": 0.381
+  },
+  "HN": {
+   "name": "Honduras",
+   "prices": 814,
+   "late": 212,
+   "share": 0.26
+  },
+  "HT": {
+   "name": "Haiti",
+   "prices": 3035,
+   "late": 1,
+   "share": 0.0
+  },
+  "IR": {
+   "name": "Iran",
+   "prices": 0,
+   "late": 0,
+   "share": null
+  },
+  "KE": {
+   "name": "Kenya",
+   "prices": 2914,
+   "late": 1718,
+   "share": 0.59
+  },
+  "LS": {
+   "name": "Lesotho",
+   "prices": 960,
+   "late": 840,
+   "share": 0.875
+  },
+  "MG": {
+   "name": "Madagascar",
+   "prices": 126,
+   "late": 0,
+   "share": 0.0
+  },
+  "MR": {
+   "name": "Mauritania",
+   "prices": 926,
+   "late": 206,
+   "share": 0.222
+  },
+  "MW": {
+   "name": "Malawi",
+   "prices": 658,
+   "late": 352,
+   "share": 0.535
+  },
+  "MZ": {
+   "name": "Mozambique",
+   "prices": 415,
+   "late": 177,
+   "share": 0.427
+  },
+  "NG": {
+   "name": "Nigeria",
+   "prices": 2412,
+   "late": 570,
+   "share": 0.236
+  },
+  "NI": {
+   "name": "Nicaragua",
+   "prices": 32,
+   "late": 6,
+   "share": 0.188
+  },
+  "PK": {
+   "name": "Pakistan",
+   "prices": 1632,
+   "late": 1548,
+   "share": 0.949
+  },
+  "PS": {
+   "name": "West Bank and Gaza",
+   "prices": 272,
+   "late": 272,
+   "share": 1.0
+  },
+  "RW": {
+   "name": "Rwanda",
+   "prices": 2073,
+   "late": 1187,
+   "share": 0.573
+  },
+  "SD": {
+   "name": "Sudan",
+   "prices": 2490,
+   "late": 2417,
+   "share": 0.971
+  },
+  "SO": {
+   "name": "Somalia",
+   "prices": 5726,
+   "late": 1075,
+   "share": 0.188
+  },
+  "SS": {
+   "name": "South Sudan",
+   "prices": 2297,
+   "late": 516,
+   "share": 0.225
+  },
+  "SV": {
+   "name": "El Salvador",
+   "prices": 4532,
+   "late": 1773,
+   "share": 0.391
+  },
+  "TD": {
+   "name": "Chad",
+   "prices": 5695,
+   "late": 3182,
+   "share": 0.559
+  },
+  "TG": {
+   "name": "Togo",
+   "prices": 207,
+   "late": 115,
+   "share": 0.556
+  },
+  "UA": {
+   "name": "Ukraine",
+   "prices": 8,
+   "late": 0,
+   "share": 0.0
+  },
+  "VE": {
+   "name": "Venezuela",
+   "prices": 16,
+   "late": 12,
+   "share": 0.75
+  },
+  "YE": {
+   "name": "Yemen",
+   "prices": 12496,
+   "late": 4442,
+   "share": 0.355
+  },
+  "ZM": {
+   "name": "Zambia",
+   "prices": 538,
+   "late": 520,
+   "share": 0.967
+  },
+  "ZW": {
+   "name": "Zimbabwe",
+   "prices": 1484,
+   "late": 81,
+   "share": 0.055
+  }
+ },
+ "sudan_famis_prices_by_month": {
+  "2024-07": 157,
+  "2024-08": 163,
+  "2024-09": 154,
+  "2024-10": 76,
+  "2024-11": 57,
+  "2024-12": 55,
+  "2025-01": 51,
+  "2025-02": 46,
+  "2025-03": 41,
+  "2025-04": 36,
+  "2025-05": 38,
+  "2025-06": 32,
+  "2025-07": 0,
+  "2025-08": 41,
+  "2025-09": 43,
+  "2025-10": 35,
+  "2025-11": 34,
+  "2025-12": 21,
+  "2026-01": 18,
+  "2026-02": 0,
+  "2026-03": 0,
+  "2026-04": 0,
+  "2026-05": 0,
+  "2026-06": 0,
+  "2026-07": 0,
+  "2026-08": 0,
+  "2026-09": 0
+ },
+ "pooled_late": {
+  "prices": 88251,
+  "late": 36069,
+  "share": 0.409
+ }
+}
