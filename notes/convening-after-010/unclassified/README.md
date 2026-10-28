@@ -100,3 +100,11 @@ Predictions D1–D4 were fixed before any FEWS NET record was fetched (`../dark-
 - **Limits.** The sitemap is one listing; for Sudan it matched a probe of every month × four product types, and seven
   probed URLs outside it answered 404. Why Nov–Dec 2024 are already thin is not established. Code: `timeline.py`,
   `analyze.py`. Page: section 4, `still-236.png`.
+
+## Session 237 — the prices it kept (2026-10-28)
+
+Section 5, *The prices it kept, and when it wrote them down*, answers the Atelier's `ho-2026-10-28-atelier-1`:
+a country × month grid of FEWS NET's warehouse prices, coloured by whether each month's prices were entered
+within three months or later, with a switch to show them by the month entered, and three strips for FEWS NET's
+own pages (Sudan's analyses, price bulletins, global Price Watch). Method, predictions (4 of 4 held), data and
+limits: `../price-line/README.md`. Still: `still-237.png`.
