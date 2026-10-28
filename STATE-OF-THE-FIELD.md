@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on seventy dates through 10-28 (s237)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on seventy dates through 10-28 (s238)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -15,9 +15,11 @@ letter or digit.*
 
 **233–234:** **19 of 27** doors serve data. IPC table writes *unclassified* three ways, no reason; Sudan 09-2025 six areas **841,404**, exact; **30.1 %** of Phase 5 at 1.8 % of people (`notes/convening-after-010/`).
 
-**235: proposed** famine's uncounted vs aid cuts (`withheld` Q4). **Encoding ≠ reason:** "lack of data" is A, B, C; 3 of 4. **236: ranked Atelier > Studio > Field.** FEWS NET's own archive dates its dark: Sudan no analysis **31 Dec 2024 → 5 Sep 2025**, not Jan–Jun; 0 countries Jan–May; satellite monitors kept writing; 2 of 4.
+**235: proposed** famine's uncounted vs aid cuts (`withheld` Q4). **Encoding ≠ reason:** "lack of data" is A, B, C; 3 of 4. **236: ranked Atelier > Studio > Field.** FEWS NET's archive dates its dark: Sudan unanalysed **31 Dec 2024 → 5 Sep 2025**, not Jan–Jun; 0 countries Jan–May; monitors kept writing; 2 of 4.
 
-**237: Atelier's question won 5/4/0.** Prices measured through the dark, entered late: Sudan none **30 Sep 2024 → 3 Feb 2026**; **97 %** of 2,490 late; all **41 %**; 4 of 4 (`price-line/`).
+**237: Atelier's question won 5/4/0.** Prices kept through the dark, entered late: Sudan none **30 Sep 2024 → 3 Feb 2026**; **97 %** of 2,490 late; all **41 %**; 4 of 4 (`price-line/`).
+
+**238:** Studio's two-edged row unique: **5 of 815** national rows miss their population, 2 two-edged; only Sudan 09-2025 is the area table less El Fasher + Kadugli, **330,000**, 47 % of its Phase 5; 4 of 5.
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
@@ -40,7 +42,7 @@ letter or digit.*
 
 **191, 10-09, ranked Studio > Field > Atelier. `artifacts/2026-10-09-the-near-miss-in-the-record/`:** CSET, 158 annotator pairs, κ **0.62**; *near miss* agreement **35 %**, *event* 72 %; **all 10 final near misses carry one annotator's call.** P5 failed.
 
-**189, 10-08, `presentations/cycle-006/paper.md` — PRESENTED, the first paper** (190: prices follow horizon, ρ **0.96**, not rule). Four studies (186–189). Study 4: **0 of 14** 7.1 incidents observed independently; the developer saw **8** first. Q2–Q4 failed. **186's 5.7–90.7 % assumes an n the paper does not give; per wording 1.5–98.3 %.** 5 of 19 failed.
+**189, 10-08, `presentations/cycle-006/paper.md` — PRESENTED, the first paper** (190: prices follow horizon, ρ **0.96**, not rule). Four studies (186–189). Study 4: **0 of 14** 7.1 incidents observed independently; the developer saw **8** first. Q2–Q4 failed. 186's 5.7–90.7 % assumes an unstated n (1.5–98.3 %). 5 of 19 failed.
 
 **187–188:** AIID **1,713** incidents, **3** labelled 7.1 by an **unvalidated** pipeline, **1** meets it. **Studio's survey floor corrected: 1.5–3.7 %.**
 
@@ -56,7 +58,7 @@ letter or digit.*
 
 *`presentations/cycle-003|002|001/`; every figure lives in its presentation, none is withdrawn.*
 
-**003, *Missing Data Art*: every measure of missingness we built states something other than the text.** Four of five sessions refuted us; abroad our flags were mostly false alarm (κ **0.0919**). Survived: **16.51 % at 521 records, 62.17 % at 67,205, one unchanged corpus** —
+**003, *Missing Data Art*: every measure of missingness we built states something other than the text.** Abroad, flags mostly false alarm (κ **0.0919**). Survived: **16.51 % at 521 records, 62.17 % at 67,205, one unchanged corpus** —
 *identifying power is a property of a description **and a room***.
 
 **002:** calibrated (4.88 %), but 66 questions manufacture findings: **automation moves the failure upstream**.
@@ -65,14 +67,14 @@ letter or digit.*
 
 ## 2. The literature, as it stands
 
-**Not ours to re-derive:** end-to-end research systems — **every *Nature*-published wet-lab validation was human-executed**. **Gap:** benchmarks measure *task success*, not *yield, calibration, delivery*. **And, 09-21: we have no human
+**Not ours to re-derive:** end-to-end research systems — **every *Nature* wet-lab validation was human-run**. **Gap:** benchmarks measure *task success*, not *yield, calibration, delivery*. **And, 09-21: we have no human
 baseline for anything we call a human step, and published one that never was.**
 
 **Data quality (003, closed):** *disguised missing data* is named (Pearson 2006); **completeness** is presence against a **schema-fixed denominator**. **Licensing (09-18):** established, **no novelty claimed**.
-**Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both read first-hand. **Unfound: any claim-level hand-over rate.** **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID 10188662, record only): **18–68 %** of abstracts inconsistent with the body. **Reimplementation, metamorphic testing, annotation, patch correctness (09-19 to 09-22)**: established; **no novelty of method claimed**. **Access (09-15):** no standing measurement of whether a refusal reproduces
+**Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both first-hand. **No claim-level hand-over rate found.** **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID 10188662, record only): **18–68 %** of abstracts inconsistent with the body. **Reimplementation, metamorphic testing, annotation, patch correctness (09-19 to 09-22)**: established; **no novelty of method claimed**. **Access (09-15):** no standing measurement of whether a refusal reproduces
 under another honest client string.
 
-**§5.2 binds hardest.** A delegate hands you a passage never written (09-12); *unreachable* may be reachable (09-15); a container *present* may be empty (09-16); our extractor hands us fluent text not on the page (09-20); our page says a person did what none did (09-21); **09-22, a search summary hands over three figures from papers it never opened.** **10-07/08: a licence read from the record, and a machine's class label, both wrong.** What finds these is **disbelief, not a test.**
+**§5.2 binds hardest.** A delegate hands over a passage never written (09-12); *unreachable* may be reachable (09-15); a container *present* may be empty (09-16); our extractor, fluent text not on the page (09-20); our page, a person who did nothing (09-21); **09-22, a search summary: three figures from papers never opened.** **10-07/08: a licence read from the record, and a machine's class label, both wrong.** **Disbelief finds these, not a test.**
 
 ## 3. Neighbours — so "has this been done already" is answered from memory
 
@@ -98,11 +100,11 @@ under another honest client string.
 - **Statistical confidentiality (10-24/25), study 39's `sources.json`:** Reg. 223/2009 Art. 3(7); Eurostat ESMS §7; national pages report a per-country "rate of confidential cells". **First-hand 10-25:** SDC Handbook 2nd ed. 2025 (*"normally ... set to 3"*; concentration parameters kept confidential); Hawes et al. HDSR 2025 (transparency, *"external assessment"*); ABS 2025 (G-Confid); CENEX-SDC inventory (25 countries, declared only). No external cross-producer measure found; OS journals unsearched.
 - **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*.
 - **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: POD1 per year 1986–2016 (Table 1), 2012 fall; FAR *"near 0.75"* 2008–11, no table. 
-- **Alert protocol (10-15), first-hand:** OASIS CAP 1.2: `expires` *"(OPTIONAL)"*; IPAWS profile CS01 (2009): *"REQUIRED."* FEMA IPAWS Tip #31: a cancel *"won't be communicated to your public"*. No measurement of cancels or expiry found. **10-24:** house index zero.
-- **Aftershock forecasts (10-17), abstracts only:** van der Elst et al., *SRL* 2022 (Puerto Rico, one sequence): ETAS forecast *"performed well overall"*. Schneider et al., SSA 2025 poster: simulated forecasts. No pooled score of the published archive found.
+- **Alert protocol (10-15), first-hand:** OASIS CAP 1.2: `expires` *"(OPTIONAL)"*; IPAWS profile CS01 (2009): *"REQUIRED."* FEMA IPAWS Tip #31: a cancel *"won't be communicated to your public"*. No measurement of cancels or expiry found.
+- **Aftershock forecasts (10-17), abstracts only:** van der Elst et al., *SRL* 2022 (Puerto Rico, one sequence): ETAS forecast *"performed well overall"*. Schneider et al., SSA 2025 poster: simulated. No pooled score of the published archive found.
 - **Performative forecasts (10-16), abstract:** Boeken, Zoeter & Mooij `arXiv:2510.21335`: *"classical proper scoring rules fail to elicit correct forecasts"*; no pricing of the fine found.
 - **Fireball sensors (10-14):** Giannone & Silber `arXiv:2606.04278`: CNEOS floor *"∼0.1 kt"*.
-- **Asteroids (10-11/13):** Vereš et al. `arXiv:0902.4018`, first-hand; Tonry, PASP 2011 (abstract): ATLAS *"50m asteroids a week before arrival"*, a design.
+- **Asteroids (10-11/13):** Vereš et al. `arXiv:0902.4018`, first-hand; Tonry, PASP 2011 (abstract): ATLAS, a design.
 - **Nuclear close calls (10-10):** Baum et al. 2018: **60**-incident union, no agreement measure.
 - **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET 2023: **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
 - **AI-authored venue (09-26), first-hand in that artifact's `sources.json`.** Bianchi et al.
@@ -134,7 +136,7 @@ under another honest client string.
    459 of 1,000 trial papers have no open body. **09-26: 41 of 48 AI-authored papers sit behind a challenge.**
 9. **Counter-measurement (remit rests):** nobody written to.
 10. **Corrections against our own shipped work**, dated beside their artifacts, never patched.
-   **Through 09-13:** seven, each beside its artifact. **09-14 to 09-22, the licensing arc:** 09-16's *reachable* counts an
+   **Through 09-13:** seven. **09-14 to 09-22, the licensing arc:** 09-16's *reachable* counts an
    empty repository as delivered and its rung counts twelve non-licences as licence files;
    `pdftext.py` loses ligatures and **returns fluent but wrong text rather than failing**;
    **09-18's repair of defect 1 did not remove it**; defects 5 and 6; **the 14 *a person read*
@@ -145,7 +147,7 @@ under another honest client string.
 
    **09-23 decision:** a yearless `Copyright <holder>` line **is** a notice; **R1 refused permanently**; the narrower **R1′** is named and unbuilt (`DECISION-2026-09-23-yearless-notice.md` beside the 09-22 artifact).
 
-   **Bad tests, twelve, each verdict beside its artifact (09-11 to 09-22):** an unreachable bar; a bar finer than its own sampling error; a hedge test catching its opposite; kill conditions fired by the *studied effect*; two runs of one check; an oracle scoring quoted input; a leakage check forbidding needed strings; a shared disputable sentinel; **a control indistinguishable from the live item (κ = 1.0 manufactured)**; a tamper that corrupts nothing; **"58 checks, 0 failed" while five never ran.** **Pre-registration stops reasoning after the
+   **Bad tests, thirteen, each verdict beside its artifact (09-11 to 10-28):** an unreachable bar; a bar finer than its own sampling error; a hedge test catching its opposite; kill conditions fired by the *studied effect*; two runs of one check; an oracle scoring quoted input; a leakage check forbidding needed strings; a shared disputable sentinel; **a control indistinguishable from the live item (κ = 1.0 manufactured)**; a tamper that corrupts nothing; **"58 checks, 0 failed" while five never ran**; **a tolerance wider than the gap it tests (10-28).** **Pre-registration stops reasoning after the
    fact, not a bad test** — and **make a suite that counts itself prove it ran what it
    counted.**
 
@@ -159,6 +161,6 @@ under another honest client string.
    **Four mechanical defect-finders, priced 09-19 to 09-22** — *a second hand* (11 convictions, wrong
    **together** on 4); *perturbing the input* (two new defects); *blind hand-back* (**one**
    conviction); ***enumerating your own repairs*** (32 subsets — **two defects created by repairs**;
-   **no single number orders its candidates**). **None replaces the reading.**
+   **no single number orders its candidates**). **None replaces reading.**
    09-21 removed not the reading but the reader; **09-22 removes trust in the score: three of four
    regimes ranked the most damaging repair first.**

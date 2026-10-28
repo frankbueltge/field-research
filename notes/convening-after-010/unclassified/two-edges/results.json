@@ -1,0 +1,5074 @@
+{
+ "national_rows": 815,
+ "national_rows_non_ch": 488,
+ "all": {
+  "gaps": 5,
+  "two_edged": 2,
+  "one_edged": 3,
+  "two_edged_explained": 2
+ },
+ "non_ch": {
+  "gaps": 5,
+  "two_edged": 2,
+  "one_edged": 3,
+  "two_edged_explained": 2
+ },
+ "ch": {
+  "gaps": 0,
+  "two_edged": 0,
+  "one_edged": 0,
+  "two_edged_explained": 0
+ },
+ "sudan_sep2025_first": [
+  {
+   "date": "Sep 2025",
+   "country": "SDN",
+   "period": "first projection",
+   "ch": false,
+   "national_all": 47160883,
+   "national_p5": 206818,
+   "phase_sum": 47490538,
+   "gap": 329655,
+   "kind": "two-edged",
+   "area_rows": 215,
+   "area_all_sum": 47490883,
+   "area_phase_sum": 47490538,
+   "hollow_areas": [],
+   "hollow_sum": 0,
+   "e5_hollow": false,
+   "e5_area_all": true,
+   "e5_hollow_strict": false,
+   "e5_area_all_strict": false,
+   "national_all_minus_area_all": -330000,
+   "area_phases_match_national_phases": true
+  }
+ ],
+ "scores": {
+  "E1": true,
+  "E2": true,
+  "E3": true,
+  "E4": true,
+  "E5": true,
+  "E5_strict": false
+ },
+ "sudan_areas_outside": [
+  {
+   "level1": "South Kordofan",
+   "area": "Kadugli Urban",
+   "all": 30000,
+   "p5": 7500,
+   "p4": 10500
+  },
+  {
+   "level1": "North Darfur",
+   "area": "Al Fasher Urban",
+   "all": 300000,
+   "p5": 90000,
+   "p4": 120000
+  }
+ ],
+ "strip": [
+  [
+   "BDI",
+   "Apr 2021",
+   "current",
+   0.0
+  ],
+  [
+   "BDI",
+   "Apr 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "GIN",
+   "Apr 2021",
+   "current",
+   0.0
+  ],
+  [
+   "GIN",
+   "Apr 2021",
+   "first projection",
+   -0.0
+  ],
+  [
+   "MDG",
+   "Apr 2021",
+   "current",
+   0.0
+  ],
+  [
+   "MDG",
+   "Apr 2021",
+   "first projection",
+   -0.0
+  ],
+  [
+   "MOZ",
+   "Apr 2021",
+   "current",
+   -0.00184
+  ],
+  [
+   "MOZ",
+   "Apr 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "MOZ",
+   "Apr 2021",
+   "second projection",
+   0.0
+  ],
+  [
+   "UGA",
+   "Apr 2021",
+   "current",
+   0.0
+  ],
+  [
+   "UGA",
+   "Apr 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "BDI",
+   "Apr 2022",
+   "current",
+   0.0
+  ],
+  [
+   "BDI",
+   "Apr 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "GTM",
+   "Apr 2022",
+   "current",
+   0.0
+  ],
+  [
+   "GTM",
+   "Apr 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "GTM",
+   "Apr 2022",
+   "second projection",
+   -0.0
+  ],
+  [
+   "KEN",
+   "Apr 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Apr 2022",
+   "current",
+   0.0
+  ],
+  [
+   "MDG",
+   "Apr 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Apr 2022",
+   "second projection",
+   0.0
+  ],
+  [
+   "UGA",
+   "Apr 2022",
+   "current",
+   0.0
+  ],
+  [
+   "UGA",
+   "Apr 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "AFG",
+   "Apr 2023",
+   "current",
+   0.0
+  ],
+  [
+   "AFG",
+   "Apr 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "BDI",
+   "Apr 2023",
+   "current",
+   -0.0
+  ],
+  [
+   "BDI",
+   "Apr 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "CAF",
+   "Apr 2023",
+   "current",
+   -0.0
+  ],
+  [
+   "CAF",
+   "Apr 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "COD",
+   "Apr 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "DJI",
+   "Apr 2023",
+   "current",
+   0.0
+  ],
+  [
+   "DJI",
+   "Apr 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "PAK",
+   "Apr 2023",
+   "current",
+   0.0
+  ],
+  [
+   "PAK",
+   "Apr 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Apr 2023",
+   "current",
+   1e-05
+  ],
+  [
+   "SOM",
+   "Apr 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "DJI",
+   "Apr 2024",
+   "current",
+   0.0
+  ],
+  [
+   "DJI",
+   "Apr 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "SDN",
+   "Apr 2024",
+   "current",
+   0.0
+  ],
+  [
+   "SDN",
+   "Apr 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "SDN",
+   "Apr 2024",
+   "second projection",
+   0.0
+  ],
+  [
+   "UGA",
+   "Apr 2024",
+   "current",
+   0.0
+  ],
+  [
+   "UGA",
+   "Apr 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "BGD",
+   "Apr 2025",
+   "current",
+   0.0
+  ],
+  [
+   "BGD",
+   "Apr 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "PSE",
+   "Apr 2025",
+   "current",
+   0.0
+  ],
+  [
+   "PSE",
+   "Apr 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "SSD",
+   "Apr 2025",
+   "second projection",
+   0.0
+  ],
+  [
+   "COD",
+   "Apr 2026",
+   "first projection",
+   -0.00291
+  ],
+  [
+   "SOM",
+   "Apr 2026",
+   "current",
+   0.0
+  ],
+  [
+   "UGA",
+   "Apr 2026",
+   "current",
+   0.0
+  ],
+  [
+   "UGA",
+   "Apr 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "YEM",
+   "Apr 2026",
+   "current",
+   0.0
+  ],
+  [
+   "YEM",
+   "Apr 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "YEM",
+   "Apr 2026",
+   "second projection",
+   0.0
+  ],
+  [
+   "MWI",
+   "Aug 2021",
+   "current",
+   0.0
+  ],
+  [
+   "MWI",
+   "Aug 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "SLV",
+   "Aug 2021",
+   "current",
+   0.0
+  ],
+  [
+   "SLV",
+   "Aug 2021",
+   "first projection",
+   -0.0
+  ],
+  [
+   "SLV",
+   "Aug 2021",
+   "second projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Aug 2021",
+   "current",
+   0.0
+  ],
+  [
+   "SOM",
+   "Aug 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Aug 2021",
+   "current",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Aug 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "BDI",
+   "Aug 2022",
+   "current",
+   -0.0
+  ],
+  [
+   "BDI",
+   "Aug 2022",
+   "first projection",
+   -0.0
+  ],
+  [
+   "SOM",
+   "Aug 2022",
+   "current",
+   0.0
+  ],
+  [
+   "SOM",
+   "Aug 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "YEM",
+   "Aug 2022",
+   "first projection",
+   0.00462
+  ],
+  [
+   "COD",
+   "Aug 2023",
+   "current",
+   0.0
+  ],
+  [
+   "COD",
+   "Aug 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "HTI",
+   "Aug 2023",
+   "current",
+   0.0
+  ],
+  [
+   "HTI",
+   "Aug 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Aug 2023",
+   "current",
+   0.0
+  ],
+  [
+   "SOM",
+   "Aug 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "ECU",
+   "Aug 2024",
+   "current",
+   0.0
+  ],
+  [
+   "ECU",
+   "Aug 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "HTI",
+   "Aug 2024",
+   "current",
+   0.0
+  ],
+  [
+   "HTI",
+   "Aug 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Aug 2024",
+   "current",
+   -0.0
+  ],
+  [
+   "SOM",
+   "Aug 2024",
+   "first projection",
+   -0.0
+  ],
+  [
+   "YEM",
+   "Aug 2024",
+   "current",
+   0.0
+  ],
+  [
+   "YEM",
+   "Aug 2024",
+   "first projection",
+   -0.0
+  ],
+  [
+   "BDI",
+   "Aug 2025",
+   "current",
+   0.0
+  ],
+  [
+   "BDI",
+   "Aug 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "BDI",
+   "Aug 2025",
+   "second projection",
+   0.0
+  ],
+  [
+   "ZMB",
+   "Aug 2025",
+   "current",
+   0.0
+  ],
+  [
+   "ZMB",
+   "Aug 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "HND",
+   "Aug 2026",
+   "second projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Aug 2026",
+   "current",
+   0.0
+  ],
+  [
+   "SOM",
+   "Aug 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "UGA",
+   "Aug 2026",
+   "current",
+   1e-05
+  ],
+  [
+   "UGA",
+   "Aug 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "TZA",
+   "Dec 2021",
+   "current",
+   0.0
+  ],
+  [
+   "TZA",
+   "Dec 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Dec 2023",
+   "current",
+   0.0
+  ],
+  [
+   "MDG",
+   "Dec 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Dec 2023",
+   "second projection",
+   0.0
+  ],
+  [
+   "PSE",
+   "Dec 2023",
+   "current",
+   0.00025
+  ],
+  [
+   "PSE",
+   "Dec 2023",
+   "first projection",
+   -2e-05
+  ],
+  [
+   "LSO",
+   "Dec 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Dec 2024",
+   "current",
+   0.0
+  ],
+  [
+   "MDG",
+   "Dec 2024",
+   "first projection",
+   -0.0
+  ],
+  [
+   "MDG",
+   "Dec 2024",
+   "second projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Dec 2025",
+   "current",
+   -0.0
+  ],
+  [
+   "MDG",
+   "Dec 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "PAK",
+   "Dec 2025",
+   "current",
+   0.0
+  ],
+  [
+   "PAK",
+   "Dec 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "CAF",
+   "Feb 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "COD",
+   "Feb 2021",
+   "current",
+   0.0
+  ],
+  [
+   "COD",
+   "Feb 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "GHA",
+   "Feb 2021",
+   "current",
+   -0.00019
+  ],
+  [
+   "GHA",
+   "Feb 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "KEN",
+   "Feb 2021",
+   "current",
+   0.0
+  ],
+  [
+   "KEN",
+   "Feb 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "ZMB",
+   "Feb 2021",
+   "first projection",
+   -0.00435
+  ],
+  [
+   "HTI",
+   "Feb 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "KEN",
+   "Feb 2022",
+   "current",
+   0.0
+  ],
+  [
+   "KEN",
+   "Feb 2022",
+   "first projection",
+   -0.0
+  ],
+  [
+   "YEM",
+   "Feb 2022",
+   "current",
+   -0.00605
+  ],
+  [
+   "YEM",
+   "Feb 2022",
+   "first projection",
+   -0.00621
+  ],
+  [
+   "HND",
+   "Feb 2023",
+   "current",
+   -0.0
+  ],
+  [
+   "HND",
+   "Feb 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "HND",
+   "Feb 2023",
+   "second projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Feb 2023",
+   "current",
+   1e-05
+  ],
+  [
+   "SOM",
+   "Feb 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "BGD",
+   "Feb 2024",
+   "current",
+   0.0
+  ],
+  [
+   "BGD",
+   "Feb 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "HND",
+   "Feb 2024",
+   "current",
+   -0.0
+  ],
+  [
+   "HND",
+   "Feb 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "HND",
+   "Feb 2024",
+   "second projection",
+   0.0
+  ],
+  [
+   "KEN",
+   "Feb 2024",
+   "current",
+   0.0
+  ],
+  [
+   "KEN",
+   "Feb 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "PSE",
+   "Feb 2024",
+   "current",
+   0.0
+  ],
+  [
+   "PSE",
+   "Feb 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "TCD",
+   "Feb 2024",
+   "current",
+   -0.0
+  ],
+  [
+   "TCD",
+   "Feb 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "ECU",
+   "Feb 2025",
+   "first projection",
+   -0.0
+  ],
+  [
+   "HND",
+   "Feb 2025",
+   "current",
+   0.0
+  ],
+  [
+   "HND",
+   "Feb 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "HND",
+   "Feb 2025",
+   "second projection",
+   0.0
+  ],
+  [
+   "KEN",
+   "Feb 2025",
+   "current",
+   0.0
+  ],
+  [
+   "KEN",
+   "Feb 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "ECU",
+   "Feb 2026",
+   "current",
+   0.0
+  ],
+  [
+   "ECU",
+   "Feb 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "ECU",
+   "Feb 2026",
+   "second projection",
+   0.0
+  ],
+  [
+   "KEN",
+   "Feb 2026",
+   "current",
+   0.0
+  ],
+  [
+   "KEN",
+   "Feb 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "HND",
+   "Jan 2021",
+   "current",
+   0.0
+  ],
+  [
+   "HND",
+   "Jan 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "HND",
+   "Jan 2021",
+   "second projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Jan 2021",
+   "current",
+   0.0
+  ],
+  [
+   "SOM",
+   "Jan 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Jan 2021",
+   "current",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Jan 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "HND",
+   "Jan 2022",
+   "current",
+   0.0
+  ],
+  [
+   "HND",
+   "Jan 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "HND",
+   "Jan 2022",
+   "second projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Jan 2022",
+   "current",
+   0.0
+  ],
+  [
+   "SOM",
+   "Jan 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Jan 2022",
+   "second projection",
+   0.0
+  ],
+  [
+   "KEN",
+   "Jan 2023",
+   "current",
+   0.0
+  ],
+  [
+   "KEN",
+   "Jan 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Jan 2024",
+   "current",
+   -0.0
+  ],
+  [
+   "SOM",
+   "Jan 2024",
+   "first projection",
+   -0.0
+  ],
+  [
+   "SOM",
+   "Jan 2025",
+   "current",
+   -0.0
+  ],
+  [
+   "SOM",
+   "Jan 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "SDN",
+   "Jan 2026",
+   "current",
+   0.0
+  ],
+  [
+   "SDN",
+   "Jan 2026",
+   "first projection",
+   -0.82561
+  ],
+  [
+   "SDN",
+   "Jan 2026",
+   "second projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Jan 2026",
+   "current",
+   0.0
+  ],
+  [
+   "SOM",
+   "Jan 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Jan 2026",
+   "second projection",
+   0.0
+  ],
+  [
+   "KEN",
+   "Jul 2021",
+   "current",
+   0.0
+  ],
+  [
+   "KEN",
+   "Jul 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "COD",
+   "Jul 2022",
+   "current",
+   -0.0
+  ],
+  [
+   "COD",
+   "Jul 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "KEN",
+   "Jul 2022",
+   "current",
+   0.0
+  ],
+  [
+   "KEN",
+   "Jul 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Jul 2022",
+   "current",
+   0.0
+  ],
+  [
+   "MDG",
+   "Jul 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Jul 2022",
+   "second projection",
+   0.0
+  ],
+  [
+   "KEN",
+   "Jul 2023",
+   "current",
+   0.0
+  ],
+  [
+   "KEN",
+   "Jul 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "LSO",
+   "Jul 2023",
+   "current",
+   -0.0
+  ],
+  [
+   "LSO",
+   "Jul 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Jul 2023",
+   "current",
+   0.0
+  ],
+  [
+   "MDG",
+   "Jul 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Jul 2023",
+   "second projection",
+   0.0
+  ],
+  [
+   "MOZ",
+   "Jul 2023",
+   "current",
+   0.0
+  ],
+  [
+   "MOZ",
+   "Jul 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "MWI",
+   "Jul 2023",
+   "current",
+   0.0
+  ],
+  [
+   "MWI",
+   "Jul 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "NAM",
+   "Jul 2023",
+   "current",
+   0.0
+  ],
+  [
+   "NAM",
+   "Jul 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "NAM",
+   "Jul 2023",
+   "second projection",
+   0.0
+  ],
+  [
+   "GTM",
+   "Jul 2024",
+   "current",
+   0.0
+  ],
+  [
+   "GTM",
+   "Jul 2024",
+   "first projection",
+   -0.0
+  ],
+  [
+   "GTM",
+   "Jul 2024",
+   "second projection",
+   -0.00088
+  ],
+  [
+   "KEN",
+   "Jul 2024",
+   "current",
+   0.0
+  ],
+  [
+   "KEN",
+   "Jul 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "NAM",
+   "Jul 2024",
+   "current",
+   0.0
+  ],
+  [
+   "NAM",
+   "Jul 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "NAM",
+   "Jul 2024",
+   "second projection",
+   0.0
+  ],
+  [
+   "ZMB",
+   "Jul 2024",
+   "current",
+   0.0
+  ],
+  [
+   "ZMB",
+   "Jul 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "KEN",
+   "Jul 2025",
+   "current",
+   0.0
+  ],
+  [
+   "KEN",
+   "Jul 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Jul 2025",
+   "current",
+   0.0
+  ],
+  [
+   "MDG",
+   "Jul 2025",
+   "first projection",
+   -0.0
+  ],
+  [
+   "MDG",
+   "Jul 2025",
+   "second projection",
+   0.0
+  ],
+  [
+   "NAM",
+   "Jul 2025",
+   "current",
+   0.0
+  ],
+  [
+   "NAM",
+   "Jul 2025",
+   "first projection",
+   -0.0
+  ],
+  [
+   "NAM",
+   "Jul 2025",
+   "second projection",
+   -0.0
+  ],
+  [
+   "PSE",
+   "Jul 2025",
+   "current",
+   0.0
+  ],
+  [
+   "PSE",
+   "Jul 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Jul 2025",
+   "current",
+   0.0
+  ],
+  [
+   "SOM",
+   "Jul 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "UGA",
+   "Jul 2025",
+   "current",
+   0.0
+  ],
+  [
+   "UGA",
+   "Jul 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "KEN",
+   "Jul 2026",
+   "current",
+   0.0
+  ],
+  [
+   "KEN",
+   "Jul 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "MOZ",
+   "Jul 2026",
+   "current",
+   -0.0
+  ],
+  [
+   "MOZ",
+   "Jul 2026",
+   "first projection",
+   -0.0
+  ],
+  [
+   "AGO",
+   "Jun 2021",
+   "current",
+   0.0
+  ],
+  [
+   "AGO",
+   "Jun 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "LSO",
+   "Jun 2021",
+   "current",
+   0.0
+  ],
+  [
+   "LSO",
+   "Jun 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "ZMB",
+   "Jun 2021",
+   "current",
+   0.0
+  ],
+  [
+   "ZMB",
+   "Jun 2021",
+   "first projection",
+   -0.0
+  ],
+  [
+   "LSO",
+   "Jun 2022",
+   "current",
+   0.0
+  ],
+  [
+   "LSO",
+   "Jun 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "MWI",
+   "Jun 2022",
+   "current",
+   0.0
+  ],
+  [
+   "MWI",
+   "Jun 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Jun 2022",
+   "current",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Jun 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "ZMB",
+   "Jun 2022",
+   "current",
+   0.0
+  ],
+  [
+   "ZMB",
+   "Jun 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "SDN",
+   "Jun 2023",
+   "current",
+   0.0
+  ],
+  [
+   "SDN",
+   "Jun 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "SDN",
+   "Jun 2023",
+   "second projection",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Jun 2023",
+   "current",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Jun 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Jun 2024",
+   "current",
+   0.0
+  ],
+  [
+   "MDG",
+   "Jun 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Jun 2024",
+   "second projection",
+   0.0
+  ],
+  [
+   "MOZ",
+   "Jun 2024",
+   "current",
+   0.0
+  ],
+  [
+   "MOZ",
+   "Jun 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Jun 2024",
+   "current",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Jun 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "MOZ",
+   "Jun 2025",
+   "current",
+   -7e-05
+  ],
+  [
+   "MOZ",
+   "Jun 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "MWI",
+   "Jun 2025",
+   "current",
+   -0.0
+  ],
+  [
+   "MWI",
+   "Jun 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Jun 2025",
+   "current",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Jun 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "UGA",
+   "Jun 2025",
+   "current",
+   -0.0
+  ],
+  [
+   "UGA",
+   "Jun 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "YEM",
+   "Jun 2025",
+   "current",
+   0.0
+  ],
+  [
+   "YEM",
+   "Jun 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "BDI",
+   "Jun 2026",
+   "current",
+   0.0
+  ],
+  [
+   "BDI",
+   "Jun 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "DJI",
+   "Jun 2026",
+   "current",
+   0.0
+  ],
+  [
+   "DJI",
+   "Jun 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "LSO",
+   "Jun 2026",
+   "current",
+   0.0
+  ],
+  [
+   "LSO",
+   "Jun 2026",
+   "first projection",
+   -0.0
+  ],
+  [
+   "MWI",
+   "Jun 2026",
+   "current",
+   0.0
+  ],
+  [
+   "MWI",
+   "Jun 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Jun 2026",
+   "current",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Jun 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "ZMB",
+   "Jun 2026",
+   "current",
+   0.0
+  ],
+  [
+   "ZMB",
+   "Jun 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "AFG",
+   "Mar 2021",
+   "current",
+   0.0
+  ],
+  [
+   "AFG",
+   "Mar 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "BFA",
+   "Mar 2021",
+   "current",
+   -0.0
+  ],
+  [
+   "BFA",
+   "Mar 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "CIV",
+   "Mar 2021",
+   "current",
+   0.0
+  ],
+  [
+   "CIV",
+   "Mar 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "CMR",
+   "Mar 2021",
+   "current",
+   0.0
+  ],
+  [
+   "CMR",
+   "Mar 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "GMB",
+   "Mar 2021",
+   "current",
+   0.0
+  ],
+  [
+   "GMB",
+   "Mar 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "GNB",
+   "Mar 2021",
+   "current",
+   0.0
+  ],
+  [
+   "GNB",
+   "Mar 2021",
+   "first projection",
+   -0.0
+  ],
+  [
+   "LBR",
+   "Mar 2021",
+   "current",
+   0.0
+  ],
+  [
+   "LBR",
+   "Mar 2021",
+   "first projection",
+   -0.0
+  ],
+  [
+   "MLI",
+   "Mar 2021",
+   "current",
+   -0.00125
+  ],
+  [
+   "MLI",
+   "Mar 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "MRT",
+   "Mar 2021",
+   "current",
+   0.0
+  ],
+  [
+   "MRT",
+   "Mar 2021",
+   "first projection",
+   -0.0
+  ],
+  [
+   "NER",
+   "Mar 2021",
+   "current",
+   0.0
+  ],
+  [
+   "NER",
+   "Mar 2021",
+   "first projection",
+   -0.0
+  ],
+  [
+   "NGA",
+   "Mar 2021",
+   "current",
+   0.00056
+  ],
+  [
+   "NGA",
+   "Mar 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "PAK",
+   "Mar 2021",
+   "current",
+   0.0
+  ],
+  [
+   "PAK",
+   "Mar 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "SDN",
+   "Mar 2021",
+   "current",
+   0.0
+  ],
+  [
+   "SDN",
+   "Mar 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "SDN",
+   "Mar 2021",
+   "second projection",
+   0.0
+  ],
+  [
+   "SEN",
+   "Mar 2021",
+   "current",
+   0.0
+  ],
+  [
+   "SEN",
+   "Mar 2021",
+   "first projection",
+   -0.00118
+  ],
+  [
+   "SLE",
+   "Mar 2021",
+   "current",
+   0.0
+  ],
+  [
+   "SLE",
+   "Mar 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "TCD",
+   "Mar 2021",
+   "current",
+   -0.0003
+  ],
+  [
+   "TCD",
+   "Mar 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "TGO",
+   "Mar 2021",
+   "current",
+   0.0
+  ],
+  [
+   "TGO",
+   "Mar 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "AFG",
+   "Mar 2022",
+   "current",
+   0.0
+  ],
+  [
+   "AFG",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "BEN",
+   "Mar 2022",
+   "current",
+   0.0
+  ],
+  [
+   "BEN",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "BFA",
+   "Mar 2022",
+   "current",
+   0.0
+  ],
+  [
+   "BFA",
+   "Mar 2022",
+   "first projection",
+   -0.0
+  ],
+  [
+   "CAF",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "CIV",
+   "Mar 2022",
+   "current",
+   0.0
+  ],
+  [
+   "CIV",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "CMR",
+   "Mar 2022",
+   "current",
+   0.0
+  ],
+  [
+   "CMR",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "CPV",
+   "Mar 2022",
+   "current",
+   -0.0
+  ],
+  [
+   "CPV",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "DJI",
+   "Mar 2022",
+   "current",
+   -0.0
+  ],
+  [
+   "DJI",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "GHA",
+   "Mar 2022",
+   "current",
+   0.0
+  ],
+  [
+   "GHA",
+   "Mar 2022",
+   "first projection",
+   -0.0
+  ],
+  [
+   "GIN",
+   "Mar 2022",
+   "current",
+   0.0
+  ],
+  [
+   "GIN",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "GMB",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "GNB",
+   "Mar 2022",
+   "current",
+   0.0
+  ],
+  [
+   "GNB",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "MLI",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "MRT",
+   "Mar 2022",
+   "current",
+   0.0
+  ],
+  [
+   "MRT",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "NER",
+   "Mar 2022",
+   "current",
+   0.0
+  ],
+  [
+   "NER",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "NGA",
+   "Mar 2022",
+   "current",
+   0.0
+  ],
+  [
+   "NGA",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "SEN",
+   "Mar 2022",
+   "current",
+   0.0
+  ],
+  [
+   "SEN",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "SLE",
+   "Mar 2022",
+   "current",
+   0.0
+  ],
+  [
+   "SLE",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Mar 2022",
+   "second projection",
+   0.0
+  ],
+  [
+   "SSD",
+   "Mar 2022",
+   "current",
+   -8e-05
+  ],
+  [
+   "SSD",
+   "Mar 2022",
+   "first projection",
+   -0.00032
+  ],
+  [
+   "TCD",
+   "Mar 2022",
+   "current",
+   0.0
+  ],
+  [
+   "TCD",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "TGO",
+   "Mar 2022",
+   "current",
+   -0.0
+  ],
+  [
+   "TGO",
+   "Mar 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "BEN",
+   "Mar 2023",
+   "current",
+   0.0
+  ],
+  [
+   "BEN",
+   "Mar 2023",
+   "first projection",
+   -0.0
+  ],
+  [
+   "BFA",
+   "Mar 2023",
+   "current",
+   0.0
+  ],
+  [
+   "BFA",
+   "Mar 2023",
+   "first projection",
+   -0.0
+  ],
+  [
+   "BGD",
+   "Mar 2023",
+   "current",
+   -0.0
+  ],
+  [
+   "BGD",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "CIV",
+   "Mar 2023",
+   "current",
+   0.0
+  ],
+  [
+   "CIV",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "CMR",
+   "Mar 2023",
+   "current",
+   0.0
+  ],
+  [
+   "CMR",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "CPV",
+   "Mar 2023",
+   "current",
+   -0.0
+  ],
+  [
+   "CPV",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "GHA",
+   "Mar 2023",
+   "current",
+   0.0
+  ],
+  [
+   "GHA",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "GIN",
+   "Mar 2023",
+   "current",
+   0.0
+  ],
+  [
+   "GIN",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "GMB",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "GNB",
+   "Mar 2023",
+   "current",
+   -0.0
+  ],
+  [
+   "GNB",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "HTI",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "LBR",
+   "Mar 2023",
+   "first projection",
+   -0.0
+  ],
+  [
+   "MLI",
+   "Mar 2023",
+   "current",
+   0.0
+  ],
+  [
+   "MLI",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "MRT",
+   "Mar 2023",
+   "current",
+   0.0
+  ],
+  [
+   "MRT",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "NER",
+   "Mar 2023",
+   "current",
+   0.0
+  ],
+  [
+   "NER",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "NGA",
+   "Mar 2023",
+   "current",
+   -0.0
+  ],
+  [
+   "NGA",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "SEN",
+   "Mar 2023",
+   "current",
+   -0.0
+  ],
+  [
+   "SEN",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "SLE",
+   "Mar 2023",
+   "current",
+   -0.0
+  ],
+  [
+   "SLE",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "TCD",
+   "Mar 2023",
+   "current",
+   0.0
+  ],
+  [
+   "TCD",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "TGO",
+   "Mar 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "YEM",
+   "Mar 2023",
+   "current",
+   8e-05
+  ],
+  [
+   "YEM",
+   "Mar 2023",
+   "first projection",
+   -0.00018
+  ],
+  [
+   "AFG",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "AFG",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "BEN",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "BEN",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "BFA",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "BFA",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "CIV",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "CIV",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "CMR",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "CMR",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "CPV",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "GHA",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "GHA",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "GIN",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "GIN",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "GMB",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "GNB",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "GNB",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "HTI",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "LBN",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "MLI",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "MLI",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "MRT",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "MRT",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "NER",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "NGA",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "NGA",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "PAK",
+   "Mar 2024",
+   "current",
+   -0.0
+  ],
+  [
+   "PAK",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "SEN",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "SEN",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "SLE",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "SLE",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "TCD",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "TCD",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "TGO",
+   "Mar 2024",
+   "current",
+   0.0
+  ],
+  [
+   "TGO",
+   "Mar 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "AFG",
+   "Mar 2025",
+   "current",
+   -0.0
+  ],
+  [
+   "AFG",
+   "Mar 2025",
+   "first projection",
+   -0.0
+  ],
+  [
+   "BEN",
+   "Mar 2025",
+   "current",
+   0.0
+  ],
+  [
+   "BEN",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "CIV",
+   "Mar 2025",
+   "current",
+   0.0
+  ],
+  [
+   "CIV",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "CMR",
+   "Mar 2025",
+   "current",
+   null
+  ],
+  [
+   "CMR",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "COD",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "CPV",
+   "Mar 2025",
+   "current",
+   null
+  ],
+  [
+   "CPV",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "GHA",
+   "Mar 2025",
+   "current",
+   0.0
+  ],
+  [
+   "GHA",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "GIN",
+   "Mar 2025",
+   "current",
+   0.0
+  ],
+  [
+   "GIN",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "GMB",
+   "Mar 2025",
+   "current",
+   null
+  ],
+  [
+   "GMB",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "GNB",
+   "Mar 2025",
+   "current",
+   0.0
+  ],
+  [
+   "GNB",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "HTI",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "LBN",
+   "Mar 2025",
+   "current",
+   0.0
+  ],
+  [
+   "LBN",
+   "Mar 2025",
+   "first projection",
+   -0.0
+  ],
+  [
+   "LSO",
+   "Mar 2025",
+   "current",
+   -0.00066
+  ],
+  [
+   "LSO",
+   "Mar 2025",
+   "first projection",
+   -0.00066
+  ],
+  [
+   "MLI",
+   "Mar 2025",
+   "current",
+   null
+  ],
+  [
+   "MLI",
+   "Mar 2025",
+   "first projection",
+   -0.00191
+  ],
+  [
+   "MRT",
+   "Mar 2025",
+   "current",
+   -0.0
+  ],
+  [
+   "MRT",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "NER",
+   "Mar 2025",
+   "current",
+   null
+  ],
+  [
+   "NER",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "NGA",
+   "Mar 2025",
+   "current",
+   0.0
+  ],
+  [
+   "NGA",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "SEN",
+   "Mar 2025",
+   "current",
+   null
+  ],
+  [
+   "SEN",
+   "Mar 2025",
+   "first projection",
+   -0.0
+  ],
+  [
+   "SLE",
+   "Mar 2025",
+   "current",
+   0.0
+  ],
+  [
+   "SLE",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Mar 2025",
+   "first projection",
+   6e-05
+  ],
+  [
+   "TCD",
+   "Mar 2025",
+   "current",
+   0.0
+  ],
+  [
+   "TCD",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "TZA",
+   "Mar 2025",
+   "current",
+   0.0
+  ],
+  [
+   "TZA",
+   "Mar 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "GMB",
+   "Mar 2026",
+   "current",
+   null
+  ],
+  [
+   "GMB",
+   "Mar 2026",
+   "first projection",
+   null
+  ],
+  [
+   "HND",
+   "Mar 2026",
+   "current",
+   0.0
+  ],
+  [
+   "HND",
+   "Mar 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "HND",
+   "Mar 2026",
+   "second projection",
+   0.0
+  ],
+  [
+   "HTI",
+   "Mar 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "LBN",
+   "Mar 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "NGA",
+   "Mar 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "PAK",
+   "Mar 2026",
+   "current",
+   0.0
+  ],
+  [
+   "PAK",
+   "Mar 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "SEN",
+   "Mar 2026",
+   "current",
+   0.0
+  ],
+  [
+   "SEN",
+   "Mar 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "SSD",
+   "Mar 2026",
+   "second projection",
+   0.0
+  ],
+  [
+   "TCD",
+   "Mar 2026",
+   "current",
+   0.0
+  ],
+  [
+   "TCD",
+   "Mar 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "TZA",
+   "Mar 2026",
+   "current",
+   0.0
+  ],
+  [
+   "TZA",
+   "Mar 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "ETH",
+   "May 2021",
+   "current",
+   0.0
+  ],
+  [
+   "ETH",
+   "May 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "GTM",
+   "May 2021",
+   "current",
+   0.0
+  ],
+  [
+   "GTM",
+   "May 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "SDN",
+   "May 2022",
+   "current",
+   -0.0
+  ],
+  [
+   "SDN",
+   "May 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "SDN",
+   "May 2022",
+   "second projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "May 2022",
+   "current",
+   0.0
+  ],
+  [
+   "SOM",
+   "May 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "GTM",
+   "May 2023",
+   "current",
+   0.0
+  ],
+  [
+   "GTM",
+   "May 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "GTM",
+   "May 2023",
+   "second projection",
+   -0.0
+  ],
+  [
+   "LBN",
+   "May 2023",
+   "current",
+   0.0
+  ],
+  [
+   "UGA",
+   "May 2023",
+   "current",
+   0.0
+  ],
+  [
+   "UGA",
+   "May 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "BDI",
+   "May 2024",
+   "current",
+   0.0
+  ],
+  [
+   "BDI",
+   "May 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "LSO",
+   "May 2024",
+   "current",
+   0.0
+  ],
+  [
+   "LSO",
+   "May 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "MWI",
+   "May 2024",
+   "current",
+   0.0
+  ],
+  [
+   "MWI",
+   "May 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "NAM",
+   "May 2024",
+   "current",
+   0.0
+  ],
+  [
+   "NAM",
+   "May 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "PSE",
+   "May 2024",
+   "current",
+   0.0
+  ],
+  [
+   "PSE",
+   "May 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "CAF",
+   "May 2025",
+   "current",
+   0.0
+  ],
+  [
+   "CAF",
+   "May 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "DJI",
+   "May 2025",
+   "current",
+   0.0
+  ],
+  [
+   "DJI",
+   "May 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "GTM",
+   "May 2025",
+   "current",
+   -6e-05
+  ],
+  [
+   "GTM",
+   "May 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "GTM",
+   "May 2025",
+   "second projection",
+   0.0
+  ],
+  [
+   "BGD",
+   "May 2026",
+   "current",
+   0.0
+  ],
+  [
+   "BGD",
+   "May 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "CAF",
+   "May 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "GTM",
+   "May 2026",
+   "current",
+   0.0
+  ],
+  [
+   "GTM",
+   "May 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "GTM",
+   "May 2026",
+   "second projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "May 2026",
+   "current",
+   0.0
+  ],
+  [
+   "MDG",
+   "May 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "May 2026",
+   "second projection",
+   0.0
+  ],
+  [
+   "PSE",
+   "May 2026",
+   "current",
+   0.0
+  ],
+  [
+   "PSE",
+   "May 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "BEN",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "BEN",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "BFA",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "BFA",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "GHA",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "GHA",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "GIN",
+   "Nov 2021",
+   "current",
+   -0.0
+  ],
+  [
+   "GIN",
+   "Nov 2021",
+   "first projection",
+   -0.0
+  ],
+  [
+   "GMB",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "GMB",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "GNB",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "GNB",
+   "Nov 2021",
+   "first projection",
+   -0.0
+  ],
+  [
+   "LSO",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "LSO",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "MDG",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Nov 2021",
+   "second projection",
+   -0.00486
+  ],
+  [
+   "MLI",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "MLI",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "MOZ",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "MOZ",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "MRT",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "MRT",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "MWI",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "MWI",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "NER",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "NER",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "SEN",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "SEN",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "SWZ",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "TCD",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "TCD",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "TGO",
+   "Nov 2021",
+   "current",
+   0.0
+  ],
+  [
+   "TGO",
+   "Nov 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "BFA",
+   "Nov 2022",
+   "current",
+   0.0
+  ],
+  [
+   "BFA",
+   "Nov 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "DOM",
+   "Nov 2022",
+   "current",
+   0.0
+  ],
+  [
+   "DOM",
+   "Nov 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "GIN",
+   "Nov 2022",
+   "current",
+   0.0
+  ],
+  [
+   "GIN",
+   "Nov 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "GMB",
+   "Nov 2022",
+   "current",
+   0.0
+  ],
+  [
+   "GMB",
+   "Nov 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "GNB",
+   "Nov 2022",
+   "current",
+   -0.00355
+  ],
+  [
+   "GNB",
+   "Nov 2022",
+   "first projection",
+   -0.00444
+  ],
+  [
+   "MDG",
+   "Nov 2022",
+   "current",
+   -0.0
+  ],
+  [
+   "MDG",
+   "Nov 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "MDG",
+   "Nov 2022",
+   "second projection",
+   0.0
+  ],
+  [
+   "MLI",
+   "Nov 2022",
+   "current",
+   0.0
+  ],
+  [
+   "MLI",
+   "Nov 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "MOZ",
+   "Nov 2022",
+   "current",
+   0.00563
+  ],
+  [
+   "MRT",
+   "Nov 2022",
+   "current",
+   -0.0
+  ],
+  [
+   "MRT",
+   "Nov 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "NER",
+   "Nov 2022",
+   "current",
+   0.0
+  ],
+  [
+   "NER",
+   "Nov 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "SEN",
+   "Nov 2022",
+   "current",
+   0.0
+  ],
+  [
+   "SEN",
+   "Nov 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "SOM",
+   "Nov 2022",
+   "current",
+   0.0
+  ],
+  [
+   "SOM",
+   "Nov 2022",
+   "first projection",
+   0.00037
+  ],
+  [
+   "SOM",
+   "Nov 2022",
+   "second projection",
+   -1e-05
+  ],
+  [
+   "TCD",
+   "Nov 2022",
+   "current",
+   0.0
+  ],
+  [
+   "TCD",
+   "Nov 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "TLS",
+   "Nov 2022",
+   "current",
+   0.0
+  ],
+  [
+   "TLS",
+   "Nov 2022",
+   "first projection",
+   -0.0
+  ],
+  [
+   "BEN",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "BEN",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "BFA",
+   "Nov 2023",
+   "current",
+   -0.0
+  ],
+  [
+   "BFA",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "CIV",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "CIV",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "CMR",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "CMR",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "CPV",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "CPV",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "GHA",
+   "Nov 2023",
+   "current",
+   -3e-05
+  ],
+  [
+   "GHA",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "GIN",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "GIN",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "GMB",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "GMB",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "GNB",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "GNB",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "MLI",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "MLI",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "MRT",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "MRT",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "NER",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "NER",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "NGA",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "NGA",
+   "Nov 2023",
+   "first projection",
+   0.00312
+  ],
+  [
+   "SEN",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "SEN",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "SLE",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "SLE",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "TCD",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "TCD",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "TGO",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "TGO",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "TLS",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "TLS",
+   "Nov 2023",
+   "first projection",
+   -0.0
+  ],
+  [
+   "TZA",
+   "Nov 2023",
+   "current",
+   0.0
+  ],
+  [
+   "TZA",
+   "Nov 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "BEN",
+   "Nov 2024",
+   "current",
+   -0.0
+  ],
+  [
+   "BEN",
+   "Nov 2024",
+   "first projection",
+   -0.0
+  ],
+  [
+   "CIV",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "CIV",
+   "Nov 2024",
+   "first projection",
+   -0.0
+  ],
+  [
+   "CMR",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "CMR",
+   "Nov 2024",
+   "first projection",
+   -0.0
+  ],
+  [
+   "CPV",
+   "Nov 2024",
+   "current",
+   -0.0
+  ],
+  [
+   "CPV",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "DOM",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "DOM",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "DOM",
+   "Nov 2024",
+   "second projection",
+   0.0
+  ],
+  [
+   "GIN",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "GIN",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "GMB",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "GMB",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "GNB",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "GNB",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "LBN",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "LBN",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "MLI",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "MLI",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "MRT",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "MRT",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "MWI",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "NER",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "NER",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "NGA",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "NGA",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "PAK",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "PAK",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "SEN",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "SEN",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "SLE",
+   "Nov 2024",
+   "current",
+   -0.0
+  ],
+  [
+   "SLE",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "TCD",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "TCD",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "TGO",
+   "Nov 2024",
+   "current",
+   0.0
+  ],
+  [
+   "TGO",
+   "Nov 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "BEN",
+   "Nov 2025",
+   "current",
+   -0.0
+  ],
+  [
+   "BEN",
+   "Nov 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "CIV",
+   "Nov 2025",
+   "current",
+   0.0
+  ],
+  [
+   "CIV",
+   "Nov 2025",
+   "first projection",
+   -0.0
+  ],
+  [
+   "CPV",
+   "Nov 2025",
+   "current",
+   0.0
+  ],
+  [
+   "CPV",
+   "Nov 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "LBR",
+   "Nov 2025",
+   "current",
+   0.0
+  ],
+  [
+   "LBR",
+   "Nov 2025",
+   "first projection",
+   -0.0
+  ],
+  [
+   "MLI",
+   "Nov 2025",
+   "current",
+   0.0
+  ],
+  [
+   "MLI",
+   "Nov 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "MOZ",
+   "Nov 2025",
+   "current",
+   0.0
+  ],
+  [
+   "MOZ",
+   "Nov 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "MRT",
+   "Nov 2025",
+   "current",
+   0.0
+  ],
+  [
+   "MRT",
+   "Nov 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "NER",
+   "Nov 2025",
+   "current",
+   0.0
+  ],
+  [
+   "NER",
+   "Nov 2025",
+   "first projection",
+   -0.00011
+  ],
+  [
+   "PSE",
+   "Nov 2025",
+   "current",
+   0.0
+  ],
+  [
+   "PSE",
+   "Nov 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "SEN",
+   "Nov 2025",
+   "current",
+   0.0
+  ],
+  [
+   "SEN",
+   "Nov 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "SLE",
+   "Nov 2025",
+   "current",
+   0.0
+  ],
+  [
+   "SLE",
+   "Nov 2025",
+   "first projection",
+   -0.0
+  ],
+  [
+   "TCD",
+   "Nov 2025",
+   "current",
+   0.0
+  ],
+  [
+   "TCD",
+   "Nov 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "TGO",
+   "Nov 2025",
+   "current",
+   0.0
+  ],
+  [
+   "TGO",
+   "Nov 2025",
+   "first projection",
+   -0.0
+  ],
+  [
+   "AFG",
+   "Oct 2021",
+   "current",
+   -0.0
+  ],
+  [
+   "AFG",
+   "Oct 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "CIV",
+   "Oct 2021",
+   "current",
+   0.0
+  ],
+  [
+   "CIV",
+   "Oct 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "CMR",
+   "Oct 2021",
+   "current",
+   0.0
+  ],
+  [
+   "CMR",
+   "Oct 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "NAM",
+   "Oct 2021",
+   "current",
+   -0.0
+  ],
+  [
+   "NAM",
+   "Oct 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "NGA",
+   "Oct 2021",
+   "current",
+   0.0
+  ],
+  [
+   "NGA",
+   "Oct 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "PAK",
+   "Oct 2021",
+   "current",
+   -0.0
+  ],
+  [
+   "PAK",
+   "Oct 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "SLE",
+   "Oct 2021",
+   "current",
+   0.0
+  ],
+  [
+   "SLE",
+   "Oct 2021",
+   "first projection",
+   -0.0
+  ],
+  [
+   "BEN",
+   "Oct 2022",
+   "current",
+   0.0
+  ],
+  [
+   "BEN",
+   "Oct 2022",
+   "first projection",
+   -0.0
+  ],
+  [
+   "CIV",
+   "Oct 2022",
+   "current",
+   0.0
+  ],
+  [
+   "CIV",
+   "Oct 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "CMR",
+   "Oct 2022",
+   "current",
+   0.0
+  ],
+  [
+   "CMR",
+   "Oct 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "GHA",
+   "Oct 2022",
+   "current",
+   0.0
+  ],
+  [
+   "GHA",
+   "Oct 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "LBR",
+   "Oct 2022",
+   "current",
+   0.0
+  ],
+  [
+   "LBR",
+   "Oct 2022",
+   "first projection",
+   -0.0
+  ],
+  [
+   "NGA",
+   "Oct 2022",
+   "current",
+   -0.0
+  ],
+  [
+   "NGA",
+   "Oct 2022",
+   "first projection",
+   -0.0
+  ],
+  [
+   "SLE",
+   "Oct 2022",
+   "current",
+   0.0
+  ],
+  [
+   "SLE",
+   "Oct 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "SSD",
+   "Oct 2022",
+   "current",
+   0.00031
+  ],
+  [
+   "SSD",
+   "Oct 2022",
+   "first projection",
+   -0.0001
+  ],
+  [
+   "SSD",
+   "Oct 2022",
+   "second projection",
+   -2e-05
+  ],
+  [
+   "TGO",
+   "Oct 2022",
+   "current",
+   0.0
+  ],
+  [
+   "TGO",
+   "Oct 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "TZA",
+   "Oct 2022",
+   "current",
+   0.0
+  ],
+  [
+   "TZA",
+   "Oct 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "UGA",
+   "Oct 2022",
+   "current",
+   0.0
+  ],
+  [
+   "UGA",
+   "Oct 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "AFG",
+   "Oct 2023",
+   "current",
+   0.0
+  ],
+  [
+   "AFG",
+   "Oct 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "LBN",
+   "Oct 2023",
+   "current",
+   0.0
+  ],
+  [
+   "LBN",
+   "Oct 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "SDN",
+   "Oct 2023",
+   "second projection",
+   0.0
+  ],
+  [
+   "YEM",
+   "Oct 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "AFG",
+   "Oct 2024",
+   "current",
+   -0.00038
+  ],
+  [
+   "AFG",
+   "Oct 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "BDI",
+   "Oct 2024",
+   "current",
+   0.0
+  ],
+  [
+   "BDI",
+   "Oct 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "BGD",
+   "Oct 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "CAF",
+   "Oct 2024",
+   "current",
+   0.0
+  ],
+  [
+   "CAF",
+   "Oct 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "MOZ",
+   "Oct 2024",
+   "first projection",
+   -0.00027
+  ],
+  [
+   "SDN",
+   "Oct 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "SDN",
+   "Oct 2024",
+   "second projection",
+   0.0
+  ],
+  [
+   "UGA",
+   "Oct 2024",
+   "current",
+   0.0
+  ],
+  [
+   "UGA",
+   "Oct 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "AFG",
+   "Oct 2025",
+   "current",
+   0.0
+  ],
+  [
+   "AFG",
+   "Oct 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "AFG",
+   "Oct 2025",
+   "second projection",
+   0.0
+  ],
+  [
+   "CMR",
+   "Oct 2025",
+   "current",
+   -0.0
+  ],
+  [
+   "CMR",
+   "Oct 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "GHA",
+   "Oct 2025",
+   "current",
+   0.0
+  ],
+  [
+   "GHA",
+   "Oct 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "GIN",
+   "Oct 2025",
+   "current",
+   0.0
+  ],
+  [
+   "GIN",
+   "Oct 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "LBN",
+   "Oct 2025",
+   "current",
+   0.0
+  ],
+  [
+   "LBN",
+   "Oct 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "BDI",
+   "Sep 2021",
+   "current",
+   0.0
+  ],
+  [
+   "BDI",
+   "Sep 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "BDI",
+   "Sep 2021",
+   "second projection",
+   0.0
+  ],
+  [
+   "CAF",
+   "Sep 2021",
+   "current",
+   0.0
+  ],
+  [
+   "CAF",
+   "Sep 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "COD",
+   "Sep 2021",
+   "current",
+   0.0
+  ],
+  [
+   "COD",
+   "Sep 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "HTI",
+   "Sep 2021",
+   "current",
+   -0.00078
+  ],
+  [
+   "HTI",
+   "Sep 2021",
+   "first projection",
+   0.0
+  ],
+  [
+   "AFG",
+   "Sep 2022",
+   "current",
+   0.0
+  ],
+  [
+   "AFG",
+   "Sep 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "CAF",
+   "Sep 2022",
+   "current",
+   0.0
+  ],
+  [
+   "CAF",
+   "Sep 2022",
+   "first projection",
+   -0.0
+  ],
+  [
+   "HTI",
+   "Sep 2022",
+   "current",
+   0.0
+  ],
+  [
+   "HTI",
+   "Sep 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "LBN",
+   "Sep 2022",
+   "current",
+   0.00019
+  ],
+  [
+   "LBN",
+   "Sep 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "NAM",
+   "Sep 2022",
+   "current",
+   0.0
+  ],
+  [
+   "NAM",
+   "Sep 2022",
+   "first projection",
+   0.0
+  ],
+  [
+   "NAM",
+   "Sep 2022",
+   "second projection",
+   0.0
+  ],
+  [
+   "PAK",
+   "Sep 2022",
+   "current",
+   0.0
+  ],
+  [
+   "PAK",
+   "Sep 2022",
+   "first projection",
+   -0.0
+  ],
+  [
+   "BDI",
+   "Sep 2023",
+   "current",
+   0.0
+  ],
+  [
+   "BDI",
+   "Sep 2023",
+   "first projection",
+   -0.0
+  ],
+  [
+   "BDI",
+   "Sep 2023",
+   "second projection",
+   0.0
+  ],
+  [
+   "CAF",
+   "Sep 2023",
+   "current",
+   0.0
+  ],
+  [
+   "CAF",
+   "Sep 2023",
+   "first projection",
+   -0.0
+  ],
+  [
+   "DOM",
+   "Sep 2023",
+   "current",
+   0.0
+  ],
+  [
+   "DOM",
+   "Sep 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "DOM",
+   "Sep 2023",
+   "second projection",
+   0.0
+  ],
+  [
+   "SSD",
+   "Sep 2023",
+   "current",
+   -1e-05
+  ],
+  [
+   "SSD",
+   "Sep 2023",
+   "first projection",
+   -9e-05
+  ],
+  [
+   "SSD",
+   "Sep 2023",
+   "second projection",
+   0.00015
+  ],
+  [
+   "UGA",
+   "Sep 2023",
+   "current",
+   0.0
+  ],
+  [
+   "UGA",
+   "Sep 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "ZMB",
+   "Sep 2023",
+   "current",
+   0.0
+  ],
+  [
+   "ZMB",
+   "Sep 2023",
+   "first projection",
+   0.0
+  ],
+  [
+   "COD",
+   "Sep 2024",
+   "current",
+   0.0
+  ],
+  [
+   "COD",
+   "Sep 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "PSE",
+   "Sep 2024",
+   "current",
+   0.0
+  ],
+  [
+   "PSE",
+   "Sep 2024",
+   "first projection",
+   0.0
+  ],
+  [
+   "SSD",
+   "Sep 2024",
+   "current",
+   0.0011
+  ],
+  [
+   "SSD",
+   "Sep 2024",
+   "first projection",
+   0.00035
+  ],
+  [
+   "SSD",
+   "Sep 2024",
+   "second projection",
+   0.00043
+  ],
+  [
+   "CAF",
+   "Sep 2025",
+   "current",
+   0.0
+  ],
+  [
+   "CAF",
+   "Sep 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "COD",
+   "Sep 2025",
+   "current",
+   0.0
+  ],
+  [
+   "COD",
+   "Sep 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "HTI",
+   "Sep 2025",
+   "current",
+   0.0
+  ],
+  [
+   "HTI",
+   "Sep 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "NGA",
+   "Sep 2025",
+   "current",
+   0.0
+  ],
+  [
+   "NGA",
+   "Sep 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "SDN",
+   "Sep 2025",
+   "current",
+   0.0
+  ],
+  [
+   "SDN",
+   "Sep 2025",
+   "first projection",
+   0.00699
+  ],
+  [
+   "SDN",
+   "Sep 2025",
+   "second projection",
+   -1e-05
+  ],
+  [
+   "SSD",
+   "Sep 2025",
+   "current",
+   0.0
+  ],
+  [
+   "SSD",
+   "Sep 2025",
+   "first projection",
+   0.0
+  ],
+  [
+   "SSD",
+   "Sep 2025",
+   "second projection",
+   0.0
+  ],
+  [
+   "AFG",
+   "Sep 2026",
+   "current",
+   0.0
+  ],
+  [
+   "AFG",
+   "Sep 2026",
+   "first projection",
+   0.0
+  ],
+  [
+   "AFG",
+   "Sep 2026",
+   "second projection",
+   0.0
+  ]
+ ],
+ "gaps": [
+  {
+   "date": "Feb 2022",
+   "country": "YEM",
+   "period": "current",
+   "ch": false,
+   "national_all": 31900000,
+   "national_p5": 31000,
+   "phase_sum": 31707000,
+   "gap": -193000,
+   "kind": "one-edged",
+   "area_rows": 1,
+   "area_all_sum": 31707000,
+   "area_phase_sum": 31707000,
+   "hollow_areas": [],
+   "hollow_sum": 0,
+   "e5_hollow": false,
+   "e5_area_all": true,
+   "e5_hollow_strict": false,
+   "e5_area_all_strict": false,
+   "national_all_minus_area_all": 193000,
+   "area_phases_match_national_phases": true
+  },
+  {
+   "date": "Feb 2022",
+   "country": "YEM",
+   "period": "first projection",
+   "ch": false,
+   "national_all": 31900000,
+   "national_p5": 161000,
+   "phase_sum": 31702000,
+   "gap": -198000,
+   "kind": "one-edged",
+   "area_rows": 1,
+   "area_all_sum": 31702000,
+   "area_phase_sum": 31304320,
+   "hollow_areas": [],
+   "hollow_sum": 0,
+   "e5_hollow": false,
+   "e5_area_all": true,
+   "e5_hollow_strict": false,
+   "e5_area_all_strict": false,
+   "national_all_minus_area_all": 198000,
+   "area_phases_match_national_phases": false
+  },
+  {
+   "date": "Jan 2026",
+   "country": "SDN",
+   "period": "first projection",
+   "ch": false,
+   "national_all": 47535794,
+   "national_p5": 199713,
+   "phase_sum": 8289610,
+   "gap": -39246184,
+   "kind": "one-edged",
+   "area_rows": 196,
+   "area_all_sum": 47535794,
+   "area_phase_sum": 8289610,
+   "hollow_areas": [],
+   "hollow_sum": 0,
+   "e5_hollow": false,
+   "e5_area_all": true,
+   "e5_hollow_strict": false,
+   "e5_area_all_strict": true,
+   "national_all_minus_area_all": 0,
+   "area_phases_match_national_phases": true
+  },
+  {
+   "date": "Nov 2022",
+   "country": "MOZ",
+   "period": "current",
+   "ch": false,
+   "national_all": 31966572,
+   "national_p5": 0,
+   "phase_sum": 32146423,
+   "gap": 179851,
+   "kind": "two-edged",
+   "area_rows": 159,
+   "area_all_sum": 31975036,
+   "area_phase_sum": 31957017,
+   "hollow_areas": [],
+   "hollow_sum": 0,
+   "e5_hollow": false,
+   "e5_area_all": true,
+   "e5_hollow_strict": false,
+   "e5_area_all_strict": false,
+   "national_all_minus_area_all": -8464,
+   "area_phases_match_national_phases": true
+  },
+  {
+   "date": "Sep 2025",
+   "country": "SDN",
+   "period": "first projection",
+   "ch": false,
+   "national_all": 47160883,
+   "national_p5": 206818,
+   "phase_sum": 47490538,
+   "gap": 329655,
+   "kind": "two-edged",
+   "area_rows": 215,
+   "area_all_sum": 47490883,
+   "area_phase_sum": 47490538,
+   "hollow_areas": [],
+   "hollow_sum": 0,
+   "e5_hollow": false,
+   "e5_area_all": true,
+   "e5_hollow_strict": false,
+   "e5_area_all_strict": false,
+   "national_all_minus_area_all": -330000,
+   "area_phases_match_national_phases": true
+  }
+ ]
+}

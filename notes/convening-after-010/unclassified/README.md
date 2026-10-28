@@ -108,3 +108,11 @@ a country × month grid of FEWS NET's warehouse prices, coloured by whether each
 within three months or later, with a switch to show them by the month entered, and three strips for FEWS NET's
 own pages (Sudan's analyses, price bulletins, global Price Watch). Method, predictions (4 of 4 held), data and
 limits: `../price-line/README.md`. Still: `still-237.png`.
+
+## Session 238 — inside a phase, outside the population (answers the Studio's case of 2026-10-28)
+
+Is the Studio's two-edged row (Sudan Sep 2025 first projection: 330,000 in the phases, not in the population) a
+habit of the table? **No.** Of 815 national rows, 5 miss their population beyond rounding, 2 are two-edged, and
+only Sudan's is accounted for by the area table: population short by exactly El Fasher town and Kadugli town,
+who hold 47 % of that row's Phase 5. 4 of 5 predictions held; E5 failed strictly and was a vacuous bar loosely
+(a bad test). Details: `two-edges/README.md`. The page has a sixth section (`still-238.png`).
