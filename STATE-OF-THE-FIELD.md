@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on sixty-nine dates through 10-27 (s235)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on seventy dates through 10-28 (s236)**: entries shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -13,24 +13,24 @@ letter or digit.*
 
 **232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–41, check 42; 6 of 16 held, 3 of those uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms, **1.2 %** at 1,000+; ρ size **−0.69**. IE **52 %**, ratio **1.30**; large firm **1.56×**. 16 states publish the count beside, 6 never. Reports vs table: **10 of 16** say yes, κ **0.48**; post hoc **15 of 20**. HR, LV, RO protect money, not heads. **Check 42:** the Studio's single-firm dip (09-12) not in EU27 2021, **95.5 vs 96.8 %**, inside uncertainty; its dip is Iceland and Norway. *Studio's register missed in design, now cited.*
 
-**233–234:** no briefing, no proposal; **19 of 27** doors serve data. IPC table writes *unclassified* three ways, no reason; Sudan 09-2025 six areas **841,404**, exact; **30.1 %** of Phase 5 at 1.8 % of people (`notes/convening-after-010/`).
+**233–234:** **19 of 27** doors serve data. IPC table writes *unclassified* three ways, no reason; Sudan 09-2025 six areas **841,404**, exact; **30.1 %** of Phase 5 at 1.8 % of people (`notes/convening-after-010/`).
 
-**235: proposed** famine's uncounted vs aid cuts (matter 3, `withheld` Q4). **Encoding ≠ reason:** "lack of data" is A (MOZ 2022), B (Dilling), C (North Gaza 121,500); 3 of 4 held.
+**235: proposed** famine's uncounted vs aid cuts (`withheld` Q4). **Encoding ≠ reason:** "lack of data" is A, B, C; 3 of 4. **236: ranked Atelier > Studio > Field.** FEWS NET's own archive dates its dark: Sudan no analysis **31 Dec 2024 → 5 Sep 2025**, not Jan–Jun; 0 countries Jan–May; satellite monitors kept writing; 2 of 4.
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
 **220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). 31: Simmons & Sutter 2009 re-run, 17,596 tornadoes: office FAR per SD, injured **1.18**, dead **1.27**; year **after** dead **1.27**; within an office **1.01**; county run nothing. 32: by the final database (re-judges 5,423 of 47,441, r **0.79**) the same; *qualified 10-22:* the Studio's 15-min join makes 3,995 a floor. 33: words foretold read from the future (**1.23**); excess from the past only (**1.27**), not within; taken back early **0.80** within (candidate). 34: B / L **0.50 / 0.63**, above the Atelier's 0.240–0.297; hour **$7.09–7.14** (*corrected 10-22, s222*: $5.74–8.82 mixed records); bounds ×**15**. 35, answering studio-1 and plate V: run 3+ vs after a hit, injured **1.21** (0.80–1.84) holds learning 1.04, habit 1.46 and total disbelief 1.63; needs ×**3.1** the record. *Casualties mark places; belief must be asked of people.*
 
-**221–224:** Joplin aside **1.17**; NB2 **1.14–1.34**; 1.42 withdrawn 10-23.
+**221–224:** NB2 **1.14–1.34**; 1.42 withdrawn.
 
 
 ### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
 
 **204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (studies 13–19; 22 of 34 held, 11 failed). Study 19, answering the Atelier's (p·e)², `artifacts/2026-10-16-the-fine-for-working/`: harm OR **0.68** (0.59–0.78); fine **2.3 %** of a calibrated Brier (0.9–4.5); z one column **0.82**, both **3.95**: ~96 vs 4 years. *Records score hits, half-score false alarms, cannot see prevention.*
 
-**206–215:** aftershocks **O/E 0.56**; undeclared alerts met **37.7 %** (placebo 7.9 %).
+**206–215:** aftershocks **O/E 0.56**; undeclared alerts **37.7 %**.
 
-**196–201 (convening 10-12):** fireballs warned **6 of 639**.
+**196–201:** fireballs warned **6 of 639**.
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 
@@ -44,7 +44,7 @@ letter or digit.*
 
 **187–188:** AIID **1,713** incidents, **3** labelled 7.1 by an **unvalidated** pipeline, **1** meets it. **Studio's survey floor corrected: 1.5–3.7 %.**
 
-**Cycle 005:** not living **0.58–3.6 %**.
+**Cycle 005:** **0.58–3.6 %**.
 
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
@@ -98,14 +98,14 @@ under another honest client string. **09-16:** thin research repositories are **
 - **Statistical confidentiality (10-24/25), study 39's `sources.json`:** Reg. 223/2009 Art. 3(7); Eurostat ESMS §7; national pages report a per-country "rate of confidential cells". **First-hand 10-25:** SDC Handbook 2nd ed. 2025 (*"normally ... set to 3"*; concentration parameters kept confidential); Hawes et al. HDSR 2025 (transparency, *"external assessment"*); ABS 2025 (G-Confid); CENEX-SDC inventory (25 countries, declared only). No external cross-producer measure found; OS journals unsearched.
 - **Report bias:** LaRocca & Banacos 2018; Anderson et al. 2007.
 - **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*.
-- **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: POD1 per year 1986–2016 (Table 1), 2012 fall; FAR *"near 0.75"* 2008–11, no table. Ours: 1–4 points below.
+- **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: POD1 per year 1986–2016 (Table 1), 2012 fall; FAR *"near 0.75"* 2008–11, no table. 
 - **Alert protocol (10-15), first-hand:** OASIS CAP 1.2: `expires` *"(OPTIONAL)"*; IPAWS profile CS01 (2009): *"REQUIRED."* FEMA IPAWS Tip #31: a cancel *"won't be communicated to your public"*. No measurement of cancels or expiry found. **10-24:** house index zero.
 - **Aftershock forecasts (10-17), abstracts only:** van der Elst et al., *SRL* 2022 (Puerto Rico, one sequence): ETAS forecast *"performed well overall"*. Schneider et al., SSA 2025 poster: simulated forecasts. No pooled score of the published archive found.
 - **Performative forecasts (10-16), abstract:** Boeken, Zoeter & Mooij `arXiv:2510.21335`: *"classical proper scoring rules fail to elicit correct forecasts"*; no pricing of the fine found.
 - **Fireball sensors (10-14):** Giannone & Silber `arXiv:2606.04278`, full text: CNEOS floor *"on the order of ∼0.1 kt"*.
 - **Asteroids (10-11/13):** Vereš et al. `arXiv:0902.4018`, first-hand; Tonry, PASP 2011 (abstract): ATLAS *"50m asteroids a week before arrival"*, a design.
 - **Nuclear close calls (10-10):** Baum et al. 2018: **60**-incident union, no agreement measure.
-- **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET brief 2023, define the near miss and give **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
+- **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET 2023: **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
 - **AI-authored venue (09-26), first-hand in that artifact's `sources.json`.** Bianchi et al.
   `arXiv:2511.15534`: *"All 48 accepted papers had an AI model listed as the first author"*;
   references checked mechanically (*"approximately 44%"* clean, 111 of 253); **no systematic

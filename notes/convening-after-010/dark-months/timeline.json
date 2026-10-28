@@ -1,0 +1,1676 @@
+{
+ "months": [
+  "2024-07",
+  "2024-08",
+  "2024-09",
+  "2024-10",
+  "2024-11",
+  "2024-12",
+  "2025-01",
+  "2025-02",
+  "2025-03",
+  "2025-04",
+  "2025-05",
+  "2025-06",
+  "2025-07",
+  "2025-08",
+  "2025-09",
+  "2025-10",
+  "2025-11",
+  "2025-12"
+ ],
+ "countries": 43,
+ "monitor_types": [
+  "agroclimatology",
+  "livelihood-zone-map",
+  "price-bulletin",
+  "seasonal-calendar",
+  "seasonal-monitor"
+ ],
+ "types": {
+  "key-message-update": 191,
+  "price-bulletin": 101,
+  "food-security-outlook": 43,
+  "seasonal-calendar": 30,
+  "food-security-outlook-update": 27,
+  "seasonal-monitor": 23,
+  "alert": 9,
+  "remote-monitoring-report": 9,
+  "fews-net-analysis-note": 8,
+  "targeted-analysis": 6,
+  "special-report": 5,
+  "production-and-trade-flow-map": 4,
+  "livelihood-baseline": 1,
+  "livelihood-zone-map": 1,
+  "livelihoods-fact-sheets": 1
+ },
+ "countries_with_product": {
+  "2024-07": {
+   "analysis": 31,
+   "monitor": 30
+  },
+  "2024-08": {
+   "analysis": 32,
+   "monitor": 24
+  },
+  "2024-09": {
+   "analysis": 32,
+   "monitor": 24
+  },
+  "2024-10": {
+   "analysis": 32,
+   "monitor": 27
+  },
+  "2024-11": {
+   "analysis": 11,
+   "monitor": 1
+  },
+  "2024-12": {
+   "analysis": 8,
+   "monitor": 1
+  },
+  "2025-01": {
+   "analysis": 0,
+   "monitor": 1
+  },
+  "2025-02": {
+   "analysis": 0,
+   "monitor": 1
+  },
+  "2025-03": {
+   "analysis": 0,
+   "monitor": 2
+  },
+  "2025-04": {
+   "analysis": 0,
+   "monitor": 2
+  },
+  "2025-05": {
+   "analysis": 0,
+   "monitor": 2
+  },
+  "2025-06": {
+   "analysis": 1,
+   "monitor": 2
+  },
+  "2025-07": {
+   "analysis": 19,
+   "monitor": 1
+  },
+  "2025-08": {
+   "analysis": 21,
+   "monitor": 1
+  },
+  "2025-09": {
+   "analysis": 22,
+   "monitor": 0
+  },
+  "2025-10": {
+   "analysis": 23,
+   "monitor": 1
+  },
+  "2025-11": {
+   "analysis": 27,
+   "monitor": 3
+  },
+  "2025-12": {
+   "analysis": 27,
+   "monitor": 2
+  }
+ },
+ "first_2025_analysis_counts": {
+  "2025-07": 19,
+  "2025-09": 2,
+  "null": 12,
+  "2025-08": 2,
+  "2025-11": 5,
+  "2025-06": 1,
+  "2025-10": 1,
+  "2025-12": 1
+ },
+ "first_2025_counts": {
+  "2025-01": 1,
+  "2025-09": 2,
+  "2025-07": 17,
+  "null": 12,
+  "2025-08": 2,
+  "2025-11": 5,
+  "2025-03": 1,
+  "2025-06": 1,
+  "2025-10": 1,
+  "2025-12": 1
+ },
+ "rows": [
+  {
+   "country": "afghanistan",
+   "region": "asia",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin",
+     "seasonal-calendar",
+     "seasonal-monitor"
+    ],
+    "2024-11": [
+     "seasonal-monitor"
+    ],
+    "2024-12": [
+     "seasonal-monitor"
+    ],
+    "2025-01": [
+     "seasonal-monitor"
+    ],
+    "2025-02": [
+     "seasonal-monitor"
+    ],
+    "2025-03": [
+     "seasonal-monitor"
+    ],
+    "2025-04": [
+     "seasonal-monitor"
+    ],
+    "2025-05": [
+     "seasonal-monitor"
+    ],
+    "2025-06": [
+     "seasonal-monitor"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "key-message-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "fews-net-analysis-note",
+     "key-message-update",
+     "seasonal-monitor"
+    ],
+    "2025-12": [
+     "food-security-outlook-update",
+     "seasonal-monitor"
+    ]
+   },
+   "first_2025": "2025-01",
+   "warehouse_first_2025": "2025-10-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "pakistan",
+   "region": "asia",
+   "products": {
+    "2025-09": [
+     "targeted-analysis"
+    ]
+   },
+   "first_2025": "2025-09",
+   "warehouse_first_2025": null,
+   "first_2025_analysis": "2025-09",
+   "last_2024_analysis": null
+  },
+  {
+   "country": "burundi",
+   "region": "east-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update"
+    ],
+    "2024-09": [
+     "key-message-update"
+    ],
+    "2024-10": [
+     "food-security-outlook"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "food-security-outlook-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-08-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "ethiopia",
+   "region": "east-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin"
+    ],
+    "2024-11": [
+     "key-message-update"
+    ],
+    "2024-12": [
+     "key-message-update"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "key-message-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "fews-net-analysis-note",
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-10-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-12"
+  },
+  {
+   "country": "kenya",
+   "region": "east-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "food-security-outlook-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "fews-net-analysis-note",
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-08-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "rwanda",
+   "region": "east-africa",
+   "products": {
+    "2024-10": [
+     "seasonal-calendar"
+    ]
+   },
+   "first_2025": null,
+   "warehouse_first_2025": null,
+   "first_2025_analysis": null,
+   "last_2024_analysis": null
+  },
+  {
+   "country": "somalia",
+   "region": "east-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin",
+     "price-bulletin"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin",
+     "price-bulletin"
+    ],
+    "2024-11": [
+     "key-message-update"
+    ],
+    "2024-12": [
+     "key-message-update"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "key-message-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "fews-net-analysis-note",
+     "key-message-update",
+     "seasonal-calendar"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-10-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-12"
+  },
+  {
+   "country": "south-sudan",
+   "region": "east-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin"
+    ],
+    "2024-11": [
+     "key-message-update"
+    ],
+    "2024-12": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "alert",
+     "key-message-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-08",
+   "warehouse_first_2025": "2025-10-01",
+   "first_2025_analysis": "2025-08",
+   "last_2024_analysis": "2024-12"
+  },
+  {
+   "country": "sudan",
+   "region": "east-africa",
+   "products": {
+    "2024-07": [
+     "price-bulletin"
+    ],
+    "2024-08": [
+     "alert",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "alert",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "alert",
+     "food-security-outlook",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2024-11": [
+     "alert"
+    ],
+    "2024-12": [
+     "alert"
+    ],
+    "2025-09": [
+     "alert",
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-09",
+   "warehouse_first_2025": "2025-10-01",
+   "first_2025_analysis": "2025-09",
+   "last_2024_analysis": "2024-12"
+  },
+  {
+   "country": "tanzania",
+   "region": "east-africa",
+   "products": {
+    "2024-07": [
+     "price-bulletin"
+    ],
+    "2024-08": [
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "price-bulletin"
+    ]
+   },
+   "first_2025": null,
+   "warehouse_first_2025": null,
+   "first_2025_analysis": null,
+   "last_2024_analysis": null
+  },
+  {
+   "country": "uganda",
+   "region": "east-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin",
+     "seasonal-calendar"
+    ]
+   },
+   "first_2025": null,
+   "warehouse_first_2025": null,
+   "first_2025_analysis": null,
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "el-salvador",
+   "region": "latin-america-and-caribbean",
+   "products": {
+    "2024-07": [
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "price-bulletin"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "key-message-update"
+    ]
+   },
+   "first_2025": "2025-11",
+   "warehouse_first_2025": null,
+   "first_2025_analysis": "2025-11",
+   "last_2024_analysis": null
+  },
+  {
+   "country": "el-salvador-honduras-and-nicaragua",
+   "region": "latin-america-and-caribbean",
+   "products": {
+    "2024-07": [
+     "key-message-update"
+    ],
+    "2024-08": [
+     "key-message-update"
+    ],
+    "2024-09": [
+     "key-message-update"
+    ],
+    "2024-10": [
+     "remote-monitoring-report"
+    ]
+   },
+   "first_2025": null,
+   "warehouse_first_2025": null,
+   "first_2025_analysis": null,
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "guatemala",
+   "region": "latin-america-and-caribbean",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin",
+     "production-and-trade-flow-map",
+     "production-and-trade-flow-map",
+     "production-and-trade-flow-map",
+     "production-and-trade-flow-map"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "food-security-outlook-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "fews-net-analysis-note",
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-08-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "haiti",
+   "region": "latin-america-and-caribbean",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin",
+     "seasonal-monitor",
+     "seasonal-monitor"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin"
+    ],
+    "2024-11": [
+     "key-message-update"
+    ],
+    "2024-12": [
+     "key-message-update"
+    ],
+    "2025-03": [
+     "seasonal-monitor"
+    ],
+    "2025-04": [
+     "seasonal-monitor"
+    ],
+    "2025-05": [
+     "seasonal-monitor"
+    ],
+    "2025-06": [
+     "seasonal-monitor"
+    ],
+    "2025-07": [
+     "key-message-update",
+     "seasonal-monitor"
+    ],
+    "2025-08": [
+     "key-message-update",
+     "seasonal-monitor"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook",
+     "seasonal-monitor",
+     "seasonal-monitor"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update",
+     "seasonal-monitor",
+     "seasonal-monitor"
+    ]
+   },
+   "first_2025": "2025-03",
+   "warehouse_first_2025": "2025-10-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-12"
+  },
+  {
+   "country": "honduras",
+   "region": "latin-america-and-caribbean",
+   "products": {
+    "2024-07": [
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "price-bulletin"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "key-message-update"
+    ]
+   },
+   "first_2025": "2025-11",
+   "warehouse_first_2025": null,
+   "first_2025_analysis": "2025-11",
+   "last_2024_analysis": null
+  },
+  {
+   "country": "nicaragua",
+   "region": "latin-america-and-caribbean",
+   "products": {
+    "2024-07": [
+     "seasonal-calendar"
+    ]
+   },
+   "first_2025": null,
+   "warehouse_first_2025": null,
+   "first_2025_analysis": null,
+   "last_2024_analysis": null
+  },
+  {
+   "country": "venezuela",
+   "region": "latin-america-and-caribbean",
+   "products": {
+    "2024-07": [
+     "key-message-update"
+    ],
+    "2024-08": [
+     "key-message-update"
+    ],
+    "2024-09": [
+     "key-message-update"
+    ],
+    "2024-10": [
+     "remote-monitoring-report"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "key-message-update"
+    ]
+   },
+   "first_2025": "2025-11",
+   "warehouse_first_2025": null,
+   "first_2025_analysis": "2025-11",
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "gaza",
+   "region": "middle-east-and-europe",
+   "products": {
+    "2024-07": [
+     "special-report",
+     "targeted-analysis"
+    ],
+    "2024-08": [
+     "special-report",
+     "targeted-analysis"
+    ],
+    "2024-09": [
+     "special-report"
+    ],
+    "2024-10": [
+     "special-report",
+     "targeted-analysis"
+    ],
+    "2024-11": [
+     "alert"
+    ],
+    "2025-08": [
+     "alert"
+    ],
+    "2025-10": [
+     "fews-net-analysis-note"
+    ],
+    "2025-11": [
+     "fews-net-analysis-note"
+    ]
+   },
+   "first_2025": "2025-08",
+   "warehouse_first_2025": null,
+   "first_2025_analysis": "2025-08",
+   "last_2024_analysis": "2024-11"
+  },
+  {
+   "country": "iran",
+   "region": "middle-east-and-europe",
+   "products": {
+    "2025-06": [
+     "targeted-analysis"
+    ]
+   },
+   "first_2025": "2025-06",
+   "warehouse_first_2025": null,
+   "first_2025_analysis": "2025-06",
+   "last_2024_analysis": null
+  },
+  {
+   "country": "iraq",
+   "region": "middle-east-and-europe",
+   "products": {
+    "2025-10": [
+     "targeted-analysis"
+    ]
+   },
+   "first_2025": "2025-10",
+   "warehouse_first_2025": null,
+   "first_2025_analysis": "2025-10",
+   "last_2024_analysis": null
+  },
+  {
+   "country": "lebanon",
+   "region": "middle-east-and-europe",
+   "products": {
+    "2024-07": [
+     "key-message-update"
+    ],
+    "2024-08": [
+     "key-message-update"
+    ],
+    "2024-09": [
+     "key-message-update"
+    ],
+    "2024-10": [
+     "remote-monitoring-report"
+    ],
+    "2024-11": [
+     "key-message-update"
+    ],
+    "2024-12": [
+     "key-message-update"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "key-message-update"
+    ]
+   },
+   "first_2025": "2025-11",
+   "warehouse_first_2025": null,
+   "first_2025_analysis": "2025-11",
+   "last_2024_analysis": "2024-12"
+  },
+  {
+   "country": "syria",
+   "region": "middle-east-and-europe",
+   "products": {
+    "2025-12": [
+     "special-report"
+    ]
+   },
+   "first_2025": "2025-12",
+   "warehouse_first_2025": null,
+   "first_2025_analysis": "2025-12",
+   "last_2024_analysis": null
+  },
+  {
+   "country": "ukraine",
+   "region": "middle-east-and-europe",
+   "products": {
+    "2024-07": [
+     "key-message-update"
+    ],
+    "2024-08": [
+     "key-message-update"
+    ],
+    "2024-09": [
+     "key-message-update"
+    ],
+    "2024-10": [
+     "key-message-update"
+    ]
+   },
+   "first_2025": null,
+   "warehouse_first_2025": null,
+   "first_2025_analysis": null,
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "yemen",
+   "region": "middle-east-and-europe",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin"
+    ],
+    "2024-11": [
+     "key-message-update"
+    ],
+    "2024-12": [
+     "key-message-update"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "key-message-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "key-message-update",
+     "seasonal-calendar"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-10-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-12"
+  },
+  {
+   "country": "angola",
+   "region": "southern-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update"
+    ],
+    "2024-09": [
+     "key-message-update"
+    ],
+    "2024-10": [
+     "remote-monitoring-report"
+    ]
+   },
+   "first_2025": null,
+   "warehouse_first_2025": null,
+   "first_2025_analysis": null,
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "democratic-republic-congo",
+   "region": "southern-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "livelihood-baseline",
+     "livelihood-zone-map",
+     "livelihoods-fact-sheets",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "key-message-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": null,
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "lesotho",
+   "region": "southern-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update"
+    ],
+    "2024-08": [
+     "key-message-update"
+    ],
+    "2024-09": [
+     "key-message-update"
+    ],
+    "2024-10": [
+     "remote-monitoring-report",
+     "seasonal-calendar"
+    ]
+   },
+   "first_2025": null,
+   "warehouse_first_2025": null,
+   "first_2025_analysis": null,
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "madagascar",
+   "region": "southern-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "food-security-outlook-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-08-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "malawi",
+   "region": "southern-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "food-security-outlook-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-08-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "mozambique",
+   "region": "southern-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update"
+    ],
+    "2024-09": [
+     "key-message-update"
+    ],
+    "2024-10": [
+     "food-security-outlook"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "food-security-outlook-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-08-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "zambia",
+   "region": "southern-africa",
+   "products": {
+    "2024-07": [
+     "price-bulletin"
+    ],
+    "2024-08": [
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "price-bulletin"
+    ]
+   },
+   "first_2025": null,
+   "warehouse_first_2025": null,
+   "first_2025_analysis": null,
+   "last_2024_analysis": null
+  },
+  {
+   "country": "zimbabwe",
+   "region": "southern-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update"
+    ],
+    "2024-09": [
+     "key-message-update"
+    ],
+    "2024-10": [
+     "food-security-outlook"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "key-message-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-10-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "burkina-faso",
+   "region": "west-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin"
+    ],
+    "2024-11": [
+     "key-message-update"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "key-message-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-10-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-11"
+  },
+  {
+   "country": "cameroon",
+   "region": "west-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "key-message-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "fews-net-analysis-note",
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-10-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "central-african-republic",
+   "region": "west-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update"
+    ],
+    "2024-08": [
+     "key-message-update"
+    ],
+    "2024-09": [
+     "key-message-update"
+    ],
+    "2024-10": [
+     "remote-monitoring-report",
+     "seasonal-calendar"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "key-message-update"
+    ]
+   },
+   "first_2025": "2025-11",
+   "warehouse_first_2025": null,
+   "first_2025_analysis": "2025-11",
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "chad",
+   "region": "west-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "key-message-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-10-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "mali",
+   "region": "west-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin"
+    ],
+    "2024-11": [
+     "key-message-update"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "key-message-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-10-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-11"
+  },
+  {
+   "country": "mauritania",
+   "region": "west-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update"
+    ],
+    "2024-09": [
+     "key-message-update"
+    ],
+    "2024-10": [
+     "remote-monitoring-report"
+    ]
+   },
+   "first_2025": null,
+   "warehouse_first_2025": null,
+   "first_2025_analysis": null,
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "niger",
+   "region": "west-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "key-message-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-10-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-10"
+  },
+  {
+   "country": "nigeria",
+   "region": "west-africa",
+   "products": {
+    "2024-07": [
+     "key-message-update",
+     "price-bulletin",
+     "seasonal-calendar"
+    ],
+    "2024-08": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "key-message-update",
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "food-security-outlook",
+     "price-bulletin"
+    ],
+    "2024-11": [
+     "key-message-update"
+    ],
+    "2024-12": [
+     "key-message-update"
+    ],
+    "2025-07": [
+     "key-message-update"
+    ],
+    "2025-08": [
+     "key-message-update"
+    ],
+    "2025-09": [
+     "key-message-update"
+    ],
+    "2025-10": [
+     "food-security-outlook"
+    ],
+    "2025-11": [
+     "key-message-update"
+    ],
+    "2025-12": [
+     "food-security-outlook-update"
+    ]
+   },
+   "first_2025": "2025-07",
+   "warehouse_first_2025": "2025-10-01",
+   "first_2025_analysis": "2025-07",
+   "last_2024_analysis": "2024-12"
+  },
+  {
+   "country": "senegal",
+   "region": "west-africa",
+   "products": {
+    "2024-07": [
+     "price-bulletin"
+    ],
+    "2024-08": [
+     "price-bulletin"
+    ],
+    "2024-09": [
+     "price-bulletin"
+    ],
+    "2024-10": [
+     "price-bulletin"
+    ]
+   },
+   "first_2025": null,
+   "warehouse_first_2025": null,
+   "first_2025_analysis": null,
+   "last_2024_analysis": null
+  },
+  {
+   "country": "togo",
+   "region": "west-africa",
+   "products": {
+    "2024-07": [
+     "remote-monitoring-report"
+    ],
+    "2024-08": [
+     "key-message-update"
+    ],
+    "2024-09": [
+     "key-message-update"
+    ],
+    "2024-10": [
+     "remote-monitoring-report"
+    ]
+   },
+   "first_2025": null,
+   "warehouse_first_2025": null,
+   "first_2025_analysis": null,
+   "last_2024_analysis": "2024-10"
+  }
+ ]
+}

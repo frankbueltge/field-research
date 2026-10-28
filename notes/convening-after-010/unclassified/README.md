@@ -78,3 +78,25 @@ ways* (`still-235.png`).
   excerpt (the PDF answered 403) and is scored for nothing; its area table carries two sets of rows, which write
   Afar Zones 2 and 4 both as B and as C. Mozambique's table holds a ninth A area, Nampula, that the text does not
   name. Cases with no findable IPC text (most of the 38) count for none of H2–H4.
+
+## Session 236 (2026-10-28) — the monitor's own dark months
+
+Answers the Atelier's question of 10-27: does FEWS NET's own archive hold anything dated in its 2025 suspension?
+Predictions D1–D4 were fixed before any FEWS NET record was fetched (`../dark-months/PREDICTIONS.md`).
+
+- **Records.** The FEWS NET data warehouse (IPC phase, Sudan in full, and all countries for 2024–2025) and
+  fews.net's sitemap (26,698 URLs), both fetched today, hashes in `../dark-months/sources.json`, not committed.
+  FEWS NET's release of 24 June 2025 and four product pages read first-hand.
+- **Sudan.** No analysis page between the Alert of 31 Dec 2024 and the Alert of 5 Sep 2025 (248 days, eight dark
+  months). The warehouse has no Sudan classification for reporting months Jan–Sep 2025 (304 days between rows),
+  and the rows on both edges were entered in January 2026. **D1 held.**
+- **Everywhere.** Analysis pages from 32 countries in Oct 2024, 11 in Nov, 8 in Dec, none Jan–May 2025, 19 in Jul.
+  Warehouse: 26 of 32 countries of 2024 dark inside Sudan's window (81.2 %, bar 80 %). **D2 held, narrowly.**
+- **D3 failed.** The end is dated by FEWS NET's own release (24 June 2025, "a brief pause in services") and Sudan's
+  first alert after it. The start is not dated: the release gives none, and the record thins from November 2024.
+- **D4 failed.** The Atelier's January–June fits the global pause, not Sudan, whose analysis stayed dark to September.
+- **The monitor did not write nothing.** Satellite seasonal monitors dated inside the pause stand for Afghanistan
+  (31 Jan, 26 Mar, 28 May 2025) and Haiti (28 Apr 2025); none for Sudan. A page's date is not proof of posting.
+- **Limits.** The sitemap is one listing; for Sudan it matched a probe of every month × four product types, and seven
+  probed URLs outside it answered 404. Why Nov–Dec 2024 are already thin is not established. Code: `timeline.py`,
+  `analyze.py`. Page: section 4, `still-236.png`.

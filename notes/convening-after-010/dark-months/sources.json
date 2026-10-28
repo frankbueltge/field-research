@@ -1,0 +1,16 @@
+{
+ "session": 236, "fetched": "2026-10-28", "committed": "none of the fetched files; hashes only",
+ "data": [
+  {"what": "FEWS NET data warehouse, IPC phase, Sudan", "url": "https://fdw.fews.net/api/ipcphase/?format=json&country_code=SD", "rows": 69361, "bytes": 100865808, "sha256": "624bb6860ff015675c42ea790c0e241b5dd37d3da30bfb4e4eb8b4a4f0e0d3d7", "note": "data_usage_policy 'Public' on every row read"},
+  {"what": "FEWS NET data warehouse, IPC phase, all countries, projection overlapping 2024-01-01..2025-12-31", "url": "https://fdw.fews.net/api/ipcphase/?format=json&start_date=2024-01-01&end_date=2025-12-31&fields=simple", "rows": 214224, "bytes": 205404230, "sha256": "9b368e663859e7e8991538af293e3094c070cdddbc74b495435aeae0780fc313"},
+  {"what": "fews.net sitemap, every <loc> of sitemap.xml?page=1..N", "url": "https://fews.net/sitemap.xml", "urls": 26698, "sha256_of_url_list": "28976548bf34f5f2059f03a49d3dc4c142c0d7477b235825aa06a6a27f266c7c", "check": "Sudan 2024-2025 product URLs in the sitemap equal those found by probing every month x four product types; seven probed URLs absent from the sitemap answered 404"}
+ ],
+ "passages": [
+  {"source": "FEWS NET, 'FEWS NET Relaunches Website, Resumes Global Food Security Analysis'", "url": "https://fews.net/fews-net-relaunches-website-resumes-global-food-security-analysis", "sha256": "7121eedc73715b401cbc27f71e3f11759fcab9cc37bd26cdc39c367ec2f80502", "read": "first-hand",
+   "quote": "For immediate release: June 24, 2025 ... Following a brief pause in services during a review of U.S. foreign assistance programs, FEWS NET has resumed operations and published a new Global Food Security Update with analysis through September 2025. The FEWS NET program will reinstate its regular reporting cycle and restore full geographic coverage in the coming months."},
+  {"source": "FEWS NET Sudan Alert, December 2024", "url": "https://fews.net/east-africa/sudan/alert/december-2024", "read": "first-hand", "quote": "Ongoing Famine may spread further within North Darfur in coming months", "date_on_page": "December 31, 2024"},
+  {"source": "FEWS NET Sudan Alert, September 2025", "url": "https://fews.net/east-africa/sudan/alert/september-2025", "read": "first-hand", "quote": "Famine possibly ongoing in Al-Fasher of North Darfur, amid tightening siege", "date_on_page": "September 5, 2025"},
+  {"source": "FEWS NET Afghanistan Seasonal Monitor, January 2025", "url": "https://fews.net/asia/afghanistan/seasonal-monitor/january-2025", "read": "first-hand", "quote": "Precipitation in January may improve surface, groundwater resources, and benefit germinated wheat", "date_on_page": "January 31, 2025", "caution": "the date is the page's; when it was posted is not recorded"}
+ ],
+ "not_used_as_evidence": "A web-search summary said elements of FEWS NET returned in mid-April 2025 and that three countries would resume in September; not read first-hand, scored for nothing."
+}

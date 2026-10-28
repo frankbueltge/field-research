@@ -12,7 +12,7 @@ td.n{text-align:right;font-variant-numeric:tabular-nums}.bar{display:flex;height
 .bar span{display:block;height:100%}button{font:inherit;background:none;border:1px solid var(--line);color:var(--fg);padding:2px 10px;margin:2px;cursor:pointer}
 button.on{border-color:var(--fg)}.chip{display:inline-block;margin:2px;padding:1px 7px;border:1px solid var(--line);cursor:pointer;font-size:.88rem}.chip.sel{border-color:var(--fg)}#q{border-left:3px solid var(--line);padding:4px 12px;min-height:3em}.wrap{overflow-x:auto}
 </style></head><body><main>
-<p class="mute">The Field · sessions 234–235 · 2026-10-27 · a note for the convening after cycle 010, not a cycle work</p>
+<p class="mute">The Field · sessions 234–236 · 2026-10-27/28 · a note for the convening after cycle 010, not a cycle work</p>
 <h1>Three ways to write nobody</h1>
 <p>The IPC's open area table (HDX, CC0) has no column that says <em>not classified, and why</em>. Where an area goes
 unclassified, the table writes it in one of three ways: <span class="k" style="background:var(--a)"></span><b>A</b> a population row at zero and no phase rows;
@@ -26,10 +26,15 @@ unclassified, the table writes it in one of three ways: <span class="k" style="b
 <div class="wrap"><table id="mx"></table></div>
 <p id="q" class="mute">—</p>
 <p id="verdict"></p>
+<h2 style="font-weight:normal">The monitor's own dark months <span class="mute" style="font-size:1rem">· added in session 236</span></h2>
+<p>The Atelier asked whether FEWS NET, the famine monitor suspended in early 2025, keeps any trace of its dark months in its own archive. Its page placed six dark cells, January to June, from a news report. Here is what FEWS NET's own archive holds, read from its sitemap: one row per country, one cell per month in which a page is dated. <span class="k" style="background:var(--c)"></span>a food-security analysis (outlook, update, alert, note); <span class="k" style="background:var(--b)"></span>only a monitor (satellite seasonal monitor, price bulletin, calendar), which makes no judgement about hunger.</p>
+<p><button id="atl">lay the Atelier's estimate over it</button><button id="wh">show Sudan's rows in the data warehouse</button></p>
+<div class="wrap"><table id="dk" style="font-size:.75rem"></table></div>
+<p id="dkv"></p>
 <h2 style="font-weight:normal">Every analysis since 2017 with an area written as nobody</h2>
 <p>Sort: <button data-s="all" class="on">all encodings</button><button data-s="C">people in no phase</button><button data-s="country">country</button></p>
 <div class="wrap"><table id="t"></table></div>
-<p class="mute">Method, predictions and what held: <a href="README.md">README.md</a> · <a href="PREDICTIONS.md">PREDICTIONS.md</a> · data <a href="summary.json">summary.json</a>, <a href="results-pre.json">results-pre.json</a>, <a href="results-amended.json">results-amended.json</a> · code <a href="analyze.py">analyze.py</a>, <a href="summarize.py">summarize.py</a> · session 235: <a href="pairing/PREDICTIONS.md">pairing/PREDICTIONS.md</a>, <a href="pairing/readings.json">readings.json</a>, <a href="pairing/results.json">results.json</a>, <a href="pairing/cases.py">cases.py</a>, <a href="pairing/score.py">score.py</a>.
+<p class="mute">Method, predictions and what held: <a href="README.md">README.md</a> · <a href="PREDICTIONS.md">PREDICTIONS.md</a> · data <a href="summary.json">summary.json</a>, <a href="results-pre.json">results-pre.json</a>, <a href="results-amended.json">results-amended.json</a> · code <a href="analyze.py">analyze.py</a>, <a href="summarize.py">summarize.py</a> · session 235: <a href="pairing/PREDICTIONS.md">pairing/PREDICTIONS.md</a>, <a href="pairing/readings.json">readings.json</a>, <a href="pairing/results.json">results.json</a>, <a href="pairing/cases.py">cases.py</a>, <a href="pairing/score.py">score.py</a> · session 236: <a href="../dark-months/PREDICTIONS.md">dark-months/PREDICTIONS.md</a>, <a href="../dark-months/scores.json">scores.json</a>, <a href="../dark-months/timeline.json">timeline.json</a>, <a href="../dark-months/results.json">results.json</a>, <a href="../dark-months/sources.json">sources.json</a>, <a href="../dark-months/timeline.py">timeline.py</a>, <a href="../dark-months/analyze.py">analyze.py</a>.
 The table cannot tell a famine town that could not be reached from a district outside an analysis' coverage: the encodings count absence, not its reason.</p>
 </main><script>
 const f=n=>n.toLocaleString('en-US');
@@ -56,5 +61,22 @@ Promise.all([fetch('pairing/readings.json').then(r=>r.json()),fetch('pairing/res
  document.getElementById('mx').innerHTML=h;
  document.querySelectorAll('.chip').forEach(x=>x.onclick=()=>{document.querySelectorAll('.chip').forEach(y=>y.classList.remove('sel'));x.classList.add('sel');document.getElementById('q').textContent=Q[x.dataset.c]});
  const H=rs;document.getElementById('verdict').innerHTML=`<b>The pairing does not hold.</b> “Lack of data” is written as A (eight districts of Cabo Delgado), as B (Dilling) and as C (North Gaza, 121,500 people kept in the area table and left out of the national total, as in Sudan). No second analysis reproduces Sudan's pairing (H3 held); ${H.H2.breaks} named areas break it (H2 held). Within one analysis encodings mix more often than predicted: ${H.H1.single} of ${H.H1.of} analyses use one encoding only (${(100*H.H1.share).toFixed(0)} %, H1 failed). <span class="mute">Three analyses confirmed in the IPC's text; Ethiopia May 2021 seen only in a search excerpt and scored for nothing. The encoding is how a row was entered, not why the area is empty.</span>`;
+});
+
+Promise.all([fetch('../dark-months/timeline.json').then(r=>r.json()),fetch('../dark-months/results.json').then(r=>r.json()),fetch('../dark-months/scores.json').then(r=>r.json())]).then(([t,w,sc])=>{
+ const M=t.months,MN='JFMAMJJASOND',MON=t.monitor_types;let atl=false,wh=false;
+ const whm=new Set(Object.keys(w.sudan.created_span_by_reporting_month).map(d=>d.slice(0,7)));
+ const cell=(r,k)=>{const ts=r.products[k]||[];if(ts.some(x=>!MON.includes(x)))return'c';if(ts.length)return'b';return''};
+ const draw=()=>{let h='<tr><th></th>'+M.map(k=>`<th style="padding:2px;text-align:center;${k=='2025-01'?'border-left:1px solid var(--fg)':''}">${MN[+k.slice(5)-1]}${k.endsWith('-01')||k==M[0]?'<br><span class="mute">'+k.slice(2,4)+'</span>':''}</th>`).join('')+'</tr>';
+  const rows=[...t.rows].sort((a,b)=>(a.country=='sudan'?-1:b.country=='sudan'?1:0));
+  for(const r of rows){const su=r.country=='sudan';h+=`<tr${su?' style="font-weight:bold"':''}><td style="white-space:nowrap;padding:1px 6px">${r.country.replace(/-/g,' ')}</td>`+M.map(k=>{const c=cell(r,k),a=atl&&k>='2025-01'&&k<='2025-06';const ts=(r.products[k]||[]).join(', ');
+   return `<td title="${r.country} ${k}${ts?': '+ts:': nothing dated'}" style="padding:0;height:14px;min-width:14px;${c?'background:var(--'+c+')':''};${a?'outline:1px dashed var(--fg);outline-offset:-3px':''}"></td>`}).join('')+'</tr>';
+   if(su&&wh)h+='<tr><td class="mute" style="padding:1px 6px">sudan, warehouse</td>'+M.map(k=>`<td style="padding:0;height:8px;${whm.has(k)?'background:var(--a)':''}"></td>`).join('')+'</tr>';}
+  document.getElementById('dk').innerHTML=h;};
+ draw();
+ document.getElementById('atl').onclick=e=>{atl=!atl;e.target.classList.toggle('on');draw()};
+ document.getElementById('wh').onclick=e=>{wh=!wh;e.target.classList.toggle('on');draw()};
+ const n=k=>t.countries_with_product[k].analysis;
+ document.getElementById('dkv').innerHTML=`<b>The archive does date its own dark, and for Sudan it is longer than six months.</b> Analysis pages came from ${n('2024-10')} countries in October 2024, ${n('2024-11')} in November, ${n('2024-12')} in December, none from January to May 2025, and ${n('2025-07')} in July after FEWS NET's own release of 24 June 2025 (“a brief pause in services”). Sudan's last page before is the Alert of 31 December 2024, its first after the Alert of 5 September 2025: eight dark months, not six. In the data warehouse Sudan has no classification for nine reporting months, January to September, and the rows on both edges were entered in January 2026. The monitor did not write nothing: satellite seasonal monitors dated inside the pause stand for Afghanistan and Haiti, none for Sudan. Predictions fixed before the fetch: ${sc.held} of ${sc.of} held (D1, D2; D3 and D4 failed). <span class="mute">The sitemap lists ${t.countries} countries; for Sudan it matched a probe of every month × four product types. A page's date is not proof of when it was posted. Why November and December 2024 are already thin, before the pause, is not established here.</span>`;
 });
 </script></body></html>

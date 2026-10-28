@@ -1,0 +1,318 @@
+{
+ "sudan": {
+  "rows": 69361,
+  "last_before": "2024-12-01",
+  "first_after": "2025-10-01",
+  "gap_days": 304,
+  "months_strictly_inside": 0,
+  "documents_at_edges": [
+   [
+    "2025-10-01",
+    "Food Security Outlook, Sudan",
+    1173
+   ],
+   [
+    "2024-12-01",
+    "Food Security Alert, Sudan",
+    786
+   ]
+  ],
+  "created_span_by_reporting_month": {
+   "2024-06-01": [
+    "2024-07-31",
+    "2024-08-14"
+   ],
+   "2024-07-01": [
+    "2024-08-14",
+    "2024-08-30"
+   ],
+   "2024-08-01": [
+    "2024-09-05",
+    "2024-10-24"
+   ],
+   "2024-09-01": [
+    "2024-10-09",
+    "2024-10-24"
+   ],
+   "2024-10-01": [
+    "2024-10-24",
+    "2026-01-13"
+   ],
+   "2024-11-01": [
+    "2024-11-14",
+    "2026-01-14"
+   ],
+   "2024-12-01": [
+    "2026-01-14",
+    "2026-01-14"
+   ],
+   "2025-10-01": [
+    "2026-01-13",
+    "2026-01-13"
+   ],
+   "2025-11-01": [
+    "2026-01-13",
+    "2026-01-13"
+   ],
+   "2025-12-01": [
+    "2026-01-13",
+    "2026-01-13"
+   ],
+   "2026-01-01": [
+    "2026-01-20",
+    "2026-02-05"
+   ],
+   "2026-02-01": [
+    "2026-03-10",
+    "2026-03-10"
+   ],
+   "2026-03-01": [
+    "2026-04-09",
+    "2026-04-09"
+   ],
+   "2026-04-01": [
+    "2026-04-22",
+    "2026-05-11"
+   ],
+   "2026-05-01": [
+    "2026-06-08",
+    "2026-06-08"
+   ],
+   "2026-06-01": [
+    "2026-07-10",
+    "2026-07-15"
+   ],
+   "2026-07-01": [
+    "2026-08-07",
+    "2026-08-24"
+   ],
+   "2026-08-01": [
+    "2026-09-08",
+    "2026-09-10"
+   ],
+   "2026-09-01": [
+    "2026-10-01",
+    "2026-10-08"
+   ]
+  }
+ },
+ "countries_2024": 32,
+ "dark_in_sudan_window": 26,
+ "share_dark": 0.812,
+ "reporting_months_inside_window_across_countries": {
+  "2025-08-01": 6,
+  "2025-09-01": 6
+ },
+ "per_country": {
+  "AF": {
+   "country": "Afghanistan",
+   "last_2024": "2024-11-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  },
+  "AO": {
+   "country": "Angola",
+   "last_2024": "2024-11-01",
+   "first_2025": null,
+   "months_inside_sudan_window": []
+  },
+  "BF": {
+   "country": "Burkina Faso",
+   "last_2024": "2024-12-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  },
+  "BI": {
+   "country": "Burundi",
+   "last_2024": "2024-11-01",
+   "first_2025": "2025-08-01",
+   "months_inside_sudan_window": [
+    "2025-08-01",
+    "2025-09-01"
+   ]
+  },
+  "CD": {
+   "country": "Democratic Republic of the Congo",
+   "last_2024": "2024-11-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  },
+  "CF": {
+   "country": "Central African Republic",
+   "last_2024": "2024-11-01",
+   "first_2025": null,
+   "months_inside_sudan_window": []
+  },
+  "CM": {
+   "country": "Cameroon",
+   "last_2024": "2024-11-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  },
+  "ET": {
+   "country": "Ethiopia",
+   "last_2024": "2024-12-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  },
+  "GT": {
+   "country": "Guatemala",
+   "last_2024": "2024-11-01",
+   "first_2025": "2025-08-01",
+   "months_inside_sudan_window": [
+    "2025-08-01",
+    "2025-09-01"
+   ]
+  },
+  "HN": {
+   "country": "Honduras",
+   "last_2024": "2024-11-01",
+   "first_2025": null,
+   "months_inside_sudan_window": []
+  },
+  "HT": {
+   "country": "Haiti",
+   "last_2024": "2024-12-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  },
+  "KE": {
+   "country": "Kenya",
+   "last_2024": "2024-11-01",
+   "first_2025": "2025-08-01",
+   "months_inside_sudan_window": [
+    "2025-08-01",
+    "2025-09-01"
+   ]
+  },
+  "LB": {
+   "country": "Lebanon",
+   "last_2024": "2024-12-01",
+   "first_2025": null,
+   "months_inside_sudan_window": []
+  },
+  "LS": {
+   "country": "Lesotho",
+   "last_2024": "2024-11-01",
+   "first_2025": null,
+   "months_inside_sudan_window": []
+  },
+  "MG": {
+   "country": "Madagascar",
+   "last_2024": "2024-11-01",
+   "first_2025": "2025-08-01",
+   "months_inside_sudan_window": [
+    "2025-08-01",
+    "2025-09-01"
+   ]
+  },
+  "ML": {
+   "country": "Mali",
+   "last_2024": "2024-12-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  },
+  "MR": {
+   "country": "Mauritania",
+   "last_2024": "2024-11-01",
+   "first_2025": null,
+   "months_inside_sudan_window": []
+  },
+  "MW": {
+   "country": "Malawi",
+   "last_2024": "2024-11-01",
+   "first_2025": "2025-08-01",
+   "months_inside_sudan_window": [
+    "2025-08-01",
+    "2025-09-01"
+   ]
+  },
+  "MZ": {
+   "country": "Mozambique",
+   "last_2024": "2024-11-01",
+   "first_2025": "2025-08-01",
+   "months_inside_sudan_window": [
+    "2025-08-01",
+    "2025-09-01"
+   ]
+  },
+  "NE": {
+   "country": "Niger",
+   "last_2024": "2024-11-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  },
+  "NG": {
+   "country": "Nigeria",
+   "last_2024": "2024-12-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  },
+  "NI": {
+   "country": "Nicaragua",
+   "last_2024": "2024-11-01",
+   "first_2025": null,
+   "months_inside_sudan_window": []
+  },
+  "SD": {
+   "country": "Sudan",
+   "last_2024": "2024-12-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  },
+  "SO": {
+   "country": "Somalia",
+   "last_2024": "2024-12-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  },
+  "SS": {
+   "country": "South Sudan",
+   "last_2024": "2024-12-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  },
+  "SV": {
+   "country": "El Salvador",
+   "last_2024": "2024-11-01",
+   "first_2025": null,
+   "months_inside_sudan_window": []
+  },
+  "TD": {
+   "country": "Chad",
+   "last_2024": "2024-11-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  },
+  "TG": {
+   "country": "Togo",
+   "last_2024": "2024-11-01",
+   "first_2025": null,
+   "months_inside_sudan_window": []
+  },
+  "UG": {
+   "country": "Uganda",
+   "last_2024": "2024-11-01",
+   "first_2025": null,
+   "months_inside_sudan_window": []
+  },
+  "VE": {
+   "country": "Venezuela",
+   "last_2024": "2024-11-01",
+   "first_2025": null,
+   "months_inside_sudan_window": []
+  },
+  "YE": {
+   "country": "Yemen",
+   "last_2024": "2024-12-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  },
+  "ZW": {
+   "country": "Zimbabwe",
+   "last_2024": "2024-11-01",
+   "first_2025": "2025-10-01",
+   "months_inside_sudan_window": []
+  }
+ }
+}

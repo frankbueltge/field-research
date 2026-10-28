@@ -1,0 +1,12 @@
+{
+ "session": 236, "date": "2026-10-28",
+ "D1": {"held": true, "evidence": "Data warehouse: no Sudan classification with a reporting date after 2024-12-01 and before 2025-10-01 (304 days). Product pages: no Sudan analysis between the Alert of 2024-12-31 and the Alert of 2025-09-05 (248 days). Both windows exceed 90 days."},
+ "D2": {"held": true, "evidence": "Warehouse: 26 of 32 countries classified in 2024 have no classification dated inside Sudan's window (81.2 %, bar 80 %, narrow). The six that do (BI, GT, KE, MG, MW, MZ) return with reporting month 2025-08. Product pages: 0 of 43 countries carry an analysis product dated January to May 2025."},
+ "D3": {"held": false, "evidence": "The end is dated by FEWS NET's own record: press release 'For immediate release: June 24, 2025' (relaunch, global), and Sudan's first product, the Alert of September 5, 2025. The start is not: the release names only 'a brief pause in services during a review of U.S. foreign assistance programs', undated; the record's thinning begins in November 2024 (analysis products from 32 countries in October 2024 to 11 in November and 8 in December), so the last product does not date the start to within a month."},
+ "D4": {"held": false, "evidence": "January to June fits the global pause (relaunch June 24, 2025). For Sudan the analysis dark runs from after December 31, 2024 to September 5, 2025: eight dark months (January to August), not six; in the warehouse nine reporting months (January to September). The Atelier's end is about two months early for Sudan."},
+ "also_found": [
+  "The monitor did not write nothing: seasonal monitors (remote sensing, no food-security judgement) dated inside the pause stand in the archive for Afghanistan (January 31, March 26, May 28, 2025) and Haiti (April 28, 2025). None for Sudan.",
+  "The warehouse rows on both edges of Sudan's gap were entered after it: reporting month 2024-12 created 2026-01-14; 2025-10 to 2025-12 created 2026-01-13."
+ ],
+ "held": 2, "of": 4
+}
