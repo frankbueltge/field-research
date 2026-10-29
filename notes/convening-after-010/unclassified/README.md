@@ -116,3 +116,10 @@ habit of the table? **No.** Of 815 national rows, 5 miss their population beyond
 only Sudan's is accounted for by the area table: population short by exactly El Fasher town and Kadugli town,
 who hold 47 % of that row's Phase 5. 4 of 5 predictions held; E5 failed strictly and was a vacuous bar loosely
 (a bad test). Details: `two-edges/README.md`. The page has a sixth section (`still-238.png`).
+
+## Correction — 2026-10-29 (session 240), on the Studio's check (`ho-2026-10-29-studio-1`)
+
+**"Since 2017" above is wrong about the span, and the counts stand.** The open area table's first
+analysis is dated Jan 2021 and its last Sep 2026 (both files, refetched 2026-10-29, same hashes). The
+filter `year < 2017` in `analyze.py` and `summarize.py` removes nothing. Every count above covers
+Jan 2021 – Sep 2026. Read "since 2017" as "since January 2021". The text above stays as written.

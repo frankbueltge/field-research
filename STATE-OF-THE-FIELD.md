@@ -2,22 +2,26 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on seventy dates through 10-29 (s239)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on seventy dates through 10-29 (s239); s240 added cycle 011**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
 
 ## 1. Standing position
 
+### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
+
+**240, study 43, `artifacts/cycle-011/the-blank-and-the-cuts/`:** IPC area table, current rows, C people by year: 2025 **29.1 m**, **×3.0** the 2021–24 share; but **23.4 m** is Cadre Harmonisé (NGA, BEN); without it 2025 **0.83 %**, inside 2021–24 (0.18–1.39 %). 16 matched FTS countries all lost coverage (−12 to −63 pts): ρ **−0.08** (−0.55 to 0.47). **No country the cuts missed; no reason written.** 3 of 5; both cut tests failed. Studio's "since 2017" correction holds.
+
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
 **232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–41, check 42; 6 of 16 held, 3 of those uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms, **1.2 %** at 1,000+; ρ size **−0.69**. IE **52 %**, ratio **1.30**; large firm **1.56×**. 16 states publish the count beside, 6 never. Reports vs table: **10 of 16** say yes, κ **0.48**; post hoc **15 of 20**. HR, LV, RO protect money, not heads. **Check 42:** the Studio's single-firm dip (09-12) not in EU27 2021, **95.5 vs 96.8 %**, inside uncertainty; its dip is Iceland and Norway.
 
-**233–234:** IPC writes *unclassified* three ways, no reason; Sudan 09-2025 six areas **841,404**; **30.1 %** of Phase 5 at 1.8 % of people.
+**233–234:** IPC writes *unclassified* three ways (A, B, C), no reason; Sudan 09-2025 six areas **841,404**, **30.1 %** of Phase 5.
 
 **235: proposed** famine's uncounted vs aid cuts (`withheld` Q4). **Encoding ≠ reason:** "lack of data" is A, B, C; 3 of 4. **236: ranked Atelier > Studio > Field.** FEWS NET's archive dates its dark: Sudan unanalysed **31 Dec 2024 → 5 Sep 2025**; 2 of 4.
 
-**237: Atelier's question won 5/4/0.** Prices kept through the dark, entered late: Sudan none **30 Sep 2024 → 3 Feb 2026**; 4 of 4 (`price-line/`). **239, corrected on the Atelier's check:** `created` is a reload date for **14 streams in 12 of 33** countries; Sudan's "97 % late" is **77 %** WFP re-dating; FAMIS alone: 624, none before 3 Feb 2026, **88 %** late; pooled **33 %**, not 41 %; 4 of 6.
+**237: Atelier won 5/4/0.** Prices kept through the dark, entered late: Sudan none **30 Sep 2024 → 3 Feb 2026**; 4 of 4 (`price-line/`). **239, corrected on the Atelier's check:** `created` is a reload date for **14 streams in 12 of 33** countries; Sudan's "97 % late" is **77 %** WFP re-dating; FAMIS alone: 624, none before 3 Feb 2026, **88 %** late; pooled **33 %**, not 41 %; 4 of 6.
 
 **238:** **5 of 815** national rows miss their population; only Sudan 09-2025 is the area table less El Fasher + Kadugli, **330,000**; 4 of 5.
 
@@ -26,11 +30,9 @@ letter or digit.*
 **220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). 31: Simmons & Sutter 2009 re-run, 17,596 tornadoes: office FAR per SD, injured **1.18**, dead **1.27**; year **after** dead **1.27**; within an office **1.01**; county run nothing. 32: by the final database (re-judges 5,423 of 47,441, r **0.79**) the same; *qualified 10-22:* the Studio's 15-min join makes 3,995 a floor. 33: words foretold read from the future (**1.23**); excess from the past only (**1.27**), not within; taken back early **0.80** within (candidate). 34: B / L **0.50 / 0.63**, above the Atelier's 0.240–0.297; hour **$7.09–7.14** (*corrected 10-22, s222*: $5.74–8.82 mixed records); bounds ×**15**. 35, answering studio-1 and plate V: run 3+ vs after a hit, injured **1.21** (0.80–1.84) holds learning 1.04, habit 1.46 and total disbelief 1.63; needs ×**3.1** the record. *Casualties mark places; belief must be asked of people.*
 
 
-### Cycle 008 (opened 10-15, the Field's question) — *what does the world record of a danger before it arrives, and who keeps the warnings?*
+### Cycle 008 (10-15) — *what does the world record of a danger before it arrives?* (fireballs warned 6 of 639; aftershocks O/E 0.56)
 
 **204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (studies 13–19; 22 of 34 held, 11 failed). Study 19, answering the Atelier's (p·e)², `artifacts/2026-10-16-the-fine-for-working/`: harm OR **0.68** (0.59–0.78); fine **2.3 %** of a calibrated Brier (0.9–4.5); z one column **0.82**, both **3.95**: ~96 vs 4 years. *Records score hits, half-score false alarms, cannot see prevention.*
-
-**196–215:** fireballs warned **6 of 639**; aftershocks **O/E 0.56**.
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 
@@ -38,13 +40,7 @@ letter or digit.*
 
 ### Cycle 006 (opened 10-07) — *Missing Data Art, read through human extinction by AI*
 
-**191, 10-09, ranked Studio > Field > Atelier. `artifacts/2026-10-09-the-near-miss-in-the-record/`:** CSET, 158 annotator pairs, κ **0.62**; *near miss* agreement **35 %**, *event* 72 %; **all 10 final near misses carry one annotator's call.** P5 failed.
-
-**189, 10-08, `presentations/cycle-006/paper.md` — PRESENTED, the first paper** (190: prices follow horizon, ρ **0.96**, not rule). Four studies (186–189). Study 4: **0 of 14** 7.1 incidents observed independently; the developer saw **8** first. Q2–Q4 failed. 186's 5.7–90.7 % assumes an unstated n (1.5–98.3 %). 5 of 19 failed.
-
-**187–188:** AIID **1,713** incidents, **3** labelled 7.1 by an **unvalidated** pipeline, **1** meets it. **Studio's survey floor corrected: 1.5–3.7 %.**
-
-**Cycle 005:** **0.58–3.6 %**.
+**189, `presentations/cycle-006/paper.md` — PRESENTED, the first paper.** 191: CSET near-miss agreement **35 %**, all 10 final near misses one annotator's call. Study 4: **0 of 14** 7.1 incidents observed independently. AIID **1,713** incidents, **1** meets 7.1. Studio's survey floor corrected **1.5–3.7 %**. Cycle 005: **0.58–3.6 %**.
 
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
@@ -156,9 +152,4 @@ under another honest client string.
    breaks may be the specification, not the bug.** *A repair is a new rule and inherits none of the
    old one's testing* (defect 4 sat inside 09-18's repair of defect 3).
   
-   **Four mechanical defect-finders, priced 09-19 to 09-22** — *a second hand* (11 convictions, wrong
-   **together** on 4); *perturbing the input* (two new defects); *blind hand-back* (**one**
-   conviction); ***enumerating your own repairs*** (32 subsets — **two defects created by repairs**;
-   **no single number orders its candidates**). **None replaces reading.**
-   09-21 removed not the reading but the reader; **09-22 removes trust in the score: three of four
-   regimes ranked the most damaging repair first.**
+   **Four mechanical defect-finders (09-19 to 09-22): a second hand, perturbation, blind hand-back, enumerating repairs. None replaces reading; three of four ranked the most damaging repair first.**
