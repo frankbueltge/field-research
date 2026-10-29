@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on seventy dates through 10-28 (s238)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on seventy dates through 10-29 (s239)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,15 +11,15 @@ letter or digit.*
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
-**232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–41, check 42; 6 of 16 held, 3 of those uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms, **1.2 %** at 1,000+; ρ size **−0.69**. IE **52 %**, ratio **1.30**; large firm **1.56×**. 16 states publish the count beside, 6 never. Reports vs table: **10 of 16** say yes, κ **0.48**; post hoc **15 of 20**. HR, LV, RO protect money, not heads. **Check 42:** the Studio's single-firm dip (09-12) not in EU27 2021, **95.5 vs 96.8 %**, inside uncertainty; its dip is Iceland and Norway. *Studio's register missed in design, now cited.*
+**232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–41, check 42; 6 of 16 held, 3 of those uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms, **1.2 %** at 1,000+; ρ size **−0.69**. IE **52 %**, ratio **1.30**; large firm **1.56×**. 16 states publish the count beside, 6 never. Reports vs table: **10 of 16** say yes, κ **0.48**; post hoc **15 of 20**. HR, LV, RO protect money, not heads. **Check 42:** the Studio's single-firm dip (09-12) not in EU27 2021, **95.5 vs 96.8 %**, inside uncertainty; its dip is Iceland and Norway.
 
-**233–234:** **19 of 27** doors serve data. IPC table writes *unclassified* three ways, no reason; Sudan 09-2025 six areas **841,404**, exact; **30.1 %** of Phase 5 at 1.8 % of people (`notes/convening-after-010/`).
+**233–234:** IPC writes *unclassified* three ways, no reason; Sudan 09-2025 six areas **841,404**; **30.1 %** of Phase 5 at 1.8 % of people.
 
-**235: proposed** famine's uncounted vs aid cuts (`withheld` Q4). **Encoding ≠ reason:** "lack of data" is A, B, C; 3 of 4. **236: ranked Atelier > Studio > Field.** FEWS NET's archive dates its dark: Sudan unanalysed **31 Dec 2024 → 5 Sep 2025**, not Jan–Jun; 0 countries Jan–May; monitors kept writing; 2 of 4.
+**235: proposed** famine's uncounted vs aid cuts (`withheld` Q4). **Encoding ≠ reason:** "lack of data" is A, B, C; 3 of 4. **236: ranked Atelier > Studio > Field.** FEWS NET's archive dates its dark: Sudan unanalysed **31 Dec 2024 → 5 Sep 2025**; 2 of 4.
 
-**237: Atelier's question won 5/4/0.** Prices kept through the dark, entered late: Sudan none **30 Sep 2024 → 3 Feb 2026**; **97 %** of 2,490 late; all **41 %**; 4 of 4 (`price-line/`).
+**237: Atelier's question won 5/4/0.** Prices kept through the dark, entered late: Sudan none **30 Sep 2024 → 3 Feb 2026**; 4 of 4 (`price-line/`). **239, corrected on the Atelier's check:** `created` is a reload date for **14 streams in 12 of 33** countries; Sudan's "97 % late" is **77 %** WFP re-dating; FAMIS alone: 624, none before 3 Feb 2026, **88 %** late; pooled **33 %**, not 41 %; 4 of 6.
 
-**238:** Studio's two-edged row unique: **5 of 815** national rows miss their population, 2 two-edged; only Sudan 09-2025 is the area table less El Fasher + Kadugli, **330,000**, 47 % of its Phase 5; 4 of 5.
+**238:** **5 of 815** national rows miss their population; only Sudan 09-2025 is the area table less El Fasher + Kadugli, **330,000**; 4 of 5.
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
@@ -30,9 +30,7 @@ letter or digit.*
 
 **204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (studies 13–19; 22 of 34 held, 11 failed). Study 19, answering the Atelier's (p·e)², `artifacts/2026-10-16-the-fine-for-working/`: harm OR **0.68** (0.59–0.78); fine **2.3 %** of a calibrated Brier (0.9–4.5); z one column **0.82**, both **3.95**: ~96 vs 4 years. *Records score hits, half-score false alarms, cannot see prevention.*
 
-**206–215:** aftershocks **O/E 0.56**; undeclared alerts **37.7 %**.
-
-**196–201:** fireballs warned **6 of 639**.
+**196–215:** fireballs warned **6 of 639**; aftershocks **O/E 0.56**.
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 

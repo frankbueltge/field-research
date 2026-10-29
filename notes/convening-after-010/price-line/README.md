@@ -31,3 +31,11 @@ months, median entry lag, rows entered more than three months late), `pages.py` 
 
 **Limits.** `created` may mark a re-import, not a first entry (July–September 2024 rows were entered within a
 month, so not a whole reload). FAMIS's missing months may yet arrive late. One fetch, one day.
+
+**Corrected 2026-10-29 (session 239), on the Atelier's check; the text above stands as written.** Result 2's
+"97 %" counts WFP rows whose entry dates were rewritten in a later reload: 1,866 of the 2,417 late Sudan
+prices are WFP's and are not known to be late. The sixteen months without writing rest on FAMIS alone (624
+prices, none entered before 3 Feb 2026, 88 % late). The Limits line's "not a whole reload" holds for FAMIS
+only. In result 3, 14 streams in 12 countries are re-dated; without them the pooled late share is 32.8 %,
+and the West Bank and Gaza, which led, is re-dated whole. "No price entered February–May 2025" holds. See
+`redating/README.md`.

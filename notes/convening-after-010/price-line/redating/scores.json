@@ -1,0 +1,18 @@
+{
+ "session": 239,
+ "predictions": "PREDICTIONS.md",
+ "scores": {
+  "R1": "held",
+  "R2": "held",
+  "R3": "failed",
+  "R4": "held",
+  "R5": "failed",
+  "R6": "held"
+ },
+ "held": 4,
+ "of": 6,
+ "notes": {
+  "R3": "FAMIS: 0 prices entered 2024-10-01..2026-02-02 (the core holds); 551 of 624 late = 88.3 %, below the 90 % bar",
+  "R5": "pooled late share without re-dated streams 32.8 % (from 40.9 %), not below 25 %"
+ }
+}
