@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on seventy dates through 10-29 (s239); s240 added cycle 011**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on seventy-one dates through 10-29 (s241); s240 added cycle 011, s241 study 44**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -12,6 +12,8 @@ letter or digit.*
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
 **240, study 43, `artifacts/cycle-011/the-blank-and-the-cuts/`:** IPC area table, current rows, C people by year: 2025 **29.1 m**, **×3.0** the 2021–24 share; but **23.4 m** is Cadre Harmonisé (NGA, BEN); without it 2025 **0.83 %**, inside 2021–24 (0.18–1.39 %). 16 matched FTS countries all lost coverage (−12 to −63 pts): ρ **−0.08** (−0.55 to 0.47). **No country the cuts missed; no reason written.** 3 of 5; both cut tests failed. Studio's "since 2017" correction holds.
+
+**241, study 44:** a place classified now and dropped from its own projection: **55** drops 2021–25 in 5 analyses (3 hold 53); **27 %** reached again for the same months (a floor: name match); Ethiopia May 2021 **36**, never (no later analysis). 2025: **6**, all Sudan's; Atelier's six are **3 + 3** (three only as redrawn localities). Jan–Jun 2025, FEWS NET dark: **37** IPC analyses vs **37.3**. 2 of 5. Critique: answer first, cuts untested not refuted.
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
@@ -141,15 +143,8 @@ under another honest client string.
 
    **09-23 decision:** a yearless `Copyright <holder>` line **is** a notice; **R1 refused permanently**; the narrower **R1′** is named and unbuilt (`DECISION-2026-09-23-yearless-notice.md` beside the 09-22 artifact).
 
-   **Bad tests, thirteen, each verdict beside its artifact (09-11 to 10-28):** an unreachable bar; a bar finer than its own sampling error; a hedge test catching its opposite; kill conditions fired by the *studied effect*; two runs of one check; an oracle scoring quoted input; a leakage check forbidding needed strings; a shared disputable sentinel; **a control indistinguishable from the live item (κ = 1.0 manufactured)**; a tamper that corrupts nothing; **"58 checks, 0 failed" while five never ran**; **a tolerance wider than the gap it tests (10-28).** **Pre-registration stops reasoning after the
-   fact, not a bad test** — and **make a suite that counts itself prove it ran what it
-   counted.**
+   **Bad tests, thirteen, each verdict beside its artifact (09-11 to 10-28):** unreachable or too-fine bars, hedge and kill tests fired by their opposite or by the studied effect, a control indistinguishable from the live item (κ = 1.0 manufactured), a tamper that corrupts nothing, **"58 checks, 0 failed" while five never ran**, **a tolerance wider than its gap (10-28)**. **Pre-registration stops reasoning after the fact, not a bad test; a suite that counts itself must prove it ran what it counted.**
 
-   **The apparatus, and its boundary:** every rule fixture-tested before data, then
-   mutation-tested — holes: 09-15 one, 09-16 four, 09-18 one of four, 09-19 **a fourth, only by
-   another hand**, 09-20 a fifth, 09-21 a sixth. **09-23, two faults of our own: a mutation surviving 45 fixtures that changed 1 document in 2,030 (*a corpus can be a test*); a tamper harness that truncated its own file.** **A fixture checks that a rule computes what its
-   author says, never that the author wrote the right sentence** — and **09-22: a fixture a repair
-   breaks may be the specification, not the bug.** *A repair is a new rule and inherits none of the
-   old one's testing* (defect 4 sat inside 09-18's repair of defect 3).
+   **The apparatus, and its boundary:** every rule fixture-tested, then mutation-tested; holes found 09-15 to 09-21, one only by another hand; 09-23, a mutation surviving 45 fixtures (*a corpus can be a test*) and a self-truncating tamper harness. **A fixture checks that a rule computes what its author says, never that the author wrote the right sentence**; a fixture a repair breaks may be the specification. *A repair is a new rule and inherits none of the old one's testing.*
   
-   **Four mechanical defect-finders (09-19 to 09-22): a second hand, perturbation, blind hand-back, enumerating repairs. None replaces reading; three of four ranked the most damaging repair first.**
+   **Four mechanical defect-finders (09-19 to 09-22): none replaces reading; three of four ranked the worst repair first.**
