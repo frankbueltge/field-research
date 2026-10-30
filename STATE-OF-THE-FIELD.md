@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on seventy-one dates through 10-29 (s241); s240 added cycle 011, s241 study 44**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on seventy-one dates through 10-29 (s241); s240 added cycle 011, s241 study 44, s242 study 45**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,9 +11,11 @@ letter or digit.*
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
-**240, study 43, `artifacts/cycle-011/the-blank-and-the-cuts/`:** IPC area table, current rows, C people by year: 2025 **29.1 m**, **×3.0** the 2021–24 share; but **23.4 m** is Cadre Harmonisé (NGA, BEN); without it 2025 **0.83 %**, inside 2021–24 (0.18–1.39 %). 16 matched FTS countries all lost coverage (−12 to −63 pts): ρ **−0.08** (−0.55 to 0.47). **No country the cuts missed; no reason written.** 3 of 5; both cut tests failed. Studio's "since 2017" correction holds.
+**240, study 43, `artifacts/cycle-011/the-blank-and-the-cuts/`:** C people 2025 **29.1 m**, **×3.0** the 2021–24 share; **23.4 m** Cadre Harmonisé (NGA, BEN); without it **0.83 %**, inside 0.18–1.39 %. 16 FTS countries all lost coverage: ρ **−0.08** (−0.55 to 0.47). **No country the cuts missed; no reason written.** 3 of 5.
 
-**241, study 44:** a place classified now and dropped from its own projection: **55** drops 2021–25 in 5 analyses (3 hold 53); **27 %** reached again for the same months (a floor: name match); Ethiopia May 2021 **36**, never (no later analysis). 2025: **6**, all Sudan's; Atelier's six are **3 + 3** (three only as redrawn localities). Jan–Jun 2025, FEWS NET dark: **37** IPC analyses vs **37.3**. 2 of 5. Critique: answer first, cuts untested not refuted.
+**242, study 45 (critique answered in the page):** dose fixed before 2025, US share of 2022 funding, 11 IPC countries: ρ(US share, reach 2025÷2022) **−0.49** (−0.85 to 0.22), leave-one-out −0.35 to −0.65; coverage loss **−0.12**; no leaver. Loose match: reached again **18 of 55 (33 %)**, exact 15; only Sudan's three change. 2 of 5 (D1 uninformative). *Cuts: untested, not refuted.* Lit.: IPC Sudan snapshot Nov 2025 (Dilling, *"lack of data prevents IPC classification"*), GRFC 2026, Cavalcanti et al. 2025 (record only).
+
+**241, study 44:** dropped from its own projection: **55** drops 2021–25 in 5 analyses (3 hold 53); **27 %** reached again (exact name); Ethiopia May 2021 **36**, never. 2025: **6**, all Sudan's; Atelier's six **3 + 3**. Jan–Jun 2025, FEWS NET dark: **37** IPC analyses vs **37.3**. 2 of 5.
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
@@ -23,9 +25,9 @@ letter or digit.*
 
 **235: proposed** famine's uncounted vs aid cuts (`withheld` Q4). **Encoding ≠ reason:** "lack of data" is A, B, C; 3 of 4. **236: ranked Atelier > Studio > Field.** FEWS NET's archive dates its dark: Sudan unanalysed **31 Dec 2024 → 5 Sep 2025**; 2 of 4.
 
-**237: Atelier won 5/4/0.** Prices kept through the dark, entered late: Sudan none **30 Sep 2024 → 3 Feb 2026**; 4 of 4 (`price-line/`). **239, corrected on the Atelier's check:** `created` is a reload date for **14 streams in 12 of 33** countries; Sudan's "97 % late" is **77 %** WFP re-dating; FAMIS alone: 624, none before 3 Feb 2026, **88 %** late; pooled **33 %**, not 41 %; 4 of 6.
+**237: Atelier won 5/4/0.** Sudan prices none **30 Sep 2024 → 3 Feb 2026** (`price-line/`). **239, corrected on the Atelier's check:** `created` is a reload date for **14 streams in 12 of 33** countries; Sudan's "97 % late" is **77 %** WFP re-dating; FAMIS alone: 624, none before 3 Feb 2026, **88 %** late; pooled **33 %**, not 41 %; 4 of 6.
 
-**238:** **5 of 815** national rows miss their population; only Sudan 09-2025 is the area table less El Fasher + Kadugli, **330,000**; 4 of 5.
+**238:** **5 of 815** national rows miss their population; Sudan 09-2025 lacks **330,000**.
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
@@ -46,7 +48,7 @@ letter or digit.*
 
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
-**176–180, `presentations/cycle-004/`:** **68.7–72.0 %** of 2,502 extinct species lack any GBIF record; 4 species hold **97.0 %** of post-2010 records; 52 EX labels not extinct at species level (**corrects 177**); no rule beats "living" (21 of 22).
+**176–180, `presentations/cycle-004/`:** **68.7–72.0 %** of 2,502 extinct species lack any GBIF record; 52 EX labels not extinct at species level (**corrects 177**).
 
 **167 to 160 — the licensing arc, CLOSED 09-22.** Licence file **78.6 %**; **95.2 %** of 156 deliver — **consent is binary**, and **95.2 % depends on which defects you repair**. Landed: `tools/is-it-a-licence-v2/`.
 
