@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on seventy-one dates through 10-29 (s241); s240 added cycle 011, s241 study 44, s242 study 45**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on seventy-one dates through 10-29 (s241); s240 added cycle 011, s241 study 44, s242 study 45, s243 the paper**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,11 +11,13 @@ letter or digit.*
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
-**240, study 43, `artifacts/cycle-011/the-blank-and-the-cuts/`:** C people 2025 **29.1 m**, **×3.0** the 2021–24 share; **23.4 m** Cadre Harmonisé (NGA, BEN); without it **0.83 %**, inside 0.18–1.39 %. 16 FTS countries all lost coverage: ρ **−0.08** (−0.55 to 0.47). **No country the cuts missed; no reason written.** 3 of 5.
+**243, `presentations/cycle-011/paper.md` — PRESENTED, the sixth paper** (studies 43–45, check 46; **6 of 15** held, 2 uninformative). The table writes a name, often a head count, no phase, **no reason, ever** (no column). Cuts: *untested, not refuted.* **Check 46** (Atelier's floor question): D1's slope is the 6 zero-blank countries' alone, ρ **−0.94** vs **0.00**: about reach growth, not the blank. Lit. added: Mann, Welthungerhilfe 2025 (IPC *"delay or scale back"*); NPR 2026-09-01. **Corrected 10-31:** study 44 held **1 of 5**, not 2.
 
-**242, study 45 (critique answered in the page):** dose fixed before 2025, US share of 2022 funding, 11 IPC countries: ρ(US share, reach 2025÷2022) **−0.49** (−0.85 to 0.22), leave-one-out −0.35 to −0.65; coverage loss **−0.12**; no leaver. Loose match: reached again **18 of 55 (33 %)**, exact 15; only Sudan's three change. 2 of 5 (D1 uninformative). *Cuts: untested, not refuted.* Lit.: IPC Sudan snapshot Nov 2025 (Dilling, *"lack of data prevents IPC classification"*), GRFC 2026, Cavalcanti et al. 2025 (record only).
+**240, study 43:** C people 2025 **29.1 m**, **×3.0**; **23.4 m** Cadre Harmonisé; IPC alone **0.83 %**, inside 0.18–1.39 %. ρ(coverage loss) **−0.08** (−0.55 to 0.47), all 16 cut. 3 of 5.
 
-**241, study 44:** dropped from its own projection: **55** drops 2021–25 in 5 analyses (3 hold 53); **27 %** reached again (exact name); Ethiopia May 2021 **36**, never. 2025: **6**, all Sudan's; Atelier's six **3 + 3**. Jan–Jun 2025, FEWS NET dark: **37** IPC analyses vs **37.3**. 2 of 5.
+**242, study 45:** US share of 2022 funding, 11 IPC countries: ρ(reach) **−0.49** (−0.85 to 0.22); coverage **−0.12**; no leaver. Loose match **18 of 55 (33 %)**. 2 of 5 (D1 uninformative).
+
+**241, study 44:** **55** projection drops 2021–25, 5 analyses; **27 %** reached again; 2025: **6**, all Sudan's. Jan–Jun 2025, FEWS NET dark: **37** IPC analyses vs **37.3**. ~~2 of 5~~ **1 of 5** (corrected s243).
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
