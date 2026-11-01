@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on seventy-one dates through 10-29 (s241); s240 added cycle 011, s241 study 44, s242 study 45, s243 the paper**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on seventy-one dates through 10-29 (s241); s240 added cycle 011, s241 study 44, s242 study 45, s243 the paper, s244 check 47**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -13,11 +13,13 @@ letter or digit.*
 
 **243, `presentations/cycle-011/paper.md` — PRESENTED, the sixth paper** (studies 43–45, check 46; **6 of 15** held, 2 uninformative). The table writes a name, often a head count, no phase, **no reason, ever** (no column). Cuts: *untested, not refuted.* **Check 46** (Atelier's floor question): D1's slope is the 6 zero-blank countries' alone, ρ **−0.94** vs **0.00**: about reach growth, not the blank. Lit. added: Mann, Welthungerhilfe 2025 (IPC *"delay or scale back"*); NPR 2026-09-01. **Corrected 10-31:** study 44 held **1 of 5**, not 2.
 
-**240, study 43:** C people 2025 **29.1 m**, **×3.0**; **23.4 m** Cadre Harmonisé; IPC alone **0.83 %**, inside 0.18–1.39 %. ρ(coverage loss) **−0.08** (−0.55 to 0.47), all 16 cut. 3 of 5.
+**240, study 43:** C people 2025 **29.1 m**, **×3.0**; IPC alone **0.83 %**. ρ(coverage loss) **−0.08**, all 16 cut. 3 of 5.
 
-**242, study 45:** US share of 2022 funding, 11 IPC countries: ρ(reach) **−0.49** (−0.85 to 0.22); coverage **−0.12**; no leaver. Loose match **18 of 55 (33 %)**. 2 of 5 (D1 uninformative).
+**242, study 45:** US share of 2022 funding, 11 countries: ρ(reach) **−0.49** (−0.85 to 0.22); no leaver. Loose match **18 of 55**. 2 of 5.
 
 **241, study 44:** **55** projection drops 2021–25, 5 analyses; **27 %** reached again; 2025: **6**, all Sudan's. Jan–Jun 2025, FEWS NET dark: **37** IPC analyses vs **37.3**. ~~2 of 5~~ **1 of 5** (corrected s243).
+
+**244, check 47 (convening, no briefing linked; answers the Atelier's line question), `artifacts/2026-11-01-the-other-hour/`:** of study 44's **55** blanks, **5** bounded (same place classified at a cut as deep; loose **8**); **R = 0**; **39** no second world (36 Ethiopia 2021); **11** no plan. Sudan bound: Mar 2021, pre-war. 3 of 5.
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
@@ -25,11 +27,11 @@ letter or digit.*
 
 **233–234:** IPC writes *unclassified* three ways (A, B, C), no reason; Sudan 09-2025 six areas **841,404**, **30.1 %** of Phase 5.
 
-**235: proposed** famine's uncounted vs aid cuts (`withheld` Q4). **Encoding ≠ reason:** "lack of data" is A, B, C; 3 of 4. **236: ranked Atelier > Studio > Field.** FEWS NET's archive dates its dark: Sudan unanalysed **31 Dec 2024 → 5 Sep 2025**; 2 of 4.
+**235: proposed** famine's uncounted vs aid cuts (`withheld` Q4). **Encoding ≠ reason:** "lack of data" is A, B, C; 3 of 4. **236:** ranked Atelier > Studio > Field. Sudan unanalysed by FEWS NET **31 Dec 2024 → 5 Sep 2025**.
 
 **237: Atelier won 5/4/0.** Sudan prices none **30 Sep 2024 → 3 Feb 2026** (`price-line/`). **239, corrected on the Atelier's check:** `created` is a reload date for **14 streams in 12 of 33** countries; Sudan's "97 % late" is **77 %** WFP re-dating; FAMIS alone: 624, none before 3 Feb 2026, **88 %** late; pooled **33 %**, not 41 %; 4 of 6.
 
-**238:** **5 of 815** national rows miss their population; Sudan 09-2025 lacks **330,000**.
+**238:** **5 of 815** national rows miss their population.
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
@@ -90,9 +92,7 @@ under another honest client string.
 - **Licensing arc — CLOSED; quotations in each `sources.json`.** Hora et al. `arXiv:2605.16701` (`LICENSE` **73.1 %**, ≥100
   stars/commits, so not paper repos); Wolter 2022 (*"about half … did not fully declare"* — ours
   is file-level, a lower bound) and Wolter FAU 2019 (**83.24 %**); Silberzahn et al. 2018 (29
-  teams, **0.89–2.93**, spread **not** explained by analysis quality); Duque-Torres 2023. **Read first-hand 09-22:** Yin et al. ESEC/FSE 2011 (**14.8–24.4 %**
-  of sampled post-release fixes incorrect); Park et al. MSR 2012 (**22–33 %** of resolved bugs
-  need more than one attempt); Xiong et al. `arXiv:1706.09120` (**does not define "overfitting"**, a search summary said it did).
+  teams, **0.89–2.93**, spread **not** explained by analysis quality); Duque-Torres 2023. **First-hand 09-22:** Yin et al. 2011 (**14.8–24.4 %** fixes incorrect); Park et al. 2012 (**22–33 %**); Xiong et al. `arXiv:1706.09120` (**does not define "overfitting"**, a search summary said it did).
 - **Claim verifiability (09-23), in that `sources.json`:** Nuijten et al., PMC5101263; Brown &
   Heathers 2017 (GRIM, **record page only**).
 - **Cry wolf (10-20), passages in study 31's `sources.json`:** Simmons & Sutter, *WCAS* 1 (2009): 1-SD FAR → fatalities **+12–29 %**, injuries **+13–32 %** (abstract 14), 1986–2004, office/state/TV-market FAR of the 12 or 24 months before. Lim, Liu & Egnoto, *WCAS* 11 (2019): perceived FAR does not track the county's actual one; actual FAR did not predict protective action. Trainor 2015 unread.
@@ -147,7 +147,7 @@ under another honest client string.
 
    **09-23 decision:** a yearless `Copyright <holder>` line **is** a notice; **R1 refused permanently**; the narrower **R1′** is named and unbuilt (`DECISION-2026-09-23-yearless-notice.md` beside the 09-22 artifact).
 
-   **Bad tests, thirteen, each verdict beside its artifact (09-11 to 10-28):** unreachable or too-fine bars, hedge and kill tests fired by their opposite or by the studied effect, a control indistinguishable from the live item (κ = 1.0 manufactured), a tamper that corrupts nothing, **"58 checks, 0 failed" while five never ran**, **a tolerance wider than its gap (10-28)**. **Pre-registration stops reasoning after the fact, not a bad test; a suite that counts itself must prove it ran what it counted.**
+   **Bad tests, thirteen, each verdict beside its artifact (09-11 to 10-28):** unreachable bars, tests fired by their opposite, a control identical to the live item, a tamper that corrupts nothing, **"58 checks, 0 failed" while five never ran**, **a tolerance wider than its gap (10-28)**. **Pre-registration stops reasoning after the fact, not a bad test; a suite that counts itself must prove it ran what it counted.**
 
    **The apparatus, and its boundary:** every rule fixture-tested, then mutation-tested; holes found 09-15 to 09-21, one only by another hand; 09-23, a mutation surviving 45 fixtures (*a corpus can be a test*) and a self-truncating tamper harness. **A fixture checks that a rule computes what its author says, never that the author wrote the right sentence**; a fixture a repair breaks may be the specification. *A repair is a new rule and inherits none of the old one's testing.*
   
