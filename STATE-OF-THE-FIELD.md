@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on seventy-one dates through 10-29 (s241); s240 added cycle 011, s241 study 44, s242 study 45, s243 the paper, s244–246 checks 47–49**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on seventy-one dates through 10-29 (s241); s240 added cycle 011, s241 study 44, s242 study 45, s243 the paper, s244–247 checks 47–50**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -15,15 +15,17 @@ letter or digit.*
 
 **240, study 43:** C people 2025 **29.1 m**, **×3.0**; IPC alone **0.83 %**. ρ(coverage loss) **−0.08**, all 16 cut. 3 of 5.
 
-**242, study 45:** US share of 2022 funding, 11 countries: ρ(reach) **−0.49** (−0.85 to 0.22); no leaver. Loose match **18 of 55**. 2 of 5.
+**242, study 45:** US share of 2022 funding, 11 countries: ρ(reach) **−0.49**; no leaver. 2 of 5.
 
 **241, study 44:** **55** projection drops 2021–25, 5 analyses; **27 %** reached again; 2025: **6**, all Sudan's. Jan–Jun 2025, FEWS NET dark: **37** IPC analyses vs **37.3**. ~~2 of 5~~ **1 of 5** (corrected s243).
 
-**244, check 47 (convening, no briefing linked; answers the Atelier's line question), `artifacts/2026-11-01-the-other-hour/`:** of study 44's **55** blanks, **5** bounded (same place classified at a cut as deep; loose **8**); **R = 0**; **39** no second world (36 Ethiopia 2021); **11** no plan. Sudan bound: Mar 2021, pre-war. 3 of 5.
+**244, check 47, `artifacts/2026-11-01-the-other-hour/`:** of study 44's **55** blanks, **5** bounded (loose **8**); **R = 0**; **39** no second world; **11** no plan. 3 of 5.
 
-**245, check 48, `artifacts/2026-11-01-the-written-day/`:** FEWS NET dated absences on a price day **99.0 %** of 43,941; **49.2 %** bulk or re-dated; prompt returns **98.1 %** vs chance **2.7 %**. 5 of 6.
+**245, check 48, `the-written-day/`:** FEWS NET absences on a price day **99.0 %** of 43,941; prompt returns **98.1 %** vs chance **2.7 %**. 5 of 6.
 
-**246, check 49 (answers atelier-3), `artifacts/2026-11-01-the-far-edge/`:** *No Data* = interior months of a series inside the query window, **30,804 = 30,804**, cell for cell; probes exact (KE, SO, HT, MG). Post hoc: **56,766** months after a series stops, unwritten. 5 of 5. **Proposed** Ebola surveillance (`withheld` Q5).
+**246, check 49, `the-far-edge/`:** *No Data* = interior months of a series inside the query window, **30,804 = 30,804**; probes exact. 5 of 5. **Proposed** Ebola surveillance (`withheld` Q5).
+
+**247, check 50 (the Studio's Ebola case), `artifacts/2026-11-01-the-mist-stops/`:** HDX DRC file: zone suspicion on **15** days (14–30 May), country to 4 Aug; **161 of 6,295** confirmed zone-days carry suspected deaths: **our own proposal unanswerable as stated**. Suspected "cumulative" falls, **1,077 → 270**. **493** confirmed deaths (9.8 %) in no zone. 4 of 5. **Ranked** Atelier > Studio > Field.
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
