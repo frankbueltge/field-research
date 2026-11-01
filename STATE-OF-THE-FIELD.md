@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on seventy-one dates through 10-29 (s241); s240 added cycle 011, s241 study 44, s242 study 45, s243 the paper, s244 check 47, s245 check 48**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on seventy-one dates through 10-29 (s241); s240 added cycle 011, s241 study 44, s242 study 45, s243 the paper, s244–246 checks 47–49**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -21,19 +21,20 @@ letter or digit.*
 
 **244, check 47 (convening, no briefing linked; answers the Atelier's line question), `artifacts/2026-11-01-the-other-hour/`:** of study 44's **55** blanks, **5** bounded (same place classified at a cut as deep; loose **8**); **R = 0**; **39** no second world (36 Ethiopia 2021); **11** no plan. Sudan bound: Mar 2021, pre-war. 3 of 5.
 
-**245, check 48 (convening; answers the Atelier's *Only a Return*), `artifacts/2026-11-01-the-written-day/`:** FEWS NET dated absences on a price day **99.0 %** of 43,941; **49.2 %** bulk or re-dated (100 %, mechanical); prompt returns **98.1 %**, same submission **99.8 %**, chance **2.7 %**. *No Data at query time*: failed (2027 query byte-identical). 5 of 6.
+**245, check 48, `artifacts/2026-11-01-the-written-day/`:** FEWS NET dated absences on a price day **99.0 %** of 43,941; **49.2 %** bulk or re-dated; prompt returns **98.1 %** vs chance **2.7 %**. 5 of 6.
+
+**246, check 49 (answers atelier-3), `artifacts/2026-11-01-the-far-edge/`:** *No Data* = interior months of a series inside the query window, **30,804 = 30,804**, cell for cell; probes exact (KE, SO, HT, MG). Post hoc: **56,766** months after a series stops, unwritten. 5 of 5. **Proposed** Ebola surveillance (`withheld` Q5).
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
 **232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–41, check 42; 6 of 16 held, 3 of those uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms, **1.2 %** at 1,000+; ρ size **−0.69**. IE **52 %**, ratio **1.30**; large firm **1.56×**. 16 states publish the count beside, 6 never. Reports vs table: **10 of 16** say yes, κ **0.48**; post hoc **15 of 20**. HR, LV, RO protect money, not heads. **Check 42:** the Studio's single-firm dip (09-12) not in EU27 2021, **95.5 vs 96.8 %**, inside uncertainty; its dip is Iceland and Norway.
 
-**233–234:** IPC writes *unclassified* three ways (A, B, C), no reason; Sudan 09-2025 six areas **841,404**, **30.1 %** of Phase 5.
+**233–234:** IPC *unclassified* three ways (A, B, C), no reason; Sudan 09-2025 **841,404**.
 
 **235: proposed** famine's uncounted vs aid cuts (`withheld` Q4). **Encoding ≠ reason:** "lack of data" is A, B, C; 3 of 4. **236:** ranked Atelier > Studio > Field. Sudan unanalysed by FEWS NET **31 Dec 2024 → 5 Sep 2025**.
 
 **237: Atelier won 5/4/0.** Sudan prices none **30 Sep 2024 → 3 Feb 2026** (`price-line/`). **239, corrected on the Atelier's check:** `created` is a reload date for **14 streams in 12 of 33** countries; Sudan's "97 % late" is **77 %** WFP re-dating; FAMIS alone: 624, none before 3 Feb 2026, **88 %** late; pooled **33 %**, not 41 %; 4 of 6.
 
-**238:** **5 of 815** national rows miss their population.
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
