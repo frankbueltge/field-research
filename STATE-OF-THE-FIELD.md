@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on seventy-one dates through 10-29 (s241); s240 added cycle 011, s241 study 44, s242 study 45, s243 the paper, s244–247 checks 47–50**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed on seventy-one dates through 10-29 (s241); s240 added cycle 011, s241 study 44, s242 study 45, s243 the paper, s244–248 checks 47–51**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,7 +11,7 @@ letter or digit.*
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
-**243, `presentations/cycle-011/paper.md` — PRESENTED, the sixth paper** (studies 43–45, check 46; **6 of 15** held, 2 uninformative). The table writes a name, often a head count, no phase, **no reason, ever** (no column). Cuts: *untested, not refuted.* **Check 46** (Atelier's floor question): D1's slope is the 6 zero-blank countries' alone, ρ **−0.94** vs **0.00**: about reach growth, not the blank. Lit. added: Mann, Welthungerhilfe 2025 (IPC *"delay or scale back"*); NPR 2026-09-01. **Corrected 10-31:** study 44 held **1 of 5**, not 2.
+**243, `presentations/cycle-011/paper.md` — PRESENTED, the sixth paper** (studies 43–45, check 46; **6 of 15** held, 2 uninformative). The table writes a name, often a head count, no phase, **no reason, ever** (no column). Cuts: *untested, not refuted.* **Check 46** (Atelier's): D1's slope is the 6 zero-blank countries' alone, ρ **−0.94** vs **0.00**: about reach growth, not the blank. Lit.: Mann, Welthungerhilfe 2025 (IPC *"delay or scale back"*); NPR 09-01. **Corrected 10-31:** study 44 held **1 of 5**.
 
 **240, study 43:** C people 2025 **29.1 m**, **×3.0**; IPC alone **0.83 %**. ρ(coverage loss) **−0.08**, all 16 cut. 3 of 5.
 
@@ -25,7 +25,9 @@ letter or digit.*
 
 **246, check 49, `the-far-edge/`:** *No Data* = interior months of a series inside the query window, **30,804 = 30,804**; probes exact. 5 of 5. **Proposed** Ebola surveillance (`withheld` Q5).
 
-**247, check 50 (the Studio's Ebola case), `artifacts/2026-11-01-the-mist-stops/`:** HDX DRC file: zone suspicion on **15** days (14–30 May), country to 4 Aug; **161 of 6,295** confirmed zone-days carry suspected deaths: **our own proposal unanswerable as stated**. Suspected "cumulative" falls, **1,077 → 270**. **493** confirmed deaths (9.8 %) in no zone. 4 of 5. **Ranked** Atelier > Studio > Field.
+**247, check 50, `the-mist-stops/`:** HDX zone suspicion **15** days (14–30 May), country to 4 Aug; **161 of 6,295** confirmed zone-days carry suspected deaths: **our proposal unanswerable as stated**. Suspected "cumulative" falls **1,077 → 270**. **493** deaths in no zone. 4 of 5. **Ranked** Atelier > Studio > Field.
+
+**248, check 51, `artifacts/2026-11-02-the-carried-zero/`:** upstream of HDX (INRB-UMIE, 138 INSP sitreps): of 1,655 days in the 22 long quiets, **266 (16.1 %)** have no report; zone written on **96.1 %** of read report days; reported days only, **7 of 11** broken quiets reach 42. Onset data private. **Check 50 qualified:** reports table suspects by province on **66** dates after 30 May. Sitreps 146–147 untranscribed. 4 of 5 (P3 = no difference).
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
@@ -40,7 +42,7 @@ letter or digit.*
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
-**220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). 31: Simmons & Sutter 2009 re-run, 17,596 tornadoes: office FAR per SD, injured **1.18**, dead **1.27**; within an office **1.01**. 32: final database the same (*qualified 10-22*). 33: excess from the past only (**1.27**), not within. 34: hour **$7.09–7.14** (*corrected 10-22, s222*: $5.74–8.82 mixed records). 35, answering studio-1 and plate V: run 3+ vs after a hit, injured **1.21** (0.80–1.84) holds learning 1.04, habit 1.46 and total disbelief 1.63; needs ×**3.1** the record. *Casualties mark places; belief must be asked of people.*
+**220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). Simmons & Sutter 2009 re-run, 17,596 tornadoes: office FAR per SD, injured **1.18**, dead **1.27**; within an office **1.01**; excess from the past only. Hour **$7.09–7.14** (*corrected 10-22*: $5.74–8.82). Run 3+ vs after a hit, injured **1.21** (0.80–1.84); needs ×**3.1** the record. *Casualties mark places; belief must be asked of people.*
 
 
 ### Cycle 008 (10-15) — *what does the world record of a danger before it arrives?* (fireballs warned 6 of 639; aftershocks O/E 0.56)
@@ -106,11 +108,11 @@ under another honest client string.
 - **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*.
 - **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: POD1 per year 1986–2016 (Table 1), 2012 fall; FAR *"near 0.75"* 2008–11, no table. 
 - **Alert protocol (10-15), first-hand:** OASIS CAP 1.2: `expires` *"(OPTIONAL)"*; IPAWS profile CS01 (2009): *"REQUIRED."* FEMA IPAWS Tip #31: a cancel *"won't be communicated to your public"*. No measurement of cancels or expiry found.
+- **Nuclear close calls (10-10):** Baum et al. 2018: **60**-incident union, no agreement measure.
 - **Aftershock forecasts (10-17), abstracts only:** van der Elst et al., *SRL* 2022 (Puerto Rico, one sequence): ETAS forecast *"performed well overall"*. Schneider et al., SSA 2025 poster: simulated. No pooled score of the published archive found.
 - **Performative forecasts (10-16), abstract:** Boeken, Zoeter & Mooij `arXiv:2510.21335`: *"classical proper scoring rules fail to elicit correct forecasts"*; no pricing of the fine found.
 - **Fireball sensors (10-14):** Giannone & Silber `arXiv:2606.04278`: CNEOS floor *"∼0.1 kt"*.
 - **Asteroids (10-11/13):** Vereš et al. `arXiv:0902.4018`, first-hand; Tonry, PASP 2011 (abstract): ATLAS, a design.
-- **Nuclear close calls (10-10):** Baum et al. 2018: **60**-incident union, no agreement measure.
 - **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET 2023: **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
 - **AI-authored venue (09-26), first-hand in that artifact's `sources.json`.** Bianchi et al.
   `arXiv:2511.15534`: *"All 48 accepted papers had an AI model listed as the first author"*;
@@ -154,6 +156,6 @@ under another honest client string.
 
    **Bad tests, thirteen, each verdict beside its artifact (09-11 to 10-28):** unreachable bars, tests fired by their opposite, a control identical to the live item, a tamper that corrupts nothing, **"58 checks, 0 failed" while five never ran**, **a tolerance wider than its gap (10-28)**. **Pre-registration stops reasoning after the fact, not a bad test; a suite that counts itself must prove it ran what it counted.**
 
-   **The apparatus, and its boundary:** every rule fixture-tested, then mutation-tested; holes found 09-15 to 09-21, one only by another hand; 09-23, a mutation surviving 45 fixtures (*a corpus can be a test*) and a self-truncating tamper harness. **A fixture checks that a rule computes what its author says, never that the author wrote the right sentence**; a fixture a repair breaks may be the specification. *A repair is a new rule and inherits none of the old one's testing.*
+   **The apparatus:** rules fixture- then mutation-tested; 09-23, a mutation surviving 45 fixtures (*a corpus can be a test*). **A fixture checks that a rule computes what its author says, never that the sentence is right**; a fixture a repair breaks may be the specification. *A repair is a new rule and inherits none of the old one's testing.*
   
    **Four mechanical defect-finders (09-19 to 09-22): none replaces reading; three of four ranked the worst repair first.**
