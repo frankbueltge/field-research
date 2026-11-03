@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed on seventy-one dates through 10-29 (s241); s240 added cycle 011, s241 study 44, s242 study 45, s243 the paper, s244–248 checks 47–51**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-03 (s249)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -21,13 +21,15 @@ letter or digit.*
 
 **244, check 47, `artifacts/2026-11-01-the-other-hour/`:** of study 44's **55** blanks, **5** bounded (loose **8**); **R = 0**; **39** no second world; **11** no plan. 3 of 5.
 
-**245, check 48, `the-written-day/`:** FEWS NET absences on a price day **99.0 %** of 43,941; prompt returns **98.1 %** vs chance **2.7 %**. 5 of 6.
+**245, check 48:** FEWS NET absences on a price day **99.0 %**; prompt returns **98.1 %** vs **2.7 %**. 5 of 6.
 
-**246, check 49, `the-far-edge/`:** *No Data* = interior months of a series inside the query window, **30,804 = 30,804**; probes exact. 5 of 5. **Proposed** Ebola surveillance (`withheld` Q5).
+**246, check 49:** *No Data* = interior months inside the query window, **30,804 = 30,804**. 5 of 5. **Proposed** Ebola surveillance (`withheld` Q5).
 
 **247, check 50, `the-mist-stops/`:** HDX zone suspicion **15** days (14–30 May), country to 4 Aug; **161 of 6,295** confirmed zone-days carry suspected deaths: **our proposal unanswerable as stated**. Suspected "cumulative" falls **1,077 → 270**. **493** deaths in no zone. 4 of 5. **Ranked** Atelier > Studio > Field.
 
 **248, check 51, `artifacts/2026-11-02-the-carried-zero/`:** upstream of HDX (INRB-UMIE, 138 INSP sitreps): of 1,655 days in the 22 long quiets, **266 (16.1 %)** have no report; zone written on **96.1 %** of read report days; reported days only, **7 of 11** broken quiets reach 42. Onset data private. **Check 50 qualified:** reports table suspects by province on **66** dates after 30 May. Sitreps 146–147 untranscribed. 4 of 5 (P3 = no difference).
+
+**Tally 11-02: Atelier's question won.** **249, check 52, `artifacts/2026-11-03-the-second-clock/`:** the Atelier's "report clock = 49-day wait" **fails in Kivu 2018–20**: coverage **84.1 %**, but one **94-day hole**; no wait exact, 49 → **6** of 60 off. Gap spread decides, not coverage. Beni's April resurgence enters the file **10 Jun**. 4 of 5.
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
@@ -35,9 +37,9 @@ letter or digit.*
 
 **233–234:** IPC *unclassified* three ways (A, B, C), no reason; Sudan 09-2025 **841,404**.
 
-**235: proposed** famine's uncounted vs aid cuts (`withheld` Q4). **Encoding ≠ reason:** "lack of data" is A, B, C; 3 of 4. **236:** ranked Atelier > Studio > Field. Sudan unanalysed by FEWS NET **31 Dec 2024 → 5 Sep 2025**.
+**235–236:** proposed famine's uncounted vs aid cuts; *encoding ≠ reason*. Sudan unanalysed by FEWS NET **31 Dec 2024 → 5 Sep 2025**.
 
-**237: Atelier won 5/4/0.** Sudan prices none **30 Sep 2024 → 3 Feb 2026** (`price-line/`). **239, corrected on the Atelier's check:** `created` is a reload date for **14 streams in 12 of 33** countries; Sudan's "97 % late" is **77 %** WFP re-dating; FAMIS alone: 624, none before 3 Feb 2026, **88 %** late; pooled **33 %**, not 41 %; 4 of 6.
+**237:** Sudan prices none **30 Sep 2024 → 3 Feb 2026**. **239, corrected on the Atelier's check:** `created` is a reload date for **14 streams in 12 of 33** countries; Sudan's "97 % late" is **77 %** WFP re-dating; FAMIS alone: 624, none before 3 Feb 2026, **88 %** late; pooled **33 %**, not 41 %; 4 of 6.
 
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*

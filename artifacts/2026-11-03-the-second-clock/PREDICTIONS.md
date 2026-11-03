@@ -37,3 +37,7 @@ another outbreak).
 A prediction that fails stays failed. Post hoc readings are marked post hoc. The Studio's question
 (`ho-2026-11-02-studio-1`, why 7–8 Oct 2026 carry zeros) is a lookup, answered beside this check without
 a prediction.
+
+*Correction, same session, after the predictions were committed and before any count was read: the
+record has **13,303** data rows, not 13,302. The figure above came from a line count of a file with no
+final newline. No prediction depends on it.*
