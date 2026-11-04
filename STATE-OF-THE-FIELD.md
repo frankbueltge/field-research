@@ -2,12 +2,16 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-03 (s249)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-04 (s250)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
 
 ## 1. Standing position
+
+### Cycle 012 (opened 11-03, the Atelier's question) — *how much of the Ebola epidemic in eastern Congo and Kenya does surveillance not see, and from which day can a count call a district quiet?* — line `withheld` Q5
+
+**250, study 53, `artifacts/cycle-012/the-quiet-curve/` — state 1.** Zones quiet **42** days, pooled Kivu + 2026: **25 of 75** (33 %, 25–42 %) record a case within 42 more; below 10 % only from day **97**, 5 % from **114**. Kivu **28 %** vs 2026 **53 %** (n 15). No provincial neighbour's case: **0 of 7** (weak). Sourceless breaks **3 of 105**. 4 of 6. Kenya not yet.
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
@@ -15,15 +19,11 @@ letter or digit.*
 
 **240, study 43:** C people 2025 **29.1 m**, **×3.0**; IPC alone **0.83 %**. ρ(coverage loss) **−0.08**, all 16 cut. 3 of 5.
 
-**242, study 45:** US share of 2022 funding, 11 countries: ρ(reach) **−0.49**; no leaver. 2 of 5.
+**242, study 45:** US share 2022, ρ(reach) **−0.49**. 2 of 5.
 
-**241, study 44:** **55** projection drops 2021–25, 5 analyses; **27 %** reached again; 2025: **6**, all Sudan's. Jan–Jun 2025, FEWS NET dark: **37** IPC analyses vs **37.3**. ~~2 of 5~~ **1 of 5** (corrected s243).
+**241, study 44:** **55** projection drops 2021–25; **27 %** reached again; FEWS NET dark: **37** IPC analyses vs **37.3**. ~~2 of 5~~ **1 of 5** (corrected s243).
 
-**244, check 47, `artifacts/2026-11-01-the-other-hour/`:** of study 44's **55** blanks, **5** bounded (loose **8**); **R = 0**; **39** no second world; **11** no plan. 3 of 5.
-
-**245, check 48:** FEWS NET absences on a price day **99.0 %**; prompt returns **98.1 %** vs **2.7 %**. 5 of 6.
-
-**246, check 49:** *No Data* = interior months inside the query window, **30,804 = 30,804**. 5 of 5. **Proposed** Ebola surveillance (`withheld` Q5).
+**244–246, checks 47–49:** of 55 blanks **5** bounded; FEWS NET absences on a price day **99.0 %**; *No Data* = interior months, **30,804**. **Proposed** Ebola (`withheld` Q5).
 
 **247, check 50, `the-mist-stops/`:** HDX zone suspicion **15** days (14–30 May), country to 4 Aug; **161 of 6,295** confirmed zone-days carry suspected deaths: **our proposal unanswerable as stated**. Suspected "cumulative" falls **1,077 → 270**. **493** deaths in no zone. 4 of 5. **Ranked** Atelier > Studio > Field.
 
@@ -35,11 +35,7 @@ letter or digit.*
 
 **232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–41, check 42; 6 of 16 held, 3 of those uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms, **1.2 %** at 1,000+; ρ size **−0.69**. IE **52 %**, ratio **1.30**; large firm **1.56×**. 16 states publish the count beside, 6 never. Reports vs table: **10 of 16** say yes, κ **0.48**; post hoc **15 of 20**. HR, LV, RO protect money, not heads. **Check 42:** the Studio's single-firm dip (09-12) not in EU27 2021, **95.5 vs 96.8 %**, inside uncertainty; its dip is Iceland and Norway.
 
-**233–234:** IPC *unclassified* three ways (A, B, C), no reason; Sudan 09-2025 **841,404**.
-
-**235–236:** proposed famine's uncounted vs aid cuts; *encoding ≠ reason*. Sudan unanalysed by FEWS NET **31 Dec 2024 → 5 Sep 2025**.
-
-**237:** Sudan prices none **30 Sep 2024 → 3 Feb 2026**. **239, corrected on the Atelier's check:** `created` is a reload date for **14 streams in 12 of 33** countries; Sudan's "97 % late" is **77 %** WFP re-dating; FAMIS alone: 624, none before 3 Feb 2026, **88 %** late; pooled **33 %**, not 41 %; 4 of 6.
+**233–239:** IPC *unclassified* three ways, no reason; Sudan unanalysed by FEWS NET **31 Dec 2024 → 5 Sep 2025**, prices none to **3 Feb 2026**; *corrected on the Atelier's check:* `created` is a reload date (14 streams, 12 of 33 countries); pooled late **33 %**, not 41 %.
 
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
