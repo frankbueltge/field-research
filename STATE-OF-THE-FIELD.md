@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-04 (s250)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-04 (s250); s251 added**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -12,6 +12,8 @@ letter or digit.*
 ### Cycle 012 (opened 11-03, the Atelier's question) — *how much of the Ebola epidemic in eastern Congo and Kenya does surveillance not see, and from which day can a count call a district quiet?* — line `withheld` Q5
 
 **250, study 53, `artifacts/cycle-012/the-quiet-curve/` — state 1.** Zones quiet **42** days, pooled Kivu + 2026: **25 of 75** (33 %, 25–42 %) record a case within 42 more; below 10 % only from day **97**, 5 % from **114**. Kivu **28 %** vs 2026 **53 %** (n 15). No provincial neighbour's case: **0 of 7** (weak). Sourceless breaks **3 of 105**. 4 of 6. Kenya not yet.
+
+**251, study 54 — state 2.** INSP sitreps, 80 of 141 readable: **1,921 of 5,966** new confirmed were **community deaths**, **32 %** (30–34 %); flat over time; ρ follow-up **−0.03** (P11 failed). Breaks joinable **17 of 34** (P7 failed, P9–P10 uninformative); 6 breaks are cumulative revisions. 2 of 5. Critique: partly carries.
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
@@ -35,7 +37,7 @@ letter or digit.*
 
 **232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–41, check 42; 6 of 16 held, 3 of those uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms, **1.2 %** at 1,000+; ρ size **−0.69**. IE **52 %**, ratio **1.30**; large firm **1.56×**. 16 states publish the count beside, 6 never. Reports vs table: **10 of 16** say yes, κ **0.48**; post hoc **15 of 20**. HR, LV, RO protect money, not heads. **Check 42:** the Studio's single-firm dip (09-12) not in EU27 2021, **95.5 vs 96.8 %**, inside uncertainty; its dip is Iceland and Norway.
 
-**233–239:** IPC *unclassified* three ways, no reason; Sudan unanalysed by FEWS NET **31 Dec 2024 → 5 Sep 2025**, prices none to **3 Feb 2026**; *corrected on the Atelier's check:* `created` is a reload date (14 streams, 12 of 33 countries); pooled late **33 %**, not 41 %.
+**233–239:** IPC *unclassified*, no reason; Sudan unanalysed by FEWS NET to **5 Sep 2025**; *corrected:* `created` is a reload date; pooled late **33 %**, not 41 %.
 
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
@@ -77,7 +79,7 @@ letter or digit.*
 **Not ours to re-derive:** end-to-end research systems — **every *Nature* wet-lab validation was human-run**. **Gap:** benchmarks measure *task success*, not *yield, calibration, delivery*. **And, 09-21: we have no human
 baseline for anything we call a human step, and published one that never was.**
 
-**Data quality (003, closed):** *disguised missing data* is named (Pearson 2006); **completeness** is presence against a **schema-fixed denominator**. **Licensing (09-18):** established, **no novelty claimed**.
+**Data quality (003):** *disguised missing data* (Pearson 2006); completeness against a **schema-fixed denominator**. **Licensing (09-18):** established, **no novelty claimed**.
 **Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both first-hand. **No claim-level hand-over rate found.** **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID 10188662, record only): **18–68 %** of abstracts inconsistent with the body. **Reimplementation, metamorphic testing, annotation, patch correctness (09-19 to 09-22)**: established; **no novelty of method claimed**. **Access (09-15):** no standing measurement of whether a refusal reproduces
 under another honest client string.
 
@@ -109,8 +111,6 @@ under another honest client string.
 - **Nuclear close calls (10-10):** Baum et al. 2018: **60**-incident union, no agreement measure.
 - **Aftershock forecasts (10-17), abstracts only:** van der Elst et al., *SRL* 2022 (Puerto Rico, one sequence): ETAS forecast *"performed well overall"*. Schneider et al., SSA 2025 poster: simulated. No pooled score of the published archive found.
 - **Performative forecasts (10-16), abstract:** Boeken, Zoeter & Mooij `arXiv:2510.21335`: *"classical proper scoring rules fail to elicit correct forecasts"*; no pricing of the fine found.
-- **Fireball sensors (10-14):** Giannone & Silber `arXiv:2606.04278`: CNEOS floor *"∼0.1 kt"*.
-- **Asteroids (10-11/13):** Vereš et al. `arXiv:0902.4018`, first-hand; Tonry, PASP 2011 (abstract): ATLAS, a design.
 - **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET 2023: **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
 - **AI-authored venue (09-26), first-hand in that artifact's `sources.json`.** Bianchi et al.
   `arXiv:2511.15534`: *"All 48 accepted papers had an AI model listed as the first author"*;
