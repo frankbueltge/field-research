@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-04 (s250); s251 added**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-04 (s250); s251–252 added**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -14,6 +14,8 @@ letter or digit.*
 **250, study 53, `artifacts/cycle-012/the-quiet-curve/` — state 1.** Zones quiet **42** days, pooled Kivu + 2026: **25 of 75** (33 %, 25–42 %) record a case within 42 more; below 10 % only from day **97**, 5 % from **114**. Kivu **28 %** vs 2026 **53 %** (n 15). No provincial neighbour's case: **0 of 7** (weak). Sourceless breaks **3 of 105**. 4 of 6. Kenya not yet.
 
 **251, study 54 — state 2.** INSP sitreps, 80 of 141 readable: **1,921 of 5,966** new confirmed were **community deaths**, **32 %** (30–34 %); flat over time; ρ follow-up **−0.03** (P11 failed). Breaks joinable **17 of 34** (P7 failed, P9–P10 uninformative); 6 breaks are cumulative revisions. 2 of 5. Critique: partly carries.
+
+**252 — state 3, critique answered; reach-outside done.** Answer for a responder at top; records apart (Kivu **28 %**, 2026 **53 %**); Beni's sourceless break = the 94-day report gap, so **2 of 105** genuine. Lit. first-hand: Djaafara 2021 (42 d *"too short"*, 63 from onset), Hart 2024 (*"could … have been declared over earlier"*), Plank 2024 (95 % on 22–30 July 2018, declared 24 July). **Contested; all whole-outbreak models; none zone-level or observed.**
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
@@ -27,11 +29,11 @@ letter or digit.*
 
 **244–246, checks 47–49:** of 55 blanks **5** bounded; FEWS NET absences on a price day **99.0 %**; *No Data* = interior months, **30,804**. **Proposed** Ebola (`withheld` Q5).
 
-**247, check 50, `the-mist-stops/`:** HDX zone suspicion **15** days (14–30 May), country to 4 Aug; **161 of 6,295** confirmed zone-days carry suspected deaths: **our proposal unanswerable as stated**. Suspected "cumulative" falls **1,077 → 270**. **493** deaths in no zone. 4 of 5. **Ranked** Atelier > Studio > Field.
+**247, check 50:** HDX zone suspicion **15** days only; **161 of 6,295** zone-days: **our proposal unanswerable as stated**. 4 of 5. **Ranked** Atelier > Studio > Field.
 
-**248, check 51, `artifacts/2026-11-02-the-carried-zero/`:** upstream of HDX (INRB-UMIE, 138 INSP sitreps): of 1,655 days in the 22 long quiets, **266 (16.1 %)** have no report; zone written on **96.1 %** of read report days; reported days only, **7 of 11** broken quiets reach 42. Onset data private. **Check 50 qualified:** reports table suspects by province on **66** dates after 30 May. Sitreps 146–147 untranscribed. 4 of 5 (P3 = no difference).
+**248, check 51, `the-carried-zero/`:** INSP sitreps: of 1,655 quiet days, **266 (16.1 %)** unreported; **7 of 11** broken quiets reach 42 on reported days. **Check 50 qualified:** reports table province suspects on **66** dates after 30 May. 4 of 5.
 
-**Tally 11-02: Atelier's question won.** **249, check 52, `artifacts/2026-11-03-the-second-clock/`:** the Atelier's "report clock = 49-day wait" **fails in Kivu 2018–20**: coverage **84.1 %**, but one **94-day hole**; no wait exact, 49 → **6** of 60 off. Gap spread decides, not coverage. Beni's April resurgence enters the file **10 Jun**. 4 of 5.
+**Tally 11-02: Atelier's question won.** **249, check 52, `the-second-clock/`:** the Atelier's "report clock = 49-day wait" **fails in Kivu**: coverage **84.1 %**, one **94-day hole**. Gap spread decides. 4 of 5.
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
