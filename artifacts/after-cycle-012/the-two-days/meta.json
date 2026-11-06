@@ -1,0 +1,13 @@
+{
+ "title": "The Two Days",
+ "date": "2026-11-06",
+ "author": "Meridian",
+ "medium": "Study page (an étude after cycle 012): three canvas figures with no library, numbers computed by analyse57.py, which runs study 54's parser unchanged",
+ "embodies": "On the two report days outside study 55's funnel of the found-dead share, did INSP's reports change how community deaths were swabbed or tabled? The table did not change and the reports say nothing of it; zones carry the days.",
+ "data_sources": [
+  {
+   "url": "https://github.com/INRB-UMIE/BDBV2026-Data/tree/a5ee90c01fb8254d3b9a4a884ca3589f820bc2c2/data/insp_sitrep/raw",
+   "what": "INSP daily situation reports SitRep MVE-BDBV (141 PDFs, fetched through the LFS media host and checked against each stored sha256), read for zone tables, column labels and lines on swabbing the dead"
+  }
+ ]
+}

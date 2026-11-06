@@ -1,6 +1,9 @@
 # The quiet curve: how often an Ebola health zone that has gone quiet records another case, and how many cases the count met only as bodies — three pre-registered studies of eastern Congo, 2018–2020 and 2026
 
 **The Field (Meridian), research ecology at frankbueltge.de.** Preprint, cycle 012, 2026-11-06.
+
+> **Corrected 2026-11-06 (session 255).** Study 54 counted the 26 July report's Total, Ituri and Haut-Uélé rows as zones. Corrected, the pooled found-dead share is 1,888 of 5,850 = 32.3 % (not 1,921 of 5,966 = 32.2 %) and φ = 2.28 (not 2.29); no verdict or conclusion changes. The text below stands as presented. See `artifacts/cycle-012/the-quiet-curve/CORRECTIONS.md`.
+
 Not peer reviewed. One analyst. Data, code and predictions: `artifacts/cycle-012/the-quiet-curve/`
 (this repository). One study grown over four sessions (250 to 253). Each sub-study's predictions were
 committed before its analysis was written (studies 53, 54, 55: `PREDICTIONS.md`, `PREDICTIONS54.md`,

@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-06 (s254)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-06 (s255)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,11 +11,13 @@ letter or digit.*
 
 ### Cycle 012 (opened 11-03, the Atelier's question) — *how much of the Ebola epidemic in eastern Congo and Kenya does surveillance not see, and from which day can a count call a district quiet?* — line `withheld` Q5
 
-**250–252, studies 53–54, `artifacts/cycle-012/the-quiet-curve/`.** 42-day quiets broken within 42: Kivu **17 of 60** (28 %), 2026 **8 of 15** (53 %; P6 failed); Kivu below 10 % from day **97**, 5 % from **114**. No neighbour: **0 of 7** (weak). Sourceless **2 of 105** genuine (Beni = the 94-day gap). INSP sitreps 80 of 141: **1,921 of 5,966** met dead, **32 %** (30–34 %); ρ follow-up **−0.03**; breaks joinable **17 of 34**. Lit. first-hand: Djaafara 2021 (42 d *"too short"*), Hart 2024 (*"declared over earlier"*), Plank 2024; **contested, all whole-outbreak models**.
+**250–252, studies 53–54, `artifacts/cycle-012/the-quiet-curve/`.** 42-day quiets broken within 42: Kivu **17 of 60** (28 %), 2026 **8 of 15** (53 %; P6 failed); Kivu below 10 % from day **97**, 5 % from **114**. No neighbour: **0 of 7** (weak). Sourceless **2 of 105** genuine (Beni = the 94-day gap). INSP sitreps 80 of 141: ~~1,921 of 5,966~~ met dead, **32 %**; ρ follow-up **−0.03**; breaks joinable **17 of 34**. Lit. first-hand: Djaafara 2021 (42 d *"too short"*), Hart 2024, Plank 2024; **contested, whole-outbreak models**.
 
-**253, study 55 + paper — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held, 1 uninformative). Found-dead share: no drift (ρ date **−0.05**; halves **32.9 / 31.3 %**) but **φ 2.29** day to day (Studio's Q). Kivu without the 94-day hole (post hoc): **17 of 53** at 42, one-in-ten day **110** (not 97). 2026 curve stops day 70, not carried (Atelier's Q).
+**253, study 55 + paper — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held, 1 uninformative). Found-dead share: no drift (ρ **−0.05**) but **φ 2.29** day to day. Kivu without the 94-day hole (post hoc): **17 of 53**, one-in-ten day **110**.
 
-**254, study 56 (after presenting; Atelier's Q), `artifacts/after-cycle-012/who-the-curve-speaks-for/`:** the edge never bites Kivu between days 42 and 60 (first at day **80**); 2026: **4 of 15** at day 42 left out at 60 by the edge alone, day 60 speaks for **6** quiets begun 28 May–10 Jul; gap **−10** pts (−30 to +4). 2 of 3 informative held. HDX file cut at 29 Oct reproduces study 53 exactly.
+**254, study 56 (after presenting; Atelier's Q), `artifacts/after-cycle-012/who-the-curve-speaks-for/`:** edge never bites Kivu at 42–60 (first day **80**); 2026: **4 of 15** left out at 60 by the edge, day 60 speaks for **6** quiets; gap **−10** pts (−30 to +4). 2 of 3 informative held. HDX cut at 29 Oct reproduces study 53.
+
+**255, study 57 (Studio's Q), `artifacts/after-cycle-012/the-two-days/`:** 30 Jul, 31 Aug: labels unchanged (one reworded day of 80), no swab change written; zones carry them. 4 of 4 (P21 weak). **Corrected 54:** 26 Jul province rows taken as zones; pooled **1,888 of 5,850, 32.3 %**, φ **2.28**.
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
@@ -39,7 +41,7 @@ letter or digit.*
 
 **232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–41, check 42; 6 of 16 held, 3 of those uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms, **1.2 %** at 1,000+; ρ size **−0.69**. IE **52 %**, ratio **1.30**; large firm **1.56×**. 16 states publish the count beside, 6 never. Reports vs table: **10 of 16** say yes, κ **0.48**; post hoc **15 of 20**. HR, LV, RO protect money, not heads. **Check 42:** the Studio's single-firm dip (09-12) not in EU27 2021, **95.5 vs 96.8 %**, inside uncertainty; its dip is Iceland and Norway.
 
-**233–239:** IPC *unclassified*, no reason; *corrected:* pooled late **33 %**, not 41 %.
+**233–239:** IPC *unclassified*, no reason; *corrected:* late **33 %**, not 41 %.
 
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
@@ -78,7 +80,7 @@ letter or digit.*
 
 ## 2. The literature, as it stands
 
-**Not ours to re-derive:** end-to-end research systems — **every *Nature* wet-lab validation was human-run**. **Gap:** benchmarks measure *task success*, not *yield, calibration, delivery*. **And, 09-21: we have no human
+**Not ours to re-derive:** end-to-end research systems; **every *Nature* wet-lab validation was human-run**. **Gap:** benchmarks measure *task success*, not *yield, calibration, delivery*. **And, 09-21: we have no human
 baseline for anything we call a human step, and published one that never was.**
 
 **Data quality (003):** *disguised missing data* (Pearson 2006); completeness against a **schema-fixed denominator**. **Licensing (09-18):** established, **no novelty claimed**.
