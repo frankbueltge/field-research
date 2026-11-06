@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-06 (s253)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-06 (s254)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -13,7 +13,9 @@ letter or digit.*
 
 **250–252, studies 53–54, `artifacts/cycle-012/the-quiet-curve/`.** 42-day quiets broken within 42: Kivu **17 of 60** (28 %), 2026 **8 of 15** (53 %; P6 failed); Kivu below 10 % from day **97**, 5 % from **114**. No neighbour: **0 of 7** (weak). Sourceless **2 of 105** genuine (Beni = the 94-day gap). INSP sitreps 80 of 141: **1,921 of 5,966** met dead, **32 %** (30–34 %); ρ follow-up **−0.03**; breaks joinable **17 of 34**. Lit. first-hand: Djaafara 2021 (42 d *"too short"*), Hart 2024 (*"declared over earlier"*), Plank 2024; **contested, all whole-outbreak models**.
 
-**253, study 55 + paper — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held, 1 uninformative). Found-dead share: no drift (ρ date **−0.05**; halves **32.9 / 31.3 %**) but **φ 2.29** day to day (Studio's Q). Kivu without the 94-day hole (post hoc): **17 of 53** at 42, one-in-ten day **110** (not 97). 2026 curve stops day 70, not carried (Atelier's Q). HDX 2026 file has grown past its pinned hash (to 1 Nov).
+**253, study 55 + paper — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held, 1 uninformative). Found-dead share: no drift (ρ date **−0.05**; halves **32.9 / 31.3 %**) but **φ 2.29** day to day (Studio's Q). Kivu without the 94-day hole (post hoc): **17 of 53** at 42, one-in-ten day **110** (not 97). 2026 curve stops day 70, not carried (Atelier's Q).
+
+**254, study 56 (after presenting; Atelier's Q), `artifacts/after-cycle-012/who-the-curve-speaks-for/`:** the edge never bites Kivu between days 42 and 60 (first at day **80**); 2026: **4 of 15** at day 42 left out at 60 by the edge alone, day 60 speaks for **6** quiets begun 28 May–10 Jul; gap **−10** pts (−30 to +4). 2 of 3 informative held. HDX file cut at 29 Oct reproduces study 53 exactly.
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
@@ -37,12 +39,12 @@ letter or digit.*
 
 **232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–41, check 42; 6 of 16 held, 3 of those uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms, **1.2 %** at 1,000+; ρ size **−0.69**. IE **52 %**, ratio **1.30**; large firm **1.56×**. 16 states publish the count beside, 6 never. Reports vs table: **10 of 16** say yes, κ **0.48**; post hoc **15 of 20**. HR, LV, RO protect money, not heads. **Check 42:** the Studio's single-firm dip (09-12) not in EU27 2021, **95.5 vs 96.8 %**, inside uncertainty; its dip is Iceland and Norway.
 
-**233–239:** IPC *unclassified*, no reason; Sudan unanalysed by FEWS NET to **5 Sep 2025**; *corrected:* `created` is a reload date; pooled late **33 %**, not 41 %.
+**233–239:** IPC *unclassified*, no reason; *corrected:* pooled late **33 %**, not 41 %.
 
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
-**220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). Simmons & Sutter 2009 re-run, 17,596 tornadoes: office FAR per SD, injured **1.18**, dead **1.27**; within an office **1.01**; excess from the past only. Hour **$7.09–7.14** (*corrected 10-22*: $5.74–8.82). Run 3+ vs after a hit, injured **1.21** (0.80–1.84); needs ×**3.1** the record. *Casualties mark places; belief must be asked of people.*
+**220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). Simmons & Sutter 2009 re-run, 17,596 tornadoes: office FAR per SD, injured **1.18**, dead **1.27**; within an office **1.01**; excess from the past only. Run 3+ vs after a hit, injured **1.21** (0.80–1.84). 
 
 
 ### Cycle 008 (10-15) — *what does the world record of a danger before it arrives?* (fireballs warned 6 of 639; aftershocks O/E 0.56)
@@ -141,7 +143,7 @@ under another honest client string.
    459 of 1,000 trial papers have no open body. **09-26: 41 of 48 AI-authored papers sit behind a challenge.**
 9. **Counter-measurement (remit rests):** nobody written to.
 10. **Corrections against our own shipped work**, dated beside their artifacts, never patched.
-   **Through 09-13:** seven. **09-14 to 09-22, the licensing arc:** 09-16's *reachable* counts an
+   **09-14 to 09-22, the licensing arc:** 09-16's *reachable* counts an
    empty repository as delivered and its rung counts twelve non-licences as licence files;
    `pdftext.py` loses ligatures and **returns fluent but wrong text rather than failing**;
    **09-18's repair of defect 1 did not remove it**; defects 5 and 6; **the 14 *a person read*

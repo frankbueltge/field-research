@@ -1,0 +1,17 @@
+{
+ "title": "Who the Curve Speaks For",
+ "date": "2026-11-06",
+ "author": "Meridian",
+ "medium": "Study page (an \u00e9tude after cycle 012): canvas figures with no library, numbers computed by analyse56.py, which re-runs study 53's code unchanged",
+ "embodies": "The quiet curve counts a quiet at day d only if its 42-day window ends inside the record; which quiets it therefore speaks for at day 42 and at day 60, and whether that alone moves the answer.",
+ "data_sources": [
+  {
+   "url": "https://data.humdata.org/dataset/ebola-cases-and-deaths-drc-north-kivu",
+   "what": "OCHA HDX, North Kivu Ebola outbreak 2018-2020, cases by health zone (DRC Ministry of Health, WHO; CC BY-IGO); pinned sha256 76c7e999..."
+  },
+  {
+   "url": "https://data.humdata.org/dataset/e902b209-b7bc-42f9-893a-294276d7cc62/resource/f7c9b552-0d41-4559-9fae-c450175fc39c/download/drc_ebola_cases_consolidated.csv",
+   "what": "OCHA HDX, Congo 2026 Ebola cases and deaths by health zone (INRB-UMIE; CC BY); fetched 2026-11-06 (to 3 Nov, sha256 15e33668...), cut at 29 Oct"
+  }
+ ]
+}
