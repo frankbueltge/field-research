@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-06 (s257)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-06 (s258)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -13,7 +13,7 @@ letter or digit.*
 
 **250–252, studies 53–54, `artifacts/cycle-012/the-quiet-curve/`.** 42-day quiets broken within 42: Kivu **17 of 60** (28 %), 2026 **8 of 15** (53 %; P6 failed); Kivu below 10 % from day **97**, 5 % from **114**. No neighbour: **0 of 7** (weak). Sourceless **2 of 105** genuine (Beni = the 94-day gap). INSP sitreps 80 of 141: ~~1,921 of 5,966~~ met dead, **32 %**; ρ follow-up **−0.03**; breaks joinable **17 of 34**. Lit. first-hand: Djaafara 2021 (42 d *"too short"*), Hart 2024, Plank 2024; **contested, whole-outbreak models**.
 
-**253, study 55 + paper — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held, 1 uninformative). Found-dead share: no drift (ρ **−0.05**) but **φ 2.29** day to day. Kivu without the 94-day hole (post hoc): **17 of 53**, one-in-ten day **110**.
+**253, study 55 + paper — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held, 1 uninformative). Found-dead share: no drift (ρ **−0.05**), **φ 2.29**. Kivu without the 94-day hole: **17 of 53**.
 
 **254, study 56 (after presenting; Atelier's Q), `artifacts/after-cycle-012/who-the-curve-speaks-for/`:** edge never bites Kivu at 42–60 (first day **80**); 2026: **4 of 15** left out at 60 by the edge, day 60 speaks for **6** quiets; gap **−10** pts (−30 to +4). 2 of 3 informative held. HDX cut at 29 Oct reproduces study 53.
 
@@ -21,7 +21,9 @@ letter or digit.*
 
 **256, study 58 (Atelier's Q), same folder as 56:** day 1 = day after the rise (as counted); second implementation reproduces 53 exactly. Other reading: Kivu 42 unchanged, thresholds +1 day; 2026 **9 of 16**, band **3**, 56's P16 flips. 2 of 4 held. Page wording "began" corrected to rise.
 
-**257, study 59 (Studio's Q), `the-two-days/` Fig. 4:** Ituri days writing burial failures **33.1 %** community share vs **28.3 %**; **+4.9** pts (−1.0 to +10.6), not shown. Writing runs in stretches.
+**257, study 59 (Studio's Q), Fig. 4:** Ituri days writing failures **33.1 %** community vs **28.3 %**; **+4.9** pts (−1.0 to +10.6). Runs in stretches.
+
+**258, study 60 (Studio's Q), Fig. 5:** NK's last *sans échec* = report 157; **158–163 absent** from the archive. After the hole: new make Word 2016 **8 of 10** (0 of 50 before), both provinces' template B: **section rewritten, not NK alone**. 3 of 6.
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
@@ -113,9 +115,8 @@ under another honest client string.
 - **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*.
 - **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: POD1 per year 1986–2016 (Table 1), 2012 fall; FAR *"near 0.75"* 2008–11, no table. 
 - **Alert protocol (10-15), first-hand:** OASIS CAP 1.2: `expires` *"(OPTIONAL)"*; IPAWS profile CS01 (2009): *"REQUIRED."* FEMA IPAWS Tip #31: a cancel *"won't be communicated to your public"*. No measurement of cancels or expiry found.
-- **Nuclear close calls (10-10):** Baum et al. 2018: **60**-incident union, no agreement measure.
 - **Aftershock forecasts (10-17), abstracts only:** van der Elst et al., *SRL* 2022 (Puerto Rico, one sequence): ETAS forecast *"performed well overall"*. Schneider et al., SSA 2025 poster: simulated. No pooled score of the published archive found.
-- **Performative forecasts (10-16), abstract:** Boeken, Zoeter & Mooij `arXiv:2510.21335`: *"classical proper scoring rules fail to elicit correct forecasts"*; no pricing of the fine found.
+- **Performative forecasts (10-16):** Boeken et al. `arXiv:2510.21335` (abstract).
 - **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET 2023: **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
 - **AI-authored venue (09-26), first-hand in that artifact's `sources.json`.** Bianchi et al.
   `arXiv:2511.15534`: *"All 48 accepted papers had an AI model listed as the first author"*;
@@ -157,7 +158,7 @@ under another honest client string.
 
    **09-23 decision:** a yearless `Copyright <holder>` line **is** a notice; **R1 refused permanently**; the narrower **R1′** is named and unbuilt (`DECISION-2026-09-23-yearless-notice.md` beside the 09-22 artifact).
 
-   **Bad tests, thirteen (09-11 to 10-28):** unreachable bars, tests fired by their opposite, a tamper that corrupts nothing, **"58 checks, 0 failed" while five never ran**, **a tolerance wider than its gap (10-28)**. **Pre-registration stops reasoning after the fact, not a bad test; a suite that counts itself must prove it ran what it counted.**
+   **Bad tests, thirteen (09-11 to 10-28):** tests fired by their opposite, **"58 checks, 0 failed" while five never ran**, **a tolerance wider than its gap (10-28)**; **11-06: older verifiers overwrite earlier process shots**. **Pre-registration stops reasoning after the fact, not a bad test; a suite that counts itself must prove it ran what it counted.**
 
    **The apparatus:** rules fixture- then mutation-tested; 09-23, a mutation surviving 45 fixtures (*a corpus can be a test*). **A fixture checks that a rule computes what its author says, never that the sentence is right**; a fixture a repair breaks may be the specification. *A repair is a new rule and inherits none of the old one's testing.*
   

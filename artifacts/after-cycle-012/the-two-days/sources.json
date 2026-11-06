@@ -50,5 +50,22 @@
    "q": "77 EDS réalisées sur 126 alertes et 65 corps swabés (42 échecs)",
    "found_in_our_text": true
   }
+ },
+ "study60": {
+  "what": "Study 60 reads the make and the lines on the dead of INSP reports 108-174 across the archive's hole 158-163",
+  "archive": "https://github.com/INRB-UMIE/BDBV2026-Data/tree/338e578/data/insp_sitrep/raw (60 of 67 PDFs present; sha256 of each in results60.json)",
+  "passages": [
+   {
+    "what": "INSP, SitRep MVE-BDBV No. 157, 18 October 2026, section 2.3.1, North Kivu",
+    "passage": "Sur 55 alertes EDS reçues et 47 reports de la veille, 62 EDS ont été réalisés et 55 corps swabés, sans échec de prélèvement",
+    "pdf_creator": "Microsoft® Word 2021"
+   },
+   {
+    "what": "INSP, SitRep MVE-BDBV No. 165, 26 October 2026, section 2.3.1, North Kivu",
+    "passage": "59 EDS réalisés sur 108 alertes dont 55 corps swabés",
+    "pdf_creator": "Microsoft® Word 2016"
+   }
+  ],
+  "fetched": "2026-11-06, git clone of INRB-UMIE/BDBV2026-Data at 338e578 (reports 108-174 are plain git blobs there)"
  }
 }
