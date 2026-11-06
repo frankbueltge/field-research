@@ -1,6 +1,6 @@
-// The Quiet Curve's page (state 3): node verify.js <abs dir of this page> [n]  (n: the process shot's number)
+// The Quiet Curve's page (state 4): node verify.js <abs dir of this page> [n]  (n: the process shot's number)
 const {chromium}=require('playwright');const R=require(process.argv[2]+'/results53.json');const E=require(process.argv[2]+'/results54.json');
-const N=process.argv[3]||'3';
+const N=process.argv[3]||'4';const F=require(process.argv[2]+'/results55.json');const S=require(process.argv[2]+'/sens55.json');
 (async()=>{const b=await chromium.launch();const errs=[];let ok=0,n=0;
 const t=(c,m)=>{n++;if(c)ok++;else console.log('FAIL',m)};
 const at=(k,d)=>R.curves[k].find(x=>x.d===d);
@@ -26,12 +26,19 @@ for(const [w,scheme] of [[1100,'light'],[390,'dark']]){
  t(await p.$$eval('#pred54 tbody tr',r=>r.length)===5,'five study-54 predictions');
  t(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'no side scroll at '+w);
  const main=await p.textContent('main');t(!main.includes('undefined')&&!main.includes('null')&&!main.includes('NaN'),'no empty value');
- t(!/check 5\d|ho-20|Tableau 2|state 2/.test(main.replace(/STATE 3/,'')),'no in-house vocabulary');
+ t(!/check 5\d|ho-20|Tableau 2|state 2/.test(main),'no in-house vocabulary');
  t((await p.textContent('h2:nth-of-type(5)')).includes(E.predictions.P11.value.rho.toFixed(2))||main.includes('ρ = '+E.predictions.P11.value.rho.toFixed(2)),'figure 4 title carries rho');
  await p.$eval('#fd',c=>c.scrollIntoView({block:'center'}));const fb=await p.$eval('#fd',c=>{const r=c.getBoundingClientRect();return [r.left+r.width*0.6,r.top+r.height*0.7]});await p.mouse.move(fb[0],fb[1]);t(/report \d+/.test(await p.textContent('#rd3')),'figure 3 reads a day');
  await p.$eval('#sc',c=>c.scrollIntoView({block:'center'}));
  const hit=await p.evaluate(()=>{const c=document.getElementById('sc'),r=c.getBoundingClientRect();for(let y=r.top+5;y<r.bottom;y+=3)for(let x=r.left+40;x<r.right;x+=3){c.dispatchEvent(new PointerEvent('pointermove',{clientX:x,clientY:y,bubbles:true}));if(/contacts seen/.test(document.getElementById('rd5').textContent))return true}return false});
  t(hit,'figure 4 reads a day');
+ t(ans.includes(F.predictions.P12.value.phi.toFixed(1)+' times'),'answer: day-to-day spread');
+ t(ans.includes(S.d42.clean[0]+' of '+S.d42.clean[1])&&ans.includes(String(S.firstBelow10.clean)),'answer: Kivu without the hole');
+ t(await p.$$eval('#pred55 tbody tr',r=>r.length)===3&&await p.$$eval('#pred55 .held',r=>r.length)===3,'three study-55 predictions, held');
+ t(main.includes('from day 70 on'),'figure 1 says where 2026 stops');
+ await p.$eval('#fn',c=>c.scrollIntoView({block:'center'}));
+ const hit6=await p.evaluate(()=>{const c=document.getElementById('fn'),r=c.getBoundingClientRect();for(let y=r.top+5;y<r.bottom;y+=3)for(let x=r.left+40;x<r.right;x+=3){c.dispatchEvent(new PointerEvent('pointermove',{clientX:x,clientY:y,bubbles:true}));if(/outside the outer line/.test(document.getElementById('rd6').textContent))return true}return false});
+ t(hit6,'figure 5 reads an outlying day');
  await p.reload();
  if(w===1100){await p.setViewportSize({width:1100,height:1300});await p.screenshot({path:process.argv[2]+'/process/'+N+'.png',fullPage:true})}
  else await p.screenshot({path:process.argv[2]+'/shot-390.png',fullPage:true});

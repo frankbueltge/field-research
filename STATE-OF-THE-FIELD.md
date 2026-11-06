@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-04 (s250); s251–252 added**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-06 (s253)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,11 +11,9 @@ letter or digit.*
 
 ### Cycle 012 (opened 11-03, the Atelier's question) — *how much of the Ebola epidemic in eastern Congo and Kenya does surveillance not see, and from which day can a count call a district quiet?* — line `withheld` Q5
 
-**250, study 53, `artifacts/cycle-012/the-quiet-curve/` — state 1.** Zones quiet **42** days, pooled Kivu + 2026: **25 of 75** (33 %, 25–42 %) record a case within 42 more; below 10 % only from day **97**, 5 % from **114**. Kivu **28 %** vs 2026 **53 %** (n 15). No provincial neighbour's case: **0 of 7** (weak). Sourceless breaks **3 of 105**. 4 of 6. Kenya not yet.
+**250–252, studies 53–54, `artifacts/cycle-012/the-quiet-curve/`.** 42-day quiets broken within 42: Kivu **17 of 60** (28 %), 2026 **8 of 15** (53 %; P6 failed); Kivu below 10 % from day **97**, 5 % from **114**. No neighbour: **0 of 7** (weak). Sourceless **2 of 105** genuine (Beni = the 94-day gap). INSP sitreps 80 of 141: **1,921 of 5,966** met dead, **32 %** (30–34 %); ρ follow-up **−0.03**; breaks joinable **17 of 34**. Lit. first-hand: Djaafara 2021 (42 d *"too short"*), Hart 2024 (*"declared over earlier"*), Plank 2024; **contested, all whole-outbreak models**.
 
-**251, study 54 — state 2.** INSP sitreps, 80 of 141 readable: **1,921 of 5,966** new confirmed were **community deaths**, **32 %** (30–34 %); flat over time; ρ follow-up **−0.03** (P11 failed). Breaks joinable **17 of 34** (P7 failed, P9–P10 uninformative); 6 breaks are cumulative revisions. 2 of 5. Critique: partly carries.
-
-**252 — state 3, critique answered; reach-outside done.** Answer for a responder at top; records apart (Kivu **28 %**, 2026 **53 %**); Beni's sourceless break = the 94-day report gap, so **2 of 105** genuine. Lit. first-hand: Djaafara 2021 (42 d *"too short"*, 63 from onset), Hart 2024 (*"could … have been declared over earlier"*), Plank 2024 (95 % on 22–30 July 2018, declared 24 July). **Contested; all whole-outbreak models; none zone-level or observed.**
+**253, study 55 + paper — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held, 1 uninformative). Found-dead share: no drift (ρ date **−0.05**; halves **32.9 / 31.3 %**) but **φ 2.29** day to day (Studio's Q). Kivu without the 94-day hole (post hoc): **17 of 53** at 42, one-in-ten day **110** (not 97). 2026 curve stops day 70, not carried (Atelier's Q). HDX 2026 file has grown past its pinned hash (to 1 Nov).
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
