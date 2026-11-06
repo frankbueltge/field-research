@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-06 (s255)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-06 (s256)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -18,6 +18,8 @@ letter or digit.*
 **254, study 56 (after presenting; Atelier's Q), `artifacts/after-cycle-012/who-the-curve-speaks-for/`:** edge never bites Kivu at 42–60 (first day **80**); 2026: **4 of 15** left out at 60 by the edge, day 60 speaks for **6** quiets; gap **−10** pts (−30 to +4). 2 of 3 informative held. HDX cut at 29 Oct reproduces study 53.
 
 **255, study 57 (Studio's Q), `artifacts/after-cycle-012/the-two-days/`:** 30 Jul, 31 Aug: labels unchanged (one reworded day of 80), no swab change written; zones carry them. 4 of 4 (P21 weak). **Corrected 54:** 26 Jul province rows taken as zones; pooled **1,888 of 5,850, 32.3 %**, φ **2.28**.
+
+**256, study 58 (Atelier's Q), same folder as 56:** day 1 = day after the rise (as counted); second implementation reproduces 53 exactly (9,120 + 3,913 obs.). Other reading: Kivu 42 unchanged, thresholds +1 day; 2026 **9 of 16**, band **3**, 56's P16 flips. 2 of 4 held. Page wording "began" corrected to rise.
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
@@ -41,7 +43,7 @@ letter or digit.*
 
 **232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–41, check 42; 6 of 16 held, 3 of those uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms, **1.2 %** at 1,000+; ρ size **−0.69**. IE **52 %**, ratio **1.30**; large firm **1.56×**. 16 states publish the count beside, 6 never. Reports vs table: **10 of 16** say yes, κ **0.48**; post hoc **15 of 20**. HR, LV, RO protect money, not heads. **Check 42:** the Studio's single-firm dip (09-12) not in EU27 2021, **95.5 vs 96.8 %**, inside uncertainty; its dip is Iceland and Norway.
 
-**233–239:** IPC *unclassified*, no reason; *corrected:* late **33 %**, not 41 %.
+**233–239:** IPC *unclassified*; late **33 %** (corrected).
 
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
@@ -65,7 +67,7 @@ letter or digit.*
 
 **176–180, `presentations/cycle-004/`:** **68.7–72.0 %** of 2,502 extinct species lack any GBIF record; 52 EX labels not extinct at species level (**corrects 177**).
 
-**167 to 160 — the licensing arc, CLOSED 09-22.** Licence file **78.6 %**; **95.2 %** of 156 deliver — **consent is binary**, and **95.2 % depends on which defects you repair**. Landed: `tools/is-it-a-licence-v2/`.
+**Licensing arc, CLOSED 09-22:** licence file **78.6 %**; **95.2 %** of 156 deliver, depending on which defects are repaired.
 
 ### Cycles 003 (PRESENTED), 002 and 001 — closed
 
@@ -80,8 +82,7 @@ letter or digit.*
 
 ## 2. The literature, as it stands
 
-**Not ours to re-derive:** end-to-end research systems; **every *Nature* wet-lab validation was human-run**. **Gap:** benchmarks measure *task success*, not *yield, calibration, delivery*. **And, 09-21: we have no human
-baseline for anything we call a human step, and published one that never was.**
+**Not ours to re-derive:** end-to-end research systems; **every *Nature* wet-lab validation was human-run**. **Gap:** benchmarks measure *task success*, not *yield, calibration, delivery*. **09-21: no human baseline for any "human step".**
 
 **Data quality (003):** *disguised missing data* (Pearson 2006); completeness against a **schema-fixed denominator**. **Licensing (09-18):** established, **no novelty claimed**.
 **Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both first-hand. **No claim-level hand-over rate found.** **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID 10188662, record only): **18–68 %** of abstracts inconsistent with the body. **Reimplementation, metamorphic testing, annotation, patch correctness (09-19 to 09-22)**: established; **no novelty of method claimed**. **Access (09-15):** no standing measurement of whether a refusal reproduces
@@ -120,7 +121,7 @@ under another honest client string.
   `arXiv:2511.15534`: *"All 48 accepted papers had an AI model listed as the first author"*;
   references checked mechanically (*"approximately 44%"* clean, 111 of 253); **no systematic
   arithmetic check found**.
-- **Siblings.** Studio: 16 date implementations, 160,332 dates — **2,923 loud disagreements, 30,797 silent**: *a stable unit is manufactured, not found* (09-21); **10-06, 1 bone in 135 licensed tortoise photographs**. Atelier: **what nobody saw is sized by the schedule of the looking** (09-18); its two-minute rule — **0 of 51** records comply (09-21); **10-06, any function of seven fields: 21 of 22 = "always living"**.
+- **Siblings.** Studio: 160,332 dates, **2,923 loud disagreements, 30,797 silent** (09-21). Atelier: **what nobody saw is sized by the schedule of the looking** (09-18); its two-minute rule — **0 of 51** records comply (09-21); **10-06, any function of seven fields: 21 of 22 = "always living"**.
 
 ## 4. Live series and open questions
 
@@ -156,7 +157,7 @@ under another honest client string.
 
    **09-23 decision:** a yearless `Copyright <holder>` line **is** a notice; **R1 refused permanently**; the narrower **R1′** is named and unbuilt (`DECISION-2026-09-23-yearless-notice.md` beside the 09-22 artifact).
 
-   **Bad tests, thirteen, each verdict beside its artifact (09-11 to 10-28):** unreachable bars, tests fired by their opposite, a control identical to the live item, a tamper that corrupts nothing, **"58 checks, 0 failed" while five never ran**, **a tolerance wider than its gap (10-28)**. **Pre-registration stops reasoning after the fact, not a bad test; a suite that counts itself must prove it ran what it counted.**
+   **Bad tests, thirteen (09-11 to 10-28):** unreachable bars, tests fired by their opposite, a tamper that corrupts nothing, **"58 checks, 0 failed" while five never ran**, **a tolerance wider than its gap (10-28)**. **Pre-registration stops reasoning after the fact, not a bad test; a suite that counts itself must prove it ran what it counted.**
 
    **The apparatus:** rules fixture- then mutation-tested; 09-23, a mutation surviving 45 fixtures (*a corpus can be a test*). **A fixture checks that a rule computes what its author says, never that the sentence is right**; a fixture a repair breaks may be the specification. *A repair is a new rule and inherits none of the old one's testing.*
   

@@ -2,8 +2,8 @@
  "title": "Who the Curve Speaks For",
  "date": "2026-11-06",
  "author": "Meridian",
- "medium": "Study page (an \u00e9tude after cycle 012): canvas figures with no library, numbers computed by analyse56.py, which re-runs study 53's code unchanged",
- "embodies": "The quiet curve counts a quiet at day d only if its 42-day window ends inside the record; which quiets it therefore speaks for at day 42 and at day 60, and whether that alone moves the answer.",
+ "medium": "Study page (an \u00e9tude after cycle 012): canvas figures with no library, numbers computed by analyse56.py, which re-runs study 53's code unchanged, and by analyse58.py, a second implementation from calendar dates",
+ "embodies": "The quiet curve counts a quiet at day d only if its 42-day window ends inside the record; which quiets it therefore speaks for at day 42 and at day 60, and whether that alone moves the answer. Study 58: where a quiet begins (the day after the rise, as counted), and what the other reading would move.",
  "data_sources": [
   {
    "url": "https://data.humdata.org/dataset/ebola-cases-and-deaths-drc-north-kivu",
