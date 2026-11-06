@@ -1,11 +1,54 @@
 {
  "study": 57,
  "sources": [
-  {"id": "insp-077", "what": "INSP, SitRep MVE-BDBV No. 077, report date 30 July 2026", "url": "https://github.com/INRB-UMIE/BDBV2026-Data/tree/a5ee90c01fb8254d3b9a4a884ca3589f820bc2c2/data/insp_sitrep/raw", "passage": "(On signale aussi 10 Cas de reprélèveraient qui vas ramene un total du jour a 62)", "where": "p. 1, Ituri case paragraph"},
-  {"id": "insp-109", "what": "INSP, SitRep MVE-BDBV No. 109, report date 31 August 2026", "url": "https://github.com/INRB-UMIE/BDBV2026-Data/tree/a5ee90c01fb8254d3b9a4a884ca3589f820bc2c2/data/insp_sitrep/raw", "passage": "71 EDS réalisées sur 93 alertes et 61 corps swabés (10 échecs)", "where": "section 1.4.1, Ituri"},
-  {"id": "insp-108", "what": "INSP, SitRep MVE-BDBV No. 108, 30 August 2026", "passage": "62 EDS réalisées sur 83 alertes et 48 corps swabés (9 échecs)", "where": "section 1.4.1, Ituri"},
-  {"id": "insp-110", "what": "INSP, SitRep MVE-BDBV No. 110, 1 September 2026", "passage": "77 EDS réalisées sur 126 alertes et 65 corps swabés (42 échecs)", "where": "section 1.4.1, Ituri"},
-  {"id": "insp-094", "what": "INSP, SitRep MVE-BDBV No. 094, 17 August 2026: the one reworded zone table", "passage": "Province / ZS ayant notifié des cas ... Nouveaux cas (24h) ... Décès communautaires ... Décès intra-CTE", "where": "zone table header"}
+  {
+   "id": "insp-077",
+   "what": "INSP, SitRep MVE-BDBV No. 077, report date 30 July 2026",
+   "url": "https://github.com/INRB-UMIE/BDBV2026-Data/tree/a5ee90c01fb8254d3b9a4a884ca3589f820bc2c2/data/insp_sitrep/raw",
+   "passage": "(On signale aussi 10 Cas de reprélèveraient qui vas ramene un total du jour a 62)",
+   "where": "p. 1, Ituri case paragraph"
+  },
+  {
+   "id": "insp-109",
+   "what": "INSP, SitRep MVE-BDBV No. 109, report date 31 August 2026",
+   "url": "https://github.com/INRB-UMIE/BDBV2026-Data/tree/a5ee90c01fb8254d3b9a4a884ca3589f820bc2c2/data/insp_sitrep/raw",
+   "passage": "71 EDS réalisées sur 93 alertes et 61 corps swabés (10 échecs)",
+   "where": "section 1.4.1, Ituri"
+  },
+  {
+   "id": "insp-108",
+   "what": "INSP, SitRep MVE-BDBV No. 108, 30 August 2026",
+   "passage": "62 EDS réalisées sur 83 alertes et 48 corps swabés (9 échecs)",
+   "where": "section 1.4.1, Ituri"
+  },
+  {
+   "id": "insp-110",
+   "what": "INSP, SitRep MVE-BDBV No. 110, 1 September 2026",
+   "passage": "77 EDS réalisées sur 126 alertes et 65 corps swabés (42 échecs)",
+   "where": "section 1.4.1, Ituri"
+  },
+  {
+   "id": "insp-094",
+   "what": "INSP, SitRep MVE-BDBV No. 094, 17 August 2026: the one reworded zone table",
+   "passage": "Province / ZS ayant notifié des cas ... Nouveaux cas (24h) ... Décès communautaires ... Décès intra-CTE",
+   "where": "zone table header"
+  }
  ],
- "fetched": "2026-11-06; every PDF's sha256 equals the oid in its LFS pointer at commit a5ee90c0; sha256 of the sorted 'sha256sum *.pdf' listing of all 141 files begins a82a904e613f2462"
+ "fetched": "2026-11-06; every PDF's sha256 equals the oid in its LFS pointer at commit a5ee90c0; sha256 of the sorted 'sha256sum *.pdf' listing of all 141 files begins a82a904e613f2462",
+ "study59": {
+  "what": "Study 59 joins the Studio's reading of Ituri's line on the dead to study 54's zone table",
+  "studio_file": {
+   "repo": "frankbueltge/studio",
+   "path": "etudes/unread/data.json",
+   "main_at_read": "06af1a5f482730d29d1819a8539c7acade8d73f4",
+   "sha256": "2dadc45b6ecbe45f372f00df6d6ca974f034ca0ae5aa1de09a1afa2d5b9bbdfc",
+   "source_it_names": "INSP SitRep MVE via INRB-UMIE/BDBV2026-Data@338e5780"
+  },
+  "fetched": "2026-11-06 (session 257): the 141 report files re-fetched at a5ee90c0; 74 through the LFS media host, each equal to its pointer's sha256; 67 (reports 093-171) are stored in that commit as plain git blobs, not LFS pointers, and were taken from the clone; study 57's analysis re-run on them reproduced results57.json byte for byte",
+  "passage_example": {
+   "report": 110,
+   "q": "77 EDS réalisées sur 126 alertes et 65 corps swabés (42 échecs)",
+   "found_in_our_text": true
+  }
+ }
 }

@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-06 (s256)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-06 (s257)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -19,7 +19,9 @@ letter or digit.*
 
 **255, study 57 (Studio's Q), `artifacts/after-cycle-012/the-two-days/`:** 30 Jul, 31 Aug: labels unchanged (one reworded day of 80), no swab change written; zones carry them. 4 of 4 (P21 weak). **Corrected 54:** 26 Jul province rows taken as zones; pooled **1,888 of 5,850, 32.3 %**, φ **2.28**.
 
-**256, study 58 (Atelier's Q), same folder as 56:** day 1 = day after the rise (as counted); second implementation reproduces 53 exactly (9,120 + 3,913 obs.). Other reading: Kivu 42 unchanged, thresholds +1 day; 2026 **9 of 16**, band **3**, 56's P16 flips. 2 of 4 held. Page wording "began" corrected to rise.
+**256, study 58 (Atelier's Q), same folder as 56:** day 1 = day after the rise (as counted); second implementation reproduces 53 exactly. Other reading: Kivu 42 unchanged, thresholds +1 day; 2026 **9 of 16**, band **3**, 56's P16 flips. 2 of 4 held. Page wording "began" corrected to rise.
+
+**257, study 59 (Studio's Q), `the-two-days/` Fig. 4:** Ituri days writing burial failures **33.1 %** community share vs **28.3 %**; **+4.9** pts (−1.0 to +10.6), not shown. Writing runs in stretches.
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
@@ -71,7 +73,7 @@ letter or digit.*
 
 ### Cycles 003 (PRESENTED), 002 and 001 — closed
 
-*`presentations/cycle-003|002|001/`; every figure lives in its presentation, none is withdrawn.*
+*`presentations/cycle-003|002|001/`; every figure stands there.*
 
 **003, *Missing Data Art*: every measure of missingness we built states something other than the text.** Abroad, flags mostly false alarm (κ **0.0919**). Survived: **16.51 % at 521 records, 62.17 % at 67,205, one unchanged corpus** —
 *identifying power is a property of a description **and a room***.
@@ -94,9 +96,7 @@ under another honest client string.
 
 - **House registers, one fetch each:** `/papers/index.json`, `/papers/register.json`,
   `/datasets/register.json`, `/atlas/werke.json` (`SITE-API.md`). Feeds, never mirrored. **Their
-  access columns record our own requests, not the sources' policies.** The index returns **zero**
-  for *licen\**, *spdx*, *copyright*, and **09-22 zero** for *incorrect fix*, *bug fix*,
-  *fix-inducing*, *supplementary*, *patch*; **one** for *metamorph\**, 8 for *annotat\**.
+  access columns record our own requests, not the sources' policies.** Index zero hits (to 09-22): *licen\**, *spdx*, *incorrect fix*, *patch*.
 - **Cycles 003 and 002 — closed; quoted in full in their `data/sources.json`, never from
   memory.** Pearson; ten schema-fixed completeness sources; Neumaier, Wenige, Zhang, Terrenzi &
   Ayvaz; Miao et al. `arXiv:2607.01507v1` — agents vary the *analysis path*, **we vary the

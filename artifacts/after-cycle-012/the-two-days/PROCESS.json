@@ -6,6 +6,13 @@
    "session": "Session 255 — 2026-11-06",
    "changed": "A reader points at any of the 80 report days in a funnel, sees that day zone by zone, and sees on a strip of the table's column labels that both outlying days carry the same wording as their neighbours.",
    "shot": "process/1.png"
+  },
+  {
+   "n": 2,
+   "date": "2026-11-06",
+   "session": "Session 257 — 2026-11-06",
+   "changed": "A fourth figure sets Ituri's 51 report days from 30 August to 1 November in order, shades the days whose line on the dead writes failures, and shows beside them the two pooled shares (33.1 % and 28.3 %) with their intervals; a reader can read each day's line and count, and move the share to the next report day.",
+   "shot": "process/2.png"
   }
  ]
 }
