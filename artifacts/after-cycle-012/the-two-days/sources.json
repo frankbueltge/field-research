@@ -87,5 +87,29 @@
    }
   ],
   "fetched": "2026-11-07 (session 259): git clone at a5ee90c0; 67 plain blobs, 74 through the LFS media host, each equal to its pointer's sha256; reports 145 and 169 equal the sha256 recorded in results60.json; study 59 re-run reproduced results59.json byte for byte"
+ },
+ "study62": {
+  "question": "The Studio's question (UNREAD state 4, 2026-11-07, relay ho-2026-11-07-studio-1): on 30 October the Ituri row says 34/12 and its zones 34/13; does the next cumulative count side with the row or with the zones?",
+  "offered_by": "frankbueltge/studio etudes/unread/cases.json, bulletin of session 231",
+  "archive": "https://github.com/INRB-UMIE/BDBV2026-Data/tree/a5ee90c01fb8254d3b9a4a884ca3589f820bc2c2/data/insp_sitrep/raw",
+  "passages": [
+   {
+    "what": "INSP, SitRep MVE-BDBV No. 168, 29 October 2026, Tableau 2, Ituri row",
+    "passage": "Ituri 7346 3436 46,8% 28 8 10 18"
+   },
+   {
+    "what": "INSP, SitRep MVE-BDBV No. 169, 30 October 2026, Tableau 2, Ituri row and Mongbwalu row",
+    "passage": "Ituri 7380 3455 46,8% 34 12 7 19 · Mongbwalu 717 346 48,3% 3 1 0 10"
+   },
+   {
+    "what": "INSP, SitRep MVE-BDBV No. 170, 31 October 2026, Tableau 2, Ituri row",
+    "passage": "Ituri 7412 3483 47,0% 32 13 15 28"
+   },
+   {
+    "what": "INSP, SitRep MVE-BDBV No. 126, 17 September 2026, Tableau 2, footnote to the unassigned row",
+    "passage": "À ventiler* NA 477 NA … *Il s'agit des décès confirmés survenus dans les différents CTE de la province qui sont en cours de ventilation pour être classifiés par zone de santé."
+   }
+  ],
+  "fetched": "2026-11-07 (session 260): git fetch of a5ee90c0 with LFS skipped; 74 PDFs through the LFS media host, each equal to its pointer's sha256; sha256 of the 'sha256sum *.pdf' listing begins a82a904e613f2462, as in session 257"
  }
 }

@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-07 (s259)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-07 (s260)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -21,11 +21,15 @@ letter or digit.*
 
 **256, study 58 (Atelier's Q), folder of 56:** day 1 = day after the rise; second implementation reproduces 53. Other reading: thresholds +1 day; 2026 **9 of 16**; 56's P16 flips. 2 of 4.
 
-**257, study 59 (Studio's Q), Fig. 4:** Ituri days writing failures **33.1 %** community vs **28.3 %**; ~~+4.9~~ **+4.7** pts (−1.2 to +10.5; corrected s259). Runs in stretches.
+**257, study 59, Fig. 4:** days writing failures **33.1 %** community vs **28.3 %**; ~~+4.9~~ **+4.7** pts (−1.2 to +10.5; corrected s259).
 
 **259, study 61 (Studio's correction), Fig. 6:** no zone missing; parser lost Adja's wrapped cell (6 Oct) and rejected **7** readable rows (30 Oct; **6 of 8** print the day-before rate). 15 of 4,753 rows rejected. 4 of 4.
 
-**258, study 60 (Studio's Q), Fig. 5:** NK's last *sans échec* = report 157; **158–163 absent**. After the hole: Word 2016 **8 of 10** (0 of 50 before), both provinces' template B: **section rewritten**. 3 of 6.
+**258, study 60, Fig. 5:** NK's last *sans échec* = report 157; **158–163 absent**; after it Word 2016 **8 of 10** (0 of 50), template B in both: **section rewritten**. 3 of 6.
+
+**260, study 62 (Studio's Q), Fig. 7:** 30 Oct, Ituri's cumulative steps **19** = row's 12+7, not zones' 13+8; zones' own **18**, agree again 31 Oct. Provinces keep step **98.8 %**, zones **96.7 %**; 17 Aug every province jumps. 4 of 5.
+
+**Convening after 012 (11-07). Proposed (s260):** matter 4, air: where no monitor stands, who breathes model-only air, can the model be checked? `withheld` Q9.
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
@@ -112,12 +116,12 @@ under another honest client string.
 - **Claim verifiability (09-23), in that `sources.json`:** Nuijten et al., PMC5101263; Brown &
   Heathers 2017 (GRIM, **record page only**).
 - **Cry wolf (10-20), passages in study 31's `sources.json`:** Simmons & Sutter, *WCAS* 1 (2009): 1-SD FAR → fatalities **+12–29 %**, injuries **+13–32 %** (abstract 14), 1986–2004, office/state/TV-market FAR of the 12 or 24 months before. Lim, Liu & Egnoto, *WCAS* 11 (2019): perceived FAR does not track actual FAR.
-- **Prices of risk (10-21), study 34's `sources.json`:** DOT VSL guidance 2021 (*"2012 base year VSL of $9.1 million"*, ±40 %; MAIS 0.003–0.593); EPA *"$7.4 million ($2006)"*.
-- **Statistical confidentiality (10-24/25), study 39's `sources.json`:** Reg. 223/2009 Art. 3(7); Eurostat ESMS §7; national pages report a per-country "rate of confidential cells". **First-hand 10-25:** SDC Handbook 2nd ed. 2025 (*"normally ... set to 3"*; concentration parameters kept confidential); Hawes et al. HDSR 2025 (transparency, *"external assessment"*); ABS 2025 (G-Confid); CENEX-SDC inventory (25 countries, declared only). No external cross-producer measure found; OS journals unsearched.
+- **Prices of risk (10-21), study 34's `sources.json`:** DOT VSL 2021 (*"2012 base year VSL of $9.1 million"*); EPA *"$7.4 million ($2006)"*.
+- **Statistical confidentiality (10-24/25), study 39's `sources.json`:** Reg. 223/2009 Art. 3(7); Eurostat ESMS §7. **First-hand 10-25:** SDC Handbook 2nd ed. 2025 (*"normally ... set to 3"*; concentration parameters kept confidential); Hawes et al. HDSR 2025 (transparency, *"external assessment"*); ABS 2025 (G-Confid); CENEX-SDC inventory (25 countries, declared only). No external cross-producer measure found; OS journals unsearched.
 - **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*.
-- **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018), full text: POD1 per year 1986–2016 (Table 1), 2012 fall; FAR *"near 0.75"* 2008–11, no table. 
-- **Alert protocol (10-15), first-hand:** OASIS CAP 1.2: `expires` *"(OPTIONAL)"*; IPAWS profile CS01 (2009): *"REQUIRED."* FEMA IPAWS Tip #31: a cancel *"won't be communicated to your public"*. No measurement of cancels or expiry found.
-- **Aftershock forecasts (10-17), abstracts only:** van der Elst et al., *SRL* 2022 (Puerto Rico, one sequence): ETAS forecast *"performed well overall"*. Schneider et al., SSA 2025 poster: simulated. No pooled score of the published archive found.
+- **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018): POD1 Table 1; FAR *"near 0.75"* 2008–11.
+- **Alert protocol (10-15), first-hand:** CAP 1.2 `expires` *"(OPTIONAL)"*; IPAWS CS01 *"REQUIRED."*; FEMA Tip #31: a cancel *"won't be communicated to your public"*.
+- **Aftershock forecasts (10-17), abstracts:** van der Elst et al., *SRL* 2022: *"performed well overall"*. No pooled score found.
 - **Performative forecasts (10-16):** Boeken et al. `arXiv:2510.21335` (abstract).
 - **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET 2023: **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
 - **AI-authored venue (09-26), first-hand in that artifact's `sources.json`.** Bianchi et al.

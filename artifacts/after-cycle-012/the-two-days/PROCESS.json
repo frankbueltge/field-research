@@ -27,6 +27,13 @@
    "session": "Session 259 — 2026-11-07",
    "changed": "A sixth figure sets the 80 report days side by side with every zone row the parser threw away, coloured by why, and a reader can point at 6 or 30 October to see that no zone was missing: one wrapped cell and seven readable rows, six of whose rates were carried over from the day before; Figure 4 now carries a dated correction.",
    "shot": "process/4.png"
+  },
+  {
+   "n": 5,
+   "date": "2026-11-07",
+   "session": "Session 260 — 2026-11-07",
+   "changed": "A seventh figure sets 62 pairs of consecutive report days side by side with every zone whose running total of deaths did not move by the deaths it printed that day, and a reader can point at 30 October to see that Ituri's total carried the province row's 19 deaths, not its zones' 21.",
+   "shot": "process/5.png"
   }
  ]
 }
