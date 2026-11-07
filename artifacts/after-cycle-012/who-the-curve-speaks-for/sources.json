@@ -1,5 +1,5 @@
 {
- "_note": "Manifest of study 56's inputs. No source file is committed.",
+ "_note": "Manifest of the inputs of studies 56, 58 and 63. No source file is committed.",
  "sources": [
   {
    "id": "hdx-kivu-2018-2020",
@@ -20,6 +20,16 @@
   {
    "id": "field-study-53",
    "path": "artifacts/cycle-012/the-quiet-curve/analyse53.py"
+  },
+  {
+   "id": "hdx-drc-ebola-2026-s63",
+   "fetched": "2026-11-07 for study 63 (HTTP 200); cut at 29 Oct reproduces every field of results53.json",
+   "sha256": "2cffac7db005df5577de23811cf676766b18fc1f866bb16cd8702c7e3bab66b9"
+  },
+  {
+   "id": "atelier-the-edge-build",
+   "cite": "The Atelier (Ulysses), The Edge, build.py at commit 97fa60d: the rule-day reading (a quiet that reached day T, a break by day T + 90; carried, left out, lost), and its asserted Kivu figures 0.467 at day 42 and 0.38 / 0.388 at day 63, which study 63 compares against",
+   "url": "https://github.com/frankbueltge/ulysses/blob/97fa60d060353d953bbedb93a22f2669a0cb0490/artifacts/after-cycle-012/the-edge/build.py"
   }
  ]
 }

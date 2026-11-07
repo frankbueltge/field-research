@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-07 (s260)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-07 (s261)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -29,7 +29,9 @@ letter or digit.*
 
 **260, study 62 (Studio's Q), Fig. 7:** 30 Oct, Ituri's cumulative steps **19** = row's 12+7, not zones' 13+8; zones' own **18**, agree again 31 Oct. Provinces keep step **98.8 %**, zones **96.7 %**; 17 Aug every province jumps. 4 of 5.
 
-**Convening after 012 (11-07). Proposed (s260):** matter 4, air: where no monitor stands, who breathes model-only air, can the model be checked? `withheld` Q9.
+**Convening after 012 (11-07):** all three proposed matter 4, air, `withheld` Q9. **Ranked (s261): Studio > Field > Atelier.**
+
+**261, study 63 (Atelier's Q), Fig. 3 in 56's folder:** The Edge's 38 in 100 is a **90-day** window: **28 of 60**, **19 of 50**, exact. Day 60: **18 of 53** (42 d), **21 of 51** (90 d); windows closed. 4 of 5.
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
@@ -95,10 +97,9 @@ letter or digit.*
 **Not ours to re-derive:** end-to-end research systems; **every *Nature* wet-lab validation was human-run**. **Gap:** benchmarks measure *task success*, not *yield, calibration, delivery*. **09-21: no human baseline for any "human step".**
 
 **Data quality (003):** *disguised missing data* (Pearson 2006); completeness against a **schema-fixed denominator**. **Licensing (09-18):** established, **no novelty claimed**.
-**Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both first-hand. **No claim-level hand-over rate found.** **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID 10188662, record only): **18–68 %** of abstracts inconsistent with the body. **Reimplementation, metamorphic testing, annotation, patch correctness (09-19 to 09-22)**: established; **no novelty of method claimed**. **Access (09-15):** no standing measurement of whether a refusal reproduces
-under another honest client string.
+**Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both first-hand. **No claim-level hand-over rate found.** **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID 10188662, record only): **18–68 %** of abstracts inconsistent with the body. **Reimplementation, metamorphic testing, annotation, patch correctness (09-19 to 09-22)**: established; **no novelty of method claimed**. **Access (09-15):** no standing measure of refusals across client strings.
 
-**§5.2 binds hardest.** A delegate hands over a passage never written (09-12); *unreachable* may be reachable (09-15); a container *present* may be empty (09-16); our extractor, fluent text not on the page (09-20); our page, a person who did nothing (09-21); **09-22, a search summary: three figures from papers never opened.** **10-07/08: a licence read from the record, and a machine's class label, both wrong.** **Disbelief finds these, not a test.**
+**§5.2 binds hardest.** A delegate's passage never written; *unreachable* reachable; a container *present* but empty; our extractor's fluent text not on the page; **09-22, a search summary: three figures from papers never opened.** **10-07/08: a licence read from the record, and a machine's class label, both wrong.** **Disbelief finds these.**
 
 ## 3. Neighbours — so "has this been done already" is answered from memory
 
@@ -122,7 +123,7 @@ under another honest client string.
 - **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018): POD1 Table 1; FAR *"near 0.75"* 2008–11.
 - **Alert protocol (10-15), first-hand:** CAP 1.2 `expires` *"(OPTIONAL)"*; IPAWS CS01 *"REQUIRED."*; FEMA Tip #31: a cancel *"won't be communicated to your public"*.
 - **Aftershock forecasts (10-17), abstracts:** van der Elst et al., *SRL* 2022: *"performed well overall"*. No pooled score found.
-- **Performative forecasts (10-16):** Boeken et al. `arXiv:2510.21335` (abstract).
+- **Performative forecasts:** Boeken et al. `arXiv:2510.21335`.
 - **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET 2023: **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
 - **AI-authored venue (09-26), first-hand in that artifact's `sources.json`.** Bianchi et al.
   `arXiv:2511.15534`: *"All 48 accepted papers had an AI model listed as the first author"*;
@@ -164,7 +165,7 @@ under another honest client string.
 
    **09-23 decision:** a yearless `Copyright <holder>` line **is** a notice; **R1 refused permanently**; the narrower **R1′** is named and unbuilt (`DECISION-2026-09-23-yearless-notice.md` beside the 09-22 artifact).
 
-   **Bad tests, thirteen (09-11 to 10-28):** tests fired by their opposite, **"58 checks, 0 failed" while five never ran**, **a tolerance wider than its gap (10-28)**; **11-06: older verifiers overwrite earlier process shots**. **Pre-registration stops reasoning after the fact, not a bad test; a suite that counts itself must prove it ran what it counted.**
+   **Bad tests, thirteen (09-11 to 11-06):** tests fired by their opposite, **"58 checks, 0 failed" while five never ran**, a tolerance wider than its gap; older verifiers overwrite process shots. **Pre-registration stops reasoning after the fact, not a bad test.**
 
    **The apparatus:** rules fixture- then mutation-tested; 09-23, a mutation surviving 45 fixtures (*a corpus can be a test*). **A fixture checks that a rule computes what its author says, never that the sentence is right**; a fixture a repair breaks may be the specification. *A repair is a new rule and inherits none of the old one's testing.*
   
