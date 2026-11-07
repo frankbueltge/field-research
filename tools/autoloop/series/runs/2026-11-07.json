@@ -1,0 +1,772 @@
+{
+ "asleep_keys": [],
+ "corpus_records": 2037,
+ "corpus_sha256": "234240e24b0dd5eb36dab9711e7b731cfb9020b53c548b327ae3d87636c030d6",
+ "day": "2026-11-07",
+ "reachable_floors": {
+  "cross_listed|abstract_words": 1.4860968951698746e-307,
+  "cross_listed|author_count": 5.685001515757459e-305,
+  "cross_listed|comment_pages": 8.600263432602235e-131,
+  "cross_listed|has_doi": 1.994690133594212e-30,
+  "cross_listed|has_journal_ref": 3.0000919852635934e-26,
+  "cross_listed|published_hour_utc": 3.5840669469455e-308,
+  "cross_listed|revised": 1.0948098322066969e-31,
+  "cross_listed|title_words": 1.8260807563585233e-305,
+  "has_comment|abstract_words": 0.0,
+  "has_comment|author_count": 0.0,
+  "has_comment|category_count": 5.725930048790123e-294,
+  "has_comment|comment_pages": 8.600263432602235e-131,
+  "has_comment|has_doi": 4.8053883394184264e-21,
+  "has_comment|has_journal_ref": 3.226776685221091e-18,
+  "has_comment|published_hour_utc": 0.0,
+  "has_comment|revised": 6.744146352066728e-22,
+  "has_comment|title_words": 0.0,
+  "has_doi|abstract_words": 1.3347988872722522e-46,
+  "has_doi|author_count": 2.221279758648628e-47,
+  "has_doi|category_count": 6.595142257923914e-51,
+  "has_doi|comment_pages": 4.861030534222485e-44,
+  "has_doi|has_journal_ref": 0.0,
+  "has_doi|published_hour_utc": 2.0291169972591125e-46,
+  "has_doi|revised": 0.0,
+  "has_doi|title_words": 6.341352999352297e-47,
+  "has_journal_ref|abstract_words": 1.7642224109921854e-40,
+  "has_journal_ref|author_count": 3.703404202109055e-41,
+  "has_journal_ref|category_count": 4.653241539099022e-44,
+  "has_journal_ref|comment_pages": 1.349803406458056e-38,
+  "has_journal_ref|has_doi": 0.0,
+  "has_journal_ref|published_hour_utc": 1.7578175765044235e-40,
+  "has_journal_ref|revised": 0.0,
+  "has_journal_ref|title_words": 8.600880856611337e-41,
+  "large_team|abstract_words": 3.77e-321,
+  "large_team|category_count": 8.9015e-319,
+  "large_team|comment_pages": 8.600263432602235e-131,
+  "large_team|has_doi": 1.1829749317805077e-25,
+  "large_team|has_journal_ref": 3.65374809093192e-22,
+  "large_team|published_hour_utc": 2.564e-321,
+  "large_team|revised": 1.0472445329883947e-26,
+  "large_team|title_words": 6e-323,
+  "night_submission|abstract_words": 5.961214979736796e-224,
+  "night_submission|author_count": 5.14109037722697e-224,
+  "night_submission|category_count": 9.892686161912813e-235,
+  "night_submission|comment_pages": 8.600263432602235e-131,
+  "night_submission|has_doi": 2.154275823348804e-61,
+  "night_submission|has_journal_ref": 9.641059027280835e-53,
+  "night_submission|revised": 5.270138595020119e-64,
+  "night_submission|title_words": 2.8252236428332308e-223,
+  "revised|abstract_words": 2.0064496751593613e-48,
+  "revised|author_count": 3.083202401411393e-49,
+  "revised|category_count": 5.64612437917877e-53,
+  "revised|comment_pages": 1.240683824507342e-45,
+  "revised|has_doi": 0.0,
+  "revised|has_journal_ref": 0.0,
+  "revised|published_hour_utc": 2.8495116913015627e-48,
+  "revised|title_words": 1.0566911189291676e-48,
+  "weekend|abstract_words": 4.766633998236844e-97,
+  "weekend|author_count": 2.820160918114162e-98,
+  "weekend|category_count": 2.6784463613268518e-98,
+  "weekend|comment_pages": 2.51242197437871e-84,
+  "weekend|has_doi": 2.8731324189861937e-192,
+  "weekend|has_journal_ref": 1.1884035942025101e-164,
+  "weekend|published_hour_utc": 5.744515279270059e-97,
+  "weekend|revised": 1.3166499387974775e-200,
+  "weekend|title_words": 1.8565782882146816e-97
+ },
+ "records_digest": "c6cda5b2ad2a118ad8bc7649d0c567c132a70dea9f76d393e6274c20d00f1679",
+ "test_vector_digest": "91cbe3846e9d1ed00f5a90378d034b1ad13c6e2500faf436289ae22f5c37c1dd",
+ "tests": [
+  {
+   "bh": true,
+   "effect": 59.647815683521266,
+   "failures": [],
+   "key": "has_doi|has_journal_ref",
+   "n0": 1966,
+   "n1": 71,
+   "p": 1.5589625669146016e-184,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": 69.07479923010553,
+   "failures": [],
+   "key": "has_journal_ref|has_doi",
+   "n0": 1976,
+   "n1": 61,
+   "p": 1.558962566914829e-184,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": -0.19726067000039804,
+   "failures": [],
+   "key": "cross_listed|author_count",
+   "n0": 731,
+   "n1": 1306,
+   "p": 8.65500853572974e-14,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": -0.1705534417364829,
+   "failures": [],
+   "key": "large_team|category_count",
+   "n0": 1219,
+   "n1": 818,
+   "p": 3.941420012938626e-12,
+   "significant": true
+  },
+  {
+   "bh": false,
+   "effect": 0.23690672530694523,
+   "failures": [
+    "c4 outcome missing for more than half the corpus"
+   ],
+   "key": "cross_listed|comment_pages",
+   "n0": 255,
+   "n1": 535,
+   "p": 6.997752316756863e-08,
+   "significant": false
+  },
+  {
+   "bh": true,
+   "effect": -0.11726714951330908,
+   "failures": [],
+   "key": "large_team|title_words",
+   "n0": 1219,
+   "n1": 818,
+   "p": 6.278750825724498e-06,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": 0.19429605028260388,
+   "failures": [],
+   "key": "weekend|category_count",
+   "n0": 1879,
+   "n1": 158,
+   "p": 1.6068540974374718e-05,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": 0.09620074444872295,
+   "failures": [],
+   "key": "has_comment|title_words",
+   "n0": 924,
+   "n1": 1113,
+   "p": 0.00016787726877589686,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": 2.813852813852814,
+   "failures": [],
+   "key": "has_comment|has_doi",
+   "n0": 924,
+   "n1": 1113,
+   "p": 0.0005665448239472512,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": 0.08944616345060052,
+   "failures": [],
+   "key": "cross_listed|abstract_words",
+   "n0": 731,
+   "n1": 1306,
+   "p": 0.0007987800648276119,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": -0.23334001977275654,
+   "failures": [],
+   "key": "has_doi|abstract_words",
+   "n0": 1966,
+   "n1": 71,
+   "p": 0.0008231976480227469,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": -0.15510539540962398,
+   "failures": [],
+   "key": "weekend|author_count",
+   "n0": 1879,
+   "n1": 158,
+   "p": 0.0010715679581433854,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": -0.09986298603899846,
+   "failures": [],
+   "key": "night_submission|author_count",
+   "n0": 1605,
+   "n1": 432,
+   "p": 0.0012887620477215508,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": -0.2168314860290702,
+   "failures": [],
+   "key": "has_journal_ref|abstract_words",
+   "n0": 1976,
+   "n1": 61,
+   "p": 0.003872637619615353,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": 0.08200934579439245,
+   "failures": [],
+   "key": "night_submission|category_count",
+   "n0": 1605,
+   "n1": 432,
+   "p": 0.005396091339809962,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": 0.06388587453277483,
+   "failures": [],
+   "key": "has_comment|category_count",
+   "n0": 924,
+   "n1": 1113,
+   "p": 0.008296695949305715,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": 0.06453153016495339,
+   "failures": [],
+   "key": "has_comment|abstract_words",
+   "n0": 924,
+   "n1": 1113,
+   "p": 0.012043208763915863,
+   "significant": true
+  },
+  {
+   "bh": true,
+   "effect": -0.18299097365102546,
+   "failures": [],
+   "key": "has_journal_ref|author_count",
+   "n0": 1976,
+   "n1": 61,
+   "p": 0.01393353266926343,
+   "significant": true
+  },
+  {
+   "bh": false,
+   "effect": -0.23846123053520674,
+   "failures": [
+    "c4 outcome missing for more than half the corpus"
+   ],
+   "key": "has_doi|comment_pages",
+   "n0": 757,
+   "n1": 33,
+   "p": 0.02022606612375724,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.15773788202255234,
+   "failures": [],
+   "key": "has_doi|title_words",
+   "n0": 1966,
+   "n1": 71,
+   "p": 0.023016269986107694,
+   "significant": true
+  },
+  {
+   "bh": false,
+   "effect": 1.717307849383321,
+   "failures": [],
+   "key": "has_comment|has_journal_ref",
+   "n0": 924,
+   "n1": 1113,
+   "p": 0.023576542946656998,
+   "significant": true
+  },
+  {
+   "bh": false,
+   "effect": 0.10069657304922486,
+   "failures": [],
+   "key": "weekend|title_words",
+   "n0": 1879,
+   "n1": 158,
+   "p": 0.03431792692192242,
+   "significant": true
+  },
+  {
+   "bh": false,
+   "effect": 0.14336164998416656,
+   "failures": [],
+   "key": "revised|abstract_words",
+   "n0": 1963,
+   "n1": 74,
+   "p": 0.03604478193032824,
+   "significant": true
+  },
+  {
+   "bh": false,
+   "effect": 0.054898678727874906,
+   "failures": [],
+   "key": "cross_listed|published_hour_utc",
+   "n0": 731,
+   "n1": 1306,
+   "p": 0.03933968064209066,
+   "significant": true
+  },
+  {
+   "bh": false,
+   "effect": 0.22190898107128465,
+   "failures": [
+    "c1 group smaller than 30",
+    "c4 outcome missing for more than half the corpus"
+   ],
+   "key": "revised|comment_pages",
+   "n0": 764,
+   "n1": 26,
+   "p": 0.053985211064276166,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.13179465056082829,
+   "failures": [],
+   "key": "has_journal_ref|published_hour_utc",
+   "n0": 1976,
+   "n1": 61,
+   "p": 0.0787873134049651,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -1.326992544692732,
+   "failures": [],
+   "key": "large_team|has_journal_ref",
+   "n0": 1219,
+   "n1": 818,
+   "p": 0.08496112076161805,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.11059766376850066,
+   "failures": [],
+   "key": "has_journal_ref|category_count",
+   "n0": 1976,
+   "n1": 61,
+   "p": 0.11769738234520657,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.10776152336194178,
+   "failures": [],
+   "key": "has_doi|author_count",
+   "n0": 1966,
+   "n1": 71,
+   "p": 0.11916284417730573,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.11512743080905286,
+   "failures": [],
+   "key": "has_journal_ref|title_words",
+   "n0": 1976,
+   "n1": 61,
+   "p": 0.12313680032237576,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.09686635183323933,
+   "failures": [],
+   "key": "revised|author_count",
+   "n0": 1963,
+   "n1": 74,
+   "p": 0.15302095012863398,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.15334207077326345,
+   "failures": [
+    "c1 group smaller than 30",
+    "c4 outcome missing for more than half the corpus"
+   ],
+   "key": "has_journal_ref|comment_pages",
+   "n0": 763,
+   "n1": 27,
+   "p": 0.17509005373316397,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -1.8741452833112147,
+   "failures": [
+    "c2 fewer than 10 events or non-events in a group"
+   ],
+   "key": "weekend|has_journal_ref",
+   "n0": 1879,
+   "n1": 158,
+   "p": 0.1843455782121295,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.040820064612899554,
+   "failures": [],
+   "key": "night_submission|abstract_words",
+   "n0": 1605,
+   "n1": 432,
+   "p": 0.19218733698216833,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.03326808017313487,
+   "failures": [],
+   "key": "large_team|abstract_words",
+   "n0": 1219,
+   "n1": 818,
+   "p": 0.20244876217480243,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.05879440316354656,
+   "failures": [],
+   "key": "weekend|published_hour_utc",
+   "n0": 1879,
+   "n1": 158,
+   "p": 0.21845561899408295,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.07725703150745777,
+   "failures": [],
+   "key": "has_doi|category_count",
+   "n0": 1966,
+   "n1": 71,
+   "p": 0.2395665501501014,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.9646103535612759,
+   "failures": [],
+   "key": "cross_listed|has_doi",
+   "n0": 731,
+   "n1": 1306,
+   "p": 0.25488578210130314,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.8768328015703594,
+   "failures": [],
+   "key": "cross_listed|has_journal_ref",
+   "n0": 731,
+   "n1": 1306,
+   "p": 0.2653903319949136,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.08021020042365978,
+   "failures": [
+    "c4 outcome missing for more than half the corpus"
+   ],
+   "key": "weekend|comment_pages",
+   "n0": 722,
+   "n1": 68,
+   "p": 0.27351450812820366,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.049969845029674165,
+   "failures": [
+    "c4 outcome missing for more than half the corpus"
+   ],
+   "key": "night_submission|comment_pages",
+   "n0": 599,
+   "n1": 191,
+   "p": 0.29770783787175104,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.02417609528031117,
+   "failures": [],
+   "key": "large_team|published_hour_utc",
+   "n0": 1219,
+   "n1": 818,
+   "p": 0.3537161322559676,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.0550591345293332,
+   "failures": [],
+   "key": "revised|published_hour_utc",
+   "n0": 1963,
+   "n1": 74,
+   "p": 0.420162305105132,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.04852922212829358,
+   "failures": [],
+   "key": "has_doi|published_hour_utc",
+   "n0": 1966,
+   "n1": 71,
+   "p": 0.4861076673632835,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -1.0340808806192359,
+   "failures": [
+    "c2 fewer than 10 events or non-events in a group"
+   ],
+   "key": "weekend|has_doi",
+   "n0": 1879,
+   "n1": 158,
+   "p": 0.49609578180576097,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.0461097878316421,
+   "failures": [],
+   "key": "revised|title_words",
+   "n0": 1963,
+   "n1": 74,
+   "p": 0.49785744422396294,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.568968501211492,
+   "failures": [],
+   "key": "night_submission|has_journal_ref",
+   "n0": 1605,
+   "n1": 432,
+   "p": 0.5379656336941397,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.5215327343231179,
+   "failures": [],
+   "key": "cross_listed|revised",
+   "n0": 731,
+   "n1": 1306,
+   "p": 0.5462185515953235,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.014815074114265525,
+   "failures": [],
+   "key": "has_comment|author_count",
+   "n0": 924,
+   "n1": 1113,
+   "p": 0.5609005620099831,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.570699203876774,
+   "failures": [],
+   "key": "night_submission|has_doi",
+   "n0": 1605,
+   "n1": 432,
+   "p": 0.5659236623249405,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.46653335232093307,
+   "failures": [],
+   "key": "large_team|revised",
+   "n0": 1219,
+   "n1": 818,
+   "p": 0.5811733022036626,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.49757701626860495,
+   "failures": [],
+   "key": "night_submission|revised",
+   "n0": 1605,
+   "n1": 432,
+   "p": 0.6236840818008935,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.029677410472112475,
+   "failures": [],
+   "key": "revised|category_count",
+   "n0": 1963,
+   "n1": 74,
+   "p": 0.6448933034151754,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.013313430252682612,
+   "failures": [],
+   "key": "night_submission|title_words",
+   "n0": 1605,
+   "n1": 432,
+   "p": 0.6689383600368718,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.011069608227207706,
+   "failures": [],
+   "key": "cross_listed|title_words",
+   "n0": 731,
+   "n1": 1306,
+   "p": 0.6765376386563375,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.016319123437767535,
+   "failures": [
+    "c4 outcome missing for more than half the corpus"
+   ],
+   "key": "large_team|comment_pages",
+   "n0": 495,
+   "n1": 295,
+   "p": 0.7008194240222675,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.845356984224779,
+   "failures": [
+    "c2 fewer than 10 events or non-events in a group"
+   ],
+   "key": "has_doi|revised",
+   "n0": 1966,
+   "n1": 71,
+   "p": 0.7083985634062047,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.8123253156365737,
+   "failures": [
+    "c2 fewer than 10 events or non-events in a group"
+   ],
+   "key": "revised|has_doi",
+   "n0": 1963,
+   "n1": 74,
+   "p": 0.7083985634062048,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.3087825003861039,
+   "failures": [],
+   "key": "large_team|has_doi",
+   "n0": 1219,
+   "n1": 818,
+   "p": 0.7095337067167975,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.3029009651526207,
+   "failures": [
+    "c2 fewer than 10 events or non-events in a group"
+   ],
+   "key": "revised|has_journal_ref",
+   "n0": 1963,
+   "n1": 74,
+   "p": 0.8807039601242908,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.3650361717661109,
+   "failures": [
+    "c2 fewer than 10 events or non-events in a group"
+   ],
+   "key": "has_journal_ref|revised",
+   "n0": 1976,
+   "n1": 61,
+   "p": 0.8807039601242909,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.17852210642612248,
+   "failures": [
+    "c2 fewer than 10 events or non-events in a group"
+   ],
+   "key": "weekend|revised",
+   "n0": 1879,
+   "n1": 158,
+   "p": 0.9082969081538139,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.0052984013850621015,
+   "failures": [],
+   "key": "weekend|abstract_words",
+   "n0": 1879,
+   "n1": 158,
+   "p": 0.9118019069550778,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": -0.08576329331046323,
+   "failures": [],
+   "key": "has_comment|revised",
+   "n0": 924,
+   "n1": 1113,
+   "p": 0.917969126325656,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": 0.0025271972711324864,
+   "failures": [],
+   "key": "has_comment|published_hour_utc",
+   "n0": 924,
+   "n1": 1113,
+   "p": 0.9215728297090603,
+   "significant": false
+  },
+  {
+   "bh": false,
+   "effect": null,
+   "failures": [
+    "c1 group smaller than 30",
+    "c4 outcome missing for more than half the corpus"
+   ],
+   "key": "has_comment|comment_pages",
+   "n0": 0,
+   "n1": 790,
+   "p": null,
+   "significant": false
+  }
+ ],
+ "vector_repeats_previous": true
+}
