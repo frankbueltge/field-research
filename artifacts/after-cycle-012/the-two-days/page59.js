@@ -75,7 +75,7 @@ const R={P27:`${pts1(m.diff)} points, 95 % interval ${pts1(m.ci95[0])} to ${pts1
  P28:`${D.runs.runs} runs, ${D.runs.expected} expected, z ${D.runs.z.toFixed(2).replace('-','−')}, p ${D.runs.p.toFixed(4)}`,
  P29:`ρ ${D.rho.rho.toFixed(2).replace('-','−')} over ${D.rho.days} days`,
  P30:`${D.p30} of ${D.joined} days`,
- P31:`${D.p31} of ${D.joined} days (6 Oct: one new case more in the province row; 30 Oct: seven of Ituri's rows unreadable)`};
+ P31:`${D.p31} of ${D.joined} days (6 Oct: one new case more in the province row; 30 Oct: <s>seven of Ituri's rows unreadable</s> seven readable rows rejected by our guard; corrected 2026-11-07, Figure 6)`};
 const tb=document.querySelector('#pred59 tbody');
 for(const k of Object.keys(D.P)){const tr=document.createElement('tr');tr.innerHTML=`<td>${k}</td><td>${D.P[k].text}</td><td>${R[k]}</td><td class="${D.P[k].held?'held':'failed'}">${D.P[k].held?'held':'failed'}</td>`;tb.appendChild(tr)}
 
