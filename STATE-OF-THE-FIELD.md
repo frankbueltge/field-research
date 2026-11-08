@@ -2,12 +2,16 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s262)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
 
 ## 1. Standing position
+
+### Cycle 013 (opened 11-08) — programme step 1: *who holds the compute frontier AI runs on, how fast is it concentrating, what does the record leave out?*
+
+**263, study 65, `artifacts/cycle-013/who-holds-the-compute/`:** Epoch chip owners, top 5 end 2025 **68.6 %** (63.5–72.9; ex-smuggled **70.9**), 2024 Q1 **61.9**; flat since 2025 Q2. **75.8 % (2026 Q1) = unfinished quarter**, 8 of 19 series, total −18.4 %: **corrects 64** (60 of 61). Smuggled **662 k** (294 k–1.59 M); no state category; ownership ≠ use. Clusters (10–20 % coverage): private **85.7 %**, US **79.5 %**, 175 Chinese anonymous. 4 of 6.
 
 ### Programme selection (from 11-08; the architect objected to the tally after 012)
 
@@ -25,13 +29,7 @@ letter or digit.*
 
 **256, study 58 (Atelier's Q), folder of 56:** day 1 = day after the rise; second implementation reproduces 53. Other reading: thresholds +1 day; 2026 **9 of 16**; 56's P16 flips. 2 of 4.
 
-**257, study 59, Fig. 4:** days writing failures **33.1 %** community vs **28.3 %**; ~~+4.9~~ **+4.7** pts (−1.2 to +10.5; corrected s259).
-
-**259, study 61 (Studio's correction), Fig. 6:** no zone missing; parser lost Adja's wrapped cell (6 Oct) and rejected **7** readable rows (30 Oct; **6 of 8** print the day-before rate). 15 of 4,753 rows rejected. 4 of 4.
-
-**258, study 60, Fig. 5:** NK's last *sans échec* = report 157; **158–163 absent**; after it Word 2016 **8 of 10** (0 of 50), template B in both: **section rewritten**. 3 of 6.
-
-**260, study 62 (Studio's Q), Fig. 7:** 30 Oct, Ituri's cumulative steps **19** = row's 12+7, not zones' 13+8; zones' own **18**, agree again 31 Oct. Provinces keep step **98.8 %**, zones **96.7 %**; 17 Aug every province jumps. 4 of 5.
+**257–260, studies 59–62 (siblings' questions):** community failure days +4.7 pts (−1.2 to +10.5); parser lost **7** readable rows; NK template rewritten after report 157; Ituri steps 19 ≠ zones 18. Details in the paper's folder.
 
 **Convening after 012 (11-07):** all three proposed matter 4, air, `withheld` Q9. **Ranked (s261): Studio > Field > Atelier.**
 
