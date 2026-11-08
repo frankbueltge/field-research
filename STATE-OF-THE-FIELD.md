@@ -2,16 +2,20 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-07 (s261)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s262)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
 
 ## 1. Standing position
 
+### Programme selection (from 11-08; the architect objected to the tally after 012)
+
+**262, study 64, `artifacts/programme-selection/what-the-dossier-rests-on/`:** dossier figures **61 of 61** stand on their pages; Reach lines name **21** datasets, **9** deliver anonymously; candidates 1, 2, 7, 8 none; ρ(Reach, delivering) **−0.05**. 4 of 5. **Plea 10, objection 7.**
+
 ### Cycle 012 (opened 11-03, the Atelier's question) — *how much of the Ebola epidemic in eastern Congo and Kenya does surveillance not see, and from which day can a count call a district quiet?* — line `withheld` Q5
 
-**250–252, studies 53–54, `artifacts/cycle-012/the-quiet-curve/`.** 42-day quiets broken within 42: Kivu **17 of 60** (28 %), 2026 **8 of 15** (53 %; P6 failed); Kivu below 10 % from day **97**, 5 % from **114**. No neighbour: **0 of 7** (weak). Sourceless **2 of 105** genuine (Beni = the 94-day gap). INSP sitreps 80 of 141: ~~1,921 of 5,966~~ met dead, **32 %**; ρ follow-up **−0.03**; breaks joinable **17 of 34**. Lit. first-hand: Djaafara 2021 (42 d *"too short"*), Hart 2024, Plank 2024; **contested, whole-outbreak models**.
+**250–252, studies 53–54, `artifacts/cycle-012/the-quiet-curve/`.** 42-day quiets broken within 42: Kivu **17 of 60** (28 %), 2026 **8 of 15** (53 %; P6 failed); Kivu below 10 % from day **97**, 5 % from **114**. No neighbour: **0 of 7** (weak). Sourceless **2 of 105** genuine. INSP sitreps 80 of 141: ~~1,921 of 5,966~~ met dead, **32 %**; ρ follow-up **−0.03**; breaks joinable **17 of 34**. Lit. first-hand: Djaafara 2021 (42 d *"too short"*), Hart 2024, Plank 2024; **contested, whole-outbreak models**.
 
 **253, study 55 + paper — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held, 1 uninformative). Found-dead share: no drift (ρ **−0.05**), **φ 2.29**. Kivu without the 94-day hole: **17 of 53**.
 
@@ -108,15 +112,14 @@ letter or digit.*
   access columns record our own requests, not the sources' policies.** Index zero hits (to 09-22): *licen\**, *spdx*, *incorrect fix*, *patch*.
 - **Cycles 003 and 002 — closed; quoted in full in their `data/sources.json`, never from
   memory.** Pearson; ten schema-fixed completeness sources; Neumaier, Wenige, Zhang, Terrenzi &
-  Ayvaz; Miao et al. `arXiv:2607.01507v1` — agents vary the *analysis path*, **we vary the
-  questions**; Tarone 1990. Unfound: null-world calibration.
+  Ayvaz; Miao et al. `arXiv:2607.01507v1` — agents vary the *analysis path*, **we the questions**; Tarone 1990.
 - **Licensing arc — CLOSED; quotations in each `sources.json`.** Hora et al. `arXiv:2605.16701` (`LICENSE` **73.1 %**, ≥100
   stars/commits, so not paper repos); Wolter 2022 (*"about half … did not fully declare"* — ours
   is file-level, a lower bound) and Wolter FAU 2019 (**83.24 %**); Silberzahn et al. 2018 (29
-  teams, **0.89–2.93**, spread **not** explained by analysis quality); Duque-Torres 2023. **First-hand 09-22:** Yin et al. 2011 (**14.8–24.4 %** fixes incorrect); Park et al. 2012 (**22–33 %**); Xiong et al. `arXiv:1706.09120` (**does not define "overfitting"**, a search summary said it did).
+  teams, **0.89–2.93**, spread **not** explained by analysis quality); Duque-Torres 2023. **09-22:** Yin et al. 2011 (**14.8–24.4 %** fixes incorrect); Park et al. 2012 (**22–33 %**); Xiong et al. `arXiv:1706.09120` (**no definition of "overfitting"**, though a summary claimed one).
 - **Claim verifiability (09-23), in that `sources.json`:** Nuijten et al., PMC5101263; Brown &
   Heathers 2017 (GRIM, **record page only**).
-- **Cry wolf (10-20), passages in study 31's `sources.json`:** Simmons & Sutter, *WCAS* 1 (2009): 1-SD FAR → fatalities **+12–29 %**, injuries **+13–32 %** (abstract 14), 1986–2004, office/state/TV-market FAR of the 12 or 24 months before. Lim, Liu & Egnoto, *WCAS* 11 (2019): perceived FAR does not track actual FAR.
+- **Cry wolf (10-20), passages in study 31's `sources.json`:** Simmons & Sutter, *WCAS* 1 (2009): 1-SD FAR → fatalities **+12–29 %**, injuries **+13–32 %** (abstract 14), 1986–2004, office/state/TV-market FAR of the 12 or 24 months before. Lim, Liu & Egnoto 2019: perceived FAR does not track actual.
 - **Prices of risk (10-21), study 34's `sources.json`:** DOT VSL 2021 (*"2012 base year VSL of $9.1 million"*); EPA *"$7.4 million ($2006)"*.
 - **Statistical confidentiality (10-24/25), study 39's `sources.json`:** Reg. 223/2009 Art. 3(7); Eurostat ESMS §7. **First-hand 10-25:** SDC Handbook 2nd ed. 2025 (*"normally ... set to 3"*; concentration parameters kept confidential); Hawes et al. HDSR 2025 (transparency, *"external assessment"*); ABS 2025 (G-Confid); CENEX-SDC inventory (25 countries, declared only). No external cross-producer measure found; OS journals unsearched.
 - **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*.
@@ -152,21 +155,20 @@ letter or digit.*
 7. **(45) ANSWERED 09-09, against us:** **7 of 7** author groups use a schema-fixed denominator.
 8. **(46) Reading the literature is itself a measurement, and ours is bot-shaped.** Invented delegated read (09-12); closed doors fuller than predicted. **09-24:** 52 of 58 still refuse. **09-25:**
    459 of 1,000 trial papers have no open body. **09-26: 41 of 48 AI-authored papers sit behind a challenge.**
-9. **Counter-measurement (remit rests):** nobody written to.
+9. **Counter-measurement:** rests.
 10. **Corrections against our own shipped work**, dated beside their artifacts, never patched.
    **09-14 to 09-22, the licensing arc:** 09-16's *reachable* counts an
    empty repository as delivered and its rung counts twelve non-licences as licence files;
    `pdftext.py` loses ligatures and **returns fluent but wrong text rather than failing**;
    **09-18's repair of defect 1 did not remove it**; defects 5 and 6; **the 14 *a person read*
-   claims are false (09-21)**; and **09-22's two: 95.2 % depends on *which* defects are repaired,
-   and 09-20's 167 is an undercount.**
+   claims are false (09-21)**; and **09-22: 95.2 % depends on which defects are repaired; 09-20's 167 undercounts.**
 
-   **Dependences, not corrections:** 09-23's *4 of 1,000* holds under exact rounding only.
+   **Dependence:** 09-23's *4 of 1,000* needs exact rounding.
 
    **09-23 decision:** a yearless `Copyright <holder>` line **is** a notice; **R1 refused permanently**; the narrower **R1′** is named and unbuilt (`DECISION-2026-09-23-yearless-notice.md` beside the 09-22 artifact).
 
    **Bad tests, thirteen (09-11 to 11-06):** tests fired by their opposite, **"58 checks, 0 failed" while five never ran**, a tolerance wider than its gap; older verifiers overwrite process shots. **Pre-registration stops reasoning after the fact, not a bad test.**
 
-   **The apparatus:** rules fixture- then mutation-tested; 09-23, a mutation surviving 45 fixtures (*a corpus can be a test*). **A fixture checks that a rule computes what its author says, never that the sentence is right**; a fixture a repair breaks may be the specification. *A repair is a new rule and inherits none of the old one's testing.*
+   **The apparatus:** fixture- then mutation-tested; 09-23, a mutation survived 45 fixtures. **A fixture checks that a rule computes what its author says, never that the sentence is right**; a fixture a repair breaks may be the specification. *A repair is a new rule and inherits none of the old one's testing.*
   
-   **Four mechanical defect-finders (09-19 to 09-22): none replaces reading; three of four ranked the worst repair first.**
+   **Four defect-finders (09-19 to 22): none replaces reading.**

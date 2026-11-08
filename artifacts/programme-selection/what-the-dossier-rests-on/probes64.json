@@ -1,0 +1,152 @@
+{
+ "note": "One anonymous request per dataset named in a candidate's Reach line (dossier commit 0ecd43a8). Address = a documented download or API address found by this session; where none was found in the time given, the entry says so.",
+ "probes": [
+  {
+   "cand": 1,
+   "name": "ERA5 (Copernicus Climate Data Store)",
+   "url": "https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-single-levels-monthly-means/execution",
+   "method": "POST"
+  },
+  {
+   "cand": 1,
+   "name": "EM-DAT",
+   "url": "https://public.emdat.be/api/"
+  },
+  {
+   "cand": 3,
+   "name": "IUCN Red List API v4",
+   "url": "https://api.iucnredlist.org/api/v4/information/red_list_version"
+  },
+  {
+   "cand": 3,
+   "name": "GBIF occurrences",
+   "url": "https://api.gbif.org/v1/occurrence/search?limit=1"
+  },
+  {
+   "cand": 3,
+   "name": "Living Planet Index data",
+   "url": "https://www.livingplanetindex.org/data_portal"
+  },
+  {
+   "cand": 4,
+   "name": "FAOSTAT (incl. SOFI food-security indicators)",
+   "url": "https://bulks-faostat.fao.org/production/Food_Security_Data_E_All_Data.zip",
+   "method": "RANGE"
+  },
+  {
+   "cand": 4,
+   "name": "GRFC (Global Report on Food Crises)",
+   "url": "https://www.fsinplatform.org/report/global-report-food-crises-2025/"
+  },
+  {
+   "cand": 5,
+   "name": "GRAM (IHME MICROBE)",
+   "url": "https://vizhub.healthdata.org/microbe/"
+  },
+  {
+   "cand": 5,
+   "name": "WHO GLASS via GHO OData",
+   "url": "https://ghoapi.azureedge.net/api/Indicator?$filter=contains(IndicatorName,'antimicrobial')"
+  },
+  {
+   "cand": 6,
+   "name": "UCDP API",
+   "url": "https://ucdpapi.pcr.uu.se/api/ucdpprioconflict/25.1?pagesize=1"
+  },
+  {
+   "cand": 6,
+   "name": "ACLED API",
+   "url": "https://acleddata.com/api/acled/read?limit=1"
+  },
+  {
+   "cand": 6,
+   "name": "SIPRI Military Expenditure Database",
+   "url": "https://milex.sipri.org/sipri"
+  },
+  {
+   "cand": 8,
+   "name": "V-Dem dataset",
+   "url": "https://v-dem.net/data/the-v-dem-dataset/"
+  },
+  {
+   "cand": 9,
+   "name": "Digital News Report data",
+   "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026"
+  },
+  {
+   "cand": 9,
+   "name": "RSF World Press Freedom Index",
+   "url": "https://rsf.org/en/index"
+  },
+  {
+   "cand": 10,
+   "name": "Epoch AI data (hyperscaler share CSV)",
+   "url": "https://epoch.ai/data/charts/hyperscalers-control-most-compute-di/hyperscaler_compute_share.csv"
+  },
+  {
+   "cand": 10,
+   "name": "AI Incident Database",
+   "url": "https://incidentdatabase.ai/research/snapshots/"
+  },
+  {
+   "cand": 11,
+   "name": "WID bulk download",
+   "url": "https://wid.world/bulk_download/wid_all_data.zip",
+   "method": "RANGE"
+  },
+  {
+   "cand": 12,
+   "name": "World Bank PIP API",
+   "url": "https://api.worldbank.org/pip/v1/pip?country=WLD&year=2022&povline=3"
+  },
+  {
+   "cand": 12,
+   "name": "UNCTADstat",
+   "url": "https://unctadstat.unctad.org/datacentre/"
+  },
+  {
+   "cand": 12,
+   "name": "IMF DataMapper API",
+   "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP?periods=2024"
+  },
+  {
+   "cand": 6,
+   "name": "SIPRI Military Expenditure Database",
+   "url": "https://www.sipri.org/sites/default/files/SIPRI-Milex-data-1949-2025_v1.2.xlsx",
+   "method": "RANGE",
+   "second": "linked from sipri.org/databases/milex"
+  },
+  {
+   "cand": 8,
+   "name": "V-Dem dataset",
+   "url": "https://v-dem.net/data/the-v-dem-dataset/country-date-v-dem-v16/",
+   "second": "download page; carries a form asking e-mail, gender and acceptance of terms before a file is given",
+   "manual_class": "gated"
+  },
+  {
+   "cand": 9,
+   "name": "RSF World Press Freedom Index",
+   "url": "https://rsf.org/sites/default/files/import_classement/2026.csv",
+   "second": "linked from rsf.org/en/index"
+  },
+  {
+   "cand": 10,
+   "name": "AI Incident Database",
+   "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261102.xlsx",
+   "method": "RANGE",
+   "second": "newest export linked from the snapshots page"
+  },
+  {
+   "cand": 12,
+   "name": "World Bank PIP API",
+   "url": "https://api.worldbank.org/pip/v1/pip-grp?country=WLD&year=2022&povline=3&group_by=wb&format=json",
+   "second": "documented parameters; the first form returned 500"
+  },
+  {
+   "cand": 1,
+   "name": "EM-DAT",
+   "url": "https://public.emdat.be/",
+   "second": "the public platform's front page (a sign-in application)"
+  }
+ ]
+}

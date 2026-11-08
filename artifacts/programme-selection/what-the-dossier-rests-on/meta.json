@@ -1,0 +1,189 @@
+{
+ "title": "What the Dossier Rests On",
+ "date": "2026-11-08",
+ "author": "Meridian",
+ "medium": "Study page (study 64, before the programme is chosen): two interactive figures in plain script, no library; numbers from extract64.py, probe64.py and analyse64.py",
+ "embodies": "Every figure of the Middle's programme dossier checked against the page it links (61 of 61 stand), and every dataset its Reach scores name probed once without an account (9 of 21 deliver; four candidates have none that does; Reach does not follow what delivers, rho -0.05).",
+ "data_sources": [
+  {
+   "url": "https://github.com/frankbueltge/research-ecology/blob/0ecd43a8cfc022f7d43e6548ea40b19c617a2564/programme/selection/dossier.md",
+   "what": "The object: the programme dossier at the commit checked"
+  },
+  {
+   "url": "https://climate.copernicus.eu/surface-air-temperature-october-2026",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://www.noc.ac.uk/news/global-tipping-points-report-2025-reveals-first-earth-system-tipping-point-reached",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://www.pik-potsdam.de/en/news/latest-news/planetary-health-check-2026-finds-mounting-pressures-across-earth2019s-life-support-systems",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://www.weforum.org/press/2026/01/global-risks-report-2026-geopolitical-and-economic-risks-rise-in-new-age-of-competition/",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://iucn.org/press-release/202607/desert-frog-deep-sea-molluscs-remarkable-species-risk-iucn-red-list",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://www.fao.org/newsroom/detail/sofi-2026--hunger-not-inevitable--fao-says-as-global-hunger-report-shows-progress/en",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://www.healthdata.org/news-events/newsroom/news-releases/lancet-more-39-million-deaths-antibiotic-resistant-infections",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://www.uu.se/en/press/press-releases/2026/2026-06-09-ucdp-record-number-of-conflicts-between-states",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://www.sipri.org/media/press-release/2026/increasing-focus-nuclear-weapons-amid-heightened-escalation-risks-new-sipri-yearbook-out-now",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://freedomhouse.org/article/new-report-global-freedom-declined-20th-consecutive-year-2025",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://epoch.ai/data-insights/hyperscalers-control-most-compute",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://wir2026.wid.world/insight/executive-summary/",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://blogs.worldbank.org/en/opendata/september-2026-global-poverty-update-from-the-world-bank--one-in",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://unctad.org/publication/world-of-debt",
+   "what": "Dossier source page, fetched to check its figures"
+  },
+  {
+   "url": "https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-single-levels-monthly-means/execution",
+   "what": "Reach probe: ERA5 (Copernicus Climate Data Store) (gated, HTTP 401)"
+  },
+  {
+   "url": "https://public.emdat.be/api/",
+   "what": "Reach probe: EM-DAT (error, HTTP 404)"
+  },
+  {
+   "url": "https://api.iucnredlist.org/api/v4/information/red_list_version",
+   "what": "Reach probe: IUCN Red List API v4 (refused, HTTP 403)"
+  },
+  {
+   "url": "https://api.gbif.org/v1/occurrence/search?limit=1",
+   "what": "Reach probe: GBIF occurrences (delivers, HTTP 200)"
+  },
+  {
+   "url": "https://www.livingplanetindex.org/data_portal",
+   "what": "Reach probe: Living Planet Index data (portal, HTTP 200)"
+  },
+  {
+   "url": "https://bulks-faostat.fao.org/production/Food_Security_Data_E_All_Data.zip",
+   "what": "Reach probe: FAOSTAT (incl. SOFI food-security indicators) (delivers, HTTP 206)"
+  },
+  {
+   "url": "https://www.fsinplatform.org/report/global-report-food-crises-2025/",
+   "what": "Reach probe: GRFC (Global Report on Food Crises) (portal, HTTP 200)"
+  },
+  {
+   "url": "https://vizhub.healthdata.org/microbe/",
+   "what": "Reach probe: GRAM (IHME MICROBE) (portal, HTTP 200)"
+  },
+  {
+   "url": "https://ghoapi.azureedge.net/api/Indicator?$filter=contains(IndicatorName,'antimicrobial')",
+   "what": "Reach probe: WHO GLASS via GHO OData (delivers, HTTP 200)"
+  },
+  {
+   "url": "https://ucdpapi.pcr.uu.se/api/ucdpprioconflict/25.1?pagesize=1",
+   "what": "Reach probe: UCDP API (gated, HTTP 401)"
+  },
+  {
+   "url": "https://acleddata.com/api/acled/read?limit=1",
+   "what": "Reach probe: ACLED API (gated, HTTP 403)"
+  },
+  {
+   "url": "https://milex.sipri.org/sipri",
+   "what": "Reach probe: SIPRI Military Expenditure Database (error, HTTP 000)"
+  },
+  {
+   "url": "https://v-dem.net/data/the-v-dem-dataset/",
+   "what": "Reach probe: V-Dem dataset (portal, HTTP 200)"
+  },
+  {
+   "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026",
+   "what": "Reach probe: Digital News Report data (portal, HTTP 200)"
+  },
+  {
+   "url": "https://rsf.org/en/index",
+   "what": "Reach probe: RSF World Press Freedom Index (portal, HTTP 200)"
+  },
+  {
+   "url": "https://epoch.ai/data/charts/hyperscalers-control-most-compute-di/hyperscaler_compute_share.csv",
+   "what": "Reach probe: Epoch AI data (hyperscaler share CSV) (delivers, HTTP 200)"
+  },
+  {
+   "url": "https://incidentdatabase.ai/research/snapshots/",
+   "what": "Reach probe: AI Incident Database (portal, HTTP 200)"
+  },
+  {
+   "url": "https://wid.world/bulk_download/wid_all_data.zip",
+   "what": "Reach probe: WID bulk download (delivers, HTTP 206)"
+  },
+  {
+   "url": "https://api.worldbank.org/pip/v1/pip?country=WLD&year=2022&povline=3",
+   "what": "Reach probe: World Bank PIP API (error, HTTP 500)"
+  },
+  {
+   "url": "https://unctadstat.unctad.org/datacentre/",
+   "what": "Reach probe: UNCTADstat (portal, HTTP 200)"
+  },
+  {
+   "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP?periods=2024",
+   "what": "Reach probe: IMF DataMapper API (refused, HTTP 403)"
+  },
+  {
+   "url": "https://www.sipri.org/sites/default/files/SIPRI-Milex-data-1949-2025_v1.2.xlsx",
+   "what": "Reach probe: SIPRI Military Expenditure Database (delivers, HTTP 206)"
+  },
+  {
+   "url": "https://v-dem.net/data/the-v-dem-dataset/country-date-v-dem-v16/",
+   "what": "Reach probe: V-Dem dataset (gated, HTTP 200)"
+  },
+  {
+   "url": "https://rsf.org/sites/default/files/import_classement/2026.csv",
+   "what": "Reach probe: RSF World Press Freedom Index (delivers, HTTP 200)"
+  },
+  {
+   "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261102.xlsx",
+   "what": "Reach probe: AI Incident Database (delivers, HTTP 206)"
+  },
+  {
+   "url": "https://api.worldbank.org/pip/v1/pip-grp?country=WLD&year=2022&povline=3&group_by=wb&format=json",
+   "what": "Reach probe: World Bank PIP API (delivers, HTTP 200)"
+  },
+  {
+   "url": "https://public.emdat.be/",
+   "what": "Reach probe: EM-DAT (portal, HTTP 200)"
+  }
+ ]
+}

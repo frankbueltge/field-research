@@ -1,0 +1,1314 @@
+{
+ "study": 64,
+ "date": "2026-11-08",
+ "dossier_commit": "0ecd43a8cfc022f7d43e6548ea40b19c617a2564",
+ "claims": [
+  {
+   "id": "1a",
+   "cand": 1,
+   "url": "https://climate.copernicus.eu/surface-air-temperature-october-2026",
+   "route": "plain client",
+   "says": "October 2026 warmest October on record",
+   "status": "found",
+   "passage": "Surface air temperature for October 2026 Surface air temperature for October 2026 October 2026 was the warmest October on record globally and the third consecutive month with temperatures more than 1.5°C above the pre-industrial",
+   "note": ""
+  },
+  {
+   "id": "1b",
+   "cand": 1,
+   "url": "https://climate.copernicus.eu/surface-air-temperature-october-2026",
+   "route": "plain client",
+   "says": "October 2026 1.75°C above pre-industrial",
+   "status": "found",
+   "passage": "ge for the month, surpassing the previous October record set in 2023 (0.85°C above average). October 2026 was 1.75°C above the estimated 1850-1900 pre-industrial average for the month, making it the third consecutive month a",
+   "note": ""
+  },
+  {
+   "id": "1c",
+   "cand": 1,
+   "url": "https://climate.copernicus.eu/surface-air-temperature-october-2026",
+   "route": "plain client",
+   "says": "third month in a row above 1.5°C",
+   "status": "found",
+   "passage": "Surface air temperature for October 2026 October 2026 was the warmest October on record globally and the third consecutive month with temperatures more than 1.5°C above the pre-industrial level. The annual global tempera",
+   "note": ""
+  },
+  {
+   "id": "1d",
+   "cand": 1,
+   "url": "https://climate.copernicus.eu/surface-air-temperature-october-2026",
+   "route": "plain client",
+   "says": "twelve months to October at 1.51°C",
+   "status": "found",
+   "passage": "emperature for the last 12 months (November 2025 to October 2026) was 0.63°C above the 1991-2020 average, and 1.51°C above the estimated 1850-1900 pre-industrial average. This suggests that the annual average for 2026 will a",
+   "note": ""
+  },
+  {
+   "id": "1e",
+   "cand": 1,
+   "url": "https://climate.copernicus.eu/surface-air-temperature-october-2026",
+   "route": "plain client",
+   "says": "Copernicus expects 2026 as a whole to exceed 1.5°C",
+   "status": "found",
+   "passage": "Surface air temperature for October 2026 | Copernicus skip to main content Implemented by ECMWF as part o",
+   "note": "Page: \"The annual global temperature for 2026 is also predicted to exceed 1.5°C.\""
+  },
+  {
+   "id": "1f",
+   "cand": 1,
+   "url": "https://www.noc.ac.uk/news/global-tipping-points-report-2025-reveals-first-earth-system-tipping-point-reached",
+   "route": "plain client",
+   "says": "warm-water coral reef threshold central 1.2°C",
+   "status": "found",
+   "passage": ". With current global warming at about 1.4°C, reefs are passing their thermal tipping point (central estimate 1.2°C, range 1-1.5°C). Even if warming stabilises at 1.5°C, warm-water coral reefs are virtually certain (over 99",
+   "note": ""
+  },
+  {
+   "id": "1g",
+   "cand": 1,
+   "url": "https://www.noc.ac.uk/news/global-tipping-points-report-2025-reveals-first-earth-system-tipping-point-reached",
+   "route": "plain client",
+   "says": "AMOC at risk of collapse below 2°C",
+   "status": "found",
+   "passage": "With current global warming at about 1.4°C, reefs are passing their thermal tipping point (central estimate 1.2°C, range 1-1.5°C). Even if warming stabilises at 1.5°C, warm-water coral reefs are virtually certain (over 99%",
+   "note": ""
+  },
+  {
+   "id": "2a",
+   "cand": 2,
+   "url": "https://www.noc.ac.uk/news/global-tipping-points-report-2025-reveals-first-earth-system-tipping-point-reached",
+   "route": "plain client",
+   "says": "more than 160 scientists",
+   "status": "found",
+   "passage": "nd international partners: Global Tipping Points Report. The new report brings together the work of more than 160 scientists at 87 institutions in 23 countries, including Dr Yevgeny Aksenov, Dr Stefanie Rynders and Dr Bablu",
+   "note": ""
+  },
+  {
+   "id": "2b",
+   "cand": 2,
+   "url": "https://www.noc.ac.uk/news/global-tipping-points-report-2025-reveals-first-earth-system-tipping-point-reached",
+   "route": "plain client",
+   "says": "87 institutions",
+   "status": "found",
+   "passage": "artners: Global Tipping Points Report. The new report brings together the work of more than 160 scientists at 87 institutions in 23 countries, including Dr Yevgeny Aksenov, Dr Stefanie Rynders and Dr Bablu Sinha from The N",
+   "note": ""
+  },
+  {
+   "id": "2c",
+   "cand": 2,
+   "url": "https://www.pik-potsdam.de/en/news/latest-news/planetary-health-check-2026-finds-mounting-pressures-across-earth2019s-life-support-systems",
+   "route": "plain client",
+   "says": "Jan 2023 to Sep 2025 bleaching-level heat stress about 84.4% of reef area",
+   "status": "found",
+   "passage": "over exceptionally warm seas. From January 2023 to September 2025, bleaching-level heat stress impacted about 84.4 percent of the world’s coral reef area, making it the largest global coral-bleaching event observed to date.",
+   "note": ""
+  },
+  {
+   "id": "2d",
+   "cand": 2,
+   "url": "https://www.pik-potsdam.de/en/news/latest-news/planetary-health-check-2026-finds-mounting-pressures-across-earth2019s-life-support-systems",
+   "route": "plain client",
+   "says": "seven of nine planetary boundaries transgressed",
+   "status": "found",
+   "passage": "tary Boundaries are now transgressed, with ocean acidification the latest to breach its boundary in 2025. All seven are now at their highest recorded levels of transgression. The seven transgressed boundaries are: climate ch",
+   "note": ""
+  },
+  {
+   "id": "2e",
+   "cand": 2,
+   "url": "https://www.weforum.org/press/2026/01/global-risks-report-2026-geopolitical-and-economic-risks-rise-in-new-age-of-competition/",
+   "route": "second route",
+   "says": "survey of over 1,300 experts",
+   "status": "found",
+   "passage": "gory. The report leverages insights from the Global Risks Perception Survey, which draws on the views of over 1,300 global leaders and experts from academia, business, government, international organizations and civil society",
+   "note": "Second route (web-research extract); the plain client got 403."
+  },
+  {
+   "id": "2f",
+   "cand": 2,
+   "url": "https://www.weforum.org/press/2026/01/global-risks-report-2026-geopolitical-and-economic-risks-rise-in-new-age-of-competition/",
+   "route": "second route",
+   "says": "critical change to Earth systems third among ten-year risks",
+   "status": "found",
+   "passage": "in ranking in the two-year outlook. Extreme weather dropped from 2nd to 4th, pollution from 6th to 9th, while critical change to Earth systems and biodiversity loss fell seven and five positions respectively. All environmental risks decline",
+   "note": "Second route; ten-year top three: extreme weather, biodiversity loss, critical change to Earth systems."
+  },
+  {
+   "id": "3a",
+   "cand": 3,
+   "url": "https://iucn.org/press-release/202607/desert-frog-deep-sea-molluscs-remarkable-species-risk-iucn-red-list",
+   "route": "plain client",
+   "says": "Red List holds 175,909 species",
+   "status": "found",
+   "passage": "o: Jeanne Tarrant The IUCN Red List now includes 175,909 species, of which 49,505 are threatened with extinction. “Life on Earth has adapted to survive in the most ho",
+   "note": ""
+  },
+  {
+   "id": "3b",
+   "cand": 3,
+   "url": "https://iucn.org/press-release/202607/desert-frog-deep-sea-molluscs-remarkable-species-risk-iucn-red-list",
+   "route": "plain client",
+   "says": "49,505 threatened",
+   "status": "found",
+   "passage": "The IUCN Red List now includes 175,909 species, of which 49,505 are threatened with extinction. “Life on Earth has adapted to survive in the most hostile and unusual habitat",
+   "note": ""
+  },
+  {
+   "id": "3c",
+   "cand": 3,
+   "url": "https://www.weforum.org/press/2026/01/global-risks-report-2026-geopolitical-and-economic-risks-rise-in-new-age-of-competition/",
+   "route": "second route",
+   "says": "biodiversity loss second among ten-year risks",
+   "status": "found",
+   "passage": "treme weather dropped from 2nd to 4th, pollution from 6th to 9th, while critical change to Earth systems and biodiversity loss fell seven and five positions respectively. All environmental risks declined in severity score, representing",
+   "note": "Second route; same passage as 2f."
+  },
+  {
+   "id": "4a",
+   "cand": 4,
+   "url": "https://www.fao.org/newsroom/detail/sofi-2026--hunger-not-inevitable--fao-says-as-global-hunger-report-shows-progress/en",
+   "route": "plain client",
+   "says": "645 million faced hunger in 2025",
+   "status": "found",
+   "passage": "e State of Food Security and Nutrition in the World (SOFI) report. According to the SOFI report, an estimated 645 million people (7.8 percent of the global population) faced hunger in 2025. This represents nearly 14 million",
+   "note": ""
+  },
+  {
+   "id": "4b",
+   "cand": 4,
+   "url": "https://www.fao.org/newsroom/detail/sofi-2026--hunger-not-inevitable--fao-says-as-global-hunger-report-shows-progress/en",
+   "route": "plain client",
+   "says": "7.8% of world population",
+   "status": "found",
+   "passage": "rity and Nutrition in the World (SOFI) report. According to the SOFI report, an estimated 645 million people (7.8 percent of the global population) faced hunger in 2025. This represents nearly 14 million fewer people than i",
+   "note": ""
+  },
+  {
+   "id": "4c",
+   "cand": 4,
+   "url": "https://www.fao.org/newsroom/detail/sofi-2026--hunger-not-inevitable--fao-says-as-global-hunger-report-shows-progress/en",
+   "route": "plain client",
+   "says": "around 520 million could face hunger in 2030",
+   "status": "found",
+   "passage": "ing years. Globally, the outlook remains concerning. Despite recent progress, the report projects that around 520 million people could still face hunger in 2030, putting the world off track to achieve Sustainable Developmen",
+   "note": ""
+  },
+  {
+   "id": "4d",
+   "cand": 4,
+   "url": "https://www.pik-potsdam.de/en/news/latest-news/planetary-health-check-2026-finds-mounting-pressures-across-earth2019s-life-support-systems",
+   "route": "plain client",
+   "says": "seven of nine boundaries transgressed (repeat of 2d)",
+   "status": "found",
+   "passage": "tary Boundaries are now transgressed, with ocean acidification the latest to breach its boundary in 2025. All seven are now at their highest recorded levels of transgression. The seven transgressed boundaries are: climate ch",
+   "note": ""
+  },
+  {
+   "id": "5a",
+   "cand": 5,
+   "url": "https://www.healthdata.org/news-events/newsroom/news-releases/lancet-more-39-million-deaths-antibiotic-resistant-infections",
+   "route": "plain client",
+   "says": "1.14 million deaths directly due to bacterial AMR in 2021",
+   "status": "found",
+   "passage": "million deaths directly due to AMR of a broader 4.78 million associated deaths. In 2021, AMR led directly to 1.14 million deaths and was associated of a broader 4.71 million deaths. AMR deaths in 2021 were lower than in 201",
+   "note": "Page says AMR deaths; the dossier says bacterial resistance. Same quantity in the release."
+  },
+  {
+   "id": "5b",
+   "cand": 5,
+   "url": "https://www.healthdata.org/news-events/newsroom/news-releases/lancet-more-39-million-deaths-antibiotic-resistant-infections",
+   "route": "plain client",
+   "says": "1.91 million a year by 2050",
+   "status": "found",
+   "passage": "ore than one million people died each year as a result of AMR between 1990 and 2021. The study also estimates 1.91 million people could potentially die as a direct result of AMR in 2050, an increase of almost 70% per year co",
+   "note": ""
+  },
+  {
+   "id": "5c",
+   "cand": 5,
+   "url": "https://www.healthdata.org/news-events/newsroom/news-releases/lancet-more-39-million-deaths-antibiotic-resistant-infections",
+   "route": "plain client",
+   "says": "more than 39 million 2025-2050",
+   "status": "found",
+   "passage": "The Lancet: More than 39 million deaths from antibiotic-resistant infections estimated between now and 2050, suggests first global analysis |",
+   "note": ""
+  },
+  {
+   "id": "6a",
+   "cand": 6,
+   "url": "https://www.uu.se/en/press/press-releases/2026/2026-06-09-ucdp-record-number-of-conflicts-between-states",
+   "route": "plain client",
+   "says": "eight interstate conflicts in 2025, double the year before, highest since 1946",
+   "status": "found",
+   "passage": ". In 2025, the number of interstate conflicts doubled for the second year in a row, from two in 2023 to eight in 2025. This is the highest figure since UCDP began its data collection in 1946. The conflicts include the w",
+   "note": ""
+  },
+  {
+   "id": "6b",
+   "cand": 6,
+   "url": "https://www.uu.se/en/press/press-releases/2026/2026-06-09-ucdp-record-number-of-conflicts-between-states",
+   "route": "plain client",
+   "says": "one-sided violence about 76,500 killed, highest since 1994",
+   "status": "found",
+   "passage": "nce reached the highest level for more than 30 years,” Pettersson explains. UCDP registered a total of around 76,500 deaths from one-sided violence in 2025, an increase of more than 400 per cent compared with the previous year",
+   "note": ""
+  },
+  {
+   "id": "6c",
+   "cand": 6,
+   "url": "https://www.uu.se/en/press/press-releases/2026/2026-06-09-ucdp-record-number-of-conflicts-between-states",
+   "route": "plain client",
+   "says": "Russia-Ukraine at least 94,700 deaths",
+   "status": "found",
+   "passage": "argeting civilians, especially in Sudan,” says Therese Pettersson, Senior Analyst and project leader at UCDP. 94,700 dead in war between Russia and Ukraine The war between Russia and Ukraine continued to be the world’s deadlie",
+   "note": ""
+  },
+  {
+   "id": "6d",
+   "cand": 6,
+   "url": "https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025",
+   "route": "plain client",
+   "says": "military spending +2.9% real",
+   "status": "found",
+   "passage": "DOWNLOAD PDF summary World military expenditure rose by 2.9 per cent in real terms to reach $2887 billion in 2025, which was the 11th consecutive year of growth. Global",
+   "note": ""
+  },
+  {
+   "id": "6e",
+   "cand": 6,
+   "url": "https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025",
+   "route": "plain client",
+   "says": "$2,887 billion in 2025",
+   "status": "found",
+   "passage": "summary World military expenditure rose by 2.9 per cent in real terms to reach $2887 billion in 2025, which was the 11th consecutive year of growth. Global spending has gone up by 41 per cent ov",
+   "note": ""
+  },
+  {
+   "id": "6f",
+   "cand": 6,
+   "url": "https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025",
+   "route": "plain client",
+   "says": "eleventh year of growth",
+   "status": "found",
+   "passage": "World military expenditure rose by 2.9 per cent in real terms to reach $2887 billion in 2025, which was the 11th consecutive year of growth. Global spending has gone up by 41 per cent over the past decade (2016–25). The ye",
+   "note": ""
+  },
+  {
+   "id": "6g",
+   "cand": 6,
+   "url": "https://www.weforum.org/press/2026/01/global-risks-report-2026-geopolitical-and-economic-risks-rise-in-new-age-of-competition/",
+   "route": "second route",
+   "says": "interstate conflict second among risks for 2026",
+   "status": "found",
+   "passage": "ublished today, finds geoeconomic confrontation emerges as the top risk for the year, followed by interstate conflict, extreme weather, societal polarization and misinformation and disinformation. Geoeconomic confrontation tops",
+   "note": "Second route: \"State-based armed conflict follows in 2nd position for 2026\"."
+  },
+  {
+   "id": "7a",
+   "cand": 7,
+   "url": "https://www.sipri.org/media/press-release/2026/increasing-focus-nuclear-weapons-amid-heightened-escalation-risks-new-sipri-yearbook-out-now",
+   "route": "plain client",
+   "says": "12,187 warheads January 2026",
+   "status": "found",
+   "passage": "clear-armed or nuclear-capable weapon systems during the year. Of the total global inventory of an estimated 12 187 warheads in January 2026, about 9745 were in military stockpiles for potential use (see the table below). An",
+   "note": ""
+  },
+  {
+   "id": "7b",
+   "cand": 7,
+   "url": "https://www.sipri.org/media/press-release/2026/increasing-focus-nuclear-weapons-amid-heightened-escalation-risks-new-sipri-yearbook-out-now",
+   "route": "plain client",
+   "says": "about 9,745 in military stockpiles",
+   "status": "found",
+   "passage": "ystems during the year. Of the total global inventory of an estimated 12 187 warheads in January 2026, about 9745 were in military stockpiles for potential use (see the table below). An estimated 4012 of those warheads were",
+   "note": ""
+  },
+  {
+   "id": "7c",
+   "cand": 7,
+   "url": "https://www.sipri.org/media/press-release/2026/increasing-focus-nuclear-weapons-amid-heightened-escalation-risks-new-sipri-yearbook-out-now",
+   "route": "plain client",
+   "says": "4,012 deployed",
+   "status": "found",
+   "passage": "in January 2026, about 9745 were in military stockpiles for potential use (see the table below). An estimated 4012 of those warheads were deployed with missiles and aircraft and the rest were in central storage. Between 2100",
+   "note": ""
+  },
+  {
+   "id": "7d",
+   "cand": 7,
+   "url": "https://www.sipri.org/media/press-release/2026/increasing-focus-nuclear-weapons-amid-heightened-escalation-risks-new-sipri-yearbook-out-now",
+   "route": "plain client",
+   "says": "China around 620",
+   "status": "found",
+   "passage": "uture direction of US and Russian strategic nuclear force levels. SIPRI estimates that China now has around 620 nuclear warheads. China is expanding its nuclear arsenal faster than any other country and showcased several",
+   "note": ""
+  },
+  {
+   "id": "7e",
+   "cand": 7,
+   "url": "https://www.sipri.org/media/press-release/2026/increasing-focus-nuclear-weapons-amid-heightened-escalation-risks-new-sipri-yearbook-out-now",
+   "route": "plain client",
+   "says": "New START expired February 2026, no successor",
+   "status": "found",
+   "passage": "f the bilateral 2010 Treaty on Measures for the Further Reduction and Limitation of Strategic Offensive Arms (New START) in February this year, uncertainty is increasing about the future direction of US and Russian strategic nucl",
+   "note": ""
+  },
+  {
+   "id": "8a",
+   "cand": 8,
+   "url": "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+   "route": "plain client",
+   "says": "92 autocracies",
+   "status": "found",
+   "passage": "Countries Autocracies and Democracies y Nearly a quarter of the world’s nations are now on y The world has 92 autocracies and 87 democracies at the the list of autocratizers: 44 countries. end of 2025. y 44 autocrati",
+   "note": ""
+  },
+  {
+   "id": "8b",
+   "cand": 8,
+   "url": "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+   "route": "plain client",
+   "says": "87 democracies",
+   "status": "found",
+   "passage": "ies and Democracies y Nearly a quarter of the world’s nations are now on y The world has 92 autocracies and 87 democracies at the the list of autocratizers: 44 countries. end of 2025. y 44 autocratizers divide into 24",
+   "note": ""
+  },
+  {
+   "id": "8c",
+   "cand": 8,
+   "url": "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+   "route": "plain client",
+   "says": "74% of the world's people live in autocracies",
+   "status": "found",
+   "passage": "the the list of autocratizers: 44 countries. end of 2025. y 44 autocratizers divide into 24 stand-alone y 74% of the world population (6 billion) now live in autocracies. autocratizers and 20 Bell-turns. y Only 7% of",
+   "note": ""
+  },
+  {
+   "id": "8d",
+   "cand": 8,
+   "url": "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+   "route": "plain client",
+   "says": "6 billion people",
+   "status": "found",
+   "passage": "s: 44 countries. end of 2025. y 44 autocratizers divide into 24 stand-alone y 74% of the world population (6 billion) now live in autocracies. autocratizers and 20 Bell-turns. y Only 7% of the world population (0.6 billion)",
+   "note": ""
+  },
+  {
+   "id": "8e",
+   "cand": 8,
+   "url": "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+   "route": "plain client",
+   "says": "against 50% in 2005",
+   "status": "found",
+   "passage": "t Zambia illustrates how fragile U-turns can be. 5. I\u0007 n Focus: Autocratization 2005: 2025: in the USA\u0007 50% 74% y Under Trump’s presidency democracy in the USA SHARE OF WORLD POPULATION LIVING IN DEMOCRATIZING COUNTR",
+   "note": "Text layer ambiguous; the rendered page 5 labels 2005: 50 %, 2025: 74 % \"Share of world population living in autocracies\"."
+  },
+  {
+   "id": "8f",
+   "cand": 8,
+   "url": "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+   "route": "plain client",
+   "says": "44 countries autocratizing",
+   "status": "found",
+   "passage": "deminstitute linkedin.com/vdeminstitute Commentary on the Democracy Report 42 Regimes of the World 1975–2025 44 LDI Scores 2015/2025 46 Democracy Rankings and Scores 2025 48 instagram.com/vdeminstitute/ youtube.com/@vde",
+   "note": ""
+  },
+  {
+   "id": "8g",
+   "cand": 8,
+   "url": "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+   "route": "plain client",
+   "says": "18 democratizing",
+   "status": "found",
+   "passage": "S DEMOCRATIZING DETERIORATING DETERIORATING 2005 27 2005 7 2005 11 COUNTRIES COUNTRIES COUNTRIES 2025 18 2025 44 2025 22 COUNTRIES COUNTRIES COUNTRIES NUMBER OF COUNTRIES FREEDOM OF EXPRESSION QUALITY OF ELECT",
+   "note": ""
+  },
+  {
+   "id": "8h",
+   "cand": 8,
+   "url": "https://freedomhouse.org/article/new-report-global-freedom-declined-20th-consecutive-year-2025",
+   "route": "plain client",
+   "says": "20th consecutive year of decline",
+   "status": "found",
+   "passage": "NEW REPORT: Global Freedom Declined for 20th Consecutive Year in 2025 | Freedom House",
+   "note": ""
+  },
+  {
+   "id": "8i",
+   "cand": 8,
+   "url": "https://freedomhouse.org/article/new-report-global-freedom-declined-20th-consecutive-year-2025",
+   "route": "plain client",
+   "says": "54 countries down",
+   "status": "found",
+   "passage": "ed today by Freedom House. The report, Freedom in the World 2026: The Growing Shadow of Autocracy, found that 54 countries experienced deterioration in their political rights and civil liberties, while only 35 registered i",
+   "note": ""
+  },
+  {
+   "id": "8j",
+   "cand": 8,
+   "url": "https://freedomhouse.org/article/new-report-global-freedom-declined-20th-consecutive-year-2025",
+   "route": "plain client",
+   "says": "35 up",
+   "status": "found",
+   "passage": ", found that 54 countries experienced deterioration in their political rights and civil liberties, while only 35 registered improvements. Today just 21 percent of the world’s people live in countries rated Free, down from",
+   "note": ""
+  },
+  {
+   "id": "9a",
+   "cand": 9,
+   "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+   "route": "plain client",
+   "says": "trust in news 37%, lowest since 2015",
+   "status": "found",
+   "passage": ", resulting in a drop overall to the lowest level we have recorded since we started to measure trust in 2015 (37%). Trust fell by 5pp or more in 19 markets. In the United States, only a quarter (25%) of people now say they",
+   "note": ""
+  },
+  {
+   "id": "9b",
+   "cand": 9,
+   "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+   "route": "plain client",
+   "says": "48 markets",
+   "status": "found",
+   "passage": "gh it has been the case in some individual countries for several years, at the global level (averaging across 48 markets) social media and video networks are for the first time the single most widely used way of accessing",
+   "note": ""
+  },
+  {
+   "id": "9c",
+   "cand": 9,
+   "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+   "route": "plain client",
+   "says": "10% use AI chatbots for news, up from 7%",
+   "status": "found",
+   "passage": "nsumption The use of AI chatbots for news is growing quickly but not as quickly as AI use for other purposes: 10% of people use AI chatbots for news, up from 7% last year. Usage is predominantly by those most interested in",
+   "note": ""
+  },
+  {
+   "id": "9d",
+   "cand": 9,
+   "url": "https://www.weforum.org/press/2026/01/global-risks-report-2026-geopolitical-and-economic-risks-rise-in-new-age-of-competition/",
+   "route": "second route",
+   "says": "misinformation and disinformation second on two-year horizon",
+   "status": "found",
+   "passage": "es as the top risk for the year, followed by interstate conflict, extreme weather, societal polarization and misinformation and disinformation. Geoeconomic confrontation tops the near-term rankings, with 18% of respondents viewing it",
+   "note": "Second route."
+  },
+  {
+   "id": "10a",
+   "cand": 10,
+   "url": "https://epoch.ai/data-insights/hyperscalers-control-most-compute",
+   "route": "plain client",
+   "says": "five hyperscalers held 75.8% of AI compute end of March 2026",
+   "status": "found",
+   "passage": "Meta 2.3e+6 11.3 2025 Q4 2025-12-31 Oracle 1.1e+6 5.6 2026 Q1 2026-03-31 Top 5 hyperscalers combined 1.3e+7 75.8 2026 Q1 2026-03-31 Google 5.5e+6 31.0 2026 Q1 2026-03-31 Microsoft 3.3e+6 18.9 2026 Q1 2026-03-31 Meta 2.0",
+   "note": "In the page's data table only, column \"Share of global AI compute\", row \"Top 5 hyperscalers combined\", 2026 Q1. The headline reads \"over two-thirds\"."
+  },
+  {
+   "id": "10b",
+   "cand": 10,
+   "url": "https://epoch.ai/data-insights/hyperscalers-control-most-compute",
+   "route": "plain client",
+   "says": "up from 69.7% a year earlier",
+   "status": "found",
+   "passage": "azon 7.6e+5 11.5 2024 Q4 2024-12-31 Oracle 3.1e+5 4.7 2025 Q1 2025-03-31 Top 5 hyperscalers combined 6.4e+6 69.7 2025 Q1 2025-03-31 Google 2.0e+6 21.9 2025 Q1 2025-03-31 Microsoft 1.7e+6 18.5 2025 Q1 2025-03-31 Amazon 1",
+   "note": "Same table, 2025 Q1."
+  },
+  {
+   "id": "10c",
+   "cand": 10,
+   "url": "https://www.weforum.org/press/2026/01/global-risks-report-2026-geopolitical-and-economic-risks-rise-in-new-age-of-competition/",
+   "route": "second route",
+   "says": "adverse AI outcomes 30th on two-year, 5th on ten-year",
+   "status": "found",
+   "passage": "outlook while cyber insecurity ranks 6th. Adverse outcomes of AI show the starkest trajectory, climbing from 30th in the two-year horizon to 5th in the 10-year horizon, reflecting anxiety about implications for labour marke",
+   "note": "Second route."
+  },
+  {
+   "id": "11a",
+   "cand": 11,
+   "url": "https://wir2026.wid.world/insight/executive-summary/",
+   "route": "plain client",
+   "says": "top 10% own three-quarters of wealth",
+   "status": "found",
+   "passage": "pulation captures less than 10% of the total global income. Wealth is even more concentrated: the top 10% own three-quarters of global wealth, while the bottom half holds only 2%. Share",
+   "note": ""
+  },
+  {
+   "id": "11b",
+   "cand": 11,
+   "url": "https://wir2026.wid.world/insight/executive-summary/",
+   "route": "plain client",
+   "says": "bottom half 2%",
+   "status": "found",
+   "passage": "women. When unpaid domestic and care labor is included, the gap widens sharply. On average, women earn only 32% of what men earn per working hour, accounting for both paid and unpaid activities; compared to 61% when not a",
+   "note": ""
+  },
+  {
+   "id": "11c",
+   "cand": 11,
+   "url": "https://wir2026.wid.world/insight/executive-summary/",
+   "route": "plain client",
+   "says": "top 0.001% from almost 4% in 1995 to over 6%",
+   "status": "found",
+   "passage": "e picture becomes even more extreme when we move beyond the top 10%. Figure 2 illustrates that the wealthiest 0.001% alone, fewer than 60,000 multi-millionaires, control today three times more wealth than half of humanity com",
+   "note": ""
+  },
+  {
+   "id": "12a",
+   "cand": 12,
+   "url": "https://blogs.worldbank.org/en/opendata/september-2026-global-poverty-update-from-the-world-bank--one-in",
+   "route": "plain client",
+   "says": "about 824 million below $3.00 a day in 2024",
+   "status": "found",
+   "passage": "The update at a glance More than 824 million people, about one in ten worldwide, were living in extreme poverty in 2024. The World Bank updated th",
+   "note": "Page: \"More than 824 million\"; 824.3 million in the revision paragraph; line $3.00 (2021 PPP)."
+  },
+  {
+   "id": "12b",
+   "cand": 12,
+   "url": "https://blogs.worldbank.org/en/opendata/september-2026-global-poverty-update-from-the-world-bank--one-in",
+   "route": "plain client",
+   "says": "rate nowcast 9.8% for 2026",
+   "status": "found",
+   "passage": "g power parity terms. Global extreme poverty is projected to decline marginally from 10.1 percent in 2024 to 9.8 percent in 2026. The 2024 estimate is for the latest year with sufficient data coverage. The 2025 and 2026 no",
+   "note": ""
+  },
+  {
+   "id": "12c",
+   "cand": 12,
+   "url": "https://unctad.org/publication/world-of-debt",
+   "route": "plain client",
+   "says": "3.7 billion people in countries spending more on interest than health or education",
+   "status": "found",
+   "passage": "ir public debt 51 developing countries Spend more on interest payments than on either education or health 3.7 billion people Live in countries that spend more on interest payments than on either education or health, 1.2 billion",
+   "note": ""
+  },
+  {
+   "id": "12d",
+   "cand": 12,
+   "url": "https://unctad.org/publication/world-of-debt",
+   "route": "plain client",
+   "says": "51 developing countries",
+   "status": "found",
+   "passage": "nual interest savings if developing countries paid what developed countries do to service their public debt 51 developing countries Spend more on interest payments than on either education or health 3.7 billion people",
+   "note": "The page gives 51 countries and 3.7 billion people as two key statistics side by side; the dossier joins them, which the page supports."
+  },
+  {
+   "id": "12e",
+   "cand": 12,
+   "url": "https://unctad.org/publication/world-of-debt",
+   "route": "plain client",
+   "says": "1.2 billion more than in 2010",
+   "status": "found",
+   "passage": "3.7 billion people Live in countries that spend more on interest payments than on either education or health, 1.2 billion more than in 2010 Footer menu DELEGATES",
+   "note": ""
+  },
+  {
+   "id": "12f",
+   "cand": 12,
+   "url": "https://unctad.org/publication/world-of-debt",
+   "route": "plain client",
+   "says": "net interest $995 billion in 2025",
+   "status": "found",
+   "passage": "Key statistics $ 35 trillion Developing countries’ public debt in 2025 $ 995 billion Developing countries’ net interest payments on public debt in 2025 8.1% Median share of government",
+   "note": ""
+  }
+ ],
+ "pages": {
+  "https://climate.copernicus.eu/surface-air-temperature-october-2026": "plain client",
+  "https://www.noc.ac.uk/news/global-tipping-points-report-2025-reveals-first-earth-system-tipping-point-reached": "plain client",
+  "https://www.pik-potsdam.de/en/news/latest-news/planetary-health-check-2026-finds-mounting-pressures-across-earth2019s-life-support-systems": "plain client",
+  "https://www.weforum.org/press/2026/01/global-risks-report-2026-geopolitical-and-economic-risks-rise-in-new-age-of-competition/": "second route",
+  "https://iucn.org/press-release/202607/desert-frog-deep-sea-molluscs-remarkable-species-risk-iucn-red-list": "plain client",
+  "https://www.fao.org/newsroom/detail/sofi-2026--hunger-not-inevitable--fao-says-as-global-hunger-report-shows-progress/en": "plain client",
+  "https://www.healthdata.org/news-events/newsroom/news-releases/lancet-more-39-million-deaths-antibiotic-resistant-infections": "plain client",
+  "https://www.uu.se/en/press/press-releases/2026/2026-06-09-ucdp-record-number-of-conflicts-between-states": "plain client",
+  "https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025": "plain client",
+  "https://www.sipri.org/media/press-release/2026/increasing-focus-nuclear-weapons-amid-heightened-escalation-risks-new-sipri-yearbook-out-now": "plain client",
+  "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf": "plain client",
+  "https://freedomhouse.org/article/new-report-global-freedom-declined-20th-consecutive-year-2025": "plain client",
+  "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary": "plain client",
+  "https://epoch.ai/data-insights/hyperscalers-control-most-compute": "plain client",
+  "https://wir2026.wid.world/insight/executive-summary/": "plain client",
+  "https://blogs.worldbank.org/en/opendata/september-2026-global-poverty-update-from-the-world-bank--one-in": "plain client",
+  "https://unctad.org/publication/world-of-debt": "plain client"
+ },
+ "candidates": [
+  {
+   "n": 1,
+   "name": "Living past 1.5°C",
+   "W": 5,
+   "O": 4,
+   "C": 4,
+   "R": 5,
+   "sum": 18,
+   "named_none": "",
+   "datasets": [
+    {
+     "name": "ERA5 (Copernicus Climate Data Store)",
+     "class": "gated",
+     "url": "https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-single-levels-monthly-means/execution",
+     "status": "401",
+     "second": ""
+    },
+    {
+     "name": "EM-DAT",
+     "class": "portal",
+     "url": "https://public.emdat.be/",
+     "status": "200",
+     "second": "the public platform's front page (a sign-in application)"
+    }
+   ],
+   "delivering": 0,
+   "claims": 7,
+   "found": 7
+  },
+  {
+   "n": 2,
+   "name": "Tipping points",
+   "W": 5,
+   "O": 5,
+   "C": 5,
+   "R": 4,
+   "sum": 19,
+   "named_none": "open model and observation data",
+   "datasets": [],
+   "delivering": 0,
+   "claims": 6,
+   "found": 6
+  },
+  {
+   "n": 3,
+   "name": "The sixth extinction",
+   "W": 4,
+   "O": 4,
+   "C": 5,
+   "R": 4,
+   "sum": 17,
+   "named_none": "",
+   "datasets": [
+    {
+     "name": "IUCN Red List API v4",
+     "class": "refused",
+     "url": "https://api.iucnredlist.org/api/v4/information/red_list_version",
+     "status": "403",
+     "second": ""
+    },
+    {
+     "name": "GBIF occurrences",
+     "class": "delivers",
+     "url": "https://api.gbif.org/v1/occurrence/search?limit=1",
+     "status": "200",
+     "second": ""
+    },
+    {
+     "name": "Living Planet Index data",
+     "class": "portal",
+     "url": "https://www.livingplanetindex.org/data_portal",
+     "status": "200",
+     "second": ""
+    }
+   ],
+   "delivering": 1,
+   "claims": 3,
+   "found": 3
+  },
+  {
+   "n": 4,
+   "name": "Feeding everyone within the boundaries",
+   "W": 5,
+   "O": 4,
+   "C": 3,
+   "R": 5,
+   "sum": 17,
+   "named_none": "",
+   "datasets": [
+    {
+     "name": "FAOSTAT (incl. SOFI food-security indicators)",
+     "class": "delivers",
+     "url": "https://bulks-faostat.fao.org/production/Food_Security_Data_E_All_Data.zip",
+     "status": "206",
+     "second": ""
+    },
+    {
+     "name": "GRFC (Global Report on Food Crises)",
+     "class": "portal",
+     "url": "https://www.fsinplatform.org/report/global-report-food-crises-2025/",
+     "status": "200",
+     "second": ""
+    }
+   ],
+   "delivering": 1,
+   "claims": 4,
+   "found": 4
+  },
+  {
+   "n": 5,
+   "name": "The end of antibiotics",
+   "W": 4,
+   "O": 3,
+   "C": 3,
+   "R": 4,
+   "sum": 14,
+   "named_none": "",
+   "datasets": [
+    {
+     "name": "GRAM (IHME MICROBE)",
+     "class": "portal",
+     "url": "https://vizhub.healthdata.org/microbe/",
+     "status": "200",
+     "second": ""
+    },
+    {
+     "name": "WHO GLASS via GHO OData",
+     "class": "delivers",
+     "url": "https://ghoapi.azureedge.net/api/Indicator?$filter=contains(IndicatorName,'antimicrobial')",
+     "status": "200",
+     "second": ""
+    }
+   ],
+   "delivering": 1,
+   "claims": 3,
+   "found": 3
+  },
+  {
+   "n": 6,
+   "name": "The return of war between states",
+   "W": 5,
+   "O": 4,
+   "C": 3,
+   "R": 4,
+   "sum": 16,
+   "named_none": "",
+   "datasets": [
+    {
+     "name": "UCDP API",
+     "class": "gated",
+     "url": "https://ucdpapi.pcr.uu.se/api/ucdpprioconflict/25.1?pagesize=1",
+     "status": "401",
+     "second": ""
+    },
+    {
+     "name": "ACLED API",
+     "class": "gated",
+     "url": "https://acleddata.com/api/acled/read?limit=1",
+     "status": "403",
+     "second": ""
+    },
+    {
+     "name": "SIPRI Military Expenditure Database",
+     "class": "delivers",
+     "url": "https://www.sipri.org/sites/default/files/SIPRI-Milex-data-1949-2025_v1.2.xlsx",
+     "status": "206",
+     "second": "linked from sipri.org/databases/milex"
+    }
+   ],
+   "delivering": 1,
+   "claims": 7,
+   "found": 7
+  },
+  {
+   "n": 7,
+   "name": "Nuclear weapons without arms control",
+   "W": 5,
+   "O": 4,
+   "C": 4,
+   "R": 3,
+   "sum": 16,
+   "named_none": "estimates from public sources; few datasets",
+   "datasets": [],
+   "delivering": 0,
+   "claims": 5,
+   "found": 5
+  },
+  {
+   "n": 8,
+   "name": "The autocratic majority",
+   "W": 4,
+   "O": 4,
+   "C": 4,
+   "R": 5,
+   "sum": 17,
+   "named_none": "",
+   "datasets": [
+    {
+     "name": "V-Dem dataset",
+     "class": "gated",
+     "url": "https://v-dem.net/data/the-v-dem-dataset/country-date-v-dem-v16/",
+     "status": "200",
+     "second": "download page; carries a form asking e-mail, gender and acceptance of terms before a file is given"
+    }
+   ],
+   "delivering": 0,
+   "claims": 10,
+   "found": 10
+  },
+  {
+   "n": 9,
+   "name": "Shared knowledge when machines answer",
+   "W": 3,
+   "O": 5,
+   "C": 5,
+   "R": 4,
+   "sum": 17,
+   "named_none": "",
+   "datasets": [
+    {
+     "name": "Digital News Report data",
+     "class": "portal",
+     "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026",
+     "status": "200",
+     "second": ""
+    },
+    {
+     "name": "RSF World Press Freedom Index",
+     "class": "delivers",
+     "url": "https://rsf.org/sites/default/files/import_classement/2026.csv",
+     "status": "200",
+     "second": "linked from rsf.org/en/index"
+    }
+   ],
+   "delivering": 1,
+   "claims": 4,
+   "found": 4
+  },
+  {
+   "n": 10,
+   "name": "Who controls advanced AI",
+   "W": 4,
+   "O": 5,
+   "C": 5,
+   "R": 4,
+   "sum": 18,
+   "named_none": "",
+   "datasets": [
+    {
+     "name": "Epoch AI data (hyperscaler share CSV)",
+     "class": "delivers",
+     "url": "https://epoch.ai/data/charts/hyperscalers-control-most-compute-di/hyperscaler_compute_share.csv",
+     "status": "200",
+     "second": ""
+    },
+    {
+     "name": "AI Incident Database",
+     "class": "delivers",
+     "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261102.xlsx",
+     "status": "206",
+     "second": "newest export linked from the snapshots page"
+    }
+   ],
+   "delivering": 2,
+   "claims": 3,
+   "found": 3
+  },
+  {
+   "n": 11,
+   "name": "Wealth that becomes power",
+   "W": 3,
+   "O": 4,
+   "C": 4,
+   "R": 5,
+   "sum": 16,
+   "named_none": "",
+   "datasets": [
+    {
+     "name": "WID bulk download",
+     "class": "delivers",
+     "url": "https://wid.world/bulk_download/wid_all_data.zip",
+     "status": "206",
+     "second": ""
+    }
+   ],
+   "delivering": 1,
+   "claims": 3,
+   "found": 3
+  },
+  {
+   "n": 12,
+   "name": "Poverty under the weight of debt",
+   "W": 4,
+   "O": 3,
+   "C": 3,
+   "R": 5,
+   "sum": 15,
+   "named_none": "",
+   "datasets": [
+    {
+     "name": "World Bank PIP API",
+     "class": "delivers",
+     "url": "https://api.worldbank.org/pip/v1/pip-grp?country=WLD&year=2022&povline=3&group_by=wb&format=json",
+     "status": "200",
+     "second": "documented parameters; the first form returned 500"
+    },
+    {
+     "name": "UNCTADstat",
+     "class": "portal",
+     "url": "https://unctadstat.unctad.org/datacentre/",
+     "status": "200",
+     "second": ""
+    },
+    {
+     "name": "IMF DataMapper API",
+     "class": "refused",
+     "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP?periods=2024",
+     "status": "403",
+     "second": ""
+    }
+   ],
+   "delivering": 1,
+   "claims": 6,
+   "found": 6
+  }
+ ],
+ "probes": [
+  {
+   "cand": 1,
+   "name": "ERA5 (Copernicus Climate Data Store)",
+   "url": "https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-single-levels-monthly-means/execution",
+   "method": "POST",
+   "status": "401",
+   "bytes": 281,
+   "type": "application/json",
+   "class": "gated",
+   "head": "{\"type\":\"permission denied\",\"title\":\"permission denied\",\"status\":401,\"detail\":\"authentication requir",
+   "curl_error": ""
+  },
+  {
+   "cand": 1,
+   "name": "EM-DAT",
+   "url": "https://public.emdat.be/api/",
+   "status": "404",
+   "bytes": 10134,
+   "type": "text/html; charset=utf-8",
+   "class": "error",
+   "head": "<!DOCTYPE html><html><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"w",
+   "curl_error": ""
+  },
+  {
+   "cand": 3,
+   "name": "IUCN Red List API v4",
+   "url": "https://api.iucnredlist.org/api/v4/information/red_list_version",
+   "status": "403",
+   "bytes": 21,
+   "type": "application/json",
+   "class": "refused",
+   "head": "{\"error\":\"Forbidden\"}",
+   "curl_error": ""
+  },
+  {
+   "cand": 3,
+   "name": "GBIF occurrences",
+   "url": "https://api.gbif.org/v1/occurrence/search?limit=1",
+   "status": "200",
+   "bytes": 5046,
+   "type": "application/json",
+   "class": "delivers",
+   "head": "{\"offset\":0,\"limit\":1,\"endOfRecords\":false,\"count\":3890495026,\"results\":[{\"key\":182368733,\"datasetKe",
+   "curl_error": ""
+  },
+  {
+   "cand": 3,
+   "name": "Living Planet Index data",
+   "url": "https://www.livingplanetindex.org/data_portal",
+   "status": "200",
+   "bytes": 13791,
+   "type": "text/html; charset=UTF-8",
+   "class": "portal",
+   "head": "<!DOCTYPE html>\n<html>\n<head><base href='/'>\n  <meta http-equiv=\"Content-Type\" content=\"text/html; c",
+   "curl_error": ""
+  },
+  {
+   "cand": 4,
+   "name": "FAOSTAT (incl. SOFI food-security indicators)",
+   "url": "https://bulks-faostat.fao.org/production/Food_Security_Data_E_All_Data.zip",
+   "method": "RANGE",
+   "status": "206",
+   "bytes": 4096,
+   "type": "application/x-zip-compressed",
+   "class": "delivers",
+   "head": "PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0011��\\�#=@?�\n\u0000�Չ\u0000!\u0000\u0000\u0000Food_Security_Data_E_All_Data.csv�][o�4\u0018�G�?D\u0013\b�`$>�\u000e�\u0006\u0001AH��IpY�\f\n];ڎ",
+   "curl_error": ""
+  },
+  {
+   "cand": 4,
+   "name": "GRFC (Global Report on Food Crises)",
+   "url": "https://www.fsinplatform.org/report/global-report-food-crises-2025/",
+   "status": "200",
+   "bytes": 98814,
+   "type": "text/html; charset=UTF-8",
+   "class": "portal",
+   "head": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\">\n<head>\n  <meta charset=\"u",
+   "curl_error": ""
+  },
+  {
+   "cand": 5,
+   "name": "GRAM (IHME MICROBE)",
+   "url": "https://vizhub.healthdata.org/microbe/",
+   "status": "200",
+   "bytes": 5549,
+   "type": "text/html; charset=UTF-8",
+   "class": "portal",
+   "head": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n      <meta charset=\"utf-8\" />\n\n<meta name=\"viewport\" conte",
+   "curl_error": ""
+  },
+  {
+   "cand": 5,
+   "name": "WHO GLASS via GHO OData",
+   "url": "https://ghoapi.azureedge.net/api/Indicator?$filter=contains(IndicatorName,'antimicrobial')",
+   "status": "200",
+   "bytes": 664,
+   "type": "application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8",
+   "class": "delivers",
+   "head": "{\"@odata.context\":\"https://ghoapi.azureedge.net/api/$metadata#Indicator\",\"value\":[{\"IndicatorCode\":\"",
+   "curl_error": ""
+  },
+  {
+   "cand": 6,
+   "name": "UCDP API",
+   "url": "https://ucdpapi.pcr.uu.se/api/ucdpprioconflict/25.1?pagesize=1",
+   "status": "401",
+   "bytes": 65,
+   "type": "text/plain; charset=utf-8",
+   "class": "gated",
+   "head": "API token required. Add header: x-ucdp-access-token: <your-token>",
+   "curl_error": ""
+  },
+  {
+   "cand": 6,
+   "name": "ACLED API",
+   "url": "https://acleddata.com/api/acled/read?limit=1",
+   "status": "403",
+   "bytes": 53,
+   "type": "application/json",
+   "class": "gated",
+   "head": "{\"message\":\"Access denied: authentication required.\"}",
+   "curl_error": ""
+  },
+  {
+   "cand": 6,
+   "name": "SIPRI Military Expenditure Database",
+   "url": "https://milex.sipri.org/sipri",
+   "status": "000",
+   "bytes": 0,
+   "type": "",
+   "class": "error",
+   "head": "",
+   "curl_error": "curl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslce"
+  },
+  {
+   "cand": 8,
+   "name": "V-Dem dataset",
+   "url": "https://v-dem.net/data/the-v-dem-dataset/",
+   "status": "200",
+   "bytes": 42405,
+   "type": "text/html; charset=utf-8",
+   "class": "portal",
+   "head": "\n\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"en-us\" class=\"no-js\">\n<head>\n  \n  <meta charset=\"UTF-8\">\n  <meta n",
+   "curl_error": ""
+  },
+  {
+   "cand": 9,
+   "name": "Digital News Report data",
+   "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026",
+   "status": "200",
+   "bytes": 111745,
+   "type": "text/html; charset=UTF-8",
+   "class": "portal",
+   "head": "\n<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\">\n\t<head>\n\t\t<meta charset=",
+   "curl_error": ""
+  },
+  {
+   "cand": 9,
+   "name": "RSF World Press Freedom Index",
+   "url": "https://rsf.org/en/index",
+   "status": "200",
+   "bytes": 1189842,
+   "type": "text/html; charset=UTF-8",
+   "class": "portal",
+   "head": "\n\n<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\">\n<head>\n          <scrip",
+   "curl_error": ""
+  },
+  {
+   "cand": 10,
+   "name": "Epoch AI data (hyperscaler share CSV)",
+   "url": "https://epoch.ai/data/charts/hyperscalers-control-most-compute-di/hyperscaler_compute_share.csv",
+   "status": "200",
+   "bytes": 2394,
+   "type": "text/csv",
+   "class": "delivers",
+   "head": "Quarter,End date,Owner,H100-equivalents,Share of global AI compute\r\n2024 Q1,2024-03-31,Top 5 hypersc",
+   "curl_error": ""
+  },
+  {
+   "cand": 10,
+   "name": "AI Incident Database",
+   "url": "https://incidentdatabase.ai/research/snapshots/",
+   "status": "200",
+   "bytes": 143081,
+   "type": "text/html; charset=UTF-8",
+   "class": "portal",
+   "head": "<!DOCTYPE html><html lang=\"en-US\"><head><meta charSet=\"utf-8\"/><meta http-equiv=\"x-ua-compatible\" co",
+   "curl_error": ""
+  },
+  {
+   "cand": 11,
+   "name": "WID bulk download",
+   "url": "https://wid.world/bulk_download/wid_all_data.zip",
+   "method": "RANGE",
+   "status": "206",
+   "bytes": 4096,
+   "type": "application/zip",
+   "class": "delivers",
+   "head": "PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u00004�f]��E\bJ\u0010\u0000\u0000�<\u0000\u0000\u0011\u0000\u001c\u0000WID_countries.csvUT\t\u0000\u0003�\u0007�j�\t�jux\u000b\u0000\u0001\u0004�\u0003\u0000\u0000\u0004�\u0003\u0000\u0000�\u001b�r�8���B���ys�+O^�%�l�",
+   "curl_error": ""
+  },
+  {
+   "cand": 12,
+   "name": "World Bank PIP API",
+   "url": "https://api.worldbank.org/pip/v1/pip?country=WLD&year=2022&povline=3",
+   "status": "500",
+   "bytes": 138,
+   "type": "application/json",
+   "class": "error",
+   "head": "{\"error\":[\"Error in /api/v1/pip\"],\"message\":[\"Internal Server Error\"],\"request_id\":[\"1794113030599-4",
+   "curl_error": ""
+  },
+  {
+   "cand": 12,
+   "name": "UNCTADstat",
+   "url": "https://unctadstat.unctad.org/datacentre/",
+   "status": "200",
+   "bytes": 43298,
+   "type": "text/html",
+   "class": "portal",
+   "head": "<!DOCTYPE html>\r\n<html lang=\"en\" data-beasties-container>\r\n  <head><link rel=\"preconnect\" href=\"http",
+   "curl_error": ""
+  },
+  {
+   "cand": 12,
+   "name": "IMF DataMapper API",
+   "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP?periods=2024",
+   "status": "403",
+   "bytes": 428,
+   "type": "text/html",
+   "class": "refused",
+   "head": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have perm",
+   "curl_error": ""
+  },
+  {
+   "cand": 6,
+   "name": "SIPRI Military Expenditure Database",
+   "url": "https://www.sipri.org/sites/default/files/SIPRI-Milex-data-1949-2025_v1.2.xlsx",
+   "method": "RANGE",
+   "second": "linked from sipri.org/databases/milex",
+   "status": "206",
+   "bytes": 4096,
+   "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+   "class": "delivers",
+   "head": "PK\u0003\u0004\u0014\u0000\u0006\u0000\b\u0000\u0000\u0000!\u0000��٦�\u0001\u0000\u0000�\u000b\u0000\u0000\u0013\u0000\b\u0002[Content_Types].xml �\u0004\u0002(�\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+   "curl_error": ""
+  },
+  {
+   "cand": 8,
+   "name": "V-Dem dataset",
+   "url": "https://v-dem.net/data/the-v-dem-dataset/country-date-v-dem-v16/",
+   "second": "download page; carries a form asking e-mail, gender and acceptance of terms before a file is given",
+   "manual_class": "gated",
+   "status": "200",
+   "bytes": 30474,
+   "type": "text/html; charset=utf-8",
+   "class": "gated",
+   "head": "\n\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"en-us\" class=\"no-js\">\n<head>\n  \n  <meta charset=\"UTF-8\">\n  <meta n",
+   "curl_error": ""
+  },
+  {
+   "cand": 9,
+   "name": "RSF World Press Freedom Index",
+   "url": "https://rsf.org/sites/default/files/import_classement/2026.csv",
+   "second": "linked from rsf.org/en/index",
+   "status": "200",
+   "bytes": 26930,
+   "type": "text/csv",
+   "class": "delivers",
+   "head": "ISO;Score 2026;Rank;Political Context;Rank_Pol;Economic Context;Rank_Eco;Legal Context;Rank_Leg;Soci",
+   "curl_error": ""
+  },
+  {
+   "cand": 10,
+   "name": "AI Incident Database",
+   "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261102.xlsx",
+   "method": "RANGE",
+   "second": "newest export linked from the snapshots page",
+   "status": "206",
+   "bytes": 4096,
+   "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+   "class": "delivers",
+   "head": "PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000�Pb]F�MH�\u0000\u0000\u0000�\u0000\u0000\u0000\u0010\u0000\u0000\u0000docProps/app.xmlM�M\u000b�0\f\u0006�Rv���\u001e�\u000eD=����.u��)m����\u0004?nyy�\u001b�.�\"&��E�.�m3",
+   "curl_error": ""
+  },
+  {
+   "cand": 12,
+   "name": "World Bank PIP API",
+   "url": "https://api.worldbank.org/pip/v1/pip-grp?country=WLD&year=2022&povline=3&group_by=wb&format=json",
+   "second": "documented parameters; the first form returned 500",
+   "status": "200",
+   "bytes": 284,
+   "type": "application/json",
+   "class": "delivers",
+   "head": "[{\"region_code\":\"WLD\",\"reporting_year\":2022,\"poverty_line\":3,\"reporting_pop\":7989545217,\"headcount\":",
+   "curl_error": ""
+  },
+  {
+   "cand": 1,
+   "name": "EM-DAT",
+   "url": "https://public.emdat.be/",
+   "second": "the public platform's front page (a sign-in application)",
+   "status": "200",
+   "bytes": 14226,
+   "type": "text/html; charset=utf-8",
+   "class": "portal",
+   "head": "<!DOCTYPE html><html><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"w",
+   "curl_error": ""
+  }
+ ],
+ "predictions": [
+  {
+   "id": "P49",
+   "text": "At least 85 % of claims found (pages that delivered)",
+   "value": "61 of 61",
+   "held": true
+  },
+  {
+   "id": "P50",
+   "text": "At most 3 claims found in another sense",
+   "value": "0",
+   "held": true
+  },
+  {
+   "id": "P51",
+   "text": "At least 3 linked pages refuse the plain client",
+   "value": "1 of 17",
+   "held": false
+  },
+  {
+   "id": "P52",
+   "text": "At least 4 candidates with no named dataset delivering",
+   "value": "4 (1, 2, 7, 8)",
+   "held": true
+  },
+  {
+   "id": "P53",
+   "text": "Spearman ρ(Reach, delivering) below 0.5",
+   "value": "-0.05",
+   "held": true
+  }
+ ],
+ "counts": {
+  "claims": 61,
+  "found": 61,
+  "pages": 17,
+  "datasets": 21,
+  "delivering": 9,
+  "rho": -0.047
+ }
+}
