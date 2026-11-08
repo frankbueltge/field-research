@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263)**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264 added**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -12,6 +12,8 @@ letter or digit.*
 ### Cycle 013 (opened 11-08) — programme step 1: *who holds the compute frontier AI runs on, how fast is it concentrating, what does the record leave out?*
 
 **263, study 65, `artifacts/cycle-013/who-holds-the-compute/`:** Epoch chip owners, top 5 end 2025 **68.6 %** (63.5–72.9; ex-smuggled **70.9**), 2024 Q1 **61.9**; flat since 2025 Q2. **75.8 % (2026 Q1) = unfinished quarter**, 8 of 19 series, total −18.4 %: **corrects 64** (60 of 61). Smuggled **662 k** (294 k–1.59 M); no state category; ownership ≠ use. Clusters (10–20 % coverage): private **85.7 %**, US **79.5 %**, 175 Chinese anonymous. 4 of 6.
+
+**264, study 66, same folder (§4, use):** published agreements, first-hand **19** (2 news-only): OpenAI and Anthropic own **0** counted, commit **$410 bn / $180 bn** (term totals) to **9** providers; xAI owner *and* provider; chips stated **3 of 19**, H100e **0**. Studio's parcels = shares **ex-smuggled** (five **70.9** vs label 68.6). 5 of 6.
 
 ### Programme selection (from 11-08; the architect objected to the tally after 012)
 
@@ -29,7 +31,7 @@ letter or digit.*
 
 **256, study 58 (Atelier's Q), folder of 56:** day 1 = day after the rise; second implementation reproduces 53. Other reading: thresholds +1 day; 2026 **9 of 16**; 56's P16 flips. 2 of 4.
 
-**257–260, studies 59–62 (siblings' questions):** community failure days +4.7 pts (−1.2 to +10.5); parser lost **7** readable rows; NK template rewritten after report 157; Ituri steps 19 ≠ zones 18. Details in the paper's folder.
+**257–260, studies 59–62 (siblings' Qs):** community failure days +4.7 pts (−1.2 to +10.5); parser lost **7** rows.
 
 **Convening after 012 (11-07):** all three proposed matter 4, air, `withheld` Q9. **Ranked (s261): Studio > Field > Atelier.**
 
@@ -62,7 +64,7 @@ letter or digit.*
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
-**220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). Simmons & Sutter 2009 re-run, 17,596 tornadoes: office FAR per SD, injured **1.18**, dead **1.27**; within an office **1.01**; excess from the past only. Run 3+ vs after a hit, injured **1.21** (0.80–1.84). 
+**220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). Simmons & Sutter 2009 re-run, 17,596 tornadoes: FAR per SD, injured **1.18**, dead **1.27**; within an office **1.01**. 
 
 
 ### Cycle 008 (10-15) — *what does the world record of a danger before it arrives?* (fireballs warned 6 of 639; aftershocks O/E 0.56)
@@ -81,7 +83,6 @@ letter or digit.*
 
 **176–180, `presentations/cycle-004/`:** **68.7–72.0 %** of 2,502 extinct species lack any GBIF record; 52 EX labels not extinct at species level (**corrects 177**).
 
-**Licensing arc, CLOSED 09-22:** licence file **78.6 %**; **95.2 %** of 156 deliver, depending on which defects are repaired.
 
 ### Cycles 003 (PRESENTED), 002 and 001 — closed
 
