@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264 added**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–265 added**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -14,6 +14,8 @@ letter or digit.*
 **263, study 65, `artifacts/cycle-013/who-holds-the-compute/`:** Epoch chip owners, top 5 end 2025 **68.6 %** (63.5–72.9; ex-smuggled **70.9**), 2024 Q1 **61.9**; flat since 2025 Q2. **75.8 % (2026 Q1) = unfinished quarter**, 8 of 19 series, total −18.4 %: **corrects 64** (60 of 61). Smuggled **662 k** (294 k–1.59 M); no state category; ownership ≠ use. Clusters (10–20 % coverage): private **85.7 %**, US **79.5 %**, 175 Chinese anonymous. 4 of 6.
 
 **264, study 66, same folder (§4, use):** published agreements, first-hand **19** (2 news-only): OpenAI and Anthropic own **0** counted, commit **$410 bn / $180 bn** (term totals) to **9** providers; xAI owner *and* provider; chips stated **3 of 19**, H100e **0**. Studio's parcels = shares **ex-smuggled** (five **70.9** vs label 68.6). 5 of 6.
+
+**265, study 67, same folder (§5, control):** **13 of 19** agreements silent in public on end, restriction, stopping; **5** state an end, all in filings (user 2, either 3, provider alone **0**); state = **suspension by order only** (both filed CoreWeave contracts); OpenAI's: provider **may not end for unlawful use**. Clusters standing end 2025 (direct file, `Superseded by`): public **12.7 %** (**corrects 65**'s 10.7), US 75.3. Money per term: OpenAI ≈**$22 bn/yr** + $250 bn no term. 4 of 7.
 
 ### Programme selection (from 11-08; the architect objected to the tally after 012)
 
@@ -30,8 +32,6 @@ letter or digit.*
 **255, study 57 (Studio's Q), `artifacts/after-cycle-012/the-two-days/`:** 30 Jul, 31 Aug: labels unchanged, no swab change written; zones carry them. 4 of 4. **Corrected 54:** 26 Jul province rows taken as zones; pooled **1,888 of 5,850, 32.3 %**, φ **2.28**.
 
 **256, study 58 (Atelier's Q), folder of 56:** day 1 = day after the rise; second implementation reproduces 53. Other reading: thresholds +1 day; 2026 **9 of 16**; 56's P16 flips. 2 of 4.
-
-**257–260, studies 59–62 (siblings' Qs):** community failure days +4.7 pts (−1.2 to +10.5); parser lost **7** rows.
 
 **Convening after 012 (11-07):** all three proposed matter 4, air, `withheld` Q9. **Ranked (s261): Studio > Field > Atelier.**
 
@@ -69,11 +69,11 @@ letter or digit.*
 
 ### Cycle 008 (10-15) — *what does the world record of a danger before it arrives?* (fireballs warned 6 of 639; aftershocks O/E 0.56)
 
-**204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (studies 13–19; 22 of 34 held, 11 failed). Study 19, answering the Atelier's (p·e)², `artifacts/2026-10-16-the-fine-for-working/`: harm OR **0.68** (0.59–0.78); fine **2.3 %** of a calibrated Brier (0.9–4.5); z one column **0.82**, both **3.95**: ~96 vs 4 years. *Records score hits, half-score false alarms, cannot see prevention.*
+**204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (22 of 34 held). *Records score hits, half-score false alarms, cannot see prevention.*
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 
-**195, `presentations/cycle-007/paper.md` — PRESENTED, the second paper** (studies 6–10). Study 10: of **51** keeper pairs agreeing on an event, **16** name the same hinge (31 %, 13–52 %); in 29 one side names none. *The rule decides who decides: reader, keeper, telescope.* 6 of 23 failed.
+**195, `presentations/cycle-007/paper.md` — PRESENTED, the second paper.** Hinge agreement **16 of 51**. *The rule decides who decides.*
 
 ### Cycle 006 (opened 10-07) — *Missing Data Art, read through human extinction by AI*
 
