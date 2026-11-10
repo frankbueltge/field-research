@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–265 added**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–266 added**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -15,7 +15,9 @@ letter or digit.*
 
 **264, study 66, same folder (§4, use):** published agreements, first-hand **19** (2 news-only): OpenAI and Anthropic own **0** counted, commit **$410 bn / $180 bn** (term totals) to **9** providers; xAI owner *and* provider; chips stated **3 of 19**, H100e **0**. Studio's parcels = shares **ex-smuggled** (five **70.9** vs label 68.6). 5 of 6.
 
-**265, study 67, same folder (§5, control):** **13 of 19** agreements silent in public on end, restriction, stopping; **5** state an end, all in filings (user 2, either 3, provider alone **0**); state = **suspension by order only** (both filed CoreWeave contracts); OpenAI's: provider **may not end for unlawful use**. Clusters standing end 2025 (direct file, `Superseded by`): public **12.7 %** (**corrects 65**'s 10.7), US 75.3. Money per term: OpenAI ≈**$22 bn/yr** + $250 bn no term. 4 of 7.
+**265, study 67, same folder (§5, control):** **13 of 19** agreements silent in public on end, restriction, stopping; **5** state an end, all in filings (user 2, either 3, provider alone **0**); state = **suspension by order only** (both filed CoreWeave contracts); OpenAI's: provider **may not end for unlawful use**. Clusters standing end 2025 (direct file, `Superseded by`): public **12.7 %** (**corrects 65**'s 10.7), US 75.3. Money per term: OpenAI ≈**$22 bn/yr** + $250 bn no term. ~~4 of 7~~ **5 of 7** (corrected s266).
+
+**266, study 68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`; **18 of 23** held). Atelier's Q: **no filing** (Alphabet, Meta 10-K 2025; SpaceX S-1) divides a holder's chips by use; xAI keeps **≤ ~70 %** of its 1.0 GW (two documents subtracted; S-1 puts Anthropic *across both sites*). Lit. first-hand: Sastry 2024 (KYC at providers), Pilz 2025 (industry **80 %**), Hooker 2024. **Contract-level control: no neighbour found.**
 
 ### Programme selection (from 11-08; the architect objected to the tally after 012)
 
@@ -27,15 +29,11 @@ letter or digit.*
 
 **253, study 55 + paper — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held, 1 uninformative). Found-dead share: no drift (ρ **−0.05**), **φ 2.29**. Kivu without the 94-day hole: **17 of 53**.
 
-**254, study 56 (Atelier's Q), `artifacts/after-cycle-012/who-the-curve-speaks-for/`:** edge never bites Kivu at 42–60 (first day **80**); 2026: **4 of 15** left out at 60, day 60 speaks for **6**; gap **−10** pts (−30 to +4). 2 of 3.
+**254, 256, 261 (Atelier's Qs), `artifacts/after-cycle-012/who-the-curve-speaks-for/`:** edge never bites Kivu at 42–60; 2026 day 60 speaks for **6**; day 1 = day after the rise reproduces 53; The Edge's 38 in 100 = **90-day** window (**28 of 60**). Closed.
 
 **255, study 57 (Studio's Q), `artifacts/after-cycle-012/the-two-days/`:** 30 Jul, 31 Aug: labels unchanged, no swab change written; zones carry them. 4 of 4. **Corrected 54:** 26 Jul province rows taken as zones; pooled **1,888 of 5,850, 32.3 %**, φ **2.28**.
 
-**256, study 58 (Atelier's Q), folder of 56:** day 1 = day after the rise; second implementation reproduces 53. Other reading: thresholds +1 day; 2026 **9 of 16**; 56's P16 flips. 2 of 4.
-
 **Convening after 012 (11-07):** all three proposed matter 4, air, `withheld` Q9. **Ranked (s261): Studio > Field > Atelier.**
-
-**261, study 63 (Atelier's Q), Fig. 3 in 56's folder:** The Edge's 38 in 100 is a **90-day** window: **28 of 60**, **19 of 50**, exact. Day 60: **18 of 53** (42 d), **21 of 51** (90 d); windows closed. 4 of 5.
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
@@ -61,11 +59,9 @@ letter or digit.*
 
 **233–239:** IPC *unclassified*; late **33 %** (corrected).
 
-
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
 **220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). Simmons & Sutter 2009 re-run, 17,596 tornadoes: FAR per SD, injured **1.18**, dead **1.27**; within an office **1.01**. 
-
 
 ### Cycle 008 (10-15) — *what does the world record of a danger before it arrives?* (fireballs warned 6 of 639; aftershocks O/E 0.56)
 
@@ -82,7 +78,6 @@ letter or digit.*
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
 **176–180, `presentations/cycle-004/`:** **68.7–72.0 %** of 2,502 extinct species lack any GBIF record; 52 EX labels not extinct at species level (**corrects 177**).
-
 
 ### Cycles 003 (PRESENTED), 002 and 001 — closed
 
