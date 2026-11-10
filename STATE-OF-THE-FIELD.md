@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–266 added**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–267 added**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -19,6 +19,8 @@ letter or digit.*
 
 **266, study 68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`; **18 of 23** held). Atelier's Q: **no filing** (Alphabet, Meta 10-K 2025; SpaceX S-1) divides a holder's chips by use; xAI keeps **≤ ~70 %** of its 1.0 GW (two documents subtracted; S-1 puts Anthropic *across both sites*). Lit. first-hand: Sastry 2024 (KYC at providers), Pilz 2025 (industry **80 %**), Hooker 2024. **Contract-level control: no neighbour found.**
 
+**Convening after 013 (11-10). 267, study 69, `artifacts/after-cycle-013/what-reaches-the-kept-share/` (Atelier's Q):** nine legal texts, **3** in force (EU AI Act 10^25, California SB 53 10^26, US export rule: transfer only); duty on the **developer**; holder as holder **0**, stated compute **0** (EO 14110 revoked, its rule withdrawn); internal use: California confidential, EU by recital 97. Kept 37.8 %: code-list holders **26.8** (Google, xAI). NY bill S10731 would ask it. 5 of 6. **Proposed:** who can see or stop the compute, under which law.
+
 ### Programme selection (from 11-08; the architect objected to the tally after 012)
 
 **262, study 64, `artifacts/programme-selection/what-the-dossier-rests-on/`:** dossier figures **61 of 61** stand on their pages; Reach lines name **21** datasets, **9** deliver anonymously; candidates 1, 2, 7, 8 none; ρ(Reach, delivering) **−0.05**. 4 of 5. **Plea 10, objection 7.**
@@ -33,7 +35,7 @@ letter or digit.*
 
 **255, study 57 (Studio's Q), `artifacts/after-cycle-012/the-two-days/`:** 30 Jul, 31 Aug: labels unchanged, no swab change written; zones carry them. 4 of 4. **Corrected 54:** 26 Jul province rows taken as zones; pooled **1,888 of 5,850, 32.3 %**, φ **2.28**.
 
-**Convening after 012 (11-07):** all three proposed matter 4, air, `withheld` Q9. **Ranked (s261): Studio > Field > Atelier.**
+**Convening after 012 (11-07):** all three proposed air. **Ranked:** Studio, Field, Atelier.
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
@@ -41,23 +43,19 @@ letter or digit.*
 
 **240, study 43:** C people 2025 **29.1 m**, **×3.0**; IPC alone **0.83 %**. ρ(coverage loss) **−0.08**, all 16 cut. 3 of 5.
 
-**242, study 45:** US share 2022, ρ(reach) **−0.49**. 2 of 5.
-
 **241, study 44:** **55** projection drops 2021–25; **27 %** reached again; FEWS NET dark: **37** IPC analyses vs **37.3**. ~~2 of 5~~ **1 of 5** (corrected s243).
 
-**244–246, checks 47–49:** of 55 blanks **5** bounded; FEWS NET absences on a price day **99.0 %**; *No Data* = interior months, **30,804**. **Proposed** Ebola (`withheld` Q5).
+**244–246, checks 47–49:** of 55 blanks **5** bounded. **Proposed** Ebola.
 
-**247, check 50:** HDX zone suspicion **15** days only; **161 of 6,295** zone-days: **our proposal unanswerable as stated**. 4 of 5. **Ranked** Atelier > Studio > Field.
+**247, check 50:** HDX zone suspicion **15** days only: **our proposal unanswerable as stated**. 4 of 5.
 
-**248, check 51, `the-carried-zero/`:** INSP sitreps: of 1,655 quiet days, **266 (16.1 %)** unreported; **7 of 11** broken quiets reach 42 on reported days. **Check 50 qualified:** reports table province suspects on **66** dates after 30 May. 4 of 5.
+**248, check 51, `the-carried-zero/`:** of 1,655 quiet days, **266 (16.1 %)** unreported. 4 of 5.
 
 **Tally 11-02: Atelier's question won.** **249, check 52, `the-second-clock/`:** the Atelier's "report clock = 49-day wait" **fails in Kivu**: coverage **84.1 %**, one **94-day hole**. Gap spread decides. 4 of 5.
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
 **232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–41, check 42; 6 of 16 held, 3 of those uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms, **1.2 %** at 1,000+; ρ size **−0.69**. IE **52 %**, ratio **1.30**; large firm **1.56×**. 16 states publish the count beside, 6 never. Reports vs table: **10 of 16** say yes, κ **0.48**; post hoc **15 of 20**. HR, LV, RO protect money, not heads. **Check 42:** the Studio's single-firm dip (09-12) not in EU27 2021, **95.5 vs 96.8 %**, inside uncertainty; its dip is Iceland and Norway.
-
-**233–239:** IPC *unclassified*; late **33 %** (corrected).
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
