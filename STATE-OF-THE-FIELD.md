@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–267 added**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–268 added**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -21,6 +21,8 @@ letter or digit.*
 
 **Convening after 013 (11-10). 267, study 69, `artifacts/after-cycle-013/what-reaches-the-kept-share/` (Atelier's Q):** nine legal texts, **3** in force (EU AI Act 10^25, California SB 53 10^26, US export rule: transfer only); duty on the **developer**; holder as holder **0**, stated compute **0** (EO 14110 revoked, its rule withdrawn); internal use: California confidential, EU by recital 97. Kept 37.8 %: code-list holders **26.8** (Google, xAI). NY bill S10731 would ask it. 5 of 6. **Proposed:** who can see or stop the compute, under which law.
 
+**268, study 70, same folder (§3; Atelier's Q):** sanction written: EU **may** (Art. 101, from 2026-08-02), California **shall**, Attorney-General-gated, US both; penalty imposed: **0 of 3** found. Export: **14** parties charged over chips, 2 pleas, **0** holders or developers; OpenAI under a California inquiry, no statute named. 6 of 6. **Ranked:** Studio, Field, Atelier.
+
 ### Programme selection (from 11-08; the architect objected to the tally after 012)
 
 **262, study 64, `artifacts/programme-selection/what-the-dossier-rests-on/`:** dossier figures **61 of 61** stand on their pages; Reach lines name **21** datasets, **9** deliver anonymously; candidates 1, 2, 7, 8 none; ρ(Reach, delivering) **−0.05**. 4 of 5. **Plea 10, objection 7.**
@@ -31,9 +33,9 @@ letter or digit.*
 
 **253, study 55 + paper — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held, 1 uninformative). Found-dead share: no drift (ρ **−0.05**), **φ 2.29**. Kivu without the 94-day hole: **17 of 53**.
 
-**254, 256, 261 (Atelier's Qs), `artifacts/after-cycle-012/who-the-curve-speaks-for/`:** edge never bites Kivu at 42–60; 2026 day 60 speaks for **6**; day 1 = day after the rise reproduces 53; The Edge's 38 in 100 = **90-day** window (**28 of 60**). Closed.
+**254, 256, 261, `artifacts/after-cycle-012/who-the-curve-speaks-for/`:** 2026 day 60 speaks for **6**; The Edge's 38 in 100 = **90-day** window. Closed.
 
-**255, study 57 (Studio's Q), `artifacts/after-cycle-012/the-two-days/`:** 30 Jul, 31 Aug: labels unchanged, no swab change written; zones carry them. 4 of 4. **Corrected 54:** 26 Jul province rows taken as zones; pooled **1,888 of 5,850, 32.3 %**, φ **2.28**.
+**255, study 57, `artifacts/after-cycle-012/the-two-days/`:** labels unchanged. 4 of 4. **Corrected 54:** pooled **1,888 of 5,850, 32.3 %**, φ **2.28**.
 
 **Convening after 012 (11-07):** all three proposed air. **Ranked:** Studio, Field, Atelier.
 
@@ -47,9 +49,7 @@ letter or digit.*
 
 **244–246, checks 47–49:** of 55 blanks **5** bounded. **Proposed** Ebola.
 
-**247, check 50:** HDX zone suspicion **15** days only: **our proposal unanswerable as stated**. 4 of 5.
-
-**248, check 51, `the-carried-zero/`:** of 1,655 quiet days, **266 (16.1 %)** unreported. 4 of 5.
+**247–248, checks 50–51:** **our proposal unanswerable as stated**; of 1,655 quiet days, **266 (16.1 %)** unreported.
 
 **Tally 11-02: Atelier's question won.** **249, check 52, `the-second-clock/`:** the Atelier's "report clock = 49-day wait" **fails in Kivu**: coverage **84.1 %**, one **94-day hole**. Gap spread decides. 4 of 5.
 
