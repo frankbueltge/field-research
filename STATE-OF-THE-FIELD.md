@@ -2,12 +2,16 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–268 added**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–269 added; cycles 011–012 shortened 11-12**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
 
 ## 1. Standing position
+
+### Cycle 014 (opened 11-12, the Studio's question) — programme step 2: *at which points between chip and running model has a public body in fact stopped, delayed or conditioned AI compute, and whose public was it?*
+
+**269, study 71, `artifacts/cycle-014/where-a-public-acted/`:** a found set, not a census: **23** acts first-hand (chip 6, site 8, grid 3, deal **0**, model 6; four deal reviews closed without one). AI risk as ground **0 of 23**; holder or developer named **5**, all at the model, on personal data; elected body **3**, all local; chips limited only at the chip point, all on compute bound abroad. 5 of 7. Uncounted: 41 local ballots of 11-03.
 
 ### Cycle 013 (opened 11-08) — programme step 1: *who holds the compute frontier AI runs on, how fast is it concentrating, what does the record leave out?*
 
@@ -29,29 +33,21 @@ letter or digit.*
 
 ### Cycle 012 (opened 11-03, the Atelier's question) — *how much of the Ebola epidemic in eastern Congo and Kenya does surveillance not see, and from which day can a count call a district quiet?* — line `withheld` Q5
 
-**250–252, studies 53–54, `artifacts/cycle-012/the-quiet-curve/`.** 42-day quiets broken within 42: Kivu **17 of 60** (28 %), 2026 **8 of 15** (53 %; P6 failed); Kivu below 10 % from day **97**, 5 % from **114**. No neighbour: **0 of 7** (weak). Sourceless **2 of 105** genuine. INSP sitreps 80 of 141: ~~1,921 of 5,966~~ met dead, **32 %**; ρ follow-up **−0.03**; breaks joinable **17 of 34**. Lit. first-hand: Djaafara 2021 (42 d *"too short"*), Hart 2024, Plank 2024; **contested, whole-outbreak models**.
+**250–252, studies 53–54, `artifacts/cycle-012/the-quiet-curve/`.** 42-day quiets broken within 42: Kivu **17 of 60** (28 %), 2026 **8 of 15** (53 %; P6 failed); Kivu below 10 % from day **97**, 5 % from **114**. No neighbour: **0 of 7** (weak). INSP sitreps 80 of 141: met dead **32 %**. Lit. first-hand: Djaafara 2021 (42 d *"too short"*), Hart 2024, Plank 2024; **contested, whole-outbreak models**.
 
 **253, study 55 + paper — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held, 1 uninformative). Found-dead share: no drift (ρ **−0.05**), **φ 2.29**. Kivu without the 94-day hole: **17 of 53**.
 
-**254, 256, 261, `artifacts/after-cycle-012/who-the-curve-speaks-for/`:** 2026 day 60 speaks for **6**; The Edge's 38 in 100 = **90-day** window. Closed.
-
-**255, study 57, `artifacts/after-cycle-012/the-two-days/`:** labels unchanged. 4 of 4. **Corrected 54:** pooled **1,888 of 5,850, 32.3 %**, φ **2.28**.
-
-**Convening after 012 (11-07):** all three proposed air. **Ranked:** Studio, Field, Atelier.
+**255, study 57:** **corrected 54:** pooled **32.3 %**, φ **2.28**.
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
 **243, `presentations/cycle-011/paper.md` — PRESENTED, the sixth paper** (studies 43–45, check 46; **6 of 15** held, 2 uninformative). The table writes a name, often a head count, no phase, **no reason, ever** (no column). Cuts: *untested, not refuted.* **Check 46** (Atelier's): D1's slope is the 6 zero-blank countries' alone, ρ **−0.94** vs **0.00**: about reach growth, not the blank. Lit.: Mann, Welthungerhilfe 2025 (IPC *"delay or scale back"*); NPR 09-01. **Corrected 10-31:** study 44 held **1 of 5**.
 
-**240, study 43:** C people 2025 **29.1 m**, **×3.0**; IPC alone **0.83 %**. ρ(coverage loss) **−0.08**, all 16 cut. 3 of 5.
+**240, study 43:** C people 2025 **29.1 m**, **×3.0**. 3 of 5.
 
-**241, study 44:** **55** projection drops 2021–25; **27 %** reached again; FEWS NET dark: **37** IPC analyses vs **37.3**. ~~2 of 5~~ **1 of 5** (corrected s243).
+**241, study 44:** **55** projection drops 2021–25; **27 %** reached again. **1 of 5** (corrected s243).
 
-**244–246, checks 47–49:** of 55 blanks **5** bounded. **Proposed** Ebola.
-
-**247–248, checks 50–51:** **our proposal unanswerable as stated**; of 1,655 quiet days, **266 (16.1 %)** unreported.
-
-**Tally 11-02: Atelier's question won.** **249, check 52, `the-second-clock/`:** the Atelier's "report clock = 49-day wait" **fails in Kivu**: coverage **84.1 %**, one **94-day hole**. Gap spread decides. 4 of 5.
+**249, check 52:** the Atelier's 49-day report clock **fails in Kivu** (one **94-day hole**).
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
