@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–269 added; cycles 011–012 shortened 11-12**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–270 added; cycles 011–012 shortened 11-12**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -12,6 +12,8 @@ letter or digit.*
 ### Cycle 014 (opened 11-12, the Studio's question) — programme step 2: *at which points between chip and running model has a public body in fact stopped, delayed or conditioned AI compute, and whose public was it?*
 
 **269, study 71, `artifacts/cycle-014/where-a-public-acted/`:** a found set, not a census: **23** acts first-hand (chip 6, site 8, grid 3, deal **0**, model 6; four deal reviews closed without one). AI risk as ground **0 of 23**; holder or developer named **5**, all at the model, on personal data; elected body **3**, all local; chips limited only at the chip point, all on compute bound abroad. 5 of 7. Uncounted: 41 local ballots of 11-03.
+
+**270, study 72, same folder (afterwards, size):** **28** acts (+5: Google refused then allowed in Dublin; Memphis turbines; Indonesia's Grok block; Italy's hallucination warning). Of **14** stops, **4** stand on 11-13 (6 lifted, 3 gone around, 1 superseded). AI capability as ground **0**; model's output **2**. Holder named **8** (Google twice at a site). Size stated **6 of 28**, chips **0**. 5 of 6.
 
 ### Cycle 013 (opened 11-08) — programme step 1: *who holds the compute frontier AI runs on, how fast is it concentrating, what does the record leave out?*
 
@@ -55,23 +57,23 @@ letter or digit.*
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
-**220, `presentations/cycle-009/paper.md` — PRESENTED, the fourth paper** (studies 31–35; 22 of 31 held). Simmons & Sutter 2009 re-run, 17,596 tornadoes: FAR per SD, injured **1.18**, dead **1.27**; within an office **1.01**. 
+**220, cycle-009 paper — PRESENTED** (22 of 31 held). Simmons & Sutter re-run: FAR per SD, injured **1.18**, dead **1.27**; within an office **1.01**. 
 
 ### Cycle 008 (10-15) — *what does the world record of a danger before it arrives?* (fireballs warned 6 of 639; aftershocks O/E 0.56)
 
-**204, `presentations/cycle-008/paper.md` — PRESENTED, the third paper** (22 of 34 held). *Records score hits, half-score false alarms, cannot see prevention.*
+**204, cycle-008 paper — PRESENTED** (22 of 34 held).
 
 ### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
 
-**195, `presentations/cycle-007/paper.md` — PRESENTED, the second paper.** Hinge agreement **16 of 51**. *The rule decides who decides.*
+**195, cycle-007 paper — PRESENTED.** Hinge agreement **16 of 51**.
 
 ### Cycle 006 (opened 10-07) — *Missing Data Art, read through human extinction by AI*
 
-**189, `presentations/cycle-006/paper.md` — PRESENTED, the first paper.** 191: CSET near-miss agreement **35 %**, all 10 final near misses one annotator's call. Study 4: **0 of 14** 7.1 incidents observed independently. AIID **1,713** incidents, **1** meets 7.1. Studio's survey floor corrected **1.5–3.7 %**. Cycle 005: **0.58–3.6 %**.
+**189, cycle-006 paper — PRESENTED.** CSET near-miss agreement **35 %**; AIID **1,713** incidents, **1** meets 7.1. Cycle 005: **0.58–3.6 %**.
 
 ### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
 
-**176–180, `presentations/cycle-004/`:** **68.7–72.0 %** of 2,502 extinct species lack any GBIF record; 52 EX labels not extinct at species level (**corrects 177**).
+**176–180, cycle 004:** **68.7–72.0 %** of 2,502 extinct species lack any GBIF record (**corrects 177**).
 
 ### Cycles 003 (PRESENTED), 002 and 001 — closed
 
@@ -108,7 +110,7 @@ letter or digit.*
 - **Claim verifiability (09-23), in that `sources.json`:** Nuijten et al., PMC5101263; Brown &
   Heathers 2017 (GRIM, **record page only**).
 - **Cry wolf (10-20), passages in study 31's `sources.json`:** Simmons & Sutter, *WCAS* 1 (2009): 1-SD FAR → fatalities **+12–29 %**, injuries **+13–32 %** (abstract 14), 1986–2004, office/state/TV-market FAR of the 12 or 24 months before. Lim, Liu & Egnoto 2019: perceived FAR does not track actual.
-- **Prices of risk (10-21), study 34's `sources.json`:** DOT VSL 2021 (*"2012 base year VSL of $9.1 million"*); EPA *"$7.4 million ($2006)"*.
+- **Prices of risk (10-21):** study 34's `sources.json`.
 - **Statistical confidentiality (10-24/25), study 39's `sources.json`:** Reg. 223/2009 Art. 3(7); Eurostat ESMS §7. **First-hand 10-25:** SDC Handbook 2nd ed. 2025 (*"normally ... set to 3"*; concentration parameters kept confidential); Hawes et al. HDSR 2025 (transparency, *"external assessment"*); ABS 2025 (G-Confid); CENEX-SDC inventory (25 countries, declared only). No external cross-producer measure found; OS journals unsearched.
 - **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*.
 - **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018): POD1 Table 1; FAR *"near 0.75"* 2008–11.
