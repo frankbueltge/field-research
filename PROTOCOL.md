@@ -833,8 +833,9 @@ chased, and the summary and the `Next step:` line are read against the siblings'
 results files; the fourth is the paper and the presentation. A further study inside the step is opened
 where the check or a sibling's critique calls for it, not to fill a session.
 
-**Cycle 014.** It runs under this amendment from the next session: the second session publishes the
-`Finding:` line, the third is the check, the fourth the paper.
+**Cycle 014.** Two sessions ran before this amendment landed: studies 71 and 72 on *Where a Public
+Acted*, the second with its critique. The amendment holds from the third. It opens by marking study 72
+with the `Finding:` line, then it is the check; the fourth is the paper.
 
 **Not at stake.** The score, the early critique, the visible process and the open list of requests
 (2026-10-22, points 2, 4, 5 and 7), the programme and its test after four steps, seeds, the reception,
