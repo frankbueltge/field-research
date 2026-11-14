@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–270 added; cycles 011–012 shortened 11-12**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–271 added; cycles 010–012 shortened 11-12/11-14**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -14,6 +14,8 @@ letter or digit.*
 **269, study 71, `artifacts/cycle-014/where-a-public-acted/`:** a found set, not a census: **23** acts first-hand (chip 6, site 8, grid 3, deal **0**, model 6; four deal reviews closed without one). AI risk as ground **0 of 23**; holder or developer named **5**, all at the model, on personal data; elected body **3**, all local; chips limited only at the chip point, all on compute bound abroad. 5 of 7. Uncounted: 41 local ballots of 11-03.
 
 **270, study 72, same folder (afterwards, size):** **28** acts (+5: Google refused then allowed in Dublin; Memphis turbines; Indonesia's Grok block; Italy's hallucination warning). Of **14** stops, **4** stand on 11-13 (6 lifted, 3 gone around, 1 superseded). AI capability as ground **0**; model's output **2**. Holder named **8** (Google twice at a site). Size stated **6 of 28**, chips **0**. 5 of 6.
+
+**271, study 73 (the check), same folder:** blind second coding of 27 acts: effect **23/27** (κ 0.77), grounds **16/24**, afterwards 21/22. **Corrects 72:** m1, m5, m7 are delays (provisional in their own words): stops **11**, **4 stand**; output a ground from **2023-03** (m1), **3** acts. AI capability: still **0**; nearest is the EU AI Office's RFIs (Aug–Oct 2026), an inquiry. **Missed:** China's filing regime (1,112 by 08-31). By matter: 20; 4 standing stops aged 228–1,732 days. PW Gateway planned ≈21.7 M sq ft, no MW or chips.
 
 ### Cycle 013 (opened 11-08) — programme step 1: *who holds the compute frontier AI runs on, how fast is it concentrating, what does the record leave out?*
 
@@ -53,7 +55,7 @@ letter or digit.*
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
-**232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–41, check 42; 6 of 16 held, 3 of those uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms, **1.2 %** at 1,000+; ρ size **−0.69**. IE **52 %**, ratio **1.30**; large firm **1.56×**. 16 states publish the count beside, 6 never. Reports vs table: **10 of 16** say yes, κ **0.48**; post hoc **15 of 20**. HR, LV, RO protect money, not heads. **Check 42:** the Studio's single-firm dip (09-12) not in EU27 2021, **95.5 vs 96.8 %**, inside uncertainty; its dip is Iceland and Norway.
+**232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–42; 6 of 16 held, 3 uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms; ρ size **−0.69**. Reports vs table κ **0.48**. Check 42: the Studio's dip is Iceland and Norway.
 
 ### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
 
@@ -63,17 +65,9 @@ letter or digit.*
 
 **204, cycle-008 paper — PRESENTED** (22 of 34 held).
 
-### Cycle 007 (opened 10-10, Studio's question) — *who decides that a near miss counts?*
+### Cycles 004–007 (10-03 to 10-10) — presented
 
-**195, cycle-007 paper — PRESENTED.** Hinge agreement **16 of 51**.
-
-### Cycle 006 (opened 10-07) — *Missing Data Art, read through human extinction by AI*
-
-**189, cycle-006 paper — PRESENTED.** CSET near-miss agreement **35 %**; AIID **1,713** incidents, **1** meets 7.1. Cycle 005: **0.58–3.6 %**.
-
-### Cycle 004 (opened 10-03) — *Missing Data Art, read through human extinction*
-
-**176–180, cycle 004:** **68.7–72.0 %** of 2,502 extinct species lack any GBIF record (**corrects 177**).
+Near-miss hinge agreement **16 of 51** (007); CSET near-miss agreement **35 %**, AIID **1** of 1,713 meets 7.1 (006); **68.7–72.0 %** of 2,502 extinct species lack a GBIF record (004).
 
 ### Cycles 003 (PRESENTED), 002 and 001 — closed
 
