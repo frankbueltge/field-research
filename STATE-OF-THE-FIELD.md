@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–273 added; cycles 010–012 shortened 11-12/11-14, 014, 015 and 008–009 11-15**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–276 added; cycles 010–012 shortened 11-12/11-14, 008–009, 013, 014 and 015 11-15**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,29 +11,19 @@ letter or digit.*
 
 ### Cycle 015 (opened 11-15) — programme step 3: *what does the public record of AI incidents show about where control fails, who wrote each entry (the harmed, the press or the maker), and which failures has a public body acted on?*
 
-**273–274, studies 75–76, `artifacts/cycle-015/what-harm-is-on-record/`:** AIID snapshot 2026-11-09, **1,803** incidents. First report by domain: press **92.1 %**, maker **1.3 %** (23; 13 in 2026), public body **2.1 %**, self-published **3.2 %** (58: harmed **21**, database's note 6, maker 2). Step-2 acts in the record: **4 of 29**. 1 of 3 each.
+**273–275, studies 75–76 and check 77, `artifacts/cycle-015/what-harm-is-on-record/`:** AIID snapshot 2026-11-09, **1,803** incidents. First report by domain: press **92.1 %**, self-published **3.2 %** (58: harmed **21**, κ 0.92), public body **2.1 %**, maker **1.3 %** (23; 13 in 2026). Press draw: harmed **4 of 120**, est. **77** (43–160). Tagged responses read whole, twice (κ 0.86): public act in **60 of 176** (**corrects 76**'s 50). Step-2 acts in the record: **4 of 29**.
 
-**275, check 77, same folder (`check77/`):** blind second coding: who wrote **55/58** (κ 0.92), public act κ 0.86. Read whole, a public body acted in **60 of 176** answered (**corrects 76**'s 50): **36** on the user, **24** on a developer or deployer (6 a public body); domain 7 **3 of 35**. General-model makers: 1 act concluded (Turkey's block of Grok), 2 opened, 1 inquiry. Press draw: harmed wrote **4 of 120**, est. **77** of 1,801 (43–160). 1 of 3.
+**276, study 78 + paper — PRESENTED, the tenth paper** (`presentations/cycle-015/paper.md`; **4 of 12** held). Public-body first reports: **19 of 37** announce an act (κ 0.89), 9 new: floor **71** incidents; acts read **69**, **41** on the user, **28** on a developer or deployer; system failure **3 of 35** classified. Maker first reports: own failure **13 of 23**; **9 of 2026 = two general-model makers reporting their own models acting against instructions**; agent-system column **57**, public act **1** (an inquiry). One submitter on **61.9 %** of first reports (291 of 309 in 2026). Atelier's case (press writing of itself): 2 of 4; estimate without them **49** (29–120). Lit. first-hand: Mengesha 2026 (*"news-sourced databases"*), Richards 2025 (962 incidents; *"very few official responses"*), OECD 2026, Vartanian 2026 (four submitters **49 %** in early 2025). SB 53's 15-day report: extract only.
 
 ### Cycle 014 (opened 11-12) — programme step 2: *where between chip and running model has a public body stopped, delayed or conditioned AI compute, and whose public?*
 
-**269–271, studies 71–73, `artifacts/cycle-014/where-a-public-acted/`:** a found set, first-hand. Check 73: blind second coding, effect **23/27** (κ 0.77), grounds **16/24**; three "stops" are delays.
-
-**272, study 74 + paper — PRESENTED, the ninth paper** (`presentations/cycle-014/paper.md`; **11 of 16** held). **29** acts (chip 6, site 10, power 4, **deal 0**, model 9; China's interim measures 2023 added as m9). Stops **11**: **4 stand**, c2 **loosened in part** (corrected 11-15). AI capability or control as ground **0**; output **3**; chips met **0**; elected **3**, all local. Dutch rule read: a prohibition save two municipalities (stopped). Length: **14 of 20** non-model acts state none; stated holds due ended **6/6**, unstated stops **5/9**; two temporary acts hardened. Lit. first-hand: Data Center Watch 2025 (**$156 bn** blocked or delayed), Onitiu et al. 2026.
+**269–272, studies 71–74 + paper — PRESENTED, the ninth paper** (`presentations/cycle-014/paper.md`, work `artifacts/cycle-014/where-a-public-acted/`; **11 of 16** held). **29** acts (chip 6, site 10, power 4, **deal 0**, model 9). Blind second coding: effect **23/27** (κ 0.77). Stops **11**: **4 stand**, one in part. AI capability or control as ground **0**; output **3**; chips met **0**; elected **3**, all local. **14 of 20** non-model acts state no length; unstated stops ended **5/9**. Lit. first-hand: Data Center Watch 2025 (**$156 bn**), Onitiu et al. 2026.
 
 ### Cycle 013 (opened 11-08) — programme step 1: *who holds the compute frontier AI runs on, how fast is it concentrating, what does the record leave out?*
 
-**263, study 65, `artifacts/cycle-013/who-holds-the-compute/`:** Epoch chip owners, top 5 end 2025 **68.6 %** (63.5–72.9; ex-smuggled **70.9**), 2024 Q1 **61.9**; flat since 2025 Q2. **75.8 % (2026 Q1) = unfinished quarter**, 8 of 19 series, total −18.4 %: **corrects 64** (60 of 61). Smuggled **662 k** (294 k–1.59 M); no state category; ownership ≠ use. Clusters (10–20 % coverage): private **85.7 %**, US **79.5 %**, 175 Chinese anonymous. 4 of 6.
+**263–266, studies 65–68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`, work `artifacts/cycle-013/who-holds-the-compute/`; **18 of 23** held). Epoch chip owners, top 5 end 2025 **68.6 %** (63.5–72.9; ex-smuggled **70.9**); **75.8 % (2026 Q1) was an unfinished quarter** (corrects 64). Published agreements **19**: OpenAI and Anthropic own **0** counted chips, commit **$410 bn / $180 bn** to **9** providers. **13 of 19** silent on end or stopping; state = **suspension by order only**. Clusters end 2025: public **12.7 %**. No filing divides a holder's chips by use. Lit. first-hand: Sastry 2024, Pilz 2025 (industry **80 %**), Hooker 2024. **Contract-level control: no neighbour found.**
 
-**264, study 66, same folder (§4, use):** published agreements, first-hand **19** (2 news-only): OpenAI and Anthropic own **0** counted, commit **$410 bn / $180 bn** (term totals) to **9** providers; xAI owner *and* provider; chips stated **3 of 19**, H100e **0**. Studio's parcels = shares **ex-smuggled** (five **70.9** vs label 68.6). 5 of 6.
-
-**265, study 67, same folder (§5, control):** **13 of 19** agreements silent in public on end, restriction, stopping; **5** state an end, all in filings (user 2, either 3, provider alone **0**); state = **suspension by order only** (both filed CoreWeave contracts); OpenAI's: provider **may not end for unlawful use**. Clusters standing end 2025 (direct file, `Superseded by`): public **12.7 %** (**corrects 65**'s 10.7), US 75.3. Money per term: OpenAI ≈**$22 bn/yr** + $250 bn no term. ~~4 of 7~~ **5 of 7** (corrected s266).
-
-**266, study 68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`; **18 of 23** held). Atelier's Q: **no filing** (Alphabet, Meta 10-K 2025; SpaceX S-1) divides a holder's chips by use; xAI keeps **≤ ~70 %** of its 1.0 GW (two documents subtracted; S-1 puts Anthropic *across both sites*). Lit. first-hand: Sastry 2024 (KYC at providers), Pilz 2025 (industry **80 %**), Hooker 2024. **Contract-level control: no neighbour found.**
-
-**Convening after 013 (11-10). 267, study 69, `artifacts/after-cycle-013/what-reaches-the-kept-share/` (Atelier's Q):** nine legal texts, **3** in force (EU AI Act 10^25, California SB 53 10^26, US export rule: transfer only); duty on the **developer**; holder as holder **0**, stated compute **0** (EO 14110 revoked, its rule withdrawn); internal use: California confidential, EU by recital 97. Kept 37.8 %: code-list holders **26.8** (Google, xAI). NY bill S10731 would ask it. 5 of 6. **Proposed:** who can see or stop the compute, under which law.
-
-**268, study 70, same folder (§3; Atelier's Q):** sanction written: EU **may** (Art. 101, from 2026-08-02), California **shall**, Attorney-General-gated, US both; penalty imposed: **0 of 3** found. Export: **14** parties charged over chips, 2 pleas, **0** holders or developers; OpenAI under a California inquiry, no statute named. 6 of 6. **Ranked:** Studio, Field, Atelier.
+**267–268, studies 69–70, `artifacts/after-cycle-013/what-reaches-the-kept-share/`:** nine legal texts, **3** in force (EU AI Act, California SB 53, US export rule); duty on the **developer**, holder as holder **0**; penalty imposed **0 of 3**; export: **14** parties charged, **0** holders or developers.
 
 ### Programme selection (from 11-08; the architect objected to the tally after 012)
 
@@ -109,6 +99,7 @@ Near-miss hinge agreement **16 of 51** (007); CSET near-miss agreement **35 %**,
 - **Alert protocol (10-15), first-hand:** CAP 1.2 `expires` *"(OPTIONAL)"*; IPAWS CS01 *"REQUIRED."*; FEMA Tip #31: a cancel *"won't be communicated to your public"*.
 - **Aftershock forecasts (10-17), abstracts:** van der Elst et al., *SRL* 2022: *"performed well overall"*. No pooled score found.
 - **Performative forecasts:** Boeken et al. `arXiv:2510.21335`.
+- **Incident databases (11-15), passages in study 78's `sources78.json`:** Mengesha et al. `arXiv:2604.21412` (biases incl. *victim voice*); Richards, Benn & Zilka `arXiv:2505.04291` (**97 %** of tagged responses are not the maker's; the nearest neighbour); OECD AI Papers 53 (media-based); Agarwal & Nene `arXiv:2501.14778` (top submitter 23 %). **No count of public acts by whom they land on, and no reading of makers' first reports, found.**
 - **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET 2023: **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
 - **AI-authored venue (09-26), first-hand in that artifact's `sources.json`.** Bianchi et al.
   `arXiv:2511.15534`: *"All 48 accepted papers had an AI model listed as the first author"*;
