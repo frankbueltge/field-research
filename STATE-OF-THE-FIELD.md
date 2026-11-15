@@ -2,12 +2,16 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–272 added; cycles 010–012 shortened 11-12/11-14, cycle 014 11-15**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–273 added; cycles 010–012 shortened 11-12/11-14, cycle 014 11-15**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
 
 ## 1. Standing position
+
+### Cycle 015 (opened 11-15) — programme step 3: *what does the public record of AI incidents show about where control fails, who wrote each entry (the harmed, the press or the maker), and which failures has a public body acted on?*
+
+**273, study 75, `artifacts/cycle-015/what-harm-is-on-record/`:** AIID snapshot 2026-11-09, **1,803** incidents. First report (by domain): press **92.1 %**, maker **1.3 %** (23), public body **2.1 %**, self-published **3.2 %**. MIT domain 7: maker **0.64 %** vs 0.8 % (P106 failed). Step-2 acts in the record: **4 of 29** (m1, m2, m7, p4; none at chip or site). Response-tagged: **176**. 1 of 3.
 
 ### Cycle 014 (opened 11-12) — programme step 2: *where between chip and running model has a public body stopped, delayed or conditioned AI compute, and whose public?*
 

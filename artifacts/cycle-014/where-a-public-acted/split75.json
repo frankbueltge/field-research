@@ -1,0 +1,141 @@
+{
+ "answers": "ho-2026-11-15-atelier-1",
+ "session": 273,
+ "date": "2026-11-15",
+ "source_sha256": {
+  "results74.json": "4d03f8d484b8ae9c8892d8ac258add268ed612c2c8e7ed2f709bc6b0e94112d3",
+  "check73/second-coding.json": "ae42466b121226401ee1bfc5732066aeab2cedf0a8d578300a0006235524fda6"
+ },
+ "holds": 15,
+ "agree": 13,
+ "rows": [
+  {
+   "id": "c1",
+   "group": "none stated",
+   "first": "outgrown",
+   "second": "outgrown",
+   "agree": true
+  },
+  {
+   "id": "c2",
+   "group": "none stated",
+   "first": "loosened in part",
+   "second": "let go",
+   "agree": false
+  },
+  {
+   "id": "c3",
+   "group": "none stated",
+   "first": "let go",
+   "second": "let go",
+   "agree": true
+  },
+  {
+   "id": "s1",
+   "group": "none stated",
+   "first": "gone around",
+   "second": "gone around",
+   "agree": true
+  },
+  {
+   "id": "s2",
+   "group": "none stated",
+   "first": "stands",
+   "second": "stands",
+   "agree": true
+  },
+  {
+   "id": "s3",
+   "group": "stated, due",
+   "first": "outgrown",
+   "second": "outgrown",
+   "agree": true
+  },
+  {
+   "id": "s4",
+   "group": "none stated",
+   "first": "stands",
+   "second": "stands",
+   "agree": true
+  },
+  {
+   "id": "s5",
+   "group": "stated, due",
+   "first": "let go",
+   "second": "let go",
+   "agree": true
+  },
+  {
+   "id": "s6",
+   "group": "stated, due",
+   "first": "gone around",
+   "second": "not found",
+   "agree": false
+  },
+  {
+   "id": "p1",
+   "group": "none stated",
+   "first": "gone around",
+   "second": "gone around",
+   "agree": true
+  },
+  {
+   "id": "m1",
+   "group": "stated, due",
+   "first": "let go",
+   "second": "let go",
+   "agree": true
+  },
+  {
+   "id": "m4",
+   "group": "none stated",
+   "first": "stands",
+   "second": "stands",
+   "agree": true
+  },
+  {
+   "id": "m5",
+   "group": "stated, due",
+   "first": "let go",
+   "second": "let go",
+   "agree": true
+  },
+  {
+   "id": "s9",
+   "group": "none stated",
+   "first": "let go",
+   "second": "let go",
+   "agree": true
+  },
+  {
+   "id": "m7",
+   "group": "stated, due",
+   "first": "let go",
+   "second": "let go",
+   "agree": true
+  }
+ ],
+ "stated, due \u2014 first": {
+  "outgrown": 1,
+  "let go": 4,
+  "gone around": 1
+ },
+ "stated, due \u2014 second": {
+  "outgrown": 1,
+  "let go": 4,
+  "not found": 1
+ },
+ "none stated \u2014 first": {
+  "outgrown": 1,
+  "loosened in part": 1,
+  "let go": 2,
+  "gone around": 2,
+  "stands": 3
+ },
+ "none stated \u2014 second": {
+  "outgrown": 1,
+  "let go": 3,
+  "gone around": 2,
+  "stands": 3
+ }
+}
