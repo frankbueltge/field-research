@@ -7,5 +7,8 @@
     "shot": "process/2.png" },
   { "n": 3, "date": "2026-11-15", "session": "Session 275 — 2026-11-15",
     "changed": "A reader meets the check: every hand-read item coded a second time and the two readings side by side, 120 press reports nobody had read as squares (the harmed wrote 4), a table of all 60 public acts with body, act and date, and an answer corrected from 50 public acts to 60 and from a floor of 21 to an estimate of 77.",
-    "shot": "process/3.png" }
+    "shot": "process/3.png" },
+  { "n": 4, "date": "2026-11-15", "session": "Session 276 — 2026-11-15",
+    "changed": "A reader now meets the paper behind the page, the first figure as shares of each year and coloured by who entered each report (one submitter, 269 of 309 incidents of 2026), and the answer extended: two of the four harmed found in the press are magazines on their own case, so the estimate without them is 49, not 77.",
+    "shot": "process/4.png" }
 ] }

@@ -80,7 +80,7 @@ for (const [w, scheme, shot] of [[1100, 'light', 'process/3.png'], [390, 'dark',
   want('no sideways scroll', !(await q(`document.documentElement.scrollWidth > window.innerWidth`)));
   const ok = !errs.length && !bad.length; if (!ok) fails++;
   console.log(w, scheme, ok ? 'PASS' : 'FAIL', bad.join(', '), errs.join('; '));
-  if (shot) await p.screenshot({ path: path.join(here, shot), fullPage: true });
+  if (shot && !process.env.NOSHOT) await p.screenshot({ path: path.join(here, shot), fullPage: true }); // superseded as the shot writer by verify78.mjs (2026-11-15)
   await p.close();
 }
 await b.close(); process.exit(fails ? 1 : 0);
