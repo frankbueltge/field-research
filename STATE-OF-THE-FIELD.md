@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–273 added; cycles 010–012 shortened 11-12/11-14, cycle 014 11-15**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–273 added; cycles 010–012 shortened 11-12/11-14, cycle 014 and 008–009 11-15**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -12,6 +12,8 @@ letter or digit.*
 ### Cycle 015 (opened 11-15) — programme step 3: *what does the public record of AI incidents show about where control fails, who wrote each entry (the harmed, the press or the maker), and which failures has a public body acted on?*
 
 **273, study 75, `artifacts/cycle-015/what-harm-is-on-record/`:** AIID snapshot 2026-11-09, **1,803** incidents. First report (by domain): press **92.1 %**, maker **1.3 %** (23), public body **2.1 %**, self-published **3.2 %**. MIT domain 7: maker **0.64 %** vs 0.8 % (P106 failed). Step-2 acts in the record: **4 of 29** (m1, m2, m7, p4; none at chip or site). Response-tagged: **176**. 1 of 3.
+
+**274, study 76, same folder (hand-read):** the harmed wrote **21 of 58** self-published first reports (**1.17 %** of all); 6 of the 58 are the database's own note, 2 the maker (**corrects 75**). Of 176 answered incidents: maker **79**, a public body acted **50** (**30** on the user, **20** on a developer or deployer, **1** in domain 7; frontier makers: 3 proceedings opened, none concluded). 1 of 3.
 
 ### Cycle 014 (opened 11-12) — programme step 2: *where between chip and running model has a public body stopped, delayed or conditioned AI compute, and whose public?*
 
@@ -59,21 +61,15 @@ letter or digit.*
 
 **232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–42; 6 of 16 held, 3 uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms; ρ size **−0.69**. Reports vs table κ **0.48**. Check 42: the Studio's dip is Iceland and Norway.
 
-### Cycle 009 (opened 10-20, the Atelier's question) — *when a warning turns out never needed, who pays, and does a record of false alarms make the next warning less believed?*
+### Cycles 009 and 008 (10-20, 10-15) — presented (`presentations/cycle-009|008/`)
 
-**220, cycle-009 paper — PRESENTED** (22 of 31 held). Simmons & Sutter re-run: FAR per SD, injured **1.18**, dead **1.27**; within an office **1.01**. 
-
-### Cycle 008 (10-15) — *what does the world record of a danger before it arrives?* (fireballs warned 6 of 639; aftershocks O/E 0.56)
-
-**204, cycle-008 paper — PRESENTED** (22 of 34 held).
+009, false alarms: 22 of 31 held; Simmons & Sutter re-run, FAR per SD, injured **1.18**, dead **1.27**; within an office **1.01**. 008, danger before it arrives: 22 of 34 held; fireballs warned 6 of 639; aftershocks O/E 0.56.
 
 ### Cycles 004–007 (10-03 to 10-10) — presented
 
 Near-miss hinge agreement **16 of 51** (007); CSET near-miss agreement **35 %**, AIID **1** of 1,713 meets 7.1 (006); **68.7–72.0 %** of 2,502 extinct species lack a GBIF record (004).
 
-### Cycles 003 (PRESENTED), 002 and 001 — closed
-
-*`presentations/cycle-003|002|001/`; every figure stands there.*
+### Cycles 003 (PRESENTED), 002, 001 — closed (`presentations/`)
 
 **003, *Missing Data Art*: every measure of missingness we built states something other than the text.** Abroad, flags mostly false alarm (κ **0.0919**). Survived: **16.51 % at 521 records, 62.17 % at 67,205, one unchanged corpus** —
 *identifying power is a property of a description **and a room***.
