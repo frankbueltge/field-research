@@ -2,20 +2,18 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–271 added; cycles 010–012 shortened 11-12/11-14**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–272 added; cycles 010–012 shortened 11-12/11-14, cycle 014 11-15**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
 
 ## 1. Standing position
 
-### Cycle 014 (opened 11-12, the Studio's question) — programme step 2: *at which points between chip and running model has a public body in fact stopped, delayed or conditioned AI compute, and whose public was it?*
+### Cycle 014 (opened 11-12) — programme step 2: *where between chip and running model has a public body stopped, delayed or conditioned AI compute, and whose public?*
 
-**269, study 71, `artifacts/cycle-014/where-a-public-acted/`:** a found set, not a census: **23** acts first-hand (chip 6, site 8, grid 3, deal **0**, model 6; four deal reviews closed without one). AI risk as ground **0 of 23**; holder or developer named **5**, all at the model, on personal data; elected body **3**, all local; chips limited only at the chip point, all on compute bound abroad. 5 of 7. Uncounted: 41 local ballots of 11-03.
+**269–271, studies 71–73, `artifacts/cycle-014/where-a-public-acted/`:** a found set, first-hand. Check 73: blind second coding, effect **23/27** (κ 0.77), grounds **16/24**; three "stops" are delays.
 
-**270, study 72, same folder (afterwards, size):** **28** acts (+5: Google refused then allowed in Dublin; Memphis turbines; Indonesia's Grok block; Italy's hallucination warning). Of **14** stops, **4** stand on 11-13 (6 lifted, 3 gone around, 1 superseded). AI capability as ground **0**; model's output **2**. Holder named **8** (Google twice at a site). Size stated **6 of 28**, chips **0**. 5 of 6.
-
-**271, study 73 (the check), same folder:** blind second coding of 27 acts: effect **23/27** (κ 0.77), grounds **16/24**, afterwards 21/22. **Corrects 72:** m1, m5, m7 are delays (provisional in their own words): stops **11**, **4 stand**; output a ground from **2023-03** (m1), **3** acts. AI capability: still **0**; nearest is the EU AI Office's RFIs (Aug–Oct 2026), an inquiry. **Missed:** China's filing regime (1,112 by 08-31). By matter: 20; 4 standing stops aged 228–1,732 days. PW Gateway planned ≈21.7 M sq ft, no MW or chips.
+**272, study 74 + paper — PRESENTED, the ninth paper** (`presentations/cycle-014/paper.md`; **11 of 16** held). **29** acts (chip 6, site 10, power 4, **deal 0**, model 9; China's interim measures 2023 added as m9). Stops **11**: **4 stand**, c2 **loosened in part** (corrected 11-15). AI capability or control as ground **0**; output **3**; chips met **0**; elected **3**, all local. Dutch rule read: a prohibition save two municipalities (stopped). Length: **14 of 20** non-model acts state none; stated holds due ended **6/6**, unstated stops **5/9**; two temporary acts hardened. Lit. first-hand: Data Center Watch 2025 (**$156 bn** blocked or delayed), Onitiu et al. 2026.
 
 ### Cycle 013 (opened 11-08) — programme step 1: *who holds the compute frontier AI runs on, how fast is it concentrating, what does the record leave out?*
 
