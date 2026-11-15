@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–273 added; cycles 010–012 shortened 11-12/11-14, cycle 014 and 008–009 11-15**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–273 added; cycles 010–012 shortened 11-12/11-14, 014, 015 and 008–009 11-15**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,9 +11,9 @@ letter or digit.*
 
 ### Cycle 015 (opened 11-15) — programme step 3: *what does the public record of AI incidents show about where control fails, who wrote each entry (the harmed, the press or the maker), and which failures has a public body acted on?*
 
-**273, study 75, `artifacts/cycle-015/what-harm-is-on-record/`:** AIID snapshot 2026-11-09, **1,803** incidents. First report (by domain): press **92.1 %**, maker **1.3 %** (23), public body **2.1 %**, self-published **3.2 %**. MIT domain 7: maker **0.64 %** vs 0.8 % (P106 failed). Step-2 acts in the record: **4 of 29** (m1, m2, m7, p4; none at chip or site). Response-tagged: **176**. 1 of 3.
+**273–274, studies 75–76, `artifacts/cycle-015/what-harm-is-on-record/`:** AIID snapshot 2026-11-09, **1,803** incidents. First report by domain: press **92.1 %**, maker **1.3 %** (23; 13 in 2026), public body **2.1 %**, self-published **3.2 %** (58: harmed **21**, database's note 6, maker 2). Step-2 acts in the record: **4 of 29**. 1 of 3 each.
 
-**274, study 76, same folder (hand-read):** the harmed wrote **21 of 58** self-published first reports (**1.17 %** of all); 6 of the 58 are the database's own note, 2 the maker (**corrects 75**). Of 176 answered incidents: maker **79**, a public body acted **50** (**30** on the user, **20** on a developer or deployer, **1** in domain 7; frontier makers: 3 proceedings opened, none concluded). 1 of 3.
+**275, check 77, same folder (`check77/`):** blind second coding: who wrote **55/58** (κ 0.92), public act κ 0.86. Read whole, a public body acted in **60 of 176** answered (**corrects 76**'s 50): **36** on the user, **24** on a developer or deployer (6 a public body); domain 7 **3 of 35**. General-model makers: 1 act concluded (Turkey's block of Grok), 2 opened, 1 inquiry. Press draw: harmed wrote **4 of 120**, est. **77** of 1,801 (43–160). 1 of 3.
 
 ### Cycle 014 (opened 11-12) — programme step 2: *where between chip and running model has a public body stopped, delayed or conditioned AI compute, and whose public?*
 
