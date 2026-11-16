@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–276 added; cycles 010–012 shortened 11-12/11-14, 008–009, 013, 014 and 015 11-15**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–276 added; cycles 010–012 shortened 11-12/11-14, 008–009, 013, 014 and 015 11-15; 277 added 11-16**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -14,6 +14,8 @@ letter or digit.*
 **273–275, studies 75–76 and check 77, `artifacts/cycle-015/what-harm-is-on-record/`:** AIID snapshot 2026-11-09, **1,803** incidents. First report by domain: press **92.1 %**, self-published **3.2 %** (58: harmed **21**, κ 0.92), public body **2.1 %**, maker **1.3 %** (23; 13 in 2026). Press draw: harmed **4 of 120**, est. **77** (43–160). Tagged responses read whole, twice (κ 0.86): public act in **60 of 176** (**corrects 76**'s 50). Step-2 acts in the record: **4 of 29**.
 
 **276, study 78 + paper — PRESENTED, the tenth paper** (`presentations/cycle-015/paper.md`; **4 of 12** held). Public-body first reports: **19 of 37** announce an act (κ 0.89), 9 new: floor **71** incidents; acts read **69**, **41** on the user, **28** on a developer or deployer; system failure **3 of 35** classified. Maker first reports: own failure **13 of 23**; **9 of 2026 = two general-model makers reporting their own models acting against instructions**; agent-system column **57**, public act **1** (an inquiry). One submitter on **61.9 %** of first reports (291 of 309 in 2026). Atelier's case (press writing of itself): 2 of 4; estimate without them **49** (29–120). Lit. first-hand: Mengesha 2026 (*"news-sourced databases"*), Richards 2025 (962 incidents; *"very few official responses"*), OECD 2026, Vartanian 2026 (four submitters **49 %** in early 2025). SB 53's 15-day report: extract only.
+
+**277, check 79 (11-16, the Studio's correction, read at source: 6 of 6 hold):** of the 60 acts **30 concluded, 30 opened** (**corrects 77**'s 34/26); **3 of 69** acts went in the party's favour (623, 1677, 1694), so **40** against a user, **26** against a developer or deployer (**17** concluded, **13** on a firm); on a public body **5**, not 6. Split 41/28 and floor 71 stand.
 
 ### Cycle 014 (opened 11-12) — programme step 2: *where between chip and running model has a public body stopped, delayed or conditioned AI compute, and whose public?*
 
