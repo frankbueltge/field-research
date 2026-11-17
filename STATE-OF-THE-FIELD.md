@@ -2,12 +2,16 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–276 added; cycles 010–012 shortened 11-12/11-14, 008–009, 013, 014 and 015 11-15; 277 added 11-16**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–276 added; cycles 010–012 shortened 11-12/11-14, 008–009, 013, 014 and 015 11-15; 277 added 11-16, 278 11-17**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
 
 ## 1. Standing position
+
+### Cycle 016 (opened 11-16) — programme step 4: *what do frontier safety evaluations test for and establish about control, who decided what counts as passing, which results can anyone but the maker check?*
+
+**278, study 80, `artifacts/cycle-016/what-a-test-can-show/`:** *International AI Safety Report 2026* (sha e2a35f43…), body **2,323** sentences, **201** on evaluation: measured **41**, open **52**, inferred **108**; control **22** (open 5), capability **99** (open 29). Cited: industry-affiliated (the report's asterisk) **40.7 %** vs rest **28.9 %** (+11.8, CI 1.5–22.8). Pass marks **8**: developer 5, unstated 3, public body **0**. **1 of 3** held. To read: McCaslin et al. `arXiv:2508.09853` (STREAM).
 
 ### Cycle 015 (opened 11-15) — programme step 3: *what does the public record of AI incidents show about where control fails, who wrote each entry (the harmed, the press or the maker), and which failures has a public body acted on?*
 
@@ -55,7 +59,7 @@ letter or digit.*
 
 ### Cycles 009 and 008 (10-20, 10-15) — presented (`presentations/cycle-009|008/`)
 
-009, false alarms: 22 of 31 held; Simmons & Sutter re-run, FAR per SD, injured **1.18**, dead **1.27**; within an office **1.01**. 008, danger before it arrives: 22 of 34 held; fireballs warned 6 of 639; aftershocks O/E 0.56.
+009: 22 of 31 held; FAR per SD, injured **1.18**, dead **1.27**, within an office **1.01**. 008: 22 of 34 held; fireballs warned 6 of 639.
 
 ### Cycles 004–007 (10-03 to 10-10) — presented
 
