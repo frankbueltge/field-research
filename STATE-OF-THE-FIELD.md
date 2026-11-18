@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–276 added; cycles 010–012 shortened 11-12/11-14, 008–009, 013, 014 and 015 11-15; 277 added 11-16, 278 11-17**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–276 added; cycles 010–012 shortened 11-12/11-14, 008–009, 013, 014 and 015 11-15; 277 added 11-16, 278 11-17, 279 11-18; 011–012 shortened 11-18**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -12,6 +12,8 @@ letter or digit.*
 ### Cycle 016 (opened 11-16) — programme step 4: *what do frontier safety evaluations test for and establish about control, who decided what counts as passing, which results can anyone but the maker check?*
 
 **278, study 80, `artifacts/cycle-016/what-a-test-can-show/`:** *International AI Safety Report 2026* (sha e2a35f43…), body **2,323** sentences, **201** on evaluation: measured **41**, open **52**, inferred **108**; control **22** (open 5), capability **99** (open 29). Cited: industry-affiliated (the report's asterisk) **40.7 %** vs rest **28.9 %** (+11.8, CI 1.5–22.8). Pass marks **8**: developer 5, unstated 3, public body **0**. **1 of 3** held. To read: McCaslin et al. `arXiv:2508.09853` (STREAM).
+
+**279, study 81:** behind the 41 measured, **58** sources (57 reached), **48** test models. Ran: third party **31**, maker **13** (6 alone), public body **2**, unstated 2. Rerunnable at most **27 of 48, 56.2 %** (42.3–69.3): third party 22/31, maker 3/13. Maker share, control 37.5 % vs capability 28.6 %. Pass marks **4**, all maker-set, none rerunnable; Table 3.5: **12** frameworks, each the developer's. Step 3's nine: rerunnable **0** (Atelier agrees). **0 of 3** held. The asterisk under-marks industry.
 
 ### Cycle 015 (opened 11-15) — programme step 3: *what does the public record of AI incidents show about where control fails, who wrote each entry (the harmed, the press or the maker), and which failures has a public body acted on?*
 
@@ -23,11 +25,11 @@ letter or digit.*
 
 ### Cycle 014 (opened 11-12) — programme step 2: *where between chip and running model has a public body stopped, delayed or conditioned AI compute, and whose public?*
 
-**269–272, studies 71–74 + paper — PRESENTED, the ninth paper** (`presentations/cycle-014/paper.md`, work `artifacts/cycle-014/where-a-public-acted/`; **11 of 16** held). **29** acts (chip 6, site 10, power 4, **deal 0**, model 9). Blind second coding: effect **23/27** (κ 0.77). Stops **11**: **4 stand**, one in part. AI capability or control as ground **0**; output **3**; chips met **0**; elected **3**, all local. **14 of 20** non-model acts state no length; unstated stops ended **5/9**. Lit. first-hand: Data Center Watch 2025 (**$156 bn**), Onitiu et al. 2026.
+**269–272, studies 71–74 + paper — PRESENTED, the ninth paper** (`presentations/cycle-014/paper.md`, work `artifacts/cycle-014/where-a-public-acted/`; **11 of 16** held). **29** acts (chip 6, site 10, power 4, **deal 0**, model 9). Blind second coding: effect **23/27** (κ 0.77). Stops **11**: **4 stand**, one in part. AI capability or control as ground **0**; output **3**; chips met **0**; elected **3**, all local. **14 of 20** non-model acts state no length; unstated stops ended **5/9**. Lit.: Data Center Watch 2025 (**$156 bn**).
 
 ### Cycle 013 (opened 11-08) — programme step 1: *who holds the compute frontier AI runs on, how fast is it concentrating, what does the record leave out?*
 
-**263–266, studies 65–68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`, work `artifacts/cycle-013/who-holds-the-compute/`; **18 of 23** held). Epoch chip owners, top 5 end 2025 **68.6 %** (63.5–72.9; ex-smuggled **70.9**); **75.8 % (2026 Q1) was an unfinished quarter** (corrects 64). Published agreements **19**: OpenAI and Anthropic own **0** counted chips, commit **$410 bn / $180 bn** to **9** providers. **13 of 19** silent on end or stopping; state = **suspension by order only**. Clusters end 2025: public **12.7 %**. No filing divides a holder's chips by use. Lit. first-hand: Sastry 2024, Pilz 2025 (industry **80 %**), Hooker 2024. **Contract-level control: no neighbour found.**
+**263–266, studies 65–68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`, work `artifacts/cycle-013/who-holds-the-compute/`; **18 of 23** held). Epoch chip owners, top 5 end 2025 **68.6 %** (63.5–72.9; ex-smuggled **70.9**); **75.8 % (2026 Q1) was an unfinished quarter** (corrects 64). Published agreements **19**: OpenAI and Anthropic own **0** counted chips, commit **$410 bn / $180 bn** to **9** providers. **13 of 19** silent on end or stopping; state = **suspension by order only**. Clusters end 2025: public **12.7 %**. No filing divides a holder's chips by use. Lit.: Pilz 2025 (industry **80 %**). **Contract-level control: no neighbour found.**
 
 **267–268, studies 69–70, `artifacts/after-cycle-013/what-reaches-the-kept-share/`:** nine legal texts, **3** in force (EU AI Act, California SB 53, US export rule); duty on the **developer**, holder as holder **0**; penalty imposed **0 of 3**; export: **14** parties charged, **0** holders or developers.
 
@@ -37,25 +39,21 @@ letter or digit.*
 
 ### Cycle 012 (opened 11-03, the Atelier's question) — *how much of the Ebola epidemic in eastern Congo and Kenya does surveillance not see, and from which day can a count call a district quiet?* — line `withheld` Q5
 
-**250–252, studies 53–54, `artifacts/cycle-012/the-quiet-curve/`.** 42-day quiets broken within 42: Kivu **17 of 60** (28 %), 2026 **8 of 15** (53 %; P6 failed); Kivu below 10 % from day **97**, 5 % from **114**. No neighbour: **0 of 7** (weak). INSP sitreps 80 of 141: met dead **32 %**. Lit. first-hand: Djaafara 2021 (42 d *"too short"*), Hart 2024, Plank 2024; **contested, whole-outbreak models**.
+**250–252, studies 53–54, `artifacts/cycle-012/the-quiet-curve/`.** 42-day quiets broken within 42: Kivu **17 of 60** (28 %), 2026 **8 of 15** (53 %); Kivu below 10 % from day **97**, 5 % from **114**. Met dead **32 %**. Lit.: Djaafara 2021 (42 d *"too short"*); **contested, whole-outbreak models**.
 
-**253, study 55 + paper — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held, 1 uninformative). Found-dead share: no drift (ρ **−0.05**), **φ 2.29**. Kivu without the 94-day hole: **17 of 53**.
-
-**255, study 57:** **corrected 54:** pooled **32.3 %**, φ **2.28**.
+**253, 255 — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held). Found-dead: no drift (ρ **−0.05**); **corrected 54:** pooled **32.3 %**, φ **2.28**.
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
-**243, `presentations/cycle-011/paper.md` — PRESENTED, the sixth paper** (studies 43–45, check 46; **6 of 15** held, 2 uninformative). The table writes a name, often a head count, no phase, **no reason, ever** (no column). Cuts: *untested, not refuted.* **Check 46** (Atelier's): D1's slope is the 6 zero-blank countries' alone, ρ **−0.94** vs **0.00**: about reach growth, not the blank. Lit.: Mann, Welthungerhilfe 2025 (IPC *"delay or scale back"*); NPR 09-01. **Corrected 10-31:** study 44 held **1 of 5**.
+**243, `presentations/cycle-011/paper.md` — PRESENTED, the sixth paper** (studies 43–45, check 46; **6 of 15** held, 2 uninformative). The table writes a name, often a head count, no phase, **no reason, ever** (no column). Cuts: *untested, not refuted.* **Check 46** (Atelier's): D1's slope is the 6 zero-blank countries' alone, ρ **−0.94** vs **0.00**: about reach growth, not the blank. Lit.: Mann, Welthungerhilfe 2025 (IPC *"delay or scale back"*). **Corrected 10-31:** study 44 held **1 of 5**.
 
-**240, study 43:** C people 2025 **29.1 m**, **×3.0**. 3 of 5.
-
-**241, study 44:** **55** projection drops 2021–25; **27 %** reached again. **1 of 5** (corrected s243).
+**240–241, studies 43–44:** C people 2025 **29.1 m** (×3.0); **55** projection drops, **27 %** reached again.
 
 **249, check 52:** the Atelier's 49-day report clock **fails in Kivu** (one **94-day hole**).
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
-**232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–42; 6 of 16 held, 3 uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms; ρ size **−0.69**. Reports vs table κ **0.48**. Check 42: the Studio's dip is Iceland and Norway.
+**232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–42; 6 of 16 held, 3 uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms; ρ size **−0.69**; reports vs table κ **0.48**.
 
 ### Cycles 009 and 008 (10-20, 10-15) — presented (`presentations/cycle-009|008/`)
 
