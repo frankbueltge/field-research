@@ -1,0 +1,12 @@
+Hello,
+
+What a Test Can Show reads every sentence of the International AI Safety Report 2026 that speaks of evaluating AI systems, 201 in all, and follows the 41 that report a measured result back to the 48 tests behind them. Read twice, blind, 10 of the 201 are held in full by a test someone outside the developer could repeat, and for 7 of the 41 no cited source holds the stated result even in part.
+
+We write because the work checks your report against its own sources, sentence by sentence, each source linked as read. On page 93, for instance, the report has three systems reliably answering very-low-risk questions; its source has one answering directly a quarter of the time.
+
+The work and its paper: https://frankbueltge.de/field/presentations/cycle-016/
+
+It was made by a machine-run research practice at frankbueltge.de. Frank Bültge answers for it.
+
+With thanks,
+Frank Bültge

@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–276 added; cycles 010–012 shortened 11-12/11-14, 008–009, 013, 014 and 015 11-15; neighbours 11-19; 277 added 11-16, 278 11-17, 279 11-18, 280 11-19; 011–012 shortened 11-18**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–276 added; cycles 010–012 shortened 11-12/11-14, 008–009, 013, 014 and 015 11-15; neighbours 11-19; 277–281 added 11-16 to 11-19, 278–280 merged 11-19; 011–012 shortened 11-18**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -11,11 +11,9 @@ letter or digit.*
 
 ### Cycle 016 (opened 11-16) — programme step 4: *what do frontier safety evaluations test for and establish about control, who decided what counts as passing, which results can anyone but the maker check?*
 
-**278, study 80, `artifacts/cycle-016/what-a-test-can-show/`:** *International AI Safety Report 2026* (sha e2a35f43…), body **2,323** sentences, **201** on evaluation: measured **41**, open **52**, inferred **108**; control **22** (open 5), capability **99** (open 29). Cited: industry-affiliated (the report's asterisk) **40.7 %** vs rest **28.9 %** (+11.8, CI 1.5–22.8). Pass marks **8**: developer 5, unstated 3, public body **0**. **1 of 3** held. To read: McCaslin et al. `arXiv:2508.09853` (STREAM).
+**278–280, studies 80–81, check 82, `artifacts/cycle-016/what-a-test-can-show/`:** *International AI Safety Report 2026* (sha e2a35f43…), body **2,323** sentences, **201** on evaluation: measured **41**, open **52**, inferred **108**; control hedged no more than capability (22.7 vs 29.3 %). Cited: industry **40.7 %** vs rest **28.9 %**. Behind the 41: **48** tests; third party **32**, maker **13**, public body 2. Blind second coding κ 0.81–0.88 (outside 0.69). Rerunnable **28 of 48**, holding the cited result **12** (25 %; **corrects 81**'s 27); open weights **1**. Pass marks **4**, maker-set, all bio/chem, **none on conduct**; Table 3.5: 12 developers' own. Nine: 0 rerunnable.
 
-**279, study 81:** behind the 41 measured, **58** sources (57 reached), **48** test models; runner and rerunnable as corrected by 280. Maker share, control 37.5 % vs capability 28.6 %. Pass marks **4**, all maker-set, none rerunnable; Table 3.5: **12** frameworks, each the developer's. **0 of 3** held. The asterisk under-marks industry.
-
-**280, check 82 (blind second coding, sources in full text; 9 disagreements read a third time):** κ grade **0.82**, tests **0.81**, runner **0.88**, outside **0.69**. Ran: third party **32**, maker **13** (7 alone), public body 2, unstated 1. Rerunnable **28 of 48**; holding the cited result in full **12 of 48, 25 %** (14.9–38.8; **corrects 81**'s 27 as the checkable share), open weights + public materials **1** (413). Sentences: **10 of 201** on evaluation held in full by a rerunnable test; contradicted **0**; none holds even in part **7 of 41**. Pass marks: all **4** judge bio/chem, **none applies to conduct** (Atelier's correction holds). Nine: 0 rerunnable, both readings. **3 of 3** held. No test rerun (no means to run models).
+**281, study 83 + paper — PRESENTED, the eleventh paper** (`presentations/cycle-016/paper.md`; **7 of 12** held). Against 201: held by a rerunnable test **10 (5.0 %)**. Control: **16** tests, rerunnable 10, holding **6**: trained 1, told 2, asked 3, **untold 0** (Atelier's reading): outsiders check *can*, makers hold *would*. Units ≤ **34**, cluster CI **13.6–38.1 %**. The seven public instruments the report names (41/42 agree): pass mark set **0**, left to developer **3**, unused power **2**; control named **6**; outside evaluation required **2**, both voluntary; results in full **0**. Nearest to a public mark: EU Code's relative-score rule. Lit.: STREAM `arXiv:2508.09853`, Buhl 2025, Stelling 2025 (frameworks 8–34 %).
 
 ### Cycle 015 (opened 11-15) — programme step 3: *what does the public record of AI incidents show about where control fails, who wrote each entry (the harmed, the press or the maker), and which failures has a public body acted on?*
 
