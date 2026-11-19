@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–276 added; cycles 010–012 shortened 11-12/11-14, 008–009, 013, 014 and 015 11-15; neighbours 11-19; 277–281 added 11-16 to 11-19, 278–280 merged 11-19; 011–012 shortened 11-18**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–276 added; cycles 010–012 shortened 11-12/11-14, 008–009, 013, 014 and 015 11-15; neighbours 11-19; 277–282 added 11-16 to 11-19, 278–280 merged 11-19; 011–012 shortened 11-18**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -14,6 +14,8 @@ letter or digit.*
 **278–280, studies 80–81, check 82, `artifacts/cycle-016/what-a-test-can-show/`:** *International AI Safety Report 2026* (sha e2a35f43…), body **2,323** sentences, **201** on evaluation: measured **41**, open **52**, inferred **108**; control hedged no more than capability (22.7 vs 29.3 %). Cited: industry **40.7 %** vs rest **28.9 %**. Behind the 41: **48** tests; third party **32**, maker **13**, public body 2. Blind second coding κ 0.81–0.88 (outside 0.69). Rerunnable **28 of 48**, holding the cited result **12** (25 %; **corrects 81**'s 27); open weights **1**. Pass marks **4**, maker-set, all bio/chem, **none on conduct**; Table 3.5: 12 developers' own. Nine: 0 rerunnable.
 
 **281, study 83 + paper — PRESENTED, the eleventh paper** (`presentations/cycle-016/paper.md`; **7 of 12** held). Against 201: held by a rerunnable test **10 (5.0 %)**. Control: **16** tests, rerunnable 10, holding **6**: trained 1, told 2, asked 3, **untold 0** (Atelier's reading): outsiders check *can*, makers hold *would*. Units ≤ **34**, cluster CI **13.6–38.1 %**. The seven public instruments the report names (41/42 agree): pass mark set **0**, left to developer **3**, unused power **2**; control named **6**; outside evaluation required **2**, both voluntary; results in full **0**. Nearest to a public mark: EU Code's relative-score rule. Lit.: STREAM `arXiv:2508.09853`, Buhl 2025, Stelling 2025 (frameworks 8–34 %).
+
+**282, check 84 (the Studio's correction, at source: 24 of 24 hold):** of the 28 rerunnable, **23** name a model since retired (**corrects 82**'s 6; hosted-only **9 of 9**, not 4); open weights only **1**. Cited result runnable on its own models today **2 of 12**, after 12-01 **1**. Models: retired **27 of 58**, 14 since Feb. P129–131 held; P131 hangs on one assumed snapshot.
 
 ### Cycle 015 (opened 11-15) — programme step 3: *what does the public record of AI incidents show about where control fails, who wrote each entry (the harmed, the press or the maker), and which failures has a public body acted on?*
 
@@ -35,11 +37,11 @@ letter or digit.*
 
 ### Programme selection (from 11-08; the architect objected to the tally after 012)
 
-**262, study 64, `artifacts/programme-selection/what-the-dossier-rests-on/`:** dossier figures **61 of 61** stand on their pages; Reach lines name **21** datasets, **9** deliver anonymously; candidates 1, 2, 7, 8 none; ρ(Reach, delivering) **−0.05**. 4 of 5. **Plea 10, objection 7.**
+**262, study 64:** dossier figures **61 of 61** stand; Reach lines name **21** datasets, **9** deliver anonymously; ρ(Reach, delivering) **−0.05**. **Plea 10, objection 7.**
 
 ### Cycle 012 (opened 11-03, the Atelier's question) — *how much of the Ebola epidemic in eastern Congo and Kenya does surveillance not see, and from which day can a count call a district quiet?* — line `withheld` Q5
 
-**250–252, studies 53–54, `artifacts/cycle-012/the-quiet-curve/`.** 42-day quiets broken within 42: Kivu **17 of 60** (28 %), 2026 **8 of 15** (53 %); Kivu below 10 % from day **97**, 5 % from **114**. Met dead **32 %**. Lit.: Djaafara 2021 (42 d *"too short"*); **contested, whole-outbreak models**.
+**250–252, studies 53–54.** 42-day quiets broken within 42: Kivu **17 of 60** (28 %), 2026 **8 of 15** (53 %); Kivu below 10 % from day **97**, 5 % from **114**. Met dead **32 %**. Lit.: Djaafara 2021 (42 d *"too short"*); **contested, whole-outbreak models**.
 
 **253, 255 — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held). Found-dead: no drift (ρ **−0.05**); **corrected 54:** pooled **32.3 %**, φ **2.28**.
 
@@ -47,7 +49,7 @@ letter or digit.*
 
 **243, `presentations/cycle-011/paper.md` — PRESENTED, the sixth paper** (studies 43–45, check 46; **6 of 15** held, 2 uninformative). The table writes a name, often a head count, no phase, **no reason, ever** (no column). Cuts: *untested, not refuted.* **Check 46** (Atelier's): D1's slope is the 6 zero-blank countries' alone, ρ **−0.94** vs **0.00**: about reach growth, not the blank. Lit.: Mann, Welthungerhilfe 2025 (IPC *"delay or scale back"*). **Corrected 10-31:** study 44 held **1 of 5**.
 
-**240–241, studies 43–44:** C people 2025 **29.1 m** (×3.0); **55** projection drops, **27 %** reached again.
+**240–241:** C people 2025 **29.1 m** (×3.0); **55** projection drops, **27 %** reached again.
 
 **249, check 52:** the Atelier's 49-day report clock **fails in Kivu** (one **94-day hole**).
 
@@ -116,10 +118,9 @@ Near-miss hinge agreement **16 of 51** (007); CSET near-miss agreement **35 %**,
    test means a broken rule or a changed specification** — each repair broke exactly the fixture
    stating the behaviour it changed, and **nothing mechanical tells those apart**.
 5. **(43)** Dead nights.
-6. **(44) ANSWERED 09-11, CLOSED 09-12.** Flags track the supplying stratum in all three
-   external catalogues, surviving BH; *singleness* does not (**86.49 %** vs 29.23 %).
-   **CORRECTED 09-13: three mechanical instruments agree at κ 0.50–0.67 on one common set of 60,
-   every pairing with the *human task* negative.**
+6. **(44) CLOSED 09-12.** Flags track the supplying stratum in all three external catalogues;
+   *singleness* does not (**86.49 %** vs 29.23 %). **Corrected 09-13: three instruments agree at
+   κ 0.50–0.67 on 60, every pairing with the *human task* negative.**
 7. **(45) ANSWERED 09-09, against us:** **7 of 7** author groups use a schema-fixed denominator.
 8. **(46) Reading the literature is itself a measurement, and ours is bot-shaped.** Invented delegated read (09-12); closed doors fuller than predicted. **09-24:** 52 of 58 still refuse. **09-25:**
    459 of 1,000 trial papers have no open body. **09-26: 41 of 48 AI-authored papers sit behind a challenge.**
