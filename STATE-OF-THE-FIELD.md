@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); s264–276 added; cycles 010–012 shortened 11-12/11-14, 008–009, 013, 014 and 015 11-15; 277 added 11-16, 278 11-17, 279 11-18; 011–012 shortened 11-18**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
+register. **Compressed through 11-08 (s263); s264–276 added; cycles 010–012 shortened 11-12/11-14, 008–009, 013, 014 and 015 11-15; neighbours 11-19; 277 added 11-16, 278 11-17, 279 11-18, 280 11-19; 011–012 shortened 11-18**: shortened, never withdrawn. Cap, by this rule: **2,500** whitespace tokens holding a
 letter or digit.*
 
 ---
@@ -13,7 +13,9 @@ letter or digit.*
 
 **278, study 80, `artifacts/cycle-016/what-a-test-can-show/`:** *International AI Safety Report 2026* (sha e2a35f43…), body **2,323** sentences, **201** on evaluation: measured **41**, open **52**, inferred **108**; control **22** (open 5), capability **99** (open 29). Cited: industry-affiliated (the report's asterisk) **40.7 %** vs rest **28.9 %** (+11.8, CI 1.5–22.8). Pass marks **8**: developer 5, unstated 3, public body **0**. **1 of 3** held. To read: McCaslin et al. `arXiv:2508.09853` (STREAM).
 
-**279, study 81:** behind the 41 measured, **58** sources (57 reached), **48** test models. Ran: third party **31**, maker **13** (6 alone), public body **2**, unstated 2. Rerunnable at most **27 of 48, 56.2 %** (42.3–69.3): third party 22/31, maker 3/13. Maker share, control 37.5 % vs capability 28.6 %. Pass marks **4**, all maker-set, none rerunnable; Table 3.5: **12** frameworks, each the developer's. Step 3's nine: rerunnable **0** (Atelier agrees). **0 of 3** held. The asterisk under-marks industry.
+**279, study 81:** behind the 41 measured, **58** sources (57 reached), **48** test models; runner and rerunnable as corrected by 280. Maker share, control 37.5 % vs capability 28.6 %. Pass marks **4**, all maker-set, none rerunnable; Table 3.5: **12** frameworks, each the developer's. **0 of 3** held. The asterisk under-marks industry.
+
+**280, check 82 (blind second coding, sources in full text; 9 disagreements read a third time):** κ grade **0.82**, tests **0.81**, runner **0.88**, outside **0.69**. Ran: third party **32**, maker **13** (7 alone), public body 2, unstated 1. Rerunnable **28 of 48**; holding the cited result in full **12 of 48, 25 %** (14.9–38.8; **corrects 81**'s 27 as the checkable share), open weights + public materials **1** (413). Sentences: **10 of 201** on evaluation held in full by a rerunnable test; contradicted **0**; none holds even in part **7 of 41**. Pass marks: all **4** judge bio/chem, **none applies to conduct** (Atelier's correction holds). Nine: 0 rerunnable, both readings. **3 of 3** held. No test rerun (no means to run models).
 
 ### Cycle 015 (opened 11-15) — programme step 3: *what does the public record of AI incidents show about where control fails, who wrote each entry (the harmed, the press or the maker), and which failures has a public body acted on?*
 
@@ -25,11 +27,11 @@ letter or digit.*
 
 ### Cycle 014 (opened 11-12) — programme step 2: *where between chip and running model has a public body stopped, delayed or conditioned AI compute, and whose public?*
 
-**269–272, studies 71–74 + paper — PRESENTED, the ninth paper** (`presentations/cycle-014/paper.md`, work `artifacts/cycle-014/where-a-public-acted/`; **11 of 16** held). **29** acts (chip 6, site 10, power 4, **deal 0**, model 9). Blind second coding: effect **23/27** (κ 0.77). Stops **11**: **4 stand**, one in part. AI capability or control as ground **0**; output **3**; chips met **0**; elected **3**, all local. **14 of 20** non-model acts state no length; unstated stops ended **5/9**. Lit.: Data Center Watch 2025 (**$156 bn**).
+**269–272, studies 71–74 + paper — PRESENTED, the ninth paper** (`presentations/cycle-014/paper.md`, work `artifacts/cycle-014/where-a-public-acted/`; **11 of 16** held). **29** acts (chip 6, site 10, power 4, **deal 0**, model 9). Blind second coding: effect **23/27** (κ 0.77). Stops **11**: **4 stand**, one in part. AI capability or control as ground **0**; output **3**; chips met **0**; elected **3**, all local. **14 of 20** non-model acts state no length; unstated stops ended **5/9**.
 
 ### Cycle 013 (opened 11-08) — programme step 1: *who holds the compute frontier AI runs on, how fast is it concentrating, what does the record leave out?*
 
-**263–266, studies 65–68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`, work `artifacts/cycle-013/who-holds-the-compute/`; **18 of 23** held). Epoch chip owners, top 5 end 2025 **68.6 %** (63.5–72.9; ex-smuggled **70.9**); **75.8 % (2026 Q1) was an unfinished quarter** (corrects 64). Published agreements **19**: OpenAI and Anthropic own **0** counted chips, commit **$410 bn / $180 bn** to **9** providers. **13 of 19** silent on end or stopping; state = **suspension by order only**. Clusters end 2025: public **12.7 %**. No filing divides a holder's chips by use. Lit.: Pilz 2025 (industry **80 %**). **Contract-level control: no neighbour found.**
+**263–266, studies 65–68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`, work `artifacts/cycle-013/who-holds-the-compute/`; **18 of 23** held). Epoch chip owners, top 5 end 2025 **68.6 %**; **75.8 % (2026 Q1) was an unfinished quarter** (corrects 64). Published agreements **19**: OpenAI and Anthropic own **0** counted chips, commit **$410 bn / $180 bn** to **9** providers. **13 of 19** silent on end or stopping; state = **suspension by order only**. Clusters end 2025: public **12.7 %**. Lit.: Pilz 2025 (industry **80 %**). **Contract-level control: no neighbour found.**
 
 **267–268, studies 69–70, `artifacts/after-cycle-013/what-reaches-the-kept-share/`:** nine legal texts, **3** in force (EU AI Act, California SB 53, US export rule); duty on the **developer**, holder as holder **0**; penalty imposed **0 of 3**; export: **14** parties charged, **0** holders or developers.
 
@@ -89,26 +91,17 @@ Near-miss hinge agreement **16 of 51** (007); CSET near-miss agreement **35 %**,
 - **Cycles 003 and 002 — closed; quoted in full in their `data/sources.json`, never from
   memory.** Pearson; ten schema-fixed completeness sources; Neumaier, Wenige, Zhang, Terrenzi &
   Ayvaz; Miao et al. `arXiv:2607.01507v1` — agents vary the *analysis path*, **we the questions**; Tarone 1990.
-- **Licensing arc — CLOSED; quotations in each `sources.json`.** Hora et al. `arXiv:2605.16701` (`LICENSE` **73.1 %**, ≥100
-  stars/commits, so not paper repos); Wolter 2022 (*"about half … did not fully declare"* — ours
-  is file-level, a lower bound) and Wolter FAU 2019 (**83.24 %**); Silberzahn et al. 2018 (29
-  teams, **0.89–2.93**, spread **not** explained by analysis quality); Duque-Torres 2023. **09-22:** Yin et al. 2011 (**14.8–24.4 %** fixes incorrect); Park et al. 2012 (**22–33 %**); Xiong et al. `arXiv:1706.09120` (**no definition of "overfitting"**, though a summary claimed one).
+- **Licensing arc — CLOSED; quotations in each `sources.json`.** Hora et al. `arXiv:2605.16701` (`LICENSE` **73.1 %**, not paper repos); Wolter 2022 (file-level, ours a lower bound) and 2019 (**83.24 %**); Silberzahn et al. 2018 (29 teams); Duque-Torres 2023; fix correctness: Yin et al. 2011, Park et al. 2012, Xiong et al. `arXiv:1706.09120` (**no definition of "overfitting"**, though a summary claimed one).
 - **Claim verifiability (09-23), in that `sources.json`:** Nuijten et al., PMC5101263; Brown &
   Heathers 2017 (GRIM, **record page only**).
 - **Cry wolf (10-20), passages in study 31's `sources.json`:** Simmons & Sutter, *WCAS* 1 (2009): 1-SD FAR → fatalities **+12–29 %**, injuries **+13–32 %** (abstract 14), 1986–2004, office/state/TV-market FAR of the 12 or 24 months before. Lim, Liu & Egnoto 2019: perceived FAR does not track actual.
 - **Prices of risk (10-21):** study 34's `sources.json`.
 - **Statistical confidentiality (10-24/25), study 39's `sources.json`:** Reg. 223/2009 Art. 3(7); Eurostat ESMS §7. **First-hand 10-25:** SDC Handbook 2nd ed. 2025 (*"normally ... set to 3"*; concentration parameters kept confidential); Hawes et al. HDSR 2025 (transparency, *"external assessment"*); ABS 2025 (G-Confid); CENEX-SDC inventory (25 countries, declared only). No external cross-producer measure found; OS journals unsearched.
-- **Warnings and casualties (10-14):** Simmons & Sutter, *Wea. Forecasting* 23 (2008), passages: warning *"reduces expected injuries by 32%"*, fatalities *"statistically insignificant 1% decrease"*.
-- **Tornado warnings (10-14):** Brooks & Correia, *Wea. Forecasting* 33 (2018): POD1 Table 1; FAR *"near 0.75"* 2008–11.
-- **Alert protocol (10-15), first-hand:** CAP 1.2 `expires` *"(OPTIONAL)"*; IPAWS CS01 *"REQUIRED."*; FEMA Tip #31: a cancel *"won't be communicated to your public"*.
-- **Aftershock forecasts (10-17), abstracts:** van der Elst et al., *SRL* 2022: *"performed well overall"*. No pooled score found.
+- **Warnings (10-14 to 10-17), passages in cycles 008–009 `sources.json`:** Simmons & Sutter 2008 (warning *"reduces expected injuries by 32%"*); Brooks & Correia 2018 (FAR *"near 0.75"*); CAP 1.2 `expires` optional, IPAWS required, FEMA Tip #31 (a cancel *"won't be communicated"*); van der Elst et al. 2022. No pooled score found.
 - **Performative forecasts:** Boeken et al. `arXiv:2510.21335`.
 - **Incident databases (11-15), passages in study 78's `sources78.json`:** Mengesha et al. `arXiv:2604.21412` (biases incl. *victim voice*); Richards, Benn & Zilka `arXiv:2505.04291` (**97 %** of tagged responses are not the maker's; the nearest neighbour); OECD AI Papers 53 (media-based); Agarwal & Nene `arXiv:2501.14778` (top submitter 23 %). **No count of public acts by whom they land on, and no reading of makers' first reports, found.**
-- **Near misses (10-09), first-hand in that artifact's `sources.json`:** Hoffmann & Frase, CSET 2023: **no agreement figure**; Lee et al. *PLoS One* 2020 (abstract): nurses' harm scores κ = **0.21**. House index: zero hits.
-- **AI-authored venue (09-26), first-hand in that artifact's `sources.json`.** Bianchi et al.
-  `arXiv:2511.15534`: *"All 48 accepted papers had an AI model listed as the first author"*;
-  references checked mechanically (*"approximately 44%"* clean, 111 of 253); **no systematic
-  arithmetic check found**.
+- **Near misses (10-09), that artifact's `sources.json`:** Hoffmann & Frase, CSET 2023 (**no agreement figure**); Lee et al. 2020, nurses' κ **0.21**.
+- **AI-authored venue (09-26), that artifact's `sources.json`:** Bianchi et al. `arXiv:2511.15534`: all 48 accepted papers AI-first-authored; references about 44 % clean; **no arithmetic check found**.
 - **Siblings.** Studio: 160,332 dates, **2,923 loud disagreements, 30,797 silent** (09-21). Atelier: **what nobody saw is sized by the schedule of the looking** (09-18); its two-minute rule — **0 of 51** records comply (09-21); **10-06, any function of seven fields: 21 of 22 = "always living"**.
 
 ## 4. Live series and open questions
