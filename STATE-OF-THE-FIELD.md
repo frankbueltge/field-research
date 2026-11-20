@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); later sessions added and shortened; 283 added, 015 shortened 11-19**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
+register. **Compressed through 11-08 (s263); later sessions added and shortened; 284 added, 011–012 shortened 11-20**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
 
 ---
 
@@ -11,6 +11,8 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 ### Cycle 017 (opened 11-19) — programme step 5: *where did this house's own machines act beyond or against their instructions, unasked, who or what saw it first, which records outlive the models?*
 
 **283, study 85, `artifacts/cycle-017/what-the-house-did-unasked/`:** 17 instructions a script can decide from Git, against the four repos' full history: **8,098** items, **171** broken, all limits (**12.2 %**); prohibitions **0 of 6,654**, duties 0 of 42. Broken in every reading **39**: lines as file lines 60, as paragraphs **10**; our digest over its cap in **89 of 159** versions by any letter, **7** by our own A–Z counter. First week **5.2 %**, after 1.4 %. P133 held, P132 and P134 failed. Neighbours found, unread: `arXiv:2610.36229` (agent commits without signatures); goal drift in coding agents (AIWILD 2026).
+
+**284, study 86 (state 2):** named in writing before the census **8 of 171**, each by the practice that broke the rule, median **6 h**; the rest waited median **28 d**. Our digest counted **16** times while over, each exact by our A–Z counter, each *under*. Site decision log, 200 rows: deeds beyond or against instructions **34**; who saw first, of 29 that say: architect **13**, a session he set **9**, machines unbidden **7**, outside **0**; in Git **31**. P135, P137 held, P136 failed. **Corrected 85:** two workflows sign with a practice's name (217 items, no breach). Atelier's own rule in its runtime: **38 of 111** over.
 
 ### Cycle 016 (opened 11-16) — programme step 4: *what do frontier safety evaluations test for and establish about control, who decided what counts as passing, which results can anyone but the maker check?*
 
@@ -44,29 +46,19 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 
 ### Cycle 012 (opened 11-03, the Atelier's question) — *how much of the Ebola epidemic in eastern Congo and Kenya does surveillance not see, and from which day can a count call a district quiet?* — line `withheld` Q5
 
-**250–252, studies 53–54.** 42-day quiets broken within 42: Kivu **17 of 60** (28 %), 2026 **8 of 15** (53 %); Kivu below 10 % from day **97**, 5 % from **114**. Met dead **32 %**. Lit.: Djaafara 2021 (42 d *"too short"*); **contested, whole-outbreak models**.
-
-**253, 255 — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held). Found-dead: no drift (ρ **−0.05**); **corrected 54:** pooled **32.3 %**, φ **2.28**.
+**250–255, studies 53–54 — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held). 42-day quiets broken within 42: Kivu **17 of 60**, 2026 **8 of 15**; below 10 % from day **97**. Found-dead pooled **32.3 %** (corrected 54). Lit.: Djaafara 2021, **contested**.
 
 ### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
 
-**243, `presentations/cycle-011/paper.md` — PRESENTED, the sixth paper** (studies 43–45, check 46; **6 of 15** held, 2 uninformative). The table writes a name, often a head count, no phase, **no reason, ever** (no column). Cuts: *untested, not refuted.* **Check 46** (Atelier's): D1's slope is the 6 zero-blank countries' alone, ρ **−0.94** vs **0.00**: about reach growth, not the blank. Lit.: Mann, Welthungerhilfe 2025 (IPC *"delay or scale back"*). **Corrected 10-31:** study 44 held **1 of 5**.
-
-**240–241:** C people 2025 **29.1 m** (×3.0); **55** projection drops, **27 %** reached again.
-
-**249, check 52:** the Atelier's 49-day report clock **fails in Kivu** (one **94-day hole**).
+**240–249 — PRESENTED, the sixth paper** (`presentations/cycle-011/paper.md`, studies 43–45, check 46; **6 of 15** held). The table writes a name, often a head count, no phase, **no reason, ever**. Cuts: *untested, not refuted*. C people 2025 **29.1 m**. **Check 52:** the Atelier's 49-day clock **fails in Kivu**.
 
 ### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
 
-**232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–42; 6 of 16 held, 3 uninformative). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms; ρ size **−0.69**; reports vs table κ **0.48**.
+**232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–42; 6 of 16 held). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms.
 
-### Cycles 009 and 008 (10-20, 10-15) — presented (`presentations/cycle-009|008/`)
+### Cycles 004–009 (10-03 to 10-20) — presented (`presentations/`)
 
-009: 22 of 31 held; FAR per SD, injured **1.18**, dead **1.27**, within an office **1.01**. 008: 22 of 34 held; fireballs warned 6 of 639.
-
-### Cycles 004–007 (10-03 to 10-10) — presented
-
-Near-miss hinge agreement **16 of 51** (007); CSET near-miss agreement **35 %**, AIID **1** of 1,713 meets 7.1 (006); **68.7–72.0 %** of 2,502 extinct species lack a GBIF record (004).
+009: FAR per SD, injured **1.18**, dead **1.27**. 008: fireballs warned 6 of 639. 007: near-miss hinge agreement **16 of 51**. 006: AIID **1** of 1,713 meets 7.1. 004: **68.7–72.0 %** of extinct species lack a GBIF record.
 
 ### Cycles 003 (PRESENTED), 002, 001 — closed (`presentations/`)
 
