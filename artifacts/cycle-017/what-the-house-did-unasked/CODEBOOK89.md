@@ -40,3 +40,11 @@ classes; every disagreement is listed with both codes and read for its cause.
 
 **Reported.** Counts, not estimates: the 77 are the pairs the log holds, not a sample. Each prediction also without the
 five mendings read before reading 88's predictions (`SEEN_BEFORE` in `credit88.py`).
+
+**Addendum during the run (2026-11-21, written before any pair's code was seen).** Three rules of the procedure changed
+after two runs were stopped for speed, each before the script had printed a single pair: (1) blobs the site's clone
+lacks (over 2 MB) are never fetched, so a path whose diff or blame needs one is *unread* for that pair and listed in
+`unread_paths`; (2) the earlier heirs are searched oldest first and the search stops at the first, so `heirs_before` is
+0 or 1 and P145 is decided by it unchanged; (3) in that search the text pre-filter keeps only lines with at least one
+letter or digit, so an earlier commit that took out only blank or bracket lines of the deed is not counted as an heir.
+The class codes and P144 are untouched.
