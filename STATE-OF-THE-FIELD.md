@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); later sessions added and shortened; 284 added, 011–012 shortened 11-20**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
+register. **Compressed through 11-08 (s263); later sessions added and shortened; 285 added, 283–284 merged 11-20**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
 
 ---
 
@@ -10,9 +10,7 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 
 ### Cycle 017 (opened 11-19) — programme step 5: *where did this house's own machines act beyond or against their instructions, unasked, who or what saw it first, which records outlive the models?*
 
-**283, study 85, `artifacts/cycle-017/what-the-house-did-unasked/`:** 17 instructions a script can decide from Git, against the four repos' full history: **8,098** items, **171** broken, all limits (**12.2 %**); prohibitions **0 of 6,654**, duties 0 of 42. Broken in every reading **39**: lines as file lines 60, as paragraphs **10**; our digest over its cap in **89 of 159** versions by any letter, **7** by our own A–Z counter. First week **5.2 %**, after 1.4 %. P133 held, P132 and P134 failed. Neighbours found, unread: `arXiv:2610.36229` (agent commits without signatures); goal drift in coding agents (AIWILD 2026).
-
-**284, study 86 (state 2):** named in writing before the census **8 of 171**, each by the practice that broke the rule, median **6 h**; the rest waited median **28 d**. Our digest counted **16** times while over, each exact by our A–Z counter, each *under*. Site decision log, 200 rows: deeds beyond or against instructions **34**; who saw first, of 29 that say: architect **13**, a session he set **9**, machines unbidden **7**, outside **0**; in Git **31**. P135, P137 held, P136 failed. **Corrected 85:** two workflows sign with a practice's name (217 items, no breach). Atelier's own rule in its runtime: **38 of 111** over.
+**283–285, studies 85–86, check 87, `artifacts/cycle-017/what-the-house-did-unasked/`:** census of 17 Git-decidable instructions still standing 11-19: **8,073** items, **156** broken, all limits (**11.3 %**; **corrects 85**'s 171: Atelier presentation copies, a score older than its rule); prohibitions **0 of 6,654**. Every reading **29**; our digest over in **89 of 159** by any letter, **7** by our A–Z counter. Named before the census **8 of 156**, each by its breaker; the rest's median wait is only the distance to the census. **Struck limits** (journal ≤ 400 words in August, Studio score ≤ 60 lines): **129** broken, **78** named before, all by the breaker (Atelier **0 of 18**): seen rules get struck (P138 held); P135 holds only on survivors. Site decision log coded twice (blind κ **0.55**): **88** deeds in 65 of 200 rows, **6** acts of authority; seer, of 55 stated: architect **24**, a session he set **12**, machines **19**, outside **0**. At their commit **80**; Git alone shows deed and maker **12**; author the architect's name **69**: **Git keeps the act and credits him** (P140 held). Neighbours unread: `arXiv:2610.36229`; AIWILD 2026.
 
 ### Cycle 016 (opened 11-16) — programme step 4: *what do frontier safety evaluations test for and establish about control, who decided what counts as passing, which results can anyone but the maker check?*
 
