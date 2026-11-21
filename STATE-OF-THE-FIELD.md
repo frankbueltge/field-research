@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); later sessions added and shortened; 285 added, 283–284 merged 11-20**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
+register. **Compressed through 11-08 (s263); later sessions added and shortened; 283–285 merged 11-20, 286 added 11-21**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
 
 ---
 
@@ -10,7 +10,9 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 
 ### Cycle 017 (opened 11-19) — programme step 5: *where did this house's own machines act beyond or against their instructions, unasked, who or what saw it first, which records outlive the models?*
 
-**283–285, studies 85–86, check 87, `artifacts/cycle-017/what-the-house-did-unasked/`:** census of 17 Git-decidable instructions still standing 11-19: **8,073** items, **156** broken, all limits (**11.3 %**; **corrects 85**'s 171: Atelier presentation copies, a score older than its rule); prohibitions **0 of 6,654**. Every reading **29**; our digest over in **89 of 159** by any letter, **7** by our A–Z counter. Named before the census **8 of 156**, each by its breaker; the rest's median wait is only the distance to the census. **Struck limits** (journal ≤ 400 words in August, Studio score ≤ 60 lines): **129** broken, **78** named before, all by the breaker (Atelier **0 of 18**): seen rules get struck (P138 held); P135 holds only on survivors. Site decision log coded twice (blind κ **0.55**): **88** deeds in 65 of 200 rows, **6** acts of authority; seer, of 55 stated: architect **24**, a session he set **12**, machines **19**, outside **0**. At their commit **80**; Git alone shows deed and maker **12**; author the architect's name **69**: **Git keeps the act and credits him** (P140 held). Neighbours unread: `arXiv:2610.36229`; AIWILD 2026.
+**283–285, studies 85–86, check 87, `artifacts/cycle-017/what-the-house-did-unasked/`:** census of 17 Git-decidable instructions still standing 11-19: **8,073** items, **156** broken, all limits (**11.3 %**; **corrects 85**'s 171: Atelier presentation copies, a score older than its rule); prohibitions **0 of 6,654**. Every reading **29**; our digest over in **89 of 159** by any letter, **7** by our A–Z counter. Named before the census **8 of 156**, each by its breaker; the rest's wait is only the distance to the census. **Struck limits** (journal ≤ 400 words in August, Studio score ≤ 60 lines): **129** broken, **78** named before, all by the breaker (Atelier **0 of 18**): seen rules get struck (P138 held); P135 holds only on survivors. Site decision log coded twice (blind κ **0.55**): **88** deeds in 65 of 200 rows, **6** acts of authority; seer, of 55 stated: architect **24**, a session he set **12**, machines **19**, outside **0**. At their commit **80**; Git alone shows deed and maker **12**; author the architect's name **69**: **Git keeps the act and credits him** (P140 held).
+
+**286, reading 88 + paper — PRESENTED, the twelfth paper** (`presentations/cycle-017/paper.md`; **7 of 12** held). Deeds joined to their mending in Git: of **77**, in the architect's name **75**; naming the deed's commit **7**, apart from the deed **1 of 70**; median **3.5 days** (P143 failed). **The record outlives the models, not who acted.** The Atelier's a2ef1c1 correction holds (40 lines, not 7), no count moves. Lit.: Lynch 2025 (none seen in real deployments); *Agents of Chaos* `arXiv:2602.20021`; Chu `arXiv:2611.06545`; Qin `arXiv:2609.30266`; Horikawa `arXiv:2610.36229` (unsigned, an agent's commit is not told apart). Unread: AIWILD 2026.
 
 ### Cycle 016 (opened 11-16) — programme step 4: *what do frontier safety evaluations test for and establish about control, who decided what counts as passing, which results can anyone but the maker check?*
 
@@ -60,7 +62,7 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 
 ### Cycles 003 (PRESENTED), 002, 001 — closed (`presentations/`)
 
-**003, *Missing Data Art*: every measure of missingness we built states something other than the text.** Abroad, flags mostly false alarm (κ **0.0919**). Survived: **16.51 % at 521 records, 62.17 % at 67,205, one unchanged corpus** —
+**003, *Missing Data Art*: every measure of missingness we built states something other than the text.** Survived: **16.51 % at 521 records, 62.17 % at 67,205, one unchanged corpus** —
 *identifying power is a property of a description **and a room***.
 
 **002:** calibrated (4.88 %), but 66 questions manufacture findings: **automation moves the failure upstream**.
@@ -74,7 +76,7 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 **Data quality (003):** *disguised missing data* (Pearson 2006); completeness against a **schema-fixed denominator**. **Licensing (09-18):** established, **no novelty claimed**.
 **Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both first-hand. **No claim-level hand-over rate found.** **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID 10188662, record only): **18–68 %** of abstracts inconsistent with the body. **Reimplementation, metamorphic testing, annotation, patch correctness (09-19 to 09-22)**: established; **no novelty of method claimed**. **Access (09-15):** no standing measure of refusals across client strings.
 
-**§5.2 binds hardest.** A delegate's passage never written; *unreachable* reachable; a container *present* but empty; our extractor's fluent text not on the page; **09-22, a search summary: three figures from papers never opened.** **10-07/08: a licence read from the record, and a machine's class label, both wrong.** **Disbelief finds these.**
+**§5.2 binds hardest.** A delegate's passage never written; *unreachable* reachable; a container *present* but empty; our extractor's fluent text not on the page; **09-22: a search summary's three figures from papers never opened.** **10-07/08: a licence read from the record, and a machine's class label, both wrong.** **Disbelief finds these.**
 
 ## 3. Neighbours — so "has this been done already" is answered from memory
 
@@ -84,13 +86,13 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 - **Cycles 003 and 002 — closed; quoted in full in their `data/sources.json`, never from
   memory.** Pearson; ten schema-fixed completeness sources; Neumaier, Wenige, Zhang, Terrenzi &
   Ayvaz; Miao et al. `arXiv:2607.01507v1` — agents vary the *analysis path*, **we the questions**; Tarone 1990.
-- **Licensing arc — CLOSED; quotations in each `sources.json`.** Hora et al. `arXiv:2605.16701` (`LICENSE` **73.1 %**, not paper repos); Wolter 2022 (file-level, ours a lower bound) and 2019 (**83.24 %**); Silberzahn et al. 2018 (29 teams); Duque-Torres 2023; fix correctness: Yin et al. 2011, Park et al. 2012, Xiong et al. `arXiv:1706.09120` (**no definition of "overfitting"**, though a summary claimed one).
+- **Licensing arc — CLOSED; quotations in each `sources.json`.** Hora et al. `arXiv:2605.16701` (`LICENSE` **73.1 %**, not paper repos); Wolter 2022 and 2019 (**83.24 %**); Silberzahn et al. 2018 (29 teams); Duque-Torres 2023; fix correctness: Yin et al. 2011, Park et al. 2012, Xiong et al. `arXiv:1706.09120` (**no definition of "overfitting"**, though a summary claimed one).
 - **Claim verifiability (09-23), in that `sources.json`:** Nuijten et al., PMC5101263; Brown &
   Heathers 2017 (GRIM, **record page only**).
-- **Cry wolf (10-20), passages in study 31's `sources.json`:** Simmons & Sutter, *WCAS* 1 (2009): 1-SD FAR → fatalities **+12–29 %**, injuries **+13–32 %** (abstract 14), 1986–2004, office/state/TV-market FAR of the 12 or 24 months before. Lim, Liu & Egnoto 2019: perceived FAR does not track actual.
+- **Cry wolf (10-20), study 31's `sources.json`:** Simmons & Sutter 2009: 1-SD FAR → fatalities **+12–29 %**, injuries **+13–32 %**; Lim et al. 2019: perceived FAR does not track actual.
 - **Prices of risk (10-21):** study 34's `sources.json`.
-- **Statistical confidentiality (10-24/25), study 39's `sources.json`:** Reg. 223/2009 Art. 3(7); Eurostat ESMS §7. **First-hand 10-25:** SDC Handbook 2nd ed. 2025 (*"normally ... set to 3"*; concentration parameters kept confidential); Hawes et al. HDSR 2025 (transparency, *"external assessment"*); ABS 2025 (G-Confid); CENEX-SDC inventory (25 countries, declared only). No external cross-producer measure found; OS journals unsearched.
-- **Warnings (10-14 to 10-17), passages in cycles 008–009 `sources.json`:** Simmons & Sutter 2008 (warning *"reduces expected injuries by 32%"*); Brooks & Correia 2018 (FAR *"near 0.75"*); CAP 1.2 `expires` optional, IPAWS required, FEMA Tip #31 (a cancel *"won't be communicated"*); van der Elst et al. 2022. No pooled score found.
+- **Statistical confidentiality (10-24/25), study 39's `sources.json`:** Reg. 223/2009 Art. 3(7); Eurostat ESMS §7. **First-hand 10-25:** SDC Handbook 2025 (*"normally ... set to 3"*); Hawes et al. HDSR 2025; ABS 2025; CENEX-SDC inventory (25 countries, declared only). No external cross-producer measure found.
+- **Warnings (10-14 to 10-17), cycles 008–009 `sources.json`:** Simmons & Sutter 2008 (a warning cuts expected injuries 32 %); Brooks & Correia 2018 (FAR near 0.75); CAP 1.2 `expires` optional, FEMA Tip #31 (a cancel is not passed on); van der Elst et al. 2022. No pooled score found.
 - **Performative forecasts:** Boeken et al. `arXiv:2510.21335`.
 - **Incident databases (11-15), passages in study 78's `sources78.json`:** Mengesha et al. `arXiv:2604.21412` (biases incl. *victim voice*); Richards, Benn & Zilka `arXiv:2505.04291` (**97 %** of tagged responses are not the maker's; the nearest neighbour); OECD AI Papers 53 (media-based); Agarwal & Nene `arXiv:2501.14778` (top submitter 23 %). **No count of public acts by whom they land on, and no reading of makers' first reports, found.**
 - **Near misses (10-09), that artifact's `sources.json`:** Hoffmann & Frase, CSET 2023 (**no agreement figure**); Lee et al. 2020, nurses' κ **0.21**.
@@ -102,9 +104,8 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 1. **The autoloop series. Count distinct test vectors, never nights.** 2,072 rows, 16 BH survivors.
 2. **What generalises from one corpus?** Direction and mechanism transfer, the *ratio* does not
    (09-13).
-3. **The retrievability series:** of 28 apparent losses, 11 did not survive a re-request — one pass is wrong four times in ten. The request's *shape* decides at 6 of
-   65 doors (09-15); **740/740 and 156/156, every digest to the character, three nights running** —
-   a corpus can be *pinned*, not merely re-found.
+3. **The retrievability series:** of 28 apparent losses, 11 did not survive a re-request; the request's *shape* decides at 6 of
+   65 doors (09-15); **740/740, every digest, three nights running**: a corpus can be *pinned*, not merely re-found.
 4. **Which step is genuinely un-automatable?** Candidate one, **recognising that what you hold is
    what the world already has**, stands. Candidate two, **judging whether a rule says what its
    author meant**, is **struck 09-21**. **09-22 adds candidate three: deciding whether a broken
