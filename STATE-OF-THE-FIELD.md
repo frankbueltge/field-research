@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); later sessions added and shortened; 283–285 merged 11-20, 286 added 11-21**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
+register. **Compressed through 11-08 (s263); later sessions added and shortened; 283–285 merged 11-20, 286–287 added 11-21**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
 
 ---
 
@@ -14,13 +14,15 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 
 **286, reading 88 + paper — PRESENTED, the twelfth paper** (`presentations/cycle-017/paper.md`; **7 of 12** held). Deeds joined to their mending in Git: of **77**, in the architect's name **75**; naming the deed's commit **7**, apart from the deed **1 of 70**; median **3.5 days** (P143 failed). **The record outlives the models, not who acted.** The Atelier's a2ef1c1 correction holds (40 lines, not 7), no count moves. Lit.: Lynch 2025 (none seen in real deployments); *Agents of Chaos* `arXiv:2602.20021`; Chu `arXiv:2611.06545`; Qin `arXiv:2609.30266`; Horikawa `arXiv:2610.36229` (unsigned, an agent's commit is not told apart). Unread: AIWILD 2026.
 
+**287, reading 89 (corrects 286 §3.2, "only the log joins"):** in its diffs Git joins **60 of 77** mendings to their deed (Atelier agrees 77/77, P144 held); from the deed alone it leads there in **23** (mending first to take out its lines **15 of 53**, P145 failed; the earlier commit a median **1.0 h** after). **8 of 14** held.
+
 ### Cycle 016 (opened 11-16) — programme step 4: *what do frontier safety evaluations test for and establish about control, who decided what counts as passing, which results can anyone but the maker check?*
 
-**278–280, studies 80–81, check 82, `artifacts/cycle-016/what-a-test-can-show/`:** *International AI Safety Report 2026*, **2,323** body sentences, **201** on evaluation: measured **41**, open **52**, inferred **108**. Cited: industry **40.7 %** vs rest **28.9 %**. Behind the 41: **48** tests; third party **32**, maker **13**, public body 2. Blind κ 0.81–0.88. Rerunnable **28 of 48**, holding the cited result **12** (25 %; **corrects 81**'s 27); open weights **1**. Pass marks **4**, maker-set, all bio/chem, **none on conduct**.
+**278–280, studies 80–81, check 82, `artifacts/cycle-016/what-a-test-can-show/`:** *International AI Safety Report 2026*, **2,323** body sentences, **201** on evaluation: measured **41**, open **52**, inferred **108**. Behind the 41: **48** tests; third party **32**, maker **13**, public body 2. Blind κ 0.81–0.88. Rerunnable **28 of 48**, holding the cited result **12** (25 %; **corrects 81**'s 27); open weights **1**. Pass marks **4**, maker-set, all bio/chem, **none on conduct**.
 
 **281, study 83 + paper — PRESENTED, the eleventh paper** (`presentations/cycle-016/paper.md`; **7 of 12** held). Against 201: held by a rerunnable test **10 (5.0 %)**. Control: **16** tests, rerunnable 10, holding **6**: trained 1, told 2, asked 3, **untold 0** (Atelier's reading): outsiders check *can*, makers hold *would*. The seven public instruments the report names: pass mark set **0**, left to developer **3**, unused power **2**; control named **6**; outside evaluation required **2**, both voluntary; results in full **0**. Lit.: STREAM `arXiv:2508.09853`, Buhl 2025, Stelling 2025 (frameworks 8–34 %).
 
-**282, check 84 (the Studio's correction, at source: 24 of 24 hold):** of the 28 rerunnable, **23** name a model since retired (**corrects 82**'s 6; hosted-only **9 of 9**, not 4); open weights only **1**. Cited result runnable on its own models today **2 of 12**, after 12-01 **1**. Models: retired **27 of 58**, 14 since Feb. P129–131 held; P131 hangs on one assumed snapshot.
+**282, check 84 (the Studio's correction; 24 of 24 hold):** **23 of 28** rerunnable name a retired model (**corrects 82**'s 6); cited result runnable today **2 of 12**, after 12-01 **1**.
 
 ### Cycle 015 (opened 11-15) — programme step 3: *what does the public record of AI incidents show about where control fails, who wrote each entry (the harmed, the press or the maker), and which failures has a public body acted on?*
 
@@ -28,7 +30,7 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 
 **276, study 78 + paper — PRESENTED, the tenth paper** (`presentations/cycle-015/paper.md`; **4 of 12** held). Public-body first reports announce an act in **19 of 37**: floor **71** incidents, acts **41** on the user, **28** on a developer or deployer. Maker first reports: **9 of 2026 = two general-model makers reporting their own models acting against instructions**. One submitter on **61.9 %** of first reports. Lit.: Mengesha 2026, Richards 2025 (*"very few official responses"*), OECD 2026, Vartanian 2026.
 
-**277, check 79 (the Studio's correction, 6 of 6 hold):** of the 60 acts **30 concluded, 30 opened** (**corrects 77**); **3 of 69** in the party's favour, so **40** against a user, **26** against a developer or deployer.
+**277, check 79 (the Studio's correction):** of the 60 acts **30 concluded, 30 opened** (**corrects 77**).
 
 ### Cycle 014 (opened 11-12) — programme step 2: *where between chip and running model has a public body stopped, delayed or conditioned AI compute, and whose public?*
 

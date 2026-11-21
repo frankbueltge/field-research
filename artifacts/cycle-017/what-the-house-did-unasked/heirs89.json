@@ -1,0 +1,395 @@
+{
+ "results": {
+  "pairs": 38,
+  "median_hours": 1.0,
+  "within_1h": 18,
+  "within_24h": 36,
+  "signers": {
+   "a workflow or bot": 8,
+   "the architect's name": 30
+  },
+  "heir_is_a_mending": 7
+ },
+ "heirs": [
+  {
+   "row": 4,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "682ab4e832bccd0e61954512916dfa5d47aa9d27",
+   "signer": "the architect's name",
+   "hours_after_deed": 9.7,
+   "days_before_mending": 108.9,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 12,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "176f15ac3121910045a4aa0e5a25253ccb74de3e",
+   "signer": "a workflow or bot",
+   "hours_after_deed": 7.6,
+   "days_before_mending": 0.7,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 27,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "102c0578cf82f5641a9f7db19466454ddb8f9676",
+   "signer": "the architect's name",
+   "hours_after_deed": 8.5,
+   "days_before_mending": 0.3,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 57,
+   "deed": 2,
+   "repo": "frankbueltge.de",
+   "heir": "a68b825324497a435a8a51ae0f7ee51334fe8b90",
+   "signer": "a workflow or bot",
+   "hours_after_deed": 0.9,
+   "days_before_mending": 117.1,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 67,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "9eab20c113702632b292efa9d3bd920564e69813",
+   "signer": "a workflow or bot",
+   "hours_after_deed": 2.6,
+   "days_before_mending": 50.2,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 72,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "97cc706e19dba4d7c42756f4617d98e49d70cab2",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.7,
+   "days_before_mending": 54.8,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 82,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "35dceedd45d4991ef701c386bef6ec55db712531",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.7,
+   "days_before_mending": 0.1,
+   "heir_is_a_mending": true
+  },
+  {
+   "row": 83,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "26ec834272ca402a17862fe65ce45e2541c86e4f",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.5,
+   "days_before_mending": 0.1,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 86,
+   "deed": 2,
+   "repo": "frankbueltge.de",
+   "heir": "12046639aa0bc70b2e5cc43e2ae90736398ce5ee",
+   "signer": "the architect's name",
+   "hours_after_deed": 1.2,
+   "days_before_mending": 0.0,
+   "heir_is_a_mending": true
+  },
+  {
+   "row": 87,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "2892ff055b0a049fd6fcfe472671dc213baee9a9",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.3,
+   "days_before_mending": 1.1,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 88,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "685e0a0bb4c26550c028a0e4d30926ea94e54fb1",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.7,
+   "days_before_mending": 0.2,
+   "heir_is_a_mending": true
+  },
+  {
+   "row": 89,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "4320dc16f4eff6ade4f230ae473d8c9c9cbfc615",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.1,
+   "days_before_mending": 0.0,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 91,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "685e0a0bb4c26550c028a0e4d30926ea94e54fb1",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.7,
+   "days_before_mending": 0.1,
+   "heir_is_a_mending": true
+  },
+  {
+   "row": 94,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "6b15bbba4c039b07206d91872b0f05ed86a133f1",
+   "signer": "a workflow or bot",
+   "hours_after_deed": 7.3,
+   "days_before_mending": 23.3,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 95,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "d3925b9111d5b7448e40d20ed8bbc15316dfbb71",
+   "signer": "the architect's name",
+   "hours_after_deed": 1.2,
+   "days_before_mending": 1.0,
+   "heir_is_a_mending": true
+  },
+  {
+   "row": 99,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "7360dca05610abc498ae1f4aa475638a1bb0eae3",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.3,
+   "days_before_mending": 37.0,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 116,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "209b9a6aea772330cbf547eeb4f6e1cf70ad4d97",
+   "signer": "the architect's name",
+   "hours_after_deed": 3.0,
+   "days_before_mending": 0.0,
+   "heir_is_a_mending": true
+  },
+  {
+   "row": 117,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "c2245589d215b507c1e9625b130bdee9ca446a84",
+   "signer": "the architect's name",
+   "hours_after_deed": 23.2,
+   "days_before_mending": 1.2,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 118,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "a474a3bb398faac8414d46e3146e6e91f37177f0",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.1,
+   "days_before_mending": 0.1,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 124,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "9c3ac50ddc72b99f240178e0ef7c26dcd6f99e03",
+   "signer": "a workflow or bot",
+   "hours_after_deed": 6.5,
+   "days_before_mending": 10.4,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 132,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "4f45260a892c64d0e3701d4956d1f0c106e7253c",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.8,
+   "days_before_mending": 13.2,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 132,
+   "deed": 2,
+   "repo": "frankbueltge.de",
+   "heir": "fc099e5a439989887dacb4130a502d66991a92c3",
+   "signer": "a workflow or bot",
+   "hours_after_deed": 0.6,
+   "days_before_mending": 7.1,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 133,
+   "deed": 2,
+   "repo": "frankbueltge.de",
+   "heir": "d079104d15f6d990a0344398d3e5c86ed3115ab3",
+   "signer": "a workflow or bot",
+   "hours_after_deed": 23.4,
+   "days_before_mending": 48.6,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 134,
+   "deed": 1,
+   "repo": "machine-attention",
+   "heir": "e8c5af63965f020c15b7642afdd6f25ecf264757",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.7,
+   "days_before_mending": 7.6,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 134,
+   "deed": 2,
+   "repo": "machine-attention",
+   "heir": "b156c49bc82ac21c5f3d01696b397e6c059fbcd2",
+   "signer": "the architect's name",
+   "hours_after_deed": 2.4,
+   "days_before_mending": 3.2,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 135,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "56176a4a5ee846460510aeb9777f39c3820d51cc",
+   "signer": "the architect's name",
+   "hours_after_deed": 64.8,
+   "days_before_mending": 14.6,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 135,
+   "deed": 2,
+   "repo": "frankbueltge.de",
+   "heir": "4964ced75b19672ba8e22dc8c62293f622b31c5c",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.7,
+   "days_before_mending": 114.1,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 137,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "75bd8f96531fc3b3fa3857fb0724f12271559a07",
+   "signer": "the architect's name",
+   "hours_after_deed": 1.0,
+   "days_before_mending": 20.3,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 137,
+   "deed": 2,
+   "repo": "frankbueltge.de",
+   "heir": "75bd8f96531fc3b3fa3857fb0724f12271559a07",
+   "signer": "the architect's name",
+   "hours_after_deed": 1.0,
+   "days_before_mending": 20.3,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 140,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "fb36706aa73d7981a166e1e1aebe5e76347f776f",
+   "signer": "the architect's name",
+   "hours_after_deed": 1.0,
+   "days_before_mending": 0.7,
+   "heir_is_a_mending": true
+  },
+  {
+   "row": 142,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "077ad6e19432dbbd80d9b68569179744b323ba2f",
+   "signer": "the architect's name",
+   "hours_after_deed": 1.6,
+   "days_before_mending": 2.0,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 144,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "fc099e5a439989887dacb4130a502d66991a92c3",
+   "signer": "a workflow or bot",
+   "hours_after_deed": 0.6,
+   "days_before_mending": 0.0,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 159,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "97cc706e19dba4d7c42756f4617d98e49d70cab2",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.7,
+   "days_before_mending": 2.0,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 166,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "ef12ee8ea6000900c63702d52d590244004b3ff0",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.2,
+   "days_before_mending": 0.6,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 166,
+   "deed": 2,
+   "repo": "frankbueltge.de",
+   "heir": "64e0dc159f3d197adbbde7396cdf6166e38a1c5a",
+   "signer": "the architect's name",
+   "hours_after_deed": 5.2,
+   "days_before_mending": 25.9,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 169,
+   "deed": 1,
+   "repo": "ulysses",
+   "heir": "b1716056d55f2726aa3bc46fba885484642b9234",
+   "signer": "the architect's name",
+   "hours_after_deed": 338.9,
+   "days_before_mending": 2.9,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 175,
+   "deed": 1,
+   "repo": "frankbueltge.de",
+   "heir": "cd327f214e6e61eca6111bb9e50148ef9e5bf8ab",
+   "signer": "the architect's name",
+   "hours_after_deed": 2.1,
+   "days_before_mending": 0.9,
+   "heir_is_a_mending": false
+  },
+  {
+   "row": 180,
+   "deed": 2,
+   "repo": "frankbueltge.de",
+   "heir": "5c984319843f8d3d04ece778d9e88b443dee57dc",
+   "signer": "the architect's name",
+   "hours_after_deed": 0.2,
+   "days_before_mending": 14.1,
+   "heir_is_a_mending": false
+  }
+ ]
+}
