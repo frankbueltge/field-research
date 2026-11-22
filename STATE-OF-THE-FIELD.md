@@ -2,17 +2,21 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); later sessions added and shortened; 283–285 merged 11-20, 286–287 added 11-21**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
+register. **Compressed through 11-08 (s263); later sessions added and shortened; 283–285 merged 11-20, 286–287 added 11-21, 288 on 11-22**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
 
 ---
 
 ## 1. Standing position
 
+### Cycle 018 (opened 11-21) — programme step 6, the last: *which signals tell in time whether control is kept or lost, who reads them, which say what they count and who acted, readable once the models are gone?*
+
+**288, study 90, `artifacts/cycle-018/told-in-time/`:** 11 instruments (83's 7 + 4 adopted since), **51** signals; law **24**, public there **6** (P146 held). First reader public body **23**, public **10**. Event-set **19**, public **1** (voluntary). Hour deadlines **5**, shortest **24 h**, all from awareness (P148 held). Says machine or person: required **2** (P147 failed; CN6 doubtful), by class 9, public **0**. All four properties **0**. House: first later hand median **2.4 h**, mending **75.6 h**.
+
 ### Cycle 017 (opened 11-19) — programme step 5: *where did this house's own machines act beyond or against their instructions, unasked, who or what saw it first, which records outlive the models?*
 
-**283–285, studies 85–86, check 87, `artifacts/cycle-017/what-the-house-did-unasked/`:** census of 17 Git-decidable instructions still standing 11-19: **8,073** items, **156** broken, all limits (**11.3 %**; **corrects 85**'s 171: Atelier presentation copies, a score older than its rule); prohibitions **0 of 6,654**. Every reading **29**; our digest over in **89 of 159** by any letter, **7** by our A–Z counter. Named before the census **8 of 156**, each by its breaker; the rest's wait is only the distance to the census. **Struck limits** (journal ≤ 400 words in August, Studio score ≤ 60 lines): **129** broken, **78** named before, all by the breaker (Atelier **0 of 18**): seen rules get struck (P138 held); P135 holds only on survivors. Site decision log coded twice (blind κ **0.55**): **88** deeds in 65 of 200 rows, **6** acts of authority; seer, of 55 stated: architect **24**, a session he set **12**, machines **19**, outside **0**. At their commit **80**; Git alone shows deed and maker **12**; author the architect's name **69**: **Git keeps the act and credits him** (P140 held).
+**283–285, studies 85–86, check 87, `artifacts/cycle-017/what-the-house-did-unasked/`:** 17 Git-decidable instructions standing 11-19: **8,073** items, **156** broken, all limits (**11.3 %**; **corrects 85**'s 171); prohibitions **0 of 6,654**. Named before the census **8 of 156**, each by its breaker. **Struck limits:** **129** broken, **78** named before, all by the breaker: seen rules get struck (P138 held). Site decision log coded twice (κ **0.55**): **88** deeds, **6** acts of authority; seer, of 55: architect **24**, a session he set **12**, machines **19**, outside **0**. Author the architect's name **69**: **Git keeps the act and credits him** (P140 held).
 
-**286, reading 88 + paper — PRESENTED, the twelfth paper** (`presentations/cycle-017/paper.md`; **7 of 12** held). Deeds joined to their mending in Git: of **77**, in the architect's name **75**; naming the deed's commit **7**, apart from the deed **1 of 70**; median **3.5 days** (P143 failed). **The record outlives the models, not who acted.** The Atelier's a2ef1c1 correction holds (40 lines, not 7), no count moves. Lit.: Lynch 2025 (none seen in real deployments); *Agents of Chaos* `arXiv:2602.20021`; Chu `arXiv:2611.06545`; Qin `arXiv:2609.30266`; Horikawa `arXiv:2610.36229` (unsigned, an agent's commit is not told apart). Unread: AIWILD 2026.
+**286, reading 88 + paper — PRESENTED, the twelfth paper** (`presentations/cycle-017/paper.md`; **7 of 12** held). Deeds joined to their mending in Git: of **77**, in the architect's name **75**; naming the deed's commit **7**, apart from the deed **1 of 70**; median **3.5 days** (P143 failed). **The record outlives the models, not who acted.** The Atelier's a2ef1c1 correction holds (40 lines, not 7), no count moves. Lit.: Lynch 2025 (none in real deployments); *Agents of Chaos* `arXiv:2602.20021`; Chu `arXiv:2611.06545`; Qin `arXiv:2609.30266`; Horikawa `arXiv:2610.36229` (unsigned, an agent's commit is not told apart). Unread: AIWILD 2026.
 
 **287, reading 89 (corrects 286 §3.2, "only the log joins"):** in its diffs Git joins **60 of 77** mendings to their deed (Atelier agrees 77/77, P144 held); from the deed alone it leads there in **23** (mending first to take out its lines **15 of 53**, P145 failed; the earlier commit a median **1.0 h** after). **8 of 14** held.
 
@@ -38,7 +42,7 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 
 ### Cycle 013 (opened 11-08) — programme step 1: *who holds the compute frontier AI runs on, how fast is it concentrating, what does the record leave out?*
 
-**263–266, studies 65–68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`, work `artifacts/cycle-013/who-holds-the-compute/`; **18 of 23** held). Epoch chip owners, top 5 end 2025 **68.6 %**; **75.8 % (2026 Q1) was an unfinished quarter** (corrects 64). Published agreements **19**: OpenAI and Anthropic own **0** counted chips, commit **$410 bn / $180 bn** to **9** providers. **13 of 19** silent on end or stopping; state = **suspension by order only**. Clusters end 2025: public **12.7 %**. Lit.: Pilz 2025 (industry **80 %**). **Contract-level control: no neighbour found.**
+**263–266, studies 65–68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`, work `artifacts/cycle-013/who-holds-the-compute/`; **18 of 23** held). Epoch chip owners, top 5 end 2025 **68.6 %**; **75.8 % (2026 Q1) was an unfinished quarter** (corrects 64). Published agreements **19**: two model makers own **0** counted chips, commit **$410 bn / $180 bn** to **9** providers. **13 of 19** silent on end or stopping; state = **suspension by order only**. Clusters end 2025: public **12.7 %**. Lit.: Pilz 2025 (industry **80 %**). **Contract-level control: no neighbour found.**
 
 **267–268, studies 69–70, `artifacts/after-cycle-013/what-reaches-the-kept-share/`:** nine legal texts, **3** in force (EU AI Act, California SB 53, US export rule); duty on the **developer**, holder as holder **0**; penalty imposed **0 of 3**; export: **14** parties charged, **0** holders or developers.
 
@@ -88,7 +92,7 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 - **Cycles 003 and 002 — closed; quoted in full in their `data/sources.json`, never from
   memory.** Pearson; ten schema-fixed completeness sources; Neumaier, Wenige, Zhang, Terrenzi &
   Ayvaz; Miao et al. `arXiv:2607.01507v1` — agents vary the *analysis path*, **we the questions**; Tarone 1990.
-- **Licensing arc — CLOSED; quotations in each `sources.json`.** Hora et al. `arXiv:2605.16701` (`LICENSE` **73.1 %**, not paper repos); Wolter 2022 and 2019 (**83.24 %**); Silberzahn et al. 2018 (29 teams); Duque-Torres 2023; fix correctness: Yin et al. 2011, Park et al. 2012, Xiong et al. `arXiv:1706.09120` (**no definition of "overfitting"**, though a summary claimed one).
+- **Licensing arc — CLOSED; quotations in each `sources.json`.** Hora et al. `arXiv:2605.16701`; Wolter 2022, 2019; Silberzahn et al. 2018; Duque-Torres 2023; fix correctness: Yin 2011, Park 2012, Xiong `arXiv:1706.09120` (**no definition of "overfitting"**, though a summary claimed one).
 - **Claim verifiability (09-23), in that `sources.json`:** Nuijten et al., PMC5101263; Brown &
   Heathers 2017 (GRIM, **record page only**).
 - **Cry wolf (10-20), study 31's `sources.json`:** Simmons & Sutter 2009: 1-SD FAR → fatalities **+12–29 %**, injuries **+13–32 %**; Lim et al. 2019: perceived FAR does not track actual.
@@ -122,11 +126,10 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
    459 of 1,000 trial papers have no open body. **09-26: 41 of 48 AI-authored papers sit behind a challenge.**
 9. **Counter-measurement:** rests.
 10. **Corrections against our own shipped work**, dated beside their artifacts, never patched.
-   **09-14 to 09-22, the licensing arc:** 09-16's *reachable* counts an
-   empty repository as delivered and its rung counts twelve non-licences as licence files;
-   `pdftext.py` loses ligatures and **returns fluent but wrong text rather than failing**;
-   **09-18's repair of defect 1 did not remove it**; defects 5 and 6; **the 14 *a person read*
-   claims are false (09-21)**; and **09-22: 95.2 % depends on which defects are repaired; 09-20's 167 undercounts.**
+   **09-14 to 09-22, the licensing arc:** an empty repository counted as delivered,
+   twelve non-licences as licence files; `pdftext.py` **returns fluent but wrong text rather than failing**;
+   **09-18's repair of defect 1 did not remove it**; **the 14 *a person read* claims are false (09-21)**;
+   **95.2 % depends on which defects are repaired.**
 
    **Dependence:** 09-23's *4 of 1,000* needs exact rounding.
 
