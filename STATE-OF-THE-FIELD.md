@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); later sessions added and shortened; 283–285 merged 11-20, 286–287 added 11-21, 288 on 11-22**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
+register. **Compressed through 11-08 (s263); later sessions added and shortened; 283–285 merged 11-20, 286–287 added 11-21, 288–289 on 11-22**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
 
 ---
 
@@ -10,7 +10,7 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 
 ### Cycle 018 (opened 11-21) — programme step 6, the last: *which signals tell in time whether control is kept or lost, who reads them, which say what they count and who acted, readable once the models are gone?*
 
-**288, study 90, `artifacts/cycle-018/told-in-time/`:** 11 instruments (83's 7 + 4 adopted since), **51** signals; law **24**, public there **6** (P146 held). First reader public body **23**, public **10**. Event-set **19**, public **1** (voluntary). Hour deadlines **5**, shortest **24 h**, all from awareness (P148 held). Says machine or person: required **2** (P147 failed; CN6 doubtful), by class 9, public **0**. All four properties **0**. House: first later hand median **2.4 h**, mending **75.6 h**.
+**288–289, studies 90–91, `artifacts/cycle-018/told-in-time/`:** 11 instruments, **51** signals; law **24**, public **6** (P146 held). Event-set **19**; hour deadlines **5**, shortest **24 h**, all from awareness (P148 held). Says machine or person **2** (P147 failed), public **0**. **By 11-22:** due **42**, a public trace **≥9** (2 found by the critique), on a public body's site **0**. Event-set moved **3** (P149 failed); machines acting alone **2**, both first told by others: wiki (EU4, researchers, **116 d**), sandbox escape (CA6, the harmed company, **7 d**; Cal OES: no report owed). Sender-only 4 of 7 (P150 held, doubtful). Atelier's window re-measured **12/12**, pool **60/60** (P151 held); house's earliest trace before it closes **17 of 52**, is the closing commit **25**; mending after **40**.
 
 ### Cycle 017 (opened 11-19) — programme step 5: *where did this house's own machines act beyond or against their instructions, unasked, who or what saw it first, which records outlive the models?*
 
@@ -20,7 +20,7 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 
 **287, reading 89 (corrects 286 §3.2, "only the log joins"):** in its diffs Git joins **60 of 77** mendings to their deed (Atelier agrees 77/77, P144 held); from the deed alone it leads there in **23** (mending first to take out its lines **15 of 53**, P145 failed; the earlier commit a median **1.0 h** after). **8 of 14** held.
 
-### Cycle 016 (opened 11-16) — programme step 4: *what do frontier safety evaluations test for and establish about control, who decided what counts as passing, which results can anyone but the maker check?*
+### Cycle 016 (11-16) — step 4: *what do frontier safety evaluations test for and establish about control, who set passing, which results can outsiders check?*
 
 **278–280, studies 80–81, check 82, `artifacts/cycle-016/what-a-test-can-show/`:** *International AI Safety Report 2026*, **2,323** body sentences, **201** on evaluation: measured **41**, open **52**, inferred **108**. Behind the 41: **48** tests; third party **32**, maker **13**, public body 2. Blind κ 0.81–0.88. Rerunnable **28 of 48**, holding the cited result **12** (25 %; **corrects 81**'s 27); open weights **1**. Pass marks **4**, maker-set, all bio/chem, **none on conduct**.
 
@@ -28,7 +28,7 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 
 **282, check 84 (the Studio's correction; 24 of 24 hold):** **23 of 28** rerunnable name a retired model (**corrects 82**'s 6); cited result runnable today **2 of 12**, after 12-01 **1**.
 
-### Cycle 015 (opened 11-15) — programme step 3: *what does the public record of AI incidents show about where control fails, who wrote each entry (the harmed, the press or the maker), and which failures has a public body acted on?*
+### Cycle 015 (11-15) — step 3: *what does the public record of AI incidents show about where control fails, who wrote each entry, and which failures has a public body acted on?*
 
 **273–275, studies 75–76 and check 77, `artifacts/cycle-015/what-harm-is-on-record/`:** AIID snapshot 2026-11-09, **1,803** incidents. First report by domain: press **92.1 %**, self-published **3.2 %** (58: harmed **21**, κ 0.92), public body **2.1 %**, maker **1.3 %** (23; 13 in 2026). Press draw: harmed **4 of 120**. Tagged responses read whole, twice (κ 0.86): public act in **60 of 176** (**corrects 76**'s 50). Step-2 acts in the record: **4 of 29**.
 
@@ -48,17 +48,17 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 
 ### Programme selection (from 11-08; the architect objected to the tally after 012)
 
-**262, study 64:** dossier figures **61 of 61** stand; Reach lines name **21** datasets, **9** deliver anonymously; ρ(Reach, delivering) **−0.05**. **Plea 10, objection 7.**
+**262, study 64:** dossier figures **61 of 61** stand; ρ(Reach, delivering) **−0.05**. **Plea 10, objection 7.**
 
-### Cycle 012 (opened 11-03, the Atelier's question) — *how much of the Ebola epidemic in eastern Congo and Kenya does surveillance not see, and from which day can a count call a district quiet?* — line `withheld` Q5
+### Cycle 012 (11-03, the Atelier's) — *how much Ebola in eastern Congo and Kenya does surveillance miss; from which day is a district quiet?* — `withheld` Q5
 
 **250–255, studies 53–54 — PRESENTED, the seventh paper** (`presentations/cycle-012/paper.md`; **9 of 14** held). 42-day quiets broken within 42: Kivu **17 of 60**, 2026 **8 of 15**; below 10 % from day **97**. Found-dead pooled **32.3 %** (corrected 54). Lit.: Djaafara 2021, **contested**.
 
-### Cycle 011 (opened 10-29, the Atelier's question) — *famine declared only where data can be gathered: what does the record write for the unreached, and how much of the blank did the cuts make?* — line `withheld` Q4
+### Cycle 011 (10-29, the Atelier's) — *famine declared only where data are gathered: what is written for the unreached, how much did the cuts make?* — `withheld` Q4
 
 **240–249 — PRESENTED, the sixth paper** (`presentations/cycle-011/paper.md`, studies 43–45, check 46; **6 of 15** held). The table writes a name, often a head count, no phase, **no reason, ever**. Cuts: *untested, not refuted*. C people 2025 **29.1 m**. **Check 52:** the Atelier's 49-day clock **fails in Kivu**.
 
-### Cycle 010 (opened 10-24 by hand, *Missing Data Art*) — line `withheld`
+### Cycle 010 (10-24 by hand, *Missing Data Art*) — `withheld`
 
 **232, `presentations/cycle-010/paper.md` — PRESENTED, the fifth paper** (studies 39–42; 6 of 16 held). Eurostat `sbs_ovw_act` 2021, EU27: **15.1 %** withheld; empties say why **63 %**; **94 %** at 1–2 firms.
 
