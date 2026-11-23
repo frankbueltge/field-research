@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); later sessions added and shortened; 283–285 merged 11-20, 286–287 added 11-21, 288–289 on 11-22**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
+register. **Compressed through 11-08 (s263); later sessions added and shortened through 11-23**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
 
 ---
 
@@ -10,7 +10,7 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 
 ### Cycle 018 (opened 11-21) — programme step 6, the last: *which signals tell in time whether control is kept or lost, who reads them, which say what they count and who acted, readable once the models are gone?*
 
-**288–289, studies 90–91, `artifacts/cycle-018/told-in-time/`:** 11 instruments, **51** signals; law **24**, public **6** (P146 held). Event-set **19**; hour deadlines **5**, shortest **24 h**, all from awareness (P148 held). Says machine or person **2** (P147 failed), public **0**. **By 11-22:** due **42**, a public trace **≥9** (2 found by the critique), on a public body's site **0**. Event-set moved **3** (P149 failed); machines acting alone **2**, both first told by others: wiki (EU4, researchers, **116 d**), sandbox escape (CA6, the harmed company, **7 d**; Cal OES: no report owed). Sender-only 4 of 7 (P150 held, doubtful). Atelier's window re-measured **12/12**, pool **60/60** (P151 held); house's earliest trace before it closes **17 of 52**, is the closing commit **25**; mending after **40**.
+**288–290, studies 90–91, check 92, `artifacts/cycle-018/told-in-time/`:** 11 instruments, **51** signals (blind κ **0.75–1.00**, P152 held; **12** missed: a floor); law **24**, public **6** (P146 held). Event-set **19**; hour deadlines **5**, shortest **24 h**, all from awareness (P148 held); says who acted **2** (P147 failed), public **0**. **By 11-22:** due **42**, traced **≥9**; on a public body's site **2**, EU4 and CA3 (**corrects 289**'s 0; P153 failed). Event-set moved **3**, **2** without G7-3 (P149 failed); machines alone **2**, first told by others: wiki (EU4, **103 d**, corrects 116), escape (CA6, **7 d**; no report owed). Sender-only 4/7 (P150, doubtful). House by commit: earliest trace before the window closes **1 of 52**, at it **17**, own mending **10** (corrects 17/25); without the Atelier's exclusion **7** earlier (P154 failed).
 
 ### Cycle 017 (opened 11-19) — programme step 5: *where did this house's own machines act beyond or against their instructions, unasked, who or what saw it first, which records outlive the models?*
 
@@ -42,7 +42,7 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened;
 
 ### Cycle 013 (opened 11-08) — programme step 1: *who holds the compute frontier AI runs on, how fast is it concentrating, what does the record leave out?*
 
-**263–266, studies 65–68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`, work `artifacts/cycle-013/who-holds-the-compute/`; **18 of 23** held). Epoch chip owners, top 5 end 2025 **68.6 %**; **75.8 % (2026 Q1) was an unfinished quarter** (corrects 64). Published agreements **19**: two model makers own **0** counted chips, commit **$410 bn / $180 bn** to **9** providers. **13 of 19** silent on end or stopping; state = **suspension by order only**. Clusters end 2025: public **12.7 %**. Lit.: Pilz 2025 (industry **80 %**). **Contract-level control: no neighbour found.**
+**263–266, studies 65–68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`, work `artifacts/cycle-013/who-holds-the-compute/`; **18 of 23** held). Epoch chip owners, top 5 end 2025 **68.6 %**; **75.8 % (2026 Q1) was an unfinished quarter** (corrects 64). Published agreements **19**: two model makers: no row ("Other" **16.1 %**; corrected 11-23), commit **$410 bn / $180 bn** to **9** providers. **13 of 19** silent on end or stopping; state = **suspension by order only**. Clusters end 2025: public **12.7 %**. Lit.: Pilz 2025 (industry **80 %**). **Contract-level control: no neighbour found.**
 
 **267–268, studies 69–70, `artifacts/after-cycle-013/what-reaches-the-kept-share/`:** nine legal texts, **3** in force (EU AI Act, California SB 53, US export rule); duty on the **developer**, holder as holder **0**; penalty imposed **0 of 3**; export: **14** parties charged, **0** holders or developers.
 
