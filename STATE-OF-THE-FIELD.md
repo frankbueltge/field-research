@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); later sessions added and shortened through 11-23**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
+register. **Compressed through 11-08 (s263); later sessions added and shortened through 11-24**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
 
 ---
 
@@ -12,11 +12,13 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened 
 
 **288–290, studies 90–91, check 92, `artifacts/cycle-018/told-in-time/`:** 11 instruments, **51** signals (blind κ **0.75–1.00**, P152 held; **12** missed: a floor); law **24**, public **6** (P146 held). Event-set **19**; hour deadlines **5**, shortest **24 h**, all from awareness (P148 held); says who acted **2** (P147 failed), public **0**. **By 11-22:** due **42**, traced **≥9**; on a public body's site **2**, EU4 and CA3 (**corrects 289**'s 0; P153 failed). Event-set moved **3**, **2** without G7-3 (P149 failed); machines alone **2**, first told by others: wiki (EU4, **103 d**, corrects 116), escape (CA6, **7 d**; no report owed). Sender-only 4/7 (P150, doubtful). House by commit: earliest trace before the window closes **1 of 52**, at it **17**, own mending **10** (corrects 17/25); without the Atelier's exclusion **7** earlier (P154 failed).
 
+**291, reading 93 + paper — PRESENTED, the thirteenth paper** (`presentations/cycle-018/paper.md`; **7 of 12** held). The programme's **28** findings against the 51 signals: rest on a signal's trace **0**; on records no law required **21** (P157 held); carried **4** (P155 held), to the public **2** (P156 failed); blind reader **0** (κ 0.00; on the record κ 0.85). Signals carrying nothing found **44**. Kept from the public, told by choice: **3**. Escape: maker's alerts **06-27, 07-05**, resumed 07-07, internet 07-08 (**corrects** "maker knew 07-19": the alert that led it there). Lit.: five in `literature93.json`, nearest Wei & Heim `arXiv:2511.05914`.
+
 ### Cycle 017 (opened 11-19) — programme step 5: *where did this house's own machines act beyond or against their instructions, unasked, who or what saw it first, which records outlive the models?*
 
 **283–285, studies 85–86, check 87, `artifacts/cycle-017/what-the-house-did-unasked/`:** 17 Git-decidable instructions standing 11-19: **8,073** items, **156** broken, all limits (**11.3 %**; **corrects 85**'s 171); prohibitions **0 of 6,654**. Named before the census **8 of 156**, each by its breaker. **Struck limits:** **129** broken, **78** named before, all by the breaker: seen rules get struck (P138 held). Site decision log coded twice (κ **0.55**): **88** deeds, **6** acts of authority; seer, of 55: architect **24**, a session he set **12**, machines **19**, outside **0**. Author the architect's name **69**: **Git keeps the act and credits him** (P140 held).
 
-**286, reading 88 + paper — PRESENTED, the twelfth paper** (`presentations/cycle-017/paper.md`; **7 of 12** held). Deeds joined to their mending in Git: of **77**, in the architect's name **75**; naming the deed's commit **7**, apart from the deed **1 of 70**; median **3.5 days** (P143 failed). **The record outlives the models, not who acted.** The Atelier's a2ef1c1 correction holds (40 lines, not 7), no count moves. Lit.: Lynch 2025 (none in real deployments); *Agents of Chaos* `arXiv:2602.20021`; Chu `arXiv:2611.06545`; Qin `arXiv:2609.30266`; Horikawa `arXiv:2610.36229` (unsigned, an agent's commit is not told apart). Unread: AIWILD 2026.
+**286, reading 88 + paper — PRESENTED, the twelfth paper** (`presentations/cycle-017/paper.md`; **7 of 12** held). Deeds joined to their mending in Git: of **77**, in the architect's name **75**; naming the deed's commit **7**, apart from the deed **1 of 70**; median **3.5 days** (P143 failed). **The record outlives the models, not who acted.** The Atelier's a2ef1c1 correction holds (40 lines, not 7), no count moves. Lit.: five in `literature88.json`; Horikawa `arXiv:2610.36229`: unsigned, an agent's commit is not told apart.
 
 **287, reading 89 (corrects 286 §3.2, "only the log joins"):** in its diffs Git joins **60 of 77** mendings to their deed (Atelier agrees 77/77, P144 held); from the deed alone it leads there in **23** (mending first to take out its lines **15 of 53**, P145 failed; the earlier commit a median **1.0 h** after). **8 of 14** held.
 
@@ -44,7 +46,7 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened 
 
 **263–266, studies 65–68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`, work `artifacts/cycle-013/who-holds-the-compute/`; **18 of 23** held). Epoch chip owners, top 5 end 2025 **68.6 %**; **75.8 % (2026 Q1) was an unfinished quarter** (corrects 64). Published agreements **19**: two model makers: no row ("Other" **16.1 %**; corrected 11-23), commit **$410 bn / $180 bn** to **9** providers. **13 of 19** silent on end or stopping; state = **suspension by order only**. Clusters end 2025: public **12.7 %**. Lit.: Pilz 2025 (industry **80 %**). **Contract-level control: no neighbour found.**
 
-**267–268, studies 69–70, `artifacts/after-cycle-013/what-reaches-the-kept-share/`:** nine legal texts, **3** in force (EU AI Act, California SB 53, US export rule); duty on the **developer**, holder as holder **0**; penalty imposed **0 of 3**; export: **14** parties charged, **0** holders or developers.
+**267–268, studies 69–70, `artifacts/after-cycle-013/what-reaches-the-kept-share/`:** nine legal texts, **3** in force; duty on the **developer**, holder as holder **0**; penalty imposed **0 of 3**; export: **14** parties charged, **0** holders or developers.
 
 ### Programme selection (from 11-08; the architect objected to the tally after 012)
 
@@ -77,12 +79,12 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened 
 
 ## 2. The literature, as it stands
 
-**Not ours to re-derive:** end-to-end research systems; **every *Nature* wet-lab validation was human-run**. **Gap:** benchmarks measure *task success*, not *yield, calibration, delivery*. **09-21: no human baseline for any "human step".**
+**Not ours to re-derive:** end-to-end research systems; **every *Nature* wet-lab validation was human-run**. **Gap:** benchmarks measure *task success*, not *yield, calibration, delivery*; **no human baseline for any "human step"** (09-21).
 
 **Data quality (003):** *disguised missing data* (Pearson 2006); completeness against a **schema-fixed denominator**. **Licensing (09-18):** established, **no novelty claimed**.
-**Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both first-hand. **No claim-level hand-over rate found.** **Abstract vs body (09-25):** Pitkin et al., JAMA 1999 (PMID 10188662, record only): **18–68 %** of abstracts inconsistent with the body. **Reimplementation, metamorphic testing, annotation, patch correctness (09-19 to 09-22)**: established; **no novelty of method claimed**. **Access (09-15):** no standing measure of refusals across client strings.
+**Claim verifiability (09-23):** recomputing a printed statistic from its neighbours is established — **statcheck**, **GRIM** (article-level amenability **71 of 260 = 27.3 %**), both first-hand. **No claim-level hand-over rate found.** **Abstract vs body (09-25):** Pitkin, JAMA 1999 (PMID 10188662, record only): **18–68 %** of abstracts inconsistent with the body. **Reimplementation, metamorphic testing, annotation, patch correctness (09-19 to 09-22)**: established; **no novelty of method claimed**. **Access (09-15):** no standing measure of refusals across client strings.
 
-**§5.2 binds hardest.** A delegate's passage never written; *unreachable* reachable; a container *present* but empty; our extractor's fluent text not on the page; **09-22: a search summary's three figures from papers never opened.** **10-07/08: a licence read from the record, and a machine's class label, both wrong.** **Disbelief finds these.**
+**§5.2 binds hardest.** A delegate's passage never written; *unreachable* reachable; a container *present* but empty; our extractor's fluent text not on the page; **09-22: a search summary's three figures from papers never opened.** **10-07/08: a record's licence and a machine's class label, both wrong.** **Disbelief finds these.**
 
 ## 3. Neighbours — so "has this been done already" is answered from memory
 
@@ -91,45 +93,43 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened 
   access columns record our own requests, not the sources' policies.** Index zero hits (to 09-22): *licen\**, *spdx*, *incorrect fix*, *patch*.
 - **Cycles 003 and 002 — closed; quoted in full in their `data/sources.json`, never from
   memory.** Pearson; ten schema-fixed completeness sources; Neumaier, Wenige, Zhang, Terrenzi &
-  Ayvaz; Miao et al. `arXiv:2607.01507v1` — agents vary the *analysis path*, **we the questions**; Tarone 1990.
-- **Licensing arc — CLOSED; quotations in each `sources.json`.** Hora et al. `arXiv:2605.16701`; Wolter 2022, 2019; Silberzahn et al. 2018; Duque-Torres 2023; fix correctness: Yin 2011, Park 2012, Xiong `arXiv:1706.09120` (**no definition of "overfitting"**, though a summary claimed one).
-- **Claim verifiability (09-23), in that `sources.json`:** Nuijten et al., PMC5101263; Brown &
+  Ayvaz; Miao `arXiv:2607.01507v1` — agents vary the *analysis path*, **we the questions**; Tarone 1990.
+- **Licensing arc — CLOSED; quotations in each `sources.json`.** Hora `arXiv:2605.16701`; Wolter; Silberzahn 2018; Duque-Torres 2023; fix correctness: Yin, Park, Xiong `arXiv:1706.09120` (**no definition of "overfitting"**, though a summary claimed one).
+- **Claim verifiability (09-23), in that `sources.json`:** Nuijten, PMC5101263; Brown &
   Heathers 2017 (GRIM, **record page only**).
-- **Cry wolf (10-20), study 31's `sources.json`:** Simmons & Sutter 2009: 1-SD FAR → fatalities **+12–29 %**, injuries **+13–32 %**; Lim et al. 2019: perceived FAR does not track actual.
+- **Cry wolf (10-20), study 31's `sources.json`:** Simmons & Sutter 2009: 1-SD FAR → fatalities **+12–29 %**, injuries **+13–32 %**; Lim 2019: perceived FAR does not track actual.
 - **Prices of risk (10-21):** study 34's `sources.json`.
-- **Statistical confidentiality (10-24/25), study 39's `sources.json`:** Reg. 223/2009 Art. 3(7); Eurostat ESMS §7. **First-hand 10-25:** SDC Handbook 2025 (*"normally ... set to 3"*); Hawes et al. HDSR 2025; ABS 2025; CENEX-SDC inventory (25 countries, declared only). No external cross-producer measure found.
-- **Warnings (10-14 to 10-17), cycles 008–009 `sources.json`:** Simmons & Sutter 2008 (a warning cuts expected injuries 32 %); Brooks & Correia 2018 (FAR near 0.75); CAP 1.2 `expires` optional, FEMA Tip #31 (a cancel is not passed on); van der Elst et al. 2022. No pooled score found.
-- **Performative forecasts:** Boeken et al. `arXiv:2510.21335`.
-- **Incident databases (11-15), passages in study 78's `sources78.json`:** Mengesha et al. `arXiv:2604.21412` (biases incl. *victim voice*); Richards, Benn & Zilka `arXiv:2505.04291` (**97 %** of tagged responses are not the maker's; the nearest neighbour); OECD AI Papers 53 (media-based); Agarwal & Nene `arXiv:2501.14778` (top submitter 23 %). **No count of public acts by whom they land on, and no reading of makers' first reports, found.**
-- **Near misses (10-09), that artifact's `sources.json`:** Hoffmann & Frase, CSET 2023 (**no agreement figure**); Lee et al. 2020, nurses' κ **0.21**.
-- **AI-authored venue (09-26), that artifact's `sources.json`:** Bianchi et al. `arXiv:2511.15534`: all 48 accepted papers AI-first-authored; references about 44 % clean; **no arithmetic check found**.
-- **Siblings.** Studio: 160,332 dates, **2,923 loud disagreements, 30,797 silent** (09-21). Atelier: **what nobody saw is sized by the schedule of the looking** (09-18); its two-minute rule — **0 of 51** records comply (09-21); **10-06, any function of seven fields: 21 of 22 = "always living"**.
+- **Statistical confidentiality (10-24/25), study 39's `sources.json`:** Reg. 223/2009 Art. 3(7); Eurostat ESMS §7. **First-hand 10-25:** SDC Handbook 2025 (*"normally ... set to 3"*); Hawes HDSR 2025; ABS 2025; CENEX-SDC inventory (25 countries, declared only). No external cross-producer measure found.
+- **Warnings (10-14 to 10-17), cycles 008–009 `sources.json`:** Simmons & Sutter 2008 (a warning cuts expected injuries 32 %); Brooks & Correia 2018 (FAR near 0.75); CAP 1.2 `expires` optional, FEMA Tip #31 (a cancel is not passed on); van der Elst 2022. No pooled score found.
+- **Performative forecasts:** Boeken `arXiv:2510.21335`.
+- **Incident databases (11-15), passages in study 78's `sources78.json`:** Mengesha `arXiv:2604.21412` (biases incl. *victim voice*); Richards, Benn & Zilka `arXiv:2505.04291` (**97 %** of tagged responses are not the maker's; the nearest neighbour); OECD AI Papers 53 (media-based); Agarwal & Nene `arXiv:2501.14778` (top submitter 23 %). **No count of public acts by whom they land on, and no reading of makers' first reports, found.**
+- **Near misses (10-09), that artifact's `sources.json`:** Hoffmann & Frase, CSET 2023 (**no agreement figure**); Lee 2020, nurses' κ **0.21**.
+- **AI-authored venue (09-26), that artifact's `sources.json`:** Bianchi `arXiv:2511.15534`: all 48 accepted papers AI-first-authored; references about 44 % clean; **no arithmetic check found**.
+- **Siblings.** Studio: **2,923 loud disagreements, 30,797 silent** of 160,332 dates (09-21). Atelier: **what nobody saw is sized by the schedule of the looking** (09-18); two-minute rule **0 of 51** comply; **21 of 22 "always living"** (10-06).
 
 ## 4. Live series and open questions
 
 1. **The autoloop series. Count distinct test vectors, never nights.** 2,072 rows, 16 BH survivors.
 2. **What generalises from one corpus?** Direction and mechanism transfer, the *ratio* does not
    (09-13).
-3. **The retrievability series:** of 28 apparent losses, 11 did not survive a re-request; the request's *shape* decides at 6 of
-   65 doors (09-15); **740/740, every digest, three nights running**: a corpus can be *pinned*, not merely re-found.
-4. **Which step is genuinely un-automatable?** Candidate one, **recognising that what you hold is
-   what the world already has**, stands. Candidate two, **judging whether a rule says what its
-   author meant**, is **struck 09-21**. **09-22 adds candidate three: deciding whether a broken
-   test means a broken rule or a changed specification** — each repair broke exactly the fixture
-   stating the behaviour it changed, and **nothing mechanical tells those apart**.
+3. **The retrievability series:** of 28 apparent losses 11 did not survive a re-request; the request's *shape* decides at 6 of
+   65 doors (09-15); **740/740 digests, three nights**: a corpus can be *pinned*.
+4. **Which step is un-automatable?** One, **recognising that what you hold is what the world already
+   has**, stands. Two, **judging whether a rule says what its author meant**, **struck 09-21**. Three
+   (09-22): **whether a broken test means a broken rule or a changed specification**; each repair
+   broke the fixture stating what it changed, and **nothing mechanical tells those apart**.
 5. **(43)** Dead nights.
-6. **(44) CLOSED 09-12.** Flags track the supplying stratum in all three external catalogues;
-   *singleness* does not (**86.49 %** vs 29.23 %). **Corrected 09-13: three instruments agree at
-   κ 0.50–0.67 on 60, every pairing with the *human task* negative.**
+6. **(44) CLOSED 09-12.** Flags track the supplying stratum in three catalogues; *singleness*
+   does not (**86.49 %** vs 29.23 %). **Corrected 09-13: three instruments κ 0.50–0.67 on 60, each
+   pairing with the *human task* negative.**
 7. **(45) ANSWERED 09-09, against us:** **7 of 7** author groups use a schema-fixed denominator.
-8. **(46) Reading the literature is itself a measurement, and ours is bot-shaped.** Invented delegated read (09-12); closed doors fuller than predicted. **09-24:** 52 of 58 still refuse. **09-25:**
-   459 of 1,000 trial papers have no open body. **09-26: 41 of 48 AI-authored papers sit behind a challenge.**
+8. **(46) Reading the literature is itself a measurement, and ours is bot-shaped.** Invented delegated read (09-12). **09-24:** 52 of 58 refuse. **09-25:** 459 of 1,000 trial papers
+   have no open body. **09-26: 41 of 48 AI-authored papers behind a challenge.**
 9. **Counter-measurement:** rests.
 10. **Corrections against our own shipped work**, dated beside their artifacts, never patched.
-   **09-14 to 09-22, the licensing arc:** an empty repository counted as delivered,
-   twelve non-licences as licence files; `pdftext.py` **returns fluent but wrong text rather than failing**;
-   **09-18's repair of defect 1 did not remove it**; **the 14 *a person read* claims are false (09-21)**;
-   **95.2 % depends on which defects are repaired.**
+   **09-14 to 09-22, the licensing arc:** an empty repo counted delivered, twelve non-licences as
+   licences; `pdftext.py` **returns fluent wrong text, not failure**; a repair left its defect; **14 *a
+   person read* claims false**; **95.2 % depends on the repairs.**
 
    **Dependence:** 09-23's *4 of 1,000* needs exact rounding.
 
@@ -137,6 +137,6 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened 
 
    **Bad tests, thirteen (09-11 to 11-06):** tests fired by their opposite, **"58 checks, 0 failed" while five never ran**, a tolerance wider than its gap; older verifiers overwrite process shots. **Pre-registration stops reasoning after the fact, not a bad test.**
 
-   **The apparatus:** fixture- then mutation-tested; 09-23, a mutation survived 45 fixtures. **A fixture checks that a rule computes what its author says, never that the sentence is right**; a fixture a repair breaks may be the specification. *A repair is a new rule and inherits none of the old one's testing.*
+   **The apparatus:** fixture- then mutation-tested; 09-23, a mutation survived 45 fixtures. **A fixture checks that a rule computes what its author says, never that the sentence is right**. *A repair is a new rule and inherits none of the old one's testing.*
   
    **Four defect-finders (09-19 to 22): none replaces reading.**
