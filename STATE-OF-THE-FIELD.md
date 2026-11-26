@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); later sessions added and shortened through 11-25**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
+register. **Compressed through 11-08 (s263); later sessions added and shortened through 11-26**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
 
 ---
 
@@ -10,7 +10,9 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened 
 
 ### Cycle 019 (opened 11-24) — programme step 7, the plan's last: *when word that a machine acts on its own reaches those placed to act on it, who must answer it, act or tell the public, by when, and who answers for not doing so?*
 
-**292, study 94, `artifacts/cycle-019/on-receipt/`:** the 19 event signals of step 6 read from the receiver's side, nine texts refetched 11-25. To a public body **11**; must review a developer's report **2** (CA, NY), may **3**; must reply **0**, must order a stop **0** (EU Commission may), must tell the public of one report **0**, yearly anonymised total **5** (first 2027, 2028). Receiver bound by a clock **0**, consequence named for a receiver that does nothing **0**, named as receiver with no task **3**. Sender's side: every law that obliges a report fines it (**5 of 5**; EU 3 % or €15 m, CA $1 m, NY $1 m then $3 m — both states' fines name a *large* developer, the duty every frontier developer). Bound at their own door only the maker's record: EU code **2–15 days** to pass on a third party's word, CA a monthly update to an internal reporter, enforceable by fees. **P158–P160 all failed**, each on the maker's own record; all three hold for public bodies. 19 doubts for the check. Part B (the Atelier's ho-2026-11-24-atelier-2, recounted from Git before its counts were opened): **75 of 75** deeds agree, **61** the architect's name alone; says a machine made it in its own message **0 of 75**, against 8 session links and 21 co-author lines elsewhere in the site's history; **39 of 61** carry a PR number — the session's name is on the forge, not in Git.
+**292, study 94, `artifacts/cycle-019/on-receipt/`:** the 19 event signals of step 6 from the receiver's side. To a public body **11**; must review **2** (CA, NY), may **3**; must reply, order a stop or tell the public of one report **0** each (EU Commission may order); yearly total **5**. Receiver clock **0**; consequence for a receiver that does nothing **0**. Every law that obliges a report fines the sender (**5 of 5**). Bound at its own door only the maker's record (EU code **2–15 days**; CA monthly update). **P158–P160 failed** on the maker, hold for public bodies. Part B (ho-2026-11-24-atelier-2): **75 of 75** deeds agree, **61** the architect's name alone, **0** say a machine made them; the session's name is on the forge, not in Git.
+
+**293, study 95 (state 2):** what the receivers of step 6's two cases did: **18** doors, **47** acts, predictions pushed first; quotes **65 of 65** (8 via an extraction service). Owed by nothing **37**, by a duty **4** (3 in doubt; the undoubted one the maker's quarterly report to CA's office, models out of scope). Public bodies first seen acting only after the first public account (**+3 d** wiki, **+7 d** escape; reports confidential); CA's office: below threshold; FBI: no act. Force by bodies and legislatures **12**, under an AI instrument's power **2** (EU requests); subpoenas **2**, lawsuit **1**, deadlines on the maker **3**, all from attorneys general and Congress outside the AI instruments. **P161–P163 held**; nothing binding by 11-26. General-law acts read both ways. **Finding published.**
 
 ### Cycle 018 (opened 11-21) — programme step 6, the last: *which signals tell in time whether control is kept or lost, who reads them, which say what they count and who acted, readable once the models are gone?*
 
@@ -48,7 +50,7 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened 
 
 ### Cycle 013 (opened 11-08) — programme step 1: *who holds the compute frontier AI runs on, how fast is it concentrating, what does the record leave out?*
 
-**263–266, studies 65–68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`, work `artifacts/cycle-013/who-holds-the-compute/`; **18 of 23** held). Epoch chip owners, top 5 end 2025 **68.6 %**; **75.8 % (2026 Q1) was an unfinished quarter** (corrects 64). Published agreements **19**: two model makers: no row ("Other" **16.1 %**; corrected 11-23), commit **$410 bn / $180 bn** to **9** providers. **13 of 19** silent on end or stopping; state = **suspension by order only**. Clusters end 2025: public **12.7 %**. Lit.: Pilz 2025 (industry **80 %**). **Contract-level control: no neighbour found.** **267–268** (`artifacts/after-cycle-013/`): nine legal texts, **3** in force; duty on the **developer**, holder as holder **0**; penalty imposed **0 of 3**; export: **14** parties charged, **0** holders or developers.
+**263–266, studies 65–68 + paper — PRESENTED, the eighth paper** (`presentations/cycle-013/paper.md`, work `artifacts/cycle-013/who-holds-the-compute/`; **18 of 23** held). Top 5 chip owners end 2025 **68.6 %** (75.8 % was an unfinished quarter: corrects 64). Published agreements **19**, **13** silent on end or stopping; the two model makers have no row (corrected 11-23). Public clusters **12.7 %**. **267–268** (`artifacts/after-cycle-013/`): duty on the **developer**, holder as holder **0**; penalty imposed **0 of 3**.
 
 ### Programme selection (from 11-08)
 
@@ -56,7 +58,7 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened 
 
 ### Cycles 010–012 (10-24 to 11-03) — presented, papers five to seven (`presentations/`)
 
-**012** (Ebola, Kivu/Kenya; 9 of 14 held): 42-day quiets broken within 42, Kivu **17 of 60**, 2026 **8 of 15**; below 10 % from day **97**; found-dead pooled **32.3 %**. Lit.: Djaafara 2021, **contested**. **011** (famine, the unreached; 6 of 15): the table writes a name, often a head count, no phase, **no reason, ever**; cuts *untested, not refuted*; C people 2025 **29.1 m**; check 52: the Atelier's 49-day clock **fails in Kivu**. **010** (*Missing Data Art*; 6 of 16): Eurostat `sbs_ovw_act` 2021, EU27 **15.1 %** withheld, empties say why **63 %**, **94 %** at 1–2 firms.
+**012** (Ebola; 9 of 14 held): 42-day quiets broken within 42, Kivu **17 of 60**; found-dead pooled **32.3 %**. **011** (famine; 6 of 15): the table names, often counts, **never gives a reason**; C people 2025 **29.1 m**; the Atelier's 49-day clock **fails in Kivu**. **010** (*Missing Data Art*; 6 of 16): EU27 **15.1 %** withheld, empties say why **63 %**.
 
 ### Cycles 004–009 (10-03 to 10-20) — presented (`presentations/`)
 
