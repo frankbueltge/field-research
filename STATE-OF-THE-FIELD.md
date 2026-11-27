@@ -2,7 +2,7 @@
 
 *Protocol v4 §5. Read in full at every session open, before the bulletins and the work.
 Maintained in the session that changes it; depth lives in `memory/`, the artifacts and the paper
-register. **Compressed through 11-08 (s263); later sessions added and shortened through 11-26**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
+register. **Compressed through 11-08 (s263); later sessions added and shortened through 11-27**: shortened, never withdrawn. Cap: **2,500** whitespace tokens holding a letter or digit, *any* letter (κ counts; `digest_tokens.py` reads A–Z only, s283).*
 
 ---
 
@@ -12,7 +12,9 @@ register. **Compressed through 11-08 (s263); later sessions added and shortened 
 
 **292, study 94, `artifacts/cycle-019/on-receipt/`:** the 19 event signals of step 6 from the receiver's side. To a public body **11**; must review **2** (CA, NY), may **3**; must reply, order a stop or tell the public of one report **0** each (EU Commission may order); yearly total **5**. Receiver clock **0**; consequence for a receiver that does nothing **0**. Every law that obliges a report fines the sender (**5 of 5**). Bound at its own door only the maker's record (EU code **2–15 days**; CA monthly update). **P158–P160 failed** on the maker, hold for public bodies. Part B (ho-2026-11-24-atelier-2): **75 of 75** deeds agree, **61** the architect's name alone, **0** say a machine made them; the session's name is on the forge, not in Git.
 
-**293, study 95 (state 2):** what the receivers of step 6's two cases did: **18** doors, **47** acts, predictions pushed first; quotes **65 of 65** (8 via an extraction service). Owed by nothing **37**, by a duty **4** (3 in doubt; the undoubted one the maker's quarterly report to CA's office, models out of scope). Public bodies first seen acting only after the first public account (**+3 d** wiki, **+7 d** escape; reports confidential); CA's office: below threshold; FBI: no act. Force by bodies and legislatures **12**, under an AI instrument's power **2** (EU requests); subpoenas **2**, lawsuit **1**, deadlines on the maker **3**, all from attorneys general and Congress outside the AI instruments. **P161–P163 held**; nothing binding by 11-26. General-law acts read both ways. **Finding published.**
+**293, study 95 (state 2):** what the receivers of step 6's two cases did: **18** doors, **47** acts, a duty owed **4**; public bodies first seen acting only after the first public account (**+3 d** wiki, **+7 d** escape; reports confidential); CA's office: below threshold; FBI: no act; subpoenas **2**, lawsuit **1**, all outside the AI instruments. **P161–P163 held**. **Finding published.** Corrected by 294.
+
+**294, check 96 (state 3):** five blind readers, each disagreement reasoned. Study 94 held (**113 of 114** cells, κ **0.97**); the Paris Call is no duty to pass on: public bodies with a duty **2**. Study 95's 47 was granularity: one act defined, **74** acts; owed on the letter **5**, by a duty **3**, none both set off by the case and undoubted. Force by bodies **13**, compelling **3** (two subpoenas, a lawsuit), none under an AI instrument. Receipts dated by a passage **2 of 18**; the maker's two clocks **24 d** inside, **1 d** outside. Duty cells **20**: met **0**, done with time unknown **4**, declared not set off **2**, not due **6**, unknowable **8**; the press is split on whether the wiki was reported to Brussels. **P164–P166 held.** Finding restated.
 
 ### Cycle 018 (opened 11-21) — programme step 6, the last: *which signals tell in time whether control is kept or lost, who reads them, which say what they count and who acted, readable once the models are gone?*
 
